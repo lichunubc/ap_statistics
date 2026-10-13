@@ -72,9 +72,9 @@ errors=[];native=[]
 with sync_playwright() as p:
     kwargs={'executable_path':os.environ['CHROMIUM_PATH']} if os.environ.get('CHROMIUM_PATH') else {}
     browser=p.chromium.launch(headless=True,args=['--no-sandbox'],**kwargs)
-    page=browser.new_page(viewport={'width':1440,'height':1000});page.on('pageerror',lambda e:errors.append(str(e)))
+    context=browser.new_context(viewport={'width':1440,'height':1000})
+    page=context.new_page();page.on('pageerror',lambda e:errors.append(str(e)))
     page.context.tracing.start(screenshots=True, snapshots=True, sources=True)
-    page.on('framenavigated', lambda frame: print('NAVIGATION:',frame.url,flush=True) if frame==page.main_frame else None)
     try:
         load_page(page,DOCS/'index.html',base+'index.html')
         assert page.locator('main .unit-card').count()==5
@@ -85,7 +85,6 @@ with sync_playwright() as p:
             page.locator('main .unit-card[data-unit="1"] h3 a[href*="unit-"]').click();page.wait_for_load_state('networkidle')
             page.wait_for_url('**/unit-1.html', wait_until='networkidle')
             assert page.locator('main .topic-grid .route-card').count()==6
-            print('UNIT LANDING:',page.url,page.locator('main .topic-grid').inner_html(),flush=True)
             page.screenshot(path=str(QA/'unit1-before-topic-navigation.png'),full_page=True)
             page.locator('main .topic-grid a[href*="topic-1-2.html"]').click()
             page.wait_for_url('**/topic-1-2.html', wait_until='networkidle')
@@ -110,7 +109,7 @@ with sync_playwright() as p:
             assert page.locator('h1').inner_text().startswith('Topic 1.4 ')
             native.append('mobile chapter menu with explicit unit expansion')
         else:
-            page.close();page=browser.new_page(viewport={'width':390,'height':900});page.on('pageerror',lambda e:errors.append(str(e)))
+            page.close();page=context.new_page();page.set_viewport_size({'width':390,'height':900});page.on('pageerror',lambda e:errors.append(str(e)))
             load_page(page,DOCS/'topic-1-2.html',base+'topic-1-2.html')
             page.locator('button[aria-label="Toggle sidebar navigation"]').click();page.wait_for_timeout(400)
             assert not page.locator('#quarto-sidebar a[href*="topic-1-4.html"]').is_visible()
@@ -119,7 +118,6 @@ with sync_playwright() as p:
         page.screenshot(path=str(QA/'unit1-mobile-navigation.png'))
     except Exception:
         print('FAILED AT:',page.url,flush=True)
-        print('HTML:',page.content(),flush=True)
         page.screenshot(path=str(QA/'structure-failure.png'),full_page=True)
         raise
     finally:

@@ -106,7 +106,7 @@ try:
                     else:
                         # Check the entire box is clickable, not just the title text.
                         card.click(position={'x': 12, 'y': 12})
-                    page.wait_for_load_state('networkidle')
+                    page.wait_for_url(f'**/unit-{i}.html', wait_until='networkidle')
                 else:
                     open_page(page, str(Path(unit['landing']).with_suffix('.html')))
                 assert page.locator('h1').inner_text() == expected_titles[i - 1]
@@ -122,6 +122,8 @@ try:
             open_mobile_menu(page)
             button = page.locator('#quarto-sidebar .course-unit-toggle')
             first = page.locator('#quarto-sidebar a[href*="topic-1-1.html"]')
+            bounds = button.bounding_box()
+            assert bounds and bounds['x'] >= 0 and bounds['x'] + bounds['width'] <= width + 1, ('Unit toggle outside viewport', bounds)
             button.focus()
             page.keyboard.press('Enter')
             assert button.get_attribute('aria-expanded') == 'true' and first.is_visible()

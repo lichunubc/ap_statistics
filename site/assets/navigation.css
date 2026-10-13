@@ -22,3 +22,8 @@
 .course-unit-toggle[aria-expanded="true"] .course-unit-chevron { transform: rotate(90deg); }
 @media (max-width: 700px) { .unit-grid { grid-template-columns: minmax(0, 1fr); } .unit-card h3 { font-size: 1.15rem; } }
 @media print { .unit-grid { display: block; } .unit-card { break-inside: avoid; } .unit-card h3 a:not(.anchorjs-link)::after { display: none; } }
+/* Quarto's narrow-screen drawer uses nowrap while sliding. Long official unit
+   names must still wrap, leaving the disclosure button inside the viewport. */
+#quarto-sidebar .sidebar-menu-container { white-space: normal; min-width: 0; width: 100%; }
+#quarto-sidebar .sidebar-item-container { min-width: 0; max-width: 100%; }
+#quarto-sidebar .sidebar-item-text { flex: 1 1 0%; min-width: 0; width: auto; white-space: normal; overflow-wrap: anywhere; }
