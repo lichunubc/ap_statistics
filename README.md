@@ -1,50 +1,39 @@
 # AP Statistics · Maple Hill School
 
-**Learning from Data** is Chun Li's growing interactive Quarto course book.
+**Learning from Data** is Chun Li's interactive Quarto course book.
 
 Student site: **https://lichunubc.github.io/ap_statistics/**
 
-The original Topics 1.5–1.6 pilot is preserved. Topic 1.1 develops questions, populations, samples and data. Topic 1.3 adds categorical tables, relative frequencies, ratios and evidence checks. Topic 1.4 adds count and percentage bars, pie charts, sample comparisons and chart audits. Topic 1.2 is tracked separately; do not infer publication from its scheduled start. Read the [topic manifest](project/topic-status.json) for actual source status, the [roadmap](project/ROADMAP.md) for planned work, and [CHANGELOG.md](CHANGELOG.md) for released changes. Do not infer publication from a planned start time.
+## Unit 1: one independently named chapter per topic
 
-## Edit and extend
+The book now has separate chapters for Topics 1.1–1.6, using the exact titles in the **College Board CED effective Fall 2026**. Topic 1.2 **Variables** includes observational units, categorical/quantitative and discrete/continuous classification, parameters/statistics, category-code relabelling, three activities and ten fully worked original exercises. This is not yet a complete Unit 1 or AP Statistics course.
 
-Read [CONTRIBUTING.md](CONTRIBUTING.md) and use [the topic template](templates/topic.qmd). Edit `.qmd` chapters rather than generated `docs/` files. The navigation and site settings are in `_quarto.yml`; reusable code/styles are in `assets/`; datasets and provenance are in `data/`. Preserve existing URLs and keep hypothetical examples separate from real observations.
+Open [Unit 1](<Unit 1/README.md>) to find a lesson's editable files. Each **Topic 1.x** folder contains its main QMD chapter, objective mapping, local activity/data/test files and editing notes. **Shared** contains assets, datasets and tests used across topics. The original Topics 1.5 and 1.6 lessons remain as `_*.qmd` sections in their own topic folders. Nothing from their activities or datasets has been discarded.
+
+The sidebar has one **Unit 1** parent with the six official topics as direct children—not a “1.1–1.4” group. Existing chapter and asset URLs remain available through generated compatibility copies. Edit sources, never the generated `docs/` or compatibility pages.
+
+## Preview and validate
 
 ```sh
 quarto preview
 quarto render
-```
-
-The existing GitHub Actions workflow installs Quarto 1.9.38, renders, checks JavaScript and browser behaviour, saves generated HTML to `docs/`, and publishes through GitHub Pages when configured. It uses the repository's workflow token; no personal access token or paid backend is needed. A successful build is not by itself proof of deployment: inspect **Publish site** and the live-site verification step.
-
-## Portable local preview
-
-The same chapter content can be rendered with Python and Pandoc:
-
-```sh
-python tools/preview.py
-python -m http.server 8000 --directory docs
-```
-
-The preview follows the current `_quarto.yml` chapter list. The genuine Quarto build adds its native book navigation and search. Portable preview tests do not replace the Quarto CI build.
-
-## Validation
-
-```sh
 python -m pip install -r requirements-test.txt
 python -m playwright install chromium
-python tools/check_site.py
-python tools/check_foundations.py
-python tools/check_categorical.py
-python tools/check_charts.py
+python tools/check_all.py
 ```
 
-`CHROMIUM_PATH` selects an existing Chromium binary. `INLINE_BROWSER=1` renders already-local assets in memory for environments that cannot navigate to a local web server. Reports/screenshots go in `qa/` and are excluded from source control. Checks cover original histogram/dotplot/stem-and-leaf interactions, nine width settings, 19 bin-count settings, neutral quiz states, links, dataset totals, printing, and desktop/tablet/phone widths. Foundations checks cover four selection sizes, census handling, question feedback, keyboard operation, MathML and six worked solutions. Topic 1.3 checks verify sample counts, 40-step tallying, denominator changes, four claim cases, seven worked answers, printing and responsive layouts. Topic 1.4 checks cover proportion and pie-angle arithmetic, bar/pie steps, comparison controls, chart-audit answers, print references, and mobile/desktop layouts.
+The workflow pins Quarto **1.9.38**. `tools/prepare.py` regenerates browser data from the canonical shared JSON. `tools/postrender.py` preserves old URLs, records the build revision and removes bundled fonts. Repository-wide settings, infrastructure and release history stay in `_quarto.yml`, `tools/`, `project/`, `.github/` and this root documentation.
 
-## Preservation, attribution and privacy
+A Pandoc-only preview is also available with `python tools/preview.py`. It does not replace a genuine Quarto render. `CHROMIUM_PATH` selects a browser binary. In network-restricted sandboxes, `INLINE_BROWSER=1` exercises already-local rendered assets without navigation; native HTTP navigation/search are still required in CI. Reports and screenshots go in ignored `qa/`.
 
-Keep source, data, tests and provenance with each topic so the material can be revised for another course year. The repository's version history preserves earlier editions; consult the current official College Board course description before adding a topic.
+The complete test gate includes all existing quantitative, foundations, categorical-table and categorical-chart regressions, plus Topic 1.2 arithmetic, all 14 quiz cases, four recoding modes, neutral/reset/keyboard behavior, print restoration, no-JavaScript answers, official navigation, all legacy URLs, source-layout checks and desktop/tablet/mobile layouts. GitHub Actions checks actual HTTP navigation, full-text search and the mobile menu before publishing.
 
-Do not publish student records, credentials, private notes, secure AP Classroom questions, or font files. Use original formative practice and label hypothetical data. Public official exam documents are linked rather than uploaded; third-party owners retain their rights. AP is a College Board trademark, and this independent site is not endorsed by the College Board.
+## Publish and verify
 
-There are no analytics, accounts, submissions, ads or persistent learner tracking. Choices remain in the current page and reset on reload. Hosting-provider security logs are separate. See the book's Sources and resources chapter for attribution.
+The existing **Build and publish Quarto book** workflow renders and validates, saves generated HTML in `docs/`, and publishes via GitHub Pages. It refuses to publish stale output when main changes during validation. Deployment then verifies the release commit, every topic, compatibility URLs, Topic 1.2 controls and data on the actual public site. A source commit or a successful build alone is not proof of live publication.
+
+Read [CONTRIBUTING.md](CONTRIBUTING.md), [topic status](project/topic-status.json), [roadmap](project/ROADMAP.md), and [CHANGELOG.md](CHANGELOG.md) before editing. Keep source, provenance and tests for future course iterations.
+
+## Privacy and attribution
+
+Do not publish real student records, credentials, private notes, secure AP Classroom questions or font files. Label hypothetical examples and distinguish the School A sample of 40 from the separate 24 quantitative commute values and 24 study-location responses. Original public dataset attributions remain in the source and book's resource chapter. There are no accounts, submissions, analytics or persistent quiz tracking. AP is a College Board trademark; this independent course book is not endorsed by the College Board.

@@ -1,0 +1,225 @@
+# Topic 1.4 Graphical Representations for One Categorical Variable
+
+::: {.chapter-lead}
+**Choose the graph to match the question.** A table holds the evidence; bar charts and pie charts reveal different aspects of the same categorical distribution.
+
+**Learning targets:** construct categorical bar charts and pie charts (**1.4.A; skill 3.A**), justify claims from graphs (**1.4.B; skill 4.B**), and compare one-variable categorical summaries across groups (**1.4.C; skill 4.A**).
+:::
+
+## One survey, three ways to see it
+
+In a **hypothetical School A study**, 40 sampled students each named one *usual main travel method*: Walk, Bicycle, Bus, or Car. We use exactly the same one-response data as [Topic 1.3](<../Topic 1.3/topic-1-3.qmd>), not the separate 24 numerical commute times in Topic 1.5.
+
+| Main travel method | Frequency | Relative frequency | Percentage |
+|:--|--:|--:|--:|
+| Walk | 8 | 0.20 | 20% |
+| Bicycle | 6 | 0.15 | 15% |
+| Bus | 18 | 0.45 | 45% |
+| Car | 8 | 0.20 | 20% |
+| **Total** | **40** | **1.00** | **100%** |
+
+The **observational units** are the 40 selected students; the **variable** is usual main travel method, which is categorical. The categories are mutually exclusive and exhaustive for these 40 recorded responses. A graph can change how we **display** these observations, but it must not change their counts.
+
+## 1 · Bar charts: compare category heights
+
+A **frequency bar chart** uses one **separate bar** per category; bar height (or length) gives the count. Draw four bars of equal width with heights **8, 6, 18, 8**. Label the vertical axis **Number of sampled students**, the horizontal axis **Usual main travel method**, and begin the vertical scale at **zero**.
+
+A **relative-frequency bar chart** uses the same categories but bar heights **20%, 15%, 45%, 20%**. Its vertical axis should say **Percent of sampled students**. The gap between bars emphasizes that categories are separate: bar charts are not histograms, which group numerical values into intervals (see Topic 1.5).
+
+**Design rule:** A truncated vertical axis can exaggerate relative bar lengths. For instance, a bar at 18 and one at 8 should be visibly 18 and 8 units long from the common zero baseline. A chart with an unexplained lower cutoff may mislead readers.
+
+::: {.callout-tip}
+## Count versus percentage
+Counts answer **how many**; percentages answer **what share of the relevant group**. Include sample size and units. A most-common (modal) category is not necessarily a **majority**: School A's Bus group contains 18/40 = 45%, which is less than 50%.
+:::
+
+## 2 · Pie charts: parts of one whole
+
+A **pie chart** partitions a circle into slices, one per category. The fraction of the circle's **area** occupied by a slice equals that category's relative frequency. The slice's central angle is:
+
+$$
+\text{Slice angle}=\frac{\text{category count}}{\text{total observations}}\times360^\circ.
+$$
+
+For School A's Bus category, the calculation is $(18/40)360^\circ=162^\circ$. That is **45% of the full circle**, representing 18 of the 40 sampled students.
+
+| Method | Share | Central angle |
+|:--|--:|--:|
+| Walk | 20% | $72^\circ$ |
+| Bicycle | 15% | $54^\circ$ |
+| Bus | 45% | $162^\circ$ |
+| Car | 20% | $72^\circ$ |
+| **Total** | **100%** | **$360^\circ$** |
+
+The chart works because **one student belongs to one category**, so all slices together fill one circle. Pie charts are less effective when categories overlap, the whole is unclear, there are many small categories, or two similar slices need precise comparison. Use **flat, two-dimensional pies**: decorative 3D perspective can distort perceived areas.
+
+### Interactive: construct three views from a frequency table
+
+Select School A or School B, then reveal **one category at a time** as a **count bar chart**, **percentage bar chart**, or **pie chart**. The companion table shows the complete data throughout; the reveal is a drawing exercise, not a change to the observations.
+
+<div class="interactive" data-cat-chart="builder">
+<p><strong>Static reference:</strong> School A count bars 8, 6, 18, 8; percentage bars 20, 15, 45, 20; pie angles 72°, 54°, 162°, 72°. These all represent the same 40 responses.</p>
+</div>
+
+**Try it:** Draw Bus in all three modes. Explain why its count is 18, its bar percentage is 45%, and its slice angle is 162°. Change the data source to School B; what changes, and what does not?
+
+## 3 · Compare groups with the right denominator
+
+A **different hypothetical School B sample** contains 60 students, each reporting the same variable in the same categories.
+
+| Method | School A count ($n=40$) | School A % | School B count ($n=60$) | School B % |
+|:--|--:|--:|--:|--:|
+| Walk | 8 | 20% | 9 | 15% |
+| Bicycle | 6 | 15% | 6 | 10% |
+| Bus | 18 | 45% | 18 | 30% |
+| Car | 8 | 20% | 27 | 45% |
+| **Total** | **40** | **100%** | **60** | **100%** |
+
+**Worked comparison—Bus.** Both samples contain exactly **18 bus riders**, yet these are **45% of School A's 40 sampled students** and **30% of School B's 60 sampled students**. School A's sample bus share is **15 percentage points higher**, even though the counts are equal. Dividing 18 by 40 to describe School B would be the **wrong denominator**.
+
+**Worked comparison—Car.** School A's count is 8 (20%); School B's is 27 (45%). School B's sample Car proportion exceeds School A's by **25 percentage points**. Neither school's sample Car or Bus percentage proves the exact proportion in the entire school population.
+
+When group sizes differ, **percentage bar charts** usually give the fairest comparison of category shares. Count bar charts remain valid for comparing numbers of sampled observations, but the different sample sizes must remain explicit. Use the **same axis scale** for the two distributions.
+
+### Interactive: switch counts and within-group percentages
+
+Both groups stay on screen. Switch the shared vertical axis, then select a category to see a properly labelled comparison. The text table gives the same information without relying on colour or animation.
+
+<div class="interactive" data-cat-chart="compare">
+<p><strong>Static reference:</strong> Bus 18 versus 18 students, but 45% versus 30%; Car 8 versus 27 students, but 20% versus 45%.</p>
+</div>
+
+## 4 · Write a supported statement
+
+A complete interpretation says **which students**, **which variable/category**, **which measure**, and **what values** support the claim.
+
+**Supported:** “Among the 40 sampled School A students, Bus was the most common usual main travel method, reported by **18 students (45%)**.”
+
+**Unsupported:** “A majority of all School A students take the bus.” Forty-five percent of the sample is **not** a majority, and the **population percentage is unknown**.
+
+**Supported comparison:** “Bus made up a greater proportion of the School A sample (**45%**) than of the School B sample (**30%**).” That describes samples, not an established difference between populations.
+
+### Preserve the meaning of ordered categories
+
+For a separate **hypothetical movie-satisfaction survey**, the ordered categories Very dissatisfied, Dissatisfied, Neutral, Satisfied, Very satisfied have counts **2, 4, 5, 12, 7** (total 30). Keep the bar-chart categories in their **natural order**. One-to-one recoding as **1–5** or **A–E** retains category identity and order, but does **not** establish equal numerical spacing between levels. Merging adjacent categories loses information. It remains an **ordered categorical variable**, even when its labels are numerals.
+
+## 5 · Chart audit: find the evidence or the flaw
+
+Each multiple-choice question starts with **no answer selected**. Check the explanation, clear a choice, or advance to the next case. Questions are original classroom exercises.
+
+<div class="interactive" data-cat-chart="audit">
+<p><strong>Static reference:</strong> Check a bar chart's zero baseline and axis units; a pie chart's disjoint slices and 100% total; comparisons' within-group denominators; natural category order; and whether the statement overgeneralizes from a sample.</p>
+</div>
+
+::: {.callout-warning}
+## Misleading visual design
+An axis beginning above zero, unmatched chart scales, missing group sizes, a 3D pie, or a pie that mixes overlapping choices can all obscure what the data actually show. Avoid these even when the arithmetic is correct.
+:::
+
+## Practice: construct, compare, explain
+
+All eight problems and solutions below are **original classroom exercises**. Try each before opening the worked answer.
+
+### 1. Build two School A bar charts
+
+Specify the heights, labels, and baseline for both the count and relative-frequency bar charts.
+
+::: {.solution}
+<details><summary>Show worked solution</summary>
+
+Use category order Walk, Bicycle, Bus, Car. **Count heights:** 8, 6, 18, 8 with vertical axis “Number of sampled students.” **Percentage heights:** 20%, 15%, 45%, 20% with vertical axis “Percent of 40 sampled School A students.” Both axes start at **zero**. Use equal-width separated bars and label the horizontal axis “Usual main travel method.”
+
+</details>
+:::
+
+### 2. Calculate every School A pie angle
+
+Show the four calculations and check that the slices form a circle.
+
+::: {.solution}
+<details><summary>Show worked solution</summary>
+
+Walk: $(8/40)360^\circ=72^\circ$. Bicycle: $(6/40)360^\circ=54^\circ$. Bus: $(18/40)360^\circ=162^\circ$. Car: $(8/40)360^\circ=72^\circ$. Check: **72+54+162+72=360 degrees**; the four sample proportions sum to 100%.
+
+</details>
+:::
+
+### 3. Calculate School B pie angles
+
+Find every percentage and slice angle from 9, 6, 18, and 27 responses out of 60.
+
+::: {.solution}
+<details><summary>Show worked solution</summary>
+
+Walk: $9/60=15\%$, angle **54°**. Bicycle: $6/60=10\%$, angle **36°**. Bus: $18/60=30\%$, angle **108°**. Car: $27/60=45\%$, angle **162°**. The percentages total **100%** and angles total **360°**. Use **60** as the denominator throughout.
+
+</details>
+:::
+
+### 4. Equal counts imply equal shares?
+
+Someone writes, “School A and School B each have 18 sampled bus riders, so bus use is equally common in their samples.” Evaluate.
+
+::: {.solution}
+<details><summary>Show worked solution</summary>
+
+The counts are both 18, but the sample proportions are **18/40=45%** and **18/60=30%**. The School A sample's bus share is **15 percentage points greater**. Equal counts with different denominators do not imply equal shares.
+
+</details>
+:::
+
+### 5. Compare sampled car users
+
+How much greater is School B's sample Car share than School A's, in **percentage points**?
+
+::: {.solution}
+<details><summary>Show worked solution</summary>
+
+School A: $8/40=20\%$. School B: $27/60=45\%$. The difference is **45%-20%=25 percentage points**. The data do not establish the exact difference between the full populations.
+
+</details>
+:::
+
+### 6. Audit a truncated scale
+
+A bar graph comparing counts Bus=18 and Car=8 begins its vertical axis at 7. What is wrong with that display?
+
+::: {.solution}
+<details><summary>Show worked solution</summary>
+
+Bars encode magnitude through **length from a baseline**. Omitting 0–7 makes the visible lengths 11 and 1 units, visually exaggerating the difference. A conventional count bar chart should start its y-axis at **0**, with bars of heights 18 and 8 and a labelled scale.
+
+</details>
+:::
+
+### 7. Order the movie ratings
+
+Why should Very dissatisfied → Very satisfied remain in order after one-to-one recoding as A–E? Does A–E make the variable quantitative?
+
+::: {.solution}
+<details><summary>Show worked solution</summary>
+
+The five levels have a meaningful **order**, so preserving it lets viewers see the satisfaction pattern from low to high. Recoding levels as **A, B, C, D, E** changes labels, not counts or category meaning; it does **not** make the variable quantitative or imply equal distances between levels.
+
+</details>
+:::
+
+### 8. Study-location pie or bar?
+
+A separate hypothetical sample of 24 students reports Home 9, Library 8, Cafe 4, Other 3. Find Home's pie angle. Is Home a majority? Which graph better distinguishes Home from Library?
+
+::: {.solution}
+<details><summary>Show worked solution</summary>
+
+Home: $9/24=37.5\%$ and $(9/24)360^\circ=135^\circ$. It is the **modal category**, but not a **majority** because 37.5% is less than 50%. A labelled **bar chart** more clearly distinguishes the close frequencies **9 versus 8** than a pie chart's similar slice angles.
+
+</details>
+:::
+
+## Before moving on
+
+You should be able to construct a labelled categorical bar chart or pie chart, show **what its heights or slice areas mean**, choose **within-group proportions** for sensible comparisons, and explain exactly which claims the graph supports. Proceed to [quantitative graphs](<../Topic 1.5/topic-1-5.qmd#individual-values>) when the variable is numerical, or return to [categorical tables](<../Topic 1.3/topic-1-3.qmd>) to review denominators.
+
+## Source and data provenance
+
+Based on the **College Board AP Statistics Course and Exam Description effective Fall 2026**, [Topic 1.4, printed p. 35](https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf), learning objectives 1.4.A–C. All worked practice and graph tools are independently authored. School A, School B, study locations and movie satisfaction are **hypothetical datasets**, stored with provenance in [data/foundations.json](<../Shared/data/foundations.json>). No secure AP Classroom content or actual student records are used.

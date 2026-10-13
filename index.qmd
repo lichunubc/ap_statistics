@@ -8,61 +8,63 @@ MAPLE HILL SCHOOL · CHUN LI · AP STATISTICS
 
 A growing course book for asking good questions, choosing useful representations, and supporting conclusions with evidence. Read the explanations, explore an activity, and check your reasoning against worked solutions.
 
-[Start with Topic 1.1](topic-1-1.qmd){.start-link} [Explore categorical tables](topic-1-3.qmd){.secondary-link} [Explore categorical graphs](topic-1-4.qmd){.secondary-link} [Open the histogram lab](histogram-lab.qmd){.secondary-link}
+[Start with Topic 1.1](<Unit 1/Topic 1.1/topic-1-1.qmd>){.start-link} [Study Topic 1.2 Variables](<Unit 1/Topic 1.2/topic-1-2.qmd>){.secondary-link}
 :::
 
-## Choose your starting point
+## Unit 1: Exploring One-Variable Data and Collecting Data
+
+Each topic has its own chapter, official College Board title, and editable source folder. Topics 1.1–1.6 are available below; this is not yet the entire unit or course.
 
 ::: {.route-grid}
 ::: {.route-card}
-**1.1 · Questions, populations, and samples**
+**Topic 1.1 Introducing Statistics: What Can We Learn from Data?**
 
-Identify the study's purpose, distinguish a group from its size, and write a contextual conclusion.
+Questions, observational units, populations, samples, and evidence in context.
 
-[Start the foundations →](topic-1-1.qmd)
+[Open Topic 1.1 →](<Unit 1/Topic 1.1/topic-1-1.qmd>)
 :::
 ::: {.route-card}
-**1.3 · Categorical frequencies and proportions**
+**Topic 1.2 Variables**
 
-Count one-response categories, practise correct denominators, and justify claims using the table.
+Identify variables and summaries; classify categorical, discrete, and continuous values; investigate numerical category codes.
 
-[Explore categorical tables →](topic-1-3.qmd)
+[Open Topic 1.2 →](<Unit 1/Topic 1.2/topic-1-2.qmd>)
 :::
 ::: {.route-card}
-**1.4 · Categorical graphs and comparison**
+**Topic 1.3 Tabular Representation and Summary Statistics for One Categorical Variable**
 
-Build bar and pie charts, compare relative frequencies across samples, and check graph-based claims.
+Build frequency and relative-frequency tables, use correct denominators, and justify contextual claims.
 
-[Explore categorical graphs →](topic-1-4.qmd)
+[Open Topic 1.3 →](<Unit 1/Topic 1.3/topic-1-3.qmd>)
 :::
 ::: {.route-card}
-**1.5 · Represent quantitative data**
+**Topic 1.4 Graphical Representations for One Categorical Variable**
 
-Build dotplots, stem-and-leaf plots, and histograms while keeping the observations connected.
+Build bar and pie charts, compare samples, and audit graphical claims.
 
-[Plot individual values →](individual-values.qmd)
+[Open Topic 1.4 →](<Unit 1/Topic 1.4/topic-1-4.qmd>)
 :::
 ::: {.route-card}
-**1.6 · Describe and justify**
+**Topic 1.5 Graphical Representations for One Quantitative Variable**
 
-Explain shape, center, spread, and unusual features. Learn what a graph can—and cannot—establish.
+The original dotplot, stem-and-leaf, histogram construction, and histogram laboratory lessons.
 
-[Describe a distribution →](describing.qmd)
+[Open Topic 1.5 →](<Unit 1/Topic 1.5/topic-1-5.qmd>)
 :::
 ::: {.route-card}
-**Practice with feedback**
+**Topic 1.6 Descriptions for One Quantitative Variable Distributions**
 
-Try histogram construction and interpretation questions. Reveal detailed answers after making your own attempt.
+The original distribution descriptions, worked examples, and evidence checkpoints.
 
-[Quantitative-data practice →](practice.qmd)
+[Open Topic 1.6 →](<Unit 1/Topic 1.6/topic-1-6.qmd>)
 :::
 :::
 
-**In this sequence:** Topics 1.1, 1.3 and 1.4 have course-book chapters. Topic 1.2 is tracked independently and is not yet in navigation. Topics 1.5–1.6 retain their original chapter addresses.
+[Additional quantitative-data practice](<Unit 1/Shared/practice.qmd>) · [Sources and publication notes](resources.qmd)
 
-## One dataset, three views
+## Keep the datasets distinct
 
-The quantitative-data chapters use a **hypothetical sample of 24 students' one-way commute times**, recorded in whole minutes. This is separate from the 40-response School A travel-method survey in the foundations sequence. Changing a display does not change its observations.
+The School A categorical example describes a **hypothetical sample of 40 students**: Walk 8, Bicycle 6, Bus 18, and Car 8. The quantitative graph lessons use a **separate hypothetical sample of 24 one-way commute times**. Neither dataset is a record of actual Maple Hill School students. Changing the display never changes its observations.
 
 <div data-chart="commute-dot" class="chart-frame"><p>Commute times: 5, 8, 10, 12, 12, 14, 15, 16, 18, 18, 20, 20, 22, 24, 25, 26, 28, 30, 32, 35, 38, 42, 48, 58 minutes.</p></div>
 
@@ -70,8 +72,6 @@ The quantitative-data chapters use a **hypothetical sample of 24 students' one-w
 
 Read an explanation, predict what will happen, and then use the activity. For construction questions, draw on paper before opening **Show solution**. A correct answer includes appropriate labels, a sensible scale, and reasoning in context—not only arithmetic.
 
-The activities run in your browser: no account, notebook kernel, or software installation is required. On a phone, open the chapter menu at the top. Your choices are not submitted to a teacher and are cleared when you reload the page. Printing shows reference states and expands solutions.
+The activities run in your browser without an account or notebook kernel. Choices are not submitted to a teacher and reset when you reload the page. Core explanations and worked answers remain readable without JavaScript. Printing expands solutions and includes activity reference states.
 
-This is an evolving course resource, not yet a complete AP Statistics textbook. New chapters will extend the existing sequence rather than replace it. The source chapters, data, activity code, and tests are retained in the repository for future classes.
-
-[Sources and publication notes](resources.qmd).
+Existing chapter addresses remain available. The editable Unit 1 chapters, data, code, and tests are organized in the repository's **Unit 1** folder, with one subfolder per topic and a **Shared** folder for material reused across topics.

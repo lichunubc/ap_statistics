@@ -1,0 +1,57 @@
+[
+  {
+    "original_path": "assets/site.js",
+    "path": "Unit 1/Shared/assets/site.js",
+    "sha256": "f219ec9d8309d003768b43b290e27e3fd3d00ac3bc7ac8c8df9fb0eaa446f339"
+  },
+  {
+    "original_path": "assets/foundations.css",
+    "path": "Unit 1/Topic 1.1/assets/foundations.css",
+    "sha256": "7c78ea8787b52850aa829e03b3f81808f051220fd21f97aed554116300871ef1"
+  },
+  {
+    "original_path": "assets/categorical-charts.css",
+    "path": "Unit 1/Topic 1.4/assets/categorical-charts.css",
+    "sha256": "0cd32aead6450e4b052eaeabcb232ce37bdbd9afb804997f41b0c0ddc15da82f"
+  },
+  {
+    "original_path": "assets/site.css",
+    "path": "Unit 1/Shared/assets/site.css",
+    "sha256": "facd17cdc6cb1b40efa01def397dcb9cb575c0329563cb466c8875e3006d717d"
+  },
+  {
+    "original_path": "assets/foundations.js",
+    "path": "Unit 1/Topic 1.1/assets/foundations.js",
+    "sha256": "3c248fa7a13531f9aa24180c7102d6419143961a2476315a3d75223d829b997a"
+  },
+  {
+    "original_path": "assets/categorical-tables.css",
+    "path": "Unit 1/Topic 1.3/assets/categorical-tables.css",
+    "sha256": "fbe6117aae2dc1e74ceb9449c248eab318df5cf45c966169130001059eec1780"
+  },
+  {
+    "original_path": "assets/categorical-tables.js",
+    "path": "Unit 1/Topic 1.3/assets/categorical-tables.js",
+    "sha256": "073bb5e48e8ef4a155d28475dedd09e1403d749e340ac280018d3320e668ce37"
+  },
+  {
+    "original_path": "assets/categorical-charts.js",
+    "path": "Unit 1/Topic 1.4/assets/categorical-charts.js",
+    "sha256": "d13b8173b17740c19916c7f962e885ae67469ede82bbcfa7aaed33e68760925e"
+  },
+  {
+    "original_path": "assets/data.js",
+    "path": "Unit 1/Shared/assets/data.js",
+    "sha256": "9a93c972d5a8f5d196881c197af52afa32957c1a4638d74ac6c147795ca1d480"
+  },
+  {
+    "original_path": "data/foundations.json",
+    "path": "Unit 1/Shared/data/foundations.json",
+    "sha256": "59ce750b477f7b85bad2bd336a4cbb285d0fea083d7c6a936b7dd8d5f06525ed"
+  },
+  {
+    "original_path": "data/commute-times.csv",
+    "path": "Unit 1/Shared/data/commute-times.csv",
+    "sha256": "76819e460c4f60d05126e33497fce0755acbce642f3cce1dcfd8926806c59579"
+  }
+]

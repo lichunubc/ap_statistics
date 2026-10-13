@@ -1,0 +1,21 @@
+{
+  "id": "1.5",
+  "title": "Graphical Representations for One Quantitative Variable",
+  "learning_objectives": [
+    "1.5.A"
+  ],
+  "essential_knowledge": [
+    "1.5.A.1",
+    "1.5.A.2",
+    "1.5.A.3",
+    "1.5.A.4"
+  ],
+  "ced_printed_pages": "36",
+  "curriculum": {
+    "name": "AP Statistics Course and Exam Description",
+    "effective": "Fall 2026",
+    "checked": "2026-10-13",
+    "source": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf"
+  },
+  "note": "Official title retained verbatim. Lesson source and topic-specific files are in this folder; shared assets/data are in ../Shared."
+}

@@ -1,0 +1,10 @@
+/* Foundations components extend, rather than replace, the original site styles. */
+.foundation-grid svg,.foundation-print svg{display:block;width:100%;height:auto;max-width:740px;margin:auto}
+.foundation-grid circle.unselected,.foundation-print circle.unselected{fill:#e1e9ea;stroke:#a3b6bc;stroke-width:.5}
+.foundation-grid circle.selected,.foundation-print circle.selected{fill:#087e83;stroke:#173e4b;stroke-width:1.1}
+[data-foundation] h3{margin-top:.15rem}
+[data-foundation] [data-question]{font-weight:600}
+[data-foundation] .choice-list button{line-height:1.5}
+.foundation-print{display:none}
+.topic-meta{font-size:.88rem;color:var(--muted)}
+@media print{[data-foundation]{display:none!important}.foundation-print{display:block;border:1px solid #ccdada;padding:1rem;margin:1rem 0}.foundation-print svg{max-width:450px}details{display:block!important}details>summary{color:#111}}

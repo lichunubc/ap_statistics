@@ -1,0 +1,310 @@
+# Topic 1.2 Variables
+
+::: {.chapter-lead}
+**Before calculating, identify what each value means.** A number can be a measurement, a count, a category code, or a summary of many observations. Those roles are not interchangeable.
+
+**Learning targets:** identify observational units, variables, parameters, and statistics (**1.2.A**); distinguish categorical and quantitative variables (**1.2.B**); and distinguish discrete and continuous quantitative variables (**1.2.C**).
+:::
+
+## Start with the School A study {#school-a-study}
+
+Recall the hypothetical school from Topic 1.1. The population is **all 1,000 students enrolled at School A this term**. An investigator randomly selects **40 students**, all of whom respond, and records each student's usual main travel method. “Main” means the method used for the greatest distance on a typical school day.
+
+The fixed sample contains **Walk 8, Bicycle 6, Bus 18, and Car 8**. Its recorded commute times total **960 minutes**. We know these sample summaries; we have **not** been given the population's bus proportion or mean commute time.
+
+::: {.callout-note}
+## Data provenance
+School A is fictional, not Maple Hill School. These are the same hypothetical summaries used in the earlier chapters, not newly collected observations. The 40 individual commute times are **not supplied**; do not reconstruct them from their total. This sample is separate from the **24 commute times in Topic 1.5** and the **24 study-location responses in Topics 1.3–1.4**.
+:::
+
+## Observational unit, variable, and value {#units-variables-values}
+
+An **observational unit** is the individual or item on which information is recorded. A **variable** is a characteristic that can differ from one unit to another. A **value** is the particular outcome recorded for a variable on one unit.
+
+| Role | In the School A study |
+|:--|:--|
+| Observational unit | One selected School A student |
+| Variable | That student's usual main travel method |
+| Possible values | Walk, Bicycle, Bus, Car, or another permitted method |
+| One observed value | Bus for one particular student |
+| A second variable | That student's one-way commute time, in minutes |
+
+“Bus” is a value, not the name of the variable. “Students” names the units, not the characteristic being measured. A good variable description includes **what is recorded and, for a measured quantity, its units**.
+
+### Read a data table by rows and columns
+
+The following **four illustrative records** repeat the examples from Topic 1.1. They illustrate table structure; they are **not a raw-data extract of the fixed 40-response sample**.
+
+| Student label | Main travel method | One-way commute time (minutes) |
+|:--|:--|--:|
+| A | Bus | 24.0 |
+| B | Walk | 12.5 |
+| C | Car | 18.0 |
+| D | Bus | 31.5 |
+
+Each row represents **one student**. The last two columns record **two study variables** on each student. The first column is an identifier, used to distinguish records. Recording two variables on four students still gives **four observational units**, not eight.
+
+An identifier such as student number 1042 is a label, not a measured amount. Differences or averages of identifier numbers usually have no interpretation. Likewise, a characteristic is still a variable even when, by coincidence, every observed unit has the same recorded value.
+
+[Illustrative records and their data dictionary](<data/README.md>) · [CSV](<data/illustrative-records.csv>)
+
+## Categorical or quantitative? {#categorical-quantitative}
+
+A **categorical** (qualitative) variable records group membership or a label. A **quantitative** (numerical) variable records an amount obtained by counting or measuring.
+
+Ask **“What does a value represent?”**, rather than “Does it contain digits?”
+
+| Variable recorded for each unit | Type | Reason |
+|:--|:--|:--|
+| A student's main travel method | Categorical | Bus and Walk identify categories. |
+| A student's one-way commute time | Quantitative | The value measures elapsed time, in minutes. |
+| A student's number of bus trips last week | Quantitative | The value counts trips; a difference of two means two more trips. |
+| The route number of a bus used for one trip | Categorical | Route 10 and Route 20 identify routes; 20 does not mean twice as much travel. |
+| A movie rating: Very dissatisfied through Very satisfied | Categorical, with an order | The labels express ordered levels, not measured distances between them. |
+
+Some categorical variables have a natural order. That order does **not** establish equal numerical gaps. Coding five satisfaction levels as 1–5, or relabelling them A–E, does not by itself turn satisfaction into a measured quantitative variable.
+
+### A frequency is not the original variable
+
+For School A, **main travel method** is categorical. The frequency **18** is a numerical summary: it counts students whose recorded value is Bus. A numerical frequency table does not make the underlying travel-method variable quantitative.
+
+The unit also matters. “Does this **student** use the bus?” gives a categorical Yes/No variable. “How many bus users attend this **school**?” gives a quantitative count, with a school as the observational unit.
+
+## Discrete or continuous? {#discrete-continuous}
+
+Classify a variable as categorical or quantitative **first**. Then, for a quantitative variable, ask which values are possible.
+
+A **discrete quantitative variable** has a finite or countably infinite set of possible values. A **continuous quantitative variable** can, in its measurement model, take any value within an interval.
+
+| Variable | Classification | Explanation |
+|:--|:--|:--|
+| Number of late arrivals during a five-day school week | Discrete | Possible counts are 0, 1, 2, 3, 4, and 5. A count of 2.6 arrivals is not possible. |
+| Number of pages in a book | Discrete | Pages are counted in whole numbers. |
+| An examination score awarded only in half-point steps | Discrete | Values lie on a fixed grid: 0, 0.5, 1, 1.5, and so on. Discrete values need not be integers. |
+| Actual elapsed time for a commute | Continuous | In principle, durations between 12 and 13 minutes are possible. |
+| Actual mass of a parcel | Continuous | Mass is measured on a continuum, subject to measurement precision. |
+
+### Rounding does not change the underlying quantity
+
+A stopwatch may display a time of **12 minutes** after rounding. The underlying elapsed time is still treated as continuous: it could have been 11.8 or 12.2 minutes. The **rounded recorded values** occur on a discrete grid, but the **underlying variable being measured** is continuous. State which one the question asks about.
+
+Similarly, “has a decimal” does not prove continuous, and “is written as a whole number” does not prove discrete. Classification depends on the variable's possible values and recording rule.
+
+## Variable-type laboratory {#variable-lab}
+
+Classify each recorded characteristic. Choose an answer and press **Check answer**; then read the explanation. Each new case begins with no selection, and no response is saved or submitted.
+
+<div class="interactive" data-variables="classify">
+<p><strong>Without JavaScript:</strong> Main travel method and route number are categorical; the number of trips is discrete quantitative; actual elapsed time is continuous quantitative. Use the tables above and the worked practice below to explain why.</p>
+</div>
+
+## Population summaries and sample summaries {#parameters-statistics}
+
+A **parameter** is a numerical attribute or summary of a variable for the **population**. A **statistic** is a numerical attribute or summary of a variable for a **sample**.
+
+The distinction is about **which group the number describes**, not how large the number is, whether it is known, or whether it is written as a percentage.
+
+| Quantity | Population parameter | Sample statistic |
+|:--|:--|:--|
+| Proportion mainly travelling by bus | $p$: proportion among all 1,000 School A students | $\hat p$: proportion among the 40 sampled students |
+| Mean one-way commute time | $\mu$: mean among all 1,000 School A students | $\bar x$: mean among the 40 sampled students |
+
+Read $\hat p$ as **“p-hat”**, $\mu$ as **“mu”**, and $\bar x$ as **“x-bar.”** These are common symbols, not substitutes for identifying the relevant group and variable. Recall that $N$ and $n$ denote population size and sample size, respectively; they are not the population and sample themselves.
+
+### Worked example: the sample bus proportion
+
+Of the 40 sampled students, 18 report Bus. Therefore
+
+$$\hat p=\frac{18}{40}=0.45=45\%.$$
+
+This is a **statistic**, because it describes the **40 sampled School A students**. The population parameter $p$ is the proportion of **all 1,000 enrolled School A students** who mainly travel by bus. Its value has not been supplied.
+
+Do not write $18/1000$ for the sample proportion. The numerator counts bus riders in the sample, so the corresponding denominator is the sample size, 40. Do not assert that exactly $0.45(1000)=450$ students in the population use the bus: 450 would be an estimate based on the sample, not an observed population count.
+
+### Worked example: the sample mean
+
+The fixed sample's total commute time is 960 minutes, so
+
+$$\bar x=\frac{960\text{ minutes}}{40\text{ students}}=24\text{ minutes per student}.$$
+
+The sample mean is **24 minutes**, a statistic. The population mean $\mu$ remains unknown. The fact that Student A in the illustrative table also has a 24-minute commute does not make that individual observation a sample mean; the two values play different roles.
+
+A statistic can differ between samples. A population parameter refers to a fixed population and variable for the stated period, so drawing another sample does not change that target parameter.
+
+::: {.callout-tip}
+## Known does not mean statistic
+A census can reveal a population parameter. For example, if every one of the 80 parcels in a specified shipment is weighed, their mean mass is a **parameter for that shipment**, even though its numerical value is known. Identify the population before deciding.
+:::
+
+### Summary-role checkpoint
+
+Distinguish a population summary, a sample summary, and a single observation. The group described by the number is the decisive evidence.
+
+<div class="interactive" data-variables="summary">
+<p><strong>Without JavaScript:</strong> The School A sample's 45% and 24-minute mean are statistics. The corresponding full-school summaries are parameters. One student's recorded time is an individual datum, not a summary of the sample.</p>
+</div>
+
+## Relabelling categories does not create a measurement {#category-codes}
+
+Suppose we assign codes to the same four travel categories. The lab below leaves the **40 observations' category memberships and counts unchanged**, but changes the labels.
+
+<div class="interactive" data-variables="recode">
+<p>School A counts remain Walk 8, Bicycle 6, Bus 18, and Car 8. Codes 1, 2, 3, 4 give an arithmetic code average of 2.65; codes 4, 1, 9, 2 give 5.40. Neither average measures a travel method. The Bus proportion remains 18/40 = 45%.</p>
+</div>
+
+Under codes Walk=1, Bicycle=2, Bus=3, Car=4, the arithmetic code average is
+
+$$\frac{8(1)+6(2)+18(3)+8(4)}{40}=2.65.$$
+
+With Walk=4, Bicycle=1, Bus=9, Car=2, it becomes **5.40**. Neither number means an “average travel method.” By contrast, the **Bus proportion stays 45%** under either one-to-one relabelling.
+
+There is one useful special construction: define a **numerical indicator** equal to 1 for Bus and 0 otherwise. Its mean is $18/40=0.45$, the Bus proportion. This works because the coding explicitly counts membership in a chosen category. It does not justify taking the mean of arbitrary category codes, and combining all non-Bus categories loses their separate identities.
+
+## Data can also come from media {#media-data}
+
+A datum need not begin as a number in a spreadsheet. A photograph, audio clip, video, or written response can provide information about an observational unit. Define a characteristic and a consistent recording rule before classifying it.
+
+| Study material and observational unit | Recorded characteristic | Type |
+|:--|:--|:--|
+| One photograph of a leaf | Leaf-edge category: smooth or toothed | Categorical |
+| One recorded bird call | Actual call duration, in seconds | Continuous quantitative |
+| One fixed-length traffic video clip | Number of bicycles passing a marked point | Discrete quantitative |
+| One written survey response | Theme assigned using a stated coding rule | Categorical |
+
+The recording medium alone does not determine the variable type. A photograph could support either a category such as leaf shape or a measurement such as leaf length, provided an appropriate scale is available.
+
+## Practice: identify and justify {#practice}
+
+These ten exercises are original classroom practice. Name the unit or group and give a reason, rather than only writing a classification label.
+
+### 1. Rows, columns, and sample size
+
+A researcher selects 12 library books and records each book's catalogue number, binding type, number of pages, and mass in grams. Identify the observational unit, sample size, identifier, and the types of the other three variables.
+
+::: {.solution}
+<details><summary>Show full solution</summary>
+
+The observational unit is **one selected library book**, and $n=12$. Catalogue number is an **identifier**, not a measured amount. Binding type is **categorical**; page count is **discrete quantitative**; actual mass is **continuous quantitative**. Recording several characteristics does not increase the number of books sampled.
+
+</details>
+:::
+
+### 2. A number that is a label
+
+For each bus trip, a student records route number 10, 20, or 25 and travel duration in minutes. Classify both variables and explain why the presence of digits is not sufficient.
+
+::: {.solution}
+<details><summary>Show full solution</summary>
+
+The observational unit is **one bus trip**. Route number is **categorical**, because the number identifies a route; differences and ratios of route numbers do not measure travel. Actual duration is **continuous quantitative**, because it measures elapsed time. Digits can encode either a label or an amount.
+
+</details>
+:::
+
+### 3. Discrete does not mean “no decimals”
+
+An assessment awards scores from 0 to 10 in half-point steps. A separate variable is the actual time needed to finish it. Classify both, even when the time is recorded to the nearest minute.
+
+::: {.solution}
+<details><summary>Show full solution</summary>
+
+The score is **discrete quantitative**: its possible values are the 21 values $0,0.5,1,\ldots,10$. The underlying elapsed time is **continuous quantitative**. Rounding restricts the displayed values, not the underlying duration. The classification would need to mention the discrete recording grid if the question specifically asked about the rounded recorded variable.
+
+</details>
+:::
+
+### 4. Same sample, two statistics
+
+Use School A's 40-student sample, its 18 Bus responses, and its total commute time of 960 minutes. Calculate and interpret $\hat p$ and $\bar x$, then identify their population counterparts.
+
+::: {.solution}
+<details><summary>Show full solution</summary>
+
+$\hat p=18/40=0.45$: **45% of the sampled School A students mainly travel by bus**. $\bar x=960/40=24$ minutes: **the sampled students' mean one-way commute time is 24 minutes**. Both are statistics. Their population counterparts are $p$ and $\mu$ for **all 1,000 enrolled School A students this term**; neither population value is supplied.
+
+</details>
+:::
+
+### 5. Fix the denominator and the claim
+
+A student writes, “There are 1,000 students at School A, so the bus proportion is $18/1000=1.8\%$.” Identify the problem and write a supported statement.
+
+::: {.solution}
+<details><summary>Show full solution</summary>
+
+The 18 Bus responses were counted among the **40 sampled students**, not all 1,000 students. The matching denominator is 40, giving **45%**. A supported statement is: “Among the 40 sampled School A students, 45% mainly travel by bus.” The full population's bus proportion is unknown from these summaries alone.
+
+</details>
+:::
+
+### 6. A known population parameter
+
+A workshop has 80 finished parcels in a shipment. Every parcel is weighed, and the mean is 2.40 kg. In a separate quality check, 10 of those parcels have a mean of 2.31 kg. With the shipment as the population, classify both means.
+
+::: {.solution}
+<details><summary>Show full solution</summary>
+
+The **2.40 kg** mean describes **all 80 parcels in the specified shipment**, so it is a population **parameter**. The **2.31 kg** mean describes only the **10 selected parcels**, so it is a sample **statistic**. Being known does not change the parameter's role, and the two means need not be equal.
+
+</details>
+:::
+
+### 7. Ordered categories and arbitrary codes
+
+A movie survey uses Very dissatisfied, Dissatisfied, Neutral, Satisfied, and Very satisfied. Explain what is preserved when the labels are changed from 1–5 to A–E, and what is not justified by the numerical codes.
+
+::: {.solution}
+<details><summary>Show full solution</summary>
+
+A one-to-one relabelling preserves **category membership, frequencies, proportions, and the intended order**, provided the code key is retained. It does not establish equal measured gaps between levels. The recorded satisfaction levels remain **ordered categorical values**; numerical coding alone does not justify interpreting their arithmetic mean as a measured amount of satisfaction.
+
+</details>
+:::
+
+### 8. Verify the recoding calculation
+
+For Walk 8, Bicycle 6, Bus 18, and Car 8, use codes 4, 1, 9, and 2. Find the arithmetic average of these codes and the Bus proportion. Explain which result describes bus use meaningfully.
+
+::: {.solution}
+<details><summary>Show full solution</summary>
+
+The code average is $(8\cdot4+6\cdot1+18\cdot9+8\cdot2)/40=216/40=5.40$. It depends on arbitrary labels and has **no travel-method interpretation**. The Bus proportion is $18/40=0.45=45\%$, which meaningfully describes the share of sampled students in the Bus category and is unchanged by the relabelling.
+
+</details>
+:::
+
+### 9. Change the observational unit
+
+In Study I, each student's record states whether they were late yesterday. In Study II, each school day's record gives the number of late students. Identify the unit and variable type in each study.
+
+::: {.solution}
+<details><summary>Show full solution</summary>
+
+In **Study I**, the unit is **one student**, and late yesterday (Yes/No) is **categorical**. In **Study II**, the unit is **one school day**, and the number of late students is **discrete quantitative**. Both concern lateness, but the units and recorded characteristics differ.
+
+</details>
+:::
+
+### 10. Extract two variables from a recording
+
+A researcher makes 20 fixed-length traffic video clips at one intersection. For each clip, they record the weather category and the number of bicycles passing a marked line. Identify the observational unit, sample size, variable types, and one possible datum.
+
+::: {.solution}
+<details><summary>Show full solution</summary>
+
+The unit is **one video clip**, and there are **20 clips**, so the sample size is 20 for a study of those sampled clips. Weather category is **categorical**; number of passing bicycles is **discrete quantitative**. One possible datum is “Clip 7 shows 4 bicycles passing the marked line.” Neither the number of recorded characteristics nor the number of bicycles changes the count of observational units. A population-level claim would also require defining the target collection of clips or observation periods and considering how these clips were selected.
+
+</details>
+:::
+
+## Before moving on
+
+For a new study, identify **the observational unit**, **the characteristic and its units or categories**, and **the group described by each numerical summary**. Then classify the variable and justify your choice from its meaning and possible values.
+
+Continue to [Topic 1.3 Tabular Representation and Summary Statistics for One Categorical Variable](<../Topic 1.3/topic-1-3.qmd>) to organize categorical observations without losing their context.
+
+## Source and reusable materials
+
+Aligned with the [College Board AP Statistics Course and Exam Description, effective Fall 2026](https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf#page=37), **Topic 1.2, printed pages 32–33**, objectives **1.2.A–C** (Skill 2.A). Explanations, activities, and practice are independently authored for Chun Li's Maple Hill School course.
+
+The shared hypothetical summaries and original provenance are in [foundations.json](<../Shared/data/foundations.json>). The four illustrative rows have their own [data dictionary](<data/README.md>). Editable QMD, activity code, objective mappings, and tests are kept together in this topic's repository folder. No actual student records or secure AP Classroom material are used.

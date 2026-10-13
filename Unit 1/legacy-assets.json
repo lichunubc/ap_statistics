@@ -1,0 +1,14 @@
+{
+  "assets/site.js": "Unit 1/Shared/assets/site.js",
+  "assets/foundations.css": "Unit 1/Topic 1.1/assets/foundations.css",
+  "assets/categorical-charts.css": "Unit 1/Topic 1.4/assets/categorical-charts.css",
+  "assets/site.css": "Unit 1/Shared/assets/site.css",
+  "assets/foundations.js": "Unit 1/Topic 1.1/assets/foundations.js",
+  "assets/categorical-tables.css": "Unit 1/Topic 1.3/assets/categorical-tables.css",
+  "assets/categorical-tables.js": "Unit 1/Topic 1.3/assets/categorical-tables.js",
+  "assets/categorical-charts.js": "Unit 1/Topic 1.4/assets/categorical-charts.js",
+  "assets/data.js": "Unit 1/Shared/assets/data.js",
+  "assets/footer.html": "Unit 1/Shared/assets/footer.html",
+  "data/foundations.json": "Unit 1/Shared/data/foundations.json",
+  "data/commute-times.csv": "Unit 1/Shared/data/commute-times.csv"
+}

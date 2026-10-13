@@ -1,0 +1,53 @@
+## Histogram laboratory {#histogram-lab}
+
+::: {.chapter-lead}
+**Learning goal:** Explain why different histograms can represent exactly the same data.
+:::
+
+### Change the bins, not the observations
+
+This lab always uses the same **24 commute times**. The numerical span remains **0–60 minutes**. Choose either a bin width or a number of equal-width bins. Switch the vertical axis between counts and percentages.
+
+Click a bar—or focus it and press Enter—to inspect its interval and recorded values. The width and bin-count controls are alternative ways to specify the same partition.
+
+<div class="interactive" data-widget="bin-lab"><p>At width 10 minutes there are six bins with frequencies 2, 8, 7, 4, 2, 1. JavaScript enables the adjustable version.</p></div>
+
+::: {.callout-note}
+### A fair visual comparison
+The frequency scale remains 0–24, or the percentage scale 0–100%. Changing bins does not quietly rescale the vertical axis. Some bars may look short; every graph still represents all 24 students.
+:::
+
+### Investigate before revealing
+
+**1. Compare widths of 5, 10, and 20 minutes.** Which view shows more local detail? Which could conceal gaps or separate concentrations?
+
+<details class="solution"><summary>Show explanation</summary>
+
+Width 5 gives **12 bins**; width 10 gives **6**; width 20 gives **3**. Narrow bins show more local detail but can look irregular. Wide bins smooth over detail and may hide gaps or multiple concentrations. No single appearance tells the whole story.
+
+</details>
+
+**2. With width 10, inspect the third bin. Does height 7 mean seven students recorded exactly 20 minutes?**
+
+<details class="solution"><summary>Show explanation</summary>
+
+No. The interval contains 20, 20, 22, 24, 25, 26, and 28 minutes. Only two values equal 20. The panel's exact values come from the underlying data supplied to the lab—not from the bar itself.
+
+</details>
+
+**3. Change the number of bins to 9. What changes, and what stays fixed?**
+
+<details class="solution"><summary>Show explanation</summary>
+
+The width becomes $60/9\approx6.667$ minutes. Boundaries, counts per bin, and appearance change. The 24 recorded values, minimum 5, and maximum 58 do not. Boundary labels may be rounded; assignment uses unrounded boundaries.
+
+</details>
+
+### A gap can disappear from the histogram
+
+This separate clinic dataset has concentrations near 5–12 and 24–30 minutes and one unusually long wait of 55 minutes.
+
+<div data-chart="cluster-dot" class="chart-frame"><p>No clinic times lie strictly between 12 and 24 minutes, or between 30 and 55 minutes.</p></div>
+<div data-chart="cluster-hist" class="chart-frame"><p>Twenty-minute bins give counts 10, 9, and 1. All bins are nonempty despite the gaps in the raw data.</p></div>
+
+A **zero-frequency bin** establishes that its entire interval contains no observations. The reverse does not hold: nonempty bins may contain smaller empty regions. Coarse bins can hide gaps visible in individual-value displays.

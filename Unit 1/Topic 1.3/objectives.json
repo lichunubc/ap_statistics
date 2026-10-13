@@ -1,0 +1,22 @@
+{
+  "id": "1.3",
+  "title": "Tabular Representation and Summary Statistics for One Categorical Variable",
+  "learning_objectives": [
+    "1.3.A",
+    "1.3.B"
+  ],
+  "ced_printed_pages": "34",
+  "essential_knowledge": [
+    "1.3.A.1",
+    "1.3.A.2",
+    "1.3.B.1",
+    "1.3.B.2"
+  ],
+  "curriculum": {
+    "name": "AP Statistics Course and Exam Description",
+    "effective": "Fall 2026",
+    "checked": "2026-10-13",
+    "source": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf"
+  },
+  "note": "Official title retained verbatim. Lesson source and topic-specific files are in this folder; shared assets/data are in ../Shared."
+}
