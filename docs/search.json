@@ -14,27 +14,17 @@
     "href": "index.html#learning-from-data",
     "title": "AP Statistics: Learning from Data",
     "section": "Learning from data",
-    "text": "Learning from data\nA growing course book for asking good questions, choosing useful representations, and supporting conclusions with evidence. Read the explanations, explore an activity, and check your reasoning against worked solutions.\nStart with Topic 1.1 Study Topic 1.2 Variables",
+    "text": "Learning from data\nA growing course book for asking good questions, choosing useful representations, and supporting conclusions with evidence. Read the explanations, explore an activity, and check your reasoning against worked solutions.\nExplore Unit 1",
     "crumbs": [
       "Welcome"
     ]
   },
   {
-    "objectID": "index.html#unit-1-exploring-one-variable-data-and-collecting-data",
-    "href": "index.html#unit-1-exploring-one-variable-data-and-collecting-data",
+    "objectID": "index.html#choose-a-unit",
+    "href": "index.html#choose-a-unit",
     "title": "AP Statistics: Learning from Data",
-    "section": "Unit 1: Exploring One-Variable Data and Collecting Data",
-    "text": "Unit 1: Exploring One-Variable Data and Collecting Data\nEach topic has its own chapter, official College Board title, and editable source folder. Topics 1.1–1.6 are available below; this is not yet the entire unit or course.\n\n\nTopic 1.1 Introducing Statistics: What Can We Learn from Data?\nQuestions, observational units, populations, samples, and evidence in context.\nOpen Topic 1.1 →\n\n\nTopic 1.2 Variables\nIdentify variables and summaries; classify categorical, discrete, and continuous values; investigate numerical category codes.\nOpen Topic 1.2 →\n\n\nTopic 1.3 Tabular Representation and Summary Statistics for One Categorical Variable\nBuild frequency and relative-frequency tables, use correct denominators, and justify contextual claims.\nOpen Topic 1.3 →\n\n\nTopic 1.4 Graphical Representations for One Categorical Variable\nBuild bar and pie charts, compare samples, and audit graphical claims.\nOpen Topic 1.4 →\n\n\nTopic 1.5 Graphical Representations for One Quantitative Variable\nThe original dotplot, stem-and-leaf, histogram construction, and histogram laboratory lessons.\nOpen Topic 1.5 →\n\n\nTopic 1.6 Descriptions for One Quantitative Variable Distributions\nThe original distribution descriptions, worked examples, and evidence checkpoints.\nOpen Topic 1.6 →\n\n\nAdditional quantitative-data practice · Sources and publication notes",
-    "crumbs": [
-      "Welcome"
-    ]
-  },
-  {
-    "objectID": "index.html#keep-the-datasets-distinct",
-    "href": "index.html#keep-the-datasets-distinct",
-    "title": "AP Statistics: Learning from Data",
-    "section": "Keep the datasets distinct",
-    "text": "Keep the datasets distinct\nThe School A categorical example describes a hypothetical sample of 40 students: Walk 8, Bicycle 6, Bus 18, and Car 8. The quantitative graph lessons use a separate hypothetical sample of 24 one-way commute times. Neither dataset is a record of actual Maple Hill School students. Changing the display never changes its observations.\n\n\nCommute times: 5, 8, 10, 12, 12, 14, 15, 16, 18, 18, 20, 20, 22, 24, 25, 26, 28, 30, 32, 35, 38, 42, 48, 58 minutes.",
+    "section": "Choose a unit",
+    "text": "Choose a unit\nOpen a unit to see its topics. In the sidebar, use the arrow beside a unit to show or hide its topics. Topics stay collapsed until you open them.\n\n\nUnit 1: Exploring One-Variable Data and Collecting Data\nTopics 1.1–1.6 available\nBrowse the available lessons, interactive activities, and worked practice.\n\n\nUnit 2: Probability, Random Variables, and Probability Distributions\nUnder construction\nA place for future lessons. No topics have been published yet.\n\n\nUnit 3: Inference for Categorical Data: Proportions\nUnder construction\nA place for future lessons. No topics have been published yet.\n\n\nUnit 4: Inference for Quantitative Data: Means\nUnder construction\nA place for future lessons. No topics have been published yet.\n\n\nUnit 5: Regression Analysis\nUnder construction\nA place for future lessons. No topics have been published yet.",
     "crumbs": [
       "Welcome"
     ]
@@ -44,9 +34,39 @@
     "href": "index.html#how-to-study-with-this-book",
     "title": "AP Statistics: Learning from Data",
     "section": "How to study with this book",
-    "text": "How to study with this book\nRead an explanation, predict what will happen, and then use the activity. For construction questions, draw on paper before opening Show solution. A correct answer includes appropriate labels, a sensible scale, and reasoning in context—not only arithmetic.\nThe activities run in your browser without an account or notebook kernel. Choices are not submitted to a teacher and reset when you reload the page. Core explanations and worked answers remain readable without JavaScript. Printing expands solutions and includes activity reference states.\nExisting chapter addresses remain available. The editable Unit 1 chapters, data, code, and tests are organized in the repository’s Unit 1 folder, with one subfolder per topic and a Shared folder for material reused across topics.",
+    "text": "How to study with this book\nRead an explanation, predict what will happen, and then use the activity. For construction questions, draw on paper before opening Show solution. A correct answer includes appropriate labels, a sensible scale, and reasoning in context—not only arithmetic.\nThe activities run in your browser without an account or notebook kernel. Choices are not submitted to a teacher and reset when you reload the page. Core explanations and worked answers remain readable without JavaScript. Printing expands solutions and includes activity reference states.\nThis book is being developed unit by unit. Unit 1 currently contains Topics 1.1–1.6, not the entire unit. Units 2–5 are under construction.\nSources and study resources",
     "crumbs": [
       "Welcome"
+    ]
+  },
+  {
+    "objectID": "Unit 1/unit-1.html",
+    "href": "Unit 1/unit-1.html",
+    "title": "Unit 1: Exploring One-Variable Data and Collecting Data",
+    "section": "",
+    "text": "Choose a topic\n← All units\nAdditional quantitative-data practice · Sources and publication notes",
+    "crumbs": [
+      "Unit 1: Exploring One-Variable Data and Collecting Data"
+    ]
+  },
+  {
+    "objectID": "Unit 1/unit-1.html#choose-a-topic",
+    "href": "Unit 1/unit-1.html#choose-a-topic",
+    "title": "Unit 1: Exploring One-Variable Data and Collecting Data",
+    "section": "",
+    "text": "Topic 1.1 Introducing Statistics: What Can We Learn from Data?\nQuestions, observational units, populations, samples, and evidence in context.\nOpen Topic 1.1 →\n\n\nTopic 1.2 Variables\nIdentify variables and summaries; classify categorical, discrete, and continuous values; investigate numerical category codes.\nOpen Topic 1.2 →\n\n\nTopic 1.3 Tabular Representation and Summary Statistics for One Categorical Variable\nBuild frequency and relative-frequency tables, use correct denominators, and justify contextual claims.\nOpen Topic 1.3 →\n\n\nTopic 1.4 Graphical Representations for One Categorical Variable\nBuild bar and pie charts, compare samples, and audit graphical claims.\nOpen Topic 1.4 →\n\n\nTopic 1.5 Graphical Representations for One Quantitative Variable\nThe original dotplot, stem-and-leaf, histogram construction, and histogram laboratory lessons.\nOpen Topic 1.5 →\n\n\nTopic 1.6 Descriptions for One Quantitative Variable Distributions\nThe original distribution descriptions, worked examples, and evidence checkpoints.\nOpen Topic 1.6 →",
+    "crumbs": [
+      "Unit 1: Exploring One-Variable Data and Collecting Data"
+    ]
+  },
+  {
+    "objectID": "Unit 1/unit-1.html#keep-the-datasets-distinct",
+    "href": "Unit 1/unit-1.html#keep-the-datasets-distinct",
+    "title": "Unit 1: Exploring One-Variable Data and Collecting Data",
+    "section": "Keep the datasets distinct",
+    "text": "Keep the datasets distinct\nThe School A categorical example describes a hypothetical sample of 40 students: Walk 8, Bicycle 6, Bus 18, and Car 8. The quantitative graph lessons use a separate hypothetical sample of 24 one-way commute times. Neither dataset is a record of actual Maple Hill School students. Changing the display never changes its observations.\n\n\nCommute times: 5, 8, 10, 12, 12, 14, 15, 16, 18, 18, 20, 20, 22, 24, 25, 26, 28, 30, 32, 35, 38, 42, 48, 58 minutes.\n\n\nExisting chapter addresses remain available. The editable Unit 1 chapters, data, code, and tests are organized in the repository’s Unit 1 folder, with one subfolder per topic and a Shared folder for material reused across topics.",
+    "crumbs": [
+      "Unit 1: Exploring One-Variable Data and Collecting Data"
     ]
   },
   {
@@ -663,6 +683,46 @@
     "crumbs": [
       "Unit 1: Exploring One-Variable Data and Collecting Data",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>Practice and solutions</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 2/unit-2.html",
+    "href": "Unit 2/unit-2.html",
+    "title": "Unit 2: Probability, Random Variables, and Probability Distributions",
+    "section": "",
+    "text": "← All units\n\n\n\n\n\n\nNoteUnder construction\n\n\n\nThis unit is being prepared. No lessons, activities, or practice sets have been published for Unit 2 yet.\nTopics will appear here as they are added. For now, you can study the available topics in Unit 1.\n\n\nExplore Unit 1 · Return to all five units",
+    "crumbs": [
+      "Unit 2: Probability, Random Variables, and Probability Distributions"
+    ]
+  },
+  {
+    "objectID": "Unit 3/unit-3.html",
+    "href": "Unit 3/unit-3.html",
+    "title": "Unit 3: Inference for Categorical Data: Proportions",
+    "section": "",
+    "text": "← All units\n\n\n\n\n\n\nNoteUnder construction\n\n\n\nThis unit is being prepared. No lessons, activities, or practice sets have been published for Unit 3 yet.\nTopics will appear here as they are added. For now, you can study the available topics in Unit 1.\n\n\nExplore Unit 1 · Return to all five units",
+    "crumbs": [
+      "Unit 3: Inference for Categorical Data: Proportions"
+    ]
+  },
+  {
+    "objectID": "Unit 4/unit-4.html",
+    "href": "Unit 4/unit-4.html",
+    "title": "Unit 4: Inference for Quantitative Data: Means",
+    "section": "",
+    "text": "← All units\n\n\n\n\n\n\nNoteUnder construction\n\n\n\nThis unit is being prepared. No lessons, activities, or practice sets have been published for Unit 4 yet.\nTopics will appear here as they are added. For now, you can study the available topics in Unit 1.\n\n\nExplore Unit 1 · Return to all five units",
+    "crumbs": [
+      "Unit 4: Inference for Quantitative Data: Means"
+    ]
+  },
+  {
+    "objectID": "Unit 5/unit-5.html",
+    "href": "Unit 5/unit-5.html",
+    "title": "Unit 5: Regression Analysis",
+    "section": "",
+    "text": "← All units\n\n\n\n\n\n\nNoteUnder construction\n\n\n\nThis unit is being prepared. No lessons, activities, or practice sets have been published for Unit 5 yet.\nTopics will appear here as they are added. For now, you can study the available topics in Unit 1.\n\n\nExplore Unit 1 · Return to all five units",
+    "crumbs": [
+      "Unit 5: Regression Analysis"
     ]
   },
   {

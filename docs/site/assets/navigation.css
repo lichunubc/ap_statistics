@@ -1,0 +1,29 @@
+/* Whole-book unit navigation. Topic/lesson styles remain in their unit folders. */
+.unit-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.unit-card { position: relative; min-width: 0; display: flex; flex-direction: column; gap: .4rem; }
+.unit-card h3 { margin: 0 0 .45rem; font-size: 1.22rem; line-height: 1.4; letter-spacing: -.015em; }
+.unit-card h3 a { text-decoration: none; }
+.unit-card h3 a:not(.anchorjs-link)::after { content: ""; position: absolute; inset: 0; border-radius: 8px; }
+.unit-card:hover { background: var(--pale); border-color: var(--teal); }
+.unit-card:focus-within { outline: 3px solid var(--teal); outline-offset: 3px; }
+.unit-card p { margin: 0; }
+.unit-card .unit-state { display: inline-block; font-size: .84rem; font-weight: 650; line-height: 1.5; border-radius: 4px; padding: .22rem .5rem; background: var(--pale); color: var(--ink); }
+.unit-card [data-unit-status="under-construction"] { background: #f6efdf; color: #63451a; }
+.construction-note { margin: 1.5rem 0; }
+/* Quarto normally opens the current chapter's ancestor. Hide it until our
+   explicit, non-persistent disclosure is ready; never touch the mobile menu. */
+#quarto-sidebar .sidebar-section:not(.course-topic-list),
+#quarto-sidebar .course-topic-list[hidden] { display: none !important; }
+#quarto-sidebar .course-topic-list:not([hidden]) { display: block; }
+#quarto-sidebar .course-unit-toggle { display: inline-flex; flex: 0 0 44px; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; padding: 0; border: 0; border-radius: 5px; background: transparent; color: inherit; font: inherit; cursor: pointer; align-self: flex-start; }
+#quarto-sidebar .course-unit-toggle:hover { background: #e1eded; }
+#quarto-sidebar .course-unit-toggle:focus-visible { outline: 3px solid var(--teal); outline-offset: -2px; }
+.course-unit-chevron { display: inline-block; font-size: 1.6rem; line-height: 1; }
+.course-unit-toggle[aria-expanded="true"] .course-unit-chevron { transform: rotate(90deg); }
+@media (max-width: 700px) { .unit-grid { grid-template-columns: minmax(0, 1fr); } .unit-card h3 { font-size: 1.15rem; } }
+@media print { .unit-grid { display: block; } .unit-card { break-inside: avoid; } .unit-card h3 a:not(.anchorjs-link)::after { display: none; } }
+/* Quarto's narrow-screen drawer uses nowrap while sliding. Long official unit
+   names must still wrap, leaving the disclosure button inside the viewport. */
+#quarto-sidebar .sidebar-menu-container { white-space: normal; min-width: 0; width: 100%; }
+#quarto-sidebar .sidebar-item-container { min-width: 0; max-width: 100%; }
+#quarto-sidebar .sidebar-item-text { flex: 1 1 0%; min-width: 0; width: auto; white-space: normal; overflow-wrap: anywhere; }
