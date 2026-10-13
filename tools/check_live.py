@@ -3,7 +3,7 @@ import os,time,urllib.request
 base=os.environ.get('SITE_URL','').rstrip('/')
 if not base.startswith('https://lichunubc.github.io/'):
     raise SystemExit('Expected the configured public course Pages URL')
-checks=[('', 'topic-1-1.html'), ('topic-1-1.html', 'data-foundation="population"')]
+checks=[('', 'topic-1-1.html'), ('topic-1-1.html', 'data-foundation="population"'), ('topic-1-3.html', 'data-cat-table="tally"')]
 for path,marker in checks:
     url=base+'/'+path+'?release='+os.environ.get('GITHUB_SHA','check')
     last=None
