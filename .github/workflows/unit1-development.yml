@@ -7,13 +7,19 @@ permissions:
 jobs:
   snapshot:
     runs-on: ubuntu-latest
-    timeout-minutes: 3
+    timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
-      - name: Package tracked sources without Git credentials
-        run: git archive --format=zip HEAD -o source-snapshot.zip
+      - uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: '1.9.38'
+      - name: Package pinned runtime for offline validation
+        run: |
+          install_root="$(dirname "$(dirname "$(readlink -f "$(command -v quarto)")")")"
+          test -f "$install_root/bin/quarto"
+          tar -czf quarto-runtime.tar.gz -C "$install_root" .
       - uses: actions/upload-artifact@v4
         with:
-          name: unit1-source-snapshot
-          path: source-snapshot.zip
+          name: quarto-runtime
+          path: quarto-runtime.tar.gz
           retention-days: 1
