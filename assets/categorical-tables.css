@@ -1,0 +1,30 @@
+/* Topic 1.3: categorical tables (extends the shared course theme). */
+[data-cat-table] h3 { margin-top:.15rem; }
+[data-cat-table] .controls label { display:flex;flex-direction:column;gap:.25rem;min-width:min(100%,13rem); }
+[data-cat-table] .controls label select { min-width:0;max-width:100%; }
+.cat-table { width:100%;min-width:390px;font-variant-numeric:tabular-nums; }
+.cat-table th,.cat-table td { text-align:left!important;vertical-align:middle; }
+.cat-table th:first-child { min-width:8rem; }
+.cat-table td:last-child { text-align:right!important; }
+.cat-table caption { padding:.25rem 0 .5rem;font-size:.85rem;color:var(--muted); }
+.cat-table .cat-tallies { font-family:ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.06em;white-space:nowrap; }
+.cat-table .cat-current { background:#eaf4ef; }
+.cat-table .cat-recent { display:inline-block;font-size:.67rem;font-weight:600;background:#e2e8c6;border:1px solid #8a9865;border-radius:.2rem;padding:0 .2rem;white-space:nowrap; }
+.cat-table tfoot { border-top:2px solid var(--ink);font-weight:750;background:#eff6f4; }
+[data-cat-table] .cat-question { font-weight:650; }
+[data-cat-table] .cat-math { border:1px solid var(--rule);background:#f8fbfb;border-radius:.5rem;padding:.55rem 1rem;margin:.6rem 0;line-height:1.55; }
+[data-cat-table] .cat-math p { margin:.35rem 0; }
+.cat-print { display:none; }
+@media(max-width:700px) {
+ [data-cat-table] .controls label { width:100%; }
+ .cat-table { font-size:.82rem; }
+ .cat-table th:first-child { min-width:7rem; }
+ [data-cat-table] .controls { gap:.35rem; }
+}
+@media print {
+ [data-cat-table] { display:none!important; }
+ .cat-print { display:block;border:1px solid #bbc9c9;padding:.6rem .8rem;margin:1rem 0;break-inside:auto; }
+ .cat-print h3 { font-size:1rem; }
+ .cat-print .cat-table { min-width:0; }
+ .cat-print .cat-recent { display:none; }
+}

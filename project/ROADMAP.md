@@ -14,6 +14,10 @@ Develop one maintainable, reusable course book that can eventually cover the ful
 
 These are scheduled **start** times, not guaranteed completion times. The follow-on sessions are one-off ChatGPT development tasks; the repository's publishing workflow is triggered by source changes, not by an hourly content-generation cron. Each session must read the current repository and preserve earlier changes. Update the topic manifest using actual outcomes.
 
+## Topic 1.3 implementation note
+
+The Topic 1.3 authoring source, reusable tally/denominator/claim activities, original practice and automated browser tests are included. The topic manifest records **implemented** when committed; GitHub Actions and the public URL independently determine deployment status. The separate 1.2 and 1.4 sessions retain their original scope.
+
 ## Following this release
 
 Topics 1.5 and 1.6 are already implemented. Keep their URLs and regression tests intact. After the foundations release, prioritize consistency, student feedback and mathematical QA before adding further chapters.

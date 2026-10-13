@@ -91,3 +91,7 @@ assert not errors, errors
 report={'chapter':'topic-1-1','widths':[1440,768,390],'population':1000,'sizes_tested':[10,40,100,1000],'quiz_cases':3,'practice_solutions':6,'checks':['dataset totals','fixed population','no replacement','repeat/reset','census control','neutral/wrong/correct/next','keyboard selection','mathml','print and restore','no page overflow'],'javascript_errors':errors}
 (QA/'foundations-validation.json').write_text(json.dumps(report,indent=2)+'\n')
 print(json.dumps(report,indent=2))
+
+# New categorical-table chapter reuses the existing foundations test gate.
+import subprocess,sys
+subprocess.run([sys.executable,str(ROOT/'tools/check_categorical.py')],check=True)

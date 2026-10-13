@@ -4,7 +4,7 @@
 
 Student site: **https://lichunubc.github.io/ap_statistics/**
 
-The original Topics 1.5–1.6 pilot is preserved. Topic 1.1 adds questions, populations, samples and data; Topics 1.2–1.4 are the next scheduled releases. Read the [topic manifest](project/topic-status.json) for actual source status, the [roadmap](project/ROADMAP.md) for planned work, and [CHANGELOG.md](CHANGELOG.md) for released changes. Do not infer publication from a planned start time.
+The original Topics 1.5–1.6 pilot is preserved. Topic 1.1 develops questions, populations, samples and data. Topic 1.3 adds categorical tables, relative frequencies, ratios and evidence checks. Other foundation topics are developed in separate scheduled sessions. Read the [topic manifest](project/topic-status.json) for actual source status, the [roadmap](project/ROADMAP.md) for planned work, and [CHANGELOG.md](CHANGELOG.md) for released changes. Do not infer publication from a planned start time.
 
 ## Edit and extend
 
@@ -35,9 +35,10 @@ python -m pip install -r requirements-test.txt
 python -m playwright install chromium
 python tools/check_site.py
 python tools/check_foundations.py
+python tools/check_categorical.py
 ```
 
-`CHROMIUM_PATH` selects an existing Chromium binary. `INLINE_BROWSER=1` renders already-local assets in memory for environments that cannot navigate to a local web server. Reports/screenshots go in `qa/` and are excluded from source control. Checks cover original histogram/dotplot/stem-and-leaf interactions, nine width settings, 19 bin-count settings, neutral quiz states, links, dataset totals, printing, and desktop/tablet/phone widths. Foundations checks cover four selection sizes, census handling, question feedback, keyboard operation, MathML and six worked solutions.
+`CHROMIUM_PATH` selects an existing Chromium binary. `INLINE_BROWSER=1` renders already-local assets in memory for environments that cannot navigate to a local web server. Reports/screenshots go in `qa/` and are excluded from source control. Checks cover original histogram/dotplot/stem-and-leaf interactions, nine width settings, 19 bin-count settings, neutral quiz states, links, dataset totals, printing, and desktop/tablet/phone widths. Foundations checks cover four selection sizes, census handling, question feedback, keyboard operation, MathML and six worked solutions. Topic 1.3 checks verify sample counts, 40-step tallying, denominator changes, four claim cases, seven worked answers, printing and responsive layouts.
 
 ## Preservation, attribution and privacy
 
