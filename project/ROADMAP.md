@@ -1,37 +1,27 @@
 # AP Statistics course roadmap
 
 ## Goal
-Develop one maintainable, reusable course book that can eventually cover the full AP Statistics curriculum. Retain source chapters, original datasets, interactive components, diagrams, attribution, worked practice and tests for future iterations of Chun Li's Maple Hill School course.
 
-## Authorized release sequence — October 13, 2026
+Maintain one reusable, expandable Quarto course book for Chun Li's Maple Hill School AP Statistics course. Preserve editable chapters, original practice, datasets/provenance, activity code, objective mappings and reproducible tests across course iterations.
 
-| Topic | Session | Main deliverable |
-|---|---|---|
-| 1.1 | Immediate | Questions, populations, samples, data and context |
-| 1.2 | 02:18 Vancouver time | Variables, parameter/statistic notation, classification and categorical relabelling |
-| 1.3 | 03:19 Vancouver time | Frequency/relative-frequency tables, denominators and supported claims |
-| 1.4 | 04:19 Vancouver time | Bar/pie charts, comparison, interpretation and chart design |
+## Current implementation — October 13, 2026
 
-These are scheduled **start** times, not guaranteed completion times. The follow-on sessions are one-off ChatGPT development tasks; the repository's publishing workflow is triggered by source changes, not by an hourly content-generation cron. Each session must read the current repository and preserve earlier changes. Update the topic manifest using actual outcomes.
+Topics **1.1–1.6** have independent main chapters under **Unit 1: Exploring One-Variable Data and Collecting Data**, with exact official topic titles. Topic **1.2 Variables** is implemented, not merely scheduled: units/variables/values, categorical versus quantitative data, discrete versus continuous data, parameters/statistics, category-code relabelling, three activities and ten worked original exercises.
 
-## Topic 1.3 implementation note
+The original Topic 1.1, 1.3 and 1.4 lessons are retained. Topic 1.5 keeps its three original lessons as included QMD sections; Topic 1.6 keeps its two original lessons. All existing public page addresses have compatibility outputs. No new Topic 1.4 content was developed in the 1.2/folder-reorganization session.
 
-The Topic 1.3 authoring source, reusable tally/denominator/claim activities, original practice and automated browser tests are included. The topic manifest records **implemented** when committed; GitHub Actions and the public URL independently determine deployment status. The separate 1.2 and 1.4 sessions retain their original scope.
+## Human-editable organization
 
-## Topic 1.4 implementation note
+All Unit 1 teaching sources are in `Unit 1/`, with independent `Topic 1.x/` folders. Shared quantitative engines/styles, canonical datasets/provenance, cross-topic practice and integration tests live in `Unit 1/Shared/`. The unit and topic READMEs explain which files to edit. Whole-book infrastructure remains at the root. See the actual [topic manifest](topic-status.json) for source state and paths.
 
-Topic 1.4 provides a stand-alone QMD chapter, reusable JS/CSS for categorical graphs and an independent browser test. It reuses the original hypothetical source summaries in `data/foundations.json` and maps to the Fall 2026 CED, printed page 35. A committed chapter is *implemented*; only the successful GitHub Actions deployment and a public URL check establish that it is live. The separate 1.2 session retains its own status.
+## Validation and publication
 
-## Following this release
+The gate runs all existing quantitative/foundations/table/chart regressions plus new Topic 1.2 and structure checks. It verifies arithmetic, old/new links, official names, mobile/desktop behavior, keyboard controls, print restoration and native Quarto search. Quarto is pinned to 1.9.38. Source status is **implemented**; the GitHub Actions build/deployment and revision-matched live check independently establish publication. Do not infer completion from a past scheduled start time.
 
-Topics 1.5 and 1.6 are already implemented. Keep their URLs and regression tests intact. After the foundations release, prioritize consistency, student feedback and mathematical QA before adding further chapters.
+## Backlog, not a schedule
 
-Later work may adapt the existing 1.7–1.9 class material, then expand across the current official curriculum. This is a backlog, **not authorization for extra scheduled sessions**. Recheck the official CED before each addition; do not build the eventual course map from an obsolete unit structure.
+Prioritize teaching feedback, accessibility and mathematical consistency before expanding the book. Future work may adapt Topics 1.7 onward and later units after rechecking the current official CED. Each new topic should retain the same independent navigation and unit/topic folder structure. No additional scheduled development sessions are created by this roadmap.
 
-## Definition of a reusable topic
+## Curriculum reference
 
-A completed topic has: an editable QMD source; curriculum objective IDs and edition; meaningful examples; original practice and explanations; accessible interactive or visual assets where beneficial; explicit data provenance; a working printed reference state; tests; and a traceable commit/release record. An old lesson's source stays in version history when it is improved.
-
-## Current curriculum reference
-
-College Board, AP Statistics Course and Exam Description, effective Fall 2026. Foundations checked October 13, 2026: 1.1 pp.30–31; 1.2 pp.32–33; 1.3 p.34; 1.4 p.35. Do not upload the full CED or secure AP Classroom assets; link the official source.
+College Board, AP Statistics Course and Exam Description, **effective Fall 2026**, checked October 13, 2026. Printed pages: 1.1 pp.30–31; 1.2 pp.32–33; 1.3 p.34; 1.4 p.35; 1.5 p.36; 1.6 pp.37–38. Official source: https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf. Link the CED; do not upload secure AP Classroom material or the complete PDF.

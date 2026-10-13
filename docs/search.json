@@ -14,27 +14,27 @@
     "href": "index.html#learning-from-data",
     "title": "AP Statistics: Learning from Data",
     "section": "Learning from data",
-    "text": "Learning from data\nA growing course book for asking good questions, choosing useful representations, and supporting conclusions with evidence. Read the explanations, explore an activity, and check your reasoning against worked solutions.\nStart with Topic 1.1 Explore categorical tables Explore categorical graphs Open the histogram lab",
+    "text": "Learning from data\nA growing course book for asking good questions, choosing useful representations, and supporting conclusions with evidence. Read the explanations, explore an activity, and check your reasoning against worked solutions.\nStart with Topic 1.1 Study Topic 1.2 Variables",
     "crumbs": [
       "Welcome"
     ]
   },
   {
-    "objectID": "index.html#choose-your-starting-point",
-    "href": "index.html#choose-your-starting-point",
+    "objectID": "index.html#unit-1-exploring-one-variable-data-and-collecting-data",
+    "href": "index.html#unit-1-exploring-one-variable-data-and-collecting-data",
     "title": "AP Statistics: Learning from Data",
-    "section": "Choose your starting point",
-    "text": "Choose your starting point\n\n\n1.1 · Questions, populations, and samples\nIdentify the study’s purpose, distinguish a group from its size, and write a contextual conclusion.\nStart the foundations →\n\n\n1.3 · Categorical frequencies and proportions\nCount one-response categories, practise correct denominators, and justify claims using the table.\nExplore categorical tables →\n\n\n1.4 · Categorical graphs and comparison\nBuild bar and pie charts, compare relative frequencies across samples, and check graph-based claims.\nExplore categorical graphs →\n\n\n1.5 · Represent quantitative data\nBuild dotplots, stem-and-leaf plots, and histograms while keeping the observations connected.\nPlot individual values →\n\n\n1.6 · Describe and justify\nExplain shape, center, spread, and unusual features. Learn what a graph can—and cannot—establish.\nDescribe a distribution →\n\n\nPractice with feedback\nTry histogram construction and interpretation questions. Reveal detailed answers after making your own attempt.\nQuantitative-data practice →\n\n\nIn this sequence: Topics 1.1, 1.3 and 1.4 have course-book chapters. Topic 1.2 is tracked independently and is not yet in navigation. Topics 1.5–1.6 retain their original chapter addresses.",
+    "section": "Unit 1: Exploring One-Variable Data and Collecting Data",
+    "text": "Unit 1: Exploring One-Variable Data and Collecting Data\nEach topic has its own chapter, official College Board title, and editable source folder. Topics 1.1–1.6 are available below; this is not yet the entire unit or course.\n\n\nTopic 1.1 Introducing Statistics: What Can We Learn from Data?\nQuestions, observational units, populations, samples, and evidence in context.\nOpen Topic 1.1 →\n\n\nTopic 1.2 Variables\nIdentify variables and summaries; classify categorical, discrete, and continuous values; investigate numerical category codes.\nOpen Topic 1.2 →\n\n\nTopic 1.3 Tabular Representation and Summary Statistics for One Categorical Variable\nBuild frequency and relative-frequency tables, use correct denominators, and justify contextual claims.\nOpen Topic 1.3 →\n\n\nTopic 1.4 Graphical Representations for One Categorical Variable\nBuild bar and pie charts, compare samples, and audit graphical claims.\nOpen Topic 1.4 →\n\n\nTopic 1.5 Graphical Representations for One Quantitative Variable\nThe original dotplot, stem-and-leaf, histogram construction, and histogram laboratory lessons.\nOpen Topic 1.5 →\n\n\nTopic 1.6 Descriptions for One Quantitative Variable Distributions\nThe original distribution descriptions, worked examples, and evidence checkpoints.\nOpen Topic 1.6 →\n\n\nAdditional quantitative-data practice · Sources and publication notes",
     "crumbs": [
       "Welcome"
     ]
   },
   {
-    "objectID": "index.html#one-dataset-three-views",
-    "href": "index.html#one-dataset-three-views",
+    "objectID": "index.html#keep-the-datasets-distinct",
+    "href": "index.html#keep-the-datasets-distinct",
     "title": "AP Statistics: Learning from Data",
-    "section": "One dataset, three views",
-    "text": "One dataset, three views\nThe quantitative-data chapters use a hypothetical sample of 24 students’ one-way commute times, recorded in whole minutes. This is separate from the 40-response School A travel-method survey in the foundations sequence. Changing a display does not change its observations.\n\n\nCommute times: 5, 8, 10, 12, 12, 14, 15, 16, 18, 18, 20, 20, 22, 24, 25, 26, 28, 30, 32, 35, 38, 42, 48, 58 minutes.",
+    "section": "Keep the datasets distinct",
+    "text": "Keep the datasets distinct\nThe School A categorical example describes a hypothetical sample of 40 students: Walk 8, Bicycle 6, Bus 18, and Car 8. The quantitative graph lessons use a separate hypothetical sample of 24 one-way commute times. Neither dataset is a record of actual Maple Hill School students. Changing the display never changes its observations.\n\n\nCommute times: 5, 8, 10, 12, 12, 14, 15, 16, 18, 18, 20, 20, 22, 24, 25, 26, 28, 30, 32, 35, 38, 42, 48, 58 minutes.",
     "crumbs": [
       "Welcome"
     ]
@@ -44,725 +44,625 @@
     "href": "index.html#how-to-study-with-this-book",
     "title": "AP Statistics: Learning from Data",
     "section": "How to study with this book",
-    "text": "How to study with this book\nRead an explanation, predict what will happen, and then use the activity. For construction questions, draw on paper before opening Show solution. A correct answer includes appropriate labels, a sensible scale, and reasoning in context—not only arithmetic.\nThe activities run in your browser: no account, notebook kernel, or software installation is required. On a phone, open the chapter menu at the top. Your choices are not submitted to a teacher and are cleared when you reload the page. Printing shows reference states and expands solutions.\nThis is an evolving course resource, not yet a complete AP Statistics textbook. New chapters will extend the existing sequence rather than replace it. The source chapters, data, activity code, and tests are retained in the repository for future classes.\nSources and publication notes.",
+    "text": "How to study with this book\nRead an explanation, predict what will happen, and then use the activity. For construction questions, draw on paper before opening Show solution. A correct answer includes appropriate labels, a sensible scale, and reasoning in context—not only arithmetic.\nThe activities run in your browser without an account or notebook kernel. Choices are not submitted to a teacher and reset when you reload the page. Core explanations and worked answers remain readable without JavaScript. Printing expands solutions and includes activity reference states.\nExisting chapter addresses remain available. The editable Unit 1 chapters, data, code, and tests are organized in the repository’s Unit 1 folder, with one subfolder per topic and a Shared folder for material reused across topics.",
     "crumbs": [
       "Welcome"
     ]
   },
   {
-    "objectID": "topic-1-1.html",
-    "href": "topic-1-1.html",
-    "title": "1.1 · What can we learn from data?",
+    "objectID": "Unit 1/Topic 1.1/topic-1-1.html",
+    "href": "Unit 1/Topic 1.1/topic-1-1.html",
+    "title": "Topic 1.1 Introducing Statistics: What Can We Learn from Data?",
     "section": "",
     "text": "A question gives a study its direction\nSchool A has 1,000 students enrolled this term. The school wants to understand how its students travel to school. Collecting information from every student would take time, so the investigator randomly selects 40 students and records their usual main travel methods.\nThe question concerns the whole school, whereas the recorded answers come from a selected group. Statistics connects those two levels: we use data from a sample to investigate a question about a population. The quality of that connection depends on how the study is designed, not just on doing arithmetic correctly.",
     "crumbs": [
-      "1.1–1.4 · Statistical foundations",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>1.1 · What can we learn from data?</span>"
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Topic 1.1 Introducing Statistics: What Can We Learn from Data?</span>"
     ]
   },
   {
-    "objectID": "topic-1-1.html#a-question-gives-a-study-its-direction",
-    "href": "topic-1-1.html#a-question-gives-a-study-its-direction",
-    "title": "1.1 · What can we learn from data?",
+    "objectID": "Unit 1/Topic 1.1/topic-1-1.html#a-question-gives-a-study-its-direction",
+    "href": "Unit 1/Topic 1.1/topic-1-1.html#a-question-gives-a-study-its-direction",
+    "title": "Topic 1.1 Introducing Statistics: What Can We Learn from Data?",
     "section": "",
     "text": "What proportion of all students enrolled at School A this term usually travel mainly by bus?\n\n\n\n\n\n\n\n\nNoteOur classroom example\n\n\n\nSchool A and its survey are hypothetical. They are not student records from Maple Hill School. The fixed survey used in this sequence has 40 responses, including 18 Bus responses. It is separate from the 24 commute times used in Topic 1.5.",
     "crumbs": [
-      "1.1–1.4 · Statistical foundations",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>1.1 · What can we learn from data?</span>"
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Topic 1.1 Introducing Statistics: What Can We Learn from Data?</span>"
     ]
   },
   {
-    "objectID": "topic-1-1.html#separate-a-group-from-its-size",
-    "href": "topic-1-1.html#separate-a-group-from-its-size",
-    "title": "1.1 · What can we learn from data?",
+    "objectID": "Unit 1/Topic 1.1/topic-1-1.html#separate-a-group-from-its-size",
+    "href": "Unit 1/Topic 1.1/topic-1-1.html#separate-a-group-from-its-size",
+    "title": "Topic 1.1 Introducing Statistics: What Can We Learn from Data?",
     "section": "Separate a group from its size",
     "text": "Separate a group from its size\n\n\n\n\n\n\n\n\nComponent\nMeaning\nIn the School A study\n\n\n\n\nPopulation\nAll individuals or items the question is about\nAll students enrolled at School A this term\n\n\nPopulation size, NN\nNumber of individuals or items in that population\nN=1000N=1000 students\n\n\nSample\nThe selected individuals or items from which data are obtained\nThe 40 selected School A students\n\n\nSample size, nn\nNumber of individuals or items in that sample\nn=40n=40 students\n\n\n\n“The sample is 40” gives only its size. A complete identification is “the 40 selected students at School A.” Similarly, neither a percentage nor a mean is a group of people.\nA population does not have to consist of people. It could consist of trees in a forest, books in a library, or products in a shipment. Name the group and its boundaries precisely enough that someone could decide whether a particular item belongs to it.\n\nExplore: the sample is inside the population\nChange the number selected and draw another illustrative selection. Notice what remains fixed.\n\n\nPopulation: 1,000 hypothetical School A students. A selection of 40 students is a subset of that group, not a different population.\n\n\nThe interactive grid requires JavaScript; the explanation and practice below remain available without it.\n\n\nThe grid shows selection, not travel outcomes. Each mark represents one student; its position is simply a place in the grid, not a measured value. Selecting another sample changes who is observed. It does not change the population named in the investigative question.",
     "crumbs": [
-      "1.1–1.4 · Statistical foundations",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>1.1 · What can we learn from data?</span>"
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Topic 1.1 Introducing Statistics: What Can We Learn from Data?</span>"
     ]
   },
   {
-    "objectID": "topic-1-1.html#why-use-a-sample-rather-than-a-census",
-    "href": "topic-1-1.html#why-use-a-sample-rather-than-a-census",
-    "title": "1.1 · What can we learn from data?",
+    "objectID": "Unit 1/Topic 1.1/topic-1-1.html#why-use-a-sample-rather-than-a-census",
+    "href": "Unit 1/Topic 1.1/topic-1-1.html#why-use-a-sample-rather-than-a-census",
+    "title": "Topic 1.1 Introducing Statistics: What Can We Learn from Data?",
     "section": "Why use a sample rather than a census?",
     "text": "Why use a sample rather than a census?\nA census attempts to collect the required information from every member of the population. A sample uses only part of the population. A census can be impractical when the population is large, access is difficult, collection is costly, or measurement uses up the item being tested.\nFor example, testing the breaking strength of every cable in a shipment would leave no unbroken cables to sell. A carefully planned sample can provide information while preserving the rest of the shipment.\nSample does not mean random sample. Random selection is a feature of the method, not part of the word “sample.” The School A example explicitly specifies random selection. We will study sampling methods and possible sources of bias later; a small or large nn alone does not tell us whether a study is trustworthy.",
     "crumbs": [
-      "1.1–1.4 · Statistical foundations",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>1.1 · What can we learn from data?</span>"
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Topic 1.1 Introducing Statistics: What Can We Learn from Data?</span>"
     ]
   },
   {
-    "objectID": "topic-1-1.html#datum-data-and-a-data-set",
-    "href": "topic-1-1.html#datum-data-and-a-data-set",
-    "title": "1.1 · What can we learn from data?",
+    "objectID": "Unit 1/Topic 1.1/topic-1-1.html#datum-data-and-a-data-set",
+    "href": "Unit 1/Topic 1.1/topic-1-1.html#datum-data-and-a-data-set",
+    "title": "Topic 1.1 Introducing Statistics: What Can We Learn from Data?",
     "section": "Datum, data, and a data set",
     "text": "Datum, data, and a data set\nA datum is one piece of recorded information about an individual or item. Data is the plural; a data set is a collection of such information. Data can be category labels as well as numbers.\nThese illustrative records show how information can be organized:\n\n\n\nStudent label\nMain travel method\nOne-way commute time (minutes)\n\n\n\n\nA\nBus\n24.0\n\n\nB\nWalk\n12.5\n\n\nC\nCar\n18.0\n\n\nD\nBus\n31.5\n\n\n\n“Student A mainly travels by bus” is one datum. “Student B has a 12.5-minute commute” is another. The table contains four students, not eight students: recording two characteristics for each student does not double the number of students.\n\n\n\n\n\n\nTipCount individuals, not cells\n\n\n\nIf 40 students each answer three survey questions, the sample size is n=40n=40, not 120. The extra answers provide more information about those same students. Topic 1.2 develops the related terms observational unit and variable.",
     "crumbs": [
-      "1.1–1.4 · Statistical foundations",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>1.1 · What can we learn from data?</span>"
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Topic 1.1 Introducing Statistics: What Can We Learn from Data?</span>"
     ]
   },
   {
-    "objectID": "topic-1-1.html#write-an-investigative-question-you-can-answer",
-    "href": "topic-1-1.html#write-an-investigative-question-you-can-answer",
-    "title": "1.1 · What can we learn from data?",
+    "objectID": "Unit 1/Topic 1.1/topic-1-1.html#write-an-investigative-question-you-can-answer",
+    "href": "Unit 1/Topic 1.1/topic-1-1.html#write-an-investigative-question-you-can-answer",
+    "title": "Topic 1.1 Introducing Statistics: What Can We Learn from Data?",
     "section": "Write an investigative question you can answer",
     "text": "Write an investigative question you can answer\nAn investigative question states what the study is intended to find out. It should identify the relevant group and characteristic, and make it possible to decide what data to collect and analyze.\n\n\n\n\n\n\n\nWording\nAssessment or improvement\n\n\n\n\n“Are students’ journeys good?”\nToo vague: which students, and what does “good” mean?\n\n\n“What proportion of School A students enrolled this term mainly use the bus?”\nA defined group and a specific characteristic; record each selected student’s main travel method.\n\n\n“What is the mean one-way commute time for School A students this term?”\nAnswerable by recording comparable commute durations in a stated unit.\n\n\n“Do you mainly use the bus?”\nA question for one respondent. Its answers can supply data for the population-level investigative question.\n\n\n\n\nInvestigative question versus survey question\nThe investigative question belongs to the study. The survey question is asked of each respondent to obtain the information needed for that study. They serve different purposes and need not have identical wording.\nFor the bus-use study, asking “Which main travel method do you usually use?” is useful. Asking “What is your favourite subject?” would collect data, but those data would not answer the bus-use question.\n\n\nDefine how the information will be recorded\nFor this example, main travel method means the method used for the greatest distance on a typical school day. A student who walks to a stop and then takes a bus can now select one consistent answer. A real questionnaire would also specify how to handle a tie and provide an appropriate option for an unlisted method.\nFor commute time, specify a unit and common start/end points—for example, minutes from leaving home to reaching the school entrance. Otherwise, two students could interpret “commute time” differently.\n\n\nKeep the original purpose intact\nSet the investigative question before analyzing the results. Suppose a bus-use survey reveals interesting differences in satisfaction. Those differences may suggest a new follow-up study. They do not justify describing the original study as though its purpose had always been to investigate satisfaction.\nThis is not a ban on curiosity. It is a distinction between the question that motivated the study and a question suggested by what the investigator later noticed.",
     "crumbs": [
-      "1.1–1.4 · Statistical foundations",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>1.1 · What can we learn from data?</span>"
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Topic 1.1 Introducing Statistics: What Can We Learn from Data?</span>"
     ]
   },
   {
-    "objectID": "topic-1-1.html#question-workshop",
-    "href": "topic-1-1.html#question-workshop",
-    "title": "1.1 · What can we learn from data?",
+    "objectID": "Unit 1/Topic 1.1/topic-1-1.html#question-workshop",
+    "href": "Unit 1/Topic 1.1/topic-1-1.html#question-workshop",
+    "title": "Topic 1.1 Introducing Statistics: What Can We Learn from Data?",
     "section": "Question workshop",
     "text": "Question workshop\nChoose an answer, read the explanation, then try the next case. Nothing is submitted or saved.\n\n\nThink first: In the School A investigation, the population is all 1,000 enrolled students, not only the bus riders or the 40 selected students.\n\n\nThe interactive questions require JavaScript. The written practice below includes complete answers.",
     "crumbs": [
-      "1.1–1.4 · Statistical foundations",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>1.1 · What can we learn from data?</span>"
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Topic 1.1 Introducing Statistics: What Can We Learn from Data?</span>"
     ]
   },
   {
-    "objectID": "topic-1-1.html#explain-a-result-in-context",
-    "href": "topic-1-1.html#explain-a-result-in-context",
-    "title": "1.1 · What can we learn from data?",
+    "objectID": "Unit 1/Topic 1.1/topic-1-1.html#explain-a-result-in-context",
+    "href": "Unit 1/Topic 1.1/topic-1-1.html#explain-a-result-in-context",
+    "title": "Topic 1.1 Introducing Statistics: What Can We Learn from Data?",
     "section": "Explain a result in context",
     "text": "Explain a result in context\nIn the fixed 40-response School A survey, 18 students report Bus as their main method. The sample calculation is\n1840=0.45=45%.\n\\frac{18}{40}=0.45=45\\%.\n\nA clear statement is:\n\nAmong the 40 sampled School A students, 45% usually travel mainly by bus.\n\nThis sentence identifies the group, the characteristic, and the numerical result. It does not claim that exactly 45% of all 1,000 students use the bus. The sample result may inform the population question, but it is not automatically the exact population answer.\nThe fraction is included to practise contextual interpretation. The formal distinction between a parameter and a statistic, and symbols such as pp and p̂\\hat p, is developed in Topic 1.2.",
     "crumbs": [
-      "1.1–1.4 · Statistical foundations",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>1.1 · What can we learn from data?</span>"
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Topic 1.1 Introducing Statistics: What Can We Learn from Data?</span>"
     ]
   },
   {
-    "objectID": "topic-1-1.html#practice-identify-formulate-justify",
-    "href": "topic-1-1.html#practice-identify-formulate-justify",
-    "title": "1.1 · What can we learn from data?",
+    "objectID": "Unit 1/Topic 1.1/topic-1-1.html#practice-identify-formulate-justify",
+    "href": "Unit 1/Topic 1.1/topic-1-1.html#practice-identify-formulate-justify",
+    "title": "Topic 1.1 Introducing Statistics: What Can We Learn from Data?",
     "section": "Practice: identify, formulate, justify",
     "text": "Practice: identify, formulate, justify\nAttempt each question before expanding its solution. All questions below are original classroom practice.\n\n1. Books in a library\nA librarian wants to understand the binding condition of all 1,200 books in a library. She selects 60 books and records the condition of each binding.\nIdentify the population, sample, NN, and nn. Give one possible datum.\n\nSolution. \n\n\nShow solution\n\nThe population is all 1,200 books in this library. The sample is the 60 selected books. Therefore N=1200N=1200 and n=60n=60.\nOne possible datum is “the binding of selected book 17 is loose.” The sample consists of books, not just books with loose bindings: condition is recorded after selection. The problem does not specify random selection, so do not add that claim.\n\n\n\n\n2. Select information that answers the question\nAn investigator wants to estimate the proportion of the 800 students enrolled at School B this term who bring lunch from home on a typical school day. A random sample of 50 students is available.\nWrite an investigative question, one survey question, and a consistent recording rule.\n\nSolution. \n\n\nShow solution\n\nInvestigative question: “What proportion of School B students enrolled this term usually bring lunch from home?”\nSurvey question: “During a usual five-day school week, on how many days do you bring lunch from home?” One possible rule is to classify three or more days as “usually,” with a stated convention for a nonstandard school week. Other well-defined rules are possible, but the same rule should apply to all respondents.\nThe population is all 800 enrolled students; the sample is the 50 selected students. Asking only whether they like the cafeteria would not answer the stated question.\n\n\n\n\n3. Several measurements, one sample\nA nursery selects 12 trees from its stock of 360 trees and records the height, trunk diameter, and species of each selected tree. A student says that the sample size is 36.\nExplain the error and give the correct population and sample sizes.\n\nSolution. \n\n\nShow solution\n\nThe sample contains 12 trees, so n=12n=12. The population contains all 360 trees in the nursery’s stock, so N=360N=360. There are 36 recorded characteristic values, but measuring three characteristics does not create three different trees.\n\n\n\n\n4. Do not widen the population silently\nA study asks about the travel methods of School A students enrolled this term. The investigator reports: “These results describe every teenager in the city.”\nWhat is wrong with that conclusion? Repair it without claiming more than the study establishes.\n\nSolution. \n\n\nShow solution\n\nThe city-wide group is broader than the stated population. Teenagers at other schools and teenagers not enrolled at School A are not included in the population defined by this study.\nA safe description is “These data describe the travel responses of the sampled School A students this term.” With an appropriate design, the intended population-level target is the students enrolled at School A this term—not every teenager in the city.\n\n\n\n\n5. Repair the report\nA random sample of 80 households is selected from 2,400 households in a district; all 80 respond. Of the respondents, 52 report a working smoke alarm. The investigator writes: “The population is 80, and exactly 65% of all households have working alarms.”\nCorrect both problems. Show the sample calculation and write a contextual result.\n\nSolution. \n\n\nShow solution\n\nThe population is all 2,400 households in the district, with N=2400N=2400. The sample is the 80 selected and responding households, with n=80n=80.\n5280=0.65=65%.\\frac{52}{80}=0.65=65\\%.\nAmong the 80 sampled households, 65% reported a working smoke alarm. This is a sample result, not proof of the exact percentage among all 2,400 households. “Reported” also preserves what the survey actually measured; it does not claim an inspection was performed.\n\n\n\n\n6. An unexpected finding\nA survey was designed to study travel method. After noticing that many respondents dislike waiting at bus stops, an investigator rewrites the original purpose as “measuring dissatisfaction with bus stops.” Why is this misleading, and what could the investigator do instead?\n\nSolution. \n\n\nShow solution\n\nIt represents a question suggested by the results as though it had been the purpose before the data were analyzed. Retain the original travel-method question in the report. Identify dissatisfaction as a later observation, then propose a separate, clearly described follow-up investigation with suitable questions and data collection.",
     "crumbs": [
-      "1.1–1.4 · Statistical foundations",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>1.1 · What can we learn from data?</span>"
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Topic 1.1 Introducing Statistics: What Can We Learn from Data?</span>"
     ]
   },
   {
-    "objectID": "topic-1-1.html#before-moving-on",
-    "href": "topic-1-1.html#before-moving-on",
-    "title": "1.1 · What can we learn from data?",
+    "objectID": "Unit 1/Topic 1.1/topic-1-1.html#before-moving-on",
+    "href": "Unit 1/Topic 1.1/topic-1-1.html#before-moving-on",
+    "title": "Topic 1.1 Introducing Statistics: What Can We Learn from Data?",
     "section": "Before moving on",
     "text": "Before moving on\nYou should be able to name a population and sample precisely, distinguish NN from nn, recognize a datum, formulate an answerable investigative question, and explain a result without silently changing its context.\nNext in the foundations sequence: Topic 1.2 introduces observational units, variables, parameters, and statistics. The existing quantitative-data chapters remain available for review.\n\nCurriculum alignment: College Board, AP Statistics Course and Exam Description, effective Fall 2026, printed pp. 30–31, objectives 1.1.A–B (checked October 13, 2026). This chapter’s explanations, interactives, and practice are classroom-authored, adapted from Chun Li’s Understanding and Representing Data. It is not an official College Board publication. Sampling-distribution simulations and detailed sampling-design methods are outside this chapter’s core scope.",
     "crumbs": [
-      "1.1–1.4 · Statistical foundations",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>1.1 · What can we learn from data?</span>"
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Topic 1.1 Introducing Statistics: What Can We Learn from Data?</span>"
     ]
   },
   {
-    "objectID": "topic-1-3.html",
-    "href": "topic-1-3.html",
-    "title": "1.3 · Categorical tables and numerical summaries",
+    "objectID": "Unit 1/Topic 1.2/topic-1-2.html",
+    "href": "Unit 1/Topic 1.2/topic-1-2.html",
+    "title": "Topic 1.2 Variables",
+    "section": "",
+    "text": "Start with the School A study\nRecall the hypothetical school from Topic 1.1. The population is all 1,000 students enrolled at School A this term. An investigator randomly selects 40 students, all of whom respond, and records each student’s usual main travel method. “Main” means the method used for the greatest distance on a typical school day.\nThe fixed sample contains Walk 8, Bicycle 6, Bus 18, and Car 8. Its recorded commute times total 960 minutes. We know these sample summaries; we have not been given the population’s bus proportion or mean commute time.",
+    "crumbs": [
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Topic 1.2 Variables</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 1/Topic 1.2/topic-1-2.html#school-a-study",
+    "href": "Unit 1/Topic 1.2/topic-1-2.html#school-a-study",
+    "title": "Topic 1.2 Variables",
+    "section": "",
+    "text": "NoteData provenance\n\n\n\nSchool A is fictional, not Maple Hill School. These are the same hypothetical summaries used in the earlier chapters, not newly collected observations. The 40 individual commute times are not supplied; do not reconstruct them from their total. This sample is separate from the 24 commute times in Topic 1.5 and the 24 study-location responses in Topics 1.3–1.4.",
+    "crumbs": [
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Topic 1.2 Variables</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 1/Topic 1.2/topic-1-2.html#units-variables-values",
+    "href": "Unit 1/Topic 1.2/topic-1-2.html#units-variables-values",
+    "title": "Topic 1.2 Variables",
+    "section": "Observational unit, variable, and value",
+    "text": "Observational unit, variable, and value\nAn observational unit is the individual or item on which information is recorded. A variable is a characteristic that can differ from one unit to another. A value is the particular outcome recorded for a variable on one unit.\n\n\n\n\n\n\n\nRole\nIn the School A study\n\n\n\n\nObservational unit\nOne selected School A student\n\n\nVariable\nThat student’s usual main travel method\n\n\nPossible values\nWalk, Bicycle, Bus, Car, or another permitted method\n\n\nOne observed value\nBus for one particular student\n\n\nA second variable\nThat student’s one-way commute time, in minutes\n\n\n\n“Bus” is a value, not the name of the variable. “Students” names the units, not the characteristic being measured. A good variable description includes what is recorded and, for a measured quantity, its units.\n\nRead a data table by rows and columns\nThe following four illustrative records repeat the examples from Topic 1.1. They illustrate table structure; they are not a raw-data extract of the fixed 40-response sample.\n\n\n\nStudent label\nMain travel method\nOne-way commute time (minutes)\n\n\n\n\nA\nBus\n24.0\n\n\nB\nWalk\n12.5\n\n\nC\nCar\n18.0\n\n\nD\nBus\n31.5\n\n\n\nEach row represents one student. The last two columns record two study variables on each student. The first column is an identifier, used to distinguish records. Recording two variables on four students still gives four observational units, not eight.\nAn identifier such as student number 1042 is a label, not a measured amount. Differences or averages of identifier numbers usually have no interpretation. Likewise, a characteristic is still a variable even when, by coincidence, every observed unit has the same recorded value.\nIllustrative records and their data dictionary · CSV",
+    "crumbs": [
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Topic 1.2 Variables</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 1/Topic 1.2/topic-1-2.html#categorical-quantitative",
+    "href": "Unit 1/Topic 1.2/topic-1-2.html#categorical-quantitative",
+    "title": "Topic 1.2 Variables",
+    "section": "Categorical or quantitative?",
+    "text": "Categorical or quantitative?\nA categorical (qualitative) variable records group membership or a label. A quantitative (numerical) variable records an amount obtained by counting or measuring.\nAsk “What does a value represent?”, rather than “Does it contain digits?”\n\n\n\n\n\n\n\n\nVariable recorded for each unit\nType\nReason\n\n\n\n\nA student’s main travel method\nCategorical\nBus and Walk identify categories.\n\n\nA student’s one-way commute time\nQuantitative\nThe value measures elapsed time, in minutes.\n\n\nA student’s number of bus trips last week\nQuantitative\nThe value counts trips; a difference of two means two more trips.\n\n\nThe route number of a bus used for one trip\nCategorical\nRoute 10 and Route 20 identify routes; 20 does not mean twice as much travel.\n\n\nA movie rating: Very dissatisfied through Very satisfied\nCategorical, with an order\nThe labels express ordered levels, not measured distances between them.\n\n\n\nSome categorical variables have a natural order. That order does not establish equal numerical gaps. Coding five satisfaction levels as 1–5, or relabelling them A–E, does not by itself turn satisfaction into a measured quantitative variable.\n\nA frequency is not the original variable\nFor School A, main travel method is categorical. The frequency 18 is a numerical summary: it counts students whose recorded value is Bus. A numerical frequency table does not make the underlying travel-method variable quantitative.\nThe unit also matters. “Does this student use the bus?” gives a categorical Yes/No variable. “How many bus users attend this school?” gives a quantitative count, with a school as the observational unit.",
+    "crumbs": [
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Topic 1.2 Variables</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 1/Topic 1.2/topic-1-2.html#discrete-continuous",
+    "href": "Unit 1/Topic 1.2/topic-1-2.html#discrete-continuous",
+    "title": "Topic 1.2 Variables",
+    "section": "Discrete or continuous?",
+    "text": "Discrete or continuous?\nClassify a variable as categorical or quantitative first. Then, for a quantitative variable, ask which values are possible.\nA discrete quantitative variable has a finite or countably infinite set of possible values. A continuous quantitative variable can, in its measurement model, take any value within an interval.\n\n\n\n\n\n\n\n\nVariable\nClassification\nExplanation\n\n\n\n\nNumber of late arrivals during a five-day school week\nDiscrete\nPossible counts are 0, 1, 2, 3, 4, and 5. A count of 2.6 arrivals is not possible.\n\n\nNumber of pages in a book\nDiscrete\nPages are counted in whole numbers.\n\n\nAn examination score awarded only in half-point steps\nDiscrete\nValues lie on a fixed grid: 0, 0.5, 1, 1.5, and so on. Discrete values need not be integers.\n\n\nActual elapsed time for a commute\nContinuous\nIn principle, durations between 12 and 13 minutes are possible.\n\n\nActual mass of a parcel\nContinuous\nMass is measured on a continuum, subject to measurement precision.\n\n\n\n\nRounding does not change the underlying quantity\nA stopwatch may display a time of 12 minutes after rounding. The underlying elapsed time is still treated as continuous: it could have been 11.8 or 12.2 minutes. The rounded recorded values occur on a discrete grid, but the underlying variable being measured is continuous. State which one the question asks about.\nSimilarly, “has a decimal” does not prove continuous, and “is written as a whole number” does not prove discrete. Classification depends on the variable’s possible values and recording rule.",
+    "crumbs": [
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Topic 1.2 Variables</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 1/Topic 1.2/topic-1-2.html#variable-lab",
+    "href": "Unit 1/Topic 1.2/topic-1-2.html#variable-lab",
+    "title": "Topic 1.2 Variables",
+    "section": "Variable-type laboratory",
+    "text": "Variable-type laboratory\nClassify each recorded characteristic. Choose an answer and press Check answer; then read the explanation. Each new case begins with no selection, and no response is saved or submitted.\n\n\nWithout JavaScript: Main travel method and route number are categorical; the number of trips is discrete quantitative; actual elapsed time is continuous quantitative. Use the tables above and the worked practice below to explain why.",
+    "crumbs": [
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Topic 1.2 Variables</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 1/Topic 1.2/topic-1-2.html#parameters-statistics",
+    "href": "Unit 1/Topic 1.2/topic-1-2.html#parameters-statistics",
+    "title": "Topic 1.2 Variables",
+    "section": "Population summaries and sample summaries",
+    "text": "Population summaries and sample summaries\nA parameter is a numerical attribute or summary of a variable for the population. A statistic is a numerical attribute or summary of a variable for a sample.\nThe distinction is about which group the number describes, not how large the number is, whether it is known, or whether it is written as a percentage.\n\n\n\n\n\n\n\n\nQuantity\nPopulation parameter\nSample statistic\n\n\n\n\nProportion mainly travelling by bus\npp: proportion among all 1,000 School A students\np̂\\hat p: proportion among the 40 sampled students\n\n\nMean one-way commute time\nμ\\mu: mean among all 1,000 School A students\nx‾\\bar x: mean among the 40 sampled students\n\n\n\nRead p̂\\hat p as “p-hat”, μ\\mu as “mu”, and x‾\\bar x as “x-bar.” These are common symbols, not substitutes for identifying the relevant group and variable. Recall that NN and nn denote population size and sample size, respectively; they are not the population and sample themselves.\n\nWorked example: the sample bus proportion\nOf the 40 sampled students, 18 report Bus. Therefore\np̂=1840=0.45=45%.\\hat p=\\frac{18}{40}=0.45=45\\%.\nThis is a statistic, because it describes the 40 sampled School A students. The population parameter pp is the proportion of all 1,000 enrolled School A students who mainly travel by bus. Its value has not been supplied.\nDo not write 18/100018/1000 for the sample proportion. The numerator counts bus riders in the sample, so the corresponding denominator is the sample size, 40. Do not assert that exactly 0.45(1000)=4500.45(1000)=450 students in the population use the bus: 450 would be an estimate based on the sample, not an observed population count.\n\n\nWorked example: the sample mean\nThe fixed sample’s total commute time is 960 minutes, so\nx‾=960 minutes40 students=24 minutes per student.\\bar x=\\frac{960\\text{ minutes}}{40\\text{ students}}=24\\text{ minutes per student}.\nThe sample mean is 24 minutes, a statistic. The population mean μ\\mu remains unknown. The fact that Student A in the illustrative table also has a 24-minute commute does not make that individual observation a sample mean; the two values play different roles.\nA statistic can differ between samples. A population parameter refers to a fixed population and variable for the stated period, so drawing another sample does not change that target parameter.\n\n\n\n\n\n\nTipKnown does not mean statistic\n\n\n\nA census can reveal a population parameter. For example, if every one of the 80 parcels in a specified shipment is weighed, their mean mass is a parameter for that shipment, even though its numerical value is known. Identify the population before deciding.\n\n\n\n\nSummary-role checkpoint\nDistinguish a population summary, a sample summary, and a single observation. The group described by the number is the decisive evidence.\n\n\nWithout JavaScript: The School A sample’s 45% and 24-minute mean are statistics. The corresponding full-school summaries are parameters. One student’s recorded time is an individual datum, not a summary of the sample.",
+    "crumbs": [
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Topic 1.2 Variables</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 1/Topic 1.2/topic-1-2.html#category-codes",
+    "href": "Unit 1/Topic 1.2/topic-1-2.html#category-codes",
+    "title": "Topic 1.2 Variables",
+    "section": "Relabelling categories does not create a measurement",
+    "text": "Relabelling categories does not create a measurement\nSuppose we assign codes to the same four travel categories. The lab below leaves the 40 observations’ category memberships and counts unchanged, but changes the labels.\n\n\nSchool A counts remain Walk 8, Bicycle 6, Bus 18, and Car 8. Codes 1, 2, 3, 4 give an arithmetic code average of 2.65; codes 4, 1, 9, 2 give 5.40. Neither average measures a travel method. The Bus proportion remains 18/40 = 45%.\n\n\nUnder codes Walk=1, Bicycle=2, Bus=3, Car=4, the arithmetic code average is\n8(1)+6(2)+18(3)+8(4)40=2.65.\\frac{8(1)+6(2)+18(3)+8(4)}{40}=2.65.\nWith Walk=4, Bicycle=1, Bus=9, Car=2, it becomes 5.40. Neither number means an “average travel method.” By contrast, the Bus proportion stays 45% under either one-to-one relabelling.\nThere is one useful special construction: define a numerical indicator equal to 1 for Bus and 0 otherwise. Its mean is 18/40=0.4518/40=0.45, the Bus proportion. This works because the coding explicitly counts membership in a chosen category. It does not justify taking the mean of arbitrary category codes, and combining all non-Bus categories loses their separate identities.",
+    "crumbs": [
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Topic 1.2 Variables</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 1/Topic 1.2/topic-1-2.html#media-data",
+    "href": "Unit 1/Topic 1.2/topic-1-2.html#media-data",
+    "title": "Topic 1.2 Variables",
+    "section": "Data can also come from media",
+    "text": "Data can also come from media\nA datum need not begin as a number in a spreadsheet. A photograph, audio clip, video, or written response can provide information about an observational unit. Define a characteristic and a consistent recording rule before classifying it.\n\n\n\n\n\n\n\n\nStudy material and observational unit\nRecorded characteristic\nType\n\n\n\n\nOne photograph of a leaf\nLeaf-edge category: smooth or toothed\nCategorical\n\n\nOne recorded bird call\nActual call duration, in seconds\nContinuous quantitative\n\n\nOne fixed-length traffic video clip\nNumber of bicycles passing a marked point\nDiscrete quantitative\n\n\nOne written survey response\nTheme assigned using a stated coding rule\nCategorical\n\n\n\nThe recording medium alone does not determine the variable type. A photograph could support either a category such as leaf shape or a measurement such as leaf length, provided an appropriate scale is available.",
+    "crumbs": [
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Topic 1.2 Variables</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 1/Topic 1.2/topic-1-2.html#practice",
+    "href": "Unit 1/Topic 1.2/topic-1-2.html#practice",
+    "title": "Topic 1.2 Variables",
+    "section": "Practice: identify and justify",
+    "text": "Practice: identify and justify\nThese ten exercises are original classroom practice. Name the unit or group and give a reason, rather than only writing a classification label.\n\n1. Rows, columns, and sample size\nA researcher selects 12 library books and records each book’s catalogue number, binding type, number of pages, and mass in grams. Identify the observational unit, sample size, identifier, and the types of the other three variables.\n\nSolution. \n\n\nShow full solution\n\nThe observational unit is one selected library book, and n=12n=12. Catalogue number is an identifier, not a measured amount. Binding type is categorical; page count is discrete quantitative; actual mass is continuous quantitative. Recording several characteristics does not increase the number of books sampled.\n\n\n\n\n2. A number that is a label\nFor each bus trip, a student records route number 10, 20, or 25 and travel duration in minutes. Classify both variables and explain why the presence of digits is not sufficient.\n\nSolution. \n\n\nShow full solution\n\nThe observational unit is one bus trip. Route number is categorical, because the number identifies a route; differences and ratios of route numbers do not measure travel. Actual duration is continuous quantitative, because it measures elapsed time. Digits can encode either a label or an amount.\n\n\n\n\n3. Discrete does not mean “no decimals”\nAn assessment awards scores from 0 to 10 in half-point steps. A separate variable is the actual time needed to finish it. Classify both, even when the time is recorded to the nearest minute.\n\nSolution. \n\n\nShow full solution\n\nThe score is discrete quantitative: its possible values are the 21 values 0,0.5,1,…,100,0.5,1,\\ldots,10. The underlying elapsed time is continuous quantitative. Rounding restricts the displayed values, not the underlying duration. The classification would need to mention the discrete recording grid if the question specifically asked about the rounded recorded variable.\n\n\n\n\n4. Same sample, two statistics\nUse School A’s 40-student sample, its 18 Bus responses, and its total commute time of 960 minutes. Calculate and interpret p̂\\hat p and x‾\\bar x, then identify their population counterparts.\n\nSolution. \n\n\nShow full solution\n\np̂=18/40=0.45\\hat p=18/40=0.45: 45% of the sampled School A students mainly travel by bus. x‾=960/40=24\\bar x=960/40=24 minutes: the sampled students’ mean one-way commute time is 24 minutes. Both are statistics. Their population counterparts are pp and μ\\mu for all 1,000 enrolled School A students this term; neither population value is supplied.\n\n\n\n\n5. Fix the denominator and the claim\nA student writes, “There are 1,000 students at School A, so the bus proportion is 18/1000=1.8%18/1000=1.8\\%.” Identify the problem and write a supported statement.\n\nSolution. \n\n\nShow full solution\n\nThe 18 Bus responses were counted among the 40 sampled students, not all 1,000 students. The matching denominator is 40, giving 45%. A supported statement is: “Among the 40 sampled School A students, 45% mainly travel by bus.” The full population’s bus proportion is unknown from these summaries alone.\n\n\n\n\n6. A known population parameter\nA workshop has 80 finished parcels in a shipment. Every parcel is weighed, and the mean is 2.40 kg. In a separate quality check, 10 of those parcels have a mean of 2.31 kg. With the shipment as the population, classify both means.\n\nSolution. \n\n\nShow full solution\n\nThe 2.40 kg mean describes all 80 parcels in the specified shipment, so it is a population parameter. The 2.31 kg mean describes only the 10 selected parcels, so it is a sample statistic. Being known does not change the parameter’s role, and the two means need not be equal.\n\n\n\n\n7. Ordered categories and arbitrary codes\nA movie survey uses Very dissatisfied, Dissatisfied, Neutral, Satisfied, and Very satisfied. Explain what is preserved when the labels are changed from 1–5 to A–E, and what is not justified by the numerical codes.\n\nSolution. \n\n\nShow full solution\n\nA one-to-one relabelling preserves category membership, frequencies, proportions, and the intended order, provided the code key is retained. It does not establish equal measured gaps between levels. The recorded satisfaction levels remain ordered categorical values; numerical coding alone does not justify interpreting their arithmetic mean as a measured amount of satisfaction.\n\n\n\n\n8. Verify the recoding calculation\nFor Walk 8, Bicycle 6, Bus 18, and Car 8, use codes 4, 1, 9, and 2. Find the arithmetic average of these codes and the Bus proportion. Explain which result describes bus use meaningfully.\n\nSolution. \n\n\nShow full solution\n\nThe code average is (8⋅4+6⋅1+18⋅9+8⋅2)/40=216/40=5.40(8\\cdot4+6\\cdot1+18\\cdot9+8\\cdot2)/40=216/40=5.40. It depends on arbitrary labels and has no travel-method interpretation. The Bus proportion is 18/40=0.45=45%18/40=0.45=45\\%, which meaningfully describes the share of sampled students in the Bus category and is unchanged by the relabelling.\n\n\n\n\n9. Change the observational unit\nIn Study I, each student’s record states whether they were late yesterday. In Study II, each school day’s record gives the number of late students. Identify the unit and variable type in each study.\n\nSolution. \n\n\nShow full solution\n\nIn Study I, the unit is one student, and late yesterday (Yes/No) is categorical. In Study II, the unit is one school day, and the number of late students is discrete quantitative. Both concern lateness, but the units and recorded characteristics differ.\n\n\n\n\n10. Extract two variables from a recording\nA researcher makes 20 fixed-length traffic video clips at one intersection. For each clip, they record the weather category and the number of bicycles passing a marked line. Identify the observational unit, sample size, variable types, and one possible datum.\n\nSolution. \n\n\nShow full solution\n\nThe unit is one video clip, and there are 20 clips, so the sample size is 20 for a study of those sampled clips. Weather category is categorical; number of passing bicycles is discrete quantitative. One possible datum is “Clip 7 shows 4 bicycles passing the marked line.” Neither the number of recorded characteristics nor the number of bicycles changes the count of observational units. A population-level claim would also require defining the target collection of clips or observation periods and considering how these clips were selected.",
+    "crumbs": [
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Topic 1.2 Variables</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 1/Topic 1.2/topic-1-2.html#before-moving-on",
+    "href": "Unit 1/Topic 1.2/topic-1-2.html#before-moving-on",
+    "title": "Topic 1.2 Variables",
+    "section": "Before moving on",
+    "text": "Before moving on\nFor a new study, identify the observational unit, the characteristic and its units or categories, and the group described by each numerical summary. Then classify the variable and justify your choice from its meaning and possible values.\nContinue to Topic 1.3 Tabular Representation and Summary Statistics for One Categorical Variable to organize categorical observations without losing their context.",
+    "crumbs": [
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Topic 1.2 Variables</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 1/Topic 1.2/topic-1-2.html#source-and-reusable-materials",
+    "href": "Unit 1/Topic 1.2/topic-1-2.html#source-and-reusable-materials",
+    "title": "Topic 1.2 Variables",
+    "section": "Source and reusable materials",
+    "text": "Source and reusable materials\nAligned with the College Board AP Statistics Course and Exam Description, effective Fall 2026, Topic 1.2, printed pages 32–33, objectives 1.2.A–C (Skill 2.A). Explanations, activities, and practice are independently authored for Chun Li’s Maple Hill School course.\nThe shared hypothetical summaries and original provenance are in foundations.json. The four illustrative rows have their own data dictionary. Editable QMD, activity code, objective mappings, and tests are kept together in this topic’s repository folder. No actual student records or secure AP Classroom material are used.",
+    "crumbs": [
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Topic 1.2 Variables</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 1/Topic 1.3/topic-1-3.html",
+    "href": "Unit 1/Topic 1.3/topic-1-3.html",
+    "title": "Topic 1.3 Tabular Representation and Summary Statistics for One Categorical Variable",
     "section": "",
     "text": "One variable, one response per person\nSchool A has 1,000 students enrolled this term. In our hypothetical sample of 40 School A students, each reports a usual main travel method: Walk, Bicycle, Bus, or Car. This is the same categorical study introduced in Topic 1.1; it is not the separate sample of 24 numerical commute times used in Topic 1.5.\nThe investigative question is: What proportion of School A students this term usually travel mainly by bus?\nFor a one-response frequency table, categories should be mutually exclusive (a respondent cannot be counted in two categories) and collectively exhaustive (every valid response has a place). Here, main method means the method used for the greatest distance on a typical school day. A real questionnaire should also provide consistent rules for ties or unlisted methods; our hypothetical data specify exactly one method for each of the 40 respondents.",
     "crumbs": [
-      "1.1–1.4 · Statistical foundations",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>1.3 · Categorical tables and numerical summaries</span>"
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Topic 1.3 Tabular Representation and Summary Statistics for One Categorical Variable</span>"
     ]
   },
   {
-    "objectID": "topic-1-3.html#from-tallies-to-frequencies",
-    "href": "topic-1-3.html#from-tallies-to-frequencies",
-    "title": "1.3 · Categorical tables and numerical summaries",
+    "objectID": "Unit 1/Topic 1.3/topic-1-3.html#from-tallies-to-frequencies",
+    "href": "Unit 1/Topic 1.3/topic-1-3.html#from-tallies-to-frequencies",
+    "title": "Topic 1.3 Tabular Representation and Summary Statistics for One Categorical Variable",
     "section": "From tallies to frequencies",
     "text": "From tallies to frequencies\nA frequency is the number of observational units in one category. Read each response, add one tally mark to exactly one row, and verify that the frequency total equals the number of classified responses. In tally notation, a fifth stroke crosses the previous four: ||||/ means five.\n\n\n\n\n\n\n\n\nMain travel method\nTallies (groups of five)\nFrequency\n\n\n\n\nWalk\n||||/ |||\n8\n\n\nBicycle\n||||/ |\n6\n\n\nBus\n||||/ ||||/ ||||/ |||\n18\n\n\nCar\n||||/ |||\n8\n\n\nTotal\n\n40\n\n\n\nThe check is 8+6+18+8=408+6+18+8=40. The sum would be larger than 40 if someone were counted twice, or smaller if some responses were missing or unclassified.\n\nActivity: construct the table one response at a time\nPredict where the next tally belongs. Advance one response, advance five, reveal the finished table, or reset. For teaching purposes, the activity reproducibly shuffles the hypothetical category totals; it does not claim to preserve an actual survey response order.\n\n\nStatic reference: Walk 8, Bicycle 6, Bus 18, Car 8; 40 total. The interactive tally activity requires JavaScript.",
     "crumbs": [
-      "1.1–1.4 · Statistical foundations",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>1.3 · Categorical tables and numerical summaries</span>"
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Topic 1.3 Tabular Representation and Summary Statistics for One Categorical Variable</span>"
     ]
   },
   {
-    "objectID": "topic-1-3.html#relative-frequency-and-percentages",
-    "href": "topic-1-3.html#relative-frequency-and-percentages",
-    "title": "1.3 · Categorical tables and numerical summaries",
+    "objectID": "Unit 1/Topic 1.3/topic-1-3.html#relative-frequency-and-percentages",
+    "href": "Unit 1/Topic 1.3/topic-1-3.html#relative-frequency-and-percentages",
+    "title": "Topic 1.3 Tabular Representation and Summary Statistics for One Categorical Variable",
     "section": "Relative frequency and percentages",
     "text": "Relative frequency and percentages\nA relative frequency is the category count divided by the total number of classified observations. Since every one of the 40 sampled students supplied one answer, our denominator is n=40n=40.\nRelative frequency=category counttotal count,percentage=relative frequency×100%.\n\\text{Relative frequency}=\\frac{\\text{category count}}{\\text{total count}},\n\\qquad\n\\text{percentage}=\\text{relative frequency}\\times100\\%.\n\nFor the Bus category, 18/40=0.45=45%18/40=0.45=45\\%.\n\n\n\nMain method\nCount\nRelative frequency\nPercentage\n\n\n\n\nWalk\n8\n0.20\n20%\n\n\nBicycle\n6\n0.15\n15%\n\n\nBus\n18\n0.45\n45%\n\n\nCar\n8\n0.20\n20%\n\n\nTotal\n40\n1.00\n100%\n\n\n\nFrequency answers how many? Relative frequency answers what share of the group? Always name the group: 18 of the 40 sampled School A students reported Bus, corresponding to 45% of the sample. Do not divide 18 by the population size 1,000, and do not treat 45% as the exact percentage among all 1,000 students.\n\n\n\n\n\n\nTipRounding does not create missing people\n\n\n\nUse exact counts to calculate fractions, then round for display. Individually rounded percentages may total 99.9% or 100.1%. The exact unrounded proportions of an exhaustive single-response table still total 1.",
     "crumbs": [
-      "1.1–1.4 · Statistical foundations",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>1.3 · Categorical tables and numerical summaries</span>"
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Topic 1.3 Tabular Representation and Summary Statistics for One Categorical Variable</span>"
     ]
   },
   {
-    "objectID": "topic-1-3.html#ratios-change-when-the-denominator-changes",
-    "href": "topic-1-3.html#ratios-change-when-the-denominator-changes",
-    "title": "1.3 · Categorical tables and numerical summaries",
+    "objectID": "Unit 1/Topic 1.3/topic-1-3.html#ratios-change-when-the-denominator-changes",
+    "href": "Unit 1/Topic 1.3/topic-1-3.html#ratios-change-when-the-denominator-changes",
+    "title": "Topic 1.3 Tabular Representation and Summary Statistics for One Categorical Variable",
     "section": "Ratios change when the denominator changes",
     "text": "Ratios change when the denominator changes\nA part-to-whole ratio compares one category to the entire group. The ratio Bus to all responses is 18:40=9:2018:40=9:20, which represents the same share as 18/40=45%18/40=45\\%.\nA part-to-part ratio compares two categories. Bus to Car is 18:8=9:418:8=9:4, and 18/8=2.2518/8=2.25 means that there are 2.25 times as many sampled bus riders as sampled car riders. It does not mean that 225% of all sampled students take the bus.\n\nActivity: the denominator explorer\nSelect the numerator category and the group being used as the denominator. Explain who is included in the denominator before examining the result.\n\n\nStatic reference: Bus among all 40 respondents is 18/40=45%18/40=45\\%. Bus compared with Car is 18:8=9:418:8=9:4.\n\n\nFor another comparison, Bus among only Bus-or-Bicycle respondents is 18/(18+6)=18/24=75%18/(18+6)=18/24=75\\%. The category count did not change; the group described did. Ratios become interpretable only when both sides are labelled.",
     "crumbs": [
-      "1.1–1.4 · Statistical foundations",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>1.3 · Categorical tables and numerical summaries</span>"
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Topic 1.3 Tabular Representation and Summary Statistics for One Categorical Variable</span>"
     ]
   },
   {
-    "objectID": "topic-1-3.html#most-common-is-not-always-a-majority",
-    "href": "topic-1-3.html#most-common-is-not-always-a-majority",
-    "title": "1.3 · Categorical tables and numerical summaries",
+    "objectID": "Unit 1/Topic 1.3/topic-1-3.html#most-common-is-not-always-a-majority",
+    "href": "Unit 1/Topic 1.3/topic-1-3.html#most-common-is-not-always-a-majority",
+    "title": "Topic 1.3 Tabular Representation and Summary Statistics for One Categorical Variable",
     "section": "Most common is not always a majority",
     "text": "Most common is not always a majority\nA modal category is the category with the greatest frequency. Bus is the most common category because 18 exceeds the counts 8, 6, and 8. This is a plurality, not a majority: 18/40=45%18/40=45\\% is below 50%.\nBecause Walk and Bicycle are disjoint categories, they can be combined: 8+6=148+6=14 students, or 14/40=35%14/40=35\\%, reported Walk or Bicycle. Do not add counts that overlap. In a choose every method used survey, a respondent may check both Walk and Bus and the total category selections can exceed the number of respondents.\nA supported statement is: “Among the 40 sampled School A students, Bus was the most common usual main travel method, reported by 18 students (45%).” An unsupported overstatement is “Exactly 45% of all 1,000 School A students travel by bus.” The sample does not reveal the exact population proportion.\n\nCheckpoint: what does the table justify?\nThe four original cases begin with no answer selected. Choose, check the explanation, clear your choice, or move to the next case.\n\n\nStatic reference: Bus is the largest category (45%) but not a majority; Walk or Bicycle accounts for 35% of this sample.",
     "crumbs": [
-      "1.1–1.4 · Statistical foundations",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>1.3 · Categorical tables and numerical summaries</span>"
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Topic 1.3 Tabular Representation and Summary Statistics for One Categorical Variable</span>"
     ]
   },
   {
-    "objectID": "topic-1-3.html#practice-construct-calculate-explain",
-    "href": "topic-1-3.html#practice-construct-calculate-explain",
-    "title": "1.3 · Categorical tables and numerical summaries",
+    "objectID": "Unit 1/Topic 1.3/topic-1-3.html#practice-construct-calculate-explain",
+    "href": "Unit 1/Topic 1.3/topic-1-3.html#practice-construct-calculate-explain",
+    "title": "Topic 1.3 Tabular Representation and Summary Statistics for One Categorical Variable",
     "section": "Practice: construct, calculate, explain",
     "text": "Practice: construct, calculate, explain\nAll questions are independently authored classroom exercises. Try each before opening the detailed solution.\n\n1. Study locations\nA different hypothetical survey asks 24 students to name one usual study location: Home (9), Library (8), Cafe (4), or Other (3). Make a frequency/relative-frequency/percentage table. Which is most common? Is it a majority?\n\nSolution. \n\n\nShow solution\n\n\n\n\nLocation\nFrequency\nRelative frequency\nPercentage\n\n\n\n\nHome\n9\n9/24=0.3759/24=0.375\n37.5%\n\n\nLibrary\n8\n8/24≈0.33338/24\\approx0.3333\n33.3%\n\n\nCafe\n4\n4/24≈0.16674/24\\approx0.1667\n16.7%\n\n\nOther\n3\n3/24=0.1253/24=0.125\n12.5%\n\n\nTotal\n24\n1 (unrounded)\n100% (rounded)\n\n\n\nHome is the most common (9 students), but not a majority: 9/24=37.5%&lt;50%9/24=37.5\\%&lt;50\\%.\n\n\n\n\n2. Ordered categorical answers\nA hypothetical movie-satisfaction survey has 30 responses: Very dissatisfied 2, Dissatisfied 4, Neutral 5, Satisfied 12, Very satisfied 7. Compute category percentages to one decimal place and the share Satisfied or Very satisfied.\n\nSolution. \n\n\nShow solution\n\n\n\n\nCategory\nCount\nPercentage\n\n\n\n\nVery dissatisfied\n2\n6.7%\n\n\nDissatisfied\n4\n13.3%\n\n\nNeutral\n5\n16.7%\n\n\nSatisfied\n12\n40.0%\n\n\nVery satisfied\n7\n23.3%\n\n\n\nThe modal category is Satisfied. The two positive categories have 12+7=1912+7=19 responses out of 30: 19/30≈63.3%19/30\\approx63.3\\%. If categories are coded 1–5, those numbers are labels for an ordered categorical variable, not automatically an equally spaced quantitative measurement.\n\n\n\n\n3. The majority mistake\nA student writes, “Bus is the largest category, so the majority of respondents take the bus.” Identify exactly what is right and wrong.\n\nSolution. \n\n\nShow solution\n\nBus is the largest individual category: 18 exceeds 8, 6, and 8. But a majority is more than half; 18/40=45%&lt;50%18/40=45\\%&lt;50\\%. Correct report: “Bus was the most common main method among the 40 sampled students, reported by 18 (45%), but fewer than half chose it.”\n\n\n\n\n4. Two different denominators\nCompute (a) Bus to Bicycle as a simplified ratio, (b) Bus among all 40 responses, and (c) Bus among Bus-or-Bicycle responses.\n\nSolution. \n\n\nShow solution\n\n\n18:6=3:118:6=3:1; (b) 18/40=0.45=45%18/40=0.45=45\\%; (c) 18/(18+6)=18/24=0.75=75%18/(18+6)=18/24=0.75=75\\%. The numerator is unchanged, while the denominator for (c) includes only the 24 sampled people in the selected pair of categories.\n\n\n\n\n\n5. Why don’t the counts sum to 30?\nA check every method used survey has 30 respondents and counts Walk 18, Bus 12, Bicycle 8, Car 7, totalling 45. Is the table necessarily wrong? Must percentages of respondents selecting each method add to 100%?\n\nSolution. \n\n\nShow solution\n\nNo. Respondents may select more than one method; the 45 selections can come from 30 people. Dividing by 30 gives 60%, 40%, 26.7%, 23.3% of respondents selecting each method, summing to approximately 150%. These are overlapping categories, not a single-answer distribution whose relative frequencies must sum to 100%.\n\n\n\n\n6. A misleading denominator\nA report says, “Bus accounts for 18% of School A’s 1,000 students because 18 sampled students chose Bus.” Correct the calculation and statement.\n\nSolution. \n\n\nShow solution\n\nThe appropriate denominator for the sampled bus count is 40 sampled students. The sample percentage is 18/40=45%18/40=45\\%, not 18%. A defensible report is “Among 40 sampled School A students, 18 (45%) reported Bus as their usual main method.” The exact percentage among all 1,000 students is not known from these data.\n\n\n\n\n7. Rounding is not missing data\nThree categories each contain one person in a survey of three. The reported percentages, 33.3%, 33.3%, and 33.3%, sum to 99.9%. Has one person been left out?\n\nSolution. \n\n\nShow solution\n\nNo. 1+1+1=31+1+1=3 includes everyone. The exact proportions are 1/31/3 each and sum to 1. Rounding each 100/3%100/3\\% to one decimal creates the 0.1-percentage-point difference.",
     "crumbs": [
-      "1.1–1.4 · Statistical foundations",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>1.3 · Categorical tables and numerical summaries</span>"
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Topic 1.3 Tabular Representation and Summary Statistics for One Categorical Variable</span>"
     ]
   },
   {
-    "objectID": "topic-1-3.html#before-moving-on",
-    "href": "topic-1-3.html#before-moving-on",
-    "title": "1.3 · Categorical tables and numerical summaries",
+    "objectID": "Unit 1/Topic 1.3/topic-1-3.html#before-moving-on",
+    "href": "Unit 1/Topic 1.3/topic-1-3.html#before-moving-on",
+    "title": "Topic 1.3 Tabular Representation and Summary Statistics for One Categorical Variable",
     "section": "Before moving on",
     "text": "Before moving on\nYou should now be able to construct a one-response table, compute and interpret frequency and relative frequency, identify the denominator in a ratio, distinguish most common from majority, and justify contextual claims without exceeding the data.\nComing next: Topic 1.4 will graph these same counts with bar and pie charts; it should not change the underlying totals.\n\nCurriculum and provenance: College Board AP Statistics CED, effective Fall 2026, Topic 1.3, printed p. 34; objectives 1.3.A and 1.3.B, essential knowledge 1.3.A.1–2 and 1.3.B.1–2 (checked October 13, 2026). All data in this chapter are hypothetical classroom examples, summarized in data/foundations.json. Interactive code and practice are independently authored; the book is not endorsed by the College Board.",
     "crumbs": [
-      "1.1–1.4 · Statistical foundations",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>1.3 · Categorical tables and numerical summaries</span>"
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Topic 1.3 Tabular Representation and Summary Statistics for One Categorical Variable</span>"
     ]
   },
   {
-    "objectID": "topic-1-4.html",
-    "href": "topic-1-4.html",
-    "title": "1.4 · Graphs for categorical data",
+    "objectID": "Unit 1/Topic 1.4/topic-1-4.html",
+    "href": "Unit 1/Topic 1.4/topic-1-4.html",
+    "title": "Topic 1.4 Graphical Representations for One Categorical Variable",
     "section": "",
     "text": "One survey, three ways to see it\nIn a hypothetical School A study, 40 sampled students each named one usual main travel method: Walk, Bicycle, Bus, or Car. We use exactly the same one-response data as Topic 1.3, not the separate 24 numerical commute times in Topic 1.5.\nThe observational units are the 40 selected students; the variable is usual main travel method, which is categorical. The categories are mutually exclusive and exhaustive for these 40 recorded responses. A graph can change how we display these observations, but it must not change their counts.",
     "crumbs": [
-      "1.1–1.4 · Statistical foundations",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>1.4 · Graphs for categorical data</span>"
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Topic 1.4 Graphical Representations for One Categorical Variable</span>"
     ]
   },
   {
-    "objectID": "topic-1-4.html#one-survey-three-ways-to-see-it",
-    "href": "topic-1-4.html#one-survey-three-ways-to-see-it",
-    "title": "1.4 · Graphs for categorical data",
+    "objectID": "Unit 1/Topic 1.4/topic-1-4.html#one-survey-three-ways-to-see-it",
+    "href": "Unit 1/Topic 1.4/topic-1-4.html#one-survey-three-ways-to-see-it",
+    "title": "Topic 1.4 Graphical Representations for One Categorical Variable",
     "section": "",
     "text": "Main travel method\nFrequency\nRelative frequency\nPercentage\n\n\n\n\nWalk\n8\n0.20\n20%\n\n\nBicycle\n6\n0.15\n15%\n\n\nBus\n18\n0.45\n45%\n\n\nCar\n8\n0.20\n20%\n\n\nTotal\n40\n1.00\n100%",
     "crumbs": [
-      "1.1–1.4 · Statistical foundations",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>1.4 · Graphs for categorical data</span>"
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Topic 1.4 Graphical Representations for One Categorical Variable</span>"
     ]
   },
   {
-    "objectID": "topic-1-4.html#bar-charts-compare-category-heights",
-    "href": "topic-1-4.html#bar-charts-compare-category-heights",
-    "title": "1.4 · Graphs for categorical data",
+    "objectID": "Unit 1/Topic 1.4/topic-1-4.html#bar-charts-compare-category-heights",
+    "href": "Unit 1/Topic 1.4/topic-1-4.html#bar-charts-compare-category-heights",
+    "title": "Topic 1.4 Graphical Representations for One Categorical Variable",
     "section": "1 · Bar charts: compare category heights",
     "text": "1 · Bar charts: compare category heights\nA frequency bar chart uses one separate bar per category; bar height (or length) gives the count. Draw four bars of equal width with heights 8, 6, 18, 8. Label the vertical axis Number of sampled students, the horizontal axis Usual main travel method, and begin the vertical scale at zero.\nA relative-frequency bar chart uses the same categories but bar heights 20%, 15%, 45%, 20%. Its vertical axis should say Percent of sampled students. The gap between bars emphasizes that categories are separate: bar charts are not histograms, which group numerical values into intervals (see Topic 1.5).\nDesign rule: A truncated vertical axis can exaggerate relative bar lengths. For instance, a bar at 18 and one at 8 should be visibly 18 and 8 units long from the common zero baseline. A chart with an unexplained lower cutoff may mislead readers.\n\n\n\n\n\n\nTipCount versus percentage\n\n\n\nCounts answer how many; percentages answer what share of the relevant group. Include sample size and units. A most-common (modal) category is not necessarily a majority: School A’s Bus group contains 18/40 = 45%, which is less than 50%.",
     "crumbs": [
-      "1.1–1.4 · Statistical foundations",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>1.4 · Graphs for categorical data</span>"
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Topic 1.4 Graphical Representations for One Categorical Variable</span>"
     ]
   },
   {
-    "objectID": "topic-1-4.html#pie-charts-parts-of-one-whole",
-    "href": "topic-1-4.html#pie-charts-parts-of-one-whole",
-    "title": "1.4 · Graphs for categorical data",
+    "objectID": "Unit 1/Topic 1.4/topic-1-4.html#pie-charts-parts-of-one-whole",
+    "href": "Unit 1/Topic 1.4/topic-1-4.html#pie-charts-parts-of-one-whole",
+    "title": "Topic 1.4 Graphical Representations for One Categorical Variable",
     "section": "2 · Pie charts: parts of one whole",
     "text": "2 · Pie charts: parts of one whole\nA pie chart partitions a circle into slices, one per category. The fraction of the circle’s area occupied by a slice equals that category’s relative frequency. The slice’s central angle is:\nSlice angle=category counttotal observations×360∘.\n\\text{Slice angle}=\\frac{\\text{category count}}{\\text{total observations}}\\times360^\\circ.\n\nFor School A’s Bus category, the calculation is (18/40)360∘=162∘(18/40)360^\\circ=162^\\circ. That is 45% of the full circle, representing 18 of the 40 sampled students.\n\n\n\nMethod\nShare\nCentral angle\n\n\n\n\nWalk\n20%\n72∘72^\\circ\n\n\nBicycle\n15%\n54∘54^\\circ\n\n\nBus\n45%\n162∘162^\\circ\n\n\nCar\n20%\n72∘72^\\circ\n\n\nTotal\n100%\n360∘360^\\circ\n\n\n\nThe chart works because one student belongs to one category, so all slices together fill one circle. Pie charts are less effective when categories overlap, the whole is unclear, there are many small categories, or two similar slices need precise comparison. Use flat, two-dimensional pies: decorative 3D perspective can distort perceived areas.\n\nInteractive: construct three views from a frequency table\nSelect School A or School B, then reveal one category at a time as a count bar chart, percentage bar chart, or pie chart. The companion table shows the complete data throughout; the reveal is a drawing exercise, not a change to the observations.\n\n\nStatic reference: School A count bars 8, 6, 18, 8; percentage bars 20, 15, 45, 20; pie angles 72°, 54°, 162°, 72°. These all represent the same 40 responses.\n\n\nTry it: Draw Bus in all three modes. Explain why its count is 18, its bar percentage is 45%, and its slice angle is 162°. Change the data source to School B; what changes, and what does not?",
     "crumbs": [
-      "1.1–1.4 · Statistical foundations",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>1.4 · Graphs for categorical data</span>"
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Topic 1.4 Graphical Representations for One Categorical Variable</span>"
     ]
   },
   {
-    "objectID": "topic-1-4.html#compare-groups-with-the-right-denominator",
-    "href": "topic-1-4.html#compare-groups-with-the-right-denominator",
-    "title": "1.4 · Graphs for categorical data",
+    "objectID": "Unit 1/Topic 1.4/topic-1-4.html#compare-groups-with-the-right-denominator",
+    "href": "Unit 1/Topic 1.4/topic-1-4.html#compare-groups-with-the-right-denominator",
+    "title": "Topic 1.4 Graphical Representations for One Categorical Variable",
     "section": "3 · Compare groups with the right denominator",
     "text": "3 · Compare groups with the right denominator\nA different hypothetical School B sample contains 60 students, each reporting the same variable in the same categories.\n\n\n\n\n\n\n\n\n\n\nMethod\nSchool A count (n=40n=40)\nSchool A %\nSchool B count (n=60n=60)\nSchool B %\n\n\n\n\nWalk\n8\n20%\n9\n15%\n\n\nBicycle\n6\n15%\n6\n10%\n\n\nBus\n18\n45%\n18\n30%\n\n\nCar\n8\n20%\n27\n45%\n\n\nTotal\n40\n100%\n60\n100%\n\n\n\nWorked comparison—Bus. Both samples contain exactly 18 bus riders, yet these are 45% of School A’s 40 sampled students and 30% of School B’s 60 sampled students. School A’s sample bus share is 15 percentage points higher, even though the counts are equal. Dividing 18 by 40 to describe School B would be the wrong denominator.\nWorked comparison—Car. School A’s count is 8 (20%); School B’s is 27 (45%). School B’s sample Car proportion exceeds School A’s by 25 percentage points. Neither school’s sample Car or Bus percentage proves the exact proportion in the entire school population.\nWhen group sizes differ, percentage bar charts usually give the fairest comparison of category shares. Count bar charts remain valid for comparing numbers of sampled observations, but the different sample sizes must remain explicit. Use the same axis scale for the two distributions.\n\nInteractive: switch counts and within-group percentages\nBoth groups stay on screen. Switch the shared vertical axis, then select a category to see a properly labelled comparison. The text table gives the same information without relying on colour or animation.\n\n\nStatic reference: Bus 18 versus 18 students, but 45% versus 30%; Car 8 versus 27 students, but 20% versus 45%.",
     "crumbs": [
-      "1.1–1.4 · Statistical foundations",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>1.4 · Graphs for categorical data</span>"
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Topic 1.4 Graphical Representations for One Categorical Variable</span>"
     ]
   },
   {
-    "objectID": "topic-1-4.html#write-a-supported-statement",
-    "href": "topic-1-4.html#write-a-supported-statement",
-    "title": "1.4 · Graphs for categorical data",
+    "objectID": "Unit 1/Topic 1.4/topic-1-4.html#write-a-supported-statement",
+    "href": "Unit 1/Topic 1.4/topic-1-4.html#write-a-supported-statement",
+    "title": "Topic 1.4 Graphical Representations for One Categorical Variable",
     "section": "4 · Write a supported statement",
     "text": "4 · Write a supported statement\nA complete interpretation says which students, which variable/category, which measure, and what values support the claim.\nSupported: “Among the 40 sampled School A students, Bus was the most common usual main travel method, reported by 18 students (45%).”\nUnsupported: “A majority of all School A students take the bus.” Forty-five percent of the sample is not a majority, and the population percentage is unknown.\nSupported comparison: “Bus made up a greater proportion of the School A sample (45%) than of the School B sample (30%).” That describes samples, not an established difference between populations.\n\nPreserve the meaning of ordered categories\nFor a separate hypothetical movie-satisfaction survey, the ordered categories Very dissatisfied, Dissatisfied, Neutral, Satisfied, Very satisfied have counts 2, 4, 5, 12, 7 (total 30). Keep the bar-chart categories in their natural order. One-to-one recoding as 1–5 or A–E retains category identity and order, but does not establish equal numerical spacing between levels. Merging adjacent categories loses information. It remains an ordered categorical variable, even when its labels are numerals.",
     "crumbs": [
-      "1.1–1.4 · Statistical foundations",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>1.4 · Graphs for categorical data</span>"
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Topic 1.4 Graphical Representations for One Categorical Variable</span>"
     ]
   },
   {
-    "objectID": "topic-1-4.html#chart-audit-find-the-evidence-or-the-flaw",
-    "href": "topic-1-4.html#chart-audit-find-the-evidence-or-the-flaw",
-    "title": "1.4 · Graphs for categorical data",
+    "objectID": "Unit 1/Topic 1.4/topic-1-4.html#chart-audit-find-the-evidence-or-the-flaw",
+    "href": "Unit 1/Topic 1.4/topic-1-4.html#chart-audit-find-the-evidence-or-the-flaw",
+    "title": "Topic 1.4 Graphical Representations for One Categorical Variable",
     "section": "5 · Chart audit: find the evidence or the flaw",
     "text": "5 · Chart audit: find the evidence or the flaw\nEach multiple-choice question starts with no answer selected. Check the explanation, clear a choice, or advance to the next case. Questions are original classroom exercises.\n\n\nStatic reference: Check a bar chart’s zero baseline and axis units; a pie chart’s disjoint slices and 100% total; comparisons’ within-group denominators; natural category order; and whether the statement overgeneralizes from a sample.\n\n\n\n\n\n\n\n\nWarningMisleading visual design\n\n\n\nAn axis beginning above zero, unmatched chart scales, missing group sizes, a 3D pie, or a pie that mixes overlapping choices can all obscure what the data actually show. Avoid these even when the arithmetic is correct.",
     "crumbs": [
-      "1.1–1.4 · Statistical foundations",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>1.4 · Graphs for categorical data</span>"
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Topic 1.4 Graphical Representations for One Categorical Variable</span>"
     ]
   },
   {
-    "objectID": "topic-1-4.html#practice-construct-compare-explain",
-    "href": "topic-1-4.html#practice-construct-compare-explain",
-    "title": "1.4 · Graphs for categorical data",
+    "objectID": "Unit 1/Topic 1.4/topic-1-4.html#practice-construct-compare-explain",
+    "href": "Unit 1/Topic 1.4/topic-1-4.html#practice-construct-compare-explain",
+    "title": "Topic 1.4 Graphical Representations for One Categorical Variable",
     "section": "Practice: construct, compare, explain",
     "text": "Practice: construct, compare, explain\nAll eight problems and solutions below are original classroom exercises. Try each before opening the worked answer.\n\n1. Build two School A bar charts\nSpecify the heights, labels, and baseline for both the count and relative-frequency bar charts.\n\nSolution. \n\n\nShow worked solution\n\nUse category order Walk, Bicycle, Bus, Car. Count heights: 8, 6, 18, 8 with vertical axis “Number of sampled students.” Percentage heights: 20%, 15%, 45%, 20% with vertical axis “Percent of 40 sampled School A students.” Both axes start at zero. Use equal-width separated bars and label the horizontal axis “Usual main travel method.”\n\n\n\n\n2. Calculate every School A pie angle\nShow the four calculations and check that the slices form a circle.\n\nSolution. \n\n\nShow worked solution\n\nWalk: (8/40)360∘=72∘(8/40)360^\\circ=72^\\circ. Bicycle: (6/40)360∘=54∘(6/40)360^\\circ=54^\\circ. Bus: (18/40)360∘=162∘(18/40)360^\\circ=162^\\circ. Car: (8/40)360∘=72∘(8/40)360^\\circ=72^\\circ. Check: 72+54+162+72=360 degrees; the four sample proportions sum to 100%.\n\n\n\n\n3. Calculate School B pie angles\nFind every percentage and slice angle from 9, 6, 18, and 27 responses out of 60.\n\nSolution. \n\n\nShow worked solution\n\nWalk: 9/60=15%9/60=15\\%, angle 54°. Bicycle: 6/60=10%6/60=10\\%, angle 36°. Bus: 18/60=30%18/60=30\\%, angle 108°. Car: 27/60=45%27/60=45\\%, angle 162°. The percentages total 100% and angles total 360°. Use 60 as the denominator throughout.\n\n\n\n\n4. Equal counts imply equal shares?\nSomeone writes, “School A and School B each have 18 sampled bus riders, so bus use is equally common in their samples.” Evaluate.\n\nSolution. \n\n\nShow worked solution\n\nThe counts are both 18, but the sample proportions are 18/40=45% and 18/60=30%. The School A sample’s bus share is 15 percentage points greater. Equal counts with different denominators do not imply equal shares.\n\n\n\n\n5. Compare sampled car users\nHow much greater is School B’s sample Car share than School A’s, in percentage points?\n\nSolution. \n\n\nShow worked solution\n\nSchool A: 8/40=20%8/40=20\\%. School B: 27/60=45%27/60=45\\%. The difference is 45%-20%=25 percentage points. The data do not establish the exact difference between the full populations.\n\n\n\n\n6. Audit a truncated scale\nA bar graph comparing counts Bus=18 and Car=8 begins its vertical axis at 7. What is wrong with that display?\n\nSolution. \n\n\nShow worked solution\n\nBars encode magnitude through length from a baseline. Omitting 0–7 makes the visible lengths 11 and 1 units, visually exaggerating the difference. A conventional count bar chart should start its y-axis at 0, with bars of heights 18 and 8 and a labelled scale.\n\n\n\n\n7. Order the movie ratings\nWhy should Very dissatisfied → Very satisfied remain in order after one-to-one recoding as A–E? Does A–E make the variable quantitative?\n\nSolution. \n\n\nShow worked solution\n\nThe five levels have a meaningful order, so preserving it lets viewers see the satisfaction pattern from low to high. Recoding levels as A, B, C, D, E changes labels, not counts or category meaning; it does not make the variable quantitative or imply equal distances between levels.\n\n\n\n\n8. Study-location pie or bar?\nA separate hypothetical sample of 24 students reports Home 9, Library 8, Cafe 4, Other 3. Find Home’s pie angle. Is Home a majority? Which graph better distinguishes Home from Library?\n\nSolution. \n\n\nShow worked solution\n\nHome: 9/24=37.5%9/24=37.5\\% and (9/24)360∘=135∘(9/24)360^\\circ=135^\\circ. It is the modal category, but not a majority because 37.5% is less than 50%. A labelled bar chart more clearly distinguishes the close frequencies 9 versus 8 than a pie chart’s similar slice angles.",
     "crumbs": [
-      "1.1–1.4 · Statistical foundations",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>1.4 · Graphs for categorical data</span>"
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Topic 1.4 Graphical Representations for One Categorical Variable</span>"
     ]
   },
   {
-    "objectID": "topic-1-4.html#before-moving-on",
-    "href": "topic-1-4.html#before-moving-on",
-    "title": "1.4 · Graphs for categorical data",
+    "objectID": "Unit 1/Topic 1.4/topic-1-4.html#before-moving-on",
+    "href": "Unit 1/Topic 1.4/topic-1-4.html#before-moving-on",
+    "title": "Topic 1.4 Graphical Representations for One Categorical Variable",
     "section": "Before moving on",
     "text": "Before moving on\nYou should be able to construct a labelled categorical bar chart or pie chart, show what its heights or slice areas mean, choose within-group proportions for sensible comparisons, and explain exactly which claims the graph supports. Proceed to quantitative graphs when the variable is numerical, or return to categorical tables to review denominators.",
     "crumbs": [
-      "1.1–1.4 · Statistical foundations",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>1.4 · Graphs for categorical data</span>"
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Topic 1.4 Graphical Representations for One Categorical Variable</span>"
     ]
   },
   {
-    "objectID": "topic-1-4.html#source-and-data-provenance",
-    "href": "topic-1-4.html#source-and-data-provenance",
-    "title": "1.4 · Graphs for categorical data",
+    "objectID": "Unit 1/Topic 1.4/topic-1-4.html#source-and-data-provenance",
+    "href": "Unit 1/Topic 1.4/topic-1-4.html#source-and-data-provenance",
+    "title": "Topic 1.4 Graphical Representations for One Categorical Variable",
     "section": "Source and data provenance",
     "text": "Source and data provenance\nBased on the College Board AP Statistics Course and Exam Description effective Fall 2026, Topic 1.4, printed p. 35, learning objectives 1.4.A–C. All worked practice and graph tools are independently authored. School A, School B, study locations and movie satisfaction are hypothetical datasets, stored with provenance in data/foundations.json. No secure AP Classroom content or actual student records are used.",
     "crumbs": [
-      "1.1–1.4 · Statistical foundations",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>1.4 · Graphs for categorical data</span>"
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Topic 1.4 Graphical Representations for One Categorical Variable</span>"
     ]
   },
   {
-    "objectID": "individual-values.html",
-    "href": "individual-values.html",
-    "title": "1.5 · Individual values",
+    "objectID": "Unit 1/Topic 1.5/topic-1-5.html",
+    "href": "Unit 1/Topic 1.5/topic-1-5.html",
+    "title": "Topic 1.5 Graphical Representations for One Quantitative Variable",
     "section": "",
-    "text": "Start with the variable\nAn observational unit is one student. The variable is that student’s one-way commute time, in minutes. A distribution tells us which values occur and how often they occur.\nFor quantitative data, position measures an amount. The distance from 10 to 20 minutes must represent the same change as the distance from 20 to 30 minutes. We cannot reorder the numbers as we sometimes reorder unordered category labels.\nOur sorted data are:\nDownload the 24 recorded values as CSV.",
+    "text": "Individual values\nIndividual values · Build a histogram · Histogram laboratory",
     "crumbs": [
-      "1.5 · Represent the data",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>1.5 · Individual values</span>"
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Topic 1.5 Graphical Representations for One Quantitative Variable</span>"
     ]
   },
   {
-    "objectID": "individual-values.html#start-with-the-variable",
-    "href": "individual-values.html#start-with-the-variable",
-    "title": "1.5 · Individual values",
+    "objectID": "Unit 1/Topic 1.5/topic-1-5.html#individual-values",
+    "href": "Unit 1/Topic 1.5/topic-1-5.html#individual-values",
+    "title": "Topic 1.5 Graphical Representations for One Quantitative Variable",
     "section": "",
-    "text": "5, 8, 10, 12, 12, 14, 15, 16, 18, 18, 20, 20,\n22, 24, 25, 26, 28, 30, 32, 35, 38, 42, 48, 58",
+    "text": "Learning goal: Construct and interpret dotplots and stem-and-leaf plots while preserving numerical order, units, and repeated values.\n\n\nStart with the variable\nAn observational unit is one student. The variable is that student’s one-way commute time, in minutes. A distribution tells us which values occur and how often they occur.\nFor quantitative data, position measures an amount. The distance from 10 to 20 minutes must represent the same change as the distance from 20 to 30 minutes. We cannot reorder the numbers as we sometimes reorder unordered category labels.\nOur sorted data are:\n5, 8, 10, 12, 12, 14, 15, 16, 18, 18, 20, 20,\n22, 24, 25, 26, 28, 30, 32, 35, 38, 42, 48, 58\nDownload the 24 recorded values as CSV.\n\n\nA dotplot: one dot for every observation\nDraw a labelled numerical axis. Place one dot at each recorded value. When a value repeats, stack the dots vertically. Two dots at 12 mean two students, each with a 12-minute commute—not one student with a 24-minute commute.\n\n\nThere are 24 dots; the recorded values 12, 18, and 20 each occur twice.\n\n\nThe axis extends from 0 to 60, but the observations extend from 5 to 58. Axis endpoints are not automatically observed values. A dotplot preserves recorded values, but not the original order of data collection.\n\n\nA stem and a leaf reconstruct one value\nFor these whole-minute times, use tens digits as stems and ones digits as leaves:\n28=10(2)+8,key: 2∣8=28 minutes.28=10(2)+8,\\qquad \\text{key: }2\\mid8=28\\text{ minutes}.\nWrite stems in increasing order. Sort the leaves within each row. Keep repeated leaves and zeros: each leaf still represents one observation. Include intermediate empty stems when necessary so a gap is not hidden.\nStem | Leaves\n  0  | 5 8\n  1  | 0 2 2 4 5 6 8 8\n  2  | 0 0 2 4 5 6 8\n  3  | 0 2 5 8\n  4  | 2 8\n  5  | 8\nKey: 2 | 8 = 28 minutes\nRead the key first. With the key 1∣2=1.21\\mid2=1.2 seconds, the same printed digits would represent different measurements. A stem may contain more than one digit; a leaf is usually one digit.\n\n\nReplay the construction\nChoose a display, then add observations. The activity uses our 24 times in a mixed order so you can see repeated values finding their proper positions.\n\n\nUse JavaScript to add the 24 values one at a time. The completed plots are also shown above.\n\n\n\n\nCheck your understanding\nHow many students recorded at least 40 minutes? Which exact values did they record?\n\n\nShow solution\n\nThere are three students, with recorded times 42, 48, and 58 minutes. Both displays preserve individual values, so the conclusion is exact at the precision of the recorded data.\n\n\n\n\n\n\n\nTipBefore you move on\n\n\n\nRecover a sorted list by writing one entry for every dot or leaf. Counting only unique positions would lose repeated observations.",
     "crumbs": [
-      "1.5 · Represent the data",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>1.5 · Individual values</span>"
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Topic 1.5 Graphical Representations for One Quantitative Variable</span>"
     ]
   },
   {
-    "objectID": "individual-values.html#a-dotplot-one-dot-for-every-observation",
-    "href": "individual-values.html#a-dotplot-one-dot-for-every-observation",
-    "title": "1.5 · Individual values",
-    "section": "A dotplot: one dot for every observation",
-    "text": "A dotplot: one dot for every observation\nDraw a labelled numerical axis. Place one dot at each recorded value. When a value repeats, stack the dots vertically. Two dots at 12 mean two students, each with a 12-minute commute—not one student with a 24-minute commute.\n\n\nThere are 24 dots; the recorded values 12, 18, and 20 each occur twice.\n\n\nThe axis extends from 0 to 60, but the observations extend from 5 to 58. Axis endpoints are not automatically observed values. A dotplot preserves recorded values, but not the original order of data collection.",
+    "objectID": "Unit 1/Topic 1.5/topic-1-5.html#histograms",
+    "href": "Unit 1/Topic 1.5/topic-1-5.html#histograms",
+    "title": "Topic 1.5 Graphical Representations for One Quantitative Variable",
+    "section": "Build a histogram",
+    "text": "Build a histogram\n\nLearning goal: Choose and read bins, tally observations, and draw one complete bar for each row of the frequency table.\n\n\nStep 1 · Choose and read the bins\nA histogram groups quantitative observations into ordered intervals called bins. A bar’s width represents an interval of the variable; its height gives the frequency or relative frequency in that interval. We use equal-width bins throughout this lesson.\nThe commute times run from 5 to 58 minutes. A display spanning 0–60 minutes with width 10 covers every observation:\n\n\nBoundaries: 0, 10, 20, 30, 40, 50, 60 minutes; six bins of width 10.\n\n\nnumber of bins=60−010=6.\\text{number of bins}=\\frac{60-0}{10}=6.\nSeven boundary marks produce six intervals, not seven bins. For a span SS, equal bin width ww, and number of bins kk, S=kwS=kw when the bins exactly partition the span.\n\nUse one consistent endpoint rule\nOur convention is left-inclusive and right-exclusive:\na≤x&lt;b.a\\leq x&lt;b.\nThus 20 enters 20≤x&lt;3020\\leq x&lt;30, not 10≤x&lt;2010\\leq x&lt;20. Every observation must enter exactly one bin. Other conventions are possible but must be clearly stated. Here, 58 is below 60 and enters the final bin. A value equal to the final right boundary would require an explicit endpoint exception or an additional bin.\n\n\n\nStep 2 · Tally every observation once\n\n\n\nCommute time (minutes)\nRecorded values\nFrequency\n\n\n\n\n0≤x&lt;100\\leq x&lt;10\n5, 8\n2\n\n\n10≤x&lt;2010\\leq x&lt;20\n10, 12, 12, 14, 15, 16, 18, 18\n8\n\n\n20≤x&lt;3020\\leq x&lt;30\n20, 20, 22, 24, 25, 26, 28\n7\n\n\n30≤x&lt;4030\\leq x&lt;40\n30, 32, 35, 38\n4\n\n\n40≤x&lt;5040\\leq x&lt;50\n42, 48\n2\n\n\n50≤x&lt;6050\\leq x&lt;60\n58\n1\n\n\nTotal\nAll recorded values\n24\n\n\n\nCheck the total: 2+8+7+4+2+1=242+8+7+4+2+1=24.\n\n\nStep 3 · Draw one whole bar per table row\nStart the frequency axis at zero and use an even scale. The first row has frequency 2, so draw the first bar to height 2. The next row has frequency 8, so draw the entire next bar to height 8. Adjacent bins share boundaries; their bars touch. An empty bin has zero height.\n\n\nThe six table rows produce whole bars with heights 2, 8, 7, 4, 2, and 1.\n\n\nThe 10-to-under-20-minute bar represents eight students, not an 8-minute commute. Frequency is on one axis; the commute-time interval is on the other. A horizontal histogram reverses the axes: intervals are vertical and frequencies are horizontal.\n\n\nFrequency or relative frequency?\nFor a bin with frequency ff in a sample of size nn,\nrelative frequency=fn,percentage=fn×100%.\\text{relative frequency}=\\frac{f}{n},\\qquad\n\\text{percentage}=\\frac{f}{n}\\times100\\%.\nThe second bin has 8/24=1/3≈33.3%8/24=1/3\\approx33.3\\% of the observations. Every bin uses the same denominator, 24. Scaling all bars by the same factor changes the numerical axis, not their relative pattern.\n\n\nFrequency counts: 2, 8, 7, 4, 2, 1. Their relative frequencies use denominator 24.\n\n\n\n\nA histogram is not a categorical bar chart\nThese examples use different illustrative samples: travel method for 40 students, and commute time for 24 students.\n\n\nTravel method: Walk 8, Bicycle 6, Bus 18, Car 8.\n\n\n\n\nCommute-time frequencies: 2, 8, 7, 4, 2, 1.\n\n\n\n\n\n\n\n\n\n\nFeature\nCategorical bar chart\nQuantitative histogram\n\n\n\n\nData axis\nCategory labels\nNumerical intervals\n\n\nOne bar\nOne category\nOne interval\n\n\nOrder\nUnordered categories may move\nNumerical order must remain\n\n\nWidth\nUsually a design choice\nA numerical bin width\n\n\nBlank space\nUsually separates categories\nMay indicate an empty bin\n\n\n\nIdentify the variable and read the axis. Whether bars touch is a useful clue, not a sufficient definition.\n\n\n\n\n\n\nNoteWhat is no longer visible?\n\n\n\nHeight 7 for 20≤x&lt;3020\\leq x&lt;30 does not reveal the seven exact times. A histogram usually cannot reconstruct the original observations. Use a dotplot, stem-and-leaf plot, or raw list when exact values matter.",
     "crumbs": [
-      "1.5 · Represent the data",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>1.5 · Individual values</span>"
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Topic 1.5 Graphical Representations for One Quantitative Variable</span>"
     ]
   },
   {
-    "objectID": "individual-values.html#a-stem-and-a-leaf-reconstruct-one-value",
-    "href": "individual-values.html#a-stem-and-a-leaf-reconstruct-one-value",
-    "title": "1.5 · Individual values",
-    "section": "A stem and a leaf reconstruct one value",
-    "text": "A stem and a leaf reconstruct one value\nFor these whole-minute times, use tens digits as stems and ones digits as leaves:\n28=10(2)+8,key: 2∣8=28 minutes.28=10(2)+8,\\qquad \\text{key: }2\\mid8=28\\text{ minutes}.\nWrite stems in increasing order. Sort the leaves within each row. Keep repeated leaves and zeros: each leaf still represents one observation. Include intermediate empty stems when necessary so a gap is not hidden.\nStem | Leaves\n  0  | 5 8\n  1  | 0 2 2 4 5 6 8 8\n  2  | 0 0 2 4 5 6 8\n  3  | 0 2 5 8\n  4  | 2 8\n  5  | 8\nKey: 2 | 8 = 28 minutes\nRead the key first. With the key 1∣2=1.21\\mid2=1.2 seconds, the same printed digits would represent different measurements. A stem may contain more than one digit; a leaf is usually one digit.",
+    "objectID": "Unit 1/Topic 1.5/topic-1-5.html#histogram-lab",
+    "href": "Unit 1/Topic 1.5/topic-1-5.html#histogram-lab",
+    "title": "Topic 1.5 Graphical Representations for One Quantitative Variable",
+    "section": "Histogram laboratory",
+    "text": "Histogram laboratory\n\nLearning goal: Explain why different histograms can represent exactly the same data.\n\n\nChange the bins, not the observations\nThis lab always uses the same 24 commute times. The numerical span remains 0–60 minutes. Choose either a bin width or a number of equal-width bins. Switch the vertical axis between counts and percentages.\nClick a bar—or focus it and press Enter—to inspect its interval and recorded values. The width and bin-count controls are alternative ways to specify the same partition.\n\n\nAt width 10 minutes there are six bins with frequencies 2, 8, 7, 4, 2, 1. JavaScript enables the adjustable version.\n\n\n\n\n\n\n\n\nNoteA fair visual comparison\n\n\n\nThe frequency scale remains 0–24, or the percentage scale 0–100%. Changing bins does not quietly rescale the vertical axis. Some bars may look short; every graph still represents all 24 students.\n\n\n\n\nInvestigate before revealing\n1. Compare widths of 5, 10, and 20 minutes. Which view shows more local detail? Which could conceal gaps or separate concentrations?\n\n\nShow explanation\n\nWidth 5 gives 12 bins; width 10 gives 6; width 20 gives 3. Narrow bins show more local detail but can look irregular. Wide bins smooth over detail and may hide gaps or multiple concentrations. No single appearance tells the whole story.\n\n2. With width 10, inspect the third bin. Does height 7 mean seven students recorded exactly 20 minutes?\n\n\nShow explanation\n\nNo. The interval contains 20, 20, 22, 24, 25, 26, and 28 minutes. Only two values equal 20. The panel’s exact values come from the underlying data supplied to the lab—not from the bar itself.\n\n3. Change the number of bins to 9. What changes, and what stays fixed?\n\n\nShow explanation\n\nThe width becomes 60/9≈6.66760/9\\approx6.667 minutes. Boundaries, counts per bin, and appearance change. The 24 recorded values, minimum 5, and maximum 58 do not. Boundary labels may be rounded; assignment uses unrounded boundaries.\n\n\n\nA gap can disappear from the histogram\nThis separate clinic dataset has concentrations near 5–12 and 24–30 minutes and one unusually long wait of 55 minutes.\n\n\nNo clinic times lie strictly between 12 and 24 minutes, or between 30 and 55 minutes.\n\n\n\n\nTwenty-minute bins give counts 10, 9, and 1. All bins are nonempty despite the gaps in the raw data.\n\n\nA zero-frequency bin establishes that its entire interval contains no observations. The reverse does not hold: nonempty bins may contain smaller empty regions. Coarse bins can hide gaps visible in individual-value displays.",
     "crumbs": [
-      "1.5 · Represent the data",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>1.5 · Individual values</span>"
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Topic 1.5 Graphical Representations for One Quantitative Variable</span>"
     ]
   },
   {
-    "objectID": "individual-values.html#replay-the-construction",
-    "href": "individual-values.html#replay-the-construction",
-    "title": "1.5 · Individual values",
-    "section": "Replay the construction",
-    "text": "Replay the construction\nChoose a display, then add observations. The activity uses our 24 times in a mixed order so you can see repeated values finding their proper positions.\n\n\nUse JavaScript to add the 24 values one at a time. The completed plots are also shown above.",
-    "crumbs": [
-      "1.5 · Represent the data",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>1.5 · Individual values</span>"
-    ]
-  },
-  {
-    "objectID": "individual-values.html#check-your-understanding",
-    "href": "individual-values.html#check-your-understanding",
-    "title": "1.5 · Individual values",
-    "section": "Check your understanding",
-    "text": "Check your understanding\nHow many students recorded at least 40 minutes? Which exact values did they record?\n\n\nShow solution\n\nThere are three students, with recorded times 42, 48, and 58 minutes. Both displays preserve individual values, so the conclusion is exact at the precision of the recorded data.\n\n\n\n\n\n\n\nTipBefore you move on\n\n\n\nRecover a sorted list by writing one entry for every dot or leaf. Counting only unique positions would lose repeated observations.",
-    "crumbs": [
-      "1.5 · Represent the data",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>1.5 · Individual values</span>"
-    ]
-  },
-  {
-    "objectID": "histograms.html",
-    "href": "histograms.html",
-    "title": "1.5 · Build a histogram",
+    "objectID": "Unit 1/Topic 1.6/topic-1-6.html",
+    "href": "Unit 1/Topic 1.6/topic-1-6.html",
+    "title": "Topic 1.6 Descriptions for One Quantitative Variable Distributions",
     "section": "",
-    "text": "Step 1 · Choose and read the bins\nA histogram groups quantitative observations into ordered intervals called bins. A bar’s width represents an interval of the variable; its height gives the frequency or relative frequency in that interval. We use equal-width bins throughout this lesson.\nThe commute times run from 5 to 58 minutes. A display spanning 0–60 minutes with width 10 covers every observation:\nnumber of bins=60−010=6.\\text{number of bins}=\\frac{60-0}{10}=6.\nSeven boundary marks produce six intervals, not seven bins. For a span SS, equal bin width ww, and number of bins kk, S=kwS=kw when the bins exactly partition the span.",
+    "text": "Describe a distribution\nDescribe a distribution · Worked examples and evidence",
     "crumbs": [
-      "1.5 · Represent the data",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>1.5 · Build a histogram</span>"
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Topic 1.6 Descriptions for One Quantitative Variable Distributions</span>"
     ]
   },
   {
-    "objectID": "histograms.html#step-1-choose-and-read-the-bins",
-    "href": "histograms.html#step-1-choose-and-read-the-bins",
-    "title": "1.5 · Build a histogram",
+    "objectID": "Unit 1/Topic 1.6/topic-1-6.html#describing",
+    "href": "Unit 1/Topic 1.6/topic-1-6.html#describing",
+    "title": "Topic 1.6 Descriptions for One Quantitative Variable Distributions",
     "section": "",
-    "text": "Boundaries: 0, 10, 20, 30, 40, 50, 60 minutes; six bins of width 10.\n\n\n\n\n\nUse one consistent endpoint rule\nOur convention is left-inclusive and right-exclusive:\na≤x&lt;b.a\\leq x&lt;b.\nThus 20 enters 20≤x&lt;3020\\leq x&lt;30, not 10≤x&lt;2010\\leq x&lt;20. Every observation must enter exactly one bin. Other conventions are possible but must be clearly stated. Here, 58 is below 60 and enters the final bin. A value equal to the final right boundary would require an explicit endpoint exception or an additional bin.",
+    "text": "Learning goal: Describe shape, approximate center, spread, and unusual features in context, then support your description with graph evidence.\n\n\nThe four-part description\n\n\n\n\n\n\n\n\nPart\nAsk yourself\nInclude in the response\n\n\n\n\nShape\nSymmetry or skew? How many main peaks?\nOverall balance and prominent peaks\n\n\nCenter\nWhere is a central value?\nA numerical location, with units\n\n\nSpread\nHow widely do values vary?\nAn interval or overall span, with units\n\n\nUnusual features\nGaps, clusters, or potential outliers?\nApproximate locations and evidence\n\n\n\nAlways name the variable, group, and units. Write “commute times among these 24 students,” not just “the graph.” A description is more than a list of vocabulary words.\n\n\nSkew is named for the longer tail\nRight-skewed distributions have a longer tail toward larger values. Left-skewed distributions have a longer tail toward smaller values. Approximately symmetric means the sides roughly mirror each other. The tallest bars do not identify the direction of skew.\n\n\nRight-skewed illustration: many smaller values, with a tail toward larger values.\n\n\n\n\nLeft-skewed illustration: many larger values, with a tail toward smaller values.\n\n\n\n\nPeaks answer a different question\nUnimodal means one main peak; bimodal means two prominent peaks. Approximately uniform means similar frequencies across equal-width intervals, without prominent peaks. Two adjacent tall bars may form one broad peak; not every small bump is a separate mode.\n\n\nHypothetical illustrations: symmetric with one broad peak; symmetric and bimodal; approximately uniform.\n\n\nA distribution may be symmetric and bimodal. Symmetric does not necessarily mean bell-shaped. These are teaching illustrations; the next activity uses published observations.\n\n\nShape detective: published data\nInspect each histogram before choosing A–E. These are the published datasets from the revised lecture, not repeated versions of the schematic examples. Approximate descriptions allow ordinary irregularities in real data.\n\n\nCases: major North American river lengths, Old Faithful waiting times, and Iris setosa sepal lengths. Source links appear with each case.\n\n\n\n\nCenter and spread are different\nThe next hypothetical group has 30 practice-task times. Its balance is easy to see near 20 minutes. Observations extend from 12 to 28 minutes, giving an overall span of 28−12=1628-12=16 minutes.\n\n\nSymmetric task-time data centered at 20 minutes; minimum 12, maximum 28.\n\n\n“About 20 minutes is central” answers a different question from “values span 16 minutes.” Do not use the height of the tallest bar as the center: that height is a count, not a value of the variable.\n\n\nClusters, gaps, and potential outliers\nClusters are concentrations of observations. A gap is an interval between observed values containing no observations. An outlier is unusually small or large relative to the rest; a graph may identify a potential outlier for investigation.\n\n\nClinic times cluster at 5–12 and 24–30 minutes, with an isolated value at 55 minutes.\n\n\nHere, 55 minutes is unusually separated from the main groups. It is not automatically a recording error and should not automatically be deleted. A single high-end observation does not, by itself, require the outlier label.\n\n\n\n\n\n\nTipA useful sentence frame\n\n\n\n“Among [group], the distribution of [variable and units] is [shape], centered around [value or interval], and extends from about [lower end] to [upper end]. [Describe any notable gap, cluster, or unusual value.]”\nUse approximate language for graphical estimates. With two separated concentrations, explain both instead of treating a central value in the gap as a typical observation.",
     "crumbs": [
-      "1.5 · Represent the data",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>1.5 · Build a histogram</span>"
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Topic 1.6 Descriptions for One Quantitative Variable Distributions</span>"
     ]
   },
   {
-    "objectID": "histograms.html#step-2-tally-every-observation-once",
-    "href": "histograms.html#step-2-tally-every-observation-once",
-    "title": "1.5 · Build a histogram",
-    "section": "Step 2 · Tally every observation once",
-    "text": "Step 2 · Tally every observation once\n\n\n\nCommute time (minutes)\nRecorded values\nFrequency\n\n\n\n\n0≤x&lt;100\\leq x&lt;10\n5, 8\n2\n\n\n10≤x&lt;2010\\leq x&lt;20\n10, 12, 12, 14, 15, 16, 18, 18\n8\n\n\n20≤x&lt;3020\\leq x&lt;30\n20, 20, 22, 24, 25, 26, 28\n7\n\n\n30≤x&lt;4030\\leq x&lt;40\n30, 32, 35, 38\n4\n\n\n40≤x&lt;5040\\leq x&lt;50\n42, 48\n2\n\n\n50≤x&lt;6050\\leq x&lt;60\n58\n1\n\n\nTotal\nAll recorded values\n24\n\n\n\nCheck the total: 2+8+7+4+2+1=242+8+7+4+2+1=24.",
+    "objectID": "Unit 1/Topic 1.6/topic-1-6.html#worked-examples",
+    "href": "Unit 1/Topic 1.6/topic-1-6.html#worked-examples",
+    "title": "Topic 1.6 Descriptions for One Quantitative Variable Distributions",
+    "section": "Worked examples and evidence",
+    "text": "Worked examples and evidence\n\nDescribe the commute histogram\nUse only this grouped display. Remembering the raw list is different from reading evidence from a histogram.\n\n\nSix 10-minute bins starting at zero have frequencies 2, 8, 7, 4, 2, 1.\n\n\nThe shape is roughly unimodal and right-skewed. The center is approximately in the 20–30 minute interval. Occupied bins extend from 0–10 through 50–60 minutes. There is no empty 10-minute bin and just one observation in the last bin.\n\nAmong these 24 students, recorded commute times are roughly unimodal and right-skewed, centered in the 20–30 minute interval. Values occupy bins from 0 to under 10 through 50 to under 60 minutes. No displayed bin is empty, although smaller gaps may be hidden inside bins.\n\nDo not report an exact minimum of 5 or maximum of 58 from this graph alone. Those facts require the individual observations.\n\n\nSupport a claim numerically\nClaim: Most of these students recorded commute times under 30 minutes.\n2+8+7=17 students,1724×100%≈70.8%.2+8+7=17\\text{ students},\\qquad \\frac{17}{24}\\times100\\%\\approx70.8\\%.\nSeventeen is more than half of 24, so the claim is supported. Write: “About 71% of these sampled students recorded a commute time under 30 minutes.” Do not silently extend the conclusion to every student at the school.\n\n\nEvidence check\nDecide what the histogram alone establishes. Each new statement begins with no answer selected.\n\n\nFour statements test bin counts, exact values, majority, and the exact maximum.\n\n\n\nA threshold inside a bin\nExactly 2+1=32+1=3 times are at least 40 minutes. But at least 45 minutes splits the 40–50 bin. Its two observations could lie below or above 45; the one in 50–60 definitely qualifies. Therefore between 1 and 3 students could qualify from the histogram alone. Do not assume uniformity inside a bin.\n\n\n\nDissolved oxygen in cold streams\nThe revised lecture uses 2023 AP Statistics Free-Response Question 1(a). The official question, PDF page 4 contains the original figure. Below is a classroom redraw from the printed frequencies, not an official College Board graphic.\nThe variable is dissolved oxygen concentration, in mg/L, for sampled Alaskan streams colder than 8°C.\n\n\nOne-unit bins from 2 to 14 mg/L have frequencies 1, 0, 1, 1, 13, 12, 15, 40, 94, 117, 89, 46; total 429.\n\n\n\n\n\n\n\n\n\nFeature\nEvidence\n\n\n\n\nShape\nOne peak at 11–12 mg/L; tail toward smaller values\n\n\nCenter\nAbout 11–12 mg/L\n\n\nSpread\nOccupied bins extend across roughly 2–14 mg/L\n\n\nUnusual features\nEmpty 3–4 bin; potentially unusual low values below 6 mg/L\n\n\n\n\n\nShow the complete model response\n\nFor these sampled Alaskan streams colder than 8°C, dissolved oxygen concentrations are unimodal and left-skewed, centered around 11–12 mg/L. Occupied bins extend across roughly 2–14 mg/L, with a gap in the 3–4 mg/L bin and several potentially unusual low measurements below 6 mg/L. The boundaries do not reveal the exact minimum and maximum.\n\n\nFollow-up calculation\nThe total frequency is 429. The four bins from 10 to under 14 mg/L contain\n94+117+89+46=346,346429×100%≈80.7%.94+117+89+46=346,\\qquad \\frac{346}{429}\\times100\\%\\approx80.7\\%.\nAbout 81% of these sampled cold streams occupy those bins. Height 117 means 117 observations in the whole 11–12 mg/L interval, not exactly 11. These classroom follow-ups use our left-inclusive, right-exclusive convention; they are not additional parts of the original exam.\n\n\n\nRecover values from a dotplot\nThe lecture identifies these numerical data as transcribed from the 2022 AP Statistics Question 5 chocolate dotplots. The book shows a new classroom rendering of that transcription; it does not upload the exam screenshot. Original-material availability is managed by College Board’s exam archive.\n\n\nTwo dotplots show recorded reductions in blood pressure in mmHg.\n\n\nRead one entry per dot, including stacked dots. What are the two sorted lists?\n\n\nShow the recovered lists\n\nDark Chocolate (13 observations):\n-3, -1, 0, 2, 4, 5, 7, 8, 9, 10, 10, 12, 16\nWhite Chocolate (12 observations):\n-12, -6, -3, -3, -2, -2, 2, 3, 4, 4, 5, 15\nUnits are mmHg of reduction. Negative reduction means blood pressure increased; zero means no change. The order is sorted, not the original observation order. Our task here is data recovery, not a causal conclusion about the treatments.",
     "crumbs": [
-      "1.5 · Represent the data",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>1.5 · Build a histogram</span>"
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Topic 1.6 Descriptions for One Quantitative Variable Distributions</span>"
     ]
   },
   {
-    "objectID": "histograms.html#step-3-draw-one-whole-bar-per-table-row",
-    "href": "histograms.html#step-3-draw-one-whole-bar-per-table-row",
-    "title": "1.5 · Build a histogram",
-    "section": "Step 3 · Draw one whole bar per table row",
-    "text": "Step 3 · Draw one whole bar per table row\nStart the frequency axis at zero and use an even scale. The first row has frequency 2, so draw the first bar to height 2. The next row has frequency 8, so draw the entire next bar to height 8. Adjacent bins share boundaries; their bars touch. An empty bin has zero height.\n\n\nThe six table rows produce whole bars with heights 2, 8, 7, 4, 2, and 1.\n\n\nThe 10-to-under-20-minute bar represents eight students, not an 8-minute commute. Frequency is on one axis; the commute-time interval is on the other. A horizontal histogram reverses the axes: intervals are vertical and frequencies are horizontal.",
-    "crumbs": [
-      "1.5 · Represent the data",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>1.5 · Build a histogram</span>"
-    ]
-  },
-  {
-    "objectID": "histograms.html#frequency-or-relative-frequency",
-    "href": "histograms.html#frequency-or-relative-frequency",
-    "title": "1.5 · Build a histogram",
-    "section": "Frequency or relative frequency?",
-    "text": "Frequency or relative frequency?\nFor a bin with frequency ff in a sample of size nn,\nrelative frequency=fn,percentage=fn×100%.\\text{relative frequency}=\\frac{f}{n},\\qquad\n\\text{percentage}=\\frac{f}{n}\\times100\\%.\nThe second bin has 8/24=1/3≈33.3%8/24=1/3\\approx33.3\\% of the observations. Every bin uses the same denominator, 24. Scaling all bars by the same factor changes the numerical axis, not their relative pattern.\n\n\nFrequency counts: 2, 8, 7, 4, 2, 1. Their relative frequencies use denominator 24.",
-    "crumbs": [
-      "1.5 · Represent the data",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>1.5 · Build a histogram</span>"
-    ]
-  },
-  {
-    "objectID": "histograms.html#a-histogram-is-not-a-categorical-bar-chart",
-    "href": "histograms.html#a-histogram-is-not-a-categorical-bar-chart",
-    "title": "1.5 · Build a histogram",
-    "section": "A histogram is not a categorical bar chart",
-    "text": "A histogram is not a categorical bar chart\nThese examples use different illustrative samples: travel method for 40 students, and commute time for 24 students.\n\n\nTravel method: Walk 8, Bicycle 6, Bus 18, Car 8.\n\n\n\n\nCommute-time frequencies: 2, 8, 7, 4, 2, 1.\n\n\n\n\n\n\n\n\n\n\nFeature\nCategorical bar chart\nQuantitative histogram\n\n\n\n\nData axis\nCategory labels\nNumerical intervals\n\n\nOne bar\nOne category\nOne interval\n\n\nOrder\nUnordered categories may move\nNumerical order must remain\n\n\nWidth\nUsually a design choice\nA numerical bin width\n\n\nBlank space\nUsually separates categories\nMay indicate an empty bin\n\n\n\nIdentify the variable and read the axis. Whether bars touch is a useful clue, not a sufficient definition.\n\n\n\n\n\n\nNoteWhat is no longer visible?\n\n\n\nHeight 7 for 20≤x&lt;3020\\leq x&lt;30 does not reveal the seven exact times. A histogram usually cannot reconstruct the original observations. Use a dotplot, stem-and-leaf plot, or raw list when exact values matter.",
-    "crumbs": [
-      "1.5 · Represent the data",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>1.5 · Build a histogram</span>"
-    ]
-  },
-  {
-    "objectID": "histogram-lab.html",
-    "href": "histogram-lab.html",
-    "title": "1.5 · Histogram laboratory",
-    "section": "",
-    "text": "Change the bins, not the observations\nThis lab always uses the same 24 commute times. The numerical span remains 0–60 minutes. Choose either a bin width or a number of equal-width bins. Switch the vertical axis between counts and percentages.\nClick a bar—or focus it and press Enter—to inspect its interval and recorded values. The width and bin-count controls are alternative ways to specify the same partition.",
-    "crumbs": [
-      "1.5 · Represent the data",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>1.5 · Histogram laboratory</span>"
-    ]
-  },
-  {
-    "objectID": "histogram-lab.html#change-the-bins-not-the-observations",
-    "href": "histogram-lab.html#change-the-bins-not-the-observations",
-    "title": "1.5 · Histogram laboratory",
-    "section": "",
-    "text": "At width 10 minutes there are six bins with frequencies 2, 8, 7, 4, 2, 1. JavaScript enables the adjustable version.\n\n\n\n\n\n\n\n\nNoteA fair visual comparison\n\n\n\nThe frequency scale remains 0–24, or the percentage scale 0–100%. Changing bins does not quietly rescale the vertical axis. Some bars may look short; every graph still represents all 24 students.",
-    "crumbs": [
-      "1.5 · Represent the data",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>1.5 · Histogram laboratory</span>"
-    ]
-  },
-  {
-    "objectID": "histogram-lab.html#investigate-before-revealing",
-    "href": "histogram-lab.html#investigate-before-revealing",
-    "title": "1.5 · Histogram laboratory",
-    "section": "Investigate before revealing",
-    "text": "Investigate before revealing\n1. Compare widths of 5, 10, and 20 minutes. Which view shows more local detail? Which could conceal gaps or separate concentrations?\n\n\nShow explanation\n\nWidth 5 gives 12 bins; width 10 gives 6; width 20 gives 3. Narrow bins show more local detail but can look irregular. Wide bins smooth over detail and may hide gaps or multiple concentrations. No single appearance tells the whole story.\n\n2. With width 10, inspect the third bin. Does height 7 mean seven students recorded exactly 20 minutes?\n\n\nShow explanation\n\nNo. The interval contains 20, 20, 22, 24, 25, 26, and 28 minutes. Only two values equal 20. The panel’s exact values come from the underlying data supplied to the lab—not from the bar itself.\n\n3. Change the number of bins to 9. What changes, and what stays fixed?\n\n\nShow explanation\n\nThe width becomes 60/9≈6.66760/9\\approx6.667 minutes. Boundaries, counts per bin, and appearance change. The 24 recorded values, minimum 5, and maximum 58 do not. Boundary labels may be rounded; assignment uses unrounded boundaries.",
-    "crumbs": [
-      "1.5 · Represent the data",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>1.5 · Histogram laboratory</span>"
-    ]
-  },
-  {
-    "objectID": "histogram-lab.html#a-gap-can-disappear-from-the-histogram",
-    "href": "histogram-lab.html#a-gap-can-disappear-from-the-histogram",
-    "title": "1.5 · Histogram laboratory",
-    "section": "A gap can disappear from the histogram",
-    "text": "A gap can disappear from the histogram\nThis separate clinic dataset has concentrations near 5–12 and 24–30 minutes and one unusually long wait of 55 minutes.\n\n\nNo clinic times lie strictly between 12 and 24 minutes, or between 30 and 55 minutes.\n\n\n\n\nTwenty-minute bins give counts 10, 9, and 1. All bins are nonempty despite the gaps in the raw data.\n\n\nA zero-frequency bin establishes that its entire interval contains no observations. The reverse does not hold: nonempty bins may contain smaller empty regions. Coarse bins can hide gaps visible in individual-value displays.",
-    "crumbs": [
-      "1.5 · Represent the data",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>1.5 · Histogram laboratory</span>"
-    ]
-  },
-  {
-    "objectID": "describing.html",
-    "href": "describing.html",
-    "title": "1.6 · Describe a distribution",
-    "section": "",
-    "text": "The four-part description\nAlways name the variable, group, and units. Write “commute times among these 24 students,” not just “the graph.” A description is more than a list of vocabulary words.",
-    "crumbs": [
-      "1.6 · Describe and justify",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>1.6 · Describe a distribution</span>"
-    ]
-  },
-  {
-    "objectID": "describing.html#the-four-part-description",
-    "href": "describing.html#the-four-part-description",
-    "title": "1.6 · Describe a distribution",
-    "section": "",
-    "text": "Part\nAsk yourself\nInclude in the response\n\n\n\n\nShape\nSymmetry or skew? How many main peaks?\nOverall balance and prominent peaks\n\n\nCenter\nWhere is a central value?\nA numerical location, with units\n\n\nSpread\nHow widely do values vary?\nAn interval or overall span, with units\n\n\nUnusual features\nGaps, clusters, or potential outliers?\nApproximate locations and evidence",
-    "crumbs": [
-      "1.6 · Describe and justify",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>1.6 · Describe a distribution</span>"
-    ]
-  },
-  {
-    "objectID": "describing.html#skew-is-named-for-the-longer-tail",
-    "href": "describing.html#skew-is-named-for-the-longer-tail",
-    "title": "1.6 · Describe a distribution",
-    "section": "Skew is named for the longer tail",
-    "text": "Skew is named for the longer tail\nRight-skewed distributions have a longer tail toward larger values. Left-skewed distributions have a longer tail toward smaller values. Approximately symmetric means the sides roughly mirror each other. The tallest bars do not identify the direction of skew.\n\n\nRight-skewed illustration: many smaller values, with a tail toward larger values.\n\n\n\n\nLeft-skewed illustration: many larger values, with a tail toward smaller values.",
-    "crumbs": [
-      "1.6 · Describe and justify",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>1.6 · Describe a distribution</span>"
-    ]
-  },
-  {
-    "objectID": "describing.html#peaks-answer-a-different-question",
-    "href": "describing.html#peaks-answer-a-different-question",
-    "title": "1.6 · Describe a distribution",
-    "section": "Peaks answer a different question",
-    "text": "Peaks answer a different question\nUnimodal means one main peak; bimodal means two prominent peaks. Approximately uniform means similar frequencies across equal-width intervals, without prominent peaks. Two adjacent tall bars may form one broad peak; not every small bump is a separate mode.\n\n\nHypothetical illustrations: symmetric with one broad peak; symmetric and bimodal; approximately uniform.\n\n\nA distribution may be symmetric and bimodal. Symmetric does not necessarily mean bell-shaped. These are teaching illustrations; the next activity uses published observations.",
-    "crumbs": [
-      "1.6 · Describe and justify",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>1.6 · Describe a distribution</span>"
-    ]
-  },
-  {
-    "objectID": "describing.html#shape-detective-published-data",
-    "href": "describing.html#shape-detective-published-data",
-    "title": "1.6 · Describe a distribution",
-    "section": "Shape detective: published data",
-    "text": "Shape detective: published data\nInspect each histogram before choosing A–E. These are the published datasets from the revised lecture, not repeated versions of the schematic examples. Approximate descriptions allow ordinary irregularities in real data.\n\n\nCases: major North American river lengths, Old Faithful waiting times, and Iris setosa sepal lengths. Source links appear with each case.",
-    "crumbs": [
-      "1.6 · Describe and justify",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>1.6 · Describe a distribution</span>"
-    ]
-  },
-  {
-    "objectID": "describing.html#center-and-spread-are-different",
-    "href": "describing.html#center-and-spread-are-different",
-    "title": "1.6 · Describe a distribution",
-    "section": "Center and spread are different",
-    "text": "Center and spread are different\nThe next hypothetical group has 30 practice-task times. Its balance is easy to see near 20 minutes. Observations extend from 12 to 28 minutes, giving an overall span of 28−12=1628-12=16 minutes.\n\n\nSymmetric task-time data centered at 20 minutes; minimum 12, maximum 28.\n\n\n“About 20 minutes is central” answers a different question from “values span 16 minutes.” Do not use the height of the tallest bar as the center: that height is a count, not a value of the variable.",
-    "crumbs": [
-      "1.6 · Describe and justify",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>1.6 · Describe a distribution</span>"
-    ]
-  },
-  {
-    "objectID": "describing.html#clusters-gaps-and-potential-outliers",
-    "href": "describing.html#clusters-gaps-and-potential-outliers",
-    "title": "1.6 · Describe a distribution",
-    "section": "Clusters, gaps, and potential outliers",
-    "text": "Clusters, gaps, and potential outliers\nClusters are concentrations of observations. A gap is an interval between observed values containing no observations. An outlier is unusually small or large relative to the rest; a graph may identify a potential outlier for investigation.\n\n\nClinic times cluster at 5–12 and 24–30 minutes, with an isolated value at 55 minutes.\n\n\nHere, 55 minutes is unusually separated from the main groups. It is not automatically a recording error and should not automatically be deleted. A single high-end observation does not, by itself, require the outlier label.\n\n\n\n\n\n\nTipA useful sentence frame\n\n\n\n“Among [group], the distribution of [variable and units] is [shape], centered around [value or interval], and extends from about [lower end] to [upper end]. [Describe any notable gap, cluster, or unusual value.]”\nUse approximate language for graphical estimates. With two separated concentrations, explain both instead of treating a central value in the gap as a typical observation.",
-    "crumbs": [
-      "1.6 · Describe and justify",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>1.6 · Describe a distribution</span>"
-    ]
-  },
-  {
-    "objectID": "worked-examples.html",
-    "href": "worked-examples.html",
-    "title": "1.6 · Worked examples and evidence",
-    "section": "",
-    "text": "Describe the commute histogram\nUse only this grouped display. Remembering the raw list is different from reading evidence from a histogram.\nThe shape is roughly unimodal and right-skewed. The center is approximately in the 20–30 minute interval. Occupied bins extend from 0–10 through 50–60 minutes. There is no empty 10-minute bin and just one observation in the last bin.\nDo not report an exact minimum of 5 or maximum of 58 from this graph alone. Those facts require the individual observations.",
-    "crumbs": [
-      "1.6 · Describe and justify",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>1.6 · Worked examples and evidence</span>"
-    ]
-  },
-  {
-    "objectID": "worked-examples.html#describe-the-commute-histogram",
-    "href": "worked-examples.html#describe-the-commute-histogram",
-    "title": "1.6 · Worked examples and evidence",
-    "section": "",
-    "text": "Six 10-minute bins starting at zero have frequencies 2, 8, 7, 4, 2, 1.\n\n\n\n\nAmong these 24 students, recorded commute times are roughly unimodal and right-skewed, centered in the 20–30 minute interval. Values occupy bins from 0 to under 10 through 50 to under 60 minutes. No displayed bin is empty, although smaller gaps may be hidden inside bins.",
-    "crumbs": [
-      "1.6 · Describe and justify",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>1.6 · Worked examples and evidence</span>"
-    ]
-  },
-  {
-    "objectID": "worked-examples.html#support-a-claim-numerically",
-    "href": "worked-examples.html#support-a-claim-numerically",
-    "title": "1.6 · Worked examples and evidence",
-    "section": "Support a claim numerically",
-    "text": "Support a claim numerically\nClaim: Most of these students recorded commute times under 30 minutes.\n2+8+7=17 students,1724×100%≈70.8%.2+8+7=17\\text{ students},\\qquad \\frac{17}{24}\\times100\\%\\approx70.8\\%.\nSeventeen is more than half of 24, so the claim is supported. Write: “About 71% of these sampled students recorded a commute time under 30 minutes.” Do not silently extend the conclusion to every student at the school.",
-    "crumbs": [
-      "1.6 · Describe and justify",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>1.6 · Worked examples and evidence</span>"
-    ]
-  },
-  {
-    "objectID": "worked-examples.html#evidence-check",
-    "href": "worked-examples.html#evidence-check",
-    "title": "1.6 · Worked examples and evidence",
-    "section": "Evidence check",
-    "text": "Evidence check\nDecide what the histogram alone establishes. Each new statement begins with no answer selected.\n\n\nFour statements test bin counts, exact values, majority, and the exact maximum.\n\n\n\nA threshold inside a bin\nExactly 2+1=32+1=3 times are at least 40 minutes. But at least 45 minutes splits the 40–50 bin. Its two observations could lie below or above 45; the one in 50–60 definitely qualifies. Therefore between 1 and 3 students could qualify from the histogram alone. Do not assume uniformity inside a bin.",
-    "crumbs": [
-      "1.6 · Describe and justify",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>1.6 · Worked examples and evidence</span>"
-    ]
-  },
-  {
-    "objectID": "worked-examples.html#oxygen-example",
-    "href": "worked-examples.html#oxygen-example",
-    "title": "1.6 · Worked examples and evidence",
-    "section": "Dissolved oxygen in cold streams",
-    "text": "Dissolved oxygen in cold streams\nThe revised lecture uses 2023 AP Statistics Free-Response Question 1(a). The official question, PDF page 4 contains the original figure. Below is a classroom redraw from the printed frequencies, not an official College Board graphic.\nThe variable is dissolved oxygen concentration, in mg/L, for sampled Alaskan streams colder than 8°C.\n\n\nOne-unit bins from 2 to 14 mg/L have frequencies 1, 0, 1, 1, 13, 12, 15, 40, 94, 117, 89, 46; total 429.\n\n\n\n\n\n\n\n\n\nFeature\nEvidence\n\n\n\n\nShape\nOne peak at 11–12 mg/L; tail toward smaller values\n\n\nCenter\nAbout 11–12 mg/L\n\n\nSpread\nOccupied bins extend across roughly 2–14 mg/L\n\n\nUnusual features\nEmpty 3–4 bin; potentially unusual low values below 6 mg/L\n\n\n\n\n\nShow the complete model response\n\nFor these sampled Alaskan streams colder than 8°C, dissolved oxygen concentrations are unimodal and left-skewed, centered around 11–12 mg/L. Occupied bins extend across roughly 2–14 mg/L, with a gap in the 3–4 mg/L bin and several potentially unusual low measurements below 6 mg/L. The boundaries do not reveal the exact minimum and maximum.\n\n\nFollow-up calculation\nThe total frequency is 429. The four bins from 10 to under 14 mg/L contain\n94+117+89+46=346,346429×100%≈80.7%.94+117+89+46=346,\\qquad \\frac{346}{429}\\times100\\%\\approx80.7\\%.\nAbout 81% of these sampled cold streams occupy those bins. Height 117 means 117 observations in the whole 11–12 mg/L interval, not exactly 11. These classroom follow-ups use our left-inclusive, right-exclusive convention; they are not additional parts of the original exam.",
-    "crumbs": [
-      "1.6 · Describe and justify",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>1.6 · Worked examples and evidence</span>"
-    ]
-  },
-  {
-    "objectID": "worked-examples.html#recover-values-from-a-dotplot",
-    "href": "worked-examples.html#recover-values-from-a-dotplot",
-    "title": "1.6 · Worked examples and evidence",
-    "section": "Recover values from a dotplot",
-    "text": "Recover values from a dotplot\nThe lecture identifies these numerical data as transcribed from the 2022 AP Statistics Question 5 chocolate dotplots. The book shows a new classroom rendering of that transcription; it does not upload the exam screenshot. Original-material availability is managed by College Board’s exam archive.\n\n\nTwo dotplots show recorded reductions in blood pressure in mmHg.\n\n\nRead one entry per dot, including stacked dots. What are the two sorted lists?\n\n\nShow the recovered lists\n\nDark Chocolate (13 observations):\n-3, -1, 0, 2, 4, 5, 7, 8, 9, 10, 10, 12, 16\nWhite Chocolate (12 observations):\n-12, -6, -3, -3, -2, -2, 2, 3, 4, 4, 5, 15\nUnits are mmHg of reduction. Negative reduction means blood pressure increased; zero means no change. The order is sorted, not the original observation order. Our task here is data recovery, not a causal conclusion about the treatments.",
-    "crumbs": [
-      "1.6 · Describe and justify",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>1.6 · Worked examples and evidence</span>"
-    ]
-  },
-  {
-    "objectID": "practice.html",
-    "href": "practice.html",
+    "objectID": "Unit 1/Shared/practice.html",
+    "href": "Unit 1/Shared/practice.html",
     "title": "Practice and solutions",
     "section": "",
     "text": "1 · Draw from a frequency table\nThirty students recorded school-shuttle waiting times. Use 5-minute bins from 0 to 30 and the left-inclusive, right-exclusive rule. Draw a histogram on paper with labelled axes, equal-width touching bars, and a zero baseline.\nAfter drawing, use the digital check to reconstruct your heights. It checks heights only, not the labels on your paper.",
     "crumbs": [
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Practice and solutions</span>"
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Practice and solutions</span>"
     ]
   },
   {
-    "objectID": "practice.html#draw-from-a-frequency-table",
-    "href": "practice.html#draw-from-a-frequency-table",
+    "objectID": "Unit 1/Shared/practice.html#draw-from-a-frequency-table",
+    "href": "Unit 1/Shared/practice.html#draw-from-a-frequency-table",
     "title": "Practice and solutions",
     "section": "",
     "text": "Waiting time (minutes)\nFrequency\n\n\n\n\n0≤x&lt;50\\leq x&lt;5\n3\n\n\n5≤x&lt;105\\leq x&lt;10\n7\n\n\n10≤x&lt;1510\\leq x&lt;15\n10\n\n\n15≤x&lt;2015\\leq x&lt;20\n6\n\n\n20≤x&lt;2520\\leq x&lt;25\n3\n\n\n25≤x&lt;3025\\leq x&lt;30\n1\n\n\n\n\n\n\nEnter six bar heights, check them against the table, and view your attempt.\n\n\n\n\nShow the completed histogram\n\n\n\n\nHeights are 3, 7, 10, 6, 3, 1, totaling 30. Every bar is 5 minutes wide. The tallest bar means ten waits from 10 to under 15 minutes—not ten waits exactly equal to 10.",
     "crumbs": [
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Practice and solutions</span>"
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Practice and solutions</span>"
     ]
   },
   {
-    "objectID": "practice.html#stem-leaf-and-key",
-    "href": "practice.html#stem-leaf-and-key",
+    "objectID": "Unit 1/Shared/practice.html#stem-leaf-and-key",
+    "href": "Unit 1/Shared/practice.html#stem-leaf-and-key",
     "title": "Practice and solutions",
     "section": "2 · Stem, leaf, and key",
     "text": "2 · Stem, leaf, and key\nConstruct a stem-and-leaf plot for 1.2, 1.5, 1.5, 2.0, 2.3 seconds. Explain the repeated leaf.\n\n\nShow solution\n\n1 | 2 5 5\n2 | 0 3\nKey: 1 | 2 = 1.2 seconds\nFive leaves represent five observations. The repeated 1.5 needs two leaves of 5. A zero leaf preserves the 2.0-second observation.",
     "crumbs": [
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Practice and solutions</span>"
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Practice and solutions</span>"
     ]
   },
   {
-    "objectID": "practice.html#bin-boundaries",
-    "href": "practice.html#bin-boundaries",
+    "objectID": "Unit 1/Shared/practice.html#bin-boundaries",
+    "href": "Unit 1/Shared/practice.html#bin-boundaries",
     "title": "Practice and solutions",
     "section": "3 · Bin boundaries",
     "text": "3 · Bin boundaries\nWhich 10-minute commute bin contains 20? Does the first occupied bin prove the recorded minimum is 0?\n\n\nShow solution\n\n20 enters 20≤x&lt;3020\\leq x&lt;30, not the preceding bin. The first occupied bin establishes a value in 0≤x&lt;100\\leq x&lt;10, not necessarily 0. The original list—not the histogram—identifies the minimum as 5.",
     "crumbs": [
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Practice and solutions</span>"
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Practice and solutions</span>"
     ]
   },
   {
-    "objectID": "practice.html#repair-turnaround-times",
-    "href": "practice.html#repair-turnaround-times",
+    "objectID": "Unit 1/Shared/practice.html#repair-turnaround-times",
+    "href": "Unit 1/Shared/practice.html#repair-turnaround-times",
     "title": "Practice and solutions",
     "section": "4 · Repair turnaround times",
     "text": "4 · Repair turnaround times\nDescribe the histogram of 40 bicycle repairs. Find the percentage taking at least 4 hours. Can you recover the most common exact time?\n\n\nOne-hour bins from 0 to 8: frequencies 12, 10, 7, 5, 3, 2, 1, 0.\n\n\n\n\nShow solution\n\nRepair times are unimodal and right-skewed, centered around 1–3 hours. Values occupy bins from 0 to under 7 hours. No displayed internal bin is empty. The one observation in 6–7 hours is not automatically an outlier; an empty final 7–8 bin is not an internal gap.\nAt least 4 hours: (3+2+1)/40=15%(3+2+1)/40=15\\%. The most frequent interval is 0–1 hour. The most common exact value is not recoverable.",
     "crumbs": [
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Practice and solutions</span>"
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Practice and solutions</span>"
     ]
   },
   {
-    "objectID": "practice.html#two-concentrations",
-    "href": "practice.html#two-concentrations",
+    "objectID": "Unit 1/Shared/practice.html#two-concentrations",
+    "href": "Unit 1/Shared/practice.html#two-concentrations",
     "title": "Practice and solutions",
     "section": "5 · Two concentrations",
     "text": "5 · Two concentrations\nDescribe shape, center, spread, and the empty internal interval for these 40 library study sessions. What percentage lasted from 30 to under 90 minutes?\n\n\nFifteen-minute bins from 0 to 120: frequencies 2, 10, 8, 0, 0, 8, 10, 2.\n\n\n\n\nShow solution\n\nThe displayed distribution is approximately symmetric and bimodal, with main concentrations in 15–45 and 75–105 minutes. The visual center near 60 minutes lies in a gap, not at a typical observed session. Occupied bins span roughly 0–120 minutes. There are no observations from 45 to under 75 minutes.\nThe count from 30 to under 90 is 8+0+0+8=168+0+0+8=16, giving 16/40=40%16/40=40\\%. A single center would hide the two concentrations. The exact median is not available from the histogram.",
     "crumbs": [
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Practice and solutions</span>"
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Practice and solutions</span>"
     ]
   },
   {
-    "objectID": "practice.html#what-could-be-inside-a-bin",
-    "href": "practice.html#what-could-be-inside-a-bin",
+    "objectID": "Unit 1/Shared/practice.html#what-could-be-inside-a-bin",
+    "href": "Unit 1/Shared/practice.html#what-could-be-inside-a-bin",
     "title": "Practice and solutions",
     "section": "6 · What could be inside a bin?",
     "text": "6 · What could be inside a bin?\nTwo commute times lie in 40–50 and one in 50–60 minutes. How many are at least 40? How many could be at least 45?\n\n\nShow solution\n\nExactly 3 are at least 40. Between 1 and 3 could be at least 45: the last-bin observation definitely qualifies; either, neither, or both observations in the preceding bin might qualify. Do not add a uniformity assumption.",
     "crumbs": [
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Practice and solutions</span>"
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Practice and solutions</span>"
     ]
   },
   {
-    "objectID": "practice.html#oxygen-count-and-context",
-    "href": "practice.html#oxygen-count-and-context",
+    "objectID": "Unit 1/Shared/practice.html#oxygen-count-and-context",
+    "href": "Unit 1/Shared/practice.html#oxygen-count-and-context",
     "title": "Practice and solutions",
     "section": "7 · Oxygen: count and context",
     "text": "7 · Oxygen: count and context\nReturn to the oxygen histogram. How many sampled cold streams recorded below 6 mg/L? What percentage is this? What does the empty 3–4 bin establish?\n\n\nShow solution\n\nThe first four counts total 1+0+1+1=31+0+1+1=3. The percentage is 3/429×100%≈0.7%3/429\\times100\\%\\approx0.7\\%. Under our convention, no observed concentration lies in 3≤x&lt;43\\leq x&lt;4 mg/L. This does not show that such concentrations are impossible in all streams.",
     "crumbs": [
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Practice and solutions</span>"
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Practice and solutions</span>"
     ]
   },
   {
-    "objectID": "practice.html#repair-a-weak-description",
-    "href": "practice.html#repair-a-weak-description",
+    "objectID": "Unit 1/Shared/practice.html#repair-a-weak-description",
+    "href": "Unit 1/Shared/practice.html#repair-a-weak-description",
     "title": "Practice and solutions",
     "section": "8 · Repair a weak description",
     "text": "8 · Repair a weak description\nA student writes, “The graph is high in the middle and goes up and down.” Replace this with all four parts of a contextual description.\n\n\nTwenty review-session lengths span 4–30 minutes, with approximate symmetry and a broad central concentration.\n\n\n\n\nShow a model response\n\nAmong these 20 students, review-session lengths are approximately symmetric with one broad central concentration, centered around 16–18 minutes. Recorded values extend from 4 to 30 minutes, with no clearly isolated observation or large internal gap.\nThe dotplot preserves individual values, so the observed endpoints are available. Wide histogram bins would warrant less exact wording.",
     "crumbs": [
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Practice and solutions</span>"
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Practice and solutions</span>"
     ]
   },
   {
-    "objectID": "practice.html#before-the-next-class",
-    "href": "practice.html#before-the-next-class",
+    "objectID": "Unit 1/Shared/practice.html#before-the-next-class",
+    "href": "Unit 1/Shared/practice.html#before-the-next-class",
     "title": "Practice and solutions",
     "section": "Before the next class",
     "text": "Before the next class\nExplain one dot versus one bin, construct a histogram from a table, name skew from the tail, and support a claim with calculation + context. Return to the relevant chapter when an answer depends on a guess rather than evidence.",
     "crumbs": [
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Practice and solutions</span>"
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Practice and solutions</span>"
     ]
   },
   {
@@ -772,7 +672,7 @@
     "section": "",
     "text": "Basis of the pilot\nThis book adapts Chun Li’s revised 45-slide Seeing Quantitative Data presentation and 30-page Representing and Describing Quantitative Data study guide for Maple Hill School. It retains the revised sequence, classroom datasets, whole-bar construction, endpoint convention, and evidence-based descriptions.\nThe scope follows the instructor-supplied College Board essential-knowledge excerpts 1.5.A.1–4, 1.6.A.1–6, and 1.6.B.1. Detailed numerical-summary formulas and inference are left to later lessons.",
     "crumbs": [
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Sources and study resources</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Sources and study resources</span>"
     ]
   },
   {
@@ -782,7 +682,7 @@
     "section": "",
     "text": "Book section\nRevised lecture slides\n\n\n\n\nIndividual values\n3–9\n\n\nHistogram construction and laboratory\n10–19\n\n\nHand construction and data recovery\n20–23\n\n\nShape, center, spread, unusual features\n24–32\n\n\nDescriptions and supported claims\n33–37\n\n\nOxygen and closing practice\n38–45",
     "crumbs": [
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Sources and study resources</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Sources and study resources</span>"
     ]
   },
   {
@@ -792,7 +692,7 @@
     "section": "Published datasets",
     "text": "Published datasets\nThe shape challenge uses the values packaged with the revised lecture. Their documented sources are:\n\nR datasets: rivers: 141 major North American river lengths in miles, a historical compilation identified as the 1975 World Almanac.\nR datasets: faithful: 272 waiting times between Old Faithful eruptions, in minutes.\nR datasets: iris: the 50 Iris setosa sepal lengths, in centimeters, from Anderson’s iris measurements.\n\nThese are published observations, not freshly simulated data. Other classroom datasets are explicitly hypothetical. Bin choices are teaching decisions, not properties of the observations.",
     "crumbs": [
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Sources and study resources</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Sources and study resources</span>"
     ]
   },
   {
@@ -802,7 +702,7 @@
     "section": "Exam connections",
     "text": "Exam connections\n2023 AP Statistics, Question 1(a): the official question, PDF page 4 supplies the oxygen histogram. This book redraws its numerical frequencies and provides classroom explanations and follow-ups, not an official scoring key.\n2022 AP Statistics, Question 5: chocolate values are the revised lecture’s numerical transcription of the instructor-supplied dotplots. The public site does not upload the original screenshot or exam text. Consult College Board’s exam archive for currently available materials; older exam availability may differ.\nAP is a registered trademark of the College Board. This independent classroom resource is not affiliated with or endorsed by the College Board. Third-party material retains its owners’ rights; no blanket open-content license is asserted for it.",
     "crumbs": [
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Sources and study resources</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Sources and study resources</span>"
     ]
   },
   {
@@ -812,7 +712,7 @@
     "section": "Printing and downloads",
     "text": "Printing and downloads\nYour browser’s Print / Save as PDF command saves a chapter. Printing expands solutions and displays completed construction examples. The screen version keeps solutions hidden until you open them.\nDownload the commute values as CSV. Editable .qmd source, a portable preview builder, Quarto configuration, tests, and publishing instructions are included in the project.",
     "crumbs": [
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Sources and study resources</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Sources and study resources</span>"
     ]
   },
   {
@@ -822,7 +722,7 @@
     "section": "Privacy and limitations",
     "text": "Privacy and limitations\nThere are no accounts, analytics scripts, advertisements, grades database, or student-submission service. Activity choices remain in the current page and disappear on refresh; they are not sent to a teacher. Normal hosting logs are separate: GitHub documents IP logging for Pages security.\nJavaScript enables the activities. Core prose, tables, and solution text remain available without it. Charts use bundled data and do not request a remote statistical service. Search operates on the hosted site or a locally served copy; browser restrictions may affect search when opening a downloaded file directly.",
     "crumbs": [
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Sources and study resources</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Sources and study resources</span>"
     ]
   },
   {
@@ -832,7 +732,7 @@
     "section": "Technical format",
     "text": "Technical format\nThe publishing source is a Quarto HTML book with chapter navigation, search, mathematical typesetting, and custom JavaScript/SVG activities. It needs no running notebook kernel or paid backend. The downloadable portable preview uses Pandoc with the same chapter text and activities; the automated Quarto build produces the hosted book.",
     "crumbs": [
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Sources and study resources</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Sources and study resources</span>"
     ]
   },
   {
@@ -842,7 +742,7 @@
     "section": "Foundations curriculum alignment",
     "text": "Foundations curriculum alignment\nThe foundations sequence follows the official AP Statistics Course and Exam Description, effective Fall 2026: Topic 1.1 on printed pp. 30–31; Topic 1.2 on pp. 32–33; Topic 1.3 on p. 34; Topic 1.4 on p. 35. The curriculum was checked on October 13, 2026. Explanations and new practice are independently authored; the book does not reproduce secure AP Classroom questions.\nThe School A, School B, movie-survey and study-location examples originated in Chun Li’s revised Topics 1.1–1.4 materials. They are hypothetical, not records of actual Maple Hill School students. Their reusable summaries are in foundations.json. The 24 commute times used in Topic 1.5 are a separate dataset.",
     "crumbs": [
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Sources and study resources</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Sources and study resources</span>"
     ]
   },
   {
@@ -850,9 +750,9 @@
     "href": "resources.html#topic-1.4-charts",
     "title": "Sources and study resources",
     "section": "Topic 1.4 charts",
-    "text": "Topic 1.4 charts\nThe categorical graph lesson is based on the official Fall 2026 CED Topic 1.4 (printed p. 35). Count/percentage bars, pie diagrams, chart-audit cases and print references are original classroom material. Their reusable source assets are assets/categorical-charts.js and assets/categorical-charts.css. The hypothetical School A and School B summaries and their provenance are in foundations.json. No secure AP Classroom assessments are reproduced.",
+    "text": "Topic 1.4 charts\nThe categorical graph lesson is based on the official Fall 2026 CED Topic 1.4 (printed p. 35). Count/percentage bars, pie diagrams, chart-audit cases and print references are original classroom material. Their reusable source assets are Unit 1/Topic 1.4/assets/categorical-charts.js and Unit 1/Topic 1.4/assets/categorical-charts.css. The hypothetical School A and School B summaries and their provenance are in foundations.json. No secure AP Classroom assessments are reproduced.",
     "crumbs": [
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Sources and study resources</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Sources and study resources</span>"
     ]
   }
 ]

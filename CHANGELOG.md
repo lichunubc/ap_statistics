@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-13 — Topic 1.2 and independent Unit 1 structure
+
+- Implemented Topic 1.2 **Variables**, aligned with Fall 2026 CED 1.2.A–C (pp.32–33): observational units, values, categorical/quantitative and discrete/continuous data, parameters/statistics, correct summary groups, and numerical category coding.
+- Added three accessible activities (10 classification cases, four summary-role cases, four recoding modes) and ten original worked exercises. Quiz inputs start unselected and support keyboard operation, clear/next/restart and contextual explanations; print references and no-JavaScript answers are retained.
+- Replaced topic-range navigation with one Unit 1 parent and six independent officially named topics. Moved teaching sources, topic assets, provenance and tests into `Unit 1/Topic 1.x/`; shared dependencies are documented under `Unit 1/Shared/`.
+- Preserved all existing lesson content and activity engines, including the original 1.5/1.6 lessons as editable include sections. Generated compatibility pages preserve existing public URLs and anchors; datasets and unchanged engines have preservation checksums.
+- Added layout/title/link/source checks, Topic 1.2 arithmetic and browser tests, native search/mobile-menu checks, a complete test runner and revision-matched live verification. The existing publishing workflow remains the publication route. Source inclusion does not by itself assert live deployment.
+
 ## 2026-10-13 — Topic 1.4 categorical charts
 
 - Added `topic-1-4.qmd` with categorical bar and pie construction, appropriate baselines, sector angles, group comparisons, original practice and eight worked solutions.

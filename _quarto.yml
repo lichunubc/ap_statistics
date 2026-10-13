@@ -1,11 +1,13 @@
 project:
   type: book
   output-dir: docs
+  pre-render:
+    - python tools/prepare.py
   post-render:
     - python tools/postrender.py
   resources:
-    - assets/
-    - data/
+    - "Unit 1/**/assets/**"
+    - "Unit 1/**/data/**"
     - .nojekyll
 book:
   title: "AP Statistics: Learning from Data"
@@ -18,21 +20,15 @@ book:
     style: docked
   chapters:
     - index.qmd
-    - part: "1.1–1.4 · Statistical foundations"
+    - part: "Unit 1: Exploring One-Variable Data and Collecting Data"
       chapters:
-        - topic-1-1.qmd
-        - topic-1-3.qmd
-        - topic-1-4.qmd
-    - part: "1.5 · Represent the data"
-      chapters:
-        - individual-values.qmd
-        - histograms.qmd
-        - histogram-lab.qmd
-    - part: "1.6 · Describe and justify"
-      chapters:
-        - describing.qmd
-        - worked-examples.qmd
-    - practice.qmd
+        - "Unit 1/Topic 1.1/topic-1-1.qmd"
+        - "Unit 1/Topic 1.2/topic-1-2.qmd"
+        - "Unit 1/Topic 1.3/topic-1-3.qmd"
+        - "Unit 1/Topic 1.4/topic-1-4.qmd"
+        - "Unit 1/Topic 1.5/topic-1-5.qmd"
+        - "Unit 1/Topic 1.6/topic-1-6.qmd"
+        - "Unit 1/Shared/practice.qmd"
     - resources.qmd
   page-footer:
     left: "Maple Hill School · Chun Li"
@@ -43,14 +39,15 @@ format:
     mainfont: "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
     fontsize: 1.05em
     css:
-      - assets/site.css
-      - assets/foundations.css
-      - assets/categorical-tables.css
-      - assets/categorical-charts.css
+      - "Unit 1/Shared/assets/site.css"
+      - "Unit 1/Topic 1.1/assets/foundations.css"
+      - "Unit 1/Topic 1.3/assets/categorical-tables.css"
+      - "Unit 1/Topic 1.4/assets/categorical-charts.css"
+      - "Unit 1/Topic 1.2/assets/variables.css"
     toc: true
     toc-depth: 2
     number-sections: false
     html-math-method: mathml
     code-copy: true
-    include-after-body: assets/footer.html
+    include-after-body: "Unit 1/Shared/assets/footer.html"
 lang: en

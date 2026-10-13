@@ -1,0 +1,44 @@
+{
+  "id": "1.2",
+  "title": "Variables",
+  "learning_objectives": [
+    "1.2.A",
+    "1.2.B",
+    "1.2.C"
+  ],
+  "ced_printed_pages": "32–33",
+  "essential_knowledge": [
+    "1.2.A.1",
+    "1.2.A.2",
+    "1.2.A.3",
+    "1.2.A.4",
+    "1.2.A.5",
+    "1.2.B.1",
+    "1.2.B.2",
+    "1.2.C.1",
+    "1.2.C.2"
+  ],
+  "curriculum": {
+    "name": "AP Statistics Course and Exam Description",
+    "effective": "Fall 2026",
+    "checked": "2026-10-13",
+    "source": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf"
+  },
+  "note": "Official title retained verbatim. Lesson source and topic-specific files are in this folder; shared assets/data are in ../Shared.",
+  "section_mapping": {
+    "1.2.A": [
+      "units-variables-values",
+      "parameters-statistics",
+      "media-data"
+    ],
+    "1.2.B": [
+      "categorical-quantitative",
+      "variable-lab",
+      "category-codes"
+    ],
+    "1.2.C": [
+      "discrete-continuous",
+      "variable-lab"
+    ]
+  }
+}
