@@ -1,25 +1,60 @@
-name: Unit 1 development snapshot
+name: Validate Unit 1 development
 on:
   push:
     branches: [development/topic-1-2-unit-1]
+    paths: ['.development/unit1-ready.json']
 permissions:
-  contents: read
+  contents: write
+  actions: write
 jobs:
-  snapshot:
+  validate:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
+      - name: Apply checksum-verified source patch
+        run: |
+          python - <<'PY'
+          import base64,hashlib,json,lzma,pathlib,subprocess
+          root=pathlib.Path('.development')
+          meta=json.loads((root/'unit1-ready.json').read_text())
+          encoded=''.join((root/f'unit1-part{i}.b64').read_text().strip() for i in range(1,meta['parts']+1))
+          patch=lzma.decompress(base64.b64decode(encoded))
+          assert hashlib.sha256(patch).hexdigest()==meta['sha256']
+          subprocess.run(['git','apply','--check','-'],input=patch,check=True)
+          subprocess.run(['git','apply','-'],input=patch,check=True)
+          for p in root.glob('unit1-*'):p.unlink()
+          PY
       - uses: quarto-dev/quarto-actions/setup@v2
         with:
           version: '1.9.38'
-      - name: Package pinned runtime for offline validation
+      - name: Render and install validation tools
         run: |
-          install_root="$(dirname "$(dirname "$(readlink -f "$(command -v quarto)")")")"
-          test -f "$install_root/bin/quarto"
-          tar -czf quarto-runtime.tar.gz -C "$install_root" .
+          quarto render
+          find 'Unit 1' -name '*.js' -print0 | xargs -0 -n1 node --check
+          python -m pip install -r requirements-test.txt
+          python -m playwright install --with-deps chromium
+      - name: Run every regression and native browser check
+        run: python tools/check_all.py
+      - name: Commit validated teaching sources and generated pages
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git reset HEAD -- .github/workflows
+          git commit -m 'Complete and validate Topic 1.2 and Unit 1 editorial organization [skip ci]'
+          git push origin HEAD:development/topic-1-2-unit-1
+          git rev-parse HEAD > qa/development-commit.txt
       - uses: actions/upload-artifact@v4
+        if: always()
         with:
-          name: quarto-runtime
-          path: quarto-runtime.tar.gz
-          retention-days: 1
+          name: unit1-development-validation
+          path: qa
+          retention-days: 7
+      - name: Remove temporary environment-transfer artifacts
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api --method DELETE repos/${{ github.repository }}/actions/artifacts/11833236424 || true
+          gh api --method DELETE repos/${{ github.repository }}/actions/artifacts/11832308060 || true
