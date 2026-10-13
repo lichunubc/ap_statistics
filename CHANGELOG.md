@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-13 — Five-unit entrance and collapsed topic navigation
+
+- Replaced homepage topic cards with five independently linked units using the exact supplied official unit titles. Moved the original six topic cards and dataset introduction into `Unit 1/unit-1.qmd` without changing any lesson or activity source.
+- Added `Unit 2` through `Unit 5` landing pages labelled **Under construction**, with editing notes and no fictitious completed topics. Added the separate unit-status manifest.
+- Set sidebar collapse depth and added an accessible, non-persistent disclosure button so topic lists start collapsed even on an active lesson. Unit-title links open the landing pages; mouse, Enter and Space operate the arrow button.
+- Kept existing unit/topic folders, topic objective mappings, data, activity engines, legacy URLs and regression checks. Whole-book navigation assets/tests are in `site/`.
+- Extended local and live navigation tests for five unit cards/pages, placeholder labels, keyboard/mouse disclosure, no-JavaScript links and desktop/tablet/phone layouts. The publishing workflow now supports non-publishing `preview/**` validation branches; only main can deploy. Build and live outcomes remain separately verified by GitHub Actions.
+
 ## 2026-10-13 — Topic 1.2 and independent Unit 1 structure
 
 - Implemented Topic 1.2 **Variables**, aligned with Fall 2026 CED 1.2.A–C (pp.32–33): observational units, values, categorical/quantitative and discrete/continuous data, parameters/statistics, correct summary groups, and numerical category coding.

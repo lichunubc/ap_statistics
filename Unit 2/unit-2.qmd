@@ -1,0 +1,17 @@
+---
+toc: false
+---
+
+# Unit 2: Probability, Random Variables, and Probability Distributions {.unnumbered}
+
+[← All units](../index.qmd)
+
+::: {.callout-note .construction-note data-unit="2"}
+## Under construction
+
+This unit is being prepared. No lessons, activities, or practice sets have been published for Unit 2 yet.
+
+Topics will appear here as they are added. For now, you can study the available topics in Unit 1.
+:::
+
+[Explore Unit 1](<../Unit 1/unit-1.qmd>) · [Return to all five units](../index.qmd)

@@ -8,6 +8,7 @@ project:
   resources:
     - "Unit 1/**/assets/**"
     - "Unit 1/**/data/**"
+    - site/assets/
     - .nojekyll
 book:
   title: "AP Statistics: Learning from Data"
@@ -18,9 +19,10 @@ book:
   sidebar:
     title: "Maple Hill School"
     style: docked
+    collapse-level: 1
   chapters:
     - index.qmd
-    - part: "Unit 1: Exploring One-Variable Data and Collecting Data"
+    - part: "Unit 1/unit-1.qmd"
       chapters:
         - "Unit 1/Topic 1.1/topic-1-1.qmd"
         - "Unit 1/Topic 1.2/topic-1-2.qmd"
@@ -29,6 +31,10 @@ book:
         - "Unit 1/Topic 1.5/topic-1-5.qmd"
         - "Unit 1/Topic 1.6/topic-1-6.qmd"
         - "Unit 1/Shared/practice.qmd"
+    - "Unit 2/unit-2.qmd"
+    - "Unit 3/unit-3.qmd"
+    - "Unit 4/unit-4.qmd"
+    - "Unit 5/unit-5.qmd"
     - resources.qmd
   page-footer:
     left: "Maple Hill School · Chun Li"
@@ -44,10 +50,13 @@ format:
       - "Unit 1/Topic 1.3/assets/categorical-tables.css"
       - "Unit 1/Topic 1.4/assets/categorical-charts.css"
       - "Unit 1/Topic 1.2/assets/variables.css"
+      - site/assets/navigation.css
     toc: true
     toc-depth: 2
     number-sections: false
     html-math-method: mathml
     code-copy: true
-    include-after-body: "Unit 1/Shared/assets/footer.html"
+    include-after-body:
+      - "Unit 1/Shared/assets/footer.html"
+      - site/assets/navigation.html
 lang: en

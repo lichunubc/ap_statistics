@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "updated": "2026-10-13",
+  "titles_source": "Official unit titles supplied by Chun Li on 2026-10-13",
+  "publication": "Landing pages are distinct from topic implementation. GitHub Actions and live checks establish publication.",
+  "units": [
+    {
+      "id": 1,
+      "title": "Exploring One-Variable Data and Collecting Data",
+      "landing": "Unit 1/unit-1.qmd",
+      "status": "partially_implemented",
+      "available_topics": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4",
+        "1.5",
+        "1.6"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Probability, Random Variables, and Probability Distributions",
+      "landing": "Unit 2/unit-2.qmd",
+      "status": "under_construction",
+      "available_topics": []
+    },
+    {
+      "id": 3,
+      "title": "Inference for Categorical Data: Proportions",
+      "landing": "Unit 3/unit-3.qmd",
+      "status": "under_construction",
+      "available_topics": []
+    },
+    {
+      "id": 4,
+      "title": "Inference for Quantitative Data: Means",
+      "landing": "Unit 4/unit-4.qmd",
+      "status": "under_construction",
+      "available_topics": []
+    },
+    {
+      "id": 5,
+      "title": "Regression Analysis",
+      "landing": "Unit 5/unit-5.qmd",
+      "status": "under_construction",
+      "available_topics": []
+    }
+  ]
+}

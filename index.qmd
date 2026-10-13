@@ -1,3 +1,8 @@
+---
+toc: false
+anchor-sections: false
+---
+
 # Welcome {.unnumbered}
 
 ::: {.hero}
@@ -8,65 +13,50 @@ MAPLE HILL SCHOOL · CHUN LI · AP STATISTICS
 
 A growing course book for asking good questions, choosing useful representations, and supporting conclusions with evidence. Read the explanations, explore an activity, and check your reasoning against worked solutions.
 
-[Start with Topic 1.1](<Unit 1/Topic 1.1/topic-1-1.qmd>){.start-link} [Study Topic 1.2 Variables](<Unit 1/Topic 1.2/topic-1-2.qmd>){.secondary-link}
+[Explore Unit 1](<Unit 1/unit-1.qmd>){.start-link}
 :::
 
-## Unit 1: Exploring One-Variable Data and Collecting Data
+## Choose a unit
 
-Each topic has its own chapter, official College Board title, and editable source folder. Topics 1.1–1.6 are available below; this is not yet the entire unit or course.
+Open a unit to see its topics. In the sidebar, use the arrow beside a unit to show or hide its topics. Topics stay collapsed until you open them.
 
-::: {.route-grid}
-::: {.route-card}
-**Topic 1.1 Introducing Statistics: What Can We Learn from Data?**
+::: {.route-grid .unit-grid}
+::: {.route-card .unit-card data-unit="1"}
+### [Unit 1: Exploring One-Variable Data and Collecting Data](<Unit 1/unit-1.qmd>)
 
-Questions, observational units, populations, samples, and evidence in context.
+<span class="unit-state" data-unit-status="partial">Topics 1.1–1.6 available</span>
 
-[Open Topic 1.1 →](<Unit 1/Topic 1.1/topic-1-1.qmd>)
+Browse the available lessons, interactive activities, and worked practice.
 :::
-::: {.route-card}
-**Topic 1.2 Variables**
+::: {.route-card .unit-card data-unit="2"}
+### [Unit 2: Probability, Random Variables, and Probability Distributions](<Unit 2/unit-2.qmd>)
 
-Identify variables and summaries; classify categorical, discrete, and continuous values; investigate numerical category codes.
+<span class="unit-state" data-unit-status="under-construction">Under construction</span>
 
-[Open Topic 1.2 →](<Unit 1/Topic 1.2/topic-1-2.qmd>)
+A place for future lessons. No topics have been published yet.
 :::
-::: {.route-card}
-**Topic 1.3 Tabular Representation and Summary Statistics for One Categorical Variable**
+::: {.route-card .unit-card data-unit="3"}
+### [Unit 3: Inference for Categorical Data: Proportions](<Unit 3/unit-3.qmd>)
 
-Build frequency and relative-frequency tables, use correct denominators, and justify contextual claims.
+<span class="unit-state" data-unit-status="under-construction">Under construction</span>
 
-[Open Topic 1.3 →](<Unit 1/Topic 1.3/topic-1-3.qmd>)
+A place for future lessons. No topics have been published yet.
 :::
-::: {.route-card}
-**Topic 1.4 Graphical Representations for One Categorical Variable**
+::: {.route-card .unit-card data-unit="4"}
+### [Unit 4: Inference for Quantitative Data: Means](<Unit 4/unit-4.qmd>)
 
-Build bar and pie charts, compare samples, and audit graphical claims.
+<span class="unit-state" data-unit-status="under-construction">Under construction</span>
 
-[Open Topic 1.4 →](<Unit 1/Topic 1.4/topic-1-4.qmd>)
+A place for future lessons. No topics have been published yet.
 :::
-::: {.route-card}
-**Topic 1.5 Graphical Representations for One Quantitative Variable**
+::: {.route-card .unit-card data-unit="5"}
+### [Unit 5: Regression Analysis](<Unit 5/unit-5.qmd>)
 
-The original dotplot, stem-and-leaf, histogram construction, and histogram laboratory lessons.
+<span class="unit-state" data-unit-status="under-construction">Under construction</span>
 
-[Open Topic 1.5 →](<Unit 1/Topic 1.5/topic-1-5.qmd>)
-:::
-::: {.route-card}
-**Topic 1.6 Descriptions for One Quantitative Variable Distributions**
-
-The original distribution descriptions, worked examples, and evidence checkpoints.
-
-[Open Topic 1.6 →](<Unit 1/Topic 1.6/topic-1-6.qmd>)
+A place for future lessons. No topics have been published yet.
 :::
 :::
-
-[Additional quantitative-data practice](<Unit 1/Shared/practice.qmd>) · [Sources and publication notes](resources.qmd)
-
-## Keep the datasets distinct
-
-The School A categorical example describes a **hypothetical sample of 40 students**: Walk 8, Bicycle 6, Bus 18, and Car 8. The quantitative graph lessons use a **separate hypothetical sample of 24 one-way commute times**. Neither dataset is a record of actual Maple Hill School students. Changing the display never changes its observations.
-
-<div data-chart="commute-dot" class="chart-frame"><p>Commute times: 5, 8, 10, 12, 12, 14, 15, 16, 18, 18, 20, 20, 22, 24, 25, 26, 28, 30, 32, 35, 38, 42, 48, 58 minutes.</p></div>
 
 ## How to study with this book
 
@@ -74,4 +64,6 @@ Read an explanation, predict what will happen, and then use the activity. For co
 
 The activities run in your browser without an account or notebook kernel. Choices are not submitted to a teacher and reset when you reload the page. Core explanations and worked answers remain readable without JavaScript. Printing expands solutions and includes activity reference states.
 
-Existing chapter addresses remain available. The editable Unit 1 chapters, data, code, and tests are organized in the repository's **Unit 1** folder, with one subfolder per topic and a **Shared** folder for material reused across topics.
+This book is being developed unit by unit. Unit 1 currently contains Topics 1.1–1.6, not the entire unit. Units 2–5 are **under construction**.
+
+[Sources and study resources](resources.qmd)

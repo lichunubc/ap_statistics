@@ -4,6 +4,12 @@
 
 Maintain one reusable, expandable Quarto course book for Chun Li's Maple Hill School AP Statistics course. Preserve editable chapters, original practice, datasets/provenance, activity code, objective mappings and reproducible tests across course iterations.
 
+## Five-unit navigation — October 13, 2026
+
+The homepage is a five-unit overview using the exact unit titles supplied by Chun Li. Each unit has its own landing QMD in `Unit N/`. Unit 1 holds the original six topic cards and dataset introduction; Units 2–5 are clearly labelled **under construction**. They are navigation placeholders, not implemented course content. The separate `project/unit-status.json` records these states without changing the existing topic objective mappings.
+
+Sidebar topic lists start collapsed and expand only through an explicit mouse or keyboard action. Whole-book navigation lives in `site/`; lesson files stay in their unit/topic folders. Development branches named `preview/**` run the existing workflow's render and complete test gate without publishing. Only main may save generated HTML or deploy.
+
 ## Current implementation — October 13, 2026
 
 Topics **1.1–1.6** have independent main chapters under **Unit 1: Exploring One-Variable Data and Collecting Data**, with exact official topic titles. Topic **1.2 Variables** is implemented, not merely scheduled: units/variables/values, categorical versus quantitative data, discrete versus continuous data, parameters/statistics, category-code relabelling, three activities and ten worked original exercises.
@@ -16,11 +22,11 @@ All Unit 1 teaching sources are in `Unit 1/`, with independent `Topic 1.x/` fold
 
 ## Validation and publication
 
-The gate runs all existing quantitative/foundations/table/chart regressions plus new Topic 1.2 and structure checks. It verifies arithmetic, old/new links, official names, mobile/desktop behavior, keyboard controls, print restoration and native Quarto search. Quarto is pinned to 1.9.38. Source status is **implemented**; the GitHub Actions build/deployment and revision-matched live check independently establish publication. Do not infer completion from a past scheduled start time.
+The gate runs all existing quantitative/foundations/table/chart regressions plus Topic 1.2, structure and course-navigation checks. It verifies arithmetic, old/new links, official names, mobile/desktop behavior, keyboard controls, print restoration and native Quarto search. Quarto is pinned to 1.9.38. Source status is **implemented**; the GitHub Actions build/deployment, revision-matched live check and live navigation browser check independently establish publication. Do not infer completion from a past scheduled start time.
 
 ## Backlog, not a schedule
 
-Prioritize teaching feedback, accessibility and mathematical consistency before expanding the book. Future work may adapt Topics 1.7 onward and later units after rechecking the current official CED. Each new topic should retain the same independent navigation and unit/topic folder structure. No additional scheduled development sessions are created by this roadmap.
+Prioritize teaching feedback, accessibility and mathematical consistency before expanding the book. Future work may adapt Topics 1.7 onward and later units after rechecking the current official CED. Each new topic should retain the same independent navigation and unit/topic folder structure. Add future topic cards to their unit landing page, not the homepage. No additional scheduled development sessions are created by this roadmap.
 
 ## Curriculum reference
 

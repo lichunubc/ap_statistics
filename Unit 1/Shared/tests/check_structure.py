@@ -14,7 +14,9 @@ config=yaml.safe_load((ROOT/'_quarto.yml').read_text())
 manifest=json.loads((ROOT/'project/topic-status.json').read_text())
 titles=['Introducing Statistics: What Can We Learn from Data?','Variables','Tabular Representation and Summary Statistics for One Categorical Variable','Graphical Representations for One Categorical Variable','Graphical Representations for One Quantitative Variable','Descriptions for One Quantitative Variable Distributions']
 parts=[p for p in config['book']['chapters'] if isinstance(p,dict)]
-assert len(parts)==1 and parts[0]['part']=='Unit 1: Exploring One-Variable Data and Collecting Data'
+assert len(parts)==1 and parts[0]['part']=='Unit 1/unit-1.qmd'
+assert config['book']['sidebar']['collapse-level']==1
+assert all(f'Unit {i}/unit-{i}.qmd' in config['book']['chapters'] for i in range(2,6))
 chapters=[f'Unit 1/Topic 1.{i}/topic-1-{i}.qmd' for i in range(1,7)]
 assert parts[0]['chapters'][:6]==chapters
 assert not any(isinstance(x,dict) for x in parts[0]['chapters'])
@@ -72,16 +74,18 @@ with sync_playwright() as p:
     browser=p.chromium.launch(headless=True,args=['--no-sandbox'],**kwargs)
     page=browser.new_page(viewport={'width':1440,'height':1000});page.on('pageerror',lambda e:errors.append(str(e)))
     load_page(page,DOCS/'index.html',base+'index.html')
-    assert page.locator('.route-card').count()==6
-    page.screenshot(path=str(QA/'unit1-home-desktop.png'),full_page=True)
+    assert page.locator('main .unit-card').count()==5
+    page.screenshot(path=str(QA/'course-home-desktop.png'),full_page=True)
     # Native navigation/search require an HTTP origin. CI always runs these.
     # Offline mode does not claim to test network navigation or search fetches.
     if not os.environ.get('INLINE_BROWSER'):
-        page.locator('.route-card a').nth(1).click();page.wait_for_load_state('networkidle')
+        page.locator('main .unit-card[data-unit="1"] h3 a[href*="unit-"]').click();page.wait_for_load_state('networkidle')
+        assert page.locator('main .topic-grid .route-card').count()==6
+        page.locator('main .topic-grid .route-card a').nth(1).click();page.wait_for_load_state('networkidle')
         assert page.locator('h1').inner_text()=='Topic 1.2 Variables'
         page.locator('nav.page-navigation a[href*="topic-1-3.html"]').click()
         page.wait_for_load_state('networkidle');assert page.locator('h1').inner_text().startswith('Topic 1.3 ')
-        native.append('homepage and next-topic links')
+        native.append('homepage to unit to topic and next-topic links')
         page.goto(base+'topic-1-2.html',wait_until='networkidle')
         field=page.locator('#quarto-search input.aa-Input')
         field.fill('recoding');page.wait_for_selector('.aa-Item a[href*="topic-1-2"]')
@@ -93,16 +97,20 @@ with sync_playwright() as p:
         toggle=page.locator('button[aria-label="Toggle sidebar navigation"]')
         toggle.click();page.wait_for_timeout(400)
         target=page.locator('#quarto-sidebar a[href*="topic-1-4.html"]')
+        assert not target.is_visible()
+        page.locator('#quarto-sidebar .course-unit-toggle').click()
         assert target.is_visible();target.click();page.wait_for_load_state('networkidle')
         assert page.locator('h1').inner_text().startswith('Topic 1.4 ')
-        native.append('mobile chapter menu')
+        native.append('mobile chapter menu with explicit unit expansion')
     else:
         page.close();page=browser.new_page(viewport={'width':390,'height':900});page.on('pageerror',lambda e:errors.append(str(e)))
         load_page(page,DOCS/'topic-1-2.html',base+'topic-1-2.html')
         page.locator('button[aria-label="Toggle sidebar navigation"]').click();page.wait_for_timeout(400)
+        assert not page.locator('#quarto-sidebar a[href*="topic-1-4.html"]').is_visible()
+        page.locator('#quarto-sidebar .course-unit-toggle').click()
         assert page.locator('#quarto-sidebar a[href*="topic-1-4.html"]').is_visible()
     page.screenshot(path=str(QA/'unit1-mobile-navigation.png'))
     browser.close()
 server.shutdown();assert not errors,errors
-report={'official_topics':6,'unit_parts':1,'compatibility_pages':len(legacy),'local_links_checked':links,'native_HTTP_checks':native,'mode':'offline inlining' if os.environ.get('INLINE_BROWSER') else 'HTTP browser','javascript_errors':errors}
+report={'official_topics':6,'course_units':5,'unit_parts_with_topics':1,'compatibility_pages':len(legacy),'local_links_checked':links,'native_HTTP_checks':native,'mode':'offline inlining' if os.environ.get('INLINE_BROWSER') else 'HTTP browser','javascript_errors':errors}
 (QA/'structure-validation.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report,indent=2))
