@@ -1,0 +1,19 @@
+name: Unit 1 development snapshot
+on:
+  push:
+    branches: [development/topic-1-2-unit-1]
+permissions:
+  contents: read
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - name: Package tracked sources without Git credentials
+        run: git archive --format=zip HEAD -o source-snapshot.zip
+      - uses: actions/upload-artifact@v4
+        with:
+          name: unit1-source-snapshot
+          path: source-snapshot.zip
+          retention-days: 1
