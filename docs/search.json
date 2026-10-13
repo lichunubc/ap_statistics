@@ -14,7 +14,7 @@
     "href": "index.html#learning-from-data",
     "title": "AP Statistics: Learning from Data",
     "section": "Learning from data",
-    "text": "Learning from data\nA growing course book for asking good questions, choosing useful representations, and supporting conclusions with evidence. Read the explanations, explore an activity, and check your reasoning against worked solutions.\nStart with Topic 1.1 Open the histogram lab",
+    "text": "Learning from data\nA growing course book for asking good questions, choosing useful representations, and supporting conclusions with evidence. Read the explanations, explore an activity, and check your reasoning against worked solutions.\nStart with Topic 1.1 Explore categorical tables Open the histogram lab",
     "crumbs": [
       "Welcome"
     ]
@@ -24,7 +24,7 @@
     "href": "index.html#choose-your-starting-point",
     "title": "AP Statistics: Learning from Data",
     "section": "Choose your starting point",
-    "text": "Choose your starting point\n\n\n1.1 · Questions, populations, and samples\nIdentify the study’s purpose, distinguish a group from its size, and write a contextual conclusion.\nStart the foundations →\n\n\n1.5 · Represent quantitative data\nBuild dotplots, stem-and-leaf plots, and histograms while keeping the observations connected.\nPlot individual values →\n\n\n1.6 · Describe and justify\nExplain shape, center, spread, and unusual features. Learn what a graph can—and cannot—establish.\nDescribe a distribution →\n\n\nPractice with feedback\nTry histogram construction and interpretation questions. Reveal detailed answers after making your own attempt.\nQuantitative-data practice →\n\n\nBeing added next: Topic 1.2 (Variables), Topic 1.3 (Categorical tables), and Topic 1.4 (Categorical graphs). Completed chapters appear in the navigation as they are released. Existing Topic 1.5–1.6 chapter addresses have not changed.",
+    "text": "Choose your starting point\n\n\n1.1 · Questions, populations, and samples\nIdentify the study’s purpose, distinguish a group from its size, and write a contextual conclusion.\nStart the foundations →\n\n\n1.3 · Categorical frequencies and proportions\nCount one-response categories, practise correct denominators, and justify claims using the table.\nExplore categorical tables →\n\n\n1.5 · Represent quantitative data\nBuild dotplots, stem-and-leaf plots, and histograms while keeping the observations connected.\nPlot individual values →\n\n\n1.6 · Describe and justify\nExplain shape, center, spread, and unusual features. Learn what a graph can—and cannot—establish.\nDescribe a distribution →\n\n\nPractice with feedback\nTry histogram construction and interpretation questions. Reveal detailed answers after making your own attempt.\nQuantitative-data practice →\n\n\nIn this sequence: Topics 1.1 and 1.3 are available now. Topics 1.2 (Variables) and 1.4 (Categorical graphs) are scheduled separately. Completed chapters appear in the navigation as they are released. Existing Topic 1.5–1.6 chapter addresses have not changed.",
     "crumbs": [
       "Welcome"
     ]
@@ -160,6 +160,83 @@
     ]
   },
   {
+    "objectID": "topic-1-3.html",
+    "href": "topic-1-3.html",
+    "title": "1.3 · Categorical tables and numerical summaries",
+    "section": "",
+    "text": "One variable, one response per person\nSchool A has 1,000 students enrolled this term. In our hypothetical sample of 40 School A students, each reports a usual main travel method: Walk, Bicycle, Bus, or Car. This is the same categorical study introduced in Topic 1.1; it is not the separate sample of 24 numerical commute times used in Topic 1.5.\nThe investigative question is: What proportion of School A students this term usually travel mainly by bus?\nFor a one-response frequency table, categories should be mutually exclusive (a respondent cannot be counted in two categories) and collectively exhaustive (every valid response has a place). Here, main method means the method used for the greatest distance on a typical school day. A real questionnaire should also provide consistent rules for ties or unlisted methods; our hypothetical data specify exactly one method for each of the 40 respondents.",
+    "crumbs": [
+      "1.1–1.4 · Statistical foundations",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>1.3 · Categorical tables and numerical summaries</span>"
+    ]
+  },
+  {
+    "objectID": "topic-1-3.html#from-tallies-to-frequencies",
+    "href": "topic-1-3.html#from-tallies-to-frequencies",
+    "title": "1.3 · Categorical tables and numerical summaries",
+    "section": "From tallies to frequencies",
+    "text": "From tallies to frequencies\nA frequency is the number of observational units in one category. Read each response, add one tally mark to exactly one row, and verify that the frequency total equals the number of classified responses. In tally notation, a fifth stroke crosses the previous four: ||||/ means five.\n\n\n\n\n\n\n\n\nMain travel method\nTallies (groups of five)\nFrequency\n\n\n\n\nWalk\n||||/ |||\n8\n\n\nBicycle\n||||/ |\n6\n\n\nBus\n||||/ ||||/ ||||/ |||\n18\n\n\nCar\n||||/ |||\n8\n\n\nTotal\n\n40\n\n\n\nThe check is 8+6+18+8=408+6+18+8=40. The sum would be larger than 40 if someone were counted twice, or smaller if some responses were missing or unclassified.\n\nActivity: construct the table one response at a time\nPredict where the next tally belongs. Advance one response, advance five, reveal the finished table, or reset. For teaching purposes, the activity reproducibly shuffles the hypothetical category totals; it does not claim to preserve an actual survey response order.\n\n\nStatic reference: Walk 8, Bicycle 6, Bus 18, Car 8; 40 total. The interactive tally activity requires JavaScript.",
+    "crumbs": [
+      "1.1–1.4 · Statistical foundations",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>1.3 · Categorical tables and numerical summaries</span>"
+    ]
+  },
+  {
+    "objectID": "topic-1-3.html#relative-frequency-and-percentages",
+    "href": "topic-1-3.html#relative-frequency-and-percentages",
+    "title": "1.3 · Categorical tables and numerical summaries",
+    "section": "Relative frequency and percentages",
+    "text": "Relative frequency and percentages\nA relative frequency is the category count divided by the total number of classified observations. Since every one of the 40 sampled students supplied one answer, our denominator is n=40n=40.\nRelative frequency=category counttotal count,percentage=relative frequency×100%.\n\\text{Relative frequency}=\\frac{\\text{category count}}{\\text{total count}},\n\\qquad\n\\text{percentage}=\\text{relative frequency}\\times100\\%.\n\nFor the Bus category, 18/40=0.45=45%18/40=0.45=45\\%.\n\n\n\nMain method\nCount\nRelative frequency\nPercentage\n\n\n\n\nWalk\n8\n0.20\n20%\n\n\nBicycle\n6\n0.15\n15%\n\n\nBus\n18\n0.45\n45%\n\n\nCar\n8\n0.20\n20%\n\n\nTotal\n40\n1.00\n100%\n\n\n\nFrequency answers how many? Relative frequency answers what share of the group? Always name the group: 18 of the 40 sampled School A students reported Bus, corresponding to 45% of the sample. Do not divide 18 by the population size 1,000, and do not treat 45% as the exact percentage among all 1,000 students.\n\n\n\n\n\n\nTipRounding does not create missing people\n\n\n\nUse exact counts to calculate fractions, then round for display. Individually rounded percentages may total 99.9% or 100.1%. The exact unrounded proportions of an exhaustive single-response table still total 1.",
+    "crumbs": [
+      "1.1–1.4 · Statistical foundations",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>1.3 · Categorical tables and numerical summaries</span>"
+    ]
+  },
+  {
+    "objectID": "topic-1-3.html#ratios-change-when-the-denominator-changes",
+    "href": "topic-1-3.html#ratios-change-when-the-denominator-changes",
+    "title": "1.3 · Categorical tables and numerical summaries",
+    "section": "Ratios change when the denominator changes",
+    "text": "Ratios change when the denominator changes\nA part-to-whole ratio compares one category to the entire group. The ratio Bus to all responses is 18:40=9:2018:40=9:20, which represents the same share as 18/40=45%18/40=45\\%.\nA part-to-part ratio compares two categories. Bus to Car is 18:8=9:418:8=9:4, and 18/8=2.2518/8=2.25 means that there are 2.25 times as many sampled bus riders as sampled car riders. It does not mean that 225% of all sampled students take the bus.\n\nActivity: the denominator explorer\nSelect the numerator category and the group being used as the denominator. Explain who is included in the denominator before examining the result.\n\n\nStatic reference: Bus among all 40 respondents is 18/40=45%18/40=45\\%. Bus compared with Car is 18:8=9:418:8=9:4.\n\n\nFor another comparison, Bus among only Bus-or-Bicycle respondents is 18/(18+6)=18/24=75%18/(18+6)=18/24=75\\%. The category count did not change; the group described did. Ratios become interpretable only when both sides are labelled.",
+    "crumbs": [
+      "1.1–1.4 · Statistical foundations",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>1.3 · Categorical tables and numerical summaries</span>"
+    ]
+  },
+  {
+    "objectID": "topic-1-3.html#most-common-is-not-always-a-majority",
+    "href": "topic-1-3.html#most-common-is-not-always-a-majority",
+    "title": "1.3 · Categorical tables and numerical summaries",
+    "section": "Most common is not always a majority",
+    "text": "Most common is not always a majority\nA modal category is the category with the greatest frequency. Bus is the most common category because 18 exceeds the counts 8, 6, and 8. This is a plurality, not a majority: 18/40=45%18/40=45\\% is below 50%.\nBecause Walk and Bicycle are disjoint categories, they can be combined: 8+6=148+6=14 students, or 14/40=35%14/40=35\\%, reported Walk or Bicycle. Do not add counts that overlap. In a choose every method used survey, a respondent may check both Walk and Bus and the total category selections can exceed the number of respondents.\nA supported statement is: “Among the 40 sampled School A students, Bus was the most common usual main travel method, reported by 18 students (45%).” An unsupported overstatement is “Exactly 45% of all 1,000 School A students travel by bus.” The sample does not reveal the exact population proportion.\n\nCheckpoint: what does the table justify?\nThe four original cases begin with no answer selected. Choose, check the explanation, clear your choice, or move to the next case.\n\n\nStatic reference: Bus is the largest category (45%) but not a majority; Walk or Bicycle accounts for 35% of this sample.",
+    "crumbs": [
+      "1.1–1.4 · Statistical foundations",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>1.3 · Categorical tables and numerical summaries</span>"
+    ]
+  },
+  {
+    "objectID": "topic-1-3.html#practice-construct-calculate-explain",
+    "href": "topic-1-3.html#practice-construct-calculate-explain",
+    "title": "1.3 · Categorical tables and numerical summaries",
+    "section": "Practice: construct, calculate, explain",
+    "text": "Practice: construct, calculate, explain\nAll questions are independently authored classroom exercises. Try each before opening the detailed solution.\n\n1. Study locations\nA different hypothetical survey asks 24 students to name one usual study location: Home (9), Library (8), Cafe (4), or Other (3). Make a frequency/relative-frequency/percentage table. Which is most common? Is it a majority?\n\nSolution. \n\n\nShow solution\n\n\n\n\nLocation\nFrequency\nRelative frequency\nPercentage\n\n\n\n\nHome\n9\n9/24=0.3759/24=0.375\n37.5%\n\n\nLibrary\n8\n8/24≈0.33338/24\\approx0.3333\n33.3%\n\n\nCafe\n4\n4/24≈0.16674/24\\approx0.1667\n16.7%\n\n\nOther\n3\n3/24=0.1253/24=0.125\n12.5%\n\n\nTotal\n24\n1 (unrounded)\n100% (rounded)\n\n\n\nHome is the most common (9 students), but not a majority: 9/24=37.5%&lt;50%9/24=37.5\\%&lt;50\\%.\n\n\n\n\n2. Ordered categorical answers\nA hypothetical movie-satisfaction survey has 30 responses: Very dissatisfied 2, Dissatisfied 4, Neutral 5, Satisfied 12, Very satisfied 7. Compute category percentages to one decimal place and the share Satisfied or Very satisfied.\n\nSolution. \n\n\nShow solution\n\n\n\n\nCategory\nCount\nPercentage\n\n\n\n\nVery dissatisfied\n2\n6.7%\n\n\nDissatisfied\n4\n13.3%\n\n\nNeutral\n5\n16.7%\n\n\nSatisfied\n12\n40.0%\n\n\nVery satisfied\n7\n23.3%\n\n\n\nThe modal category is Satisfied. The two positive categories have 12+7=1912+7=19 responses out of 30: 19/30≈63.3%19/30\\approx63.3\\%. If categories are coded 1–5, those numbers are labels for an ordered categorical variable, not automatically an equally spaced quantitative measurement.\n\n\n\n\n3. The majority mistake\nA student writes, “Bus is the largest category, so the majority of respondents take the bus.” Identify exactly what is right and wrong.\n\nSolution. \n\n\nShow solution\n\nBus is the largest individual category: 18 exceeds 8, 6, and 8. But a majority is more than half; 18/40=45%&lt;50%18/40=45\\%&lt;50\\%. Correct report: “Bus was the most common main method among the 40 sampled students, reported by 18 (45%), but fewer than half chose it.”\n\n\n\n\n4. Two different denominators\nCompute (a) Bus to Bicycle as a simplified ratio, (b) Bus among all 40 responses, and (c) Bus among Bus-or-Bicycle responses.\n\nSolution. \n\n\nShow solution\n\n\n18:6=3:118:6=3:1; (b) 18/40=0.45=45%18/40=0.45=45\\%; (c) 18/(18+6)=18/24=0.75=75%18/(18+6)=18/24=0.75=75\\%. The numerator is unchanged, while the denominator for (c) includes only the 24 sampled people in the selected pair of categories.\n\n\n\n\n\n5. Why don’t the counts sum to 30?\nA check every method used survey has 30 respondents and counts Walk 18, Bus 12, Bicycle 8, Car 7, totalling 45. Is the table necessarily wrong? Must percentages of respondents selecting each method add to 100%?\n\nSolution. \n\n\nShow solution\n\nNo. Respondents may select more than one method; the 45 selections can come from 30 people. Dividing by 30 gives 60%, 40%, 26.7%, 23.3% of respondents selecting each method, summing to approximately 150%. These are overlapping categories, not a single-answer distribution whose relative frequencies must sum to 100%.\n\n\n\n\n6. A misleading denominator\nA report says, “Bus accounts for 18% of School A’s 1,000 students because 18 sampled students chose Bus.” Correct the calculation and statement.\n\nSolution. \n\n\nShow solution\n\nThe appropriate denominator for the sampled bus count is 40 sampled students. The sample percentage is 18/40=45%18/40=45\\%, not 18%. A defensible report is “Among 40 sampled School A students, 18 (45%) reported Bus as their usual main method.” The exact percentage among all 1,000 students is not known from these data.\n\n\n\n\n7. Rounding is not missing data\nThree categories each contain one person in a survey of three. The reported percentages, 33.3%, 33.3%, and 33.3%, sum to 99.9%. Has one person been left out?\n\nSolution. \n\n\nShow solution\n\nNo. 1+1+1=31+1+1=3 includes everyone. The exact proportions are 1/31/3 each and sum to 1. Rounding each 100/3%100/3\\% to one decimal creates the 0.1-percentage-point difference.",
+    "crumbs": [
+      "1.1–1.4 · Statistical foundations",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>1.3 · Categorical tables and numerical summaries</span>"
+    ]
+  },
+  {
+    "objectID": "topic-1-3.html#before-moving-on",
+    "href": "topic-1-3.html#before-moving-on",
+    "title": "1.3 · Categorical tables and numerical summaries",
+    "section": "Before moving on",
+    "text": "Before moving on\nYou should now be able to construct a one-response table, compute and interpret frequency and relative frequency, identify the denominator in a ratio, distinguish most common from majority, and justify contextual claims without exceeding the data.\nComing next: Topic 1.4 will graph these same counts with bar and pie charts; it should not change the underlying totals.\n\nCurriculum and provenance: College Board AP Statistics CED, effective Fall 2026, Topic 1.3, printed p. 34; objectives 1.3.A and 1.3.B, essential knowledge 1.3.A.1–2 and 1.3.B.1–2 (checked October 13, 2026). All data in this chapter are hypothetical classroom examples, summarized in data/foundations.json. Interactive code and practice are independently authored; the book is not endorsed by the College Board.",
+    "crumbs": [
+      "1.1–1.4 · Statistical foundations",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>1.3 · Categorical tables and numerical summaries</span>"
+    ]
+  },
+  {
     "objectID": "individual-values.html",
     "href": "individual-values.html",
     "title": "1.5 · Individual values",
@@ -167,7 +244,7 @@
     "text": "Start with the variable\nAn observational unit is one student. The variable is that student’s one-way commute time, in minutes. A distribution tells us which values occur and how often they occur.\nFor quantitative data, position measures an amount. The distance from 10 to 20 minutes must represent the same change as the distance from 20 to 30 minutes. We cannot reorder the numbers as we sometimes reorder unordered category labels.\nOur sorted data are:\nDownload the 24 recorded values as CSV.",
     "crumbs": [
       "1.5 · Represent the data",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>1.5 · Individual values</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>1.5 · Individual values</span>"
     ]
   },
   {
@@ -178,7 +255,7 @@
     "text": "5, 8, 10, 12, 12, 14, 15, 16, 18, 18, 20, 20,\n22, 24, 25, 26, 28, 30, 32, 35, 38, 42, 48, 58",
     "crumbs": [
       "1.5 · Represent the data",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>1.5 · Individual values</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>1.5 · Individual values</span>"
     ]
   },
   {
@@ -189,7 +266,7 @@
     "text": "A dotplot: one dot for every observation\nDraw a labelled numerical axis. Place one dot at each recorded value. When a value repeats, stack the dots vertically. Two dots at 12 mean two students, each with a 12-minute commute—not one student with a 24-minute commute.\n\n\nThere are 24 dots; the recorded values 12, 18, and 20 each occur twice.\n\n\nThe axis extends from 0 to 60, but the observations extend from 5 to 58. Axis endpoints are not automatically observed values. A dotplot preserves recorded values, but not the original order of data collection.",
     "crumbs": [
       "1.5 · Represent the data",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>1.5 · Individual values</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>1.5 · Individual values</span>"
     ]
   },
   {
@@ -200,7 +277,7 @@
     "text": "A stem and a leaf reconstruct one value\nFor these whole-minute times, use tens digits as stems and ones digits as leaves:\n28=10(2)+8,key: 2∣8=28 minutes.28=10(2)+8,\\qquad \\text{key: }2\\mid8=28\\text{ minutes}.\nWrite stems in increasing order. Sort the leaves within each row. Keep repeated leaves and zeros: each leaf still represents one observation. Include intermediate empty stems when necessary so a gap is not hidden.\nStem | Leaves\n  0  | 5 8\n  1  | 0 2 2 4 5 6 8 8\n  2  | 0 0 2 4 5 6 8\n  3  | 0 2 5 8\n  4  | 2 8\n  5  | 8\nKey: 2 | 8 = 28 minutes\nRead the key first. With the key 1∣2=1.21\\mid2=1.2 seconds, the same printed digits would represent different measurements. A stem may contain more than one digit; a leaf is usually one digit.",
     "crumbs": [
       "1.5 · Represent the data",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>1.5 · Individual values</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>1.5 · Individual values</span>"
     ]
   },
   {
@@ -211,7 +288,7 @@
     "text": "Replay the construction\nChoose a display, then add observations. The activity uses our 24 times in a mixed order so you can see repeated values finding their proper positions.\n\n\nUse JavaScript to add the 24 values one at a time. The completed plots are also shown above.",
     "crumbs": [
       "1.5 · Represent the data",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>1.5 · Individual values</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>1.5 · Individual values</span>"
     ]
   },
   {
@@ -222,7 +299,7 @@
     "text": "Check your understanding\nHow many students recorded at least 40 minutes? Which exact values did they record?\n\n\nShow solution\n\nThere are three students, with recorded times 42, 48, and 58 minutes. Both displays preserve individual values, so the conclusion is exact at the precision of the recorded data.\n\n\n\n\n\n\n\nTipBefore you move on\n\n\n\nRecover a sorted list by writing one entry for every dot or leaf. Counting only unique positions would lose repeated observations.",
     "crumbs": [
       "1.5 · Represent the data",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>1.5 · Individual values</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>1.5 · Individual values</span>"
     ]
   },
   {
@@ -233,7 +310,7 @@
     "text": "Step 1 · Choose and read the bins\nA histogram groups quantitative observations into ordered intervals called bins. A bar’s width represents an interval of the variable; its height gives the frequency or relative frequency in that interval. We use equal-width bins throughout this lesson.\nThe commute times run from 5 to 58 minutes. A display spanning 0–60 minutes with width 10 covers every observation:\nnumber of bins=60−010=6.\\text{number of bins}=\\frac{60-0}{10}=6.\nSeven boundary marks produce six intervals, not seven bins. For a span SS, equal bin width ww, and number of bins kk, S=kwS=kw when the bins exactly partition the span.",
     "crumbs": [
       "1.5 · Represent the data",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>1.5 · Build a histogram</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>1.5 · Build a histogram</span>"
     ]
   },
   {
@@ -244,7 +321,7 @@
     "text": "Boundaries: 0, 10, 20, 30, 40, 50, 60 minutes; six bins of width 10.\n\n\n\n\n\nUse one consistent endpoint rule\nOur convention is left-inclusive and right-exclusive:\na≤x&lt;b.a\\leq x&lt;b.\nThus 20 enters 20≤x&lt;3020\\leq x&lt;30, not 10≤x&lt;2010\\leq x&lt;20. Every observation must enter exactly one bin. Other conventions are possible but must be clearly stated. Here, 58 is below 60 and enters the final bin. A value equal to the final right boundary would require an explicit endpoint exception or an additional bin.",
     "crumbs": [
       "1.5 · Represent the data",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>1.5 · Build a histogram</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>1.5 · Build a histogram</span>"
     ]
   },
   {
@@ -255,7 +332,7 @@
     "text": "Step 2 · Tally every observation once\n\n\n\nCommute time (minutes)\nRecorded values\nFrequency\n\n\n\n\n0≤x&lt;100\\leq x&lt;10\n5, 8\n2\n\n\n10≤x&lt;2010\\leq x&lt;20\n10, 12, 12, 14, 15, 16, 18, 18\n8\n\n\n20≤x&lt;3020\\leq x&lt;30\n20, 20, 22, 24, 25, 26, 28\n7\n\n\n30≤x&lt;4030\\leq x&lt;40\n30, 32, 35, 38\n4\n\n\n40≤x&lt;5040\\leq x&lt;50\n42, 48\n2\n\n\n50≤x&lt;6050\\leq x&lt;60\n58\n1\n\n\nTotal\nAll recorded values\n24\n\n\n\nCheck the total: 2+8+7+4+2+1=242+8+7+4+2+1=24.",
     "crumbs": [
       "1.5 · Represent the data",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>1.5 · Build a histogram</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>1.5 · Build a histogram</span>"
     ]
   },
   {
@@ -266,7 +343,7 @@
     "text": "Step 3 · Draw one whole bar per table row\nStart the frequency axis at zero and use an even scale. The first row has frequency 2, so draw the first bar to height 2. The next row has frequency 8, so draw the entire next bar to height 8. Adjacent bins share boundaries; their bars touch. An empty bin has zero height.\n\n\nThe six table rows produce whole bars with heights 2, 8, 7, 4, 2, and 1.\n\n\nThe 10-to-under-20-minute bar represents eight students, not an 8-minute commute. Frequency is on one axis; the commute-time interval is on the other. A horizontal histogram reverses the axes: intervals are vertical and frequencies are horizontal.",
     "crumbs": [
       "1.5 · Represent the data",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>1.5 · Build a histogram</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>1.5 · Build a histogram</span>"
     ]
   },
   {
@@ -277,7 +354,7 @@
     "text": "Frequency or relative frequency?\nFor a bin with frequency ff in a sample of size nn,\nrelative frequency=fn,percentage=fn×100%.\\text{relative frequency}=\\frac{f}{n},\\qquad\n\\text{percentage}=\\frac{f}{n}\\times100\\%.\nThe second bin has 8/24=1/3≈33.3%8/24=1/3\\approx33.3\\% of the observations. Every bin uses the same denominator, 24. Scaling all bars by the same factor changes the numerical axis, not their relative pattern.\n\n\nFrequency counts: 2, 8, 7, 4, 2, 1. Their relative frequencies use denominator 24.",
     "crumbs": [
       "1.5 · Represent the data",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>1.5 · Build a histogram</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>1.5 · Build a histogram</span>"
     ]
   },
   {
@@ -288,7 +365,7 @@
     "text": "A histogram is not a categorical bar chart\nThese examples use different illustrative samples: travel method for 40 students, and commute time for 24 students.\n\n\nTravel method: Walk 8, Bicycle 6, Bus 18, Car 8.\n\n\n\n\nCommute-time frequencies: 2, 8, 7, 4, 2, 1.\n\n\n\n\n\n\n\n\n\n\nFeature\nCategorical bar chart\nQuantitative histogram\n\n\n\n\nData axis\nCategory labels\nNumerical intervals\n\n\nOne bar\nOne category\nOne interval\n\n\nOrder\nUnordered categories may move\nNumerical order must remain\n\n\nWidth\nUsually a design choice\nA numerical bin width\n\n\nBlank space\nUsually separates categories\nMay indicate an empty bin\n\n\n\nIdentify the variable and read the axis. Whether bars touch is a useful clue, not a sufficient definition.\n\n\n\n\n\n\nNoteWhat is no longer visible?\n\n\n\nHeight 7 for 20≤x&lt;3020\\leq x&lt;30 does not reveal the seven exact times. A histogram usually cannot reconstruct the original observations. Use a dotplot, stem-and-leaf plot, or raw list when exact values matter.",
     "crumbs": [
       "1.5 · Represent the data",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>1.5 · Build a histogram</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>1.5 · Build a histogram</span>"
     ]
   },
   {
@@ -299,7 +376,7 @@
     "text": "Change the bins, not the observations\nThis lab always uses the same 24 commute times. The numerical span remains 0–60 minutes. Choose either a bin width or a number of equal-width bins. Switch the vertical axis between counts and percentages.\nClick a bar—or focus it and press Enter—to inspect its interval and recorded values. The width and bin-count controls are alternative ways to specify the same partition.",
     "crumbs": [
       "1.5 · Represent the data",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>1.5 · Histogram laboratory</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>1.5 · Histogram laboratory</span>"
     ]
   },
   {
@@ -310,7 +387,7 @@
     "text": "At width 10 minutes there are six bins with frequencies 2, 8, 7, 4, 2, 1. JavaScript enables the adjustable version.\n\n\n\n\n\n\n\n\nNoteA fair visual comparison\n\n\n\nThe frequency scale remains 0–24, or the percentage scale 0–100%. Changing bins does not quietly rescale the vertical axis. Some bars may look short; every graph still represents all 24 students.",
     "crumbs": [
       "1.5 · Represent the data",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>1.5 · Histogram laboratory</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>1.5 · Histogram laboratory</span>"
     ]
   },
   {
@@ -321,7 +398,7 @@
     "text": "Investigate before revealing\n1. Compare widths of 5, 10, and 20 minutes. Which view shows more local detail? Which could conceal gaps or separate concentrations?\n\n\nShow explanation\n\nWidth 5 gives 12 bins; width 10 gives 6; width 20 gives 3. Narrow bins show more local detail but can look irregular. Wide bins smooth over detail and may hide gaps or multiple concentrations. No single appearance tells the whole story.\n\n2. With width 10, inspect the third bin. Does height 7 mean seven students recorded exactly 20 minutes?\n\n\nShow explanation\n\nNo. The interval contains 20, 20, 22, 24, 25, 26, and 28 minutes. Only two values equal 20. The panel’s exact values come from the underlying data supplied to the lab—not from the bar itself.\n\n3. Change the number of bins to 9. What changes, and what stays fixed?\n\n\nShow explanation\n\nThe width becomes 60/9≈6.66760/9\\approx6.667 minutes. Boundaries, counts per bin, and appearance change. The 24 recorded values, minimum 5, and maximum 58 do not. Boundary labels may be rounded; assignment uses unrounded boundaries.",
     "crumbs": [
       "1.5 · Represent the data",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>1.5 · Histogram laboratory</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>1.5 · Histogram laboratory</span>"
     ]
   },
   {
@@ -332,7 +409,7 @@
     "text": "A gap can disappear from the histogram\nThis separate clinic dataset has concentrations near 5–12 and 24–30 minutes and one unusually long wait of 55 minutes.\n\n\nNo clinic times lie strictly between 12 and 24 minutes, or between 30 and 55 minutes.\n\n\n\n\nTwenty-minute bins give counts 10, 9, and 1. All bins are nonempty despite the gaps in the raw data.\n\n\nA zero-frequency bin establishes that its entire interval contains no observations. The reverse does not hold: nonempty bins may contain smaller empty regions. Coarse bins can hide gaps visible in individual-value displays.",
     "crumbs": [
       "1.5 · Represent the data",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>1.5 · Histogram laboratory</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>1.5 · Histogram laboratory</span>"
     ]
   },
   {
@@ -343,7 +420,7 @@
     "text": "The four-part description\nAlways name the variable, group, and units. Write “commute times among these 24 students,” not just “the graph.” A description is more than a list of vocabulary words.",
     "crumbs": [
       "1.6 · Describe and justify",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>1.6 · Describe a distribution</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>1.6 · Describe a distribution</span>"
     ]
   },
   {
@@ -354,7 +431,7 @@
     "text": "Part\nAsk yourself\nInclude in the response\n\n\n\n\nShape\nSymmetry or skew? How many main peaks?\nOverall balance and prominent peaks\n\n\nCenter\nWhere is a central value?\nA numerical location, with units\n\n\nSpread\nHow widely do values vary?\nAn interval or overall span, with units\n\n\nUnusual features\nGaps, clusters, or potential outliers?\nApproximate locations and evidence",
     "crumbs": [
       "1.6 · Describe and justify",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>1.6 · Describe a distribution</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>1.6 · Describe a distribution</span>"
     ]
   },
   {
@@ -365,7 +442,7 @@
     "text": "Skew is named for the longer tail\nRight-skewed distributions have a longer tail toward larger values. Left-skewed distributions have a longer tail toward smaller values. Approximately symmetric means the sides roughly mirror each other. The tallest bars do not identify the direction of skew.\n\n\nRight-skewed illustration: many smaller values, with a tail toward larger values.\n\n\n\n\nLeft-skewed illustration: many larger values, with a tail toward smaller values.",
     "crumbs": [
       "1.6 · Describe and justify",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>1.6 · Describe a distribution</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>1.6 · Describe a distribution</span>"
     ]
   },
   {
@@ -376,7 +453,7 @@
     "text": "Peaks answer a different question\nUnimodal means one main peak; bimodal means two prominent peaks. Approximately uniform means similar frequencies across equal-width intervals, without prominent peaks. Two adjacent tall bars may form one broad peak; not every small bump is a separate mode.\n\n\nHypothetical illustrations: symmetric with one broad peak; symmetric and bimodal; approximately uniform.\n\n\nA distribution may be symmetric and bimodal. Symmetric does not necessarily mean bell-shaped. These are teaching illustrations; the next activity uses published observations.",
     "crumbs": [
       "1.6 · Describe and justify",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>1.6 · Describe a distribution</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>1.6 · Describe a distribution</span>"
     ]
   },
   {
@@ -387,7 +464,7 @@
     "text": "Shape detective: published data\nInspect each histogram before choosing A–E. These are the published datasets from the revised lecture, not repeated versions of the schematic examples. Approximate descriptions allow ordinary irregularities in real data.\n\n\nCases: major North American river lengths, Old Faithful waiting times, and Iris setosa sepal lengths. Source links appear with each case.",
     "crumbs": [
       "1.6 · Describe and justify",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>1.6 · Describe a distribution</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>1.6 · Describe a distribution</span>"
     ]
   },
   {
@@ -398,7 +475,7 @@
     "text": "Center and spread are different\nThe next hypothetical group has 30 practice-task times. Its balance is easy to see near 20 minutes. Observations extend from 12 to 28 minutes, giving an overall span of 28−12=1628-12=16 minutes.\n\n\nSymmetric task-time data centered at 20 minutes; minimum 12, maximum 28.\n\n\n“About 20 minutes is central” answers a different question from “values span 16 minutes.” Do not use the height of the tallest bar as the center: that height is a count, not a value of the variable.",
     "crumbs": [
       "1.6 · Describe and justify",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>1.6 · Describe a distribution</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>1.6 · Describe a distribution</span>"
     ]
   },
   {
@@ -409,7 +486,7 @@
     "text": "Clusters, gaps, and potential outliers\nClusters are concentrations of observations. A gap is an interval between observed values containing no observations. An outlier is unusually small or large relative to the rest; a graph may identify a potential outlier for investigation.\n\n\nClinic times cluster at 5–12 and 24–30 minutes, with an isolated value at 55 minutes.\n\n\nHere, 55 minutes is unusually separated from the main groups. It is not automatically a recording error and should not automatically be deleted. A single high-end observation does not, by itself, require the outlier label.\n\n\n\n\n\n\nTipA useful sentence frame\n\n\n\n“Among [group], the distribution of [variable and units] is [shape], centered around [value or interval], and extends from about [lower end] to [upper end]. [Describe any notable gap, cluster, or unusual value.]”\nUse approximate language for graphical estimates. With two separated concentrations, explain both instead of treating a central value in the gap as a typical observation.",
     "crumbs": [
       "1.6 · Describe and justify",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>1.6 · Describe a distribution</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>1.6 · Describe a distribution</span>"
     ]
   },
   {
@@ -420,7 +497,7 @@
     "text": "Describe the commute histogram\nUse only this grouped display. Remembering the raw list is different from reading evidence from a histogram.\nThe shape is roughly unimodal and right-skewed. The center is approximately in the 20–30 minute interval. Occupied bins extend from 0–10 through 50–60 minutes. There is no empty 10-minute bin and just one observation in the last bin.\nDo not report an exact minimum of 5 or maximum of 58 from this graph alone. Those facts require the individual observations.",
     "crumbs": [
       "1.6 · Describe and justify",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>1.6 · Worked examples and evidence</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>1.6 · Worked examples and evidence</span>"
     ]
   },
   {
@@ -431,7 +508,7 @@
     "text": "Six 10-minute bins starting at zero have frequencies 2, 8, 7, 4, 2, 1.\n\n\n\n\nAmong these 24 students, recorded commute times are roughly unimodal and right-skewed, centered in the 20–30 minute interval. Values occupy bins from 0 to under 10 through 50 to under 60 minutes. No displayed bin is empty, although smaller gaps may be hidden inside bins.",
     "crumbs": [
       "1.6 · Describe and justify",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>1.6 · Worked examples and evidence</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>1.6 · Worked examples and evidence</span>"
     ]
   },
   {
@@ -442,7 +519,7 @@
     "text": "Support a claim numerically\nClaim: Most of these students recorded commute times under 30 minutes.\n2+8+7=17 students,1724×100%≈70.8%.2+8+7=17\\text{ students},\\qquad \\frac{17}{24}\\times100\\%\\approx70.8\\%.\nSeventeen is more than half of 24, so the claim is supported. Write: “About 71% of these sampled students recorded a commute time under 30 minutes.” Do not silently extend the conclusion to every student at the school.",
     "crumbs": [
       "1.6 · Describe and justify",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>1.6 · Worked examples and evidence</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>1.6 · Worked examples and evidence</span>"
     ]
   },
   {
@@ -453,7 +530,7 @@
     "text": "Evidence check\nDecide what the histogram alone establishes. Each new statement begins with no answer selected.\n\n\nFour statements test bin counts, exact values, majority, and the exact maximum.\n\n\n\nA threshold inside a bin\nExactly 2+1=32+1=3 times are at least 40 minutes. But at least 45 minutes splits the 40–50 bin. Its two observations could lie below or above 45; the one in 50–60 definitely qualifies. Therefore between 1 and 3 students could qualify from the histogram alone. Do not assume uniformity inside a bin.",
     "crumbs": [
       "1.6 · Describe and justify",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>1.6 · Worked examples and evidence</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>1.6 · Worked examples and evidence</span>"
     ]
   },
   {
@@ -464,7 +541,7 @@
     "text": "Dissolved oxygen in cold streams\nThe revised lecture uses 2023 AP Statistics Free-Response Question 1(a). The official question, PDF page 4 contains the original figure. Below is a classroom redraw from the printed frequencies, not an official College Board graphic.\nThe variable is dissolved oxygen concentration, in mg/L, for sampled Alaskan streams colder than 8°C.\n\n\nOne-unit bins from 2 to 14 mg/L have frequencies 1, 0, 1, 1, 13, 12, 15, 40, 94, 117, 89, 46; total 429.\n\n\n\n\n\n\n\n\n\nFeature\nEvidence\n\n\n\n\nShape\nOne peak at 11–12 mg/L; tail toward smaller values\n\n\nCenter\nAbout 11–12 mg/L\n\n\nSpread\nOccupied bins extend across roughly 2–14 mg/L\n\n\nUnusual features\nEmpty 3–4 bin; potentially unusual low values below 6 mg/L\n\n\n\n\n\nShow the complete model response\n\nFor these sampled Alaskan streams colder than 8°C, dissolved oxygen concentrations are unimodal and left-skewed, centered around 11–12 mg/L. Occupied bins extend across roughly 2–14 mg/L, with a gap in the 3–4 mg/L bin and several potentially unusual low measurements below 6 mg/L. The boundaries do not reveal the exact minimum and maximum.\n\n\nFollow-up calculation\nThe total frequency is 429. The four bins from 10 to under 14 mg/L contain\n94+117+89+46=346,346429×100%≈80.7%.94+117+89+46=346,\\qquad \\frac{346}{429}\\times100\\%\\approx80.7\\%.\nAbout 81% of these sampled cold streams occupy those bins. Height 117 means 117 observations in the whole 11–12 mg/L interval, not exactly 11. These classroom follow-ups use our left-inclusive, right-exclusive convention; they are not additional parts of the original exam.",
     "crumbs": [
       "1.6 · Describe and justify",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>1.6 · Worked examples and evidence</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>1.6 · Worked examples and evidence</span>"
     ]
   },
   {
@@ -475,7 +552,7 @@
     "text": "Recover values from a dotplot\nThe lecture identifies these numerical data as transcribed from the 2022 AP Statistics Question 5 chocolate dotplots. The book shows a new classroom rendering of that transcription; it does not upload the exam screenshot. Original-material availability is managed by College Board’s exam archive.\n\n\nTwo dotplots show recorded reductions in blood pressure in mmHg.\n\n\nRead one entry per dot, including stacked dots. What are the two sorted lists?\n\n\nShow the recovered lists\n\nDark Chocolate (13 observations):\n-3, -1, 0, 2, 4, 5, 7, 8, 9, 10, 10, 12, 16\nWhite Chocolate (12 observations):\n-12, -6, -3, -3, -2, -2, 2, 3, 4, 4, 5, 15\nUnits are mmHg of reduction. Negative reduction means blood pressure increased; zero means no change. The order is sorted, not the original observation order. Our task here is data recovery, not a causal conclusion about the treatments.",
     "crumbs": [
       "1.6 · Describe and justify",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>1.6 · Worked examples and evidence</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>1.6 · Worked examples and evidence</span>"
     ]
   },
   {
@@ -485,7 +562,7 @@
     "section": "",
     "text": "1 · Draw from a frequency table\nThirty students recorded school-shuttle waiting times. Use 5-minute bins from 0 to 30 and the left-inclusive, right-exclusive rule. Draw a histogram on paper with labelled axes, equal-width touching bars, and a zero baseline.\nAfter drawing, use the digital check to reconstruct your heights. It checks heights only, not the labels on your paper.",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Practice and solutions</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Practice and solutions</span>"
     ]
   },
   {
@@ -495,7 +572,7 @@
     "section": "",
     "text": "Waiting time (minutes)\nFrequency\n\n\n\n\n0≤x&lt;50\\leq x&lt;5\n3\n\n\n5≤x&lt;105\\leq x&lt;10\n7\n\n\n10≤x&lt;1510\\leq x&lt;15\n10\n\n\n15≤x&lt;2015\\leq x&lt;20\n6\n\n\n20≤x&lt;2520\\leq x&lt;25\n3\n\n\n25≤x&lt;3025\\leq x&lt;30\n1\n\n\n\n\n\n\nEnter six bar heights, check them against the table, and view your attempt.\n\n\n\n\nShow the completed histogram\n\n\n\n\nHeights are 3, 7, 10, 6, 3, 1, totaling 30. Every bar is 5 minutes wide. The tallest bar means ten waits from 10 to under 15 minutes—not ten waits exactly equal to 10.",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Practice and solutions</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Practice and solutions</span>"
     ]
   },
   {
@@ -505,7 +582,7 @@
     "section": "2 · Stem, leaf, and key",
     "text": "2 · Stem, leaf, and key\nConstruct a stem-and-leaf plot for 1.2, 1.5, 1.5, 2.0, 2.3 seconds. Explain the repeated leaf.\n\n\nShow solution\n\n1 | 2 5 5\n2 | 0 3\nKey: 1 | 2 = 1.2 seconds\nFive leaves represent five observations. The repeated 1.5 needs two leaves of 5. A zero leaf preserves the 2.0-second observation.",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Practice and solutions</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Practice and solutions</span>"
     ]
   },
   {
@@ -515,7 +592,7 @@
     "section": "3 · Bin boundaries",
     "text": "3 · Bin boundaries\nWhich 10-minute commute bin contains 20? Does the first occupied bin prove the recorded minimum is 0?\n\n\nShow solution\n\n20 enters 20≤x&lt;3020\\leq x&lt;30, not the preceding bin. The first occupied bin establishes a value in 0≤x&lt;100\\leq x&lt;10, not necessarily 0. The original list—not the histogram—identifies the minimum as 5.",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Practice and solutions</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Practice and solutions</span>"
     ]
   },
   {
@@ -525,7 +602,7 @@
     "section": "4 · Repair turnaround times",
     "text": "4 · Repair turnaround times\nDescribe the histogram of 40 bicycle repairs. Find the percentage taking at least 4 hours. Can you recover the most common exact time?\n\n\nOne-hour bins from 0 to 8: frequencies 12, 10, 7, 5, 3, 2, 1, 0.\n\n\n\n\nShow solution\n\nRepair times are unimodal and right-skewed, centered around 1–3 hours. Values occupy bins from 0 to under 7 hours. No displayed internal bin is empty. The one observation in 6–7 hours is not automatically an outlier; an empty final 7–8 bin is not an internal gap.\nAt least 4 hours: (3+2+1)/40=15%(3+2+1)/40=15\\%. The most frequent interval is 0–1 hour. The most common exact value is not recoverable.",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Practice and solutions</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Practice and solutions</span>"
     ]
   },
   {
@@ -535,7 +612,7 @@
     "section": "5 · Two concentrations",
     "text": "5 · Two concentrations\nDescribe shape, center, spread, and the empty internal interval for these 40 library study sessions. What percentage lasted from 30 to under 90 minutes?\n\n\nFifteen-minute bins from 0 to 120: frequencies 2, 10, 8, 0, 0, 8, 10, 2.\n\n\n\n\nShow solution\n\nThe displayed distribution is approximately symmetric and bimodal, with main concentrations in 15–45 and 75–105 minutes. The visual center near 60 minutes lies in a gap, not at a typical observed session. Occupied bins span roughly 0–120 minutes. There are no observations from 45 to under 75 minutes.\nThe count from 30 to under 90 is 8+0+0+8=168+0+0+8=16, giving 16/40=40%16/40=40\\%. A single center would hide the two concentrations. The exact median is not available from the histogram.",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Practice and solutions</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Practice and solutions</span>"
     ]
   },
   {
@@ -545,7 +622,7 @@
     "section": "6 · What could be inside a bin?",
     "text": "6 · What could be inside a bin?\nTwo commute times lie in 40–50 and one in 50–60 minutes. How many are at least 40? How many could be at least 45?\n\n\nShow solution\n\nExactly 3 are at least 40. Between 1 and 3 could be at least 45: the last-bin observation definitely qualifies; either, neither, or both observations in the preceding bin might qualify. Do not add a uniformity assumption.",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Practice and solutions</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Practice and solutions</span>"
     ]
   },
   {
@@ -555,7 +632,7 @@
     "section": "7 · Oxygen: count and context",
     "text": "7 · Oxygen: count and context\nReturn to the oxygen histogram. How many sampled cold streams recorded below 6 mg/L? What percentage is this? What does the empty 3–4 bin establish?\n\n\nShow solution\n\nThe first four counts total 1+0+1+1=31+0+1+1=3. The percentage is 3/429×100%≈0.7%3/429\\times100\\%\\approx0.7\\%. Under our convention, no observed concentration lies in 3≤x&lt;43\\leq x&lt;4 mg/L. This does not show that such concentrations are impossible in all streams.",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Practice and solutions</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Practice and solutions</span>"
     ]
   },
   {
@@ -565,7 +642,7 @@
     "section": "8 · Repair a weak description",
     "text": "8 · Repair a weak description\nA student writes, “The graph is high in the middle and goes up and down.” Replace this with all four parts of a contextual description.\n\n\nTwenty review-session lengths span 4–30 minutes, with approximate symmetry and a broad central concentration.\n\n\n\n\nShow a model response\n\nAmong these 20 students, review-session lengths are approximately symmetric with one broad central concentration, centered around 16–18 minutes. Recorded values extend from 4 to 30 minutes, with no clearly isolated observation or large internal gap.\nThe dotplot preserves individual values, so the observed endpoints are available. Wide histogram bins would warrant less exact wording.",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Practice and solutions</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Practice and solutions</span>"
     ]
   },
   {
@@ -575,7 +652,7 @@
     "section": "Before the next class",
     "text": "Before the next class\nExplain one dot versus one bin, construct a histogram from a table, name skew from the tail, and support a claim with calculation + context. Return to the relevant chapter when an answer depends on a guess rather than evidence.",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Practice and solutions</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Practice and solutions</span>"
     ]
   },
   {
@@ -585,7 +662,7 @@
     "section": "",
     "text": "Basis of the pilot\nThis book adapts Chun Li’s revised 45-slide Seeing Quantitative Data presentation and 30-page Representing and Describing Quantitative Data study guide for Maple Hill School. It retains the revised sequence, classroom datasets, whole-bar construction, endpoint convention, and evidence-based descriptions.\nThe scope follows the instructor-supplied College Board essential-knowledge excerpts 1.5.A.1–4, 1.6.A.1–6, and 1.6.B.1. Detailed numerical-summary formulas and inference are left to later lessons.",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Sources and study resources</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Sources and study resources</span>"
     ]
   },
   {
@@ -595,7 +672,7 @@
     "section": "",
     "text": "Book section\nRevised lecture slides\n\n\n\n\nIndividual values\n3–9\n\n\nHistogram construction and laboratory\n10–19\n\n\nHand construction and data recovery\n20–23\n\n\nShape, center, spread, unusual features\n24–32\n\n\nDescriptions and supported claims\n33–37\n\n\nOxygen and closing practice\n38–45",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Sources and study resources</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Sources and study resources</span>"
     ]
   },
   {
@@ -605,7 +682,7 @@
     "section": "Published datasets",
     "text": "Published datasets\nThe shape challenge uses the values packaged with the revised lecture. Their documented sources are:\n\nR datasets: rivers: 141 major North American river lengths in miles, a historical compilation identified as the 1975 World Almanac.\nR datasets: faithful: 272 waiting times between Old Faithful eruptions, in minutes.\nR datasets: iris: the 50 Iris setosa sepal lengths, in centimeters, from Anderson’s iris measurements.\n\nThese are published observations, not freshly simulated data. Other classroom datasets are explicitly hypothetical. Bin choices are teaching decisions, not properties of the observations.",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Sources and study resources</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Sources and study resources</span>"
     ]
   },
   {
@@ -615,7 +692,7 @@
     "section": "Exam connections",
     "text": "Exam connections\n2023 AP Statistics, Question 1(a): the official question, PDF page 4 supplies the oxygen histogram. This book redraws its numerical frequencies and provides classroom explanations and follow-ups, not an official scoring key.\n2022 AP Statistics, Question 5: chocolate values are the revised lecture’s numerical transcription of the instructor-supplied dotplots. The public site does not upload the original screenshot or exam text. Consult College Board’s exam archive for currently available materials; older exam availability may differ.\nAP is a registered trademark of the College Board. This independent classroom resource is not affiliated with or endorsed by the College Board. Third-party material retains its owners’ rights; no blanket open-content license is asserted for it.",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Sources and study resources</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Sources and study resources</span>"
     ]
   },
   {
@@ -625,7 +702,7 @@
     "section": "Printing and downloads",
     "text": "Printing and downloads\nYour browser’s Print / Save as PDF command saves a chapter. Printing expands solutions and displays completed construction examples. The screen version keeps solutions hidden until you open them.\nDownload the commute values as CSV. Editable .qmd source, a portable preview builder, Quarto configuration, tests, and publishing instructions are included in the project.",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Sources and study resources</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Sources and study resources</span>"
     ]
   },
   {
@@ -635,7 +712,7 @@
     "section": "Privacy and limitations",
     "text": "Privacy and limitations\nThere are no accounts, analytics scripts, advertisements, grades database, or student-submission service. Activity choices remain in the current page and disappear on refresh; they are not sent to a teacher. Normal hosting logs are separate: GitHub documents IP logging for Pages security.\nJavaScript enables the activities. Core prose, tables, and solution text remain available without it. Charts use bundled data and do not request a remote statistical service. Search operates on the hosted site or a locally served copy; browser restrictions may affect search when opening a downloaded file directly.",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Sources and study resources</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Sources and study resources</span>"
     ]
   },
   {
@@ -645,7 +722,7 @@
     "section": "Technical format",
     "text": "Technical format\nThe publishing source is a Quarto HTML book with chapter navigation, search, mathematical typesetting, and custom JavaScript/SVG activities. It needs no running notebook kernel or paid backend. The downloadable portable preview uses Pandoc with the same chapter text and activities; the automated Quarto build produces the hosted book.",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Sources and study resources</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Sources and study resources</span>"
     ]
   },
   {
@@ -655,7 +732,7 @@
     "section": "Foundations curriculum alignment",
     "text": "Foundations curriculum alignment\nThe foundations sequence follows the official AP Statistics Course and Exam Description, effective Fall 2026: Topic 1.1 on printed pp. 30–31; Topic 1.2 on pp. 32–33; Topic 1.3 on p. 34; Topic 1.4 on p. 35. The curriculum was checked on October 13, 2026. Explanations and new practice are independently authored; the book does not reproduce secure AP Classroom questions.\nThe School A, School B, movie-survey and study-location examples originated in Chun Li’s revised Topics 1.1–1.4 materials. They are hypothetical, not records of actual Maple Hill School students. Their reusable summaries are in foundations.json. The 24 commute times used in Topic 1.5 are a separate dataset.",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Sources and study resources</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Sources and study resources</span>"
     ]
   }
 ]
