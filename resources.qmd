@@ -48,3 +48,9 @@ JavaScript enables the activities. Core prose, tables, and solution text remain 
 ## Technical format
 
 The publishing source is a **Quarto HTML book** with chapter navigation, search, mathematical typesetting, and custom JavaScript/SVG activities. It needs no running notebook kernel or paid backend. The downloadable portable preview uses Pandoc with the same chapter text and activities; the automated Quarto build produces the hosted book.
+
+## Foundations curriculum alignment
+
+The foundations sequence follows the [official AP Statistics Course and Exam Description, effective Fall 2026](https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf): Topic 1.1 on printed pp. 30–31; Topic 1.2 on pp. 32–33; Topic 1.3 on p. 34; Topic 1.4 on p. 35. The curriculum was checked on October 13, 2026. Explanations and new practice are independently authored; the book does not reproduce secure AP Classroom questions.
+
+The School A, School B, movie-survey and study-location examples originated in Chun Li's revised Topics 1.1–1.4 materials. They are hypothetical, not records of actual Maple Hill School students. Their reusable summaries are in [foundations.json](data/foundations.json). The 24 commute times used in Topic 1.5 are a separate dataset.

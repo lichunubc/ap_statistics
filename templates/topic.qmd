@@ -1,0 +1,33 @@
+# TOPIC_ID · Descriptive topic title
+
+::: {.chapter-lead}
+**Learning targets:** concise student-facing objectives with current CED IDs.
+:::
+
+## Start with a question
+
+Name the group, variable and purpose. Identify the dataset as synthetic or published.
+
+## Develop the idea
+
+Explain definitions in context before introducing notation. Include a worked example.
+
+## Explore and explain
+
+Use a purposeful accessible interaction or diagram. Preserve a static fallback and print state.
+
+## Common mistakes
+
+Explain the misconception and give a better interpretation.
+
+## Practice
+
+Add original questions with stable IDs and detailed revealable answers.
+
+## Before moving on
+
+Summarize what students should be able to do and link existing adjacent chapters only.
+
+## Sources and scope
+
+Record the CED edition, objective IDs, checked date and data/asset provenance. Separate extensions.

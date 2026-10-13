@@ -25,13 +25,15 @@ jobs:
       - name: Render the Quarto book
         run: quarto render
       - name: Check JavaScript syntax
-        run: node --check assets/site.js
+        run: for file in assets/*.js; do node --check "$file"; done
       - name: Install browser test tools
         run: |
           python -m pip install -r requirements-test.txt
           python -m playwright install --with-deps chromium
       - name: Check data, links, and desktop/mobile interactions
-        run: python tools/check_site.py
+        run: |
+          python tools/check_site.py
+          python tools/check_foundations.py
       - name: Save rendered HTML in the repository
         run: |
           git config user.name 'github-actions[bot]'
@@ -67,6 +69,28 @@ jobs:
         id: deployment
         if: steps.pages.outcome == 'success'
         uses: actions/deploy-pages@v4
+      - name: Verify published chapter
+        if: steps.deployment.outcome == 'success'
+        env:
+          SITE_URL: ${{ steps.deployment.outputs.page_url }}
+        run: |
+          python - <<'PYTHON'
+          import os,time,urllib.request
+          base=os.environ['SITE_URL'].rstrip('/')
+          assert base.startswith('https://lichunubc.github.io/'), base
+          for path,marker in [('', 'topic-1-1.html'),('topic-1-1.html','data-foundation="population"')]:
+              url=base+'/'+path+'?release='+os.environ['GITHUB_SHA']
+              for attempt in range(16):
+                  try:
+                      with urllib.request.urlopen(url,timeout=15) as response:
+                          text=response.read().decode('utf-8')
+                          assert response.status==200 and marker in text
+                      print('Verified public page:',base+'/'+path)
+                      break
+                  except Exception:
+                      if attempt==15: raise
+                      time.sleep(5)
+          PYTHON
       - name: Explain the one-time setup
         if: steps.pages.outcome != 'success'
         run: |

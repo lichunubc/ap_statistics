@@ -1,0 +1,234 @@
+# 1.1 · What can we learn from data?
+
+::: {.chapter-lead}
+**Start with a question—not a calculation.** Identify the group you want to understand, decide what to record, and explain how the observations address that question.
+
+**Learning targets:** identify the components of a statistical study (**1.1.A**) and determine a purposeful, answerable investigative question (**1.1.B**).
+:::
+
+## A question gives a study its direction
+
+School A has **1,000 students enrolled this term**. The school wants to understand how its students travel to school. Collecting information from every student would take time, so the investigator randomly selects **40 students** and records their usual main travel methods.
+
+> What proportion of all students enrolled at School A this term usually travel mainly by bus?
+
+The question concerns the **whole school**, whereas the recorded answers come from a **selected group**. Statistics connects those two levels: we use data from a sample to investigate a question about a population. The quality of that connection depends on how the study is designed, not just on doing arithmetic correctly.
+
+::: {.callout-note}
+## Our classroom example
+School A and its survey are hypothetical. They are not student records from Maple Hill School. The fixed survey used in this sequence has 40 responses, including 18 Bus responses. It is separate from the 24 commute times used in Topic 1.5.
+:::
+
+## Separate a group from its size
+
+| Component | Meaning | In the School A study |
+|:--|:--|:--|
+| **Population** | All individuals or items the question is about | All students enrolled at School A this term |
+| **Population size, $N$** | Number of individuals or items in that population | $N=1000$ students |
+| **Sample** | The selected individuals or items from which data are obtained | The 40 selected School A students |
+| **Sample size, $n$** | Number of individuals or items in that sample | $n=40$ students |
+
+“The sample is **40**” gives only its size. A complete identification is “the **40 selected students at School A**.” Similarly, neither a percentage nor a mean is a group of people.
+
+A population does not have to consist of people. It could consist of trees in a forest, books in a library, or products in a shipment. Name the group and its boundaries precisely enough that someone could decide whether a particular item belongs to it.
+
+### Explore: the sample is inside the population
+
+Change the number selected and draw another illustrative selection. Notice what remains fixed.
+
+<div class="interactive" data-foundation="population">
+<p><strong>Population: 1,000 hypothetical School A students.</strong> A selection of 40 students is a subset of that group, not a different population.</p>
+<p>The interactive grid requires JavaScript; the explanation and practice below remain available without it.</p>
+</div>
+
+The grid shows **selection, not travel outcomes**. Each mark represents one student; its position is simply a place in the grid, not a measured value. Selecting another sample changes who is observed. It does not change the population named in the investigative question.
+
+## Why use a sample rather than a census?
+
+A **census** attempts to collect the required information from every member of the population. A sample uses only part of the population. A census can be impractical when the population is large, access is difficult, collection is costly, or measurement uses up the item being tested.
+
+For example, testing the breaking strength of every cable in a shipment would leave no unbroken cables to sell. A carefully planned sample can provide information while preserving the rest of the shipment.
+
+**Sample does not mean random sample.** Random selection is a feature of the method, not part of the word “sample.” The School A example explicitly specifies random selection. We will study sampling methods and possible sources of bias later; a small or large $n$ alone does not tell us whether a study is trustworthy.
+
+## Datum, data, and a data set
+
+A **datum** is one piece of recorded information about an individual or item. **Data** is the plural; a **data set** is a collection of such information. Data can be category labels as well as numbers.
+
+These illustrative records show how information can be organized:
+
+| Student label | Main travel method | One-way commute time (minutes) |
+|:--|:--|--:|
+| A | Bus | 24.0 |
+| B | Walk | 12.5 |
+| C | Car | 18.0 |
+| D | Bus | 31.5 |
+
+“Student A mainly travels by bus” is one datum. “Student B has a 12.5-minute commute” is another. The table contains **four students**, not eight students: recording two characteristics for each student does not double the number of students.
+
+::: {.callout-tip}
+## Count individuals, not cells
+If 40 students each answer three survey questions, the sample size is $n=40$, not 120. The extra answers provide more information about those same students. Topic 1.2 develops the related terms *observational unit* and *variable*.
+:::
+
+## Write an investigative question you can answer
+
+An investigative question states **what the study is intended to find out**. It should identify the relevant group and characteristic, and make it possible to decide what data to collect and analyze.
+
+| Wording | Assessment or improvement |
+|:--|:--|
+| “Are students’ journeys good?” | Too vague: which students, and what does “good” mean? |
+| “What proportion of School A students enrolled this term mainly use the bus?” | A defined group and a specific characteristic; record each selected student's main travel method. |
+| “What is the mean one-way commute time for School A students this term?” | Answerable by recording comparable commute durations in a stated unit. |
+| “Do you mainly use the bus?” | A question for one respondent. Its answers can supply data for the population-level investigative question. |
+
+### Investigative question versus survey question
+
+The **investigative question** belongs to the study. The **survey question** is asked of each respondent to obtain the information needed for that study. They serve different purposes and need not have identical wording.
+
+For the bus-use study, asking “Which main travel method do you usually use?” is useful. Asking “What is your favourite subject?” would collect data, but those data would not answer the bus-use question.
+
+### Define how the information will be recorded
+
+For this example, **main travel method** means the method used for the greatest distance on a typical school day. A student who walks to a stop and then takes a bus can now select one consistent answer. A real questionnaire would also specify how to handle a tie and provide an appropriate option for an unlisted method.
+
+For **commute time**, specify a unit and common start/end points—for example, minutes from leaving home to reaching the school entrance. Otherwise, two students could interpret “commute time” differently.
+
+### Keep the original purpose intact
+
+Set the investigative question before analyzing the results. Suppose a bus-use survey reveals interesting differences in satisfaction. Those differences may suggest a **new follow-up study**. They do not justify describing the original study as though its purpose had always been to investigate satisfaction.
+
+This is not a ban on curiosity. It is a distinction between the question that motivated the study and a question suggested by what the investigator later noticed.
+
+## Question workshop
+
+Choose an answer, read the explanation, then try the next case. Nothing is submitted or saved.
+
+<div class="interactive" data-foundation="question-check">
+<p><strong>Think first:</strong> In the School A investigation, the population is all 1,000 enrolled students, not only the bus riders or the 40 selected students.</p>
+<p>The interactive questions require JavaScript. The written practice below includes complete answers.</p>
+</div>
+
+## Explain a result in context
+
+In the fixed 40-response School A survey, 18 students report Bus as their main method. The sample calculation is
+
+$$
+\frac{18}{40}=0.45=45\%.
+$$
+
+A clear statement is:
+
+> Among the 40 sampled School A students, 45% usually travel mainly by bus.
+
+This sentence identifies **the group**, **the characteristic**, and **the numerical result**. It does not claim that exactly 45% of all 1,000 students use the bus. The sample result may inform the population question, but it is not automatically the exact population answer.
+
+The fraction is included to practise contextual interpretation. The formal distinction between a *parameter* and a *statistic*, and symbols such as $p$ and $\hat p$, is developed in Topic 1.2.
+
+## Practice: identify, formulate, justify
+
+Attempt each question before expanding its solution. All questions below are original classroom practice.
+
+### 1. Books in a library
+
+A librarian wants to understand the binding condition of all **1,200 books** in a library. She selects **60 books** and records the condition of each binding.
+
+Identify the population, sample, $N$, and $n$. Give one possible datum.
+
+::: {.solution}
+<details><summary>Show solution</summary>
+
+The population is **all 1,200 books in this library**. The sample is **the 60 selected books**. Therefore $N=1200$ and $n=60$.
+
+One possible datum is “the binding of selected book 17 is loose.” The sample consists of books, not just books with loose bindings: condition is recorded after selection. The problem does not specify random selection, so do not add that claim.
+
+</details>
+:::
+
+### 2. Select information that answers the question
+
+An investigator wants to estimate the proportion of the **800 students enrolled at School B this term** who bring lunch from home on a typical school day. A random sample of 50 students is available.
+
+Write an investigative question, one survey question, and a consistent recording rule.
+
+::: {.solution}
+<details><summary>Show solution</summary>
+
+Investigative question: **“What proportion of School B students enrolled this term usually bring lunch from home?”**
+
+Survey question: “During a usual five-day school week, on how many days do you bring lunch from home?” One possible rule is to classify **three or more days** as “usually,” with a stated convention for a nonstandard school week. Other well-defined rules are possible, but the same rule should apply to all respondents.
+
+The population is all 800 enrolled students; the sample is the 50 selected students. Asking only whether they like the cafeteria would not answer the stated question.
+
+</details>
+:::
+
+### 3. Several measurements, one sample
+
+A nursery selects **12 trees** from its stock of **360 trees** and records the height, trunk diameter, and species of each selected tree. A student says that the sample size is 36.
+
+Explain the error and give the correct population and sample sizes.
+
+::: {.solution}
+<details><summary>Show solution</summary>
+
+The sample contains **12 trees**, so $n=12$. The population contains all 360 trees in the nursery's stock, so $N=360$. There are 36 recorded characteristic values, but measuring three characteristics does not create three different trees.
+
+</details>
+:::
+
+### 4. Do not widen the population silently
+
+A study asks about the travel methods of School A students enrolled **this term**. The investigator reports: “These results describe every teenager in the city.”
+
+What is wrong with that conclusion? Repair it without claiming more than the study establishes.
+
+::: {.solution}
+<details><summary>Show solution</summary>
+
+The city-wide group is broader than the stated population. Teenagers at other schools and teenagers not enrolled at School A are not included in the population defined by this study.
+
+A safe description is **“These data describe the travel responses of the sampled School A students this term.”** With an appropriate design, the intended population-level target is the students enrolled at School A this term—not every teenager in the city.
+
+</details>
+:::
+
+### 5. Repair the report
+
+A random sample of **80 households** is selected from **2,400 households** in a district; all 80 respond. Of the respondents, 52 report a working smoke alarm. The investigator writes: “The population is 80, and exactly 65% of all households have working alarms.”
+
+Correct both problems. Show the sample calculation and write a contextual result.
+
+::: {.solution}
+<details><summary>Show solution</summary>
+
+The population is **all 2,400 households in the district**, with $N=2400$. The sample is **the 80 selected and responding households**, with $n=80$.
+
+$$\frac{52}{80}=0.65=65\%.$$
+
+**Among the 80 sampled households, 65% reported a working smoke alarm.** This is a sample result, not proof of the exact percentage among all 2,400 households. “Reported” also preserves what the survey actually measured; it does not claim an inspection was performed.
+
+</details>
+:::
+
+### 6. An unexpected finding
+
+A survey was designed to study travel method. After noticing that many respondents dislike waiting at bus stops, an investigator rewrites the original purpose as “measuring dissatisfaction with bus stops.” Why is this misleading, and what could the investigator do instead?
+
+::: {.solution}
+<details><summary>Show solution</summary>
+
+It represents a question suggested by the results as though it had been the purpose before the data were analyzed. Retain the original travel-method question in the report. Identify dissatisfaction as a later observation, then propose a **separate, clearly described follow-up investigation** with suitable questions and data collection.
+
+</details>
+:::
+
+## Before moving on
+
+You should be able to name a population and sample precisely, distinguish $N$ from $n$, recognize a datum, formulate an answerable investigative question, and explain a result without silently changing its context.
+
+**Next in the foundations sequence:** Topic 1.2 introduces observational units, variables, parameters, and statistics. The existing [quantitative-data chapters](individual-values.qmd) remain available for review.
+
+::: {.small-note}
+**Curriculum alignment:** College Board, [AP Statistics Course and Exam Description, effective Fall 2026](https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf#page=35), printed pp. 30–31, objectives 1.1.A–B (checked October 13, 2026). This chapter's explanations, interactives, and practice are classroom-authored, adapted from Chun Li's *Understanding and Representing Data*. It is not an official College Board publication. Sampling-distribution simulations and detailed sampling-design methods are outside this chapter's core scope.
+:::

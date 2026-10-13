@@ -8,7 +8,10 @@ from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright
 ROOT=Path(__file__).resolve().parents[1]
 DOCS=ROOT/'docs';QA=ROOT/'qa';QA.mkdir(exist_ok=True)
-pages=sorted(DOCS.glob('*.html'));assert len(pages)==8, len(pages)
+pages=sorted(DOCS.glob('*.html'))
+expected={Path(s).with_suffix('.html').name for s in re.findall(r'^\s*-\s*([\w/-]+\.qmd)\s*$',(ROOT/'_quarto.yml').read_text(),re.M)}
+assert expected <= {p.name for p in pages}, 'Missing configured chapter'
+assert len(pages)>=8, len(pages)
 for path in pages:
     soup=BeautifulSoup(path.read_text(),'html.parser')
     for el in soup.select('a[href],script[src],link[href]'):

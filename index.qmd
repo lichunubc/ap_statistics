@@ -1,65 +1,63 @@
-# Seeing quantitative data {.unnumbered}
+# Welcome {.unnumbered}
 
 ::: {.hero}
-<div class="eyebrow">MAPLE HILL SCHOOL · AP STATISTICS · 1.5–1.6</div>
+::: {.eyebrow}
+MAPLE HILL SCHOOL · CHUN LI · AP STATISTICS
+:::
+## Learning from data
 
-## From an observation to a supported claim {.unnumbered .unlisted}
+A growing course book for asking good questions, choosing useful representations, and supporting conclusions with evidence. Read the explanations, explore an activity, and check your reasoning against worked solutions.
 
-Build a graph. Read the pattern. Explain what the data show.
-
-Read at your own pace, replay the constructions, and test your reasoning before revealing an answer. This interactive book accompanies our revised lecture on quantitative data.
-
-[Start learning](individual-values.qmd){.start-link} [Open the histogram lab](histogram-lab.qmd){.secondary-link}
+[Start with Topic 1.1](topic-1-1.qmd){.start-link} [Open the histogram lab](histogram-lab.qmd){.secondary-link}
 :::
 
-## Your learning route
+## Choose your starting point
 
 ::: {.route-grid}
 ::: {.route-card}
-**01 · Plot individual values**
+**1.1 · Questions, populations, and samples**
 
-Preserve observations with a dotplot or stem-and-leaf plot.
+Identify the study's purpose, distinguish a group from its size, and write a contextual conclusion.
 
-[Read the chapter →](individual-values.qmd)
+[Start the foundations →](topic-1-1.qmd)
 :::
 ::: {.route-card}
-**02 · Build a histogram**
+**1.5 · Represent quantitative data**
 
-Choose bins, tally responses, and draw one complete bar per row.
+Build dotplots, stem-and-leaf plots, and histograms while keeping the observations connected.
 
-[Build a histogram →](histograms.qmd)
+[Plot individual values →](individual-values.qmd)
 :::
 ::: {.route-card}
-**03 · Describe the pattern**
+**1.6 · Describe and justify**
 
-Use shape, approximate center, spread, and unusual features.
+Explain shape, center, spread, and unusual features. Learn what a graph can—and cannot—establish.
 
 [Describe a distribution →](describing.qmd)
 :::
 ::: {.route-card}
-**04 · Justify your conclusion**
+**Practice with feedback**
 
-Support a claim with numbers and context, without overclaiming.
+Try histogram construction and interpretation questions. Reveal detailed answers after making your own attempt.
 
-[Worked examples →](worked-examples.qmd)
+[Quantitative-data practice →](practice.qmd)
 :::
 :::
+
+**Being added next:** Topic 1.2 (Variables), Topic 1.3 (Categorical tables), and Topic 1.4 (Categorical graphs). Completed chapters appear in the navigation as they are released. Existing Topic 1.5–1.6 chapter addresses have not changed.
 
 ## One dataset, three views
 
-Our running example is a **hypothetical sample of 24 students' one-way commute times**, recorded in whole minutes. Changing its display does not change the observations.
+The quantitative-data chapters use a **hypothetical sample of 24 students' one-way commute times**, recorded in whole minutes. This is separate from the 40-response School A travel-method survey in the foundations sequence. Changing a display does not change its observations.
 
 <div data-chart="commute-dot" class="chart-frame"><p>Commute times: 5, 8, 10, 12, 12, 14, 15, 16, 18, 18, 20, 20, 22, 24, 25, 26, 28, 30, 32, 35, 38, 42, 48, 58 minutes.</p></div>
 
-## How to use this book
+## How to study with this book
 
-Read an explanation, try the activity, and then open **Show solution**. For graph-construction questions, draw on paper before looking at the completed graph. A correct count does not replace labelled axes, a sensible scale, and an explanation in context.
+Read an explanation, predict what will happen, and then use the activity. For construction questions, draw on paper before opening **Show solution**. A correct answer includes appropriate labels, a sensible scale, and reasoning in context—not only arithmetic.
 
-The activities run in your browser: no account, notebook kernel, or software installation is required. On a phone, open the chapter menu at the top. Your choices are not submitted to a teacher and are cleared when you reload the page.
+The activities run in your browser: no account, notebook kernel, or software installation is required. On a phone, open the chapter menu at the top. Your choices are not submitted to a teacher and are cleared when you reload the page. Printing shows reference states and expands solutions.
 
-::: {.callout-note}
-## Keep the scope clear
-Topic **1.5** covers dotplots, stem-and-leaf plots, and histograms. Topic **1.6** covers distribution descriptions and graph-supported claims. Standard-deviation calculations, formal outlier fences, and inference belong to later lessons.
-:::
+This is an evolving course resource, not yet a complete AP Statistics textbook. New chapters will extend the existing sequence rather than replace it. The source chapters, data, activity code, and tests are retained in the repository for future classes.
 
-The site uses classroom-created explanations and graphs. Published datasets and exam connections are identified where used; original exam pages are linked rather than uploaded. [Sources and publication notes](resources.qmd).
+[Sources and publication notes](resources.qmd).

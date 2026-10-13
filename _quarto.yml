@@ -8,7 +8,7 @@ project:
     - data/
     - .nojekyll
 book:
-  title: "Seeing Quantitative Data"
+  title: "AP Statistics: Learning from Data"
   author: "Chun Li · Maple Hill School"
   site-url: https://lichunubc.github.io/ap_statistics/
   search: true
@@ -18,6 +18,9 @@ book:
     style: docked
   chapters:
     - index.qmd
+    - part: "1.1–1.4 · Statistical foundations"
+      chapters:
+        - topic-1-1.qmd
     - part: "1.5 · Represent the data"
       chapters:
         - individual-values.qmd
@@ -31,13 +34,15 @@ book:
     - resources.qmd
   page-footer:
     left: "Maple Hill School · Chun Li"
-    right: "AP Statistics · Topics 1.5–1.6"
+    right: "AP Statistics · Interactive course book"
 format:
   html:
     theme: default
     mainfont: "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
     fontsize: 1.05em
-    css: assets/site.css
+    css:
+      - assets/site.css
+      - assets/foundations.css
     toc: true
     toc-depth: 2
     number-sections: false
