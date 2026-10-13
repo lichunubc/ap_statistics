@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>1.1 · What can we learn from data? – AP Statistics: Learning from Data</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./individual-values.html" rel="next">
+<link href="./index.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+
+<link href="site_libs/bootstrap/bootstrap-6ac1464fa2c1e9cd0b291ef951d667ea.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/foundations.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./topic-1-1.html">1.1–1.4 · Statistical foundations</a></li><li class="breadcrumb-item"><a href="./topic-1-1.html"><span class="chapter-title">1.1 · What can we learn from data?</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Maple Hill School</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Welcome</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">1.1–1.4 · Statistical foundations</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./topic-1-1.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">1.1 · What can we learn from data?</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">1.5 · Represent the data</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./individual-values.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">1.5 · Individual values</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./histograms.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">1.5 · Build a histogram</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./histogram-lab.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">1.5 · Histogram laboratory</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">1.6 · Describe and justify</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./describing.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">1.6 · Describe a distribution</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./worked-examples.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">1.6 · Worked examples and evidence</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./practice.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Practice and solutions</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sources and study resources</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul class="collapse">
+  <li><a href="#a-question-gives-a-study-its-direction" id="toc-a-question-gives-a-study-its-direction" class="nav-link active" data-scroll-target="#a-question-gives-a-study-its-direction">A question gives a study its direction</a></li>
+  <li><a href="#separate-a-group-from-its-size" id="toc-separate-a-group-from-its-size" class="nav-link" data-scroll-target="#separate-a-group-from-its-size">Separate a group from its size</a></li>
+  <li><a href="#why-use-a-sample-rather-than-a-census" id="toc-why-use-a-sample-rather-than-a-census" class="nav-link" data-scroll-target="#why-use-a-sample-rather-than-a-census">Why use a sample rather than a census?</a></li>
+  <li><a href="#datum-data-and-a-data-set" id="toc-datum-data-and-a-data-set" class="nav-link" data-scroll-target="#datum-data-and-a-data-set">Datum, data, and a data set</a></li>
+  <li><a href="#write-an-investigative-question-you-can-answer" id="toc-write-an-investigative-question-you-can-answer" class="nav-link" data-scroll-target="#write-an-investigative-question-you-can-answer">Write an investigative question you can answer</a></li>
+  <li><a href="#question-workshop" id="toc-question-workshop" class="nav-link" data-scroll-target="#question-workshop">Question workshop</a></li>
+  <li><a href="#explain-a-result-in-context" id="toc-explain-a-result-in-context" class="nav-link" data-scroll-target="#explain-a-result-in-context">Explain a result in context</a></li>
+  <li><a href="#practice-identify-formulate-justify" id="toc-practice-identify-formulate-justify" class="nav-link" data-scroll-target="#practice-identify-formulate-justify">Practice: identify, formulate, justify</a></li>
+  <li><a href="#before-moving-on" id="toc-before-moving-on" class="nav-link" data-scroll-target="#before-moving-on">Before moving on</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./topic-1-1.html">1.1–1.4 · Statistical foundations</a></li><li class="breadcrumb-item"><a href="./topic-1-1.html"><span class="chapter-title">1.1 · What can we learn from data?</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-title">1.1 · What can we learn from data?</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="chapter-lead">
+<p><strong>Start with a question—not a calculation.</strong> Identify the group you want to understand, decide what to record, and explain how the observations address that question.</p>
+<p><strong>Learning targets:</strong> identify the components of a statistical study (<strong>1.1.A</strong>) and determine a purposeful, answerable investigative question (<strong>1.1.B</strong>).</p>
+</div>
+<section id="a-question-gives-a-study-its-direction" class="level2">
+<h2 class="anchored" data-anchor-id="a-question-gives-a-study-its-direction">A question gives a study its direction</h2>
+<p>School A has <strong>1,000 students enrolled this term</strong>. The school wants to understand how its students travel to school. Collecting information from every student would take time, so the investigator randomly selects <strong>40 students</strong> and records their usual main travel methods.</p>
+<blockquote class="blockquote">
+<p>What proportion of all students enrolled at School A this term usually travel mainly by bus?</p>
+</blockquote>
+<p>The question concerns the <strong>whole school</strong>, whereas the recorded answers come from a <strong>selected group</strong>. Statistics connects those two levels: we use data from a sample to investigate a question about a population. The quality of that connection depends on how the study is designed, not just on doing arithmetic correctly.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Our classroom example
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>School A and its survey are hypothetical. They are not student records from Maple Hill School. The fixed survey used in this sequence has 40 responses, including 18 Bus responses. It is separate from the 24 commute times used in Topic 1.5.</p>
+</div>
+</div>
+</section>
+<section id="separate-a-group-from-its-size" class="level2">
+<h2 class="anchored" data-anchor-id="separate-a-group-from-its-size">Separate a group from its size</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Component</th>
+<th style="text-align: left;">Meaning</th>
+<th style="text-align: left;">In the School A study</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Population</strong></td>
+<td style="text-align: left;">All individuals or items the question is about</td>
+<td style="text-align: left;">All students enrolled at School A this term</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Population size, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math></strong></td>
+<td style="text-align: left;">Number of individuals or items in that population</td>
+<td style="text-align: left;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>=</mo><mn>1000</mn></mrow><annotation encoding="application/x-tex">N=1000</annotation></semantics></math> students</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Sample</strong></td>
+<td style="text-align: left;">The selected individuals or items from which data are obtained</td>
+<td style="text-align: left;">The 40 selected School A students</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Sample size, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math></strong></td>
+<td style="text-align: left;">Number of individuals or items in that sample</td>
+<td style="text-align: left;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>40</mn></mrow><annotation encoding="application/x-tex">n=40</annotation></semantics></math> students</td>
+</tr>
+</tbody>
+</table>
+<p>“The sample is <strong>40</strong>” gives only its size. A complete identification is “the <strong>40 selected students at School A</strong>.” Similarly, neither a percentage nor a mean is a group of people.</p>
+<p>A population does not have to consist of people. It could consist of trees in a forest, books in a library, or products in a shipment. Name the group and its boundaries precisely enough that someone could decide whether a particular item belongs to it.</p>
+<section id="explore-the-sample-is-inside-the-population" class="level3">
+<h3 class="anchored" data-anchor-id="explore-the-sample-is-inside-the-population">Explore: the sample is inside the population</h3>
+<p>Change the number selected and draw another illustrative selection. Notice what remains fixed.</p>
+<div class="interactive" data-foundation="population">
+<p>
+<strong>Population: 1,000 hypothetical School A students.</strong> A selection of 40 students is a subset of that group, not a different population.
+</p>
+<p>
+The interactive grid requires JavaScript; the explanation and practice below remain available without it.
+</p>
+</div>
+<p>The grid shows <strong>selection, not travel outcomes</strong>. Each mark represents one student; its position is simply a place in the grid, not a measured value. Selecting another sample changes who is observed. It does not change the population named in the investigative question.</p>
+</section>
+</section>
+<section id="why-use-a-sample-rather-than-a-census" class="level2">
+<h2 class="anchored" data-anchor-id="why-use-a-sample-rather-than-a-census">Why use a sample rather than a census?</h2>
+<p>A <strong>census</strong> attempts to collect the required information from every member of the population. A sample uses only part of the population. A census can be impractical when the population is large, access is difficult, collection is costly, or measurement uses up the item being tested.</p>
+<p>For example, testing the breaking strength of every cable in a shipment would leave no unbroken cables to sell. A carefully planned sample can provide information while preserving the rest of the shipment.</p>
+<p><strong>Sample does not mean random sample.</strong> Random selection is a feature of the method, not part of the word “sample.” The School A example explicitly specifies random selection. We will study sampling methods and possible sources of bias later; a small or large <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math> alone does not tell us whether a study is trustworthy.</p>
+</section>
+<section id="datum-data-and-a-data-set" class="level2">
+<h2 class="anchored" data-anchor-id="datum-data-and-a-data-set">Datum, data, and a data set</h2>
+<p>A <strong>datum</strong> is one piece of recorded information about an individual or item. <strong>Data</strong> is the plural; a <strong>data set</strong> is a collection of such information. Data can be category labels as well as numbers.</p>
+<p>These illustrative records show how information can be organized:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Student label</th>
+<th style="text-align: left;">Main travel method</th>
+<th style="text-align: right;">One-way commute time (minutes)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">A</td>
+<td style="text-align: left;">Bus</td>
+<td style="text-align: right;">24.0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">B</td>
+<td style="text-align: left;">Walk</td>
+<td style="text-align: right;">12.5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">C</td>
+<td style="text-align: left;">Car</td>
+<td style="text-align: right;">18.0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">D</td>
+<td style="text-align: left;">Bus</td>
+<td style="text-align: right;">31.5</td>
+</tr>
+</tbody>
+</table>
+<p>“Student A mainly travels by bus” is one datum. “Student B has a 12.5-minute commute” is another. The table contains <strong>four students</strong>, not eight students: recording two characteristics for each student does not double the number of students.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Count individuals, not cells
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If 40 students each answer three survey questions, the sample size is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>40</mn></mrow><annotation encoding="application/x-tex">n=40</annotation></semantics></math>, not 120. The extra answers provide more information about those same students. Topic 1.2 develops the related terms <em>observational unit</em> and <em>variable</em>.</p>
+</div>
+</div>
+</section>
+<section id="write-an-investigative-question-you-can-answer" class="level2">
+<h2 class="anchored" data-anchor-id="write-an-investigative-question-you-can-answer">Write an investigative question you can answer</h2>
+<p>An investigative question states <strong>what the study is intended to find out</strong>. It should identify the relevant group and characteristic, and make it possible to decide what data to collect and analyze.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Wording</th>
+<th style="text-align: left;">Assessment or improvement</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">“Are students’ journeys good?”</td>
+<td style="text-align: left;">Too vague: which students, and what does “good” mean?</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">“What proportion of School A students enrolled this term mainly use the bus?”</td>
+<td style="text-align: left;">A defined group and a specific characteristic; record each selected student’s main travel method.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">“What is the mean one-way commute time for School A students this term?”</td>
+<td style="text-align: left;">Answerable by recording comparable commute durations in a stated unit.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">“Do you mainly use the bus?”</td>
+<td style="text-align: left;">A question for one respondent. Its answers can supply data for the population-level investigative question.</td>
+</tr>
+</tbody>
+</table>
+<section id="investigative-question-versus-survey-question" class="level3">
+<h3 class="anchored" data-anchor-id="investigative-question-versus-survey-question">Investigative question versus survey question</h3>
+<p>The <strong>investigative question</strong> belongs to the study. The <strong>survey question</strong> is asked of each respondent to obtain the information needed for that study. They serve different purposes and need not have identical wording.</p>
+<p>For the bus-use study, asking “Which main travel method do you usually use?” is useful. Asking “What is your favourite subject?” would collect data, but those data would not answer the bus-use question.</p>
+</section>
+<section id="define-how-the-information-will-be-recorded" class="level3">
+<h3 class="anchored" data-anchor-id="define-how-the-information-will-be-recorded">Define how the information will be recorded</h3>
+<p>For this example, <strong>main travel method</strong> means the method used for the greatest distance on a typical school day. A student who walks to a stop and then takes a bus can now select one consistent answer. A real questionnaire would also specify how to handle a tie and provide an appropriate option for an unlisted method.</p>
+<p>For <strong>commute time</strong>, specify a unit and common start/end points—for example, minutes from leaving home to reaching the school entrance. Otherwise, two students could interpret “commute time” differently.</p>
+</section>
+<section id="keep-the-original-purpose-intact" class="level3">
+<h3 class="anchored" data-anchor-id="keep-the-original-purpose-intact">Keep the original purpose intact</h3>
+<p>Set the investigative question before analyzing the results. Suppose a bus-use survey reveals interesting differences in satisfaction. Those differences may suggest a <strong>new follow-up study</strong>. They do not justify describing the original study as though its purpose had always been to investigate satisfaction.</p>
+<p>This is not a ban on curiosity. It is a distinction between the question that motivated the study and a question suggested by what the investigator later noticed.</p>
+</section>
+</section>
+<section id="question-workshop" class="level2">
+<h2 class="anchored" data-anchor-id="question-workshop">Question workshop</h2>
+<p>Choose an answer, read the explanation, then try the next case. Nothing is submitted or saved.</p>
+<div class="interactive" data-foundation="question-check">
+<p>
+<strong>Think first:</strong> In the School A investigation, the population is all 1,000 enrolled students, not only the bus riders or the 40 selected students.
+</p>
+<p>
+The interactive questions require JavaScript. The written practice below includes complete answers.
+</p>
+</div>
+</section>
+<section id="explain-a-result-in-context" class="level2">
+<h2 class="anchored" data-anchor-id="explain-a-result-in-context">Explain a result in context</h2>
+<p>In the fixed 40-response School A survey, 18 students report Bus as their main method. The sample calculation is</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>18</mn><mn>40</mn></mfrac><mo>=</mo><mn>0.45</mn><mo>=</mo><mn>45</mn><mi>%</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\frac{18}{40}=0.45=45\%.
+</annotation></semantics></math></p>
+<p>A clear statement is:</p>
+<blockquote class="blockquote">
+<p>Among the 40 sampled School A students, 45% usually travel mainly by bus.</p>
+</blockquote>
+<p>This sentence identifies <strong>the group</strong>, <strong>the characteristic</strong>, and <strong>the numerical result</strong>. It does not claim that exactly 45% of all 1,000 students use the bus. The sample result may inform the population question, but it is not automatically the exact population answer.</p>
+<p>The fraction is included to practise contextual interpretation. The formal distinction between a <em>parameter</em> and a <em>statistic</em>, and symbols such as <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math> and <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>p</mi><mo accent="true">̂</mo></mover><annotation encoding="application/x-tex">\hat p</annotation></semantics></math>, is developed in Topic 1.2.</p>
+</section>
+<section id="practice-identify-formulate-justify" class="level2">
+<h2 class="anchored" data-anchor-id="practice-identify-formulate-justify">Practice: identify, formulate, justify</h2>
+<p>Attempt each question before expanding its solution. All questions below are original classroom practice.</p>
+<section id="books-in-a-library" class="level3">
+<h3 class="anchored" data-anchor-id="books-in-a-library">1. Books in a library</h3>
+<p>A librarian wants to understand the binding condition of all <strong>1,200 books</strong> in a library. She selects <strong>60 books</strong> and records the condition of each binding.</p>
+<p>Identify the population, sample, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>, and <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>. Give one possible datum.</p>
+<div class="proof solution">
+<p><span class="proof-title"><em>Solution</em>. </span></p>
+<details>
+<summary>
+Show solution
+</summary>
+<p>The population is <strong>all 1,200 books in this library</strong>. The sample is <strong>the 60 selected books</strong>. Therefore <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>=</mo><mn>1200</mn></mrow><annotation encoding="application/x-tex">N=1200</annotation></semantics></math> and <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>60</mn></mrow><annotation encoding="application/x-tex">n=60</annotation></semantics></math>.</p>
+<p>One possible datum is “the binding of selected book 17 is loose.” The sample consists of books, not just books with loose bindings: condition is recorded after selection. The problem does not specify random selection, so do not add that claim.</p>
+</details>
+</div>
+</section>
+<section id="select-information-that-answers-the-question" class="level3">
+<h3 class="anchored" data-anchor-id="select-information-that-answers-the-question">2. Select information that answers the question</h3>
+<p>An investigator wants to estimate the proportion of the <strong>800 students enrolled at School B this term</strong> who bring lunch from home on a typical school day. A random sample of 50 students is available.</p>
+<p>Write an investigative question, one survey question, and a consistent recording rule.</p>
+<div class="proof solution">
+<p><span class="proof-title"><em>Solution</em>. </span></p>
+<details>
+<summary>
+Show solution
+</summary>
+<p>Investigative question: <strong>“What proportion of School B students enrolled this term usually bring lunch from home?”</strong></p>
+<p>Survey question: “During a usual five-day school week, on how many days do you bring lunch from home?” One possible rule is to classify <strong>three or more days</strong> as “usually,” with a stated convention for a nonstandard school week. Other well-defined rules are possible, but the same rule should apply to all respondents.</p>
+<p>The population is all 800 enrolled students; the sample is the 50 selected students. Asking only whether they like the cafeteria would not answer the stated question.</p>
+</details>
+</div>
+</section>
+<section id="several-measurements-one-sample" class="level3">
+<h3 class="anchored" data-anchor-id="several-measurements-one-sample">3. Several measurements, one sample</h3>
+<p>A nursery selects <strong>12 trees</strong> from its stock of <strong>360 trees</strong> and records the height, trunk diameter, and species of each selected tree. A student says that the sample size is 36.</p>
+<p>Explain the error and give the correct population and sample sizes.</p>
+<div class="proof solution">
+<p><span class="proof-title"><em>Solution</em>. </span></p>
+<details>
+<summary>
+Show solution
+</summary>
+<p>The sample contains <strong>12 trees</strong>, so <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>12</mn></mrow><annotation encoding="application/x-tex">n=12</annotation></semantics></math>. The population contains all 360 trees in the nursery’s stock, so <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>=</mo><mn>360</mn></mrow><annotation encoding="application/x-tex">N=360</annotation></semantics></math>. There are 36 recorded characteristic values, but measuring three characteristics does not create three different trees.</p>
+</details>
+</div>
+</section>
+<section id="do-not-widen-the-population-silently" class="level3">
+<h3 class="anchored" data-anchor-id="do-not-widen-the-population-silently">4. Do not widen the population silently</h3>
+<p>A study asks about the travel methods of School A students enrolled <strong>this term</strong>. The investigator reports: “These results describe every teenager in the city.”</p>
+<p>What is wrong with that conclusion? Repair it without claiming more than the study establishes.</p>
+<div class="proof solution">
+<p><span class="proof-title"><em>Solution</em>. </span></p>
+<details>
+<summary>
+Show solution
+</summary>
+<p>The city-wide group is broader than the stated population. Teenagers at other schools and teenagers not enrolled at School A are not included in the population defined by this study.</p>
+<p>A safe description is <strong>“These data describe the travel responses of the sampled School A students this term.”</strong> With an appropriate design, the intended population-level target is the students enrolled at School A this term—not every teenager in the city.</p>
+</details>
+</div>
+</section>
+<section id="repair-the-report" class="level3">
+<h3 class="anchored" data-anchor-id="repair-the-report">5. Repair the report</h3>
+<p>A random sample of <strong>80 households</strong> is selected from <strong>2,400 households</strong> in a district; all 80 respond. Of the respondents, 52 report a working smoke alarm. The investigator writes: “The population is 80, and exactly 65% of all households have working alarms.”</p>
+<p>Correct both problems. Show the sample calculation and write a contextual result.</p>
+<div class="proof solution">
+<p><span class="proof-title"><em>Solution</em>. </span></p>
+<details>
+<summary>
+Show solution
+</summary>
+<p>The population is <strong>all 2,400 households in the district</strong>, with <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>=</mo><mn>2400</mn></mrow><annotation encoding="application/x-tex">N=2400</annotation></semantics></math>. The sample is <strong>the 80 selected and responding households</strong>, with <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>80</mn></mrow><annotation encoding="application/x-tex">n=80</annotation></semantics></math>.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>52</mn><mn>80</mn></mfrac><mo>=</mo><mn>0.65</mn><mo>=</mo><mn>65</mn><mi>%</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">\frac{52}{80}=0.65=65\%.</annotation></semantics></math></p>
+<p><strong>Among the 80 sampled households, 65% reported a working smoke alarm.</strong> This is a sample result, not proof of the exact percentage among all 2,400 households. “Reported” also preserves what the survey actually measured; it does not claim an inspection was performed.</p>
+</details>
+</div>
+</section>
+<section id="an-unexpected-finding" class="level3">
+<h3 class="anchored" data-anchor-id="an-unexpected-finding">6. An unexpected finding</h3>
+<p>A survey was designed to study travel method. After noticing that many respondents dislike waiting at bus stops, an investigator rewrites the original purpose as “measuring dissatisfaction with bus stops.” Why is this misleading, and what could the investigator do instead?</p>
+<div class="proof solution">
+<p><span class="proof-title"><em>Solution</em>. </span></p>
+<details>
+<summary>
+Show solution
+</summary>
+<p>It represents a question suggested by the results as though it had been the purpose before the data were analyzed. Retain the original travel-method question in the report. Identify dissatisfaction as a later observation, then propose a <strong>separate, clearly described follow-up investigation</strong> with suitable questions and data collection.</p>
+</details>
+</div>
+</section>
+</section>
+<section id="before-moving-on" class="level2">
+<h2 class="anchored" data-anchor-id="before-moving-on">Before moving on</h2>
+<p>You should be able to name a population and sample precisely, distinguish <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math> from <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>, recognize a datum, formulate an answerable investigative question, and explain a result without silently changing its context.</p>
+<p><strong>Next in the foundations sequence:</strong> Topic 1.2 introduces observational units, variables, parameters, and statistics. The existing <a href="./individual-values.html">quantitative-data chapters</a> remain available for review.</p>
+<div class="small-note">
+<p><strong>Curriculum alignment:</strong> College Board, <a href="https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf#page=35">AP Statistics Course and Exam Description, effective Fall 2026</a>, printed pp.&nbsp;30–31, objectives 1.1.A–B (checked October 13, 2026). This chapter’s explanations, interactives, and practice are classroom-authored, adapted from Chun Li’s <em>Understanding and Representing Data</em>. It is not an official College Board publication. Sampling-distribution simulations and detailed sampling-design methods are outside this chapter’s core scope.</p>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script src="assets/data.js"></script>
+<script src="assets/site.js"></script>
+<script src="assets/foundations.js"></script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/lichunubc\.github\.io\/ap_statistics\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./index.html" class="pagination-link" aria-label="Welcome">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Welcome</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./individual-values.html" class="pagination-link" aria-label="1.5 · Individual values">
+        <span class="nav-page-text"><span class="chapter-title">1.5 · Individual values</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Maple Hill School · Chun Li</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>AP Statistics · Interactive course book</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
