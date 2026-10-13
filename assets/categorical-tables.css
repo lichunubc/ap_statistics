@@ -28,3 +28,5 @@
  .cat-print .cat-table { min-width:0; }
  .cat-print .cat-recent { display:none; }
 }
+
+@media(max-width:700px){body:has([data-cat-table]) main table:not(.cat-table){display:block;max-width:100%;overflow-x:auto}body:has([data-cat-table]) .table-responsive{max-width:100%;overflow-x:auto}[data-cat-table]{box-sizing:border-box;min-width:0;max-width:100%;overflow-wrap:anywhere}}
