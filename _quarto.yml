@@ -1,0 +1,47 @@
+project:
+  type: book
+  output-dir: docs
+  post-render:
+    - python tools/postrender.py
+  resources:
+    - assets/
+    - data/
+    - .nojekyll
+book:
+  title: "Seeing Quantitative Data"
+  author: "Chun Li · Maple Hill School"
+  site-url: https://lichunubc.github.io/ap_statistics/
+  search: true
+  page-navigation: true
+  sidebar:
+    title: "Maple Hill School"
+    style: docked
+  chapters:
+    - index.qmd
+    - part: "1.5 · Represent the data"
+      chapters:
+        - individual-values.qmd
+        - histograms.qmd
+        - histogram-lab.qmd
+    - part: "1.6 · Describe and justify"
+      chapters:
+        - describing.qmd
+        - worked-examples.qmd
+    - practice.qmd
+    - resources.qmd
+  page-footer:
+    left: "Maple Hill School · Chun Li"
+    right: "AP Statistics · Topics 1.5–1.6"
+format:
+  html:
+    theme: default
+    mainfont: "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
+    fontsize: 1.05em
+    css: assets/site.css
+    toc: true
+    toc-depth: 2
+    number-sections: false
+    html-math-method: mathml
+    code-copy: true
+    include-after-body: assets/footer.html
+lang: en

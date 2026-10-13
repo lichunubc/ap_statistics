@@ -1,0 +1,65 @@
+# Seeing quantitative data {.unnumbered}
+
+::: {.hero}
+<div class="eyebrow">MAPLE HILL SCHOOL · AP STATISTICS · 1.5–1.6</div>
+
+## From an observation to a supported claim {.unnumbered .unlisted}
+
+Build a graph. Read the pattern. Explain what the data show.
+
+Read at your own pace, replay the constructions, and test your reasoning before revealing an answer. This interactive book accompanies our revised lecture on quantitative data.
+
+[Start learning](individual-values.qmd){.start-link} [Open the histogram lab](histogram-lab.qmd){.secondary-link}
+:::
+
+## Your learning route
+
+::: {.route-grid}
+::: {.route-card}
+**01 · Plot individual values**
+
+Preserve observations with a dotplot or stem-and-leaf plot.
+
+[Read the chapter →](individual-values.qmd)
+:::
+::: {.route-card}
+**02 · Build a histogram**
+
+Choose bins, tally responses, and draw one complete bar per row.
+
+[Build a histogram →](histograms.qmd)
+:::
+::: {.route-card}
+**03 · Describe the pattern**
+
+Use shape, approximate center, spread, and unusual features.
+
+[Describe a distribution →](describing.qmd)
+:::
+::: {.route-card}
+**04 · Justify your conclusion**
+
+Support a claim with numbers and context, without overclaiming.
+
+[Worked examples →](worked-examples.qmd)
+:::
+:::
+
+## One dataset, three views
+
+Our running example is a **hypothetical sample of 24 students' one-way commute times**, recorded in whole minutes. Changing its display does not change the observations.
+
+<div data-chart="commute-dot" class="chart-frame"><p>Commute times: 5, 8, 10, 12, 12, 14, 15, 16, 18, 18, 20, 20, 22, 24, 25, 26, 28, 30, 32, 35, 38, 42, 48, 58 minutes.</p></div>
+
+## How to use this book
+
+Read an explanation, try the activity, and then open **Show solution**. For graph-construction questions, draw on paper before looking at the completed graph. A correct count does not replace labelled axes, a sensible scale, and an explanation in context.
+
+The activities run in your browser: no account, notebook kernel, or software installation is required. On a phone, open the chapter menu at the top. Your choices are not submitted to a teacher and are cleared when you reload the page.
+
+::: {.callout-note}
+## Keep the scope clear
+Topic **1.5** covers dotplots, stem-and-leaf plots, and histograms. Topic **1.6** covers distribution descriptions and graph-supported claims. Standard-deviation calculations, formal outlier fences, and inference belong to later lessons.
+:::
+
+The site uses classroom-created explanations and graphs. Published datasets and exam connections are identified where used; original exam pages are linked rather than uploaded. [Sources and publication notes](resources.qmd).

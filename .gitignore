@@ -1,0 +1,4 @@
+.quarto/
+__pycache__/
+qa/
+node_modules/
