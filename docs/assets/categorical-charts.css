@@ -1,0 +1,37 @@
+/* Topic 1.4: original categorical-chart interactions, system fonts only. */
+[data-cat-chart]{min-width:0;max-width:100%;overflow-wrap:anywhere}
+[data-cat-chart] h3{margin-top:.1rem}
+[data-cat-chart] .controls label{display:flex;flex-direction:column;gap:.25rem;min-width:min(100%,13rem)}
+[data-cat-chart] .controls select{min-width:0;max-width:100%}
+[data-cat-chart] .cat-chart-stage{border:1px solid #cfdddc;border-radius:.55rem;padding:.5rem;margin:.75rem 0;background:#fbfdfd}
+[data-cat-chart] .cat-viz{display:block;width:100%;height:auto;max-width:780px;margin:auto}
+.cat-viz text{font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;fill:#173e4b}
+.cat-viz .gridline{stroke:#d5e2e5;stroke-width:1}
+.cat-viz .axis{stroke:#173e4b;stroke-width:1.5}
+.cat-viz .bar-outline{stroke:#24505a;stroke-width:1}
+.cat-viz .sample-a{fill:#087f85}.cat-viz .sample-b{fill:#b58a31}
+.cat-viz .cat-axis-label{font-size:14px}.cat-viz .cat-value-label{font-size:14px;font-weight:650}
+.cat-viz .cat-tick{font-size:13px}.cat-viz .cat-legend{font-size:15px}
+.cat-compare-nav{display:flex;flex-wrap:wrap;gap:.45rem;margin:1rem 0}
+.cat-compare-nav button[aria-pressed=true]{background:#e2f2ef;border:2px solid #075a63;font-weight:700}
+[data-cat-chart] .cat-chart-data{max-width:100%;overflow-x:auto;margin-top:.75rem}
+[data-cat-chart] .cat-chart-data table{min-width:400px;font-size:.86rem}
+[data-cat-chart] .cat-chart-data th,[data-cat-chart] .cat-chart-data td{padding:.45rem;text-align:right}
+[data-cat-chart] .cat-chart-data th:first-child,[data-cat-chart] .cat-chart-data td:first-child{text-align:left}
+[data-cat-chart] .cat-chart-data tr.active{background:#e9f5f2}
+.cat-chart-print{display:none}
+@media(max-width:700px){
+ body:has([data-cat-chart]) #quarto-content{min-width:0;max-width:100%}
+ body:has([data-cat-chart]) main.content{box-sizing:border-box;min-width:0;max-width:100%;overflow-x:auto}
+ body:has([data-cat-chart]) main.content>table{display:block;max-width:100%;overflow-x:auto}
+ [data-cat-chart]{box-sizing:border-box;max-width:100%}
+ [data-cat-chart] .controls label{width:100%}
+ [data-cat-chart] .cat-chart-stage{padding:.2rem;overflow-x:auto}
+ [data-cat-chart] .cat-chart-data table{min-width:350px;font-size:.77rem}
+}
+@media print{
+ [data-cat-chart]{display:none!important}
+ .cat-chart-print{display:block;border:1px solid #bdcdcc;padding:.8rem;margin:1rem 0;break-inside:avoid}
+ .cat-chart-print h3{font-size:1rem}
+ .cat-chart-print .cat-viz{max-width:580px}
+}
