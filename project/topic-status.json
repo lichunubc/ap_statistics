@@ -70,14 +70,29 @@
     {
       "id": "1.4",
       "title": "Graphical Representations for One Categorical Variable",
-      "status": "scheduled",
+      "status": "implemented",
       "scheduled_start_utc": "2026-10-13T11:19:26Z",
       "learning_objectives": [
         "1.4.A",
         "1.4.B",
         "1.4.C"
       ],
-      "ced_printed_pages": "35"
+      "ced_printed_pages": "35",
+      "chapter": "topic-1-4.qmd",
+      "essential_knowledge": [
+        "1.4.A.1",
+        "1.4.A.2",
+        "1.4.B.1",
+        "1.4.C.1"
+      ],
+      "practice_count": 8,
+      "interactions": [
+        "bar/pie incremental construction",
+        "count-versus-percentage grouped comparison",
+        "five-case chart audit"
+      ],
+      "implemented_on": "2026-10-13",
+      "data_source": "data/foundations.json"
     },
     {
       "id": "1.5",

@@ -18,6 +18,10 @@ These are scheduled **start** times, not guaranteed completion times. The follow
 
 The Topic 1.3 authoring source, reusable tally/denominator/claim activities, original practice and automated browser tests are included. The topic manifest records **implemented** when committed; GitHub Actions and the public URL independently determine deployment status. The separate 1.2 and 1.4 sessions retain their original scope.
 
+## Topic 1.4 implementation note
+
+Topic 1.4 provides a stand-alone QMD chapter, reusable JS/CSS for categorical graphs and an independent browser test. It reuses the original hypothetical source summaries in `data/foundations.json` and maps to the Fall 2026 CED, printed page 35. A committed chapter is *implemented*; only the successful GitHub Actions deployment and a public URL check establish that it is live. The separate 1.2 session retains its own status.
+
 ## Following this release
 
 Topics 1.5 and 1.6 are already implemented. Keep their URLs and regression tests intact. After the foundations release, prioritize consistency, student feedback and mathematical QA before adding further chapters.

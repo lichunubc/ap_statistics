@@ -22,6 +22,7 @@ book:
       chapters:
         - topic-1-1.qmd
         - topic-1-3.qmd
+        - topic-1-4.qmd
     - part: "1.5 · Represent the data"
       chapters:
         - individual-values.qmd
@@ -45,6 +46,7 @@ format:
       - assets/site.css
       - assets/foundations.css
       - assets/categorical-tables.css
+      - assets/categorical-charts.css
     toc: true
     toc-depth: 2
     number-sections: false

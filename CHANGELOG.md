@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-13 — Topic 1.4 categorical charts
+
+- Added `topic-1-4.qmd` with categorical bar and pie construction, appropriate baselines, sector angles, group comparisons, original practice and eight worked solutions.
+- Added keyboard-accessible chart builders, a grouped count-versus-percentage comparison and five unselected-initial-state audit questions with explanatory feedback.
+- Preserved the School A/B, movie-satisfaction and study-location hypothetical datasets and their provenance; added static screen tables and print-ready references.
+- Added dedicated Topic 1.4 browser/arithmetic tests, navigation, curriculum mapping and deployment verification. Topic 1.2 is managed independently.
+
 ## 2026-10-13 — Topic 1.3 categorical tables
 
 - Added `topic-1-3.qmd`: frequency/relative-frequency tables, percentages, labelled ratios, correct denominators, modal category versus majority, justified claims, and seven original problems with full answers.
