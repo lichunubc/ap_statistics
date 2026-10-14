@@ -35,6 +35,7 @@ book:
         - "Unit 1/Topic 1.5/topic-1-5.qmd"
         - "Unit 1/Topic 1.6/topic-1-6.qmd"
         - "Unit 1/Topic 1.7/topic-1-7.qmd"
+        - "Unit 1/Topic 1.8/topic-1-8.qmd"
         - "Unit 1/Shared/practice.qmd"
     - "Unit 2/unit-2.qmd"
     - "Unit 3/unit-3.qmd"
@@ -63,6 +64,7 @@ format:
       - "Problem Bank/assets/practice.css"
       - "Problem Bank/assets/original-practice.css"
       - "Unit 1/Topic 1.7/assets/summary17.css"
+      - "Unit 1/Topic 1.8/assets/box18.css"
     toc: true
     toc-depth: 2
     number-sections: false
@@ -74,4 +76,5 @@ format:
       - "Problem Bank/assets/footer.html"
       - "Problem Bank/assets/original-footer.html"
       - "Unit 1/Topic 1.7/assets/summary17-footer.html"
+      - "Unit 1/Topic 1.8/assets/box18-footer.html"
 lang: en

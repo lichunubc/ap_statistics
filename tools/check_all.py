@@ -10,7 +10,9 @@ checks=['Unit 1/Shared/tests/check_structure.py',
 'Unit 1/Topic 1.4/tests/check_charts.py',
 'site/tests/check_navigation.py','Problem Bank/tests/check_bank.py',
 'Unit 1/Topic 1.7/tests/check_summary17.py',
-'Unit 1/Topic 1.7/tests/check_summary17_browser.py']
+'Unit 1/Topic 1.7/tests/check_summary17_browser.py',
+'Unit 1/Topic 1.8/tests/check_box18.py',
+'Unit 1/Topic 1.8/tests/check_box18_browser.py']
 failures=[]
 for check in checks:
     print('\nCHECK:',check,flush=True)

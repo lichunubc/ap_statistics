@@ -55,4 +55,6 @@ import os,subprocess
 commit=os.environ.get('GITHUB_SHA')
 if not commit:
     commit=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip()
-(OUT/'release.json').write_text(json.dumps({'source_commit':commit,'unit1_topics':['1.1','1.2','1.3','1.4','1.5','1.6']},indent=2)+'\n')
+topic_manifest=json.loads((ROOT/'project/topic-status.json').read_text())
+unit1_ids=[t['id'] for t in topic_manifest['topics'] if t['id'].startswith('1.')]
+(OUT/'release.json').write_text(json.dumps({'source_commit':commit,'unit1_topics':unit1_ids},indent=2)+'\n')

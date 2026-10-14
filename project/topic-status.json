@@ -206,6 +206,34 @@
       ],
       "implemented_on": "2026-10-14",
       "data_source": "Original hypothetical travel-time scenario; no real student data"
+    },
+    {
+      "id": "1.8",
+      "title": "Graphical Representations of Summary Statistics for One Quantitative Variable",
+      "status": "implemented",
+      "chapter": "Unit 1/Topic 1.8/topic-1-8.qmd",
+      "directory": "Unit 1/Topic 1.8",
+      "learning_objectives": [
+        "1.8.A",
+        "1.8.B"
+      ],
+      "essential_knowledge": [
+        "1.8.A.1",
+        "1.8.A.2",
+        "1.8.B.1"
+      ],
+      "ced_printed_pages": "42",
+      "skills": [
+        "3.A",
+        "4.A"
+      ],
+      "practice_count": 9,
+      "interactions": [
+        "stepwise linked dotplot to boxplot",
+        "modified versus unmodified whisker selector",
+        "four datasets and editable observations"
+      ],
+      "implemented_on": "2026-10-14"
     }
   ]
 }
