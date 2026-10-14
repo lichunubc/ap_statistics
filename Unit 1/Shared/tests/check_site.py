@@ -106,7 +106,8 @@ with sync_playwright() as p:
             page.evaluate('window.dispatchEvent(new Event("beforeprint"))');assert page.locator('.print-activity').count()>0
             page.evaluate('window.dispatchEvent(new Event("afterprint"))');assert page.locator('.print-activity').count()==0
             w.locator('[data-action=clear]').click();assert w.get_attribute('data-selected')==''
-        if path.stem=='practice':
+        # Multiple chapters may be named practice.html; only these two contain this widget.
+        if path.relative_to(DOCS).as_posix() in {'practice.html','Unit 1/Shared/practice.html'}:
             w=page.locator('[data-widget=draw-check]');w.locator('[data-action=check]').click();assert w.get_attribute('data-correct')=='false'
             for i,v in enumerate([3,7,10,6,3,1]):w.locator(f'[data-height="{i}"]').fill(str(v))
             w.locator('[data-action=check]').click();assert w.get_attribute('data-correct')=='true'
