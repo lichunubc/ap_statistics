@@ -1,0 +1,45 @@
+{
+  "id": "1.8",
+  "title": "Graphical Representations of Summary Statistics for One Quantitative Variable",
+  "curriculum": {
+    "name": "AP Statistics Course and Exam Description",
+    "effective": "Fall 2026",
+    "source": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+    "ced_printed_pages": "42"
+  },
+  "learning_objectives": [
+    "1.8.A",
+    "1.8.B"
+  ],
+  "essential_knowledge": [
+    "1.8.A.1",
+    "1.8.A.2",
+    "1.8.B.1"
+  ],
+  "skills": [
+    "3.A",
+    "4.A"
+  ],
+  "coverage": [
+    {
+      "section": "#five-18",
+      "ids": [
+        "1.8.A.1"
+      ]
+    },
+    {
+      "section": "#construction-18",
+      "ids": [
+        "1.8.A.2"
+      ]
+    },
+    {
+      "section": "#skew-18",
+      "ids": [
+        "1.8.B.1"
+      ]
+    }
+  ],
+  "practice_items": 9,
+  "notes": "Boxplot outlier whiskers end at observed non-outlier values. Mean–median skewness tendencies are not biconditionals."
+}
