@@ -1,0 +1,243 @@
+{
+  "schema_version": 1,
+  "bank_id": "mhs-ap-statistics-original",
+  "topic": "1.8",
+  "title": "Graphical Representations of Summary Statistics for One Quantitative Variable",
+  "rights": "Original instructor-authored material; no College Board copyrighted questions or answer keys.",
+  "revision": 1,
+  "items": [
+    {
+      "id": "MHS-U1-T18-001",
+      "type": "mc",
+      "difficulty": "Foundation",
+      "tags": [
+        "five-number summary",
+        "quartiles"
+      ],
+      "objectives": [
+        "1.8.A"
+      ],
+      "prompt": "Seven ordered practice scores are 4, 6, 8, 8, 9, 12, 14. Under the median-of-halves convention excluding the overall median, which is the five-number summary?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(4, 6, 8, 12, 14)"
+        },
+        {
+          "label": "B",
+          "text": "(4, 8, 8, 9, 14)"
+        },
+        {
+          "label": "C",
+          "text": "(4, 6, 8, 9, 14)"
+        },
+        {
+          "label": "D",
+          "text": "(4, 8, 9, 12, 14)"
+        }
+      ],
+      "answer": "A",
+      "hint": "The overall median is the fourth value. Remove it, then take medians of the lower three and upper three.",
+      "solution": "A. Minimum 4, Q1=median(4,6,8)=6, overall median 8, Q3=median(9,12,14)=12, maximum 14. These are scores and should be labelled as such.",
+      "rights": "original",
+      "provenance": "Original Maple Hill School hypothetical question, 2026-10-14",
+      "primary_topic": "1.8"
+    },
+    {
+      "id": "MHS-U1-T18-002",
+      "type": "number",
+      "difficulty": "Developing",
+      "tags": [
+        "IQR",
+        "even halves"
+      ],
+      "objectives": [
+        "1.8.A"
+      ],
+      "prompt": "The nine ordered travel distances, in kilometres, are 2, 4, 5, 6, 8, 10, 12, 14, 20. Find the IQR using the median-of-halves convention that excludes the overall median.",
+      "answer": 8.5,
+      "tolerance": 0.001,
+      "hint": "Exclude the central 8. Average 4 and 5 for Q1, then 12 and 14 for Q3.",
+      "solution": "The lower half 2,4,5,6 has median Q1=(4+5)/2=4.5 km. The upper half 10,12,14,20 has median Q3=(12+14)/2=13 km. IQR=13−4.5=8.5 km.",
+      "rights": "original",
+      "provenance": "Original Maple Hill School hypothetical question, 2026-10-14",
+      "primary_topic": "1.8"
+    },
+    {
+      "id": "MHS-U1-T18-003",
+      "type": "number",
+      "difficulty": "Developing",
+      "tags": [
+        "outlier fence",
+        "IQR"
+      ],
+      "objectives": [
+        "1.8.A"
+      ],
+      "prompt": "For the nine workshop journeys 5, 8, 10, 12, 12, 14, 15, 16, 18 minutes, calculate the UPPER 1.5-IQR fence in minutes using the chapter's quartile convention.",
+      "answer": 25.25,
+      "tolerance": 0.001,
+      "hint": "Q1=9, Q3=15.5; upper fence is Q3+1.5×IQR.",
+      "solution": "IQR=15.5−9=6.5 minutes. Upper fence U=15.5+1.5(6.5)=25.25 minutes. This is a screening boundary, not necessarily an observed time.",
+      "rights": "original",
+      "provenance": "Original Maple Hill School hypothetical question, 2026-10-14",
+      "primary_topic": "1.8"
+    },
+    {
+      "id": "MHS-U1-T18-004",
+      "type": "number",
+      "difficulty": "Developing",
+      "tags": [
+        "modified boxplot",
+        "observed whisker"
+      ],
+      "objectives": [
+        "1.8.A"
+      ],
+      "prompt": "The sorted times 5, 8, 10, 12, 12, 14, 15, 16, 50 minutes have upper 1.5-IQR fence 25.25. Where should the RIGHT whisker end in a MODIFIED boxplot? Enter the observed value in minutes.",
+      "answer": 16,
+      "tolerance": 0.001,
+      "hint": "Do not draw the whisker to the fence or to the flagged 50. Which time is the largest non-outlier?",
+      "solution": "The 50-minute time lies beyond the upper fence, so plot 50 separately. The largest observed non-outlier is 16 minutes; the right modified whisker ends at 16.",
+      "rights": "original",
+      "provenance": "Original Maple Hill School hypothetical question, 2026-10-14",
+      "primary_topic": "1.8"
+    },
+    {
+      "id": "MHS-U1-T18-005",
+      "type": "mc",
+      "difficulty": "Foundation",
+      "tags": [
+        "boxplot limitations",
+        "modes"
+      ],
+      "objectives": [
+        "1.8.A",
+        "1.8.B"
+      ],
+      "prompt": "Which feature is most likely to be visible in a dotplot or histogram but hidden in a boxplot?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The median"
+        },
+        {
+          "label": "B",
+          "text": "The interquartile range"
+        },
+        {
+          "label": "C",
+          "text": "Two separate clusters or peaks"
+        },
+        {
+          "label": "D",
+          "text": "The approximate location of the quartiles"
+        }
+      ],
+      "answer": "C",
+      "hint": "A boxplot retains a few summary landmarks, not every individual point.",
+      "solution": "C. A boxplot preserves the five landmarks (and potentially outlier markings) but cannot reliably communicate the number of peaks or gaps. Use a dotplot/histogram to study detailed shape.",
+      "rights": "original",
+      "provenance": "Original Maple Hill School hypothetical question, 2026-10-14",
+      "primary_topic": "1.8"
+    },
+    {
+      "id": "MHS-U1-T18-006",
+      "type": "mc",
+      "difficulty": "Developing",
+      "tags": [
+        "skewness",
+        "mean versus median"
+      ],
+      "objectives": [
+        "1.8.B"
+      ],
+      "prompt": "Which statement is generally accurate for a strongly right-skewed quantitative distribution?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The mean is usually larger than the median, but this is not a universal test."
+        },
+        {
+          "label": "B",
+          "text": "The mean is always smaller than the median."
+        },
+        {
+          "label": "C",
+          "text": "The mean and median must be exactly equal."
+        },
+        {
+          "label": "D",
+          "text": "If the mean exceeds the median, the distribution must be right-skewed."
+        }
+      ],
+      "answer": "A",
+      "hint": "Think about how exceptionally high observations affect the sum and the ranked middle value.",
+      "solution": "A. A long right tail often pulls the mean above the median. It is only a tendency: mean greater than median is not a sufficient condition for right skew.",
+      "rights": "original",
+      "provenance": "Original Maple Hill School hypothetical question, 2026-10-14",
+      "primary_topic": "1.8"
+    },
+    {
+      "id": "MHS-U1-T18-007",
+      "type": "written",
+      "difficulty": "Developing",
+      "tags": [
+        "compare boxes",
+        "IQR",
+        "context"
+      ],
+      "objectives": [
+        "1.8.A",
+        "1.8.B"
+      ],
+      "prompt": "Two hypothetical groups' travel times are in minutes. Group A has five-number summary (2, 4, 6, 8, 10); Group B has (2, 3, 6, 9, 10). Compare medians and middle-half variability using numbers, and explain one conclusion that is NOT justified by these summaries.",
+      "hint": "Compare both medians, then subtract Q1 from Q3. Ask whether a cause or entire shape can be inferred.",
+      "solution": "Both groups have median 6 minutes. Group A has IQR=8−4=4 minutes, whereas Group B has IQR=9−3=6 minutes, so Group B's central half is more variable by 2 minutes. The summaries alone cannot identify causes of the difference, reveal gaps/modes, or establish a population-level difference.",
+      "rubric": "Award credit for the equal median (6 minutes), both correctly computed IQRs (4 and 6 minutes), an in-context comparison, and an explicit valid limitation.",
+      "rights": "original",
+      "provenance": "Original Maple Hill School hypothetical question, 2026-10-14",
+      "primary_topic": "1.8"
+    },
+    {
+      "id": "MHS-U1-T18-008",
+      "type": "written",
+      "difficulty": "Challenge",
+      "tags": [
+        "boxplot construction",
+        "fences",
+        "outliers"
+      ],
+      "objectives": [
+        "1.8.A"
+      ],
+      "prompt": "Construct a modified boxplot on a number line for 3, 4, 5, 6, 7, 8, 9, 10, 30 minutes. State the five-number summary, IQR, numerical fences, actual whisker endpoints, and any separate outlier marker. Explain the difference between fence and whisker.",
+      "hint": "The median is 7; halves are 3,4,5,6 and 8,9,10,30. Check whether 30 crosses the upper fence.",
+      "solution": "Minimum 3, Q1=(4+5)/2=4.5, median 7, Q3=(9+10)/2=9.5, maximum 30 minutes. IQR=5. Fences are L=4.5−7.5=−3 and U=9.5+7.5=17 minutes. Draw a box from 4.5 to 9.5 with median at 7; left whisker to observed 3, right whisker to observed 10; mark 30 separately as a potential outlier. The fence 17 is a boundary, not an observation.",
+      "rubric": "Include all five numbers; calculate IQR/fences accurately; label axis in minutes; show whiskers at 3 and 10, not −3 and 17; plot outlier 30 separately; explain the distinction.",
+      "rights": "original",
+      "provenance": "Original Maple Hill School hypothetical question, 2026-10-14",
+      "primary_topic": "1.8"
+    },
+    {
+      "id": "MHS-U1-T18-009",
+      "type": "number",
+      "difficulty": "Foundation",
+      "tags": [
+        "left skew",
+        "mean"
+      ],
+      "objectives": [
+        "1.8.B"
+      ],
+      "prompt": "Hypothetical travel times in minutes are 1, 32, 33, 34, 35, 36, 37, 38, 39. What is the sample mean in minutes? Enter your answer to two decimals.",
+      "answer": 31.67,
+      "tolerance": 0.015,
+      "hint": "Sum all nine observations and divide by nine. Compare the result with median 35.",
+      "solution": "Sum=285 minutes, n=9; mean=285/9≈31.67 minutes, less than median 35. The low observation contributes to a long left tail; the mean–median pattern is a tendency, not a proof of skewness.",
+      "rights": "original",
+      "provenance": "Original Maple Hill School hypothetical question, 2026-10-14",
+      "primary_topic": "1.8"
+    }
+  ]
+}

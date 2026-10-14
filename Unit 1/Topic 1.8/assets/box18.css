@@ -1,0 +1,22 @@
+
+.box18{border:1px solid #bdceda;background:#f7fbff;border-radius:14px;padding:1.1rem;max-width:100%;margin:1.4rem 0;box-sizing:border-box;overflow-wrap:anywhere}
+.box18-controls{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:.9rem;margin-bottom:1rem}
+.box18 label{display:block;font-weight:600;font-size:.95rem}
+.box18 select,.box18 textarea{width:100%;max-width:100%;box-sizing:border-box;background:#fff;color:#152c3d;border:1px solid #90a5b9;border-radius:8px;padding:.45rem;margin:.3rem 0 .65rem;font:inherit}
+.box18 textarea{min-height:2.8rem}
+.box18-buttons{display:flex;flex-wrap:wrap;gap:.5rem;margin:.5rem 0}
+.box18-buttons button{border:1px solid #204d68;color:#15374b;background:#fff;border-radius:8px;min-height:42px;padding:.5rem .75rem;cursor:pointer;font:inherit}
+.box18-buttons button:hover{background:#e4eff8}
+.box18-buttons button:focus-visible,.box18 select:focus-visible,.box18 textarea:focus-visible{outline:3px solid #0d7891;outline-offset:2px}
+.box18-buttons button:disabled{opacity:.46;cursor:not-allowed}
+.box18-chart{width:100%;margin:.6rem 0;min-height:170px}
+.box18-chart svg{display:block;width:100%;height:auto;max-width:100%}
+.box18 [data-box18-step]{font-weight:700}
+.box18 [data-box18-explanation]{min-height:3em;background:#e5f3f4;padding:.65rem .8rem;border-left:4px solid #167689;border-radius:4px}
+.box18-table-wrap{max-width:100%;overflow-x:auto;border:1px solid #c7d4df;background:#fff;border-radius:8px}
+.box18-summary{width:100%;border-collapse:collapse;min-width:660px;font-size:.87rem;margin:0}
+.box18-summary td,.box18-summary th{border-right:1px solid #c7d4df;padding:.6rem .35rem;text-align:center}
+.box18-summary caption{text-align:left;padding:.4rem .6rem;font-weight:700}
+.box18-accessible{font-size:.94rem;color:#345;max-width:75ch}
+@media(max-width:460px){.box18{padding:.65rem}.box18-chart{min-height:110px}.box18-buttons button{flex:1 1 130px}.box18-summary{min-width:620px}}
+@media print{.box18{break-inside:avoid}.box18-buttons{display:none}.box18-chart{max-width:100%}}
