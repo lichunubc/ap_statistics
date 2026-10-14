@@ -3,3 +3,5 @@
 The final section discusses a released exam question and provides original practice.
 
 The official 2019 AP Statistics FRQ 1(b)–(c) tests outlier screening and boxplot construction.
+
+The released [2019 exam, Question 1](https://apstudents.collegeboard.org/ap/2019-05/ap19-frq-statistics.pdf) and its [official scoring guide](https://apstudents.collegeboard.org/ap/2019-08/ap19-sg-statistics.pdf) give the university room-size problem. For this independent walkthrough, the five-number summary in square feet is **(134, 174, 253.5, 292, 315)**. The IQR is **118**; the two 1.5-IQR fences are **−3** and **469**. Neither extreme is an outlier. Draw a box from 174 to 292, a median line at 253.5, and whiskers at the actual observed extrema, 134 and 315.
