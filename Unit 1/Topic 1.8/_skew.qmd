@@ -1,0 +1,20 @@
+### Mean versus median: a helpful, nonabsolute pattern {#skew-18}
+
+The **mean** uses every observed value, whereas the **median** depends on rank. In a *roughly symmetric* distribution, mean and median are typically close. In a *right-skewed* distribution, the mean is **usually larger** than the median; in a *left-skewed* distribution, the mean is **usually smaller**. This is a **tendency, not a logical equivalence**: mean > median does not prove right skew, and close values do not prove symmetry. Interpret shape with a dotplot or histogram whenever possible.
+
+Recall the sample mean formula from [Topic 1.7](<../Topic 1.7/topic-1-7.qmd#mean>):
+
+$$
+\bar x = \frac{\sum_{i=1}^n x_i}{n}.
+$$
+
+<details class="math-note"><summary>Why does changing one value move the mean? — Optional algebra</summary>
+<p><strong>Optional enrichment — this derivation is not required for AP Statistics.</strong> If a single observation increases by d, the sum increases by d; the new mean becomes (S+d)/n = S/n+d/n. The original times sum to 110, giving 110/9 = 12.22 minutes. Changing 18 to 50 increases the total by 32, so the mean rises by 32/9 ≈ 3.56 to 142/9 ≈ 15.78 minutes. The middle observation remains 12, so the median does not change. This is an algebraic statement about the mean, <em>not</em> a universal test of shape.</p>
+</details>
+
+**Right-tail example.** The original times have mean **12.22 minutes** and median **12 minutes**. With 50 replacing 18, the mean rises to **15.78 minutes**, while the median stays **12**. The resulting long right tail has pulled the mean above the median.
+
+**Left-tail example.** For the hypothetical times **1, 32, 33, 34, 35, 36, 37, 38, 39** minutes, the median is **35**, but the total is **285**, giving mean **285/9 ≈ 31.67** minutes. One unusually low value pulls the mean below the median. Remember: the *relative positions of mean and median are evidence about skewness*, but the complete distribution is needed to assess shape reliably.
+
+**Think carefully:** Does the median ever lie outside the box? No—the two quartile boundaries enclose the middle ranked position. Does the mean have to be inside the box? **No.** It may lie outside when sufficiently extreme observations shift it.
+
