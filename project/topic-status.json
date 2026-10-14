@@ -163,6 +163,49 @@
         "1.6.B.1"
       ],
       "ced_printed_pages": "37–38"
+    },
+    {
+      "id": "1.7",
+      "title": "Summary Statistics for One Quantitative Variable",
+      "status": "implemented",
+      "chapter": "Unit 1/Topic 1.7/topic-1-7.qmd",
+      "directory": "Unit 1/Topic 1.7",
+      "ced_printed_pages": "39–41",
+      "learning_objectives": [
+        "1.7.A",
+        "1.7.B",
+        "1.7.C",
+        "1.7.D",
+        "1.7.E",
+        "1.7.F"
+      ],
+      "essential_knowledge": [
+        "1.7.A.1",
+        "1.7.A.2",
+        "1.7.A.3",
+        "1.7.A.4",
+        "1.7.A.5",
+        "1.7.A.6",
+        "1.7.B.1",
+        "1.7.B.2",
+        "1.7.B.3",
+        "1.7.B.4",
+        "1.7.C.1",
+        "1.7.D.1",
+        "1.7.D.1.i",
+        "1.7.D.1.ii",
+        "1.7.E.1",
+        "1.7.F.1",
+        "1.7.F.2"
+      ],
+      "practice_count": 10,
+      "interactions": [
+        "linked dotplot and summary statistics",
+        "extreme-value / conversion controls",
+        "one-question-at-a-time original practice"
+      ],
+      "implemented_on": "2026-10-14",
+      "data_source": "Original hypothetical travel-time scenario; no real student data"
     }
   ]
 }

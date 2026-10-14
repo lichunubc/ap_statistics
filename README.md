@@ -45,3 +45,7 @@ Read [CONTRIBUTING.md](CONTRIBUTING.md), [topic status](project/topic-status.jso
 ## Privacy and attribution
 
 Do not publish real student records, credentials, private notes, secure AP Classroom questions or font files. Label hypothetical examples and distinguish the School A sample of 40 from the separate 24 quantitative commute values and 24 study-location responses. Original public dataset attributions remain in the source and book's resource chapter. There are no accounts, submissions, analytics or persistent quiz tracking. AP is a College Board trademark; this independent course book is not endorsed by the College Board.
+
+## Authorized hourly expansion
+
+An authorized 19-session series is developing the remaining Unit 1 topics (1.7–1.13) and all revised five-unit CED Unit 2 topics (2.1–2.12). See `project/UNIT_1_2_EXPANSION.md` and `project/expansion-state.json` for specifications and actual release state. Topic 1.7 introduces optional derivations and a compact original question-bank reader, separate from restricted homework. A chapter is only called publicly released after Actions and a revision-matched live check.

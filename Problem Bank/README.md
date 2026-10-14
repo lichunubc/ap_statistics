@@ -44,3 +44,7 @@ No official answer key was provided. The local package clearly labels its explan
 ## Maintenance
 
 Run `python "Problem Bank/tools/prepare_bank.py"`, `quarto render`, then `python tools/check_all.py`. To run only the bank gate: `python "Problem Bank/tests/check_bank.py"`. `BANK_BASE_URL` runs the same browser checks against the deployed website. Never use real classroom content as a public CI fixture.
+
+## Public original question bank
+
+Separately from copyright-restricted homework references, instructor-authored questions for each new lesson are stored as structured JSON. Topic 1.7: `original/unit-1/topic-1-7.json` (ten original questions, keys, hints, worked explanations, objective tags and provenance). The Quarto `original-practice-filter.lua` gives a no-JavaScript fallback from the same JSON, while `assets/original-practice.js` supports the one-at-a-time reader. Keep original and locally restricted bank types separate.

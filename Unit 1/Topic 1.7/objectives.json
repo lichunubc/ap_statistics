@@ -1,0 +1,105 @@
+{
+  "id": "1.7",
+  "title": "Summary Statistics for One Quantitative Variable",
+  "curriculum": {
+    "name": "AP Statistics Course and Exam Description",
+    "effective": "Fall 2026",
+    "checked": "2026-10-14",
+    "source": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf",
+    "ced_printed_pages": "39–41"
+  },
+  "learning_objectives": [
+    "1.7.A",
+    "1.7.B",
+    "1.7.C",
+    "1.7.D",
+    "1.7.E",
+    "1.7.F"
+  ],
+  "essential_knowledge": [
+    "1.7.A.1",
+    "1.7.A.2",
+    "1.7.A.3",
+    "1.7.A.4",
+    "1.7.A.5",
+    "1.7.A.6",
+    "1.7.B.1",
+    "1.7.B.2",
+    "1.7.B.3",
+    "1.7.B.4",
+    "1.7.C.1",
+    "1.7.D.1",
+    "1.7.D.1.i",
+    "1.7.D.1.ii",
+    "1.7.E.1",
+    "1.7.F.1",
+    "1.7.F.2"
+  ],
+  "skills": [
+    "3.B",
+    "4.A",
+    "4.B"
+  ],
+  "coverage": [
+    {
+      "section": "#mean",
+      "ids": [
+        "1.7.A.1",
+        "1.7.A.2"
+      ]
+    },
+    {
+      "section": "#median",
+      "ids": [
+        "1.7.A.3"
+      ]
+    },
+    {
+      "section": "#position",
+      "ids": [
+        "1.7.A.4",
+        "1.7.A.5",
+        "1.7.A.6"
+      ]
+    },
+    {
+      "section": "#spread",
+      "ids": [
+        "1.7.B.1",
+        "1.7.B.2",
+        "1.7.B.3",
+        "1.7.B.4"
+      ]
+    },
+    {
+      "section": "#units",
+      "ids": [
+        "1.7.C.1"
+      ]
+    },
+    {
+      "section": "#outliers",
+      "ids": [
+        "1.7.D.1",
+        "1.7.D.1.i",
+        "1.7.D.1.ii"
+      ]
+    },
+    {
+      "section": "#comparisons",
+      "ids": [
+        "1.7.E.1"
+      ]
+    },
+    {
+      "section": "#resistance",
+      "ids": [
+        "1.7.F.1",
+        "1.7.F.2"
+      ]
+    }
+  ],
+  "practice_items": 10,
+  "derivations": "Collapsed beside every distinct formula, optional where outside required AP concepts",
+  "provenance": "Hypothetical instructor-authored data and independent publicly sourced released-2024-FRQ walkthrough"
+}

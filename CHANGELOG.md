@@ -41,3 +41,8 @@
 - Made preview navigation follow the configured chapters; retained the existing regression suite and added foundations tests to publishing.
 
 Source release status and the scheduled follow-on topics are tracked in `project/topic-status.json`. GitHub Actions is the source of truth for build/deployment outcomes.
+
+## 2026-10-14 — Topic 1.7 quantitative summaries
+
+- Added textbook-style content covering 1.7.A–F, linked visual summaries, ten original problem-bank questions, expandable derivations/conventions, and an independently sourced 2024 AP Statistics released-exam example.
+- Expanded navigation and mathematics/browser regression tests while preserving all earlier six topics and restricted homework references. Preview validation and live release status are tracked independently.
