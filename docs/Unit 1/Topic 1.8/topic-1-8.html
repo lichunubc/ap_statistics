@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Topic 1.8 Graphical Representations of Summary Statistics for One Quantitative Variable – AP Statistics: Learning from Data</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../Shared/practice.html" rel="next">
+<link href="../Topic%201.7/topic-1-7.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+
+<link href="../../site_libs/bootstrap/bootstrap-6ac1464fa2c1e9cd0b291ef951d667ea.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../Shared/assets/site.css">
+<link rel="stylesheet" href="../Topic%201.1/assets/foundations.css">
+<link rel="stylesheet" href="../Topic%201.3/assets/categorical-tables.css">
+<link rel="stylesheet" href="../Topic%201.4/assets/categorical-charts.css">
+<link rel="stylesheet" href="../Topic%201.2/assets/variables.css">
+<link rel="stylesheet" href="../../site/assets/navigation.css">
+<link rel="stylesheet" href="../../Problem%20Bank/assets/practice.css">
+<link rel="stylesheet" href="../../Problem%20Bank/assets/original-practice.css">
+<link rel="stylesheet" href="../Topic%201.7/assets/summary17.css">
+<link rel="stylesheet" href="assets/box18.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../unit-1.html">Unit 1: Exploring One-Variable Data and Collecting Data</a></li><li class="breadcrumb-item"><a href="topic-1-8.html"><span class="chapter-title">Topic 1.8 Graphical Representations of Summary Statistics for One Quantitative Variable</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../..">Maple Hill School</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Welcome</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../unit-1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Unit 1: Exploring One-Variable Data and Collecting Data</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Topic%201.1/topic-1-1.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Topic 1.1 Introducing Statistics: What Can We Learn from Data?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Topic%201.2/topic-1-2.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Topic 1.2 Variables</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Topic%201.3/topic-1-3.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Topic 1.3 Tabular Representation and Summary Statistics for One Categorical Variable</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Topic%201.4/topic-1-4.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Topic 1.4 Graphical Representations for One Categorical Variable</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Topic%201.5/topic-1-5.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Topic 1.5 Graphical Representations for One Quantitative Variable</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Topic%201.6/topic-1-6.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Topic 1.6 Descriptions for One Quantitative Variable Distributions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Topic%201.7/topic-1-7.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Topic 1.7 Summary Statistics for One Quantitative Variable</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="topic-1-8.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Topic 1.8 Graphical Representations of Summary Statistics for One Quantitative Variable</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Shared/practice.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Practice and solutions</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Unit%202/unit-2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Unit 2: Probability, Random Variables, and Probability Distributions</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Unit%203/unit-3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Unit 3: Inference for Categorical Data: Proportions</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Unit%204/unit-4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Unit 4: Inference for Quantitative Data: Means</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Unit%205/unit-5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Unit 5: Regression Analysis</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Problem%20Bank/practice.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Problem Bank: Selected Homework</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sources and study resources</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul class="collapse">
+  <li><a href="#purpose-18" id="toc-purpose-18" class="nav-link active" data-scroll-target="#purpose-18">Why compress a dotplot?</a></li>
+  <li><a href="#five-18" id="toc-five-18" class="nav-link" data-scroll-target="#five-18">1 · The five-number summary</a></li>
+  <li><a href="#construction-18" id="toc-construction-18" class="nav-link" data-scroll-target="#construction-18">2 · Drawing a boxplot in five decisions</a></li>
+  <li><a href="#lab-18" id="toc-lab-18" class="nav-link" data-scroll-target="#lab-18">3 · Interactive boxplot construction studio</a></li>
+  <li><a href="#reading-18" id="toc-reading-18" class="nav-link" data-scroll-target="#reading-18">4 · Reading and interpreting boxplots</a></li>
+  <li><a href="#released-exam-connection" id="toc-released-exam-connection" class="nav-link" data-scroll-target="#released-exam-connection">5 · Released exam connection</a></li>
+  <li><a href="#takeaway-18" id="toc-takeaway-18" class="nav-link" data-scroll-target="#takeaway-18">Common mistakes and a final synthesis</a></li>
+  <li><a href="#practice-18" id="toc-practice-18" class="nav-link" data-scroll-target="#practice-18">Practice · one question at a time</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../unit-1.html">Unit 1: Exploring One-Variable Data and Collecting Data</a></li><li class="breadcrumb-item"><a href="topic-1-8.html"><span class="chapter-title">Topic 1.8 Graphical Representations of Summary Statistics for One Quantitative Variable</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-title">Topic 1.8 Graphical Representations of Summary Statistics for One Quantitative Variable</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<style>
+math[display=block] { display:block; max-width:100%; overflow-x:auto; overflow-y:hidden; }
+</style>
+<div class="chapter-lead">
+<p><strong>From five numbers to a picture.</strong> A dotplot shows individual observations. A <em>boxplot</em> compresses a numerical distribution into a picture of its center, middle half, extremes, and potential outliers.</p>
+<p><strong>Learning targets (Fall 2026 AP Statistics):</strong> construct a five-number summary and its boxplot (<strong>1.8.A; Skill 3.A</strong>), and describe mean–median patterns in approximately symmetric and skewed distributions (<strong>1.8.B; Skill 4.A</strong>). See the <a href="https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf">official Course and Exam Description, printed page 42</a>.</p>
+</div>
+<section id="purpose-18" class="level2">
+<h2 class="anchored" data-anchor-id="purpose-18">Why compress a dotplot?</h2>
+<p>Imagine <strong>nine hypothetical workshop students</strong> whose one-way travel times, in minutes, are <strong>5, 8, 10, 12, 12, 14, 15, 16, 18</strong>. These are <em>invented teaching observations</em>, not actual Maple Hill School data and not the separate 24-commute dataset in <a href="../Topic%201.5/topic-1-5.html">Topic 1.5</a>. A dotplot retains each time. A boxplot makes it easier to compare a few important numerical landmarks, though it loses some detail.</p>
+<p><strong>Before calculating:</strong> predict which values bracket approximately the middle half of the nine journeys. What happens to the box if we change only the largest time?</p>
+</section>
+<section id="five-18" class="level2">
+<h2 class="anchored" data-anchor-id="five-18">1 · The five-number summary</h2>
+<p><strong>Sort the data first.</strong> Record the <em>minimum</em>, <em>first quartile</em> ((Q_1)), <em>median</em>, <em>third quartile</em> ((Q_3)), and <em>maximum</em> <strong>in that order</strong>:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mtext mathvariant="normal">minimum</mtext><mo>,</mo><mspace width="0.222em"></mspace><msub><mi>Q</mi><mn>1</mn></msub><mo>,</mo><mspace width="0.222em"></mspace><mtext mathvariant="normal">median</mtext><mo>,</mo><mspace width="0.222em"></mspace><msub><mi>Q</mi><mn>3</mn></msub><mo>,</mo><mspace width="0.222em"></mspace><mtext mathvariant="normal">maximum</mtext><mo stretchy="false" form="postfix">)</mo><mi>.</mi></mrow><annotation encoding="application/x-tex">
+(\text{minimum},\ Q_1,\ \text{median},\ Q_3,\ \text{maximum}).
+</annotation></semantics></math></p>
+<p>The middle observation of our nine sorted travel times is the <strong>fifth</strong>, 12 minutes, so the median is 12. We use the <em>median-of-halves</em> convention from <a href="../Topic%201.7/topic-1-7.html">Topic 1.7</a>: for odd sample sizes, <strong>exclude the overall median</strong> when forming the two halves. The lower half <strong>5, 8, 10, 12</strong> has quartile (Q_1=(8+10)/2=9) minutes. The upper half <strong>14, 15, 16, 18</strong> has (Q_3=(15+16)/2=15.5) minutes. Therefore,</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><menclose notation="box"><mrow><mo stretchy="false" form="prefix">(</mo><mn>5</mn><mo>,</mo><mspace width="0.222em"></mspace><mn>9</mn><mo>,</mo><mspace width="0.222em"></mspace><mn>12</mn><mo>,</mo><mspace width="0.222em"></mspace><mn>15.5</mn><mo>,</mo><mspace width="0.222em"></mspace><mn>18</mn><mo stretchy="false" form="postfix">)</mo><mspace width="0.222em"></mspace><mtext mathvariant="normal">minutes</mtext></mrow></menclose><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\boxed{(5,\ 9,\ 12,\ 15.5,\ 18)\ \text{minutes}}.
+</annotation></semantics></math></p>
+<p>A numerical five-number summary should identify the <strong>measured variable</strong> and its <strong>units</strong>. Never report these figures as measurements of the full school population: they describe only the nine hypothetical travel times.</p>
+<details class="math-note">
+<summary>
+Why these five numbers? — A convention, not a theorem
+</summary>
+<p>
+The extremes locate the endpoints, and the three quartiles divide an ordered sample into approximately four equal-count portions. Some software uses interpolation or includes the overall median in both halves. These definitions may disagree for small samples. <strong>No universal mathematical proof selects one quartile convention.</strong> State the method and apply it consistently to the table, graph, and worked solutions.
+</p>
+</details>
+<p>The <strong>interquartile range (IQR)</strong> is the length of the interval occupied by the middle half:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mi>Q</mi><mi>R</mi><mo>=</mo><msub><mi>Q</mi><mn>3</mn></msub><mo>−</mo><msub><mi>Q</mi><mn>1</mn></msub><mo>=</mo><mn>15.5</mn><mo>−</mo><mn>9</mn><mo>=</mo><menclose notation="box"><mrow><mn>6.5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> minutes</mtext></mrow></mrow></menclose><mi>.</mi></mrow><annotation encoding="application/x-tex">
+IQR=Q_3-Q_1=15.5-9=\boxed{6.5\text{ minutes}}.
+</annotation></semantics></math></p>
+<p>This is a difference in <strong>minutes</strong>, not the number of students between the quartiles. It is a measure of <em>spread</em> (introduced in Topic 1.7), whereas the median measures <em>center</em>.</p>
+<details class="math-note">
+<summary>
+Why subtract the quartiles? — Definition and interpretation
+</summary>
+<p>
+The length of any numerical interval from a to b is b−a. Because the box extends from Q1 to Q3, its numerical width equals Q3−Q1 by definition. This middle-half spread is usually less affected by changing an extreme observation than a range or standard deviation. It is a <strong>definition</strong>, not a universal claim that all datasets contain exactly half their distinct values between the quartiles.
+</p>
+</details>
+<section id="quick-checkpoint" class="level3">
+<h3 class="anchored" data-anchor-id="quick-checkpoint">Quick checkpoint</h3>
+<p>Suppose the sorted data are <strong>2, 4, 5, 7, 9, 10, 13</strong>. The overall median is <strong>7</strong>. Excluding it, the lower triple has median <strong>4</strong> and upper triple has median <strong>10</strong>. The summary is <strong>(2, 4, 7, 10, 13)</strong>, not (2, 5, 7, 9, 13). When you form quartiles, do not confuse the half boundaries with the middle observation of each half.</p>
+</section>
+</section>
+<section id="construction-18" class="level2">
+<h2 class="anchored" data-anchor-id="construction-18">2 · Drawing a boxplot in five decisions</h2>
+<p>A boxplot is <strong>not a bar chart</strong>. Its axis is numerical, and distances along that axis have real measurement units. Follow these steps.</p>
+<ol type="1">
+<li><strong>Sort</strong> the observations and calculate the five-number summary.</li>
+<li><strong>Screen</strong> for potential outliers using the chosen rule and identify the most extreme observations that are <em>not</em> flagged.</li>
+<li>Draw and label a <strong>numerical scale</strong> containing the observed range.</li>
+<li>Draw a <strong>box from (Q_1) to (Q_3)</strong>, with a median stroke inside it.</li>
+<li>Draw <strong>whiskers from the box to the most extreme actual non-outlying data values</strong> and mark any outliers with separate points or asterisks.</li>
+</ol>
+<p>For a <em>modified</em> (Tukey-style) boxplot, the lower and upper <strong>1.5-IQR fences</strong> are</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo>=</mo><msub><mi>Q</mi><mn>1</mn></msub><mo>−</mo><mn>1.5</mn><mo stretchy="false" form="prefix">(</mo><mi>I</mi><mi>Q</mi><mi>R</mi><mo stretchy="false" form="postfix">)</mo><mo>,</mo><mspace width="2.0em"></mspace><mi>U</mi><mo>=</mo><msub><mi>Q</mi><mn>3</mn></msub><mo>+</mo><mn>1.5</mn><mo stretchy="false" form="prefix">(</mo><mi>I</mi><mi>Q</mi><mi>R</mi><mo stretchy="false" form="postfix">)</mo><mi>.</mi></mrow><annotation encoding="application/x-tex">
+L=Q_1-1.5(IQR),\qquad U=Q_3+1.5(IQR).
+</annotation></semantics></math></p>
+<p>An observation is flagged only if it lies <strong>strictly outside</strong> the interval from (L) to (U). Without outliers, the whiskers reach the actual minimum and maximum. With outliers, the <strong>five-number summary still retains the original minimum and maximum</strong>, but the modified boxplot whiskers stop earlier.</p>
+<details class="math-note">
+<summary>
+Why 1.5 times the IQR? — Optional screening convention
+</summary>
+<p>
+<strong>Optional enrichment — this mathematical rationale is not required for AP Statistics.</strong> The 1.5 multiplier is a widely used rule of thumb for observations distant from the middle half. The formula extends the central interval by 1.5 copies of its length on each side. It is <strong>not a theorem</strong>, cannot prove a flagged value is erroneous, and can disagree with the two-standard-deviation rule. There is no mathematical proof that 1.5 is the uniquely correct cutoff.
+</p>
+</details>
+<p><strong>Critical distinction:</strong> A fence is a screening boundary, <strong>not necessarily an observed value</strong>. Never draw a whisker to a computed fence unless a genuine non-outlying observation happens to equal that fence. Even a negative lower fence can be valid as a calculation for a nonnegative variable; it is not a claimed negative observation.</p>
+<section id="worked-construction-one-unusually-long-trip" class="level3">
+<h3 class="anchored" data-anchor-id="worked-construction-one-unusually-long-trip">Worked construction · one unusually long trip</h3>
+<p>Change the last journey from 18 to <strong>50 minutes</strong>. The sorted sample becomes <strong>5, 8, 10, 12, 12, 14, 15, 16, 50</strong>. Its five-number summary is <strong>(5, 9, 12, 15.5, 50)</strong>. The IQR is still <strong>6.5 minutes</strong>, and the fences are</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo>=</mo><mn>9</mn><mo>−</mo><mn>1.5</mn><mo stretchy="false" form="prefix">(</mo><mn>6.5</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>−</mi><mn>0.75</mn><mo>,</mo><mspace width="2.0em"></mspace><mi>U</mi><mo>=</mo><mn>15.5</mn><mo>+</mo><mn>1.5</mn><mo stretchy="false" form="prefix">(</mo><mn>6.5</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>25.25</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">
+L=9-1.5(6.5)=-0.75,\qquad
+U=15.5+1.5(6.5)=25.25.
+</annotation></semantics></math></p>
+<p>Because 50 &gt; 25.25, <strong>50 minutes is a potential outlier</strong>. In a modified boxplot, draw the box from <strong>9 to 15.5</strong> with the median at <strong>12</strong>; draw the left whisker to <strong>5</strong> and the right whisker to <strong>16</strong>, the largest observed <em>non-outlier</em>. Then draw a separate outlier marker at <strong>50</strong>. The right whisker goes to <strong>16</strong>, <strong>not 25.25</strong> and <strong>not 50</strong>.</p>
+<details class="math-note">
+<summary>
+Why does the right whisker end at 16? — Modified-boxplot definition
+</summary>
+<p>
+List all observations at or below the upper fence: 5, 8, 10, 12, 12, 14, 15, 16. By the modified-boxplot rule, the right whisker reaches the largest such actual observation, 16. The 50-minute value receives a separate mark. This is a <strong>construction convention</strong>; an unmodified min-to-max boxplot would end its whisker at 50 instead, so specify which graph is used.
+</p>
+</details>
+</section>
+<section id="what-does-the-box-represent" class="level3">
+<h3 class="anchored" data-anchor-id="what-does-the-box-represent">What does the box represent?</h3>
+<p>The Q1-to-Q3 box spans approximately the <strong>central 50% of observations</strong>, not necessarily half the numerical range. The left and right whisker segments typically encompass approximately a quarter of the ordered observations apiece <strong>if no outliers are present</strong>. Ties and finite-sample quartile conventions complicate exact counts; do not claim each section contains exactly 25% of <em>distinct values</em>. A long whisker indicates more numerical spread in that portion, not automatically more students.</p>
+</section>
+</section>
+<section id="lab-18" class="level2">
+<h2 class="anchored" data-anchor-id="lab-18">3 · Interactive boxplot construction studio</h2>
+<p>The tool below connects the original observations to the five-number summary and modified boxplot. Predict which features change before using the buttons. The reader has a text explanation and a numerical table alongside the graph.</p>
+<div class="box18" data-box18="">
+<label for="box18-scenario">Sample <select id="box18-scenario" data-box18-scenario=""><option value="typical">Ordinary workshop journeys</option><option value="extreme">One 50-minute journey</option><option value="left">One unusually short journey</option><option value="bimodal">Two separated clusters</option></select></label> <label for="box18-style">Whisker rule <select id="box18-style" data-box18-style=""><option value="modified">Modified (no outliers at whisker ends)</option><option value="unmodified">Unmodified (min to max)</option></select></label> <label for="box18-values">Your measurements (3–40 values from 0 to 60), comma-separated:
+<textarea id="box18-values" data-box18-values="" rows="2">5, 8, 10, 12, 12, 14, 15, 16, 18</textarea>
+</label>
+<div class="box18-buttons">
+<button type="button" data-box18-action="apply">
+Apply values
+</button>
+<button type="button" data-box18-action="previous">
+Previous step
+</button>
+<button type="button" data-box18-action="next">
+Next step
+</button>
+<button type="button" data-box18-action="reset">
+Reset studio
+</button>
+</div>
+<p data-box18-step="" role="status" aria-live="polite">
+Step 1 of 5
+</p>
+<div class="box18-chart" data-box18-chart="" aria-label="Dotplot linked to boxplot">
+
+</div>
+<p data-box18-explanation="">
+Observe how each part appears, then describe its interpretation.
+</p>
+<div class="box18-table-wrap">
+<table class="box18-summary">
+<caption>
+Linked summaries in minutes
+</caption>
+<tbody>
+<tr data-box18-row="">
+<td>
+5
+</td>
+<td>
+9
+</td>
+<td>
+12
+</td>
+<td>
+15.5
+</td>
+<td>
+18
+</td>
+<td>
+12.22
+</td>
+<td>
+6.5
+</td>
+<td>
+−0.75, 25.25
+</td>
+<td>
+5, 18
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>
+Without scripts: the ordinary data have five-number summary (5, 9, 12, 15.5, 18). In the 50-minute scenario, 50 is an outlier and 16 is the observed right whisker endpoint.
+</p>
+</div>
+</section>
+<section id="reading-18" class="level2">
+<h2 class="anchored" data-anchor-id="reading-18">4 · Reading and interpreting boxplots</h2>
+<p>The <strong>median stroke</strong> locates the middle ranked observation; it is <em>not</em> the mean. The box length on the numerical axis equals the IQR. A longer box means greater spread among roughly the middle half of the measured values. A longer right whisker or a right-side outlier may indicate a long right tail; the evidence should be checked with the underlying distribution.</p>
+<p><strong>Equal percentages do not mean equal distances.</strong> The quarters of an ordered sample may lie within numerical intervals of different widths. A boxplot does <strong>not</strong> show the sample size unless it is supplied in a label. It usually cannot reveal whether the original values form one cluster, two distinct clusters, or a gap.</p>
+<p>Two datasets with the <strong>same five-number summary</strong> can look very different as dotplots because the five landmarks do not specify where <em>every</em> observation lies. A boxplot is useful for compact comparisons of position and spread, whereas the <a href="../Topic%201.5/topic-1-5.html">dotplots and histograms in Topic 1.5</a> are better for detecting modes and gaps.</p>
+<p>In the studio, the <em>two separated journey clusters</em> scenario places several values at low times and another group at higher times. The finished box contains no direct label for “two peaks.” The dotplot should still be consulted.</p>
+<section id="an-ap-style-contextual-interpretation" class="level3">
+<h3 class="anchored" data-anchor-id="an-ap-style-contextual-interpretation">An AP-style contextual interpretation</h3>
+<p>Suppose one sample of daily travel times has median <strong>12 minutes</strong> and IQR <strong>6.5 minutes</strong>. A defensible claim is: “The typical middle travel time in this sample was 12 minutes, and the central half of observed trips covered a spread of about 6.5 minutes.” It would be <strong>incorrect</strong> to say “every trip was within 6.5 minutes of the median,” to claim 6.5 students were in the box, or to generalize to all students without a sampling argument.</p>
+<p><strong>Checkpoint:</strong> If two boxes have equal IQR but different medians, which feature changed? Their centers differ, but their central-half <em>spread</em> is equal. To compare, use the same numerical axis and units and check outliers separately.</p>
+</section>
+<section id="skew-18" class="level3">
+<h3 class="anchored" data-anchor-id="skew-18">Mean versus median: a helpful, nonabsolute pattern</h3>
+<p>The <strong>mean</strong> uses every observed value, whereas the <strong>median</strong> depends on rank. In a <em>roughly symmetric</em> distribution, mean and median are typically close. In a <em>right-skewed</em> distribution, the mean is <strong>usually larger</strong> than the median; in a <em>left-skewed</em> distribution, the mean is <strong>usually smaller</strong>. This is a <strong>tendency, not a logical equivalence</strong>: mean &gt; median does not prove right skew, and close values do not prove symmetry. Interpret shape with a dotplot or histogram whenever possible.</p>
+<p>Recall the sample mean formula from <a href="../Topic%201.7/topic-1-7.html#mean">Topic 1.7</a>:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>x</mi><mo accent="true">‾</mo></mover><mo>=</mo><mfrac><mrow><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msub><mi>x</mi><mi>i</mi></msub></mrow><mi>n</mi></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\bar x = \frac{\sum_{i=1}^n x_i}{n}.
+</annotation></semantics></math></p>
+<details class="math-note">
+<summary>
+Why does changing one value move the mean? — Optional algebra
+</summary>
+<p>
+<strong>Optional enrichment — this derivation is not required for AP Statistics.</strong> If a single observation increases by d, the sum increases by d; the new mean becomes (S+d)/n = S/n+d/n.&nbsp;The original times sum to 110, giving 110/9 = 12.22 minutes. Changing 18 to 50 increases the total by 32, so the mean rises by 32/9 ≈ 3.56 to 142/9 ≈ 15.78 minutes. The middle observation remains 12, so the median does not change. This is an algebraic statement about the mean, <em>not</em> a universal test of shape.
+</p>
+</details>
+<p><strong>Right-tail example.</strong> The original times have mean <strong>12.22 minutes</strong> and median <strong>12 minutes</strong>. With 50 replacing 18, the mean rises to <strong>15.78 minutes</strong>, while the median stays <strong>12</strong>. The resulting long right tail has pulled the mean above the median.</p>
+<p><strong>Left-tail example.</strong> For the hypothetical times <strong>1, 32, 33, 34, 35, 36, 37, 38, 39</strong> minutes, the median is <strong>35</strong>, but the total is <strong>285</strong>, giving mean <strong>285/9 ≈ 31.67</strong> minutes. One unusually low value pulls the mean below the median. Remember: the <em>relative positions of mean and median are evidence about skewness</em>, but the complete distribution is needed to assess shape reliably.</p>
+<p><strong>Think carefully:</strong> Does the median ever lie outside the box? No—the two quartile boundaries enclose the middle ranked position. Does the mean have to be inside the box? <strong>No.</strong> It may lie outside when sufficiently extreme observations shift it.</p>
+</section>
+</section>
+<section id="released-exam-connection" class="level2">
+<h2 class="anchored" data-anchor-id="released-exam-connection">5 · Released exam connection</h2>
+<p>The final section discusses a released exam question and provides original practice.</p>
+<p>The official 2019 AP Statistics FRQ 1(b)–(c) tests outlier screening and boxplot construction.</p>
+<p>The released <a href="https://apstudents.collegeboard.org/ap/2019-05/ap19-frq-statistics.pdf">2019 exam, Question 1</a> and its <a href="https://apstudents.collegeboard.org/ap/2019-08/ap19-sg-statistics.pdf">official scoring guide</a> give the university room-size problem. For this independent walkthrough, the five-number summary in square feet is <strong>(134, 174, 253.5, 292, 315)</strong>. The IQR is <strong>118</strong>; the two 1.5-IQR fences are <strong>−3</strong> and <strong>469</strong>. Neither extreme is an outlier. Draw a box from 174 to 292, a median line at 253.5, and whiskers at the actual observed extrema, 134 and 315.</p>
+<p>The released histogram has two clusters that the boxplot does not directly reveal. That comparison is a key reason to examine both a distribution plot and a numerical-summary plot. The calculation above is independent teaching commentary, not a reproduction of the official question or graph.</p>
+</section>
+<section id="takeaway-18" class="level2">
+<h2 class="anchored" data-anchor-id="takeaway-18">Common mistakes and a final synthesis</h2>
+<p>The median stroke is <strong>not</strong> the mean. A computed fence is <strong>not</strong> a whisker endpoint. A box length measures numerical middle-half spread, <strong>not</strong> the number of distinct observations. A modified boxplot with an outlier still has a five-number summary that records the actual minimum and maximum. Always report the measured variable, group and units, and consult a dotplot or histogram when shape matters.</p>
+</section>
+<section id="practice-18" class="level2">
+<h2 class="anchored" data-anchor-id="practice-18">Practice · one question at a time</h2>
+<p>The following original exercises are stored centrally under <strong>Problem Bank</strong>, rather than copied into lesson files. Use Previous and Next question while keeping this page of notes accessible. Hints, checking feedback and detailed model solutions are provided without submitting personal answers.</p>
+<section class="original-practice" data-original-practice="1.8" data-bank-url="../../Problem%20Bank/original/unit-1/topic-1-8.json">
+<p>Loading the original practice questions. Enable JavaScript for the compact one-question-at-a-time reader.</p>
+<noscript><div class="original-nojs"><p>JavaScript is disabled. These are the complete original questions with model solutions; all content comes from the same public JSON bank.</p><ol>
+<li><strong>MHS-U1-T18-001</strong><p>Seven ordered practice scores are 4, 6, 8, 8, 9, 12, 14. Under the median-of-halves convention excluding the overall median, which is the five-number summary?</p>
+<p>A. (4, 6, 8, 12, 14)</p>
+<p>B. (4, 8, 8, 9, 14)</p>
+<p>C. (4, 6, 8, 9, 14)</p>
+<p>D. (4, 8, 9, 12, 14)</p>
+<details><summary>Show solution</summary><p>A. Minimum 4, Q1=median(4,6,8)=6, overall median 8, Q3=median(9,12,14)=12, maximum 14. These are scores and should be labelled as such.</p></details></li>
+<li><strong>MHS-U1-T18-002</strong><p>The nine ordered travel distances, in kilometres, are 2, 4, 5, 6, 8, 10, 12, 14, 20. Find the IQR using the median-of-halves convention that excludes the overall median.</p>
+<details><summary>Show solution</summary><p>The lower half 2,4,5,6 has median Q1=(4+5)/2=4.5 km. The upper half 10,12,14,20 has median Q3=(12+14)/2=13 km. IQR=13−4.5=8.5 km.</p></details></li>
+<li><strong>MHS-U1-T18-003</strong><p>For the nine workshop journeys 5, 8, 10, 12, 12, 14, 15, 16, 18 minutes, calculate the UPPER 1.5-IQR fence in minutes using the chapter's quartile convention.</p>
+<details><summary>Show solution</summary><p>IQR=15.5−9=6.5 minutes. Upper fence U=15.5+1.5(6.5)=25.25 minutes. This is a screening boundary, not necessarily an observed time.</p></details></li>
+<li><strong>MHS-U1-T18-004</strong><p>The sorted times 5, 8, 10, 12, 12, 14, 15, 16, 50 minutes have upper 1.5-IQR fence 25.25. Where should the RIGHT whisker end in a MODIFIED boxplot? Enter the observed value in minutes.</p>
+<details><summary>Show solution</summary><p>The 50-minute time lies beyond the upper fence, so plot 50 separately. The largest observed non-outlier is 16 minutes; the right modified whisker ends at 16.</p></details></li>
+<li><strong>MHS-U1-T18-005</strong><p>Which feature is most likely to be visible in a dotplot or histogram but hidden in a boxplot?</p>
+<p>A. The median</p>
+<p>B. The interquartile range</p>
+<p>C. Two separate clusters or peaks</p>
+<p>D. The approximate location of the quartiles</p>
+<details><summary>Show solution</summary><p>C. A boxplot preserves the five landmarks (and potentially outlier markings) but cannot reliably communicate the number of peaks or gaps. Use a dotplot/histogram to study detailed shape.</p></details></li>
+<li><strong>MHS-U1-T18-006</strong><p>Which statement is generally accurate for a strongly right-skewed quantitative distribution?</p>
+<p>A. The mean is usually larger than the median, but this is not a universal test.</p>
+<p>B. The mean is always smaller than the median.</p>
+<p>C. The mean and median must be exactly equal.</p>
+<p>D. If the mean exceeds the median, the distribution must be right-skewed.</p>
+<details><summary>Show solution</summary><p>A. A long right tail often pulls the mean above the median. It is only a tendency: mean greater than median is not a sufficient condition for right skew.</p></details></li>
+<li><strong>MHS-U1-T18-007</strong><p>Two hypothetical groups' travel times are in minutes. Group A has five-number summary (2, 4, 6, 8, 10); Group B has (2, 3, 6, 9, 10). Compare medians and middle-half variability using numbers, and explain one conclusion that is NOT justified by these summaries.</p>
+<details><summary>Show solution</summary><p>Both groups have median 6 minutes. Group A has IQR=8−4=4 minutes, whereas Group B has IQR=9−3=6 minutes, so Group B's central half is more variable by 2 minutes. The summaries alone cannot identify causes of the difference, reveal gaps/modes, or establish a population-level difference.</p></details></li>
+<li><strong>MHS-U1-T18-008</strong><p>Construct a modified boxplot on a number line for 3, 4, 5, 6, 7, 8, 9, 10, 30 minutes. State the five-number summary, IQR, numerical fences, actual whisker endpoints, and any separate outlier marker. Explain the difference between fence and whisker.</p>
+<details><summary>Show solution</summary><p>Minimum 3, Q1=(4+5)/2=4.5, median 7, Q3=(9+10)/2=9.5, maximum 30 minutes. IQR=5. Fences are L=4.5−7.5=−3 and U=9.5+7.5=17 minutes. Draw a box from 4.5 to 9.5 with median at 7; left whisker to observed 3, right whisker to observed 10; mark 30 separately as a potential outlier. The fence 17 is a boundary, not an observation.</p></details></li>
+<li><strong>MHS-U1-T18-009</strong><p>Hypothetical travel times in minutes are 1, 32, 33, 34, 35, 36, 37, 38, 39. What is the sample mean in minutes? Enter your answer to two decimals.</p>
+<details><summary>Show solution</summary><p>Sum=285 minutes, n=9; mean=285/9≈31.67 minutes, less than median 35. The low observation contributes to a long left tail; the mean–median pattern is a tendency, not a proof of skewness.</p></details></li>
+</ol></div></noscript></section>
+
+
+</section>
+
+</main> <!-- /main -->
+<script src="../Shared/assets/data.js"></script>
+<script src="../Shared/assets/site.js"></script>
+<script src="../Topic%201.1/assets/foundations.js"></script>
+<script src="../Topic%201.3/assets/categorical-tables.js"></script>
+<script src="../Topic%201.4/assets/categorical-charts.js"></script>
+<script src="../Shared/assets/foundations-data.js"></script>
+<script src="../Topic%201.2/assets/variables.js"></script>
+<script src="../../site/assets/navigation.js"></script>
+<script src="../../Problem%20Bank/assets/catalog.js"></script>
+<script src="../../Problem%20Bank/assets/practice.js"></script>
+<script src="../../Problem%20Bank/assets/original-practice.js"></script>
+<script src="../Topic%201.7/assets/summary17.js"></script>
+<script src="assets/box18-math.js"></script>
+<script src="assets/box18.js"></script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/lichunubc\.github\.io\/ap_statistics\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../Topic%201.7/topic-1-7.html" class="pagination-link" aria-label="Topic 1.7 Summary Statistics for One Quantitative Variable">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Topic 1.7 Summary Statistics for One Quantitative Variable</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../Shared/practice.html" class="pagination-link" aria-label="Practice and solutions">
+        <span class="nav-page-text"><span class="chapter-title">Practice and solutions</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Maple Hill School · Chun Li</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>AP Statistics · Interactive course book</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

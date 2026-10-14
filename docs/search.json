@@ -54,7 +54,7 @@
     "href": "Unit 1/unit-1.html#choose-a-topic",
     "title": "Unit 1: Exploring One-Variable Data and Collecting Data",
     "section": "",
-    "text": "Topic 1.1 Introducing Statistics: What Can We Learn from Data?\nQuestions, observational units, populations, samples, and evidence in context.\nOpen Topic 1.1 →\n\n\nTopic 1.2 Variables\nIdentify variables and summaries; classify categorical, discrete, and continuous values; investigate numerical category codes.\nOpen Topic 1.2 →\n\n\nTopic 1.3 Tabular Representation and Summary Statistics for One Categorical Variable\nBuild frequency and relative-frequency tables, use correct denominators, and justify contextual claims.\nOpen Topic 1.3 →\n\n\nTopic 1.4 Graphical Representations for One Categorical Variable\nBuild bar and pie charts, compare samples, and audit graphical claims.\nOpen Topic 1.4 →\n\n\nTopic 1.5 Graphical Representations for One Quantitative Variable\nThe original dotplot, stem-and-leaf, histogram construction, and histogram laboratory lessons.\nOpen Topic 1.5 →\n\n\nTopic 1.6 Descriptions for One Quantitative Variable Distributions\nThe original distribution descriptions, worked examples, and evidence checkpoints.\nOpen Topic 1.6 →\n\n\nTopic 1.7 Summary Statistics for One Quantitative Variable\nLearn mean, quartiles, variation, two outlier screens, and unit conversion through a linked dotplot and compact original practice.\nOpen Topic 1.7 →",
+    "text": "Topic 1.1 Introducing Statistics: What Can We Learn from Data?\nQuestions, observational units, populations, samples, and evidence in context.\nOpen Topic 1.1 →\n\n\nTopic 1.2 Variables\nIdentify variables and summaries; classify categorical, discrete, and continuous values; investigate numerical category codes.\nOpen Topic 1.2 →\n\n\nTopic 1.3 Tabular Representation and Summary Statistics for One Categorical Variable\nBuild frequency and relative-frequency tables, use correct denominators, and justify contextual claims.\nOpen Topic 1.3 →\n\n\nTopic 1.4 Graphical Representations for One Categorical Variable\nBuild bar and pie charts, compare samples, and audit graphical claims.\nOpen Topic 1.4 →\n\n\nTopic 1.5 Graphical Representations for One Quantitative Variable\nThe original dotplot, stem-and-leaf, histogram construction, and histogram laboratory lessons.\nOpen Topic 1.5 →\n\n\nTopic 1.6 Descriptions for One Quantitative Variable Distributions\nThe original distribution descriptions, worked examples, and evidence checkpoints.\nOpen Topic 1.6 →\n\n\nTopic 1.7 Summary Statistics for One Quantitative Variable\nLearn mean, quartiles, variation, two outlier screens, and unit conversion through a linked dotplot and compact original practice.\nOpen Topic 1.7 →\n\n\nTopic 1.8 Graphical Representations of Summary Statistics for One Quantitative Variable\nConstruct five-number summaries and modified boxplots with a step-by-step linked graph; learn what a boxplot conceals and how mean and median relate to skewness.\nOpen Topic 1.8 →",
     "crumbs": [
       "Unit 1: Exploring One-Variable Data and Collecting Data"
     ]
@@ -774,6 +774,94 @@
     ]
   },
   {
+    "objectID": "Unit 1/Topic 1.8/topic-1-8.html",
+    "href": "Unit 1/Topic 1.8/topic-1-8.html",
+    "title": "Topic 1.8 Graphical Representations of Summary Statistics for One Quantitative Variable",
+    "section": "",
+    "text": "Why compress a dotplot?\nImagine nine hypothetical workshop students whose one-way travel times, in minutes, are 5, 8, 10, 12, 12, 14, 15, 16, 18. These are invented teaching observations, not actual Maple Hill School data and not the separate 24-commute dataset in Topic 1.5. A dotplot retains each time. A boxplot makes it easier to compare a few important numerical landmarks, though it loses some detail.\nBefore calculating: predict which values bracket approximately the middle half of the nine journeys. What happens to the box if we change only the largest time?",
+    "crumbs": [
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Topic 1.8 Graphical Representations of Summary Statistics for One Quantitative Variable</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 1/Topic 1.8/topic-1-8.html#five-18",
+    "href": "Unit 1/Topic 1.8/topic-1-8.html#five-18",
+    "title": "Topic 1.8 Graphical Representations of Summary Statistics for One Quantitative Variable",
+    "section": "1 · The five-number summary",
+    "text": "1 · The five-number summary\nSort the data first. Record the minimum, first quartile ((Q_1)), median, third quartile ((Q_3)), and maximum in that order:\n(minimum,Q1,median,Q3,maximum).\n(\\text{minimum},\\ Q_1,\\ \\text{median},\\ Q_3,\\ \\text{maximum}).\n\nThe middle observation of our nine sorted travel times is the fifth, 12 minutes, so the median is 12. We use the median-of-halves convention from Topic 1.7: for odd sample sizes, exclude the overall median when forming the two halves. The lower half 5, 8, 10, 12 has quartile (Q_1=(8+10)/2=9) minutes. The upper half 14, 15, 16, 18 has (Q_3=(15+16)/2=15.5) minutes. Therefore,\n(5,9,12,15.5,18)minutes.\n\\boxed{(5,\\ 9,\\ 12,\\ 15.5,\\ 18)\\ \\text{minutes}}.\n\nA numerical five-number summary should identify the measured variable and its units. Never report these figures as measurements of the full school population: they describe only the nine hypothetical travel times.\n\n\nWhy these five numbers? — A convention, not a theorem\n\n\nThe extremes locate the endpoints, and the three quartiles divide an ordered sample into approximately four equal-count portions. Some software uses interpolation or includes the overall median in both halves. These definitions may disagree for small samples. No universal mathematical proof selects one quartile convention. State the method and apply it consistently to the table, graph, and worked solutions.\n\n\nThe interquartile range (IQR) is the length of the interval occupied by the middle half:\nIQR=Q3−Q1=15.5−9=6.5 minutes.\nIQR=Q_3-Q_1=15.5-9=\\boxed{6.5\\text{ minutes}}.\n\nThis is a difference in minutes, not the number of students between the quartiles. It is a measure of spread (introduced in Topic 1.7), whereas the median measures center.\n\n\nWhy subtract the quartiles? — Definition and interpretation\n\n\nThe length of any numerical interval from a to b is b−a. Because the box extends from Q1 to Q3, its numerical width equals Q3−Q1 by definition. This middle-half spread is usually less affected by changing an extreme observation than a range or standard deviation. It is a definition, not a universal claim that all datasets contain exactly half their distinct values between the quartiles.\n\n\n\nQuick checkpoint\nSuppose the sorted data are 2, 4, 5, 7, 9, 10, 13. The overall median is 7. Excluding it, the lower triple has median 4 and upper triple has median 10. The summary is (2, 4, 7, 10, 13), not (2, 5, 7, 9, 13). When you form quartiles, do not confuse the half boundaries with the middle observation of each half.",
+    "crumbs": [
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Topic 1.8 Graphical Representations of Summary Statistics for One Quantitative Variable</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 1/Topic 1.8/topic-1-8.html#construction-18",
+    "href": "Unit 1/Topic 1.8/topic-1-8.html#construction-18",
+    "title": "Topic 1.8 Graphical Representations of Summary Statistics for One Quantitative Variable",
+    "section": "2 · Drawing a boxplot in five decisions",
+    "text": "2 · Drawing a boxplot in five decisions\nA boxplot is not a bar chart. Its axis is numerical, and distances along that axis have real measurement units. Follow these steps.\n\nSort the observations and calculate the five-number summary.\nScreen for potential outliers using the chosen rule and identify the most extreme observations that are not flagged.\nDraw and label a numerical scale containing the observed range.\nDraw a box from (Q_1) to (Q_3), with a median stroke inside it.\nDraw whiskers from the box to the most extreme actual non-outlying data values and mark any outliers with separate points or asterisks.\n\nFor a modified (Tukey-style) boxplot, the lower and upper 1.5-IQR fences are\nL=Q1−1.5(IQR),U=Q3+1.5(IQR).\nL=Q_1-1.5(IQR),\\qquad U=Q_3+1.5(IQR).\n\nAn observation is flagged only if it lies strictly outside the interval from (L) to (U). Without outliers, the whiskers reach the actual minimum and maximum. With outliers, the five-number summary still retains the original minimum and maximum, but the modified boxplot whiskers stop earlier.\n\n\nWhy 1.5 times the IQR? — Optional screening convention\n\n\nOptional enrichment — this mathematical rationale is not required for AP Statistics. The 1.5 multiplier is a widely used rule of thumb for observations distant from the middle half. The formula extends the central interval by 1.5 copies of its length on each side. It is not a theorem, cannot prove a flagged value is erroneous, and can disagree with the two-standard-deviation rule. There is no mathematical proof that 1.5 is the uniquely correct cutoff.\n\n\nCritical distinction: A fence is a screening boundary, not necessarily an observed value. Never draw a whisker to a computed fence unless a genuine non-outlying observation happens to equal that fence. Even a negative lower fence can be valid as a calculation for a nonnegative variable; it is not a claimed negative observation.\n\nWorked construction · one unusually long trip\nChange the last journey from 18 to 50 minutes. The sorted sample becomes 5, 8, 10, 12, 12, 14, 15, 16, 50. Its five-number summary is (5, 9, 12, 15.5, 50). The IQR is still 6.5 minutes, and the fences are\nL=9−1.5(6.5)=−0.75,U=15.5+1.5(6.5)=25.25.\nL=9-1.5(6.5)=-0.75,\\qquad\nU=15.5+1.5(6.5)=25.25.\n\nBecause 50 &gt; 25.25, 50 minutes is a potential outlier. In a modified boxplot, draw the box from 9 to 15.5 with the median at 12; draw the left whisker to 5 and the right whisker to 16, the largest observed non-outlier. Then draw a separate outlier marker at 50. The right whisker goes to 16, not 25.25 and not 50.\n\n\nWhy does the right whisker end at 16? — Modified-boxplot definition\n\n\nList all observations at or below the upper fence: 5, 8, 10, 12, 12, 14, 15, 16. By the modified-boxplot rule, the right whisker reaches the largest such actual observation, 16. The 50-minute value receives a separate mark. This is a construction convention; an unmodified min-to-max boxplot would end its whisker at 50 instead, so specify which graph is used.\n\n\n\n\nWhat does the box represent?\nThe Q1-to-Q3 box spans approximately the central 50% of observations, not necessarily half the numerical range. The left and right whisker segments typically encompass approximately a quarter of the ordered observations apiece if no outliers are present. Ties and finite-sample quartile conventions complicate exact counts; do not claim each section contains exactly 25% of distinct values. A long whisker indicates more numerical spread in that portion, not automatically more students.",
+    "crumbs": [
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Topic 1.8 Graphical Representations of Summary Statistics for One Quantitative Variable</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 1/Topic 1.8/topic-1-8.html#lab-18",
+    "href": "Unit 1/Topic 1.8/topic-1-8.html#lab-18",
+    "title": "Topic 1.8 Graphical Representations of Summary Statistics for One Quantitative Variable",
+    "section": "3 · Interactive boxplot construction studio",
+    "text": "3 · Interactive boxplot construction studio\nThe tool below connects the original observations to the five-number summary and modified boxplot. Predict which features change before using the buttons. The reader has a text explanation and a numerical table alongside the graph.\n\nSample Ordinary workshop journeysOne 50-minute journeyOne unusually short journeyTwo separated clusters Whisker rule Modified (no outliers at whisker ends)Unmodified (min to max) Your measurements (3–40 values from 0 to 60), comma-separated:\n5, 8, 10, 12, 12, 14, 15, 16, 18\n\n\n\nApply values\n\n\nPrevious step\n\n\nNext step\n\n\nReset studio\n\n\n\nStep 1 of 5\n\n\n\n\n\nObserve how each part appears, then describe its interpretation.\n\n\n\n\nLinked summaries in minutes\n\n\n\n\n5\n\n\n9\n\n\n12\n\n\n15.5\n\n\n18\n\n\n12.22\n\n\n6.5\n\n\n−0.75, 25.25\n\n\n5, 18\n\n\n\n\n\n\nWithout scripts: the ordinary data have five-number summary (5, 9, 12, 15.5, 18). In the 50-minute scenario, 50 is an outlier and 16 is the observed right whisker endpoint.",
+    "crumbs": [
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Topic 1.8 Graphical Representations of Summary Statistics for One Quantitative Variable</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 1/Topic 1.8/topic-1-8.html#reading-18",
+    "href": "Unit 1/Topic 1.8/topic-1-8.html#reading-18",
+    "title": "Topic 1.8 Graphical Representations of Summary Statistics for One Quantitative Variable",
+    "section": "4 · Reading and interpreting boxplots",
+    "text": "4 · Reading and interpreting boxplots\nThe median stroke locates the middle ranked observation; it is not the mean. The box length on the numerical axis equals the IQR. A longer box means greater spread among roughly the middle half of the measured values. A longer right whisker or a right-side outlier may indicate a long right tail; the evidence should be checked with the underlying distribution.\nEqual percentages do not mean equal distances. The quarters of an ordered sample may lie within numerical intervals of different widths. A boxplot does not show the sample size unless it is supplied in a label. It usually cannot reveal whether the original values form one cluster, two distinct clusters, or a gap.\nTwo datasets with the same five-number summary can look very different as dotplots because the five landmarks do not specify where every observation lies. A boxplot is useful for compact comparisons of position and spread, whereas the dotplots and histograms in Topic 1.5 are better for detecting modes and gaps.\nIn the studio, the two separated journey clusters scenario places several values at low times and another group at higher times. The finished box contains no direct label for “two peaks.” The dotplot should still be consulted.\n\nAn AP-style contextual interpretation\nSuppose one sample of daily travel times has median 12 minutes and IQR 6.5 minutes. A defensible claim is: “The typical middle travel time in this sample was 12 minutes, and the central half of observed trips covered a spread of about 6.5 minutes.” It would be incorrect to say “every trip was within 6.5 minutes of the median,” to claim 6.5 students were in the box, or to generalize to all students without a sampling argument.\nCheckpoint: If two boxes have equal IQR but different medians, which feature changed? Their centers differ, but their central-half spread is equal. To compare, use the same numerical axis and units and check outliers separately.\n\n\nMean versus median: a helpful, nonabsolute pattern\nThe mean uses every observed value, whereas the median depends on rank. In a roughly symmetric distribution, mean and median are typically close. In a right-skewed distribution, the mean is usually larger than the median; in a left-skewed distribution, the mean is usually smaller. This is a tendency, not a logical equivalence: mean &gt; median does not prove right skew, and close values do not prove symmetry. Interpret shape with a dotplot or histogram whenever possible.\nRecall the sample mean formula from Topic 1.7:\nx‾=∑i=1nxin.\n\\bar x = \\frac{\\sum_{i=1}^n x_i}{n}.\n\n\n\nWhy does changing one value move the mean? — Optional algebra\n\n\nOptional enrichment — this derivation is not required for AP Statistics. If a single observation increases by d, the sum increases by d; the new mean becomes (S+d)/n = S/n+d/n. The original times sum to 110, giving 110/9 = 12.22 minutes. Changing 18 to 50 increases the total by 32, so the mean rises by 32/9 ≈ 3.56 to 142/9 ≈ 15.78 minutes. The middle observation remains 12, so the median does not change. This is an algebraic statement about the mean, not a universal test of shape.\n\n\nRight-tail example. The original times have mean 12.22 minutes and median 12 minutes. With 50 replacing 18, the mean rises to 15.78 minutes, while the median stays 12. The resulting long right tail has pulled the mean above the median.\nLeft-tail example. For the hypothetical times 1, 32, 33, 34, 35, 36, 37, 38, 39 minutes, the median is 35, but the total is 285, giving mean 285/9 ≈ 31.67 minutes. One unusually low value pulls the mean below the median. Remember: the relative positions of mean and median are evidence about skewness, but the complete distribution is needed to assess shape reliably.\nThink carefully: Does the median ever lie outside the box? No—the two quartile boundaries enclose the middle ranked position. Does the mean have to be inside the box? No. It may lie outside when sufficiently extreme observations shift it.",
+    "crumbs": [
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Topic 1.8 Graphical Representations of Summary Statistics for One Quantitative Variable</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 1/Topic 1.8/topic-1-8.html#released-exam-connection",
+    "href": "Unit 1/Topic 1.8/topic-1-8.html#released-exam-connection",
+    "title": "Topic 1.8 Graphical Representations of Summary Statistics for One Quantitative Variable",
+    "section": "5 · Released exam connection",
+    "text": "5 · Released exam connection\nThe final section discusses a released exam question and provides original practice.\nThe official 2019 AP Statistics FRQ 1(b)–(c) tests outlier screening and boxplot construction.\nThe released 2019 exam, Question 1 and its official scoring guide give the university room-size problem. For this independent walkthrough, the five-number summary in square feet is (134, 174, 253.5, 292, 315). The IQR is 118; the two 1.5-IQR fences are −3 and 469. Neither extreme is an outlier. Draw a box from 174 to 292, a median line at 253.5, and whiskers at the actual observed extrema, 134 and 315.\nThe released histogram has two clusters that the boxplot does not directly reveal. That comparison is a key reason to examine both a distribution plot and a numerical-summary plot. The calculation above is independent teaching commentary, not a reproduction of the official question or graph.",
+    "crumbs": [
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Topic 1.8 Graphical Representations of Summary Statistics for One Quantitative Variable</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 1/Topic 1.8/topic-1-8.html#takeaway-18",
+    "href": "Unit 1/Topic 1.8/topic-1-8.html#takeaway-18",
+    "title": "Topic 1.8 Graphical Representations of Summary Statistics for One Quantitative Variable",
+    "section": "Common mistakes and a final synthesis",
+    "text": "Common mistakes and a final synthesis\nThe median stroke is not the mean. A computed fence is not a whisker endpoint. A box length measures numerical middle-half spread, not the number of distinct observations. A modified boxplot with an outlier still has a five-number summary that records the actual minimum and maximum. Always report the measured variable, group and units, and consult a dotplot or histogram when shape matters.",
+    "crumbs": [
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Topic 1.8 Graphical Representations of Summary Statistics for One Quantitative Variable</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 1/Topic 1.8/topic-1-8.html#practice-18",
+    "href": "Unit 1/Topic 1.8/topic-1-8.html#practice-18",
+    "title": "Topic 1.8 Graphical Representations of Summary Statistics for One Quantitative Variable",
+    "section": "Practice · one question at a time",
+    "text": "Practice · one question at a time\nThe following original exercises are stored centrally under Problem Bank, rather than copied into lesson files. Use Previous and Next question while keeping this page of notes accessible. Hints, checking feedback and detailed model solutions are provided without submitting personal answers.\n\nLoading the original practice questions. Enable JavaScript for the compact one-question-at-a-time reader.\nJavaScript is disabled. These are the complete original questions with model solutions; all content comes from the same public JSON bank.\nMHS-U1-T18-001Seven ordered practice scores are 4, 6, 8, 8, 9, 12, 14. Under the median-of-halves convention excluding the overall median, which is the five-number summary?\nA. (4, 6, 8, 12, 14)\nB. (4, 8, 8, 9, 14)\nC. (4, 6, 8, 9, 14)\nD. (4, 8, 9, 12, 14)\nShow solutionA. Minimum 4, Q1=median(4,6,8)=6, overall median 8, Q3=median(9,12,14)=12, maximum 14. These are scores and should be labelled as such.\nMHS-U1-T18-002The nine ordered travel distances, in kilometres, are 2, 4, 5, 6, 8, 10, 12, 14, 20. Find the IQR using the median-of-halves convention that excludes the overall median.\nShow solutionThe lower half 2,4,5,6 has median Q1=(4+5)/2=4.5 km. The upper half 10,12,14,20 has median Q3=(12+14)/2=13 km. IQR=13−4.5=8.5 km.\nMHS-U1-T18-003For the nine workshop journeys 5, 8, 10, 12, 12, 14, 15, 16, 18 minutes, calculate the UPPER 1.5-IQR fence in minutes using the chapter's quartile convention.\nShow solutionIQR=15.5−9=6.5 minutes. Upper fence U=15.5+1.5(6.5)=25.25 minutes. This is a screening boundary, not necessarily an observed time.\nMHS-U1-T18-004The sorted times 5, 8, 10, 12, 12, 14, 15, 16, 50 minutes have upper 1.5-IQR fence 25.25. Where should the RIGHT whisker end in a MODIFIED boxplot? Enter the observed value in minutes.\nShow solutionThe 50-minute time lies beyond the upper fence, so plot 50 separately. The largest observed non-outlier is 16 minutes; the right modified whisker ends at 16.\nMHS-U1-T18-005Which feature is most likely to be visible in a dotplot or histogram but hidden in a boxplot?\nA. The median\nB. The interquartile range\nC. Two separate clusters or peaks\nD. The approximate location of the quartiles\nShow solutionC. A boxplot preserves the five landmarks (and potentially outlier markings) but cannot reliably communicate the number of peaks or gaps. Use a dotplot/histogram to study detailed shape.\nMHS-U1-T18-006Which statement is generally accurate for a strongly right-skewed quantitative distribution?\nA. The mean is usually larger than the median, but this is not a universal test.\nB. The mean is always smaller than the median.\nC. The mean and median must be exactly equal.\nD. If the mean exceeds the median, the distribution must be right-skewed.\nShow solutionA. A long right tail often pulls the mean above the median. It is only a tendency: mean greater than median is not a sufficient condition for right skew.\nMHS-U1-T18-007Two hypothetical groups' travel times are in minutes. Group A has five-number summary (2, 4, 6, 8, 10); Group B has (2, 3, 6, 9, 10). Compare medians and middle-half variability using numbers, and explain one conclusion that is NOT justified by these summaries.\nShow solutionBoth groups have median 6 minutes. Group A has IQR=8−4=4 minutes, whereas Group B has IQR=9−3=6 minutes, so Group B's central half is more variable by 2 minutes. The summaries alone cannot identify causes of the difference, reveal gaps/modes, or establish a population-level difference.\nMHS-U1-T18-008Construct a modified boxplot on a number line for 3, 4, 5, 6, 7, 8, 9, 10, 30 minutes. State the five-number summary, IQR, numerical fences, actual whisker endpoints, and any separate outlier marker. Explain the difference between fence and whisker.\nShow solutionMinimum 3, Q1=(4+5)/2=4.5, median 7, Q3=(9+10)/2=9.5, maximum 30 minutes. IQR=5. Fences are L=4.5−7.5=−3 and U=9.5+7.5=17 minutes. Draw a box from 4.5 to 9.5 with median at 7; left whisker to observed 3, right whisker to observed 10; mark 30 separately as a potential outlier. The fence 17 is a boundary, not an observation.\nMHS-U1-T18-009Hypothetical travel times in minutes are 1, 32, 33, 34, 35, 36, 37, 38, 39. What is the sample mean in minutes? Enter your answer to two decimals.\nShow solutionSum=285 minutes, n=9; mean=285/9≈31.67 minutes, less than median 35. The low observation contributes to a long left tail; the mean–median pattern is a tendency, not a proof of skewness.",
+    "crumbs": [
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Topic 1.8 Graphical Representations of Summary Statistics for One Quantitative Variable</span>"
+    ]
+  },
+  {
     "objectID": "Unit 1/Shared/practice.html",
     "href": "Unit 1/Shared/practice.html",
     "title": "Practice and solutions",
@@ -781,7 +869,7 @@
     "text": "1 · Draw from a frequency table\nThirty students recorded school-shuttle waiting times. Use 5-minute bins from 0 to 30 and the left-inclusive, right-exclusive rule. Draw a histogram on paper with labelled axes, equal-width touching bars, and a zero baseline.\nAfter drawing, use the digital check to reconstruct your heights. It checks heights only, not the labels on your paper.",
     "crumbs": [
       "Unit 1: Exploring One-Variable Data and Collecting Data",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Practice and solutions</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Practice and solutions</span>"
     ]
   },
   {
@@ -792,7 +880,7 @@
     "text": "Waiting time (minutes)\nFrequency\n\n\n\n\n0≤x&lt;50\\leq x&lt;5\n3\n\n\n5≤x&lt;105\\leq x&lt;10\n7\n\n\n10≤x&lt;1510\\leq x&lt;15\n10\n\n\n15≤x&lt;2015\\leq x&lt;20\n6\n\n\n20≤x&lt;2520\\leq x&lt;25\n3\n\n\n25≤x&lt;3025\\leq x&lt;30\n1\n\n\n\n\n\n\nEnter six bar heights, check them against the table, and view your attempt.\n\n\n\n\nShow the completed histogram\n\n\n\n\nHeights are 3, 7, 10, 6, 3, 1, totaling 30. Every bar is 5 minutes wide. The tallest bar means ten waits from 10 to under 15 minutes—not ten waits exactly equal to 10.",
     "crumbs": [
       "Unit 1: Exploring One-Variable Data and Collecting Data",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Practice and solutions</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Practice and solutions</span>"
     ]
   },
   {
@@ -803,7 +891,7 @@
     "text": "2 · Stem, leaf, and key\nConstruct a stem-and-leaf plot for 1.2, 1.5, 1.5, 2.0, 2.3 seconds. Explain the repeated leaf.\n\n\nShow solution\n\n1 | 2 5 5\n2 | 0 3\nKey: 1 | 2 = 1.2 seconds\nFive leaves represent five observations. The repeated 1.5 needs two leaves of 5. A zero leaf preserves the 2.0-second observation.",
     "crumbs": [
       "Unit 1: Exploring One-Variable Data and Collecting Data",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Practice and solutions</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Practice and solutions</span>"
     ]
   },
   {
@@ -814,7 +902,7 @@
     "text": "3 · Bin boundaries\nWhich 10-minute commute bin contains 20? Does the first occupied bin prove the recorded minimum is 0?\n\n\nShow solution\n\n20 enters 20≤x&lt;3020\\leq x&lt;30, not the preceding bin. The first occupied bin establishes a value in 0≤x&lt;100\\leq x&lt;10, not necessarily 0. The original list—not the histogram—identifies the minimum as 5.",
     "crumbs": [
       "Unit 1: Exploring One-Variable Data and Collecting Data",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Practice and solutions</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Practice and solutions</span>"
     ]
   },
   {
@@ -825,7 +913,7 @@
     "text": "4 · Repair turnaround times\nDescribe the histogram of 40 bicycle repairs. Find the percentage taking at least 4 hours. Can you recover the most common exact time?\n\n\nOne-hour bins from 0 to 8: frequencies 12, 10, 7, 5, 3, 2, 1, 0.\n\n\n\n\nShow solution\n\nRepair times are unimodal and right-skewed, centered around 1–3 hours. Values occupy bins from 0 to under 7 hours. No displayed internal bin is empty. The one observation in 6–7 hours is not automatically an outlier; an empty final 7–8 bin is not an internal gap.\nAt least 4 hours: (3+2+1)/40=15%(3+2+1)/40=15\\%. The most frequent interval is 0–1 hour. The most common exact value is not recoverable.",
     "crumbs": [
       "Unit 1: Exploring One-Variable Data and Collecting Data",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Practice and solutions</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Practice and solutions</span>"
     ]
   },
   {
@@ -836,7 +924,7 @@
     "text": "5 · Two concentrations\nDescribe shape, center, spread, and the empty internal interval for these 40 library study sessions. What percentage lasted from 30 to under 90 minutes?\n\n\nFifteen-minute bins from 0 to 120: frequencies 2, 10, 8, 0, 0, 8, 10, 2.\n\n\n\n\nShow solution\n\nThe displayed distribution is approximately symmetric and bimodal, with main concentrations in 15–45 and 75–105 minutes. The visual center near 60 minutes lies in a gap, not at a typical observed session. Occupied bins span roughly 0–120 minutes. There are no observations from 45 to under 75 minutes.\nThe count from 30 to under 90 is 8+0+0+8=168+0+0+8=16, giving 16/40=40%16/40=40\\%. A single center would hide the two concentrations. The exact median is not available from the histogram.",
     "crumbs": [
       "Unit 1: Exploring One-Variable Data and Collecting Data",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Practice and solutions</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Practice and solutions</span>"
     ]
   },
   {
@@ -847,7 +935,7 @@
     "text": "6 · What could be inside a bin?\nTwo commute times lie in 40–50 and one in 50–60 minutes. How many are at least 40? How many could be at least 45?\n\n\nShow solution\n\nExactly 3 are at least 40. Between 1 and 3 could be at least 45: the last-bin observation definitely qualifies; either, neither, or both observations in the preceding bin might qualify. Do not add a uniformity assumption.",
     "crumbs": [
       "Unit 1: Exploring One-Variable Data and Collecting Data",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Practice and solutions</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Practice and solutions</span>"
     ]
   },
   {
@@ -858,7 +946,7 @@
     "text": "7 · Oxygen: count and context\nReturn to the oxygen histogram. How many sampled cold streams recorded below 6 mg/L? What percentage is this? What does the empty 3–4 bin establish?\n\n\nShow solution\n\nThe first four counts total 1+0+1+1=31+0+1+1=3. The percentage is 3/429×100%≈0.7%3/429\\times100\\%\\approx0.7\\%. Under our convention, no observed concentration lies in 3≤x&lt;43\\leq x&lt;4 mg/L. This does not show that such concentrations are impossible in all streams.",
     "crumbs": [
       "Unit 1: Exploring One-Variable Data and Collecting Data",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Practice and solutions</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Practice and solutions</span>"
     ]
   },
   {
@@ -869,7 +957,7 @@
     "text": "8 · Repair a weak description\nA student writes, “The graph is high in the middle and goes up and down.” Replace this with all four parts of a contextual description.\n\n\nTwenty review-session lengths span 4–30 minutes, with approximate symmetry and a broad central concentration.\n\n\n\n\nShow a model response\n\nAmong these 20 students, review-session lengths are approximately symmetric with one broad central concentration, centered around 16–18 minutes. Recorded values extend from 4 to 30 minutes, with no clearly isolated observation or large internal gap.\nThe dotplot preserves individual values, so the observed endpoints are available. Wide histogram bins would warrant less exact wording.",
     "crumbs": [
       "Unit 1: Exploring One-Variable Data and Collecting Data",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Practice and solutions</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Practice and solutions</span>"
     ]
   },
   {
@@ -880,7 +968,7 @@
     "text": "Before the next class\nExplain one dot versus one bin, construct a histogram from a table, name skew from the tail, and support a claim with calculation + context. Return to the relevant chapter when an answer depends on a guess rather than evidence.",
     "crumbs": [
       "Unit 1: Exploring One-Variable Data and Collecting Data",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Practice and solutions</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Practice and solutions</span>"
     ]
   },
   {
@@ -930,7 +1018,7 @@
     "section": "",
     "text": "Open your class question file\nA focused selection of 20 questions from the Week 2 and Week 3 homework, organized by the existing Unit 1 topics. Each question keeps its original homework number and page reference.\nYour teacher provides mhs-week-2-3.practice.json separately. Open it using the control below; the questions and original diagrams will appear here and in the Selected homework practice section of each relevant lesson. Choose an answer, check it, and reveal an explanation when ready. Opening a file does not submit work or record a grade.\nThe public website contains the selection catalogue and practice interface, not the College Board question text, diagrams, or answer key. The class file is read locally and retained in this tab’s session storage. Use Forget class file when finished, particularly on a shared device. A restored browser session may retain tab storage; explicitly forgetting the file is the safest way to clear it.",
     "crumbs": [
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Problem Bank: Selected Homework</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Problem Bank: Selected Homework</span>"
     ]
   },
   {
@@ -940,7 +1028,7 @@
     "section": "",
     "text": "Selected homework references are listed below. Enable JavaScript and open the class question file to display the questions locally; no question file is uploaded.\nWeek 2.0, Question 1.0 — Topic 1.2: Continuous measurements versus counts (homework pages 1.0).\nWeek 2.0, Question 3.0 — Topic 1.2: A quantitative variable among categorical choices (homework pages 1.0).\nWeek 2.0, Question 4.0 — Topic 1.2: How the recording rule changes the variable type (homework pages 2.0).\nWeek 2.0, Question 6.0 — Topic 1.2: Category observations are not category counts (homework pages 3.0).\nWeek 2.0, Question 15.0 — Topic 1.3: Validate a relative-frequency table (homework pages 8.0, 9.0, 10.0).\nWeek 2.0, Question 17.0 — Topic 1.3: A percentage does not determine an absolute count (homework pages 12.0).\nWeek 2.0, Question 18.0 — Topic 1.3: Check a claim against a frequency table (homework pages 13.0).\nWeek 2.0, Question 20.0 — Topic 1.3: Combine categories using the correct denominator (homework pages 14.0).\nWeek 2.0, Question 16.0 — Topic 1.4: Compare rates without confusing them with counts (homework pages 11.0).\nWeek 2.0, Question 22.0 — Topic 1.4: Read a pie chart as parts of one whole (homework pages 15.0).\nWeek 2.0, Question 24.0 — Topic 1.4: Convert chart proportions to counts when n is known (homework pages 16.0).\nWeek 2.0, Question 25.0 — Topic 1.4: Use the number of games as the percentage denominator (homework pages 17.0).\nWeek 3.0, Question 10.0 — Topic 1.5: What changing histogram bin width preserves (homework pages 5.0).\nWeek 3.0, Question 16.0 — Topic 1.5: Read a split stem-and-leaf display (homework pages 8.0).\nWeek 3.0, Question 17.0 — Topic 1.5: Construct a stemplot without losing repeats (homework pages 9.0, 10.0).\nWeek 3.0, Question 1.0 — Topic 1.6: Compare tails in a back-to-back stemplot (homework pages 1.0).\nWeek 3.0, Question 3.0 — Topic 1.6: Describe shape and features in a dotplot (homework pages 2.0).\nWeek 3.0, Question 8.0 — Topic 1.6: Identify skewness from a histogram tail (homework pages 4.0).\nWeek 3.0, Question 12.0 — Topic 1.6: Distinguish a visual potential outlier from a formal test (homework pages 7.0).\nWeek 3.0, Question 19.0 — Topic 1.6: Recognize approximate uniformity (homework pages 11.0).",
     "crumbs": [
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Problem Bank: Selected Homework</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Problem Bank: Selected Homework</span>"
     ]
   },
   {
@@ -950,7 +1038,7 @@
     "section": "Coverage",
     "text": "Coverage\n\n\n\n\n\n\n\nTopic\nSelected homework questions\n\n\n\n\n1.1\nNo direct selection from these files; existing original practice retained.\n\n\n1.2\nWeek 2: 1, 3, 4, 6\n\n\n1.3\nWeek 2: 15, 17, 18, 20\n\n\n1.4\nWeek 2: 16, 22, 24, 25\n\n\n1.5\nWeek 3: 10, 16, 17\n\n\n1.6\nWeek 3: 1, 3, 8, 12, 19\n\n\n\nWeek 3 Question 16 is a bridge: it requires reading a split stem-and-leaf plot and interpreting clusters, so it has Topic 1.6 as a secondary tag. Questions on numerical summaries are reserved for later lessons rather than being forced into the current topics. Units 2–5 remain under construction.",
     "crumbs": [
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Problem Bank: Selected Homework</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Problem Bank: Selected Homework</span>"
     ]
   },
   {
@@ -960,7 +1048,7 @@
     "section": "Source and access notes",
     "text": "Source and access notes\nBoth supplied homework files are labelled College Board test booklets. Their public redistribution rights have not been confirmed. The AP Services Terms of Service, Intellectual Property section, restrict republication of AP Services content without express written permission. The full source files and class question file are therefore not hosted in this public repository or website. Use the class file only through your teacher’s authorized classroom arrangements; local loading is not a grant of redistribution permission.\nExplanations were independently derived for this selection because no official answer key accompanied these uploads. The one monetary-formatting repair in Week 3 Question 10 is disclosed alongside that question. No replacement questions have been passed off as homework originals.",
     "crumbs": [
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Problem Bank: Selected Homework</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Problem Bank: Selected Homework</span>"
     ]
   },
   {
@@ -970,7 +1058,7 @@
     "section": "",
     "text": "Basis of the pilot\nThis book adapts Chun Li’s revised 45-slide Seeing Quantitative Data presentation and 30-page Representing and Describing Quantitative Data study guide for Maple Hill School. It retains the revised sequence, classroom datasets, whole-bar construction, endpoint convention, and evidence-based descriptions.\nThe scope follows the instructor-supplied College Board essential-knowledge excerpts 1.5.A.1–4, 1.6.A.1–6, and 1.6.B.1. Detailed numerical-summary formulas and inference are left to later lessons.",
     "crumbs": [
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Sources and study resources</span>"
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Sources and study resources</span>"
     ]
   },
   {
@@ -980,7 +1068,7 @@
     "section": "",
     "text": "Book section\nRevised lecture slides\n\n\n\n\nIndividual values\n3–9\n\n\nHistogram construction and laboratory\n10–19\n\n\nHand construction and data recovery\n20–23\n\n\nShape, center, spread, unusual features\n24–32\n\n\nDescriptions and supported claims\n33–37\n\n\nOxygen and closing practice\n38–45",
     "crumbs": [
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Sources and study resources</span>"
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Sources and study resources</span>"
     ]
   },
   {
@@ -990,7 +1078,7 @@
     "section": "Published datasets",
     "text": "Published datasets\nThe shape challenge uses the values packaged with the revised lecture. Their documented sources are:\n\nR datasets: rivers: 141 major North American river lengths in miles, a historical compilation identified as the 1975 World Almanac.\nR datasets: faithful: 272 waiting times between Old Faithful eruptions, in minutes.\nR datasets: iris: the 50 Iris setosa sepal lengths, in centimeters, from Anderson’s iris measurements.\n\nThese are published observations, not freshly simulated data. Other classroom datasets are explicitly hypothetical. Bin choices are teaching decisions, not properties of the observations.",
     "crumbs": [
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Sources and study resources</span>"
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Sources and study resources</span>"
     ]
   },
   {
@@ -1000,7 +1088,7 @@
     "section": "Exam connections",
     "text": "Exam connections\n2023 AP Statistics, Question 1(a): the official question, PDF page 4 supplies the oxygen histogram. This book redraws its numerical frequencies and provides classroom explanations and follow-ups, not an official scoring key.\n2022 AP Statistics, Question 5: chocolate values are the revised lecture’s numerical transcription of the instructor-supplied dotplots. The public site does not upload the original screenshot or exam text. Consult College Board’s exam archive for currently available materials; older exam availability may differ.\nAP is a registered trademark of the College Board. This independent classroom resource is not affiliated with or endorsed by the College Board. Third-party material retains its owners’ rights; no blanket open-content license is asserted for it.",
     "crumbs": [
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Sources and study resources</span>"
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Sources and study resources</span>"
     ]
   },
   {
@@ -1010,7 +1098,7 @@
     "section": "Printing and downloads",
     "text": "Printing and downloads\nYour browser’s Print / Save as PDF command saves a chapter. Printing expands solutions and displays completed construction examples. The screen version keeps solutions hidden until you open them.\nDownload the commute values as CSV. Editable .qmd source, a portable preview builder, Quarto configuration, tests, and publishing instructions are included in the project.",
     "crumbs": [
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Sources and study resources</span>"
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Sources and study resources</span>"
     ]
   },
   {
@@ -1020,7 +1108,7 @@
     "section": "Privacy and limitations",
     "text": "Privacy and limitations\nThere are no accounts, analytics scripts, advertisements, grades database, or student-submission service. Activity choices remain in the current page and disappear on refresh; they are not sent to a teacher. Normal hosting logs are separate: GitHub documents IP logging for Pages security.\nJavaScript enables the activities. Core prose, tables, and solution text remain available without it. Charts use bundled data and do not request a remote statistical service. Search operates on the hosted site or a locally served copy; browser restrictions may affect search when opening a downloaded file directly.",
     "crumbs": [
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Sources and study resources</span>"
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Sources and study resources</span>"
     ]
   },
   {
@@ -1030,7 +1118,7 @@
     "section": "Technical format",
     "text": "Technical format\nThe publishing source is a Quarto HTML book with chapter navigation, search, mathematical typesetting, and custom JavaScript/SVG activities. It needs no running notebook kernel or paid backend. The downloadable portable preview uses Pandoc with the same chapter text and activities; the automated Quarto build produces the hosted book.",
     "crumbs": [
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Sources and study resources</span>"
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Sources and study resources</span>"
     ]
   },
   {
@@ -1040,7 +1128,7 @@
     "section": "Foundations curriculum alignment",
     "text": "Foundations curriculum alignment\nThe foundations sequence follows the official AP Statistics Course and Exam Description, effective Fall 2026: Topic 1.1 on printed pp. 30–31; Topic 1.2 on pp. 32–33; Topic 1.3 on p. 34; Topic 1.4 on p. 35. The curriculum was checked on October 13, 2026. Explanations and new practice are independently authored; the book does not reproduce secure AP Classroom questions.\nThe School A, School B, movie-survey and study-location examples originated in Chun Li’s revised Topics 1.1–1.4 materials. They are hypothetical, not records of actual Maple Hill School students. Their reusable summaries are in foundations.json. The 24 commute times used in Topic 1.5 are a separate dataset.",
     "crumbs": [
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Sources and study resources</span>"
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Sources and study resources</span>"
     ]
   },
   {
@@ -1050,7 +1138,7 @@
     "section": "Topic 1.4 charts",
     "text": "Topic 1.4 charts\nThe categorical graph lesson is based on the official Fall 2026 CED Topic 1.4 (printed p. 35). Count/percentage bars, pie diagrams, chart-audit cases and print references are original classroom material. Their reusable source assets are Unit 1/Topic 1.4/assets/categorical-charts.js and Unit 1/Topic 1.4/assets/categorical-charts.css. The hypothetical School A and School B summaries and their provenance are in foundations.json. No secure AP Classroom assessments are reproduced.",
     "crumbs": [
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Sources and study resources</span>"
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Sources and study resources</span>"
     ]
   }
 ]
