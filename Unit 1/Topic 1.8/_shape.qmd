@@ -1,0 +1,15 @@
+## 4 · Reading and interpreting boxplots {#reading-18}
+
+The **median stroke** locates the middle ranked observation; it is *not* the mean. The box length on the numerical axis equals the IQR. A longer box means greater spread among roughly the middle half of the measured values. A longer right whisker or a right-side outlier may indicate a long right tail; the evidence should be checked with the underlying distribution.
+
+**Equal percentages do not mean equal distances.** The quarters of an ordered sample may lie within numerical intervals of different widths. A boxplot does **not** show the sample size unless it is supplied in a label. It usually cannot reveal whether the original values form one cluster, two distinct clusters, or a gap.
+
+Two datasets with the **same five-number summary** can look very different as dotplots because the five landmarks do not specify where *every* observation lies. A boxplot is useful for compact comparisons of position and spread, whereas the [dotplots and histograms in Topic 1.5](<../Topic 1.5/topic-1-5.qmd>) are better for detecting modes and gaps.
+
+In the studio, the *two separated journey clusters* scenario places several values at low times and another group at higher times. The finished box contains no direct label for “two peaks.” The dotplot should still be consulted.
+
+### An AP-style contextual interpretation
+
+Suppose one sample of daily travel times has median **12 minutes** and IQR **6.5 minutes**. A defensible claim is: “The typical middle travel time in this sample was 12 minutes, and the central half of observed trips covered a spread of about 6.5 minutes.” It would be **incorrect** to say “every trip was within 6.5 minutes of the median,” to claim 6.5 students were in the box, or to generalize to all students without a sampling argument.
+
+**Checkpoint:** If two boxes have equal IQR but different medians, which feature changed? Their centers differ, but their central-half *spread* is equal. To compare, use the same numerical axis and units and check outliers separately.
