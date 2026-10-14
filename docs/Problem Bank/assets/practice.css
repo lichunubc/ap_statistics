@@ -1,0 +1,50 @@
+/* Deliberately scoped: do not change existing lesson activities or navigation. */
+.homework-bank { margin: 1.2rem 0 2rem; min-width: 0; }
+.bank-loader { border: 1px solid #c7d7e2; border-left: 4px solid #326789; padding: 1.1rem; border-radius: .45rem; background: #f5f9fc; }
+.bank-file-label { display: block; font-weight: 700; margin-bottom: .6rem; }
+.homework-bank input[type=file] { max-width: 100%; width: 100%; }
+.bank-privacy, .bank-source, .bank-meta, .bank-editorial { font-size: .9rem; }
+.bank-privacy { margin: .8rem 0; }
+.bank-source { color: #52616d; }
+.bank-filters { display: flex; flex-wrap: wrap; gap: 1rem; margin: 1.25rem 0 .6rem; }
+.bank-filters label { display: block; flex: 1 1 15rem; min-width: 0; font-weight: 600; }
+.bank-filters select, .bank-filters input { display: block; width: 100%; max-width: 100%; margin-top: .35rem; padding: .5rem; border: 1px solid #a8b5bf; border-radius: .3rem; font: inherit; }
+.bank-question { border: 1px solid #cdd7df; border-radius: .5rem; padding: 1.2rem; margin: 1.2rem 0; overflow-wrap: anywhere; }
+.bank-question h3 { margin: 0 0 .5rem; }
+.bank-meta { font-weight: 600; }
+.bank-locked { color: #52616d; margin-bottom: 0; }
+.bank-question fieldset { min-width: 0; margin-top: 1rem; padding: 0; border: 0; }
+.bank-question legend { font-size: 1rem; font-weight: 600; margin-bottom: .5rem; }
+.bank-choice { display: grid; grid-template-columns: 1.3rem 1.6rem minmax(0,1fr); align-items: start; gap: .4rem; border: 1px solid #d6dfe6; border-radius: .35rem; margin-bottom: .55rem; padding: .75rem; }
+.bank-choice:has(input:checked) { background: #eef5fa; border-color: #326789; }
+.bank-choice input { margin: .3rem 0 0; width: 1.05rem; height: 1.05rem; }
+.bank-choice label { font-weight: 700; cursor: pointer; }
+.bank-choice-content { min-width: 0; cursor: pointer; }
+.bank-choice-content > :last-child { margin-bottom: 0; }
+.bank-table-wrap { max-width: 100%; overflow-x: auto; margin: .8rem 0; }
+.bank-table-wrap table { width: 100%; border-collapse: collapse; font-size: .92rem; }
+.bank-table-wrap th, .bank-table-wrap td { border: 1px solid #cbd5dd; padding: .45rem .6rem; vertical-align: top; }
+.bank-table-wrap tbody th { font-weight: 400; }
+.bank-table-wrap thead th { background: #f0f4f7; }
+.bank-table-wrap caption { caption-side: top; color: inherit; font-weight: 600; }
+.bank-figure { margin: 1rem 0; }
+.bank-figure img { display: block; max-width: 100%; max-height: 28rem; width: auto; height: auto; margin: 0 auto .4rem; }
+.bank-question pre { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; white-space: pre; max-width: 100%; overflow-x: auto; font-size: 1rem; background: #f6f8fa; padding: .7rem; }
+.homework-bank button, .bank-image-dialog button { padding: .5rem .8rem; min-height: 42px; border: 1px solid #9bacb8; border-radius: .3rem; background: #fff; color: #163950; font: inherit; cursor: pointer; }
+.homework-bank button:hover { background: #edf3f7; }
+.homework-bank button:disabled { opacity: .55; cursor: default; }
+.homework-bank :focus-visible, .bank-image-dialog :focus-visible { outline: 3px solid #286ca1; outline-offset: 3px; }
+.bank-question-controls { display: flex; flex-wrap: wrap; gap: .65rem; margin-top: .75rem; }
+.bank-feedback[data-result=correct] { color: #175528; font-weight: 600; }
+.bank-feedback[data-result=incorrect] { color: #8b291c; font-weight: 600; }
+.bank-status { min-height: 1.5em; margin: .8rem 0 .2rem; }
+.bank-solution { margin-top: .7rem; padding: .8rem; border-top: 1px solid #d6dfe6; background: #f7f9fa; }
+.bank-solution summary { font-weight: 600; cursor: pointer; }
+.bank-solution p { margin: .7rem 0 0; }
+.bank-editorial { padding: .65rem; border-left: 3px solid #b78125; background: #fff8ec; }
+.bank-image-dialog { max-width: 96vw; max-height: 95vh; border: 1px solid #b6c3cd; border-radius: .4rem; padding: 1rem; }
+.bank-image-dialog::backdrop { background: rgb(0 0 0 / .5); }
+.bank-image-scroll { overflow: auto; max-height: 78vh; margin-top: .75rem; }
+.bank-image-scroll img { max-width: none; width: max(650px, min(1100px, 85vw)); height: auto; }
+@media (max-width: 575px) { .bank-question { padding: .8rem; } .bank-choice { padding: .6rem .45rem; gap: .3rem; } }
+@media print { .bank-loader, .bank-filters, .bank-question-controls, .bank-feedback, .bank-figure-button, .bank-image-dialog { display: none !important; } .bank-question { break-inside: auto; padding: .6rem; } .bank-choice, .bank-figure { break-inside: avoid; } .bank-figure img { max-height: 20rem; } }
