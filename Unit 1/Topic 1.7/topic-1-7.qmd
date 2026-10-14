@@ -20,46 +20,46 @@ Before calculating, predict: if we change **18 minutes to 50 minutes**, which wi
 
 ## 1 · Mean: the balance point {#mean}
 
-For a sample of \(n\) observations \(x_1,\ldots,x_n\), the **sample mean** is
+For a sample of $n$ observations $x_1,\ldots,x_n$, the **sample mean** is
 
-\[
+$$
 \bar{x}=\frac{\sum_{i=1}^{n}x_i}{n}.
-\]
+$$
 
-Here \(x_i\) means observation number \(i\), \(\sum\) means add, \(n\) is the number of observations, and \(\bar{x}\) is pronounced “x-bar.” The mean uses every observation and has **the same units** as the measurements. The analogous population mean is \(\mu\); do not call a sample mean a population parameter.
+Here $x_i$ means observation number $i$, $\sum$ means add, $n$ is the number of observations, and $\bar{x}$ is pronounced “x-bar.” The mean uses every observation and has **the same units** as the measurements. The analogous population mean is $\mu$; do not call a sample mean a population parameter.
 
-**Worked example.** The nine workshop travel times add to \(110\) minutes, so their mean is \(110/9\approx12.22\) **minutes per student**. A mean need not equal any observed travel time. It is the balance point of the plotted values, not necessarily the most common one.
+**Worked example.** The nine workshop travel times add to $110$ minutes, so their mean is $110/9\approx12.22$ **minutes per student**. A mean need not equal any observed travel time. It is the balance point of the plotted values, not necessarily the most common one.
 
 <details class="math-note"><summary>Why does the mean balance? — Optional derivation</summary>
-<p><strong>Optional enrichment — this algebraic derivation is not required for AP Statistics.</strong> The total signed deviation from any candidate center \(c\) is \(\sum_{i=1}^{n}(x_i-c)=\sum x_i-nc\). Setting the signed deviation to zero gives \(c=\sum x_i/n=\bar{x}\). Consequently, observations above the mean exactly balance observations below it when their signed distances are counted. This explains the seesaw analogy; it does not claim that every person travels for exactly the mean time.</p>
+<p><strong>Optional enrichment — this algebraic derivation is not required for AP Statistics.</strong> The total signed deviation from any candidate center $c$ is $\sum_{i=1}^{n}(x_i-c)=\sum x_i-nc$. Setting the signed deviation to zero gives $c=\sum x_i/n=\bar{x}$. Consequently, observations above the mean exactly balance observations below it when their signed distances are counted. This explains the seesaw analogy; it does not claim that every person travels for exactly the mean time.</p>
 </details>
 
 ### The median: the ordered middle {#median}
 
-The **median** \(Q_2\) is the middle of the *ordered* observations. For an odd number of values, read the one in position \((n+1)/2\). For an even number, average the two central ordered observations. For the nine times, the fifth value is **12 minutes**, so the median is 12 minutes. If the largest time rises dramatically, it remains the largest observation; the fifth value can remain 12.
+The **median** $Q_2$ is the middle of the *ordered* observations. For an odd number of values, read the one in position $(n+1)/2$. For an even number, average the two central ordered observations. For the nine times, the fifth value is **12 minutes**, so the median is 12 minutes. If the largest time rises dramatically, it remains the largest observation; the fifth value can remain 12.
 
 <details class="math-note"><summary>Why the middle? — Definition and convention</summary>
-<p>The median is a positional <strong>definition</strong>, not a theorem to prove. Ordering divides the observations into lower and upper positions. Averaging the two middle observations when \(n\) is even is a standard convention for reporting one central number; it is not a claim that anybody actually observed that average. Position counting follows because an odd list of \(n=2k+1\) observations has \(k\) values before and \(k\) after position \(k+1=(n+1)/2\).</p>
+<p>The median is a positional <strong>definition</strong>, not a theorem to prove. Ordering divides the observations into lower and upper positions. Averaging the two middle observations when $n$ is even is a standard convention for reporting one central number; it is not a claim that anybody actually observed that average. Position counting follows because an odd list of $n=2k+1$ observations has $k$ values before and $k$ after position $k+1=(n+1)/2$.</p>
 </details>
 
 **Checkpoint.** For ordered quiz scores 6, 8, 11, 12, what is the median? The central scores are 8 and 11, giving **9.5**. That does not have to be an actual score.
 
 ## 2 · Position: extremes, quartiles, and percentiles {#position}
 
-The **minimum** is the smallest observed value; the **maximum** is the largest. We describe the middle portion of an ordered sample using quartiles: \(Q_1\), median \(Q_2\), and \(Q_3\). For this course's hand calculations, we use the common **median-of-halves** convention:
+The **minimum** is the smallest observed value; the **maximum** is the largest. We describe the middle portion of an ordered sample using quartiles: $Q_1$, median $Q_2$, and $Q_3$. For this course's hand calculations, we use the common **median-of-halves** convention:
 
 1. Sort the observations.
 2. Find the median.
-3. If \(n\) is odd, **exclude the overall median** when splitting the lower and upper halves. If \(n\) is even, split evenly between the two central observations.
-4. Find the median of each half. Those values are \(Q_1\) and \(Q_3\).
+3. If $n$ is odd, **exclude the overall median** when splitting the lower and upper halves. If $n$ is even, split evenly between the two central observations.
+4. Find the median of each half. Those values are $Q_1$ and $Q_3$.
 
-For the nine times, the lower half is 5, 8, 10, 12, with median \((8+10)/2=9\); the upper half is 14, 15, 16, 18, with median \((15+16)/2=15.5\). Thus the **five-number summary** is **(5, 9, 12, 15.5, 18)** minutes. The quartiles roughly locate the lowest 25%, halfway point, and lowest 75% of observations. Repeated values and small sample sizes can make exact fractions differ from those percentages.
+For the nine times, the lower half is 5, 8, 10, 12, with median $(8+10)/2=9$; the upper half is 14, 15, 16, 18, with median $(15+16)/2=15.5$. Thus the **five-number summary** is **(5, 9, 12, 15.5, 18)** minutes. The quartiles roughly locate the lowest 25%, halfway point, and lowest 75% of observations. Repeated values and small sample sizes can make exact fractions differ from those percentages.
 
 <details class="math-note"><summary>Why these quartiles? — A calculation convention</summary>
 <p><strong>Convention, not a universal proof:</strong> Software programs use several legitimate quartile algorithms, particularly when a sample is small or has repeated values. We use the median of each half, excluding the overall median when the sample size is odd, and apply it consistently. Other software may interpolate between ordered positions and report slightly different quartiles. State the convention or rely on the convention used by a specified calculator.</p>
 </details>
 
-The **\(p\)th percentile** locates a value at or below which approximately \(p\%\) of observations fall. Thus a reported 75th-percentile score is not “75% correct”; it describes **relative position among observations**. With ties, different percentile-rank conventions and interpolation may yield slightly different numerical results. Always name the variable and the population/sample being compared.
+The **$p$th percentile** locates a value at or below which approximately $p\%$ of observations fall. Thus a reported 75th-percentile score is not “75% correct”; it describes **relative position among observations**. With ties, different percentile-rank conventions and interpolation may yield slightly different numerical results. Always name the variable and the population/sample being compared.
 
 <details class="math-note"><summary>Why does a percentile describe position? — Definition</summary>
 <p>Percentile is a positional convention: order the observations, then find a boundary associated with the stated cumulative percentage. For example, 75% corresponds to three quarters of the ordered positions. No unique finite-sample interpolation formula is forced by this definition; report the procedure your problem specifies.</p>
@@ -71,11 +71,11 @@ A center does not tell you how scattered the observations are. If the nine times
 
 The **range** measures the distance between the extreme observations:
 
-\[
+$$
 \text{range}=x_{\max}-x_{\min}.
-\]
+$$
 
-For our times it is \(18-5=13\) minutes.
+For our times it is $18-5=13$ minutes.
 
 <details class="math-note"><summary>Why subtract extremes? — Definition</summary>
 <p>The range is <strong>defined</strong> as the length of the interval extending from the minimum to the maximum. Subtracting the left endpoint from the right endpoint gives that interval's length. It uses only two values, so one extreme observation can change it substantially.</p>
@@ -83,35 +83,35 @@ For our times it is \(18-5=13\) minutes.
 
 The **interquartile range**, or **IQR**, measures the width of the middle half:
 
-\[
+$$
 \mathrm{IQR}=Q_3-Q_1.
-\]
+$$
 
-Here it is \(15.5-9=\mathbf{6.5}\) minutes. IQR uses quartiles rather than extremes, so it is usually more resistant to outliers than the range.
+Here it is $15.5-9=\mathbf{6.5}$ minutes. IQR uses quartiles rather than extremes, so it is usually more resistant to outliers than the range.
 
 <details class="math-note"><summary>Why Q3 minus Q1? — Definition</summary>
-<p>Subtracting the lower boundary \(Q_1\) from the upper boundary \(Q_3\) measures the width of their interval, which covers the middle portion of the ordered observations. This is the definition of the IQR, not a statistical theorem. Ties or a small sample can change the exact fraction of observations between the boundaries.</p>
+<p>Subtracting the lower boundary $Q_1$ from the upper boundary $Q_3$ measures the width of their interval, which covers the middle portion of the ordered observations. This is the definition of the IQR, not a statistical theorem. Ties or a small sample can change the exact fraction of observations between the boundaries.</p>
 </details>
 
 ### Standard deviation: typical distance from the mean {#standard-deviation}
 
 The **sample variance** and **sample standard deviation** are
 
-\[
+$$
 s^2=\frac{\sum_{i=1}^{n}(x_i-\bar{x})^2}{n-1},
 \qquad
 s=\sqrt{s^2}.
-\]
+$$
 
-Each \((x_i-\bar{x})\) is a deviation from the sample mean. Squaring keeps positive and negative deviations from cancelling. We divide by \(n-1\) for the **sample** variance, then take the square root to return to the **original measurement units**. Variance has **squared units**, such as minutes²; standard deviation has **minutes**. When analyzing a complete population instead, its population variance uses the population mean and the population count \(N\) as the denominator, and the population standard deviation is denoted by \(\sigma\).
+Each $(x_i-\bar{x})$ is a deviation from the sample mean. Squaring keeps positive and negative deviations from cancelling. We divide by $n-1$ for the **sample** variance, then take the square root to return to the **original measurement units**. Variance has **squared units**, such as minutes²; standard deviation has **minutes**. When analyzing a complete population instead, its population variance uses the population mean and the population count $N$ as the denominator, and the population standard deviation is denoted by $\sigma$.
 
-**Worked computation.** For the nine workshop times, \(\bar{x}\approx12.222\). Substituting all nine deviations into the sample formula gives \(s^2\approx16.6944\) minutes² and \(s\approx4.086\) minutes. In context, travel times typically differ from the mean by **roughly four minutes**. Standard deviation is *not* exactly the arithmetic mean of the absolute deviations.
+**Worked computation.** For the nine workshop times, $\bar{x}\approx12.222$. Substituting all nine deviations into the sample formula gives $s^2\approx16.6944$ minutes² and $s\approx4.086$ minutes. In context, travel times typically differ from the mean by **roughly four minutes**. Standard deviation is *not* exactly the arithmetic mean of the absolute deviations.
 
 <details class="math-note"><summary>Why square deviations and divide by n−1? — Optional derivation</summary>
-<p><strong>Optional enrichment — this mathematical derivation is not required for AP Statistics.</strong> The mean minimizes the sum of squared deviations: \(\sum (x_i-c)^2=\sum(x_i-\bar{x})^2+n(c-\bar{x})^2\), so the squared-deviation total is smallest at \(c=\bar{x}\). Because \(\sum(x_i-\bar{x})=0\), after estimating the sample mean only \(n-1\) deviations are free to vary. More formally, for independent identically distributed observations with finite population variance \(\sigma^2\), \(E[\sum(X_i-\bar X)^2]=(n-1)\sigma^2\), so dividing by \(n-1\) makes <em>sample variance</em> an unbiased estimator of \(\sigma^2\). This does <strong>not</strong> make \(s\) itself an unbiased estimator of \(\sigma\). Taking the square root produces a spread in the original units.</p>
+<p><strong>Optional enrichment — this mathematical derivation is not required for AP Statistics.</strong> The mean minimizes the sum of squared deviations: $\sum (x_i-c)^2=\sum(x_i-\bar{x})^2+n(c-\bar{x})^2$, so the squared-deviation total is smallest at $c=\bar{x}$. Because $\sum(x_i-\bar{x})=0$, after estimating the sample mean only $n-1$ deviations are free to vary. More formally, for independent identically distributed observations with finite population variance $\sigma^2$, $E[\sum(X_i-\bar X)^2]=(n-1)\sigma^2$, so dividing by $n-1$ makes <em>sample variance</em> an unbiased estimator of $\sigma^2$. This does <strong>not</strong> make $s$ itself an unbiased estimator of $\sigma$. Taking the square root produces a spread in the original units.</p>
 </details>
 
-**Interpretation check.** If two groups have similar means but group B has a substantially larger \(s\), the observations in B are generally more spread out **around their group mean**. This alone does not prove that one group has outliers or that either distribution is normal.
+**Interpretation check.** If two groups have similar means but group B has a substantially larger $s$, the observations in B are generally more spread out **around their group mean**. This alone does not prove that one group has outliers or that either distribution is normal.
 
 ## 4 · Interactively move observations and watch summaries change {#summary-lab}
 
@@ -120,41 +120,34 @@ Predict the direction of the mean, median, IQR, and standard deviation before us
 <section class="summary17-lab" data-summary17 aria-label="Interactive quantitative summaries">
   <label for="summary17-data"><strong>Workshop travel times</strong> (comma-separated minutes, 3–30 values)</label>
   <textarea id="summary17-data" data-summary17-values rows="2">5, 8, 10, 12, 12, 14, 15, 16, 18</textarea>
-  <div class="summary17-controls">
-    <button type="button" data-summary17-action="apply">Recalculate and redraw</button>
-    <button type="button" data-summary17-action="extreme">Change largest value to 50</button>
-    <button type="button" data-summary17-action="seconds">Convert minutes to seconds</button>
-    <button type="button" data-summary17-action="reset">Reset example</button>
-  </div>
+  <div class="summary17-controls"><button type="button" data-summary17-action="apply">Recalculate and redraw</button> <button type="button" data-summary17-action="extreme">Change largest value to 50</button> <button type="button" data-summary17-action="seconds">Convert minutes to seconds</button> <button type="button" data-summary17-action="reset">Reset example</button></div>
   <p class="summary17-feedback" data-summary17-feedback role="status" aria-live="polite">Use the buttons to explore how the summaries respond.</p>
   <figure class="summary17-figure"><div data-summary17-plot role="img" aria-label="Dotplot of the hypothetical travel times"></div><figcaption data-summary17-caption>Hypothetical nine-person sample: dotplot with mean, median and quartile markers.</figcaption></figure>
-  <div data-summary17-results class="summary17-results">
-    <p><strong>Starting reference:</strong> n = 9; mean ≈ 12.22 min; median = 12 min; Q1 = 9 min; Q3 = 15.5 min; range = 13 min; IQR = 6.5 min; sample SD ≈ 4.09 min.</p>
-  </div>
+  <div data-summary17-results class="summary17-results"><p><strong>Starting reference:</strong> n = 9; mean ≈ 12.22 min; median = 12 min; Q1 = 9 min; Q3 = 15.5 min; range = 13 min; IQR = 6.5 min; sample SD ≈ 4.09 min.</p></div>
 </section>
 
 ### What the laboratory should teach
 
-Changing the largest observation without changing its rank can move the **mean, range, and standard deviation** sharply while leaving the **median, Q1, and Q3** unchanged. Multiplying *all* times by 60 makes them seconds, so every location/length statistic expressed in time units multiplies by 60, while the variance multiplies by \(60^2\). Data do not become more dispersed merely because their reported numbers get bigger through unit conversion.
+Changing the largest observation without changing its rank can move the **mean, range, and standard deviation** sharply while leaving the **median, Q1, and Q3** unchanged. Multiplying *all* times by 60 makes them seconds, so every location/length statistic expressed in time units multiplies by 60, while the variance multiplies by $60^2$. Data do not become more dispersed merely because their reported numbers get bigger through unit conversion.
 
 ## 5 · Converting measurement units {#units}
 
-Suppose a new scale reports \(y=a+bx\), meaning **add a fixed amount** and/or **multiply by a conversion factor** \(b\). For example, converting Celsius to Fahrenheit uses \(a=32\) and \(b=9/5\). For \(b>0\), the transformed summaries obey
+Suppose a new scale reports $y=a+bx$, meaning **add a fixed amount** and/or **multiply by a conversion factor** $b$. For example, converting Celsius to Fahrenheit uses $a=32$ and $b=9/5$. For $b>0$, the transformed summaries obey
 
-\[
+$$
 \bar y=a+b\bar x,\qquad
 \operatorname{median}(y)=a+b\operatorname{median}(x),\qquad
 s_y=|b|s_x,\qquad
 s_y^2=b^2s_x^2.
-\]
+$$
 
-For any nonzero \(b\), **range and IQR multiply by \(|b|\)**; adding \(a\) does not change spread. If \(b<0\), order reverses: minimum and maximum exchange roles, and first/third quartiles exchange after transformation. The median transforms linearly under the stated convention.
+For any nonzero $b$, **range and IQR multiply by $|b|$**; adding $a$ does not change spread. If $b<0$, order reverses: minimum and maximum exchange roles, and first/third quartiles exchange after transformation. The median transforms linearly under the stated convention.
 
 <details class="math-note"><summary>Why these unit-conversion rules? — Optional algebraic derivation</summary>
-<p><strong>Optional enrichment — these derivations are not required for AP Statistics.</strong> Since \(y_i=a+bx_i\), \(\bar y=n^{-1}\sum(a+bx_i)=a+b\bar x\). Each centered deviation is \(y_i-\bar y=b(x_i-\bar x)\), so \(s_y^2=b^2s_x^2\) and \(s_y=|b|s_x\). Translation adds \(a\) to all ordered values, and multiplication by a positive \(b\) preserves their order, so quantile positions transform likewise. Negative \(b\) reverses the order, which swaps the lower and upper quartiles while keeping the median's central position. Any difference of endpoints such as a range or IQR scales by the absolute factor.</p>
+<p><strong>Optional enrichment — these derivations are not required for AP Statistics.</strong> Since $y_i=a+bx_i$, $\bar y=n^{-1}\sum(a+bx_i)=a+b\bar x$. Each centered deviation is $y_i-\bar y=b(x_i-\bar x)$, so $s_y^2=b^2s_x^2$ and $s_y=|b|s_x$. Translation adds $a$ to all ordered values, and multiplication by a positive $b$ preserves their order, so quantile positions transform likewise. Negative $b$ reverses the order, which swaps the lower and upper quartiles while keeping the median's central position. Any difference of endpoints such as a range or IQR scales by the absolute factor.</p>
 </details>
 
-**Worked example.** A sample mean travel time of 12.22 minutes becomes approximately \(733.33\) seconds. Its sample standard deviation of 4.086 minutes becomes approximately \(245.15\) seconds, **not** \(245.15\) seconds². If we also add 3 minutes to every travel time, the mean and median rise by 3 minutes but SD and IQR stay the same.
+**Worked example.** A sample mean travel time of 12.22 minutes becomes approximately $733.33$ seconds. Its sample standard deviation of 4.086 minutes becomes approximately $245.15$ seconds, **not** $245.15$ seconds². If we also add 3 minutes to every travel time, the mean and median rise by 3 minutes but SD and IQR stay the same.
 
 ## 6 · Two different screens for potential outliers {#outliers}
 
@@ -162,13 +155,13 @@ Unusual observations deserve investigation, not automatic deletion. Two screenin
 
 **IQR method.** A value is a potential outlier if it is **strictly outside** the fences
 
-\[
+$$
 \text{lower fence}=Q_1-1.5\,\mathrm{IQR},
 \quad
 \text{upper fence}=Q_3+1.5\,\mathrm{IQR}.
-\]
+$$
 
-For the nine times: \(9-1.5(6.5)=-0.75\) and \(15.5+1.5(6.5)=25.25\) minutes. There are no observations below −0.75 or above 25.25, so none is flagged by this method.
+For the nine times: $9-1.5(6.5)=-0.75$ and $15.5+1.5(6.5)=25.25$ minutes. There are no observations below −0.75 or above 25.25, so none is flagged by this method.
 
 <details class="math-note"><summary>Why 1.5 times IQR? — Screening convention</summary>
 <p>The coefficient 1.5 is a widely used <strong>rule of thumb</strong> for screening unusually distant observations relative to the middle 50%. It is <strong>not a universal mathematical threshold</strong>, and it does not prove that a flagged observation is erroneous. The fences are decision boundaries; values exactly on a fence are not “more than 1.5 IQR” beyond a quartile.</p>
@@ -176,11 +169,11 @@ For the nine times: \(9-1.5(6.5)=-0.75\) and \(15.5+1.5(6.5)=25.25\) minutes. Th
 
 **Two-standard-deviation method.** A value is flagged if its distance from the mean is **strictly greater** than twice the sample standard deviation:
 
-\[
+$$
 x<\bar{x}-2s\quad\text{or}\quad x>\bar{x}+2s.
-\]
+$$
 
-For the nine times, \(\bar{x}\pm2s\) is approximately \(4.05\) to \(20.39\) minutes; none of the nine times falls outside those limits.
+For the nine times, $\bar{x}\pm2s$ is approximately $4.05$ to $20.39$ minutes; none of the nine times falls outside those limits.
 
 <details class="math-note"><summary>Why “two standard deviations”? — Screening convention</summary>
 <p>Two standard deviations is another conventional threshold for unusual values relative to a mean and spread. Its usefulness depends on distribution shape and may be especially misleading in a strongly skewed sample. Do <strong>not</strong> assume a normal model; the empirical rule is a separate topic. An observation exactly two standard deviations away is not <em>more than</em> two SD away.</p>
@@ -218,7 +211,7 @@ Choose **median and IQR** for a highly skewed distribution or when possible outl
 
 **2024 released AP Statistics free-response Question 6(b)** includes numerical summaries for a sample of 20 reported sale prices. The official public [2024 Question 6 (PDF)](https://apcentral.collegeboard.org/media/pdf/ap24-frq-statistics.pdf) and [2024 scoring guidelines (PDF)](https://apcentral.collegeboard.org/media/pdf/ap24-sg-statistics.pdf) are the sources; the following is an **independent worked walkthrough**, not a reproduction of the protected question or an official scoring response.
 
-The given summaries include \(Q_1=\$4.51\), \(Q_3=\$5.475\), minimum \$4.25, maximum \$6.58, mean \$5.12, and sample SD \$0.743. The IQR is \(\$5.475-\$4.51=\$0.965\). The 1.5-IQR fences are \(4.51-1.5(0.965)=\$3.0625\) and \(5.475+1.5(0.965)=\$6.9225\). Because the observed minimum and maximum lie between those two fences, **none of these 20 prices** would be classified as a potential outlier by the 1.5-IQR method. The separate two-SD boundaries would be \(5.12\pm2(0.743)\), or \$3.634 to \$6.606, and the given extremes also fall inside them.
+The given summaries include $Q_1=\$4.51$, $Q_3=\$5.475$, minimum \$4.25, maximum \$6.58, mean \$5.12, and sample SD \$0.743. The IQR is $\$5.475-\$4.51=\$0.965$. The 1.5-IQR fences are $4.51-1.5(0.965)=\$3.0625$ and $5.475+1.5(0.965)=\$6.9225$. Because the observed minimum and maximum lie between those two fences, **none of these 20 prices** would be classified as a potential outlier by the 1.5-IQR method. The separate two-SD boundaries would be $5.12\pm2(0.743)$, or \$3.634 to \$6.606, and the given extremes also fall inside them.
 
 A strong solution names the **sale-price variable**, writes and calculates the criterion, checks **both** extremes, and concludes **in context**. Other parts of 2024 Question 6 involve additional topics and are not prerequisites for this lesson. Always check the actual exam's instructions and the official rubric when practicing released questions.
 
