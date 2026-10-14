@@ -1,3 +1,5 @@
 ## 5 · Released exam connection
 
 The final section discusses a released exam question and provides original practice.
+
+The official 2019 AP Statistics FRQ 1(b)–(c) tests outlier screening and boxplot construction.
