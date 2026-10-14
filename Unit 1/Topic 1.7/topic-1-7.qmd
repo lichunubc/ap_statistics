@@ -1,5 +1,9 @@
 # Topic 1.7 Summary Statistics for One Quantitative Variable
 
+<style>
+math[display=block] {display:block;max-width:100%;overflow-x:auto;overflow-y:hidden}
+</style>
+
 ::: {.chapter-lead}
 **A graph shows the distribution; a numerical summary makes a specific feature measurable.** In this chapter you will learn to calculate, interpret, and choose summaries of **center, position, and spread** without losing sight of the original data.
 
