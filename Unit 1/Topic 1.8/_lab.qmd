@@ -1,0 +1,12 @@
+## 3 · Interactive boxplot construction studio {#lab-18}
+
+The tool below connects the original observations to the five-number summary and modified boxplot. Predict which features change before using the buttons. The reader has a text explanation and a numerical table alongside the graph.
+
+<div class="box18" data-box18>
+<label for="box18-scenario">Sample <select id="box18-scenario" data-box18-scenario><option value="typical">Ordinary workshop journeys</option><option value="extreme">One 50-minute journey</option><option value="left">One unusually short journey</option><option value="bimodal">Two separated clusters</option></select></label>
+<label for="box18-style">Whisker rule <select id="box18-style" data-box18-style><option value="modified">Modified (no outliers at whisker ends)</option><option value="unmodified">Unmodified (min to max)</option></select></label>
+<label for="box18-values">Your measurements (3–40 values from 0 to 60), comma-separated: <textarea id="box18-values" data-box18-values rows="2">5, 8, 10, 12, 12, 14, 15, 16, 18</textarea></label>
+<div class="box18-buttons"><button type="button" data-box18-action="apply">Apply values</button><button type="button" data-box18-action="previous">Previous step</button><button type="button" data-box18-action="next">Next step</button><button type="button" data-box18-action="reset">Reset studio</button></div>
+<p data-box18-step role="status" aria-live="polite">Step 1 of 5</p>
+<div data-box18-chart class="box18-chart" aria-label="Dotplot linked to boxplot"></div>
+<p data-box18-explanation>Observe how each part appears, then describe its interpretation.</p>
