@@ -1,0 +1,6 @@
+<div class="box18-table-wrap"><table class="box18-summary"><caption>Linked summaries in minutes</caption><tbody><tr data-box18-row><td>5</td><td>9</td><td>12</td><td>15.5</td><td>18</td><td>12.22</td><td>6.5</td><td>−0.75, 25.25</td><td>5, 18</td></tr></tbody></table></div>
+<p>Without scripts: the ordinary data have five-number summary (5, 9, 12, 15.5, 18). In the 50-minute scenario, 50 is an outlier and 16 is the observed right whisker endpoint.</p>
+</div>
+
+{{< include _shape.qmd >}}
+{{< include _skew.qmd >}}
