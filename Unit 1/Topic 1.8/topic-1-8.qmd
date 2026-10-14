@@ -1,0 +1,21 @@
+# Topic 1.8 Graphical Representations of Summary Statistics for One Quantitative Variable
+
+<style>
+math[display=block] { display:block; max-width:100%; overflow-x:auto; overflow-y:hidden; }
+</style>
+
+::: {.chapter-lead}
+**From five numbers to a picture.** A dotplot shows individual observations. A *boxplot* compresses a numerical distribution into a picture of its center, middle half, extremes, and potential outliers.
+
+**Learning targets (Fall 2026 AP Statistics):** construct a five-number summary and its boxplot (**1.8.A; Skill 3.A**), and describe mean–median patterns in approximately symmetric and skewed distributions (**1.8.B; Skill 4.A**). See the [official Course and Exam Description, printed page 42](https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf).
+:::
+
+{{< include _fundamentals.qmd >}}
+
+{{< include _construction.qmd >}}
+
+{{< include _lab.qmd >}}
+
+{{< include _interpretation.qmd >}}
+
+{{< include _exam_practice.qmd >}}
