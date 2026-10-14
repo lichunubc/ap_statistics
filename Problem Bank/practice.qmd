@@ -1,0 +1,34 @@
+---
+title: "Problem Bank: Selected Homework"
+toc: false
+---
+
+A focused selection of **20 questions** from the Week 2 and Week 3 homework, organized by the existing Unit 1 topics. Each question keeps its original homework number and page reference.
+
+## Open your class question file
+
+Your teacher provides **`mhs-week-2-3.practice.json`** separately. Open it using the control below; the questions and original diagrams will appear here and in the **Selected homework practice** section of each relevant lesson. Choose an answer, check it, and reveal an explanation when ready. Opening a file does not submit work or record a grade.
+
+The public website contains the selection catalogue and practice interface, **not the College Board question text, diagrams, or answer key**. The class file is read locally and retained in this tab's session storage. Use **Forget class file** when finished, particularly on a shared device. A restored browser session may retain tab storage; explicitly forgetting the file is the safest way to clear it.
+
+::: {.homework-bank-host data-topic="all"}
+:::
+
+## Coverage
+
+| Topic | Selected homework questions |
+|:--|:--|
+| 1.1 | No direct selection from these files; existing original practice retained. |
+| 1.2 | Week 2: 1, 3, 4, 6 |
+| 1.3 | Week 2: 15, 17, 18, 20 |
+| 1.4 | Week 2: 16, 22, 24, 25 |
+| 1.5 | Week 3: 10, 16, 17 |
+| 1.6 | Week 3: 1, 3, 8, 12, 19 |
+
+Week 3 Question 16 is a bridge: it requires reading a split stem-and-leaf plot and interpreting clusters, so it has Topic 1.6 as a secondary tag. Questions on numerical summaries are reserved for later lessons rather than being forced into the current topics. Units 2–5 remain under construction.
+
+## Source and access notes
+
+Both supplied homework files are labelled College Board test booklets. Their public redistribution rights have not been confirmed. The [AP Services Terms of Service](https://secure-media.collegeboard.org/apc/ap-services-terms-conditions.pdf), Intellectual Property section, restrict republication of AP Services content without express written permission. The full source files and class question file are therefore not hosted in this public repository or website. Use the class file only through your teacher's authorized classroom arrangements; local loading is not a grant of redistribution permission.
+
+Explanations were independently derived for this selection because no official answer key accompanied these uploads. The one monetary-formatting repair in Week 3 Question 10 is disclosed alongside that question. No replacement questions have been passed off as homework originals.

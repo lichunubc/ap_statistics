@@ -3,12 +3,15 @@ project:
   output-dir: docs
   pre-render:
     - python tools/prepare.py
+    - python "Problem Bank/tools/prepare_bank.py"
   post-render:
     - python tools/postrender.py
   resources:
     - "Unit 1/**/assets/**"
     - "Unit 1/**/data/**"
     - site/assets/
+    - "Problem Bank/assets/"
+    - "Problem Bank/catalog.json"
     - .nojekyll
 book:
   title: "AP Statistics: Learning from Data"
@@ -35,10 +38,13 @@ book:
     - "Unit 3/unit-3.qmd"
     - "Unit 4/unit-4.qmd"
     - "Unit 5/unit-5.qmd"
+    - "Problem Bank/practice.qmd"
     - resources.qmd
   page-footer:
     left: "Maple Hill School · Chun Li"
     right: "AP Statistics · Interactive course book"
+filters:
+  - "Problem Bank/practice-filter.lua"
 format:
   html:
     theme: default
@@ -51,6 +57,7 @@ format:
       - "Unit 1/Topic 1.4/assets/categorical-charts.css"
       - "Unit 1/Topic 1.2/assets/variables.css"
       - site/assets/navigation.css
+      - "Problem Bank/assets/practice.css"
     toc: true
     toc-depth: 2
     number-sections: false
@@ -59,4 +66,5 @@ format:
     include-after-body:
       - "Unit 1/Shared/assets/footer.html"
       - site/assets/navigation.html
+      - "Problem Bank/assets/footer.html"
 lang: en

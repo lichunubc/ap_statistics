@@ -5,3 +5,9 @@ node_modules/
 
 /.quarto/
 **/*.quarto_ipynb
+
+# Classroom source content is never public.
+/Problem Bank/local-content/
+*.practice.json
+MHS_AP_Statistics_Week_*.pdf
+/Problem Bank/assets/catalog.js
