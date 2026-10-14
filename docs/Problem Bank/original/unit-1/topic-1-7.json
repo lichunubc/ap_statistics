@@ -1,0 +1,266 @@
+{
+  "schema_version": 1,
+  "bank_id": "mhs-ap-statistics-original",
+  "topic": "1.7",
+  "title": "Summary Statistics for One Quantitative Variable",
+  "rights": "Original instructor-authored practice; reproducible hypothetical datasets; not College Board questions",
+  "revision": 1,
+  "items": [
+    {
+      "id": "MHS-U1-T17-001",
+      "type": "number",
+      "difficulty": "Foundation",
+      "tags": [
+        "mean",
+        "units"
+      ],
+      "objectives": [
+        "1.7.A"
+      ],
+      "prompt": "Nine hypothetical workshop travel times, in minutes, are 5, 8, 10, 12, 12, 14, 15, 16, 18. Calculate the sample mean in minutes. Enter a number rounded to two decimal places.",
+      "answer": 12.22,
+      "tolerance": 0.015,
+      "hint": "Add all nine times, then divide by nine.",
+      "solution": "Sum = 110 minutes; n = 9. The sample mean is x̄ = 110/9 ≈ 12.22 minutes. This is a sample average, not a population parameter.",
+      "rights": "original",
+      "provenance": "Maple Hill School independently authored hypothetical exercise, 2026-10-14",
+      "primary_topic": "1.7"
+    },
+    {
+      "id": "MHS-U1-T17-002",
+      "type": "number",
+      "difficulty": "Foundation",
+      "tags": [
+        "median",
+        "even sample"
+      ],
+      "objectives": [
+        "1.7.A"
+      ],
+      "prompt": "Four ordered test scores are 6, 8, 11 and 12. Find the median.",
+      "answer": 9.5,
+      "tolerance": 0.001,
+      "hint": "For an even sample size, average the two middle observations.",
+      "solution": "The middle pair is 8 and 11, so the median is (8 + 11)/2 = 9.5 points. The median need not be an observed score.",
+      "rights": "original",
+      "provenance": "Maple Hill School independently authored hypothetical exercise, 2026-10-14",
+      "primary_topic": "1.7"
+    },
+    {
+      "id": "MHS-U1-T17-003",
+      "type": "number",
+      "difficulty": "Developing",
+      "tags": [
+        "quartiles",
+        "IQR"
+      ],
+      "objectives": [
+        "1.7.A",
+        "1.7.B"
+      ],
+      "prompt": "Seven ordered distances, in kilometres, are 4, 5, 7, 7, 9, 11, 13. Using the median-of-halves method that EXCLUDES the overall median, calculate the interquartile range (IQR), in kilometres.",
+      "answer": 6,
+      "tolerance": 0.001,
+      "hint": "Remove the overall median before splitting into halves; find the medians of the lower and upper triples.",
+      "solution": "The median is 7. The lower half 4,5,7 gives Q1 = 5 km; the upper half 9,11,13 gives Q3 = 11 km. IQR = 11 − 5 = 6 km. Always keep the quartile convention consistent.",
+      "rights": "original",
+      "provenance": "Maple Hill School independently authored hypothetical exercise, 2026-10-14",
+      "primary_topic": "1.7"
+    },
+    {
+      "id": "MHS-U1-T17-004",
+      "type": "number",
+      "difficulty": "Developing",
+      "tags": [
+        "sample variance",
+        "n minus 1"
+      ],
+      "objectives": [
+        "1.7.B"
+      ],
+      "prompt": "A sample of three daily temperatures, in °C, is 2, 4, 6. Find the SAMPLE VARIANCE. Enter the numerical value in °C².",
+      "answer": 4,
+      "tolerance": 0.001,
+      "hint": "The mean is 4; squared deviations are 4, 0 and 4. Divide their sum by n − 1.",
+      "solution": "Mean = 4 °C; squared deviations total 8 °C². Sample variance s² = 8/(3−1) = 4 °C². Sample standard deviation would be 2 °C, not 4 °C².",
+      "rights": "original",
+      "provenance": "Maple Hill School independently authored hypothetical exercise, 2026-10-14",
+      "primary_topic": "1.7"
+    },
+    {
+      "id": "MHS-U1-T17-005",
+      "type": "mc",
+      "difficulty": "Foundation",
+      "tags": [
+        "sample standard deviation",
+        "interpretation"
+      ],
+      "objectives": [
+        "1.7.B",
+        "1.7.F"
+      ],
+      "prompt": "A sample of waiting times has sample standard deviation s = 4.2 minutes. Which interpretation is best?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The longest wait was exactly 4.2 minutes."
+        },
+        {
+          "label": "B",
+          "text": "Waiting times typically deviate from their sample mean by about 4.2 minutes."
+        },
+        {
+          "label": "C",
+          "text": "Half of the patients waited exactly 4.2 minutes."
+        },
+        {
+          "label": "D",
+          "text": "The sample variance must equal 4.2 minutes."
+        }
+      ],
+      "answer": "B",
+      "hint": "Standard deviation describes spread around a mean, and its units match the variable.",
+      "solution": "B. Standard deviation describes a typical scale of deviations around the sample mean, not a maximum, median, or exact mean absolute deviation. Variance would have squared units.",
+      "rights": "original",
+      "provenance": "Maple Hill School independently authored hypothetical exercise, 2026-10-14",
+      "primary_topic": "1.7"
+    },
+    {
+      "id": "MHS-U1-T17-006",
+      "type": "number",
+      "difficulty": "Foundation",
+      "tags": [
+        "unit conversion",
+        "linear transformation"
+      ],
+      "objectives": [
+        "1.7.C"
+      ],
+      "prompt": "A sample mean travel time is 15 minutes. The same observations are now reported in seconds. What is the sample mean in SECONDS?",
+      "answer": 900,
+      "tolerance": 0.001,
+      "hint": "Each observation is multiplied by 60; the mean follows the same multiplicative conversion.",
+      "solution": "15 minutes × 60 seconds/minute = 900 seconds. The sample SD, median, range and IQR would also multiply by 60; variance would multiply by 3,600.",
+      "rights": "original",
+      "provenance": "Maple Hill School independently authored hypothetical exercise, 2026-10-14",
+      "primary_topic": "1.7"
+    },
+    {
+      "id": "MHS-U1-T17-007",
+      "type": "mc",
+      "difficulty": "Developing",
+      "tags": [
+        "IQR outliers",
+        "two SD outliers"
+      ],
+      "objectives": [
+        "1.7.D"
+      ],
+      "prompt": "A hypothetical data sample has ordered values 4, 5, 7, 7, 9, 11, 30. Which statement is correct using the median-of-halves quartiles and both outlier screens?",
+      "options": [
+        {
+          "label": "A",
+          "text": "30 is an IQR outlier but not a two-standard-deviation outlier."
+        },
+        {
+          "label": "B",
+          "text": "30 is a two-standard-deviation outlier but not an IQR outlier."
+        },
+        {
+          "label": "C",
+          "text": "30 is flagged by both methods."
+        },
+        {
+          "label": "D",
+          "text": "30 is flagged by neither method."
+        }
+      ],
+      "answer": "C",
+      "hint": "Find Q1 = 5, Q3 = 11, and the IQR upper fence; also check mean + 2 × sample SD.",
+      "solution": "C. IQR = 6 and upper fence = 11 + 1.5(6) = 20, so 30 is outside. The mean is 73/7 ≈ 10.43; s ≈ 8.942; mean + 2s ≈ 28.31, so 30 also exceeds the two-SD limit. Neither rule proves an error or authorizes automatic removal.",
+      "rights": "original",
+      "provenance": "Maple Hill School independently authored hypothetical exercise, 2026-10-14",
+      "primary_topic": "1.7"
+    },
+    {
+      "id": "MHS-U1-T17-008",
+      "type": "number",
+      "difficulty": "Challenge",
+      "tags": [
+        "two standard deviations",
+        "screening thresholds"
+      ],
+      "objectives": [
+        "1.7.B",
+        "1.7.D"
+      ],
+      "prompt": "For the sample 4, 5, 7, 7, 9, 11, 30, calculate the UPPER two-standard-deviation screening boundary x̄ + 2s. Use SAMPLE standard deviation and round to two decimals.",
+      "answer": 28.31,
+      "tolerance": 0.025,
+      "hint": "Mean is 73/7; sample standard deviation is approximately 8.94161.",
+      "solution": "Mean = 73/7 ≈ 10.42857; sample variance ≈ 79.95238, so s ≈ 8.94161. Upper boundary ≈ 10.42857 + 2(8.94161) = 28.31179, or 28.31. Since 30 > 28.31, it is flagged. We use a strict boundary.",
+      "rights": "original",
+      "provenance": "Maple Hill School independently authored hypothetical exercise, 2026-10-14",
+      "primary_topic": "1.7"
+    },
+    {
+      "id": "MHS-U1-T17-009",
+      "type": "written",
+      "difficulty": "Developing",
+      "tags": [
+        "independent samples",
+        "comparison",
+        "context"
+      ],
+      "objectives": [
+        "1.7.E",
+        "1.7.F"
+      ],
+      "prompt": "Two independent samples of workshop travel times (minutes) are recorded. Group A has median 14 and IQR 4; Group B has median 14 and IQR 8. Compare center and spread in context, then state one conclusion that these summaries do NOT justify.",
+      "hint": "Name the group, variable and units; compare both the medians and the IQRs numerically; do not infer population differences or causes.",
+      "solution": "Both groups' observed median workshop travel time was 14 minutes. Group B's middle 50% of travel times was more variable (IQR 8 minutes versus Group A's 4 minutes), twice the IQR. These sample summaries do not, by themselves, prove a population difference or a causal effect, and do not completely specify the distribution's shape.",
+      "rubric": "Full-credit self-check: (1) states equal medians of 14 minutes for the two groups; (2) states Group B has larger spread using both IQR values and units; (3) identifies a justified limitation, such as no causal claim, no population inference without design/uncertainty, or no complete distribution shape from these summaries alone.",
+      "rights": "original",
+      "provenance": "Maple Hill School independently authored hypothetical exercise, 2026-10-14",
+      "primary_topic": "1.7"
+    },
+    {
+      "id": "MHS-U1-T17-010",
+      "type": "mc",
+      "difficulty": "Developing",
+      "tags": [
+        "percentile",
+        "resistance"
+      ],
+      "objectives": [
+        "1.7.A",
+        "1.7.F"
+      ],
+      "prompt": "A student is at approximately the 90th percentile for completion time in a sample, and a different sample of incomes is strongly right-skewed with some extreme values. Which statement is most defensible?",
+      "options": [
+        {
+          "label": "A",
+          "text": "About 90% of completion times are at or below the student's time; median and IQR often summarize the skewed incomes more robustly."
+        },
+        {
+          "label": "B",
+          "text": "The student completed 90% of the task; the mean and standard deviation can never change with outliers."
+        },
+        {
+          "label": "C",
+          "text": "Exactly 90% of the sample must have a smaller time with no ties; the range resists extreme incomes."
+        },
+        {
+          "label": "D",
+          "text": "A 90th percentile is always the largest observation; the mean is the best summary for every income distribution."
+        }
+      ],
+      "answer": "A",
+      "hint": "Percentiles describe relative position, not percentage completed. Which summaries are resistant to extreme observations?",
+      "solution": "A. A 90th percentile is a position with approximately 90% of observations at or below that value, depending on ties and the percentile convention. The median and IQR are generally resistant to extreme incomes, unlike the mean, range, and SD.",
+      "rights": "original",
+      "provenance": "Maple Hill School independently authored hypothetical exercise, 2026-10-14",
+      "primary_topic": "1.7"
+    }
+  ]
+}

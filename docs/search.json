@@ -54,7 +54,7 @@
     "href": "Unit 1/unit-1.html#choose-a-topic",
     "title": "Unit 1: Exploring One-Variable Data and Collecting Data",
     "section": "",
-    "text": "Topic 1.1 Introducing Statistics: What Can We Learn from Data?\nQuestions, observational units, populations, samples, and evidence in context.\nOpen Topic 1.1 →\n\n\nTopic 1.2 Variables\nIdentify variables and summaries; classify categorical, discrete, and continuous values; investigate numerical category codes.\nOpen Topic 1.2 →\n\n\nTopic 1.3 Tabular Representation and Summary Statistics for One Categorical Variable\nBuild frequency and relative-frequency tables, use correct denominators, and justify contextual claims.\nOpen Topic 1.3 →\n\n\nTopic 1.4 Graphical Representations for One Categorical Variable\nBuild bar and pie charts, compare samples, and audit graphical claims.\nOpen Topic 1.4 →\n\n\nTopic 1.5 Graphical Representations for One Quantitative Variable\nThe original dotplot, stem-and-leaf, histogram construction, and histogram laboratory lessons.\nOpen Topic 1.5 →\n\n\nTopic 1.6 Descriptions for One Quantitative Variable Distributions\nThe original distribution descriptions, worked examples, and evidence checkpoints.\nOpen Topic 1.6 →",
+    "text": "Topic 1.1 Introducing Statistics: What Can We Learn from Data?\nQuestions, observational units, populations, samples, and evidence in context.\nOpen Topic 1.1 →\n\n\nTopic 1.2 Variables\nIdentify variables and summaries; classify categorical, discrete, and continuous values; investigate numerical category codes.\nOpen Topic 1.2 →\n\n\nTopic 1.3 Tabular Representation and Summary Statistics for One Categorical Variable\nBuild frequency and relative-frequency tables, use correct denominators, and justify contextual claims.\nOpen Topic 1.3 →\n\n\nTopic 1.4 Graphical Representations for One Categorical Variable\nBuild bar and pie charts, compare samples, and audit graphical claims.\nOpen Topic 1.4 →\n\n\nTopic 1.5 Graphical Representations for One Quantitative Variable\nThe original dotplot, stem-and-leaf, histogram construction, and histogram laboratory lessons.\nOpen Topic 1.5 →\n\n\nTopic 1.6 Descriptions for One Quantitative Variable Distributions\nThe original distribution descriptions, worked examples, and evidence checkpoints.\nOpen Topic 1.6 →\n\n\nTopic 1.7 Summary Statistics for One Quantitative Variable\nLearn mean, quartiles, variation, two outlier screens, and unit conversion through a linked dotplot and compact original practice.\nOpen Topic 1.7 →",
     "crumbs": [
       "Unit 1: Exploring One-Variable Data and Collecting Data"
     ]
@@ -642,6 +642,138 @@
     ]
   },
   {
+    "objectID": "Unit 1/Topic 1.7/topic-1-7.html",
+    "href": "Unit 1/Topic 1.7/topic-1-7.html",
+    "title": "Topic 1.7 Summary Statistics for One Quantitative Variable",
+    "section": "",
+    "text": "From a dotplot to a meaningful summary\nImagine a hypothetical group of nine students reporting one-way travel times to a workshop, in minutes:\n5, 8, 10, 12, 12, 14, 15, 16, 18.\nA dotplot from Topic 1.5 tells us where the individual values are, and Topic 1.6 helps us describe the shape. Now we also need defensible numbers to answer three distinct questions: What is a typical travel time? How much do the times vary? Is any time unusually far from the rest?\nEvery statistic must refer to a clearly defined group and variable. The nine times above are hypothetical teaching data, not measurements from Maple Hill School. They are also not the separate 24-time dataset used in earlier lessons.\nBefore calculating, predict: if we change 18 minutes to 50 minutes, which will move more—the mean or the median? Why? Test the prediction in the laboratory below.",
+    "crumbs": [
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Topic 1.7 Summary Statistics for One Quantitative Variable</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 1/Topic 1.7/topic-1-7.html#mean",
+    "href": "Unit 1/Topic 1.7/topic-1-7.html#mean",
+    "title": "Topic 1.7 Summary Statistics for One Quantitative Variable",
+    "section": "1 · Mean: the balance point",
+    "text": "1 · Mean: the balance point\nFor a sample of nn observations x1,…,xnx_1,\\ldots,x_n, the sample mean is\nx‾=∑i=1nxin.\n\\bar{x}=\\frac{\\sum_{i=1}^{n}x_i}{n}.\n\nHere xix_i means observation number ii, ∑\\sum means add, nn is the number of observations, and x‾\\bar{x} is pronounced “x-bar.” The mean uses every observation and has the same units as the measurements. The analogous population mean is μ\\mu; do not call a sample mean a population parameter.\nWorked example. The nine workshop travel times add to 110110 minutes, so their mean is 110/9≈12.22110/9\\approx12.22 minutes per student. A mean need not equal any observed travel time. It is the balance point of the plotted values, not necessarily the most common one.\n\n\nWhy does the mean balance? — Optional derivation\n\n\nOptional enrichment — this algebraic derivation is not required for AP Statistics. The total signed deviation from any candidate center cc is ∑i=1n(xi−c)=∑xi−nc\\sum_{i=1}^{n}(x_i-c)=\\sum x_i-nc. Setting the signed deviation to zero gives c=∑xi/n=x‾c=\\sum x_i/n=\\bar{x}. Consequently, observations above the mean exactly balance observations below it when their signed distances are counted. This explains the seesaw analogy; it does not claim that every person travels for exactly the mean time.\n\n\n\nThe median: the ordered middle\nThe median Q2Q_2 is the middle of the ordered observations. For an odd number of values, read the one in position (n+1)/2(n+1)/2. For an even number, average the two central ordered observations. For the nine times, the fifth value is 12 minutes, so the median is 12 minutes. If the largest time rises dramatically, it remains the largest observation; the fifth value can remain 12.\n\n\nWhy the middle? — Definition and convention\n\n\nThe median is a positional definition, not a theorem to prove. Ordering divides the observations into lower and upper positions. Averaging the two middle observations when nn is even is a standard convention for reporting one central number; it is not a claim that anybody actually observed that average. Position counting follows because an odd list of n=2k+1n=2k+1 observations has kk values before and kk after position k+1=(n+1)/2k+1=(n+1)/2.\n\n\nCheckpoint. For ordered quiz scores 6, 8, 11, 12, what is the median? The central scores are 8 and 11, giving 9.5. That does not have to be an actual score.",
+    "crumbs": [
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Topic 1.7 Summary Statistics for One Quantitative Variable</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 1/Topic 1.7/topic-1-7.html#position",
+    "href": "Unit 1/Topic 1.7/topic-1-7.html#position",
+    "title": "Topic 1.7 Summary Statistics for One Quantitative Variable",
+    "section": "2 · Position: extremes, quartiles, and percentiles",
+    "text": "2 · Position: extremes, quartiles, and percentiles\nThe minimum is the smallest observed value; the maximum is the largest. We describe the middle portion of an ordered sample using quartiles: Q1Q_1, median Q2Q_2, and Q3Q_3. For this course’s hand calculations, we use the common median-of-halves convention:\n\nSort the observations.\nFind the median.\nIf nn is odd, exclude the overall median when splitting the lower and upper halves. If nn is even, split evenly between the two central observations.\nFind the median of each half. Those values are Q1Q_1 and Q3Q_3.\n\nFor the nine times, the lower half is 5, 8, 10, 12, with median (8+10)/2=9(8+10)/2=9; the upper half is 14, 15, 16, 18, with median (15+16)/2=15.5(15+16)/2=15.5. Thus the five-number summary is (5, 9, 12, 15.5, 18) minutes. The quartiles roughly locate the lowest 25%, halfway point, and lowest 75% of observations. Repeated values and small sample sizes can make exact fractions differ from those percentages.\n\n\nWhy these quartiles? — A calculation convention\n\n\nConvention, not a universal proof: Software programs use several legitimate quartile algorithms, particularly when a sample is small or has repeated values. We use the median of each half, excluding the overall median when the sample size is odd, and apply it consistently. Other software may interpolate between ordered positions and report slightly different quartiles. State the convention or rely on the convention used by a specified calculator.\n\n\nThe ppth percentile locates a value at or below which approximately p%p\\% of observations fall. Thus a reported 75th-percentile score is not “75% correct”; it describes relative position among observations. With ties, different percentile-rank conventions and interpolation may yield slightly different numerical results. Always name the variable and the population/sample being compared.\n\n\nWhy does a percentile describe position? — Definition\n\n\nPercentile is a positional convention: order the observations, then find a boundary associated with the stated cumulative percentage. For example, 75% corresponds to three quarters of the ordered positions. No unique finite-sample interpolation formula is forced by this definition; report the procedure your problem specifies.",
+    "crumbs": [
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Topic 1.7 Summary Statistics for One Quantitative Variable</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 1/Topic 1.7/topic-1-7.html#spread",
+    "href": "Unit 1/Topic 1.7/topic-1-7.html#spread",
+    "title": "Topic 1.7 Summary Statistics for One Quantitative Variable",
+    "section": "3 · Spread: range, IQR, variance, and standard deviation",
+    "text": "3 · Spread: range, IQR, variance, and standard deviation\nA center does not tell you how scattered the observations are. If the nine times were all 12 minutes, the mean would be close to the current mean, but the variability would be dramatically smaller.\nThe range measures the distance between the extreme observations:\nrange=xmax−xmin.\n\\text{range}=x_{\\max}-x_{\\min}.\n\nFor our times it is 18−5=1318-5=13 minutes.\n\n\nWhy subtract extremes? — Definition\n\n\nThe range is defined as the length of the interval extending from the minimum to the maximum. Subtracting the left endpoint from the right endpoint gives that interval’s length. It uses only two values, so one extreme observation can change it substantially.\n\n\nThe interquartile range, or IQR, measures the width of the middle half:\nIQR=Q3−Q1.\n\\mathrm{IQR}=Q_3-Q_1.\n\nHere it is 15.5−9=6.515.5-9=\\mathbf{6.5} minutes. IQR uses quartiles rather than extremes, so it is usually more resistant to outliers than the range.\n\n\nWhy Q3 minus Q1? — Definition\n\n\nSubtracting the lower boundary Q1Q_1 from the upper boundary Q3Q_3 measures the width of their interval, which covers the middle portion of the ordered observations. This is the definition of the IQR, not a statistical theorem. Ties or a small sample can change the exact fraction of observations between the boundaries.\n\n\n\nStandard deviation: typical distance from the mean\nThe sample variance and sample standard deviation are\ns2=∑i=1n(xi−x‾)2n−1,s=s2.\ns^2=\\frac{\\sum_{i=1}^{n}(x_i-\\bar{x})^2}{n-1},\n\\qquad\ns=\\sqrt{s^2}.\n\nEach (xi−x‾)(x_i-\\bar{x}) is a deviation from the sample mean. Squaring keeps positive and negative deviations from cancelling. We divide by n−1n-1 for the sample variance, then take the square root to return to the original measurement units. Variance has squared units, such as minutes²; standard deviation has minutes. When analyzing a complete population instead, its population variance uses the population mean and the population count NN as the denominator, and the population standard deviation is denoted by σ\\sigma.\nWorked computation. For the nine workshop times, x‾≈12.222\\bar{x}\\approx12.222. Substituting all nine deviations into the sample formula gives s2≈16.6944s^2\\approx16.6944 minutes² and s≈4.086s\\approx4.086 minutes. In context, travel times typically differ from the mean by roughly four minutes. Standard deviation is not exactly the arithmetic mean of the absolute deviations.\n\n\nWhy square deviations and divide by n−1? — Optional derivation\n\n\nOptional enrichment — this mathematical derivation is not required for AP Statistics. The mean minimizes the sum of squared deviations: ∑(xi−c)2=∑(xi−x‾)2+n(c−x‾)2\\sum (x_i-c)^2=\\sum(x_i-\\bar{x})^2+n(c-\\bar{x})^2, so the squared-deviation total is smallest at c=x‾c=\\bar{x}. Because ∑(xi−x‾)=0\\sum(x_i-\\bar{x})=0, after estimating the sample mean only n−1n-1 deviations are free to vary. More formally, for independent identically distributed observations with finite population variance σ2\\sigma^2, E[∑(Xi−X‾)2]=(n−1)σ2E[\\sum(X_i-\\bar X)^2]=(n-1)\\sigma^2, so dividing by n−1n-1 makes sample variance an unbiased estimator of σ2\\sigma^2. This does not make ss itself an unbiased estimator of σ\\sigma. Taking the square root produces a spread in the original units.\n\n\nInterpretation check. If two groups have similar means but group B has a substantially larger ss, the observations in B are generally more spread out around their group mean. This alone does not prove that one group has outliers or that either distribution is normal.",
+    "crumbs": [
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Topic 1.7 Summary Statistics for One Quantitative Variable</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 1/Topic 1.7/topic-1-7.html#summary-lab",
+    "href": "Unit 1/Topic 1.7/topic-1-7.html#summary-lab",
+    "title": "Topic 1.7 Summary Statistics for One Quantitative Variable",
+    "section": "4 · Interactively move observations and watch summaries change",
+    "text": "4 · Interactively move observations and watch summaries change\nPredict the direction of the mean, median, IQR, and standard deviation before using each button. The figure and statistics are linked to one shared list of numbers. The plotted dot heights indicate repeated values; colored vertical markers show center and quartiles. If scripting is unavailable, the worked sample and five-number summary above provide a static reference.\n\nWorkshop travel times (comma-separated minutes, 3–30 values)\n5, 8, 10, 12, 12, 14, 15, 16, 18\n\n\nRecalculate and redraw\n\n\nChange largest value to 50\n\n\nConvert minutes to seconds\n\n\nReset example\n\n\n\nUse the buttons to explore how the summaries respond.\n\n\n\n\n\n\nHypothetical nine-person sample: dotplot with mean, median and quartile markers.\n\n\n\n\nStarting reference: n = 9; mean ≈ 12.22 min; median = 12 min; Q1 = 9 min; Q3 = 15.5 min; range = 13 min; IQR = 6.5 min; sample SD ≈ 4.09 min.\n\n\n\n\nWhat the laboratory should teach\nChanging the largest observation without changing its rank can move the mean, range, and standard deviation sharply while leaving the median, Q1, and Q3 unchanged. Multiplying all times by 60 makes them seconds, so every location/length statistic expressed in time units multiplies by 60, while the variance multiplies by 60260^2. Data do not become more dispersed merely because their reported numbers get bigger through unit conversion.",
+    "crumbs": [
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Topic 1.7 Summary Statistics for One Quantitative Variable</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 1/Topic 1.7/topic-1-7.html#units",
+    "href": "Unit 1/Topic 1.7/topic-1-7.html#units",
+    "title": "Topic 1.7 Summary Statistics for One Quantitative Variable",
+    "section": "5 · Converting measurement units",
+    "text": "5 · Converting measurement units\nSuppose a new scale reports y=a+bxy=a+bx, meaning add a fixed amount and/or multiply by a conversion factor bb. For example, converting Celsius to Fahrenheit uses a=32a=32 and b=9/5b=9/5. For b&gt;0b&gt;0, the transformed summaries obey\ny‾=a+bx‾,median⁡(y)=a+bmedian⁡(x),sy=|b|sx,sy2=b2sx2.\n\\bar y=a+b\\bar x,\\qquad\n\\operatorname{median}(y)=a+b\\operatorname{median}(x),\\qquad\ns_y=|b|s_x,\\qquad\ns_y^2=b^2s_x^2.\n\nFor any nonzero bb, range and IQR multiply by |b||b|; adding aa does not change spread. If b&lt;0b&lt;0, order reverses: minimum and maximum exchange roles, and first/third quartiles exchange after transformation. The median transforms linearly under the stated convention.\n\n\nWhy these unit-conversion rules? — Optional algebraic derivation\n\n\nOptional enrichment — these derivations are not required for AP Statistics. Since yi=a+bxiy_i=a+bx_i, y‾=n−1∑(a+bxi)=a+bx‾\\bar y=n^{-1}\\sum(a+bx_i)=a+b\\bar x. Each centered deviation is yi−y‾=b(xi−x‾)y_i-\\bar y=b(x_i-\\bar x), so sy2=b2sx2s_y^2=b^2s_x^2 and sy=|b|sxs_y=|b|s_x. Translation adds aa to all ordered values, and multiplication by a positive bb preserves their order, so quantile positions transform likewise. Negative bb reverses the order, which swaps the lower and upper quartiles while keeping the median’s central position. Any difference of endpoints such as a range or IQR scales by the absolute factor.\n\n\nWorked example. A sample mean travel time of 12.22 minutes becomes approximately 733.33733.33 seconds. Its sample standard deviation of 4.086 minutes becomes approximately 245.15245.15 seconds, not 245.15245.15 seconds². If we also add 3 minutes to every travel time, the mean and median rise by 3 minutes but SD and IQR stay the same.",
+    "crumbs": [
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Topic 1.7 Summary Statistics for One Quantitative Variable</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 1/Topic 1.7/topic-1-7.html#outliers",
+    "href": "Unit 1/Topic 1.7/topic-1-7.html#outliers",
+    "title": "Topic 1.7 Summary Statistics for One Quantitative Variable",
+    "section": "6 · Two different screens for potential outliers",
+    "text": "6 · Two different screens for potential outliers\nUnusual observations deserve investigation, not automatic deletion. Two screening methods appear in the Fall 2026 CED, and they may disagree.\nIQR method. A value is a potential outlier if it is strictly outside the fences\nlower fence=Q1−1.5IQR,upper fence=Q3+1.5IQR.\n\\text{lower fence}=Q_1-1.5\\,\\mathrm{IQR},\n\\quad\n\\text{upper fence}=Q_3+1.5\\,\\mathrm{IQR}.\n\nFor the nine times: 9−1.5(6.5)=−0.759-1.5(6.5)=-0.75 and 15.5+1.5(6.5)=25.2515.5+1.5(6.5)=25.25 minutes. There are no observations below −0.75 or above 25.25, so none is flagged by this method.\n\n\nWhy 1.5 times IQR? — Screening convention\n\n\nThe coefficient 1.5 is a widely used rule of thumb for screening unusually distant observations relative to the middle 50%. It is not a universal mathematical threshold, and it does not prove that a flagged observation is erroneous. The fences are decision boundaries; values exactly on a fence are not “more than 1.5 IQR” beyond a quartile.\n\n\nTwo-standard-deviation method. A value is flagged if its distance from the mean is strictly greater than twice the sample standard deviation:\nx&lt;x‾−2sorx&gt;x‾+2s.\nx&lt;\\bar{x}-2s\\quad\\text{or}\\quad x&gt;\\bar{x}+2s.\n\nFor the nine times, x‾±2s\\bar{x}\\pm2s is approximately 4.054.05 to 20.3920.39 minutes; none of the nine times falls outside those limits.\n\n\nWhy “two standard deviations”? — Screening convention\n\n\nTwo standard deviations is another conventional threshold for unusual values relative to a mean and spread. Its usefulness depends on distribution shape and may be especially misleading in a strongly skewed sample. Do not assume a normal model; the empirical rule is a separate topic. An observation exactly two standard deviations away is not more than two SD away.\n\n\nContrast. If a large value changes the mean and SD, the two-SD boundary can itself move. The IQR method instead emphasizes the middle half. They do not have to flag the same observations; neither is a license to discard data. Check entry accuracy, group context, and plausible causes before interpreting the flagged value.",
+    "crumbs": [
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Topic 1.7 Summary Statistics for One Quantitative Variable</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 1/Topic 1.7/topic-1-7.html#comparisons",
+    "href": "Unit 1/Topic 1.7/topic-1-7.html#comparisons",
+    "title": "Topic 1.7 Summary Statistics for One Quantitative Variable",
+    "section": "7 · Comparing independent samples",
+    "text": "7 · Comparing independent samples\nConsider two independent, hypothetical groups of workshop travelers, both measured in minutes:\n\n\n\n\n\n\n\n\nSummary\nGroup A\nGroup B\n\n\n\n\nData (sorted)\n10, 12, 14, 14, 15, 16, 17\n6, 11, 14, 14, 15, 19, 24\n\n\nMean\n14.00\n14.71\n\n\nMedian\n14\n14\n\n\nQ1\n12\n11\n\n\nQ3\n16\n19\n\n\nIQR\n4\n8\n\n\nSample SD\nabout 2.38\nabout 5.71\n\n\n\nModel AP-style comparison: The groups have the same sample median of 14 minutes, but Group B has an IQR of 8 minutes, twice Group A’s 4 minutes. Thus the central half of Group B’s observed travel times is more dispersed. Group B also has a larger sample SD (about 5.71 vs. 2.38 minutes). The data are insufficient to assert that the population means differ, to infer causation, or to describe a full shape from summaries alone. If shape matters, inspect the dotplots or raw data.\nWhen comparing statistics, name the groups, variable, units, direction, and numerical evidence. Report a difference only if the data support it. Two sets can have the same mean and SD yet entirely different shapes.",
+    "crumbs": [
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Topic 1.7 Summary Statistics for One Quantitative Variable</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 1/Topic 1.7/topic-1-7.html#resistance",
+    "href": "Unit 1/Topic 1.7/topic-1-7.html#resistance",
+    "title": "Topic 1.7 Summary Statistics for One Quantitative Variable",
+    "section": "8 · Which summaries should we choose?",
+    "text": "8 · Which summaries should we choose?\nThe mean and standard deviation are sensitive to unusually large or small observations because they use all numerical values (SD squares deviations). The range uses the extremes and is also sensitive. By contrast, the median and IQR depend mainly on ordered positions and are resistant to extreme values, though they are not completely unaffected by every data change.\nChoose median and IQR for a highly skewed distribution or when possible outliers would distort a description of a typical observation and the middle spread. For a roughly symmetric distribution without notable outliers, mean and SD often provide a useful center/spread pair. Use the graph and investigative question as part of this decision; don’t select a statistic simply because it is easier to calculate.\nWorked interpretation with an extreme. Replace the 18-minute observation with 50 minutes. The median remains 12 minutes even though the mean rises from about 12.22 to 15.78 minutes. Reporting only the new mean would overstate what a typical student in this nine-person sample experienced. The 50-minute observation is real within the hypothetical data scenario and should be investigated, not erased merely to improve the summary.",
+    "crumbs": [
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Topic 1.7 Summary Statistics for One Quantitative Variable</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 1/Topic 1.7/topic-1-7.html#exam-example",
+    "href": "Unit 1/Topic 1.7/topic-1-7.html#exam-example",
+    "title": "Topic 1.7 Summary Statistics for One Quantitative Variable",
+    "section": "9 · A real released AP Statistics exam connection",
+    "text": "9 · A real released AP Statistics exam connection\n2024 released AP Statistics free-response Question 6(b) includes numerical summaries for a sample of 20 reported sale prices. The official public 2024 Question 6 (PDF) and 2024 scoring guidelines (PDF) are the sources; the following is an independent worked walkthrough, not a reproduction of the protected question or an official scoring response.\nThe given summaries include Q1=$4.51Q_1=\\$4.51, Q3=$5.475Q_3=\\$5.475, minimum $4.25, maximum $6.58, mean $5.12, and sample SD $0.743. The IQR is $5.475−$4.51=$0.965\\$5.475-\\$4.51=\\$0.965. The 1.5-IQR fences are 4.51−1.5(0.965)=$3.06254.51-1.5(0.965)=\\$3.0625 and 5.475+1.5(0.965)=$6.92255.475+1.5(0.965)=\\$6.9225. Because the observed minimum and maximum lie between those two fences, none of these 20 prices would be classified as a potential outlier by the 1.5-IQR method. The separate two-SD boundaries would be 5.12±2(0.743)5.12\\pm2(0.743), or $3.634 to $6.606, and the given extremes also fall inside them.\nA strong solution names the sale-price variable, writes and calculates the criterion, checks both extremes, and concludes in context. Other parts of 2024 Question 6 involve additional topics and are not prerequisites for this lesson. Always check the actual exam’s instructions and the official rubric when practicing released questions.",
+    "crumbs": [
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Topic 1.7 Summary Statistics for One Quantitative Variable</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 1/Topic 1.7/topic-1-7.html#takeaway-a-statistic-is-evidence-not-the-whole-picture",
+    "href": "Unit 1/Topic 1.7/topic-1-7.html#takeaway-a-statistic-is-evidence-not-the-whole-picture",
+    "title": "Topic 1.7 Summary Statistics for One Quantitative Variable",
+    "section": "Takeaway: a statistic is evidence, not the whole picture",
+    "text": "Takeaway: a statistic is evidence, not the whole picture\nYou can now identify a typical value by mean or median, locate the middle portion by quartiles/percentiles, quantify spread by range, IQR, sample variance and sample SD, understand unit conversion, screen for unusual data by two distinct methods, and justify a comparison and a resistant summary. Remember the three checks behind any claim: Which group? Which units? Which evidence?",
+    "crumbs": [
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Topic 1.7 Summary Statistics for One Quantitative Variable</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 1/Topic 1.7/topic-1-7.html#practice-17",
+    "href": "Unit 1/Topic 1.7/topic-1-7.html#practice-17",
+    "title": "Topic 1.7 Summary Statistics for One Quantitative Variable",
+    "section": "Practice · one question at a time",
+    "text": "Practice · one question at a time\nThe independent, teacher-authored questions below are stored once in the repository’s original-content problem bank. Use Next question to change problems without jumping to another page, and scroll upward to consult these notes whenever needed. Hints, feedback, and fully worked solutions start hidden. For written justifications, compare your reasoning with a revealable model answer rather than expecting automatic essay grading.\n\nLoading the original practice questions. Enable JavaScript for the compact one-question-at-a-time reader.\nJavaScript is disabled. These are the complete original questions with model solutions; all content comes from the same public JSON bank.\nMHS-U1-T17-001Nine hypothetical workshop travel times, in minutes, are 5, 8, 10, 12, 12, 14, 15, 16, 18. Calculate the sample mean in minutes. Enter a number rounded to two decimal places.\nShow solutionSum = 110 minutes; n = 9. The sample mean is x̄ = 110/9 ≈ 12.22 minutes. This is a sample average, not a population parameter.\nMHS-U1-T17-002Four ordered test scores are 6, 8, 11 and 12. Find the median.\nShow solutionThe middle pair is 8 and 11, so the median is (8 + 11)/2 = 9.5 points. The median need not be an observed score.\nMHS-U1-T17-003Seven ordered distances, in kilometres, are 4, 5, 7, 7, 9, 11, 13. Using the median-of-halves method that EXCLUDES the overall median, calculate the interquartile range (IQR), in kilometres.\nShow solutionThe median is 7. The lower half 4,5,7 gives Q1 = 5 km; the upper half 9,11,13 gives Q3 = 11 km. IQR = 11 − 5 = 6 km. Always keep the quartile convention consistent.\nMHS-U1-T17-004A sample of three daily temperatures, in °C, is 2, 4, 6. Find the SAMPLE VARIANCE. Enter the numerical value in °C².\nShow solutionMean = 4 °C; squared deviations total 8 °C². Sample variance s² = 8/(3−1) = 4 °C². Sample standard deviation would be 2 °C, not 4 °C².\nMHS-U1-T17-005A sample of waiting times has sample standard deviation s = 4.2 minutes. Which interpretation is best?\nA. The longest wait was exactly 4.2 minutes.\nB. Waiting times typically deviate from their sample mean by about 4.2 minutes.\nC. Half of the patients waited exactly 4.2 minutes.\nD. The sample variance must equal 4.2 minutes.\nShow solutionB. Standard deviation describes a typical scale of deviations around the sample mean, not a maximum, median, or exact mean absolute deviation. Variance would have squared units.\nMHS-U1-T17-006A sample mean travel time is 15 minutes. The same observations are now reported in seconds. What is the sample mean in SECONDS?\nShow solution15 minutes × 60 seconds/minute = 900 seconds. The sample SD, median, range and IQR would also multiply by 60; variance would multiply by 3,600.\nMHS-U1-T17-007A hypothetical data sample has ordered values 4, 5, 7, 7, 9, 11, 30. Which statement is correct using the median-of-halves quartiles and both outlier screens?\nA. 30 is an IQR outlier but not a two-standard-deviation outlier.\nB. 30 is a two-standard-deviation outlier but not an IQR outlier.\nC. 30 is flagged by both methods.\nD. 30 is flagged by neither method.\nShow solutionC. IQR = 6 and upper fence = 11 + 1.5(6) = 20, so 30 is outside. The mean is 73/7 ≈ 10.43; s ≈ 8.942; mean + 2s ≈ 28.31, so 30 also exceeds the two-SD limit. Neither rule proves an error or authorizes automatic removal.\nMHS-U1-T17-008For the sample 4, 5, 7, 7, 9, 11, 30, calculate the UPPER two-standard-deviation screening boundary x̄ + 2s. Use SAMPLE standard deviation and round to two decimals.\nShow solutionMean = 73/7 ≈ 10.42857; sample variance ≈ 79.95238, so s ≈ 8.94161. Upper boundary ≈ 10.42857 + 2(8.94161) = 28.31179, or 28.31. Since 30 &gt; 28.31, it is flagged. We use a strict boundary.\nMHS-U1-T17-009Two independent samples of workshop travel times (minutes) are recorded. Group A has median 14 and IQR 4; Group B has median 14 and IQR 8. Compare center and spread in context, then state one conclusion that these summaries do NOT justify.\nShow solutionBoth groups' observed median workshop travel time was 14 minutes. Group B's middle 50% of travel times was more variable (IQR 8 minutes versus Group A's 4 minutes), twice the IQR. These sample summaries do not, by themselves, prove a population difference or a causal effect, and do not completely specify the distribution's shape.\nMHS-U1-T17-010A student is at approximately the 90th percentile for completion time in a sample, and a different sample of incomes is strongly right-skewed with some extreme values. Which statement is most defensible?\nA. About 90% of completion times are at or below the student's time; median and IQR often summarize the skewed incomes more robustly.\nB. The student completed 90% of the task; the mean and standard deviation can never change with outliers.\nC. Exactly 90% of the sample must have a smaller time with no ties; the range resists extreme incomes.\nD. A 90th percentile is always the largest observation; the mean is the best summary for every income distribution.\nShow solutionA. A 90th percentile is a position with approximately 90% of observations at or below that value, depending on ties and the percentile convention. The median and IQR are generally resistant to extreme incomes, unlike the mean, range, and SD.",
+    "crumbs": [
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Topic 1.7 Summary Statistics for One Quantitative Variable</span>"
+    ]
+  },
+  {
     "objectID": "Unit 1/Shared/practice.html",
     "href": "Unit 1/Shared/practice.html",
     "title": "Practice and solutions",
@@ -649,7 +781,7 @@
     "text": "1 · Draw from a frequency table\nThirty students recorded school-shuttle waiting times. Use 5-minute bins from 0 to 30 and the left-inclusive, right-exclusive rule. Draw a histogram on paper with labelled axes, equal-width touching bars, and a zero baseline.\nAfter drawing, use the digital check to reconstruct your heights. It checks heights only, not the labels on your paper.",
     "crumbs": [
       "Unit 1: Exploring One-Variable Data and Collecting Data",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Practice and solutions</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Practice and solutions</span>"
     ]
   },
   {
@@ -660,7 +792,7 @@
     "text": "Waiting time (minutes)\nFrequency\n\n\n\n\n0≤x&lt;50\\leq x&lt;5\n3\n\n\n5≤x&lt;105\\leq x&lt;10\n7\n\n\n10≤x&lt;1510\\leq x&lt;15\n10\n\n\n15≤x&lt;2015\\leq x&lt;20\n6\n\n\n20≤x&lt;2520\\leq x&lt;25\n3\n\n\n25≤x&lt;3025\\leq x&lt;30\n1\n\n\n\n\n\n\nEnter six bar heights, check them against the table, and view your attempt.\n\n\n\n\nShow the completed histogram\n\n\n\n\nHeights are 3, 7, 10, 6, 3, 1, totaling 30. Every bar is 5 minutes wide. The tallest bar means ten waits from 10 to under 15 minutes—not ten waits exactly equal to 10.",
     "crumbs": [
       "Unit 1: Exploring One-Variable Data and Collecting Data",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Practice and solutions</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Practice and solutions</span>"
     ]
   },
   {
@@ -671,7 +803,7 @@
     "text": "2 · Stem, leaf, and key\nConstruct a stem-and-leaf plot for 1.2, 1.5, 1.5, 2.0, 2.3 seconds. Explain the repeated leaf.\n\n\nShow solution\n\n1 | 2 5 5\n2 | 0 3\nKey: 1 | 2 = 1.2 seconds\nFive leaves represent five observations. The repeated 1.5 needs two leaves of 5. A zero leaf preserves the 2.0-second observation.",
     "crumbs": [
       "Unit 1: Exploring One-Variable Data and Collecting Data",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Practice and solutions</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Practice and solutions</span>"
     ]
   },
   {
@@ -682,7 +814,7 @@
     "text": "3 · Bin boundaries\nWhich 10-minute commute bin contains 20? Does the first occupied bin prove the recorded minimum is 0?\n\n\nShow solution\n\n20 enters 20≤x&lt;3020\\leq x&lt;30, not the preceding bin. The first occupied bin establishes a value in 0≤x&lt;100\\leq x&lt;10, not necessarily 0. The original list—not the histogram—identifies the minimum as 5.",
     "crumbs": [
       "Unit 1: Exploring One-Variable Data and Collecting Data",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Practice and solutions</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Practice and solutions</span>"
     ]
   },
   {
@@ -693,7 +825,7 @@
     "text": "4 · Repair turnaround times\nDescribe the histogram of 40 bicycle repairs. Find the percentage taking at least 4 hours. Can you recover the most common exact time?\n\n\nOne-hour bins from 0 to 8: frequencies 12, 10, 7, 5, 3, 2, 1, 0.\n\n\n\n\nShow solution\n\nRepair times are unimodal and right-skewed, centered around 1–3 hours. Values occupy bins from 0 to under 7 hours. No displayed internal bin is empty. The one observation in 6–7 hours is not automatically an outlier; an empty final 7–8 bin is not an internal gap.\nAt least 4 hours: (3+2+1)/40=15%(3+2+1)/40=15\\%. The most frequent interval is 0–1 hour. The most common exact value is not recoverable.",
     "crumbs": [
       "Unit 1: Exploring One-Variable Data and Collecting Data",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Practice and solutions</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Practice and solutions</span>"
     ]
   },
   {
@@ -704,7 +836,7 @@
     "text": "5 · Two concentrations\nDescribe shape, center, spread, and the empty internal interval for these 40 library study sessions. What percentage lasted from 30 to under 90 minutes?\n\n\nFifteen-minute bins from 0 to 120: frequencies 2, 10, 8, 0, 0, 8, 10, 2.\n\n\n\n\nShow solution\n\nThe displayed distribution is approximately symmetric and bimodal, with main concentrations in 15–45 and 75–105 minutes. The visual center near 60 minutes lies in a gap, not at a typical observed session. Occupied bins span roughly 0–120 minutes. There are no observations from 45 to under 75 minutes.\nThe count from 30 to under 90 is 8+0+0+8=168+0+0+8=16, giving 16/40=40%16/40=40\\%. A single center would hide the two concentrations. The exact median is not available from the histogram.",
     "crumbs": [
       "Unit 1: Exploring One-Variable Data and Collecting Data",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Practice and solutions</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Practice and solutions</span>"
     ]
   },
   {
@@ -715,7 +847,7 @@
     "text": "6 · What could be inside a bin?\nTwo commute times lie in 40–50 and one in 50–60 minutes. How many are at least 40? How many could be at least 45?\n\n\nShow solution\n\nExactly 3 are at least 40. Between 1 and 3 could be at least 45: the last-bin observation definitely qualifies; either, neither, or both observations in the preceding bin might qualify. Do not add a uniformity assumption.",
     "crumbs": [
       "Unit 1: Exploring One-Variable Data and Collecting Data",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Practice and solutions</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Practice and solutions</span>"
     ]
   },
   {
@@ -726,7 +858,7 @@
     "text": "7 · Oxygen: count and context\nReturn to the oxygen histogram. How many sampled cold streams recorded below 6 mg/L? What percentage is this? What does the empty 3–4 bin establish?\n\n\nShow solution\n\nThe first four counts total 1+0+1+1=31+0+1+1=3. The percentage is 3/429×100%≈0.7%3/429\\times100\\%\\approx0.7\\%. Under our convention, no observed concentration lies in 3≤x&lt;43\\leq x&lt;4 mg/L. This does not show that such concentrations are impossible in all streams.",
     "crumbs": [
       "Unit 1: Exploring One-Variable Data and Collecting Data",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Practice and solutions</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Practice and solutions</span>"
     ]
   },
   {
@@ -737,7 +869,7 @@
     "text": "8 · Repair a weak description\nA student writes, “The graph is high in the middle and goes up and down.” Replace this with all four parts of a contextual description.\n\n\nTwenty review-session lengths span 4–30 minutes, with approximate symmetry and a broad central concentration.\n\n\n\n\nShow a model response\n\nAmong these 20 students, review-session lengths are approximately symmetric with one broad central concentration, centered around 16–18 minutes. Recorded values extend from 4 to 30 minutes, with no clearly isolated observation or large internal gap.\nThe dotplot preserves individual values, so the observed endpoints are available. Wide histogram bins would warrant less exact wording.",
     "crumbs": [
       "Unit 1: Exploring One-Variable Data and Collecting Data",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Practice and solutions</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Practice and solutions</span>"
     ]
   },
   {
@@ -748,7 +880,7 @@
     "text": "Before the next class\nExplain one dot versus one bin, construct a histogram from a table, name skew from the tail, and support a claim with calculation + context. Return to the relevant chapter when an answer depends on a guess rather than evidence.",
     "crumbs": [
       "Unit 1: Exploring One-Variable Data and Collecting Data",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Practice and solutions</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Practice and solutions</span>"
     ]
   },
   {
@@ -798,7 +930,7 @@
     "section": "",
     "text": "Open your class question file\nA focused selection of 20 questions from the Week 2 and Week 3 homework, organized by the existing Unit 1 topics. Each question keeps its original homework number and page reference.\nYour teacher provides mhs-week-2-3.practice.json separately. Open it using the control below; the questions and original diagrams will appear here and in the Selected homework practice section of each relevant lesson. Choose an answer, check it, and reveal an explanation when ready. Opening a file does not submit work or record a grade.\nThe public website contains the selection catalogue and practice interface, not the College Board question text, diagrams, or answer key. The class file is read locally and retained in this tab’s session storage. Use Forget class file when finished, particularly on a shared device. A restored browser session may retain tab storage; explicitly forgetting the file is the safest way to clear it.",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Problem Bank: Selected Homework</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Problem Bank: Selected Homework</span>"
     ]
   },
   {
@@ -808,7 +940,7 @@
     "section": "",
     "text": "Selected homework references are listed below. Enable JavaScript and open the class question file to display the questions locally; no question file is uploaded.\nWeek 2.0, Question 1.0 — Topic 1.2: Continuous measurements versus counts (homework pages 1.0).\nWeek 2.0, Question 3.0 — Topic 1.2: A quantitative variable among categorical choices (homework pages 1.0).\nWeek 2.0, Question 4.0 — Topic 1.2: How the recording rule changes the variable type (homework pages 2.0).\nWeek 2.0, Question 6.0 — Topic 1.2: Category observations are not category counts (homework pages 3.0).\nWeek 2.0, Question 15.0 — Topic 1.3: Validate a relative-frequency table (homework pages 8.0, 9.0, 10.0).\nWeek 2.0, Question 17.0 — Topic 1.3: A percentage does not determine an absolute count (homework pages 12.0).\nWeek 2.0, Question 18.0 — Topic 1.3: Check a claim against a frequency table (homework pages 13.0).\nWeek 2.0, Question 20.0 — Topic 1.3: Combine categories using the correct denominator (homework pages 14.0).\nWeek 2.0, Question 16.0 — Topic 1.4: Compare rates without confusing them with counts (homework pages 11.0).\nWeek 2.0, Question 22.0 — Topic 1.4: Read a pie chart as parts of one whole (homework pages 15.0).\nWeek 2.0, Question 24.0 — Topic 1.4: Convert chart proportions to counts when n is known (homework pages 16.0).\nWeek 2.0, Question 25.0 — Topic 1.4: Use the number of games as the percentage denominator (homework pages 17.0).\nWeek 3.0, Question 10.0 — Topic 1.5: What changing histogram bin width preserves (homework pages 5.0).\nWeek 3.0, Question 16.0 — Topic 1.5: Read a split stem-and-leaf display (homework pages 8.0).\nWeek 3.0, Question 17.0 — Topic 1.5: Construct a stemplot without losing repeats (homework pages 9.0, 10.0).\nWeek 3.0, Question 1.0 — Topic 1.6: Compare tails in a back-to-back stemplot (homework pages 1.0).\nWeek 3.0, Question 3.0 — Topic 1.6: Describe shape and features in a dotplot (homework pages 2.0).\nWeek 3.0, Question 8.0 — Topic 1.6: Identify skewness from a histogram tail (homework pages 4.0).\nWeek 3.0, Question 12.0 — Topic 1.6: Distinguish a visual potential outlier from a formal test (homework pages 7.0).\nWeek 3.0, Question 19.0 — Topic 1.6: Recognize approximate uniformity (homework pages 11.0).",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Problem Bank: Selected Homework</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Problem Bank: Selected Homework</span>"
     ]
   },
   {
@@ -818,7 +950,7 @@
     "section": "Coverage",
     "text": "Coverage\n\n\n\n\n\n\n\nTopic\nSelected homework questions\n\n\n\n\n1.1\nNo direct selection from these files; existing original practice retained.\n\n\n1.2\nWeek 2: 1, 3, 4, 6\n\n\n1.3\nWeek 2: 15, 17, 18, 20\n\n\n1.4\nWeek 2: 16, 22, 24, 25\n\n\n1.5\nWeek 3: 10, 16, 17\n\n\n1.6\nWeek 3: 1, 3, 8, 12, 19\n\n\n\nWeek 3 Question 16 is a bridge: it requires reading a split stem-and-leaf plot and interpreting clusters, so it has Topic 1.6 as a secondary tag. Questions on numerical summaries are reserved for later lessons rather than being forced into the current topics. Units 2–5 remain under construction.",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Problem Bank: Selected Homework</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Problem Bank: Selected Homework</span>"
     ]
   },
   {
@@ -828,7 +960,7 @@
     "section": "Source and access notes",
     "text": "Source and access notes\nBoth supplied homework files are labelled College Board test booklets. Their public redistribution rights have not been confirmed. The AP Services Terms of Service, Intellectual Property section, restrict republication of AP Services content without express written permission. The full source files and class question file are therefore not hosted in this public repository or website. Use the class file only through your teacher’s authorized classroom arrangements; local loading is not a grant of redistribution permission.\nExplanations were independently derived for this selection because no official answer key accompanied these uploads. The one monetary-formatting repair in Week 3 Question 10 is disclosed alongside that question. No replacement questions have been passed off as homework originals.",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Problem Bank: Selected Homework</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Problem Bank: Selected Homework</span>"
     ]
   },
   {
@@ -838,7 +970,7 @@
     "section": "",
     "text": "Basis of the pilot\nThis book adapts Chun Li’s revised 45-slide Seeing Quantitative Data presentation and 30-page Representing and Describing Quantitative Data study guide for Maple Hill School. It retains the revised sequence, classroom datasets, whole-bar construction, endpoint convention, and evidence-based descriptions.\nThe scope follows the instructor-supplied College Board essential-knowledge excerpts 1.5.A.1–4, 1.6.A.1–6, and 1.6.B.1. Detailed numerical-summary formulas and inference are left to later lessons.",
     "crumbs": [
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Sources and study resources</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Sources and study resources</span>"
     ]
   },
   {
@@ -848,7 +980,7 @@
     "section": "",
     "text": "Book section\nRevised lecture slides\n\n\n\n\nIndividual values\n3–9\n\n\nHistogram construction and laboratory\n10–19\n\n\nHand construction and data recovery\n20–23\n\n\nShape, center, spread, unusual features\n24–32\n\n\nDescriptions and supported claims\n33–37\n\n\nOxygen and closing practice\n38–45",
     "crumbs": [
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Sources and study resources</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Sources and study resources</span>"
     ]
   },
   {
@@ -858,7 +990,7 @@
     "section": "Published datasets",
     "text": "Published datasets\nThe shape challenge uses the values packaged with the revised lecture. Their documented sources are:\n\nR datasets: rivers: 141 major North American river lengths in miles, a historical compilation identified as the 1975 World Almanac.\nR datasets: faithful: 272 waiting times between Old Faithful eruptions, in minutes.\nR datasets: iris: the 50 Iris setosa sepal lengths, in centimeters, from Anderson’s iris measurements.\n\nThese are published observations, not freshly simulated data. Other classroom datasets are explicitly hypothetical. Bin choices are teaching decisions, not properties of the observations.",
     "crumbs": [
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Sources and study resources</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Sources and study resources</span>"
     ]
   },
   {
@@ -868,7 +1000,7 @@
     "section": "Exam connections",
     "text": "Exam connections\n2023 AP Statistics, Question 1(a): the official question, PDF page 4 supplies the oxygen histogram. This book redraws its numerical frequencies and provides classroom explanations and follow-ups, not an official scoring key.\n2022 AP Statistics, Question 5: chocolate values are the revised lecture’s numerical transcription of the instructor-supplied dotplots. The public site does not upload the original screenshot or exam text. Consult College Board’s exam archive for currently available materials; older exam availability may differ.\nAP is a registered trademark of the College Board. This independent classroom resource is not affiliated with or endorsed by the College Board. Third-party material retains its owners’ rights; no blanket open-content license is asserted for it.",
     "crumbs": [
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Sources and study resources</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Sources and study resources</span>"
     ]
   },
   {
@@ -878,7 +1010,7 @@
     "section": "Printing and downloads",
     "text": "Printing and downloads\nYour browser’s Print / Save as PDF command saves a chapter. Printing expands solutions and displays completed construction examples. The screen version keeps solutions hidden until you open them.\nDownload the commute values as CSV. Editable .qmd source, a portable preview builder, Quarto configuration, tests, and publishing instructions are included in the project.",
     "crumbs": [
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Sources and study resources</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Sources and study resources</span>"
     ]
   },
   {
@@ -888,7 +1020,7 @@
     "section": "Privacy and limitations",
     "text": "Privacy and limitations\nThere are no accounts, analytics scripts, advertisements, grades database, or student-submission service. Activity choices remain in the current page and disappear on refresh; they are not sent to a teacher. Normal hosting logs are separate: GitHub documents IP logging for Pages security.\nJavaScript enables the activities. Core prose, tables, and solution text remain available without it. Charts use bundled data and do not request a remote statistical service. Search operates on the hosted site or a locally served copy; browser restrictions may affect search when opening a downloaded file directly.",
     "crumbs": [
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Sources and study resources</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Sources and study resources</span>"
     ]
   },
   {
@@ -898,7 +1030,7 @@
     "section": "Technical format",
     "text": "Technical format\nThe publishing source is a Quarto HTML book with chapter navigation, search, mathematical typesetting, and custom JavaScript/SVG activities. It needs no running notebook kernel or paid backend. The downloadable portable preview uses Pandoc with the same chapter text and activities; the automated Quarto build produces the hosted book.",
     "crumbs": [
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Sources and study resources</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Sources and study resources</span>"
     ]
   },
   {
@@ -908,7 +1040,7 @@
     "section": "Foundations curriculum alignment",
     "text": "Foundations curriculum alignment\nThe foundations sequence follows the official AP Statistics Course and Exam Description, effective Fall 2026: Topic 1.1 on printed pp. 30–31; Topic 1.2 on pp. 32–33; Topic 1.3 on p. 34; Topic 1.4 on p. 35. The curriculum was checked on October 13, 2026. Explanations and new practice are independently authored; the book does not reproduce secure AP Classroom questions.\nThe School A, School B, movie-survey and study-location examples originated in Chun Li’s revised Topics 1.1–1.4 materials. They are hypothetical, not records of actual Maple Hill School students. Their reusable summaries are in foundations.json. The 24 commute times used in Topic 1.5 are a separate dataset.",
     "crumbs": [
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Sources and study resources</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Sources and study resources</span>"
     ]
   },
   {
@@ -918,7 +1050,7 @@
     "section": "Topic 1.4 charts",
     "text": "Topic 1.4 charts\nThe categorical graph lesson is based on the official Fall 2026 CED Topic 1.4 (printed p. 35). Count/percentage bars, pie diagrams, chart-audit cases and print references are original classroom material. Their reusable source assets are Unit 1/Topic 1.4/assets/categorical-charts.js and Unit 1/Topic 1.4/assets/categorical-charts.css. The hypothetical School A and School B summaries and their provenance are in foundations.json. No secure AP Classroom assessments are reproduced.",
     "crumbs": [
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Sources and study resources</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Sources and study resources</span>"
     ]
   }
 ]
