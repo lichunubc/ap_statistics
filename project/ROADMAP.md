@@ -8,7 +8,7 @@ Maintain one reusable, expandable Quarto course book for Chun Li's Maple Hill Sc
 
 Chun Li has authorized completion of **Topics 1.7–1.13**, followed by **all Topics 2.1–2.12**, one topic per hourly work session starting immediately. Follow [the detailed authoring and publication specification](UNIT_1_2_EXPANSION.md) and [the nineteen-topic execution queue](expansion-state.json). The specification includes exact Fall 2026 CED titles/pages, full LO/EK coverage, textbook-style explanations, visual activities, optional expandable derivations, one-question-at-a-time practice, original problem-bank storage, official past-exam sourcing, and release validation.
 
-These nineteen topics are **queued, not implemented or published at setup**. The execution queue must record actual source, test, deployment and live-verification outcomes. Preserve the existing six topics and the five-unit navigation. The authorization does not extend to Units 3–5 or to additional schedules beyond this finite series.
+At setup these nineteen topics were queued; consult the expansion state for current progress. Topic 1.7 has a verified live release, and Topic 1.8 has passed its development-branch regression gate. The execution queue must record actual source, test, deployment and live-verification outcomes. Preserve the existing six topics and the five-unit navigation. The authorization does not extend to Units 3–5 or to additional schedules beyond this finite series.
 
 ## Five-unit navigation — October 13, 2026
 

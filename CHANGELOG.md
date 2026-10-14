@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-10-14 — Topic 1.8 graphical summaries
+
+- Created a self-contained, officially mapped Topic 1.8 on five-number summaries, modified boxplots, mean–median patterns and responsible interpretation.
+- Added an interactive dotplot/boxplot builder with progressive steps, changing datasets, custom observations, different whisker conventions and a static numerical fallback.
+- Added nine original questions in the centralized public Problem Bank, with keyboard-friendly one-at-a-time practice, hints, feedback, worked solutions and a no-JavaScript print alternative.
+- Documented the released 2019 AP Statistics FRQ 1(b)–(c) and its official rubric without copying the protected question, added independent arithmetic/browser tests, and made release topic counts derive from the live manifest.
+- GitHub Actions' revision-matched build, full regression and Pages checks independently determine publication status.
+
+
 ## 2026-10-13 — Five-unit entrance and collapsed topic navigation
 
 - Replaced homepage topic cards with five independently linked units using the exact supplied official unit titles. Moved the original six topic cards and dataset introduction into `Unit 1/unit-1.qmd` without changing any lesson or activity source.

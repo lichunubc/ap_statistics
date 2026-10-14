@@ -6,13 +6,13 @@ Student site: **https://lichunubc.github.io/ap_statistics/**
 
 ## Five-unit course entrance
 
-The welcome page (`index.qmd`) shows the five officially named units. Each card opens its own `Unit N/unit-N.qmd` landing page. **Unit 1** contains the six existing topic cards and the dataset introduction; **Units 2–5 are under construction**, with no unpublished topics presented as finished lessons.
+The welcome page (`index.qmd`) shows the five officially named units. Each card opens its own `Unit N/unit-N.qmd` landing page. **Unit 1** contains independently linked topic cards and its dataset introduction; **Units 2–5 are under construction**, with no unpublished topics presented as finished lessons.
 
 Sidebar topic lists start collapsed on every page load. A unit title opens its landing page; the adjacent keyboard-accessible arrow button shows/hides its topics. Whole-book navigation assets and tests live in `site/`, not inside any one topic. [Unit status](project/unit-status.json) records the five landing pages independently of the detailed topic manifest.
 
 ## Unit 1: one independently named chapter per topic
 
-The book has separate chapters for Topics 1.1–1.6, using the exact titles in the **College Board CED effective Fall 2026**. Topic 1.2 **Variables** includes observational units, categorical/quantitative and discrete/continuous classification, parameters/statistics, category-code relabelling, three activities and ten fully worked original exercises. This is not yet a complete Unit 1 or AP Statistics course.
+The book has separate chapters for Topics 1.1–1.8, using the exact titles in the **College Board CED effective Fall 2026**. Topic 1.2 **Variables** includes observational units, categorical/quantitative and discrete/continuous classification, parameters/statistics, category-code relabelling, three activities and ten fully worked original exercises. Topics 1.7–1.8 add linked visual-summary activities and a public original question bank. This is not yet a complete Unit 1 or AP Statistics course.
 
 Open [Unit 1](<Unit 1/README.md>) to find a lesson's editable files. Each **Topic 1.x** folder contains its main QMD chapter, objective mapping, local activity/data/test files and editing notes. **Shared** contains assets, datasets and tests used across topics. The original Topics 1.5 and 1.6 lessons remain as `_*.qmd` sections in their own topic folders. Nothing from their activities or datasets has been discarded.
 
