@@ -230,6 +230,6 @@
     });
     root.append(box, filters, view.count, view.list); views.push(view);
   });
-  refresh(saved ? 'Class file restored for this tab. Responses are not submitted or carried between pages.' : 'No class file is open. The references below identify the selected homework questions.');
+  refresh(saved ? 'Class file restored. Choose a question to begin.' : 'No class file is open. The references below identify the selected homework questions.');
   window.MHSProblemBank = Object.freeze({validatePack});
 })();

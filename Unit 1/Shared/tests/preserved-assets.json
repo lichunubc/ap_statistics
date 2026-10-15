@@ -2,7 +2,9 @@
   {
     "original_path": "assets/site.js",
     "path": "Unit 1/Shared/assets/site.js",
-    "sha256": "f219ec9d8309d003768b43b290e27e3fd3d00ac3bc7ac8c8df9fb0eaa446f339"
+    "sha256": "f2d9166c16de4ae1b1cf40f1f20e05fdb50f363f66011c08163edb17c3e5945e",
+    "prior_sha256": "f219ec9d8309d003768b43b290e27e3fd3d00ac3bc7ac8c8df9fb0eaa446f339",
+    "change_note": "2026-10-15: user-requested visible wording cleanup only; calculations, data and interactions unchanged."
   },
   {
     "original_path": "assets/foundations.css",
@@ -22,7 +24,9 @@
   {
     "original_path": "assets/foundations.js",
     "path": "Unit 1/Topic 1.1/assets/foundations.js",
-    "sha256": "3c248fa7a13531f9aa24180c7102d6419143961a2476315a3d75223d829b997a"
+    "sha256": "6e30517e493aac616313f8e13c22b448cfdbdf13399707d07e46341be48f7d92",
+    "prior_sha256": "3c248fa7a13531f9aa24180c7102d6419143961a2476315a3d75223d829b997a",
+    "change_note": "2026-10-15: user-requested visible wording cleanup only; calculations, data and interactions unchanged."
   },
   {
     "original_path": "assets/categorical-tables.css",
@@ -32,7 +36,9 @@
   {
     "original_path": "assets/categorical-tables.js",
     "path": "Unit 1/Topic 1.3/assets/categorical-tables.js",
-    "sha256": "073bb5e48e8ef4a155d28475dedd09e1403d749e340ac280018d3320e668ce37"
+    "sha256": "1c21cf007c43f7595999196afc4069ca78e7ccdff687c22bfe79baf8f4a6ecd7",
+    "prior_sha256": "073bb5e48e8ef4a155d28475dedd09e1403d749e340ac280018d3320e668ce37",
+    "change_note": "2026-10-15: user-requested visible wording cleanup only; calculations, data and interactions unchanged."
   },
   {
     "original_path": "assets/categorical-charts.js",
