@@ -29,7 +29,7 @@ A **relative-frequency bar chart** uses the same categories but bar heights **20
 
 ::: {.callout-tip}
 ## Count versus percentage
-Counts answer **how many**; percentages answer **what share of the relevant group**. Include sample size and units. A most-common (modal) category is not necessarily a **majority**: School A's Bus group contains 18/40 = 45%, which is less than 50%.
+Counts answer **how many**; percentages answer **what share of the relevant group**. Include sample size and units. A most-common (modal) category is not necessarily a **majority**: School A's Bus group contains $18/40=45\%$, which is less than 50%.
 :::
 
 ## 2 · Pie charts: parts of one whole
@@ -110,7 +110,7 @@ Choose an answer, then check your reasoning.
 <p><strong>Static reference:</strong> Check a bar chart's zero baseline and axis units; a pie chart's disjoint slices and 100% total; comparisons' within-group denominators; natural category order; and whether the statement overgeneralizes from a sample.</p>
 </div>
 
-::: {.callout-warning}
+::: {.callout-note}
 ## Misleading visual design
 An axis beginning above zero, unmatched chart scales, missing group sizes, a 3D pie, or a pie that mixes overlapping choices can all obscure what the data actually show. Avoid these even when the arithmetic is correct.
 :::

@@ -43,7 +43,9 @@
   {
     "original_path": "assets/categorical-charts.js",
     "path": "Unit 1/Topic 1.4/assets/categorical-charts.js",
-    "sha256": "d13b8173b17740c19916c7f962e885ae67469ede82bbcfa7aaed33e68760925e"
+    "sha256": "5447b2bda9c54b1b16524a5c1267424daf879f64f6509e5fafc5374b7b16c858",
+    "prior_sha256": "d13b8173b17740c19916c7f962e885ae67469ede82bbcfa7aaed33e68760925e",
+    "change_note": "Presentation-only qualifier removal. Numerical and interaction code unchanged."
   },
   {
     "original_path": "assets/data.js",

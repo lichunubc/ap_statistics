@@ -48,7 +48,7 @@ For these 12 observations per route, we apply the same **median-of-halves** quar
 
 <details class="math-note">
 <summary>Why the reported IQRs and the 1.5-IQR fence? — Definition and convention</summary>
-<p>The IQR is defined as the upper quartile minus the lower quartile: Route A has 18 − 15 = 3 minutes and Route B has 16.5 − 11.5 = 5 minutes. The upper screening fence adds 1.5 times the IQR to the third quartile, giving 16.5 + 1.5 × 5 = 24. The multiplier 1.5 is a <strong>chosen screening convention</strong>, not a universally provable boundary between valid observations and mistakes. Different quartile conventions may shift the fence slightly.</p>
+<p>The IQR is defined as the upper quartile minus the lower quartile: Route A has $18-15=3$ minutes and Route B has $16.5-11.5=5$ minutes. The upper screening fence adds 1.5 times the IQR to the third quartile, giving $16.5+1.5\times5=24$. The multiplier 1.5 is a <strong>chosen screening convention</strong>, not a universally provable boundary between valid observations and mistakes. Different quartile conventions may shift the fence slightly.</p>
 </details>
 
 ### Compare responsibly {#claim-19}

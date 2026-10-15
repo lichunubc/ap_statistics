@@ -88,7 +88,7 @@ A supported statement is: **“Among the 40 sampled School A students, Bus was t
 
 ### Checkpoint: what does the table justify?
 
-The four original cases begin with no answer selected. Choose, check the explanation, clear your choice, or move to the next case.
+Choose an answer, then check your reasoning.
 
 <div class="interactive" data-cat-table="claim">
 <p><strong>Static reference:</strong> Bus is the largest category (45%) but not a majority; Walk or Bicycle accounts for 35% of this sample.</p>

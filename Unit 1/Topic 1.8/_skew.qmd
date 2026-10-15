@@ -1,6 +1,6 @@
 ### Mean versus median: a helpful, nonabsolute pattern {#skew-18}
 
-The **mean** uses every observed value, whereas the **median** depends on rank. In a *roughly symmetric* distribution, mean and median are typically close. In a *right-skewed* distribution, the mean is **usually larger** than the median; in a *left-skewed* distribution, the mean is **usually smaller**. This is a **tendency, not a logical equivalence**: mean > median does not prove right skew, and close values do not prove symmetry. Interpret shape with a dotplot or histogram whenever possible.
+The **mean** uses every observed value, whereas the **median** depends on rank. In a *roughly symmetric* distribution, mean and median are typically close. In a *right-skewed* distribution, the mean is **usually larger** than the median; in a *left-skewed* distribution, the mean is **usually smaller**. This is a **tendency, not a logical equivalence**: $\text{mean}>\text{median}$ does not prove right skew, and close values do not prove symmetry. Interpret shape with a dotplot or histogram whenever possible.
 
 Recall the sample mean formula from [Topic 1.7](<../Topic 1.7/topic-1-7.qmd#mean>):
 

@@ -97,7 +97,7 @@ This is not a ban on curiosity. It is a distinction between the question that mo
 
 ## Question workshop
 
-Choose an answer, read the explanation, then try the next case. Nothing is submitted or saved.
+Choose an answer, read the explanation, then try the next case.
 
 <div class="interactive" data-foundation="question-check">
 <p><strong>Think first:</strong> In the School A investigation, the population is all 1,000 enrolled students, not only the bus riders or the 40 selected students.</p>

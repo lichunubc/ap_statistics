@@ -39,7 +39,7 @@ function Pandoc(doc)
   end
   doc.blocks:insert(pandoc.Header(2, 'Selected homework practice', pandoc.Attr('homework-practice')))
   if topic == '1.1' then
-    doc.blocks:insert(pandoc.Para('The supplied Week 2 and Week 3 homework sets do not provide a direct practice selection for this introductory topic. Use the existing original practice above; no homework question has been relabelled as a Topic 1.1 question.'))
+    doc.blocks:insert(pandoc.Para('Use the Practice section above to review this topic.'))
   else
     doc.blocks:insert(pandoc.Para('Open your class question file to work through the selected homework questions.'))
     doc.blocks:insert(mount(topic))

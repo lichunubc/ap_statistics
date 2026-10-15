@@ -87,7 +87,7 @@ Similarly, “has a decimal” does not prove continuous, and “is written as a
 
 ## Variable-type laboratory {#variable-lab}
 
-Classify each recorded characteristic. Choose an answer and press **Check answer**; then read the explanation. Each new case begins with no selection, and no response is saved or submitted.
+Classify each recorded characteristic. Choose an answer and press **Check answer**; then read the explanation.
 
 <div class="interactive" data-variables="classify">
 <p><strong>Without JavaScript:</strong> Main travel method and route number are categorical; the number of trips is discrete quantitative; actual elapsed time is continuous quantitative. Use the tables above and the worked practice below to explain why.</p>
@@ -144,7 +144,7 @@ Distinguish a population summary, a sample summary, and a single observation. Th
 Suppose we assign codes to the same four travel categories. The lab below leaves the **40 observations' category memberships and counts unchanged**, but changes the labels.
 
 <div class="interactive" data-variables="recode">
-<p>School A counts remain Walk 8, Bicycle 6, Bus 18, and Car 8. Codes 1, 2, 3, 4 give an arithmetic code average of 2.65; codes 4, 1, 9, 2 give 5.40. Neither average measures a travel method. The Bus proportion remains 18/40 = 45%.</p>
+<p>School A counts remain Walk 8, Bicycle 6, Bus 18, and Car 8. Codes 1, 2, 3, 4 give an arithmetic code average of 2.65; codes 4, 1, 9, 2 give 5.40. Neither average measures a travel method. The Bus proportion remains $18/40=45\%$.</p>
 </div>
 
 Under codes Walk=1, Bicycle=2, Bus=3, Car=4, the arithmetic code average is

@@ -31,7 +31,7 @@ L=9-1.5(6.5)=-0.75,\qquad
 U=15.5+1.5(6.5)=25.25.
 $$
 
-Because 50 > 25.25, **50 minutes is a potential outlier**. In a modified boxplot, draw the box from **9 to 15.5** with the median at **12**; draw the left whisker to **5** and the right whisker to **16**, the largest observed *non-outlier*. Then draw a separate outlier marker at **50**. The right whisker goes to **16**, **not 25.25** and **not 50**.
+Because $50>25.25$, **50 minutes is a potential outlier**. In a modified boxplot, draw the box from **9 to 15.5** with the median at **12**; draw the left whisker to **5** and the right whisker to **16**, the largest observed *non-outlier*. Then draw a separate outlier marker at **50**. The right whisker goes to **16**, **not 25.25** and **not 50**.
 
 <details class="math-note"><summary>Why does the right whisker end at 16? — Modified-boxplot definition</summary>
 <p>List all observations at or below the upper fence: 5, 8, 10, 12, 12, 14, 15, 16. By the modified-boxplot rule, the right whisker reaches the largest such actual observation, 16. The 50-minute value receives a separate mark. This is a <strong>construction convention</strong>; an unmodified min-to-max boxplot would end its whisker at 50 instead, so specify which graph is used.</p>

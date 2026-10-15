@@ -44,14 +44,14 @@ Build bar and pie charts, compare samples, and audit graphical claims.
 ::: {.route-card}
 **Topic 1.5 Graphical Representations for One Quantitative Variable**
 
-The original dotplot, stem-and-leaf, histogram construction, and histogram laboratory lessons.
+Build dotplots, stem-and-leaf plots and histograms; explore how bin widths change a display.
 
 [Open Topic 1.5 →](<Topic 1.5/topic-1-5.qmd>)
 :::
 ::: {.route-card}
 **Topic 1.6 Descriptions for One Quantitative Variable Distributions**
 
-The original distribution descriptions, worked examples, and evidence checkpoints.
+Describe shape, center, spread and unusual features using graphical evidence.
 
 [Open Topic 1.6 →](<Topic 1.6/topic-1-6.qmd>)
 :::
@@ -78,7 +78,7 @@ Compare distribution shapes and summaries on common scales, and calculate standa
 :::
 :::
 
-[Additional quantitative-data practice](Shared/practice.qmd) · [Sources and publication notes](../resources.qmd)
+[Additional quantitative-data practice](Shared/practice.qmd) · [Sources and study resources](../resources.qmd)
 
 ## Keep the datasets distinct
 

@@ -140,7 +140,7 @@ Predict the direction of the mean, median, IQR, and standard deviation before us
   <p class="summary17-feedback" data-summary17-feedback role="status" aria-live="polite">Use the buttons to explore how the summaries respond.</p>
   <figure class="summary17-figure"><div data-summary17-plot role="img" aria-label="Dotplot of the travel times"></div><figcaption data-summary17-caption>Nine travel times: dotplot with mean, median and quartile markers.</figcaption></figure>
   <div data-summary17-results class="summary17-results">
-<p><strong>Starting reference:</strong> n = 9; mean ≈ 12.22 min; median = 12 min; Q1 = 9 min; Q3 = 15.5 min; range = 13 min; IQR = 6.5 min; sample SD ≈ 4.09 min.</p>
+<p><strong>Starting reference:</strong> $n=9$; $\bar{x}\approx12.22$ min; median $12$ min; $Q_1=9$ min; $Q_3=15.5$ min; range $13$ min; IQR $6.5$ min; $s\approx4.09$ min.</p>
   </div>
 </section>
 
