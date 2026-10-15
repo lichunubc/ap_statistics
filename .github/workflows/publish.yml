@@ -19,6 +19,8 @@ jobs:
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
+      - name: Check Python syntax before rendering
+        run: python -m compileall -q tools site "Unit 1" "Unit 2" "Problem Bank"
       - uses: quarto-dev/quarto-actions/setup@v2
         with:
           version: '1.9.38'
