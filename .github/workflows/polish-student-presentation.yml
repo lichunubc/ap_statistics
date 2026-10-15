@@ -1,0 +1,42 @@
+name: Polish student presentation
+on:
+  push:
+    branches: ['maintenance/editorial-snapshot-20261015']
+    paths: ['.github/workflows/polish-student-presentation.yml']
+permissions:
+  contents: write
+jobs:
+  polish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: recipe
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          ref: preview/student-presentation-20261015
+          path: source
+      - name: Apply presentation-only refinements
+        env:
+          SOURCE_ROOT: ${{ github.workspace }}/source
+        run: |
+          python recipe/editorial-transfer/06_ui_labels.py
+          cd source
+          python -m compileall -q tools site/tests 'Unit 1'
+          find 'Unit 1' site 'Problem Bank' -name '*.js' -print0 | xargs -0 -n1 node --check
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- 'Unit 1' 'Problem Bank'
+          git diff --cached --check
+          git commit -m 'Remove repeated provenance and submission commentary from activity captions'
+          git push origin HEAD:refs/heads/preview/student-presentation-20261015
+          mkdir -p ../polished-result
+          git rev-parse HEAD > ../polished-result/revision.txt
+          git archive --format=tar.gz HEAD > ../polished-result/source.tar.gz
+      - uses: actions/upload-artifact@v4
+        with:
+          name: polished-student-presentation
+          path: polished-result/
+          retention-days: 3

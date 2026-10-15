@@ -1,0 +1,68 @@
+name: Prepare student presentation revision
+on:
+  push:
+    branches: ['maintenance/editorial-snapshot-20261015']
+    paths: ['.github/workflows/prepare-student-presentation.yml']
+permissions:
+  contents: write
+concurrency:
+  group: prepare-student-presentation
+  cancel-in-progress: false
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: recipe
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          ref: 9501798e091267a5f31fed5393bdbde82284039a
+          path: source
+          fetch-depth: 0
+      - name: Apply readable editorial recipes
+        env:
+          SOURCE_ROOT: ${{ github.workspace }}/source
+        run: |
+          python recipe/editorial-transfer/01_lessons.py
+          python recipe/editorial-transfer/02_images.py
+          python recipe/editorial-transfer/03_finish.py
+          python recipe/editorial-transfer/04_bank_docs_tests.py
+          cp -a recipe/editorial-transfer/overrides/. source/
+          python -m compileall -q source/tools source/site/tests source/'Unit 1'
+          mkdir -p editorial-result
+          cp source/.github/workflows/publish.yml editorial-result/proposed-publish.yml
+          cd source
+          git restore .github/workflows/publish.yml
+          find "Unit 1" site "Problem Bank" -name '*.js' -print0 | xargs -0 -n1 node --check
+      - name: Render original released-question images
+        working-directory: source
+        run: |
+          python -m pip install PyMuPDF==1.26.7
+          python tools/prepare_exam_figures.py
+      - name: Save editable sources on a new preview branch
+        working-directory: source
+        run: |
+          set -e
+          branch=preview/student-presentation-20261015
+          if [ -n "$(git ls-remote --heads origin "refs/heads/$branch")" ]; then
+            echo 'Preview branch already exists; inspect rather than overwrite.' >&2
+            exit 1
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git switch -c "$branch"
+          git add -- 'Unit 1' 'Problem Bank' site tools project _quarto.yml README.md CONTRIBUTING.md CHANGELOG.md resources.qmd index.qmd
+          git diff --cached --check
+          git commit -m 'Apply student-facing presentation review across Topics 1.1–1.9'
+          git rev-parse HEAD > ../editorial-result/revision.txt
+          git archive --format=tar.gz HEAD > ../editorial-result/source.tar.gz
+          git push origin "HEAD:refs/heads/$branch"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: prepared-student-presentation
+          path: editorial-result/
+          retention-days: 3

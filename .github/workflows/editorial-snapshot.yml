@@ -1,0 +1,26 @@
+name: Editorial source snapshot
+on:
+  push:
+    branches: ['maintenance/editorial-snapshot-20261015']
+    paths: ['.github/workflows/editorial-snapshot.yml']
+permissions:
+  contents: read
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: eedd73b02583d7421b799e10ffe4a94de15decd5
+          persist-credentials: false
+      - name: Archive public tracked sources
+        run: |
+          mkdir -p /tmp/editorial-snapshot
+          git archive --format=tar.gz HEAD > /tmp/editorial-snapshot/source.tar.gz
+          git rev-parse HEAD > /tmp/editorial-snapshot/revision.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: editorial-source
+          path: /tmp/editorial-snapshot/
+          retention-days: 3
