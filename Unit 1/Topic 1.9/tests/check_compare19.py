@@ -54,7 +54,7 @@ const fail=m=>{throw new Error(m)};
 if(JSON.stringify(E.scenarios.original.a)!==JSON.stringify(JSONDATA.route_a))fail('Route A disagreement');
 if(JSON.stringify(E.scenarios.original.b)!==JSON.stringify(JSONDATA.route_b))fail('Route B disagreement');
 for(const [key,other] of Object.entries(JSONDATA.alternate_scenarios)){
- if(JSON.stringify(E.scenarios[key].b)!==JSON.stringify(other))fail('Scenario mismatch '+key);
+ if(JSON.stringify(E.scenarios[key.replace(/_b$/,'')].b)!==JSON.stringify(other))fail('Scenario mismatch '+key);
 }
 let a=E.summary(E.scenarios.original.a),b=E.summary(E.scenarios.original.b);
 if(a.mean!==16.5||a.median!==16.5||a.iqr!==3||Math.abs(a.sd-2.39317210565)>1e-9)fail('A mismatch');
