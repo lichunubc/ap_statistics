@@ -1,5 +1,8 @@
 # Authoring and preserving the course
 
+**Student presentation:** follow [Chun Li’s current presentation settings](project/STUDENT_PRESENTATION.md). The October 15 review supersedes earlier instructions about visible curriculum blocks, source disclaimers, question metadata, practice headings and exam-image presentation. Keep complete objective/provenance records in source.
+
+
 ## Start with current source
 
 Read `_quarto.yml`, `project/topic-status.json`, the relevant `Unit 1/Topic 1.x/README.md`, and adjacent chapters. Refresh main immediately before writing; reconcile concurrent work and use ordinary non-force commits. A source implementation, a successful test run, and a live deployment are separate states.

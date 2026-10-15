@@ -1,0 +1,15 @@
+<figure class="exam-source" data-exam-id="ap19-q1-data">
+<a class="exam-enlarge" href="assets/exam/ap19-q1-data.png" aria-label="Enlarge 2019 AP Statistics, Question 1: room sizes">
+<img src="assets/exam/ap19-q1-data.png" alt="2019 AP Statistics, Question 1: room sizes. Readable description below." loading="lazy" decoding="async">
+</a>
+<figcaption>2019 AP Statistics, Question 1: room sizes · <a href="https://apstudents.collegeboard.org/ap/2019-05/ap19-frq-statistics.pdf">College Board</a> · © College Board</figcaption>
+<details class="exam-description"><summary>Read the question description</summary><p>For 20 rooms, the five-number summary in square feet is 134, 174, 253.5, 292, 315. The mean is 231.4 and the SD is 68.12. Describe the distribution using the histogram.</p></details>
+</figure>
+
+<figure class="exam-source" data-exam-id="ap19-q1-bc">
+<a class="exam-enlarge" href="assets/exam/ap19-q1-bc.png" aria-label="Enlarge 2019 AP Statistics, Question 1(b)–(c)">
+<img src="assets/exam/ap19-q1-bc.png" alt="2019 AP Statistics, Question 1(b)–(c). Readable description below." loading="lazy" decoding="async">
+</a>
+<figcaption>2019 AP Statistics, Question 1(b)–(c) · <a href="https://apstudents.collegeboard.org/ap/2019-05/ap19-frq-statistics.pdf">College Board</a> · © College Board</figcaption>
+<details class="exam-description"><summary>Read the question description</summary><p>Determine whether the data contain outliers and construct a boxplot. Identify a feature visible in the histogram that the boxplot does not show.</p></details>
+</figure>

@@ -1,0 +1,146 @@
+{
+  "schema_version": 1,
+  "permission": {
+    "basis": "Instructor reported permission from College Board and Maple Hill School for educational website reuse, 2026-10-15",
+    "reported_by": "Chun Li",
+    "independently_verified": false
+  },
+  "items": {
+    "ap23-q1a": {
+      "source_url": "https://apcentral.collegeboard.org/media/pdf/ap23-frq-statistics.pdf",
+      "pdf_sha256": "add4cd7088fd2ba410fde4f6630e9fc644f24f39e571722700151d5ac68115a4",
+      "pdf_page_index": 3,
+      "clip_points": [
+        30,
+        278,
+        573,
+        521
+      ],
+      "spec_sha256": "e07f4f835c3a98f3af5c83627511e2d45d7cec9450ce3a260a00c5bbc3624468",
+      "image_sha256": "d3f502fd9bc3dfa26dca191ddcd83793af44495d574b5ad1064fb16bebbbfd2c",
+      "width": 1358,
+      "height": 608,
+      "renderer": "PyMuPDF 1.26.7",
+      "output": "Unit 1/Topic 1.6/assets/exam/ap23-q1a.png"
+    },
+    "ap22-chocolate": {
+      "source_url": "https://apclassroom.collegeboard.org/video-resources/AP_Statistics/_Session_4_Statistics_2023_AP_Daily_Practice_Sessions.pdf",
+      "pdf_sha256": "3c435304019b07fa2a6fc74f80b3e5568a3a0804a649ac34af29216b141256a6",
+      "pdf_page_index": 0,
+      "clip_points": [
+        68,
+        213,
+        557,
+        552
+      ],
+      "spec_sha256": "4e297139ecc301e273df0b664561c872546044b45780efbb973ab39f1b382fb6",
+      "image_sha256": "c9db271c3fa452401a33beb438e1bd84d8f0e5f3db11f3721a5d0de6836a2cdf",
+      "width": 1223,
+      "height": 848,
+      "renderer": "PyMuPDF 1.26.7",
+      "output": "Unit 1/Topic 1.6/assets/exam/ap22-chocolate.png"
+    },
+    "ap24-q6b-summary": {
+      "source_url": "https://apcentral.collegeboard.org/media/pdf/ap24-frq-statistics.pdf",
+      "pdf_sha256": "642ffa2d54e1705b6218358b098c5b7d1a02a51d4c1fbed708ca23477ae8a006",
+      "pdf_page_index": 13,
+      "clip_points": [
+        36,
+        45,
+        577,
+        297
+      ],
+      "spec_sha256": "8a59472b91d869a8b7273fe1a7289ffe8febde1f93384a27e4fe4c3300c94db5",
+      "image_sha256": "5c7f9707dff35501894b80a2068344af6cf9d9e773136866ba65c934c8da22ef",
+      "width": 1353,
+      "height": 631,
+      "renderer": "PyMuPDF 1.26.7",
+      "output": "Unit 1/Topic 1.7/assets/exam/ap24-q6b-summary.png"
+    },
+    "ap24-q6b-outliers": {
+      "source_url": "https://apcentral.collegeboard.org/media/pdf/ap24-frq-statistics.pdf",
+      "pdf_sha256": "642ffa2d54e1705b6218358b098c5b7d1a02a51d4c1fbed708ca23477ae8a006",
+      "pdf_page_index": 13,
+      "clip_points": [
+        36,
+        465,
+        577,
+        516
+      ],
+      "spec_sha256": "d4c54028848c60e0880026e305dd508d9b448fe900f9920594d73565f81f9833",
+      "image_sha256": "7f8cf4579d43ccb227430360abf0ce001e330b6efa7166ed6690ea47a66ab3c4",
+      "width": 1353,
+      "height": 128,
+      "renderer": "PyMuPDF 1.26.7",
+      "output": "Unit 1/Topic 1.7/assets/exam/ap24-q6b-outliers.png"
+    },
+    "ap19-q1-data": {
+      "source_url": "https://apstudents.collegeboard.org/ap/2019-05/ap19-frq-statistics.pdf",
+      "pdf_sha256": "34b36ff9d7a551dfa127097d00bb7b42d1a8d5277d6a9acf0e3ae6e2d448ad8e",
+      "pdf_page_index": 5,
+      "clip_points": [
+        45,
+        202,
+        573,
+        559
+      ],
+      "spec_sha256": "f2e392636fe8dc49225e27c46252dc01ebb4c3741168d59865028680267f8b46",
+      "image_sha256": "a28f5a6a6c83e760825a8c56826b489210a5cf81fd3848559d99ec035ed23144",
+      "width": 1321,
+      "height": 893,
+      "renderer": "PyMuPDF 1.26.7",
+      "output": "Unit 1/Topic 1.8/assets/exam/ap19-q1-data.png"
+    },
+    "ap19-q1-bc": {
+      "source_url": "https://apstudents.collegeboard.org/ap/2019-05/ap19-frq-statistics.pdf",
+      "pdf_sha256": "34b36ff9d7a551dfa127097d00bb7b42d1a8d5277d6a9acf0e3ae6e2d448ad8e",
+      "pdf_page_index": 6,
+      "clip_points": [
+        45,
+        48,
+        573,
+        316
+      ],
+      "spec_sha256": "08d22fddb0c5ac212394feba511669cb8e72fba0e08fa7c9ade6dabefdfaa798",
+      "image_sha256": "ddd77121dc4dec3abbb6c053fe3d2bc655db69df76caa0eb91de41298c9ba57f",
+      "width": 1321,
+      "height": 670,
+      "renderer": "PyMuPDF 1.26.7",
+      "output": "Unit 1/Topic 1.8/assets/exam/ap19-q1-bc.png"
+    },
+    "ap26-q1-ab": {
+      "source_url": "https://apcentral.collegeboard.org/media/pdf/ap26-frq-statistics.pdf",
+      "pdf_sha256": "84303804b2f24b74830ab4484566e882f858a2cada4cbd7c9b0464e86b15593a",
+      "pdf_page_index": 2,
+      "clip_points": [
+        44,
+        58,
+        568,
+        640
+      ],
+      "spec_sha256": "d8eab73eb60559d6323a9bacc5d5772623f2545f7f884aadd4abe112b4bb9c2a",
+      "image_sha256": "ababf4dd70ffc2687ddd44b0c47d8e45ee3feee78d767b483442d54ec83666ad",
+      "width": 1310,
+      "height": 1455,
+      "renderer": "PyMuPDF 1.26.7",
+      "output": "Unit 1/Topic 1.9/assets/exam/ap26-q1-ab.png"
+    },
+    "ap26-q1-c": {
+      "source_url": "https://apcentral.collegeboard.org/media/pdf/ap26-frq-statistics.pdf",
+      "pdf_sha256": "84303804b2f24b74830ab4484566e882f858a2cada4cbd7c9b0464e86b15593a",
+      "pdf_page_index": 3,
+      "clip_points": [
+        44,
+        50,
+        568,
+        415
+      ],
+      "spec_sha256": "2e220b1dada8b08630d8f2102a604e4a50221a75ee950fa7f7dcb8dc88bb3b58",
+      "image_sha256": "682b2eec97872a14b0af1baec7e829d214d4e80be2203ef351f49fee51bec135",
+      "width": 1310,
+      "height": 913,
+      "renderer": "PyMuPDF 1.26.7",
+      "output": "Unit 1/Topic 1.9/assets/exam/ap26-q1-c.png"
+    }
+  }
+}

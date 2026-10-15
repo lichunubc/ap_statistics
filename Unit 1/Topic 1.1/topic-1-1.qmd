@@ -3,7 +3,6 @@
 ::: {.chapter-lead}
 **Start with a question—not a calculation.** Identify the group you want to understand, decide what to record, and explain how the observations address that question.
 
-**Learning targets:** identify the components of a statistical study (**1.1.A**) and determine a purposeful, answerable investigative question (**1.1.B**).
 :::
 
 ## A question gives a study its direction
@@ -14,10 +13,6 @@ School A has **1,000 students enrolled this term**. The school wants to understa
 
 The question concerns the **whole school**, whereas the recorded answers come from a **selected group**. Statistics connects those two levels: we use data from a sample to investigate a question about a population. The quality of that connection depends on how the study is designed, not just on doing arithmetic correctly.
 
-::: {.callout-note}
-## Our classroom example
-School A and its survey are hypothetical. They are not student records from Maple Hill School. The fixed survey used in this sequence has 40 responses, including 18 Bus responses. It is separate from the 24 commute times used in Topic 1.5.
-:::
 
 ## Separate a group from its size
 
@@ -37,7 +32,7 @@ A population does not have to consist of people. It could consist of trees in a 
 Change the number selected and draw another illustrative selection. Notice what remains fixed.
 
 <div class="interactive" data-foundation="population">
-<p><strong>Population: 1,000 hypothetical School A students.</strong> A selection of 40 students is a subset of that group, not a different population.</p>
+<p><strong>Population: 1,000 School A students.</strong> A selection of 40 students is a subset of that group, not a different population.</p>
 <p>The interactive grid requires JavaScript; the explanation and practice below remain available without it.</p>
 </div>
 
@@ -125,9 +120,9 @@ This sentence identifies **the group**, **the characteristic**, and **the numeri
 
 The fraction is included to practise contextual interpretation. The formal distinction between a *parameter* and a *statistic*, and symbols such as $p$ and $\hat p$, is developed in Topic 1.2.
 
-## Practice: identify, formulate, justify
+## Practice {#practice-identify-formulate-justify}
 
-Attempt each question before expanding its solution. All questions below are original classroom practice.
+Try each question before opening its solution.
 
 ### 1. Books in a library
 
@@ -229,6 +224,10 @@ You should be able to name a population and sample precisely, distinguish $N$ fr
 
 **Next in the foundations sequence:** Topic 1.2 introduces observational units, variables, parameters, and statistics. The existing [quantitative-data chapters](<../Topic 1.5/topic-1-5.qmd#individual-values>) remain available for review.
 
-::: {.small-note}
-**Curriculum alignment:** College Board, [AP Statistics Course and Exam Description, effective Fall 2026](https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf#page=35), printed pp. 30–31, objectives 1.1.A–B (checked October 13, 2026). This chapter's explanations, interactives, and practice are classroom-authored, adapted from Chun Li's *Understanding and Representing Data*. It is not an official College Board publication. Sampling-distribution simulations and detailed sampling-design methods are outside this chapter's core scope.
+::: {.lesson-sources}
+<details><summary>Sources</summary>
+
+[College Board course framework](https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description-effective-fall-2026.pdf), Topic 1.1. School A is a course example.
+
+</details>
 :::

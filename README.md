@@ -51,3 +51,7 @@ Do not publish real student records, credentials, private notes, secure AP Class
 The authorized nineteen-topic expansion covers the remaining Unit 1 topics (1.7–1.13) and all revised five-unit CED Unit 2 topics (2.1–2.12). Topics **1.7–1.9 are now verified live**. After Chun Li renewed authorization on October 15, the saved Topic 1.9 preview branch was integrated without force, and [production workflow 38772105399](https://github.com/lichunubc/ap_statistics/actions/runs/38772105399) passed the full build, deployment and live-verification gate.
 
 The existing automation has resumed for **16 hourly sessions**, beginning October 15 at **10:51:45 a.m. Vancouver time**, for Topics **1.10–1.13 and 2.1–2.12**. See `project/UNIT_1_2_EXPANSION.md` and `project/expansion-state.json` for requirements and actual release state. These are scheduled work sessions, not guaranteed publication deadlines. Original public practice remains separate from restricted homework. A chapter is only called publicly released after Actions and a revision-matched live check.
+
+## Student presentation
+
+Follow [the presentation guide](project/STUDENT_PRESENTATION.md). Keep mappings and provenance in source; teach through clean introductions, typeset mathematics, on-page exam examples and Practice panels.

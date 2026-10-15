@@ -3,16 +3,15 @@
 ::: {.chapter-lead}
 **Turn individual responses into evidence.** Count the observations in each category, convert those counts into relative frequencies, and use an explicitly identified denominator to justify a claim.
 
-**Learning targets:** construct categorical frequency and relative-frequency tables (**1.3.A; skill 3.A**) and describe their numerical summaries in context (**1.3.B; skill 4.A**).
 :::
 
 ## One variable, one response per person
 
-School A has 1,000 students enrolled this term. In our **hypothetical sample of 40 School A students**, each reports a *usual main travel method*: Walk, Bicycle, Bus, or Car. This is the same categorical study introduced in [Topic 1.1](<../Topic 1.1/topic-1-1.qmd>); it is **not** the separate sample of 24 numerical commute times used in Topic 1.5.
+School A has 1,000 students enrolled this term. In our **sample of 40 School A students**, each reports a *usual main travel method*: Walk, Bicycle, Bus, or Car. This is the same categorical study introduced in [Topic 1.1](<../Topic 1.1/topic-1-1.qmd>).
 
 The investigative question is: **What proportion of School A students this term usually travel mainly by bus?**
 
-For a one-response frequency table, categories should be **mutually exclusive** (a respondent cannot be counted in two categories) and **collectively exhaustive** (every valid response has a place). Here, *main method* means the method used for the greatest distance on a typical school day. A real questionnaire should also provide consistent rules for ties or unlisted methods; our hypothetical data specify exactly one method for each of the 40 respondents.
+For a one-response frequency table, categories should be **mutually exclusive** (a respondent cannot be counted in two categories) and **collectively exhaustive** (every valid response has a place). Here, *main method* means the method used for the greatest distance on a typical school day. A real questionnaire should also provide consistent rules for ties or unlisted methods; the data specify exactly one method for each of the 40 respondents.
 
 ## From tallies to frequencies
 
@@ -30,7 +29,7 @@ The check is $8+6+18+8=40$. The sum would be larger than 40 if someone were coun
 
 ### Activity: construct the table one response at a time
 
-Predict where the next tally belongs. Advance one response, advance five, reveal the finished table, or reset. For teaching purposes, the activity **reproducibly shuffles the hypothetical category totals**; it does not claim to preserve an actual survey response order.
+Predict where the next tally belongs. Advance one response, advance five, reveal the finished table, or reset. Watch how each response contributes to exactly one category.
 
 <div class="interactive" data-cat-table="tally">
 <p><strong>Static reference:</strong> Walk 8, Bicycle 6, Bus 18, Car 8; 40 total. The interactive tally activity requires JavaScript.</p>
@@ -95,13 +94,13 @@ The four original cases begin with no answer selected. Choose, check the explana
 <p><strong>Static reference:</strong> Bus is the largest category (45%) but not a majority; Walk or Bicycle accounts for 35% of this sample.</p>
 </div>
 
-## Practice: construct, calculate, explain
+## Practice {#practice-construct-calculate-explain}
 
-All questions are independently authored classroom exercises. Try each before opening the detailed solution.
+Try each question before opening its solution.
 
 ### 1. Study locations
 
-A **different hypothetical survey** asks 24 students to name one usual study location: Home (9), Library (8), Cafe (4), or Other (3). Make a frequency/relative-frequency/percentage table. Which is most common? Is it a majority?
+A study-location survey asks 24 students to name one usual study location: Home (9), Library (8), Cafe (4), or Other (3). Make a frequency/relative-frequency/percentage table. Which is most common? Is it a majority?
 
 ::: {.solution}
 <details><summary>Show solution</summary>
@@ -121,7 +120,7 @@ Home is the most common (9 students), but **not a majority**: $9/24=37.5\%<50\%$
 
 ### 2. Ordered categorical answers
 
-A hypothetical movie-satisfaction survey has 30 responses: Very dissatisfied 2, Dissatisfied 4, Neutral 5, Satisfied 12, Very satisfied 7. Compute category percentages to one decimal place and the share *Satisfied or Very satisfied*.
+A movie-satisfaction survey has 30 responses: Very dissatisfied 2, Dissatisfied 4, Neutral 5, Satisfied 12, Very satisfied 7. Compute category percentages to one decimal place and the share *Satisfied or Very satisfied*.
 
 ::: {.solution}
 <details><summary>Show solution</summary>
@@ -205,6 +204,10 @@ You should now be able to construct a one-response table, compute and interpret 
 
 **Coming next:** Topic 1.4 will graph these same counts with bar and pie charts; it should not change the underlying totals.
 
-::: {.small-note}
-**Curriculum and provenance:** [College Board AP Statistics CED, effective Fall 2026](https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf#page=39), Topic 1.3, printed p. 34; objectives 1.3.A and 1.3.B, essential knowledge 1.3.A.1–2 and 1.3.B.1–2 (checked October 13, 2026). All data in this chapter are hypothetical classroom examples, summarized in [data/foundations.json](<../Shared/data/foundations.json>). Interactive code and practice are independently authored; the book is not endorsed by the College Board.
+::: {.lesson-sources}
+<details><summary>Sources</summary>
+
+[College Board course framework](https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description-effective-fall-2026.pdf), Topic 1.3. School travel, study locations and movie satisfaction are course examples.
+
+</details>
 :::

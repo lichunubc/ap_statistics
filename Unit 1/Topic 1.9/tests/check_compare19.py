@@ -6,7 +6,7 @@ TOP=ROOT/'Unit 1/Topic 1.9'
 chapter=(TOP/'topic-1-9.qmd').read_text()
 parts=['_comparison.qmd','_laboratory.qmd','_standardization.qmd','_exam-and-practice.qmd']
 for part in parts:assert (TOP/part).exists(),part
-lessons='\n'.join((TOP/p).read_text() for p in parts)
+lessons='\n'.join((TOP/p).read_text() for p in parts+['_exam-question.qmd'])
 objectives=json.loads((TOP/'objectives.json').read_text())
 data=json.loads((TOP/'data/route-scenarios.json').read_text())
 bank=json.loads((ROOT/'Problem Bank/original/unit-1/topic-1-9.json').read_text())
@@ -17,7 +17,7 @@ covered={v for entry in objectives['coverage'] for v in entry['ids']}
 assert covered==set(objectives['essential_knowledge'])
 assert all(entry['section'] in lessons for entry in objectives['coverage'])
 assert lessons.count('<details class="math-note">')>=5
-for word in ['Optional enrichment','normal','2026','ap26-frq-statistics.pdf','ap26-sg-statistics.pdf','data-z19','data-compare19']:
+for word in ['Optional','normal','2026','ap26-frq-statistics.pdf','ap26-sg-statistics.pdf','data-z19','data-compare19']:
     assert word in lessons,word
 assert 'original-practice-host data-original-practice="1.9"' in lessons
 assert bank['topic']=='1.9' and len(bank['items'])==10

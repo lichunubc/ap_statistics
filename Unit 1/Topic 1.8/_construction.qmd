@@ -5,7 +5,7 @@ A boxplot is **not a bar chart**. Its axis is numerical, and distances along tha
 1. **Sort** the observations and calculate the five-number summary.
 2. **Screen** for potential outliers using the chosen rule and identify the most extreme observations that are *not* flagged.
 3. Draw and label a **numerical scale** containing the observed range.
-4. Draw a **box from \(Q_1\) to \(Q_3\)**, with a median stroke inside it.
+4. Draw a **box from $Q_1$ to $Q_3$**, with a median stroke inside it.
 5. Draw **whiskers from the box to the most extreme actual non-outlying data values** and mark any outliers with separate points or asterisks.
 
 For a *modified* (Tukey-style) boxplot, the lower and upper **1.5-IQR fences** are
@@ -14,10 +14,10 @@ $$
 L=Q_1-1.5(IQR),\qquad U=Q_3+1.5(IQR).
 $$
 
-An observation is flagged only if it lies **strictly outside** the interval from \(L\) to \(U\). Without outliers, the whiskers reach the actual minimum and maximum. With outliers, the **five-number summary still retains the original minimum and maximum**, but the modified boxplot whiskers stop earlier.
+An observation is flagged only if it lies **strictly outside** the interval from $L$ to $U$. Without outliers, the whiskers reach the actual minimum and maximum. With outliers, the **five-number summary still retains the original minimum and maximum**, but the modified boxplot whiskers stop earlier.
 
 <details class="math-note"><summary>Why 1.5 times the IQR? — Optional screening convention</summary>
-<p><strong>Optional enrichment — this mathematical rationale is not required for AP Statistics.</strong> The 1.5 multiplier is a widely used rule of thumb for observations distant from the middle half. The formula extends the central interval by 1.5 copies of its length on each side. It is <strong>not a theorem</strong>, cannot prove a flagged value is erroneous, and can disagree with the two-standard-deviation rule. There is no mathematical proof that 1.5 is the uniquely correct cutoff.</p>
+<p>The 1.5 multiplier is a widely used rule of thumb for observations distant from the middle half. The formula extends the central interval by 1.5 copies of its length on each side. It is <strong>not a theorem</strong>, cannot prove a flagged value is erroneous, and can disagree with the two-standard-deviation rule. There is no mathematical proof that 1.5 is the uniquely correct cutoff.</p>
 </details>
 
 **Critical distinction:** A fence is a screening boundary, **not necessarily an observed value**. Never draw a whisker to a computed fence unless a genuine non-outlying observation happens to equal that fence. Even a negative lower fence can be valid as a calculation for a nonnegative variable; it is not a claimed negative observation.

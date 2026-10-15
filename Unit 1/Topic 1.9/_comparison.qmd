@@ -1,12 +1,10 @@
 ## 1 · Make a fair, useful comparison {#compare-19}
 
-A transport planner wishes to compare *one-way journey time* on two hypothetical bus routes. The variable—time in **minutes**—is the **same quantitative variable** for both groups, and each group contains 12 invented observations:
+A transport planner wishes to compare *one-way journey time* on two bus routes. The variable—time in **minutes**—is the **same quantitative variable** for both groups, and each group contains 12 observations:
 
 | Route A (minutes) | Route B (minutes) |
 |:---|:---|
 | 12, 14, 15, 15, 16, 16, 17, 17, 18, 18, 19, 21 | 9, 10, 11, 12, 13, 13, 14, 15, 16, 17, 19, 38 |
-
-These are **original simulated teaching values**, not measurements from actual bus riders or Maple Hill School students. They are unrelated to the separate School A categorical dataset and the earlier 24-commute dataset.
 
 Before looking at averages, identify what each route's list suggests about **typical journey time** and whether one route has an unusually long journey. Then consider whether “Route B is always faster” is supported. A distribution allows comparisons of groups, **not** guarantees about individual journeys.
 
@@ -44,7 +42,7 @@ For these 12 observations per route, we apply the same **median-of-halves** quar
 
 **Variability.** Route B's middle-half spread is greater (IQR **5** rather than **3** minutes), and its sample SD is also much greater (**7.63** versus **2.39** minutes). Reporting both is useful here: the SD responds strongly to Route B's high extreme; the IQR focuses on the middle portion.
 
-**Shape and unusual features.** Route A is fairly balanced around its center. Route B has a pronounced right tail and a large gap from 19 to 38 minutes. With its quartiles, the upper 1.5-IQR fence is 16.5 + 1.5(5) = **24** minutes, so 38 is flagged as a **potential** outlier by this convention. An unusual value should be investigated, not automatically deleted.
+**Shape and unusual features.** Route A is fairly balanced around its center. Route B has a pronounced right tail and a large gap from 19 to 38 minutes. With its quartiles, the upper 1.5-IQR fence is $16.5+1.5(5)=24$ minutes, so 38 is flagged as a **potential** outlier by this convention. An unusual value should be investigated, not automatically deleted.
 
 **Conclusion supported by these data:** Route B has the lower median journey time but noticeably greater variability in the two samples. We have **not** established that one route causes faster travel, that all B trips are shorter, or that the observed differences hold identically for the entire population.
 

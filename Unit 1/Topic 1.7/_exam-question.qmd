@@ -1,0 +1,15 @@
+<figure class="exam-source" data-exam-id="ap24-q6b-summary">
+<a class="exam-enlarge" href="assets/exam/ap24-q6b-summary.png" aria-label="Enlarge 2024 AP Statistics, Question 6(b)(i)">
+<img src="assets/exam/ap24-q6b-summary.png" alt="2024 AP Statistics, Question 6(b)(i). Readable description below." loading="lazy" decoding="async">
+</a>
+<figcaption>2024 AP Statistics, Question 6(b)(i) · <a href="https://apcentral.collegeboard.org/media/pdf/ap24-frq-statistics.pdf">College Board</a> · © College Board</figcaption>
+<details class="exam-description"><summary>Read the question description</summary><p>For 20 whistle prices, the mean is 5.12 dollars, SD 0.743 dollars, minimum 4.25 dollars, first quartile 4.51 dollars, median 4.885 dollars, third quartile 5.475 dollars and maximum 6.58 dollars. Use these summaries to describe the shape.</p></details>
+</figure>
+
+<figure class="exam-source" data-exam-id="ap24-q6b-outliers">
+<a class="exam-enlarge" href="assets/exam/ap24-q6b-outliers.png" aria-label="Enlarge 2024 AP Statistics, Question 6(b)(ii)">
+<img src="assets/exam/ap24-q6b-outliers.png" alt="2024 AP Statistics, Question 6(b)(ii). Readable description below." loading="lazy" decoding="async">
+</a>
+<figcaption>2024 AP Statistics, Question 6(b)(ii) · <a href="https://apcentral.collegeboard.org/media/pdf/ap24-frq-statistics.pdf">College Board</a> · © College Board</figcaption>
+<details class="exam-description"><summary>Read the question description</summary><p>Determine whether the whistle prices contain outliers using the 1.5-IQR rule, and show the calculations.</p></details>
+</figure>

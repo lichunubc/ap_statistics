@@ -92,7 +92,8 @@ try:
   nojs=browser.new_context(java_script_enabled=False,viewport={'width':390,'height':860})
   page=nojs.new_page();page.goto(url,wait_until='networkidle')
   assert page.locator('.original-nojs li').count()==10
-  assert 'Static alternative' in page.locator('main').inner_text()
+  assert page.locator('.compare19-table tbody tr').count()==2
+  assert '16.50' in page.locator('.compare19-table').inner_text()
   nojs.close();browser.close()
 finally:server.shutdown()
 assert not errors,errors

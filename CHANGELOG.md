@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-10-15 — Student presentation review, Topics 1.1–1.9
+
+- Removed opening curriculum blocks and repeated administrative commentary, retaining source mappings and provenance.
+- Fixed mathematical rendering in lessons, derivations and original-bank practice; preserved numerical answers.
+- Simplified Practice headings and removed visible difficulty, internal IDs and skill labels.
+- Added original released-question images, accessible descriptions and on-page enlargement beside worked examples.
+- Reformatted Topic 1.9’s checklist and recorded future presentation rules.
+- Added rendered-math, image, keyboard, mobile, print and no-JavaScript presentation tests; Actions establishes actual release status.
+
+
 ## 2026-10-15 — Topic 1.9 quantitative distribution comparisons
 
 - Authored a textbook-style 1.9.A–E chapter with rigorous in-context graphical and numerical comparisons, interpretation of standardized relative positions and clear limits to z-score reasoning.

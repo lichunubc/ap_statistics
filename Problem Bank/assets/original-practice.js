@@ -1,113 +1,64 @@
-/* Public original questions: no user data leaves the browser. */
-(function () {
-  "use strict";
-  const hosts=[...document.querySelectorAll("[data-original-practice]")];
-  if(!hosts.length)return;
-  const build=(tag,klass,text)=>{
-    const x=document.createElement(tag);
-    if(klass)x.className=klass;
-    if(text!==undefined)x.textContent=text;
-    return x;
-  };
-  hosts.forEach(async host=>{
-    const topic=host.dataset.originalPractice, url=host.dataset.bankUrl||("../../Problem%20Bank/original/unit-1/topic-1-7.json");
-    let items=[],at=0,selected=null;
-    const status=build("p","original-status","");
-    status.setAttribute("role","status");status.setAttribute("aria-live","polite");
-    const shell=build("div","original-shell");host.replaceChildren(shell,status);
-    async function load(){
-      const response=await fetch(url,{cache:"no-cache"});
-      if(!response.ok)throw Error("Could not load the original-practice file (HTTP "+response.status+").");
-      const pack=await response.json();
-      if(pack.schema_version!==1||pack.topic!==topic||!Array.isArray(pack.items)||!pack.items.length)throw Error("Practice file is invalid or belongs to another topic.");
-      const ids=new Set();
-      for(const q of pack.items){
-        if(!q.id||ids.has(q.id)||typeof q.prompt!=="string"||!["mc","number","written"].includes(q.type)||typeof q.solution!=="string")throw Error("Malformed or duplicate practice question.");
-        if(q.type==="mc"&&(!Array.isArray(q.options)||q.options.length<2||!q.options.some(opt=>opt.label===q.answer)))throw Error("Invalid multiple-choice key.");
-        if(q.type==="number"&&(!Number.isFinite(q.answer)||!Number.isFinite(q.tolerance)))throw Error("Invalid numerical answer key.");
-        ids.add(q.id);
-      }
-      items=pack.items;render();
-    }
-    function render(){
-      const q=items[at],heading=build("h3","original-question-title","Question "+(at+1)+" of "+items.length);
-      const meta=build("p","original-meta",q.difficulty+" · "+q.id+" · "+q.tags.join(", "));
-      const question=build("p","original-prompt",q.prompt);
-      const answerArea=build("div","original-answer");let field=null;
-      if(q.type==="mc"){
-        const f=build("fieldset"),legend=build("legend","","Choose one answer");f.append(legend);
-        for(const opt of q.options){
-          const label=build("label","original-choice");
-          const radio=build("input");radio.type="radio";radio.name="original-"+q.id;radio.value=opt.label;label.append(radio,document.createTextNode(" "+opt.label+". "+opt.text));f.append(label);
-        }
-        answerArea.append(f);field=f;
-      }else if(q.type==="number"){
-        const label=build("label","original-response-label","Your numerical answer");
-        const input=build("input");input.type="number";input.step="any";input.autocomplete="off";
-        input.setAttribute("aria-label","Numerical answer for question "+(at+1));
-        label.append(input);answerArea.append(label);field=input;
-      }else{
-        const label=build("label","original-response-label","Your written justification");
-        const textarea=build("textarea");textarea.rows=4;textarea.placeholder="Explain in context; include numerical evidence and limitations.";
-        label.append(textarea);answerArea.append(label);field=textarea;
-      }
-      const feedback=build("p","original-feedback","");
-      feedback.setAttribute("role","status");feedback.setAttribute("aria-live","polite");
-      const hint=build("div","original-hint"),solution=build("div","original-solution");
-      hint.hidden=true;solution.hidden=true;
-      hint.append(build("p","",q.hint||"Revisit the relevant worked example."));
-      solution.append(build("strong","",q.type==="written"?"Model answer and self-check rubric":"Worked solution"));
-      solution.append(build("p","",q.solution));
-      if(q.type==="written")solution.append(build("p","",q.rubric||"Check your justification, evidence and context."));
-      const controls=build("div","original-controls");
-      const make=(label,act,handler)=>{
-        const b=build("button","original-button",label);b.type="button";b.dataset.action=act;
-        b.addEventListener("click",handler);controls.append(b);return b;
-      };
-      const prior=make("Previous","previous",()=>{at--;render();});prior.disabled=at===0;
-      const next=make("Next question","next",()=>{at++;render();});next.disabled=at===items.length-1;
-      make("Check answer","check",()=>{
-        if(q.type==="mc"){
-          const value=field.querySelector("input:checked");
-          if(!value){feedback.textContent="Choose an answer before checking.";return;}
-          feedback.textContent=value.value===q.answer?"Correct. Explain why the alternatives are unsuitable.":"Not yet. Use the hint or review the worked example.";
-        }else if(q.type==="number"){
-          const value=field.value.trim(),n=Number(value);
-          if(!value||!Number.isFinite(n)){feedback.textContent="Enter a numerical answer before checking.";return;}
-          feedback.textContent=Math.abs(n-q.answer)<=q.tolerance?"Correct, within rounding tolerance.":"Not yet. Check the formula and units.";
-        }else{
-          if(!field.value.trim()){feedback.textContent="Write a justification first; then compare against the model answer.";return;}
-          feedback.textContent="Written response saved only in this page. Reveal the model answer to self-assess; no automated grading is performed.";
-        }
-      });
-      const hintBtn=make("Show hint","hint",()=>{
-        hint.hidden=!hint.hidden;hintBtn.textContent=hint.hidden?"Show hint":"Hide hint";
-      });
-      const solutionBtn=make("Show solution","solution",()=>{
-        solution.hidden=!solution.hidden;solutionBtn.textContent=solution.hidden?"Show solution":"Hide solution";
-      });
-      make("Reset question","reset",()=>render());
-      const aside=build("p","original-privacy","Teacher-authored practice. Responses stay in this page and are not transmitted or tracked.");
-      shell.replaceChildren(heading,meta,question,answerArea,feedback,controls,hint,solution,aside);
-      status.textContent="Showing question "+(at+1)+" of "+items.length+".";
-    }
-    function printAll(){
-      if(!items.length)return;
-      const print=build("section","original-print-set");
-      print.append(build("h3","", "Original practice: Topic "+topic+" — questions and solutions"));
-      for(const q of items){
-        const article=build("article","original-print-question");
-        article.append(build("h4","",q.id),build("p","",q.prompt));
-        if(q.options)for(const option of q.options)article.append(build("p","",option.label+". "+option.text));
-        article.append(build("p","", "Solution: "+q.solution));
-        if(q.rubric)article.append(build("p","", "Rubric: "+q.rubric));
-        print.append(article);
-      }
-      host.append(print);
-    }
-    const before=()=>printAll();
-    const after=()=>host.querySelector(".original-print-set")?.remove();
-    window.addEventListener("beforeprint",before);window.addEventListener("afterprint",after);
-    try{await load();}catch(error){status.textContent="Practice unavailable: "+error.message;host.dataset.loadError="true";}
+/* Public original practice; editorial metadata stays in the structured source. */
+(function(){
+'use strict';
+const build=(tag,klass,text)=>{const e=document.createElement(tag);if(klass)e.className=klass;if(text!==undefined)e.textContent=text;return e;};
+document.querySelectorAll('[data-original-practice]').forEach(async host=>{
+ const topic=host.dataset.originalPractice,url=host.dataset.bankUrl;
+ const template=host.querySelector('template[data-practice-rich]'),rich=template?.content;
+ let items=[],at=0;
+ function fieldContent(q,field,tag='div',klass=''){
+  const node=build(tag,klass),compiled=rich?.querySelector(`[data-practice-id="${CSS.escape(q.id)}"] [data-field="${field}"]`);
+  if(compiled){const source=tag==='span'&&compiled.children.length===1&&compiled.firstElementChild.tagName==='P'?compiled.firstElementChild:compiled;node.append(...[...source.childNodes].map(child=>child.cloneNode(true)));}
+  else{const value=field.startsWith('option-')?q.options?.find(o=>o.label===field.slice(7))?.text:q[field];node.textContent=value||'';}
+  return node;
+ }
+ const status=build('p','original-status','');status.setAttribute('role','status');status.setAttribute('aria-live','polite');
+ const shell=build('div','original-shell');host.replaceChildren(shell,status);
+ function change(index,action){const x=scrollX,y=scrollY;at=index;render();const b=shell.querySelector(`[data-action="${action}"]`);if(b&&!b.disabled)b.focus({preventScroll:true});window.scrollTo(x,y);}
+ function render(){
+  const q=items[at],heading=build('h3','original-question-title','Question '+(at+1)+' of '+items.length),question=fieldContent(q,'prompt','div','original-prompt');
+  const answerArea=build('div','original-answer');let field;
+  if(q.type==='mc'){
+   const f=build('fieldset');f.append(build('legend','','Choose one answer'));
+   for(const opt of q.options){const label=build('label','original-choice'),radio=build('input');radio.type='radio';radio.name='original-'+q.id;radio.value=opt.label;label.append(radio,document.createTextNode(' '+opt.label+'. '),fieldContent(q,'option-'+opt.label,'span'));f.append(label);}
+   answerArea.append(f);field=f;
+  }else{
+   const label=build('label','original-response-label',q.type==='number'?'Your numerical answer':'Your written justification');
+   if(q.type==='number'){field=build('input');field.type='number';field.step='any';field.autocomplete='off';field.setAttribute('aria-label','Numerical answer for question '+(at+1));}
+   else{field=build('textarea');field.rows=4;field.placeholder='Explain your reasoning in context.';}
+   label.append(field);answerArea.append(label);
+  }
+  const feedback=build('p','original-feedback','');feedback.setAttribute('role','status');feedback.setAttribute('aria-live','polite');
+  const hint=fieldContent(q,'hint','div','original-hint'),solution=build('div','original-solution');hint.hidden=true;solution.hidden=true;hint.id='practice-hint-'+q.id;solution.id='practice-solution-'+q.id;
+  solution.append(build('strong','',q.type==='written'?'Model answer and self-check':'Worked solution'),fieldContent(q,'solution'));if(q.rubric)solution.append(fieldContent(q,'rubric'));
+  const controls=build('div','original-controls');
+  function make(label,act,handler){const b=build('button','original-button',label);b.type='button';b.dataset.action=act;b.addEventListener('click',handler);controls.append(b);return b;}
+  make('Previous','previous',()=>change(at-1,'previous')).disabled=at===0;
+  make('Next question','next',()=>change(at+1,'next')).disabled=at===items.length-1;
+  make('Check answer','check',()=>{
+   if(q.type==='mc'){const v=field.querySelector('input:checked');feedback.textContent=!v?'Choose an answer before checking.':v.value===q.answer?'Correct. Explain why the alternatives are unsuitable.':'Not yet. Use the hint or review the worked example.';}
+   else if(q.type==='number'){const v=field.value.trim(),n=Number(v);feedback.textContent=!v||!Number.isFinite(n)?'Enter a numerical answer before checking.':Math.abs(n-q.answer)<=q.tolerance?'Correct, within rounding tolerance.':'Not yet. Check the formula and units.';}
+   else feedback.textContent=field.value.trim()?'Compare your reasoning with the model answer and self-check.':'Write a justification first, then compare it with the model answer.';
   });
-}());
+  function disclosure(label,act,target){const b=make('Show '+label,act,()=>{target.hidden=!target.hidden;b.textContent=(target.hidden?'Show ':'Hide ')+label;b.setAttribute('aria-expanded',String(!target.hidden));});b.setAttribute('aria-controls',target.id);b.setAttribute('aria-expanded','false');}
+  disclosure('hint','hint',hint);disclosure('solution','solution',solution);make('Reset question','reset',()=>change(at,'reset'));
+  shell.replaceChildren(heading,question,answerArea,feedback,controls,hint,solution);status.textContent='Showing question '+(at+1)+' of '+items.length+'.';
+ }
+ function printAll(){
+  if(!items.length)return;host.querySelector('.original-print-set')?.remove();const print=build('section','original-print-set');print.append(build('h3','','Practice: Topic '+topic));
+  items.forEach((q,i)=>{const article=build('article','original-print-question');article.append(build('h4','','Question '+(i+1)),fieldContent(q,'prompt'));for(const o of q.options||[])article.append(build('strong','',o.label+'.'),fieldContent(q,'option-'+o.label));article.append(build('strong','','Solution'),fieldContent(q,'solution'));if(q.rubric)article.append(fieldContent(q,'rubric'));print.append(article);});host.append(print);
+ }
+ window.addEventListener('beforeprint',printAll);window.addEventListener('afterprint',()=>host.querySelector('.original-print-set')?.remove());
+ try{
+  const response=await fetch(url,{cache:'no-cache'});if(!response.ok)throw Error('Unable to load the questions.');const pack=await response.json();
+  if(pack.schema_version!==1||pack.topic!==topic||!Array.isArray(pack.items)||!pack.items.length)throw Error('The question file is not valid for this topic.');
+  if(template&&Number(template.dataset.bankRevision)!==Number(pack.revision||1))throw Error('The questions have been updated. Please reload this page.');
+  const ids=new Set();for(const q of pack.items){
+   if(!q.id||ids.has(q.id)||typeof q.prompt!=='string'||!['mc','number','written'].includes(q.type)||typeof q.solution!=='string')throw Error('Invalid practice question.');
+   if(q.type==='mc'&&(!Array.isArray(q.options)||q.options.length<2||!q.options.some(o=>o.label===q.answer)))throw Error('Invalid answer choices.');
+   if(q.type==='number'&&(!Number.isFinite(q.answer)||!Number.isFinite(q.tolerance)||q.tolerance<0))throw Error('Invalid numerical answer.');ids.add(q.id);
+  }
+  items=pack.items;render();
+ }catch(error){status.textContent='Practice unavailable: '+error.message;host.dataset.loadError='true';}
+});
+})();

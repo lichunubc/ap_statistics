@@ -24,7 +24,7 @@ Open a unit to see its topics. In the sidebar, use the arrow beside a unit to sh
 ::: {.route-card .unit-card data-unit="1"}
 ### [Unit 1: Exploring One-Variable Data and Collecting Data](<Unit 1/unit-1.qmd>)
 
-<span class="unit-state" data-unit-status="partial">Topics 1.1–1.6 available</span>
+<span class="unit-state" data-unit-status="partial">Explore available topics</span>
 
 Browse the available lessons, interactive activities, and worked practice.
 :::
@@ -61,9 +61,5 @@ A place for future lessons. No topics have been published yet.
 ## How to study with this book
 
 Read an explanation, predict what will happen, and then use the activity. For construction questions, draw on paper before opening **Show solution**. A correct answer includes appropriate labels, a sensible scale, and reasoning in context—not only arithmetic.
-
-The activities run in your browser without an account or notebook kernel. Choices are not submitted to a teacher and reset when you reload the page. Core explanations and worked answers remain readable without JavaScript. Printing expands solutions and includes activity reference states.
-
-This book is being developed unit by unit. Unit 1 currently contains Topics 1.1–1.6, not the entire unit. Units 2–5 are **under construction**.
 
 [Sources and study resources](resources.qmd)

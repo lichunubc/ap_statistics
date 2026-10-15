@@ -1,6 +1,6 @@
 ## 2 · Interactive laboratory: common-scale comparisons {#laboratory-19}
 
-**Predict before clicking.** The original Route B includes a 38-minute trip. If you replace that value with 20, which summary will change more—the median or the standard deviation? Which graph best reveals the gap? Then try the controls. Changing the scenario **does not** change the definition of the variable, the axes, or any real student record.
+**Predict before clicking.** The original Route B includes a 38-minute trip. If you replace that value with 20, which summary will change more—the median or the standard deviation? Which graph best reveals the gap? Then try the controls. Keep the measurement units and axis scale fixed as you compare the scenarios.
 
 <div class="compare19-lab" data-compare19>
 <div class="compare19-controls">
@@ -38,12 +38,32 @@
 </tbody>
 </table></div>
 <p data-compare19-interpret class="compare19-insight">In the default dataset, Route A's sample median is higher; Route B has the larger IQR and a high extreme. Dotplots make the gap visible.</p>
-<p class="compare19-access">Static alternative: the original 12 observations for each route and their verified comparison are above; all scenarios use invented teaching data. Dotplots encode individual repeated values; boxplots encode medians/quartiles and whiskers; histograms group observations into the same five-minute intervals.</p>
+<p class="compare19-access">The data table above gives the original 12 times for each route and their summaries. Dotplots encode individual repeated values; boxplots encode medians/quartiles and whiskers; histograms group observations into the same five-minute intervals.</p>
 </div>
 
 **What to discover:** when you replace Route B's 38-minute trip with 20 minutes, its large high gap vanishes and its standard deviation falls sharply; its median remains 13.5 minutes. Choosing “shifted” produces groups with equal IQR and sample SD, although the center is five minutes apart. Changing to boxplots hides the detailed dot pattern. A graph should answer your question, not merely look attractive.
 
 <details class="math-note">
 <summary>Why does adding a constant shift the center but not the spread? — Optional derivation</summary>
-<p><strong>Optional enrichment — this derivation is not required for AP Statistics.</strong> Suppose every observation changes from x to x + c. The new mean is (sum of the original values + n × c)/n, so it equals the old mean plus c. Every value's distance from the new mean is unchanged because (x + c) − (mean + c) = x − mean. Therefore the sum of squared deviations and sample standard deviation do not change. Every quartile rises by c, so Q3 − Q1 does not change either. Shifting a distribution is not the same as rescaling its variability.</p>
+
+Suppose each observation changes from $x_i$ to $y_i=x_i+c$. The new mean is
+
+$$
+\bar y=\frac{\sum_{i=1}^{n}(x_i+c)}{n}=\bar x+c.
+$$
+
+Each deviation from the new mean is unchanged:
+
+$$
+(y_i-\bar y)=(x_i+c)-(\bar x+c)=x_i-\bar x.
+$$
+
+The squared deviations, sample variance and standard deviation are therefore unchanged. Both quartiles increase by $c$, leaving the IQR unchanged:
+
+$$
+(Q_3+c)-(Q_1+c)=Q_3-Q_1.
+$$
+
+A shift changes the center without changing the spread.
+
 </details>

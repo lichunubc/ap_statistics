@@ -1,9 +1,5 @@
 ## Build a histogram {#histograms}
 
-::: {.chapter-lead}
-**Learning goal:** Choose and read bins, tally observations, and draw one complete bar for each row of the frequency table.
-:::
-
 ### Step 1 · Choose and read the bins
 
 A **histogram** groups quantitative observations into ordered intervals called **bins**. A bar's width represents an interval of the variable; its height gives the frequency or relative frequency in that interval. We use **equal-width bins** throughout this lesson.

@@ -1,7 +1,7 @@
 # Practice and solutions
 
 ::: {.chapter-lead}
-Try each question before opening its solution. These are classroom exercises, not a graded or secure test. The website does not submit your answers to a teacher.
+Try each question before opening its solution.
 :::
 
 ## 1 · Draw from a frequency table
