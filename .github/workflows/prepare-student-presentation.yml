@@ -32,7 +32,10 @@ jobs:
           python recipe/editorial-transfer/04_bank_docs_tests.py
           cp -a recipe/editorial-transfer/overrides/. source/
           python -m compileall -q source/tools source/site/tests source/'Unit 1'
+          mkdir -p editorial-result
+          cp source/.github/workflows/publish.yml editorial-result/proposed-publish.yml
           cd source
+          git restore .github/workflows/publish.yml
           find "Unit 1" site "Problem Bank" -name '*.js' -print0 | xargs -0 -n1 node --check
       - name: Render original released-question images
         working-directory: source
@@ -51,18 +54,15 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git switch -c "$branch"
-          git add -- 'Unit 1' 'Problem Bank' site tools project _quarto.yml README.md CONTRIBUTING.md CHANGELOG.md resources.qmd index.qmd .github/workflows/publish.yml
+          git add -- 'Unit 1' 'Problem Bank' site tools project _quarto.yml README.md CONTRIBUTING.md CHANGELOG.md resources.qmd index.qmd
           git diff --cached --check
           git commit -m 'Apply student-facing presentation review across Topics 1.1–1.9'
+          git rev-parse HEAD > ../editorial-result/revision.txt
+          git archive --format=tar.gz HEAD > ../editorial-result/source.tar.gz
           git push origin "HEAD:refs/heads/$branch"
-          mkdir -p /tmp/editorial-result
-          git rev-parse HEAD > /tmp/editorial-result/revision.txt
-          git archive --format=tar.gz HEAD > /tmp/editorial-result/source.tar.gz
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: prepared-student-presentation
-          path: |
-            /tmp/editorial-result/
-            source/Unit 1/**/assets/exam/*.png
+          path: editorial-result/
           retention-days: 3
