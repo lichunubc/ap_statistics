@@ -1,0 +1,66 @@
+{
+  "id": "1.9",
+  "title": "Comparisons of the Distributions for One Quantitative Variable",
+  "curriculum": {
+    "name": "AP Statistics Course and Exam Description",
+    "effective": "Fall 2026",
+    "source": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description-effective-fall-2026.pdf",
+    "ced_printed_pages": "43–44"
+  },
+  "learning_objectives": [
+    "1.9.A",
+    "1.9.B",
+    "1.9.C",
+    "1.9.D",
+    "1.9.E"
+  ],
+  "essential_knowledge": [
+    "1.9.A.1",
+    "1.9.B.1",
+    "1.9.C.1",
+    "1.9.D.1",
+    "1.9.D.2",
+    "1.9.E.1"
+  ],
+  "skills": [
+    "3.B",
+    "4.A",
+    "4.B",
+    "4.C"
+  ],
+  "coverage": [
+    {
+      "section": "#compare-19",
+      "ids": [
+        "1.9.A.1"
+      ]
+    },
+    {
+      "section": "#example-routes-19",
+      "ids": [
+        "1.9.B.1"
+      ]
+    },
+    {
+      "section": "#claim-19",
+      "ids": [
+        "1.9.C.1"
+      ]
+    },
+    {
+      "section": "#zscore-19",
+      "ids": [
+        "1.9.D.1",
+        "1.9.D.2"
+      ]
+    },
+    {
+      "section": "#interpret-z-19",
+      "ids": [
+        "1.9.E.1"
+      ]
+    }
+  ],
+  "practice_items": 10,
+  "notes": "Compare common-scale quantitative distributions and report relative positions using population z-scores. Sample substitutes must be named; z-scoring does not create normality."
+}

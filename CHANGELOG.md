@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-10-15 — Topic 1.9 quantitative distribution comparisons
+
+- Authored a textbook-style 1.9.A–E chapter with rigorous in-context graphical and numerical comparisons, interpretation of standardized relative positions and clear limits to z-score reasoning.
+- Added linked original dotplot, modified boxplot and common-bin histograms for synthetic route-time samples, plus a z-score number-line explorer and accessible static data equivalents.
+- Added ten original structured problem-bank exercises with worked answers and rubrics in the shared one-at-a-time panel; no secure classroom items are republished.
+- Connected a genuine released 2026 AP Statistics free-response Question 1(B–C) with official scoring guidance using source links and independently written commentary.
+- Added deterministic objective/answer/math checks and native browser tests for desktop/mobile, keyboard, no-JavaScript content, printing and MathML; publication is independently established by GitHub Actions checks.
+
+
 ## 2026-10-14 — Topic 1.8 graphical summaries
 
 - Created a self-contained, officially mapped Topic 1.8 on five-number summaries, modified boxplots, mean–median patterns and responsible interpretation.

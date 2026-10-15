@@ -1,0 +1,9 @@
+# Topic 1.9 official source search and editorial selection — October 15, 2026
+
+Curriculum source: [AP Statistics CED effective Fall 2026](https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description-effective-fall-2026.pdf), printed pp. 43–44. Topic 1.9 contains 1.9.A.1 (compare distribution graphs), 1.9.B.1 (compare numeric summaries), 1.9.C.1 (justify evidence), 1.9.D.1 and .2 (z-score interpretation/formula with population parameters and sample fallback), 1.9.E.1 (relative-position comparisons). Skills 4.A, 4.B, 3.B, 4.C.
+
+Search priority followed: first opened College Board's official public [AP Statistics past exam archive](https://apcentral.collegeboard.org/courses/ap-statistics/exam/past-exam-questions) and inspected the [2026 released FRQ PDF](https://apcentral.collegeboard.org/media/pdf/ap26-frq-statistics.pdf) Question 1, parts A–C, plus [official scoring guidelines](https://apcentral.collegeboard.org/media/pdf/ap26-sg-statistics.pdf) Question 1, parts B and C.
+
+**Selected: 2026 AP Statistics free-response Question 1(B–C).** The goat weight comparisons and different information carried by stem-and-leaf vs boxplots align exceptionally well with 1.9.A–C; it does NOT itself teach z-scores. Verify relevant numerical facts from official scoring guidelines: H median 64 lb, IQR 16 lb, range 32 lb; J median about 64 lb, IQR about 24 lb, range about 40 lb; H stem-and-leaf is bimodal but the boxplot cannot reveal modes. This chapter links both original public PDFs and supplies independent concise pedagogical commentary only, not a copied diagram or examination prompt.
+
+The original route-journey comparison and z-score assessments are original hypothetical instructional examples for 1.9.D–E. Ten student practice questions are independent original work with explicit "original" rights/provenance; no AP Classroom booklet content and no copyrighted PDF pages are included in public source.

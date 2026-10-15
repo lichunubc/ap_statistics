@@ -1,8 +1,8 @@
 # Unit 1: Exploring One-Variable Data and Collecting Data
 
-Each topic is an independent chapter and a separate editorial folder. Use the exact official topic name, not a combined range such as “1.1–1.4”. The current book includes Topics 1.1–1.6; later Unit 1 topics have not been authored here.
+Each topic is an independent chapter and a separate editorial folder. Use the exact official topic name, not a combined range such as “1.1–1.4”. The current book includes Topics 1.1–1.9; later Unit 1 topics remain under development.
 
-The student-facing unit entrance is **[unit-1.qmd](unit-1.qmd)**. Edit this file to maintain the six topic cards and the unit's dataset introduction. The root `index.qmd` contains only the five-unit overview, not this topic list. The unit title in the sidebar opens this entrance; its separate arrow shows/hides the topics.
+The student-facing unit entrance is **[unit-1.qmd](unit-1.qmd)**. Edit this file to maintain the currently published topic cards and the unit's dataset introduction. The root `index.qmd` contains only the five-unit overview, not this topic list. The unit title in the sidebar opens this entrance; its separate arrow shows/hides the topics.
 
 - [Topic 1.1 Introducing Statistics: What Can We Learn from Data?](<Topic 1.1/README.md>)
 - [Topic 1.2 Variables](<Topic 1.2/README.md>)
@@ -10,6 +10,9 @@ The student-facing unit entrance is **[unit-1.qmd](unit-1.qmd)**. Edit this file
 - [Topic 1.4 Graphical Representations for One Categorical Variable](<Topic 1.4/README.md>)
 - [Topic 1.5 Graphical Representations for One Quantitative Variable](<Topic 1.5/README.md>)
 - [Topic 1.6 Descriptions for One Quantitative Variable Distributions](<Topic 1.6/README.md>)
+- [Topic 1.7 Summary Statistics for One Quantitative Variable](<Topic 1.7/README.md>)
+- [Topic 1.8 Graphical Representations of Summary Statistics for One Quantitative Variable](<Topic 1.8/README.md>)
+- [Topic 1.9 Comparisons of the Distributions for One Quantitative Variable](<Topic 1.9/README.md>)
 
 ## Finding files for manual editing
 

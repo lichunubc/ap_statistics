@@ -1,0 +1,74 @@
+## 3 · Relative position: the z-score {#zscore-19}
+
+A raw score of 86 on one assessment and 90 on another does not say who performed better *relative to their own distribution*. We need the group's mean and standard deviation. A **z-score** describes how many standard deviations an observation lies **above** (positive) or **below** (negative) its reference mean. It carries **no physical units**.
+
+When population parameters are known, use
+
+$$
+z=\frac{x-\mu}{\sigma}, \qquad \sigma>0,
+$$
+
+where \(x\) is the observed measurement, \(\mu\) is its **population mean**, and \(\sigma\) is its **population standard deviation**. Subtraction locates the score relative to the mean; division expresses that distance in standard deviation units.
+
+<details class="math-note">
+<summary>Why does standardizing count standard deviations? — Optional algebraic derivation</summary>
+<p><strong>Optional enrichment — this derivation is not required for AP Statistics.</strong> A distance of x − μ is measured in the original unit. One standard deviation is σ of those units. Dividing distance by σ tells us how many such equal-sized units separate x from the mean. For example, a difference of 16 points when σ = 8 points is two standard deviations, not sixteen. Because numerator and denominator share units, z has no units. The formula requires σ &gt; 0; when every population value is identical, σ = 0 and this expression is undefined.</p>
+</details>
+
+**Worked example.** Suppose two hypothetical standardized school assessments measure different skills. On Assessment A, a student scores 86 points, while the population has mean 70 and SD 8 points. Then \(z_A=(86-70)/8=\boxed{2.00}\). On Assessment B the student scores 90 points, while that population has mean 80 and SD 10 points. Then \(z_B=(90-80)/10=\boxed{1.00}\). A is the stronger *relative position*—two SDs above its own mean rather than one—even though 86 is the smaller raw score. This is **not** a claim about which assessment was harder or what percentile the student attained.
+
+### Interpret signs and compare distributions {#interpret-z-19}
+
+A z-score of **0** means at the mean; **−1.5** means one and a half standard deviations *below* the mean; **+2** means two above. Whether a large positive z-score is desirable depends on the measured outcome: unusually high test scores might be desirable, while unusually long emergency wait times might not.
+
+When two distributions are not similarly shaped, equal z-scores do **not necessarily imply equal percentile ranks**. A z-score is a measure of *standardized distance*, not a probability. Converting raw scores to z-scores **does not make the distribution normal** or change how its observations are ordered (for positive standard deviation).
+
+If a question instead gives a z-score and asks for the raw value, rearrange:
+
+$$
+x=\mu+z\sigma.
+$$
+
+<details class="math-note">
+<summary>Why can we recover the raw value? — Optional algebraic derivation</summary>
+<p><strong>Optional enrichment — this derivation is not required for AP Statistics.</strong> Starting with z = (x − μ)/σ and σ &gt; 0, multiply both sides by σ to get zσ = x − μ. Add μ to both sides to obtain x = μ + zσ. This is an inverse calculation, not a new probability model.</p>
+</details>
+
+If population parameters are not known and the problem permits estimates from a sample, we can report a **sample-referenced** standardized score:
+
+$$
+z_{\text{sample}}=\frac{x-\bar{x}}{s}, \qquad s>0.
+$$
+
+<details class="math-note">
+<summary>Why substitute sample summaries? — Conditions and limitation</summary>
+<p>This is a sample-based <strong>definition of relative position</strong>, not proof that a sample mean and SD equal their population counterparts. Replacing unknown μ and σ with the sample mean and sample SD gives a descriptive standardized distance relative to that sample. It is meaningful only when the reference group is specified and s is positive. Do not quietly use a sample mean when a population mean is supplied.</p>
+</details>
+
+For example, in Route A's sample a 21-minute trip has sample-referenced z approximately \((21-16.5)/2.393\approx1.88\). In Route B's sample a 19-minute trip has z approximately \((19-15.583)/7.633\approx0.45\). A is farther above **its own route's** typical time; this does not say that 21 minutes is a rarer percentile without comparing the shapes.
+
+### Z-score explorer: predict, change, compare {#zlab-19}
+
+Before changing any inputs, predict: if the population SD for Assessment B were smaller while its mean and observed score stayed fixed, would the B z-score increase or decrease?
+
+<div class="compare19-lab" data-z19>
+  <div class="compare19-zgrid">
+    <fieldset><legend>Assessment A (hypothetical population)</legend>
+      <label>Population mean μ (points) <input data-z19-key="muA" type="number" step="any" value="70"></label>
+      <label>Population SD σ (points) <input data-z19-key="sdA" type="number" min="0" step="any" value="8"></label>
+      <label>Observed score x (points) <input data-z19-key="xA" type="number" step="any" value="86"></label>
+    </fieldset>
+    <fieldset><legend>Assessment B (hypothetical population)</legend>
+      <label>Population mean μ (points) <input data-z19-key="muB" type="number" step="any" value="80"></label>
+      <label>Population SD σ (points) <input data-z19-key="sdB" type="number" min="0" step="any" value="10"></label>
+      <label>Observed score x (points) <input data-z19-key="xB" type="number" step="any" value="90"></label>
+    </fieldset>
+  </div>
+  <div class="compare19-buttons"><button type="button" data-z19-action="calculate">Calculate and compare</button><button type="button" data-z19-action="reset">Reset scores</button></div>
+  <p role="status" aria-live="polite" data-z19-status>Assessment A: z = 2.00; Assessment B: z = 1.00.</p>
+  <div data-z19-figure class="compare19-chart" aria-label="Two standard-deviation scales, one for each assessment."></div>
+  <p data-z19-result>Assessment A is farther above its own mean. Graphs display the relative-position scales, not normal probability curves.</p>
+  <p class="compare19-access">Static alternative: Assessment A has x = 86, μ = 70, σ = 8, so z = 2. Assessment B has x = 90, μ = 80, σ = 10, so z = 1. Smaller positive SD makes a fixed positive distance from the mean correspond to more standard deviations.</p>
+</div>
+
+**The entire lesson in one comparison:** use a common-scale graph to understand shape, center, spread, and unusual features. Use a numerical summary to quantify evidence. Use a z-score when the question concerns an individual's relative distance from their reference mean. Never substitute a z-score for a complete description or an experimental design.

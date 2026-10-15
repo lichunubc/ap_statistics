@@ -234,6 +234,43 @@
         "four datasets and editable observations"
       ],
       "implemented_on": "2026-10-14"
+    },
+    {
+      "id": "1.9",
+      "title": "Comparisons of the Distributions for One Quantitative Variable",
+      "status": "implemented",
+      "directory": "Unit 1/Topic 1.9",
+      "chapter": "Unit 1/Topic 1.9/topic-1-9.qmd",
+      "ced_printed_pages": "43–44",
+      "learning_objectives": [
+        "1.9.A",
+        "1.9.B",
+        "1.9.C",
+        "1.9.D",
+        "1.9.E"
+      ],
+      "essential_knowledge": [
+        "1.9.A.1",
+        "1.9.B.1",
+        "1.9.C.1",
+        "1.9.D.1",
+        "1.9.D.2",
+        "1.9.E.1"
+      ],
+      "skills": [
+        "3.B",
+        "4.A",
+        "4.B",
+        "4.C"
+      ],
+      "practice_count": 10,
+      "interactions": [
+        "common-scale dotplot, modified boxplot and histogram",
+        "largest-journey experiment",
+        "z-score position explorer"
+      ],
+      "implemented_on": "2026-10-15",
+      "data_source": "Original hypothetical route and assessment values"
     }
   ]
 }

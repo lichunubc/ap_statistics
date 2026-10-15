@@ -22,9 +22,9 @@
   ],
   "selection_rule": "Resume the earliest item not published_verified. Do not advance on a source commit alone; inspect source, complete tests, deployment and live revision. Do not collide with an active session.",
   "active_run": {
-    "topic": "1.8",
-    "started_utc": "2026-10-14T23:21:36Z",
-    "branch": "preview/topic-1-8-20261014"
+    "topic": "1.9",
+    "started_utc": "2026-10-15T00:25:29Z",
+    "branch": "preview/topic-1-9-20261015"
   },
   "topics": [
     {
@@ -47,9 +47,12 @@
       "ced_printed_pages": [
         42
       ],
-      "status": "source_ready",
+      "status": "published_verified",
       "attempts": 1,
-      "preview_branch": "preview/topic-1-8-20261014"
+      "preview_branch": "preview/topic-1-8-20261014",
+      "source_commit": "1ed80e5995b278dc349a4d9fc9f2755400feb276",
+      "actions_url": "https://github.com/lichunubc/ap_statistics/actions/runs/38655778167",
+      "live_url": "https://lichunubc.github.io/ap_statistics/Unit%201/Topic%201.8/topic-1-8.html"
     },
     {
       "order": 3,
@@ -58,8 +61,8 @@
         43,
         44
       ],
-      "status": "queued",
-      "attempts": 0
+      "status": "in_progress",
+      "attempts": 1
     },
     {
       "order": 4,
@@ -224,6 +227,13 @@
       "actions_url": "https://github.com/lichunubc/ap_statistics/actions/runs/38651894386",
       "verified": "2026-10-14T23:19:49Z",
       "note": "Reconciled successful prior GitHub Actions live deployment and replaced stale claim."
+    },
+    {
+      "topic": "1.8",
+      "status": "published_verified",
+      "source_commit": "1ed80e5995b278dc349a4d9fc9f2755400feb276",
+      "actions_url": "https://github.com/lichunubc/ap_statistics/actions/runs/38655778167",
+      "verified_utc": "2026-10-15T00:25:29Z"
     }
   ],
   "publication_rule": "Only published_verified means the new chapter has passed the relevant complete release gate and the actual live page/revision was checked. Scheduling or a generated file is not proof of publication.",

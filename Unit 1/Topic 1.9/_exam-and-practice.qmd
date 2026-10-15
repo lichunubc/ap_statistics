@@ -1,0 +1,23 @@
+## 4 · Real released AP exam connection {#released-19}
+
+The **2026 AP Statistics Free-Response Question 1, parts B and C**, is a particularly close match for this topic. In the released question, two goat breeds have separately summarized weights. Refer to the official [2026 question PDF (Question 1, pp. 3–4)](https://apcentral.collegeboard.org/media/pdf/ap26-frq-statistics.pdf) and [2026 scoring guidelines (Question 1, pp. 2–4)](https://apcentral.collegeboard.org/media/pdf/ap26-sg-statistics.pdf). We link to the original rather than reproduce its copyrighted graphics or question text.
+
+**Independent instructional walkthrough of part B.** The released Breed H sample's median weight is **64 pounds** and its IQR is **16 pounds** (Q1 56, Q3 72); the Breed J boxplot indicates a median also near **64 pounds** but a larger IQR, approximately **24 pounds**. H's observed range is **32 pounds**, compared with approximately **40 pounds** for J. Thus **the sampled goat breeds have similar medians, but J's sampled weights have greater middle-half and overall variability**. Naming **goat weights in pounds** and **both breeds** is essential: reporting unlabelled numbers is not a full contextual comparison.
+
+**Independent instructional walkthrough of part C.** The original stem-and-leaf plot displays **two prominent peaks in Breed H's weights**, whereas a boxplot based on the five-number summary cannot reliably display the number of modes because it compresses individual observations. The boxplot may appear roughly symmetric without establishing unimodality. This is precisely why graphical representations complement each other.
+
+The numeric commentary above is independently written for instruction; consult the linked official scoring guidelines for actual scoring criteria and the exact graphical evidence. **This released question precedes the 2027 exam-format changes**, so its topic concepts are relevant, but its original question format does not define the revised exam.
+
+## Common errors and final checklist {#takeaway-19}
+
+Do not say that a distribution with a larger mean necessarily has less variability. Do not mistake a taller bar for a longer tail. Do not treat a single boxplot as proof of normality, uniformity, or unimodality. Never write “more spread” without specifying which statistic or graphical feature supports that conclusion. For comparisons of different-sized samples, distinguish frequency from relative frequency. Do not assert population generalizations or causal mechanisms from descriptive displays alone.
+
+For z-scores, always specify the reference distribution; check that the appropriate SD is **positive**, keep raw measurement units distinct from unit-free z, interpret the **sign and magnitude**, and remember: **standardization does not produce normality or automatically identify percentiles**.
+
+## Practice · one question at a time {#practice-19}
+
+The following **10 original teacher-authored exercises** span visual comparisons, numerical summaries, z-scores, and written contextual conclusions. They are stored once in the public original problem bank, separate from copyright-restricted homework references. Switch questions using Previous / Next without leaving this part of the chapter; reveal a hint or full model solution when needed. For written justifications, **self-assess using the rubric**—there is no automated semantic grading.
+
+::: {.original-practice-host data-original-practice="1.9"}
+<p>Enable JavaScript for the compact one-question-at-a-time panel. Without JavaScript, the same original questions and revealable solutions remain available.</p>
+:::

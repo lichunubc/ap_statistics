@@ -1,0 +1,82 @@
+{
+  "description": "Two hypothetical twelve-trip route samples. Independent synthetic teaching data, not real students or observational measurements.",
+  "unit": "minutes",
+  "labels": [
+    "Route A",
+    "Route B"
+  ],
+  "route_a": [
+    12,
+    14,
+    15,
+    15,
+    16,
+    16,
+    17,
+    17,
+    18,
+    18,
+    19,
+    21
+  ],
+  "route_b": [
+    9,
+    10,
+    11,
+    12,
+    13,
+    13,
+    14,
+    15,
+    16,
+    17,
+    19,
+    38
+  ],
+  "alternate_scenarios": {
+    "replaced_b": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      13,
+      14,
+      15,
+      16,
+      17,
+      19,
+      20
+    ],
+    "shifted_b": [
+      17,
+      19,
+      20,
+      20,
+      21,
+      21,
+      22,
+      22,
+      23,
+      23,
+      24,
+      26
+    ],
+    "concentrated_b": [
+      14,
+      14,
+      14,
+      14,
+      15,
+      15,
+      15,
+      16,
+      16,
+      16,
+      16,
+      17
+    ]
+  },
+  "provenance": "Original Maple Hill School independently authored hypothetical values, 2026-10-15",
+  "licensing": "original"
+}

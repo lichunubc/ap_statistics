@@ -1,0 +1,62 @@
+## 1 · Make a fair, useful comparison {#compare-19}
+
+A transport planner wishes to compare *one-way journey time* on two hypothetical bus routes. The variable—time in **minutes**—is the **same quantitative variable** for both groups, and each group contains 12 invented observations:
+
+| Route A (minutes) | Route B (minutes) |
+|:---|:---|
+| 12, 14, 15, 15, 16, 16, 17, 17, 18, 18, 19, 21 | 9, 10, 11, 12, 13, 13, 14, 15, 16, 17, 19, 38 |
+
+These are **original simulated teaching values**, not measurements from actual bus riders or Maple Hill School students. They are unrelated to the separate School A categorical dataset and the earlier 24-commute dataset.
+
+Before looking at averages, identify what each route's list suggests about **typical journey time** and whether one route has an unusually long journey. Then consider whether “Route B is always faster” is supported. A distribution allows comparisons of groups, **not** guarantees about individual journeys.
+
+### What belongs in a comparison?
+
+Use the **same x-axis scale, units, bin widths, and (when appropriate) frequency or relative-frequency conventions**. Describe:
+
+- **Shape:** approximately symmetric, right- or left-skewed, unimodal, bimodal, or roughly uniform. Identify the direction of a longer tail, not the side with the taller bar.
+- **Center:** compare medians (and means if informative), with actual values and units.
+- **Spread:** compare IQRs, standard deviations, ranges, or other appropriate measures, explicitly stating which you use.
+- **Unusual features:** possible outliers, gaps, clusters, or conspicuous extremes, saying which graph provides evidence.
+
+A histogram, dotplot, or back-to-back stemplot can show detailed patterns including gaps and peaks. Side-by-side boxplots reveal quartiles, medians, middle-half spread, and flagged outliers, but **do not reliably show gaps or the number of modes**. A box that looks symmetric cannot prove that a distribution is unimodal or normally distributed.
+
+**Comparison must be relational.** “A's median is 16.5 minutes and B's median is 13.5 minutes” lists facts. “A's median journey is **3 minutes longer** than B's” compares them in context and quantitatively. A complete response also describes spread and, where useful, shape.
+
+### Worked example: routes A and B {#example-routes-19}
+
+For these 12 observations per route, we apply the same **median-of-halves** quartile convention introduced in [Topic 1.7](<../Topic 1.7/topic-1-7.qmd#position>). We use sample standard deviations, because these are samples, not complete route populations.
+
+| Statistic | Route A | Route B |
+|:---|---:|---:|
+| Sample size | 12 | 12 |
+| Mean (minutes) | 16.50 | 15.58 |
+| Median (minutes) | 16.50 | 13.50 |
+| Q1 (minutes) | 15.00 | 11.50 |
+| Q3 (minutes) | 18.00 | 16.50 |
+| IQR (minutes) | 3.00 | 5.00 |
+| Sample SD (minutes) | 2.39 | 7.63 |
+| Range (minutes) | 9 | 29 |
+
+*Rounded means and SDs are for communication; the interactive lab recalculates from the unrounded values. The IQR is Q3 − Q1 as developed in Topic 1.7.*
+
+**Center.** In these particular samples, Route A's median trip is 16.5 minutes, **3.0 minutes longer** than Route B's 13.5 minutes. The sample means differ much less (16.50 versus 15.58) because Route B includes the unusually long 38-minute journey.
+
+**Variability.** Route B's middle-half spread is greater (IQR **5** rather than **3** minutes), and its sample SD is also much greater (**7.63** versus **2.39** minutes). Reporting both is useful here: the SD responds strongly to Route B's high extreme; the IQR focuses on the middle portion.
+
+**Shape and unusual features.** Route A is fairly balanced around its center. Route B has a pronounced right tail and a large gap from 19 to 38 minutes. With its quartiles, the upper 1.5-IQR fence is 16.5 + 1.5(5) = **24** minutes, so 38 is flagged as a **potential** outlier by this convention. An unusual value should be investigated, not automatically deleted.
+
+**Conclusion supported by these data:** Route B has the lower median journey time but noticeably greater variability in the two samples. We have **not** established that one route causes faster travel, that all B trips are shorter, or that the observed differences hold identically for the entire population.
+
+<details class="math-note">
+<summary>Why the reported IQRs and the 1.5-IQR fence? — Definition and convention</summary>
+<p>The IQR is defined as the upper quartile minus the lower quartile: Route A has 18 − 15 = 3 minutes and Route B has 16.5 − 11.5 = 5 minutes. The upper screening fence adds 1.5 times the IQR to the third quartile, giving 16.5 + 1.5 × 5 = 24. The multiplier 1.5 is a <strong>chosen screening convention</strong>, not a universally provable boundary between valid observations and mistakes. Different quartile conventions may shift the fence slightly.</p>
+</details>
+
+### Compare responsibly {#claim-19}
+
+If two groups have **unequal sample sizes**, raw histogram or dotplot counts can be visually misleading for percentage comparisons. Use **relative-frequency histograms with common bin boundaries** when the investigative question concerns proportions; keep the number of observations and graph units visible. When two distributions have different numerical units (for example, exam grades out of different totals), raw values cannot be directly compared until their meanings are put on a common scale.
+
+A stronger AP response names both groups, the quantitative variable, the units, and numerical or graphical evidence supporting the comparison. **Describing does not establish causation**; study design determines whether causal conclusions are justified. More guidance on design follows in Topics 1.10–1.13.
+
+> **Checkpoint.** If two boxplots have identical medians but one has a wider box, what can you conclude? Its middle 50% has a larger IQR. You cannot conclude which one has more peaks or which group always has larger observations. Explain why.
