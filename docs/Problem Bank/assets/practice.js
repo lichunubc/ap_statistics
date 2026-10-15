@@ -110,9 +110,8 @@
   function card(meta, view) {
     const article = el('article', 'bank-question'); article.id = meta.id;
     const h = el('h3', '', `Week ${meta.source_week} · Question ${meta.source_question}`);
-    const descriptor = el('p', 'bank-meta', `Topic ${meta.topic} · ${meta.title} · ${meta.difficulty}`);
-    const source = el('p', 'bank-source', `Source: Week ${meta.source_week} homework, ${meta.source_pages.length === 1 ? 'page' : 'pages'} ${meta.source_pages.join(', ')}. ID: ${meta.id}.`);
-    article.append(h, descriptor, source);
+    const source = el('p', 'bank-source', `Source: Week ${meta.source_week} homework, ${meta.source_pages.length === 1 ? 'page' : 'pages'} ${meta.source_pages.join(', ')}.`);
+    article.append(h, source);
     const item = questions.get(meta.id);
     if (!item) {
       article.append(el('p', 'bank-locked', 'Open the class question file above to display this question, its original diagrams, and the explanation. You can also work from the homework page listed here.'));
@@ -120,7 +119,6 @@
     }
     article.dataset.loaded = 'true';
     const body = el('div', 'bank-prompt'); renderBlocks(item.blocks, body); article.append(body);
-    for (const note of item.editorial_notes) article.append(el('p', 'bank-editorial', `Transcription note: ${note}`));
     const form = el('form'), fieldset = el('fieldset');
     fieldset.append(el('legend', '', 'Choose one answer'));
     for (const option of item.options) {
@@ -148,7 +146,7 @@
     controls.append(check, reset);
     const feedback = statusNode(); feedback.classList.add('bank-feedback');
     const solution = el('details', 'bank-solution');
-    solution.append(el('summary', '', 'Show answer and explanation'), el('p', '', `Answer: ${item.answer}. ${item.explanation}`), el('p', 'bank-source', 'Explanation independently derived for this study set; not an official College Board answer key.'));
+    solution.append(el('summary', '', 'Show answer and explanation'), el('p', '', `Answer: ${item.answer}. ${item.explanation}`));
     form.append(fieldset, controls, feedback);
     form.addEventListener('submit', event => {
       event.preventDefault();
@@ -190,7 +188,7 @@
     const box = el('div', 'bank-loader');
     const label = el('label', 'bank-file-label', 'Open class question file');
     const input = el('input'); input.type = 'file'; input.accept = '.json,application/json'; input.id = `${view.id}-file`; label.htmlFor = input.id;
-    const privacy = el('p', 'bank-privacy', 'Choose the mhs-week-2-3.practice.json file provided by your teacher (not the homework PDF). It is read in this browser and kept in this tab’s session storage so it remains available as you move between lessons. Nothing is uploaded; answers are not submitted. Use “Forget class file” on a shared device.');
+    const privacy = el('p', 'bank-privacy', 'Open mhs-week-2-3.practice.json provided by your teacher. Use Forget class file to clear it from this tab.');
     view.forget = el('button', '', 'Forget class file'); view.forget.type = 'button';
     view.notice = statusNode();
     box.append(label, input, privacy, view.forget, view.notice);
@@ -232,6 +230,6 @@
     });
     root.append(box, filters, view.count, view.list); views.push(view);
   });
-  refresh(saved ? 'Class file restored for this tab. Responses are not submitted or carried between pages.' : 'No class file is open. The references below identify the selected homework questions.');
+  refresh(saved ? 'Class file restored. Choose a question to begin.' : 'No class file is open. The references below identify the selected homework questions.');
   window.MHSProblemBank = Object.freeze({validatePack});
 })();

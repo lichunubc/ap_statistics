@@ -167,7 +167,7 @@
     return svg;
   }
   function comparisonTable(active) {
-    return '<div class="cat-chart-data"><table class="compact-table"><caption>Same categorical variable in two independent hypothetical school samples</caption>'+
+    return '<div class="cat-chart-data"><table class="compact-table"><caption>Same categorical variable in two independent school samples</caption>'+
       '<thead><tr><th scope="col">Method</th><th scope="col">A (n=40)</th><th scope="col">A %</th>'+
       '<th scope="col">B (n=60)</th><th scope="col">B %</th></tr></thead><tbody>'+
       labels.map((name,i)=>'<tr'+(i===active?' class="active"':'')+'><th scope="row">'+name+

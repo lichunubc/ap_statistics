@@ -79,11 +79,13 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="Unit%201/Topic%201.4/assets/categorical-charts.css">
 <link rel="stylesheet" href="Unit%201/Topic%201.2/assets/variables.css">
 <link rel="stylesheet" href="site/assets/navigation.css">
+<link rel="stylesheet" href="site/assets/student-presentation.css">
 <link rel="stylesheet" href="Problem%20Bank/assets/practice.css">
 <link rel="stylesheet" href="Problem%20Bank/assets/original-practice.css">
 <link rel="stylesheet" href="Unit%201/Topic%201.7/assets/summary17.css">
 <link rel="stylesheet" href="Unit%201/Topic%201.8/assets/box18.css">
 <link rel="stylesheet" href="Unit%201/Topic%201.9/assets/compare19.css">
+<link rel="stylesheet" href="Unit%201/Topic%201.10/assets/study110.css">
 </head>
 
 <body class="nav-sidebar docked quarto-light">
@@ -182,6 +184,11 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="Unit%201/Topic%201.10/topic-1-10.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Topic 1.10 The Investigative Question Revisited and Data Collection</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="Unit%201/Shared/practice.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Practice and solutions</span></a>
   </div>
 </li>
@@ -231,14 +238,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul class="collapse">
-  <li><a href="#basis-of-the-pilot" id="toc-basis-of-the-pilot" class="nav-link active" data-scroll-target="#basis-of-the-pilot">Basis of the pilot</a></li>
-  <li><a href="#published-datasets" id="toc-published-datasets" class="nav-link" data-scroll-target="#published-datasets">Published datasets</a></li>
-  <li><a href="#exam-connections" id="toc-exam-connections" class="nav-link" data-scroll-target="#exam-connections">Exam connections</a></li>
-  <li><a href="#printing-and-downloads" id="toc-printing-and-downloads" class="nav-link" data-scroll-target="#printing-and-downloads">Printing and downloads</a></li>
-  <li><a href="#privacy-and-limitations" id="toc-privacy-and-limitations" class="nav-link" data-scroll-target="#privacy-and-limitations">Privacy and limitations</a></li>
-  <li><a href="#technical-format" id="toc-technical-format" class="nav-link" data-scroll-target="#technical-format">Technical format</a></li>
-  <li><a href="#foundations-curriculum-alignment" id="toc-foundations-curriculum-alignment" class="nav-link" data-scroll-target="#foundations-curriculum-alignment">Foundations curriculum alignment</a></li>
-  <li><a href="#topic-1.4-charts" id="toc-topic-1.4-charts" class="nav-link" data-scroll-target="#topic-1.4-charts">Topic 1.4 charts</a></li>
+  <li><a href="#course-framework" id="toc-course-framework" class="nav-link active" data-scroll-target="#course-framework">Course framework</a></li>
+  <li><a href="#datasets" id="toc-datasets" class="nav-link" data-scroll-target="#datasets">Datasets</a></li>
+  <li><a href="#practice" id="toc-practice" class="nav-link" data-scroll-target="#practice">Practice</a></li>
+  <li><a href="#printing" id="toc-printing" class="nav-link" data-scroll-target="#printing">Printing</a></li>
   </ul>
 </nav>
     </div>
@@ -264,83 +267,47 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="basis-of-the-pilot" class="level2">
-<h2 class="anchored" data-anchor-id="basis-of-the-pilot">Basis of the pilot</h2>
-<p>This book adapts Chun Li’s revised <strong>45-slide Seeing Quantitative Data</strong> presentation and <strong>30-page Representing and Describing Quantitative Data</strong> study guide for Maple Hill School. It retains the revised sequence, classroom datasets, whole-bar construction, endpoint convention, and evidence-based descriptions.</p>
+<section id="course-framework" class="level2">
+<h2 class="anchored" data-anchor-id="course-framework">Course framework</h2>
+<p>The <a href="https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description-effective-fall-2026.pdf">College Board AP Statistics course framework</a> lists the course topics. The <a href="https://apcentral.collegeboard.org/courses/ap-statistics/exam/past-exam-questions">released exam archive</a> provides additional questions and scoring guidelines.</p>
+</section>
+<section id="datasets" class="level2">
+<h2 class="anchored" data-anchor-id="datasets">Datasets</h2>
 <table class="caption-top table">
 <thead>
 <tr class="header">
-<th style="text-align: left;">Book section</th>
-<th style="text-align: left;">Revised lecture slides</th>
+<th style="text-align: left;">Dataset</th>
+<th style="text-align: left;">Measurement</th>
+<th style="text-align: left;">Source</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">Individual values</td>
-<td style="text-align: left;">3–9</td>
+<td style="text-align: left;">Rivers</td>
+<td style="text-align: left;">Major North American river lengths, in miles</td>
+<td style="text-align: left;"><a href="https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/rivers.html">R datasets: rivers</a></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Histogram construction and laboratory</td>
-<td style="text-align: left;">10–19</td>
+<td style="text-align: left;">Old Faithful</td>
+<td style="text-align: left;">Eruption duration, in minutes</td>
+<td style="text-align: left;"><a href="https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/faithful.html">R datasets: faithful</a></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Hand construction and data recovery</td>
-<td style="text-align: left;">20–23</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Shape, center, spread, unusual features</td>
-<td style="text-align: left;">24–32</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Descriptions and supported claims</td>
-<td style="text-align: left;">33–37</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Oxygen and closing practice</td>
-<td style="text-align: left;">38–45</td>
+<td style="text-align: left;">Iris flowers</td>
+<td style="text-align: left;">Sepal length, in centimetres</td>
+<td style="text-align: left;"><a href="https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/iris.html">R datasets: iris</a></td>
 </tr>
 </tbody>
 </table>
-<p>The scope follows the instructor-supplied College Board essential-knowledge excerpts <strong>1.5.A.1–4, 1.6.A.1–6, and 1.6.B.1</strong>. Detailed numerical-summary formulas and inference are left to later lessons.</p>
+<p><a href="Unit%201/Shared/data/commute-times.csv">Download the commute-time data</a> to build a dotplot, stemplot, or histogram.</p>
 </section>
-<section id="published-datasets" class="level2">
-<h2 class="anchored" data-anchor-id="published-datasets">Published datasets</h2>
-<p>The shape challenge uses the values packaged with the revised lecture. Their documented sources are:</p>
-<ul>
-<li><a href="https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/rivers.html">R datasets: rivers</a>: 141 major North American river lengths in miles, a historical compilation identified as the 1975 World Almanac.</li>
-<li><a href="https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/faithful.html">R datasets: faithful</a>: 272 waiting times between Old Faithful eruptions, in minutes.</li>
-<li><a href="https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/iris.html">R datasets: iris</a>: the 50 Iris setosa sepal lengths, in centimeters, from Anderson’s iris measurements.</li>
-</ul>
-<p>These are published observations, not freshly simulated data. Other classroom datasets are explicitly hypothetical. Bin choices are teaching decisions, not properties of the observations.</p>
+<section id="practice" class="level2">
+<h2 class="anchored" data-anchor-id="practice">Practice</h2>
+<p>Use the <strong>Practice</strong> section in each lesson to check your understanding. Try a question before opening its solution, then compare both the result and reasoning. The <strong>Selected Homework</strong> bank uses the class file supplied by your teacher.</p>
 </section>
-<section id="exam-connections" class="level2">
-<h2 class="anchored" data-anchor-id="exam-connections">Exam connections</h2>
-<p><strong>2023 AP Statistics, Question 1(a):</strong> the <a href="https://apcentral.collegeboard.org/media/pdf/ap23-frq-statistics.pdf#page=4">official question, PDF page 4</a> supplies the oxygen histogram. This book redraws its numerical frequencies and provides classroom explanations and follow-ups, not an official scoring key.</p>
-<p><strong>2022 AP Statistics, Question 5:</strong> chocolate values are the revised lecture’s numerical transcription of the instructor-supplied dotplots. The public site does not upload the original screenshot or exam text. Consult <a href="https://apcentral.collegeboard.org/courses/ap-statistics/exam/past-exam-questions">College Board’s exam archive</a> for currently available materials; older exam availability may differ.</p>
-<p>AP is a registered trademark of the College Board. This independent classroom resource is not affiliated with or endorsed by the College Board. Third-party material retains its owners’ rights; no blanket open-content license is asserted for it.</p>
-</section>
-<section id="printing-and-downloads" class="level2">
-<h2 class="anchored" data-anchor-id="printing-and-downloads">Printing and downloads</h2>
-<p>Your browser’s <strong>Print / Save as PDF</strong> command saves a chapter. Printing expands solutions and displays completed construction examples. The screen version keeps solutions hidden until you open them.</p>
-<p><a href="Unit%201/Shared/data/commute-times.csv">Download the commute values as CSV</a>. Editable <code>.qmd</code> source, a portable preview builder, Quarto configuration, tests, and publishing instructions are included in the project.</p>
-</section>
-<section id="privacy-and-limitations" class="level2">
-<h2 class="anchored" data-anchor-id="privacy-and-limitations">Privacy and limitations</h2>
-<p>There are <strong>no accounts, analytics scripts, advertisements, grades database, or student-submission service</strong>. Activity choices remain in the current page and disappear on refresh; they are not sent to a teacher. Normal hosting logs are separate: <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection">GitHub documents IP logging for Pages security</a>.</p>
-<p>JavaScript enables the activities. Core prose, tables, and solution text remain available without it. Charts use bundled data and do not request a remote statistical service. Search operates on the hosted site or a locally served copy; browser restrictions may affect search when opening a downloaded file directly.</p>
-</section>
-<section id="technical-format" class="level2">
-<h2 class="anchored" data-anchor-id="technical-format">Technical format</h2>
-<p>The publishing source is a <strong>Quarto HTML book</strong> with chapter navigation, search, mathematical typesetting, and custom JavaScript/SVG activities. It needs no running notebook kernel or paid backend. The downloadable portable preview uses Pandoc with the same chapter text and activities; the automated Quarto build produces the hosted book.</p>
-</section>
-<section id="foundations-curriculum-alignment" class="level2">
-<h2 class="anchored" data-anchor-id="foundations-curriculum-alignment">Foundations curriculum alignment</h2>
-<p>The foundations sequence follows the <a href="https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf">official AP Statistics Course and Exam Description, effective Fall 2026</a>: Topic 1.1 on printed pp.&nbsp;30–31; Topic 1.2 on pp.&nbsp;32–33; Topic 1.3 on p.&nbsp;34; Topic 1.4 on p.&nbsp;35. The curriculum was checked on October 13, 2026. Explanations and new practice are independently authored; the book does not reproduce secure AP Classroom questions.</p>
-<p>The School A, School B, movie-survey and study-location examples originated in Chun Li’s revised Topics 1.1–1.4 materials. They are hypothetical, not records of actual Maple Hill School students. Their reusable summaries are in <a href="Unit%201/Shared/data/foundations.json">foundations.json</a>. The 24 commute times used in Topic 1.5 are a separate dataset.</p>
-</section>
-<section id="topic-1.4-charts" class="level2">
-<h2 class="anchored" data-anchor-id="topic-1.4-charts">Topic 1.4 charts</h2>
-<p>The <a href="Unit%201/Topic%201.4/topic-1-4.html">categorical graph lesson</a> is based on the official Fall 2026 CED Topic 1.4 (printed p.&nbsp;35). Count/percentage bars, pie diagrams, chart-audit cases and print references are original classroom material. Their reusable source assets are <code>Unit 1/Topic 1.4/assets/categorical-charts.js</code> and <code>Unit 1/Topic 1.4/assets/categorical-charts.css</code>. The hypothetical School A and School B summaries and their provenance are in <a href="Unit%201/Shared/data/foundations.json">foundations.json</a>. No secure AP Classroom assessments are reproduced.</p>
+<section id="printing" class="level2">
+<h2 class="anchored" data-anchor-id="printing">Printing</h2>
+<p>Use your browser’s Print command for a paper copy of a lesson. Open the explanations you wish to include before printing.</p>
 
 
 </section>
@@ -354,6 +321,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="Unit%201/Shared/assets/foundations-data.js"></script>
 <script src="Unit%201/Topic%201.2/assets/variables.js"></script>
 <script src="site/assets/navigation.js"></script>
+<script src="site/assets/student-presentation.js" defer=""></script>
 <script src="Problem%20Bank/assets/catalog.js"></script>
 <script src="Problem%20Bank/assets/practice.js"></script>
 <script src="Problem%20Bank/assets/original-practice.js"></script>
@@ -362,6 +330,16 @@ ul.task-list li input[type="checkbox"] {
 <script src="Unit%201/Topic%201.8/assets/box18.js"></script>
 <script src="Unit%201/Topic%201.9/assets/compare19-math.js"></script>
 <script src="Unit%201/Topic%201.9/assets/compare19.js"></script>
+<script>
+(function () {
+  const css = Array.from(document.querySelectorAll('link[rel="stylesheet"]'))
+    .find(el => el.href.includes('/study110.css'));
+  if (!css) return;
+  const script = document.createElement('script');
+  script.src = css.href.replace(/study110\.css(?:\?.*)?$/, 'study110.js');
+  document.body.appendChild(script);
+})();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

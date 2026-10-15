@@ -37,7 +37,7 @@
   function tallyActivity(root) {
     let step = 0;
     root.innerHTML = '<h3>School A · one-response tally builder</h3>' +
-      '<p class="small-note">A simulated order from the fixed hypothetical total of 40 responses. Percentages while building use the number tallied so far; at completion, the denominator is 40.</p>' +
+      '<p class="small-note">As you tally, each percentage uses the number of responses counted so far. The completed table uses all 40 responses.</p>' +
       '<div class="controls"><button type="button" data-add-one class="primary">Record 1</button>' +
       '<button type="button" data-add-five>Record 5</button>' +
       '<button type="button" data-finish>Complete all 40</button>' +

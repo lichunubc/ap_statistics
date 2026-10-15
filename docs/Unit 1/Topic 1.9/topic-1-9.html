@@ -33,7 +33,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../Shared/practice.html" rel="next">
+<link href="../Topic%201.10/topic-1-10.html" rel="next">
 <link href="../Topic%201.8/topic-1-8.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -80,11 +80,13 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../Topic%201.4/assets/categorical-charts.css">
 <link rel="stylesheet" href="../Topic%201.2/assets/variables.css">
 <link rel="stylesheet" href="../../site/assets/navigation.css">
+<link rel="stylesheet" href="../../site/assets/student-presentation.css">
 <link rel="stylesheet" href="../../Problem%20Bank/assets/practice.css">
 <link rel="stylesheet" href="../../Problem%20Bank/assets/original-practice.css">
 <link rel="stylesheet" href="../Topic%201.7/assets/summary17.css">
 <link rel="stylesheet" href="../Topic%201.8/assets/box18.css">
 <link rel="stylesheet" href="assets/compare19.css">
+<link rel="stylesheet" href="../Topic%201.10/assets/study110.css">
 </head>
 
 <body class="nav-sidebar docked quarto-light">
@@ -183,6 +185,11 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../Topic%201.10/topic-1-10.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Topic 1.10 The Investigative Question Revisited and Data Collection</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../Shared/practice.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Practice and solutions</span></a>
   </div>
 </li>
@@ -235,9 +242,9 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#compare-19" id="toc-compare-19" class="nav-link active" data-scroll-target="#compare-19">1 · Make a fair, useful comparison</a></li>
   <li><a href="#laboratory-19" id="toc-laboratory-19" class="nav-link" data-scroll-target="#laboratory-19">2 · Interactive laboratory: common-scale comparisons</a></li>
   <li><a href="#zscore-19" id="toc-zscore-19" class="nav-link" data-scroll-target="#zscore-19">3 · Relative position: the z-score</a></li>
-  <li><a href="#released-19" id="toc-released-19" class="nav-link" data-scroll-target="#released-19">4 · Real released AP exam connection</a></li>
+  <li><a href="#released-19" id="toc-released-19" class="nav-link" data-scroll-target="#released-19">4 · AP exam example</a></li>
   <li><a href="#takeaway-19" id="toc-takeaway-19" class="nav-link" data-scroll-target="#takeaway-19">Common errors and final checklist</a></li>
-  <li><a href="#practice-19" id="toc-practice-19" class="nav-link" data-scroll-target="#practice-19">Practice · one question at a time</a></li>
+  <li><a href="#practice-19" id="toc-practice-19" class="nav-link" data-scroll-target="#practice-19">Practice</a></li>
   </ul>
 </nav>
     </div>
@@ -268,11 +275,10 @@ math[display=block] {display:block; max-width:100%; overflow-x:auto; overflow-y:
 </style>
 <div class="chapter-lead">
 <p><strong>Comparing distributions is more than comparing two averages.</strong> If two groups have different centers, spreads, shapes, or unusual observations, the complete evidence matters. This chapter joins numerical summaries, common-scale graphs, contextual conclusions, and standardized <em>z</em>-scores.</p>
-<p><strong>Learning targets (Fall 2026 CED):</strong> compare graphical distributions (1.9.A), compare their summary statistics (1.9.B), justify claims using multiple graphs (1.9.C), calculate population-based z-scores (1.9.D), and compare relative positions using z-scores (1.9.E). Required skills: <strong>4.A, 4.B, 3.B, 4.C</strong>. <a href="https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description-effective-fall-2026.pdf">Official College Board course framework, printed pp.&nbsp;43–44</a>.</p>
 </div>
 <section id="compare-19" class="level2">
 <h2 class="anchored" data-anchor-id="compare-19">1 · Make a fair, useful comparison</h2>
-<p>A transport planner wishes to compare <em>one-way journey time</em> on two hypothetical bus routes. The variable—time in <strong>minutes</strong>—is the <strong>same quantitative variable</strong> for both groups, and each group contains 12 invented observations:</p>
+<p>A transport planner wishes to compare <em>one-way journey time</em> on two bus routes. The variable—time in <strong>minutes</strong>—is the <strong>same quantitative variable</strong> for both groups, and each group contains 12 observations:</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 50%">
@@ -291,7 +297,6 @@ math[display=block] {display:block; max-width:100%; overflow-x:auto; overflow-y:
 </tr>
 </tbody>
 </table>
-<p>These are <strong>original simulated teaching values</strong>, not measurements from actual bus riders or Maple Hill School students. They are unrelated to the separate School A categorical dataset and the earlier 24-commute dataset.</p>
 <p>Before looking at averages, identify what each route’s list suggests about <strong>typical journey time</strong> and whether one route has an unusually long journey. Then consider whether “Route B is always faster” is supported. A distribution allows comparisons of groups, <strong>not</strong> guarantees about individual journeys.</p>
 <section id="what-belongs-in-a-comparison" class="level3">
 <h3 class="anchored" data-anchor-id="what-belongs-in-a-comparison">What belongs in a comparison?</h3>
@@ -362,14 +367,14 @@ math[display=block] {display:block; max-width:100%; overflow-x:auto; overflow-y:
 <p><em>Rounded means and SDs are for communication; the interactive lab recalculates from the unrounded values. The IQR is Q3 − Q1 as developed in Topic 1.7.</em></p>
 <p><strong>Center.</strong> In these particular samples, Route A’s median trip is 16.5 minutes, <strong>3.0 minutes longer</strong> than Route B’s 13.5 minutes. The sample means differ much less (16.50 versus 15.58) because Route B includes the unusually long 38-minute journey.</p>
 <p><strong>Variability.</strong> Route B’s middle-half spread is greater (IQR <strong>5</strong> rather than <strong>3</strong> minutes), and its sample SD is also much greater (<strong>7.63</strong> versus <strong>2.39</strong> minutes). Reporting both is useful here: the SD responds strongly to Route B’s high extreme; the IQR focuses on the middle portion.</p>
-<p><strong>Shape and unusual features.</strong> Route A is fairly balanced around its center. Route B has a pronounced right tail and a large gap from 19 to 38 minutes. With its quartiles, the upper 1.5-IQR fence is 16.5 + 1.5(5) = <strong>24</strong> minutes, so 38 is flagged as a <strong>potential</strong> outlier by this convention. An unusual value should be investigated, not automatically deleted.</p>
+<p><strong>Shape and unusual features.</strong> Route A is fairly balanced around its center. Route B has a pronounced right tail and a large gap from 19 to 38 minutes. With its quartiles, the upper 1.5-IQR fence is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>16.5</mn><mo>+</mo><mn>1.5</mn><mo stretchy="false" form="prefix">(</mo><mn>5</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>24</mn></mrow><annotation encoding="application/x-tex">16.5+1.5(5)=24</annotation></semantics></math> minutes, so 38 is flagged as a <strong>potential</strong> outlier by this convention. An unusual value should be investigated, not automatically deleted.</p>
 <p><strong>Conclusion supported by these data:</strong> Route B has the lower median journey time but noticeably greater variability in the two samples. We have <strong>not</strong> established that one route causes faster travel, that all B trips are shorter, or that the observed differences hold identically for the entire population.</p>
 <details class="math-note">
 <summary>
 Why the reported IQRs and the 1.5-IQR fence? — Definition and convention
 </summary>
 <p>
-The IQR is defined as the upper quartile minus the lower quartile: Route A has 18 − 15 = 3 minutes and Route B has 16.5 − 11.5 = 5 minutes. The upper screening fence adds 1.5 times the IQR to the third quartile, giving 16.5 + 1.5 × 5 = 24. The multiplier 1.5 is a <strong>chosen screening convention</strong>, not a universally provable boundary between valid observations and mistakes. Different quartile conventions may shift the fence slightly.
+The IQR is defined as the upper quartile minus the lower quartile: Route A has <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>18</mn><mo>−</mo><mn>15</mn><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">18-15=3</annotation></semantics></math> minutes and Route B has <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>16.5</mn><mo>−</mo><mn>11.5</mn><mo>=</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">16.5-11.5=5</annotation></semantics></math> minutes. The upper screening fence adds 1.5 times the IQR to the third quartile, giving <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>16.5</mn><mo>+</mo><mn>1.5</mn><mo>×</mo><mn>5</mn><mo>=</mo><mn>24</mn></mrow><annotation encoding="application/x-tex">16.5+1.5\times5=24</annotation></semantics></math>. The multiplier 1.5 is a <strong>chosen screening convention</strong>, not a universally provable boundary between valid observations and mistakes. Different quartile conventions may shift the fence slightly.
 </p>
 </details>
 </section>
@@ -384,7 +389,7 @@ The IQR is defined as the upper quartile minus the lower quartile: Route A has 1
 </section>
 <section id="laboratory-19" class="level2">
 <h2 class="anchored" data-anchor-id="laboratory-19">2 · Interactive laboratory: common-scale comparisons</h2>
-<p><strong>Predict before clicking.</strong> The original Route B includes a 38-minute trip. If you replace that value with 20, which summary will change more—the median or the standard deviation? Which graph best reveals the gap? Then try the controls. Changing the scenario <strong>does not</strong> change the definition of the variable, the axes, or any real student record.</p>
+<p><strong>Predict before clicking.</strong> The original Route B includes a 38-minute trip. If you replace that value with 20, which summary will change more—the median or the standard deviation? Which graph best reveals the gap? Then try the controls. Keep the measurement units and axis scale fixed as you compare the scenarios.</p>
 <div class="compare19-lab" data-compare19="">
 <div class="compare19-controls">
 <p><label>Dataset scenario <select data-compare19-scenario=""> <option value="original">Original two-route comparison</option> <option value="replaced">Replace Route B’s 38 with 20</option> <option value="shifted">Two identical shapes, B shifted five minutes</option> <option value="concentrated">Different middle-half concentration</option> </select> </label> <label>Linked graph type <select data-compare19-mode=""> <option value="dot">Dotplots (observe gaps and peaks)</option> <option value="box">Side-by-side modified boxplots</option> <option value="hist">Frequency histograms (common five-minute bins)</option> </select> </label> <label>Experiment: replace the largest Route B time (0–45 minutes) <input type="number" data-compare19-largest="" min="0" max="45" step="1" value="38"> </label></p>
@@ -496,7 +501,7 @@ Route B
 In the default dataset, Route A’s sample median is higher; Route B has the larger IQR and a high extreme. Dotplots make the gap visible.
 </p>
 <p class="compare19-access">
-Static alternative: the original 12 observations for each route and their verified comparison are above; all scenarios use invented teaching data. Dotplots encode individual repeated values; boxplots encode medians/quartiles and whiskers; histograms group observations into the same five-minute intervals.
+The data table above gives the original 12 times for each route and their summaries. Dotplots encode individual repeated values; boxplots encode medians/quartiles and whiskers; histograms group observations into the same five-minute intervals.
 </p>
 </div>
 <p><strong>What to discover:</strong> when you replace Route B’s 38-minute trip with 20 minutes, its large high gap vanishes and its standard deviation falls sharply; its median remains 13.5 minutes. Choosing “shifted” produces groups with equal IQR and sample SD, although the center is five minutes apart. Changing to boxplots hides the detailed dot pattern. A graph should answer your question, not merely look attractive.</p>
@@ -504,57 +509,97 @@ Static alternative: the original 12 observations for each route and their verifi
 <summary>
 Why does adding a constant shift the center but not the spread? — Optional derivation
 </summary>
-<p>
-<strong>Optional enrichment — this derivation is not required for AP Statistics.</strong> Suppose every observation changes from x to x + c.&nbsp;The new mean is (sum of the original values + n × c)/n, so it equals the old mean plus c.&nbsp;Every value’s distance from the new mean is unchanged because (x + c) − (mean + c) = x − mean. Therefore the sum of squared deviations and sample standard deviation do not change. Every quartile rises by c, so Q3 − Q1 does not change either. Shifting a distribution is not the same as rescaling its variability.
-</p>
+<p>Suppose each observation changes from <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mi>i</mi></msub><annotation encoding="application/x-tex">x_i</annotation></semantics></math> to <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>y</mi><mi>i</mi></msub><mo>=</mo><msub><mi>x</mi><mi>i</mi></msub><mo>+</mo><mi>c</mi></mrow><annotation encoding="application/x-tex">y_i=x_i+c</annotation></semantics></math>. The new mean is</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>y</mi><mo accent="true">‾</mo></mover><mo>=</mo><mfrac><mrow><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mo stretchy="false" form="prefix">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo>+</mo><mi>c</mi><mo stretchy="false" form="postfix">)</mo></mrow><mi>n</mi></mfrac><mo>=</mo><mover><mi>x</mi><mo accent="true">‾</mo></mover><mo>+</mo><mi>c</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\bar y=\frac{\sum_{i=1}^{n}(x_i+c)}{n}=\bar x+c.
+</annotation></semantics></math></p>
+<p>Each deviation from the new mean is unchanged:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><msub><mi>y</mi><mi>i</mi></msub><mo>−</mo><mover><mi>y</mi><mo accent="true">‾</mo></mover><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mo stretchy="false" form="prefix">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo>+</mo><mi>c</mi><mo stretchy="false" form="postfix">)</mo><mo>−</mo><mo stretchy="false" form="prefix">(</mo><mover><mi>x</mi><mo accent="true">‾</mo></mover><mo>+</mo><mi>c</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msub><mi>x</mi><mi>i</mi></msub><mo>−</mo><mover><mi>x</mi><mo accent="true">‾</mo></mover><mi>.</mi></mrow><annotation encoding="application/x-tex">
+(y_i-\bar y)=(x_i+c)-(\bar x+c)=x_i-\bar x.
+</annotation></semantics></math></p>
+<p>The squared deviations, sample variance and standard deviation are therefore unchanged. Both quartiles increase by <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>, leaving the IQR unchanged:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><msub><mi>Q</mi><mn>3</mn></msub><mo>+</mo><mi>c</mi><mo stretchy="false" form="postfix">)</mo><mo>−</mo><mo stretchy="false" form="prefix">(</mo><msub><mi>Q</mi><mn>1</mn></msub><mo>+</mo><mi>c</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msub><mi>Q</mi><mn>3</mn></msub><mo>−</mo><msub><mi>Q</mi><mn>1</mn></msub><mi>.</mi></mrow><annotation encoding="application/x-tex">
+(Q_3+c)-(Q_1+c)=Q_3-Q_1.
+</annotation></semantics></math></p>
+<p>A shift changes the center without changing the spread.</p>
 </details>
 </section>
 <section id="zscore-19" class="level2">
 <h2 class="anchored" data-anchor-id="zscore-19">3 · Relative position: the z-score</h2>
-<p>A raw score of 86 on one assessment and 90 on another does not say who performed better <em>relative to their own distribution</em>. We need the group’s mean and standard deviation. A <strong>z-score</strong> describes how many standard deviations an observation lies <strong>above</strong> (positive) or <strong>below</strong> (negative) its reference mean. It carries <strong>no physical units</strong>.</p>
-<p>When population parameters are known, use</p>
-<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>=</mo><mfrac><mrow><mi>x</mi><mo>−</mo><mi>μ</mi></mrow><mi>σ</mi></mfrac><mo>,</mo><mspace width="2.0em"></mspace><mi>σ</mi><mo>&gt;</mo><mn>0</mn><mo>,</mo></mrow><annotation encoding="application/x-tex">
-z=\frac{x-\mu}{\sigma}, \qquad \sigma&gt;0,
+<p>A score of 86 on one assessment and 90 on another does not say which is stronger <strong>relative to its own distribution</strong>. The reference mean and standard deviation provide the missing context. A <strong>z-score</strong> gives the number of standard deviations an observation lies above or below its reference mean.</p>
+<p>For a population with mean <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>μ</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math> and standard deviation <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>σ</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\sigma&gt;0</annotation></semantics></math>,</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>=</mo><mfrac><mrow><mi>x</mi><mo>−</mo><mi>μ</mi></mrow><mi>σ</mi></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">
+z=\frac{x-\mu}{\sigma}.
 </annotation></semantics></math></p>
-<p>where (x) is the observed measurement, () is its <strong>population mean</strong>, and () is its <strong>population standard deviation</strong>. Subtraction locates the score relative to the mean; division expresses that distance in standard deviation units.</p>
+<p>Here <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> is the observed value. Subtracting the mean gives a distance in the original units; dividing by <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math> converts it into standard-deviation units. A z-score is <strong>unit-free</strong>: positive above the mean, negative below it, and zero at the mean.</p>
 <details class="math-note">
 <summary>
-Why does standardizing count standard deviations? — Optional algebraic derivation
+Derivation: distance in standard-deviation units (optional)
 </summary>
-<p>
-<strong>Optional enrichment — this derivation is not required for AP Statistics.</strong> A distance of x − μ is measured in the original unit. One standard deviation is σ of those units. Dividing distance by σ tells us how many such equal-sized units separate x from the mean. For example, a difference of 16 points when σ = 8 points is two standard deviations, not sixteen. Because numerator and denominator share units, z has no units. The formula requires σ &gt; 0; when every population value is identical, σ = 0 and this expression is undefined.
-</p>
+<p>If an observation is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi><annotation encoding="application/x-tex">z</annotation></semantics></math> standard deviations above the mean, its displacement is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mi>σ</mi></mrow><annotation encoding="application/x-tex">z\sigma</annotation></semantics></math>. Thus</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>−</mo><mi>μ</mi><mo>=</mo><mi>z</mi><mi>σ</mi><mspace width="1.0em"></mspace><mo>⇒</mo><mspace width="1.0em"></mspace><mi>z</mi><mo>=</mo><mfrac><mrow><mi>x</mi><mo>−</mo><mi>μ</mi></mrow><mi>σ</mi></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">
+x-\mu=z\sigma\quad\Longrightarrow\quad z=\frac{x-\mu}{\sigma}.
+</annotation></semantics></math></p>
+<p>The numerator and denominator share the same measurement units, so the units cancel. The condition <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>σ</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\sigma&gt;0</annotation></semantics></math> matters: with no variability, this standardized distance is undefined.</p>
 </details>
-<p><strong>Worked example.</strong> Suppose two hypothetical standardized school assessments measure different skills. On Assessment A, a student scores 86 points, while the population has mean 70 and SD 8 points. Then (z_A=(86-70)/8=). On Assessment B the student scores 90 points, while that population has mean 80 and SD 10 points. Then (z_B=(90-80)/10=). A is the stronger <em>relative position</em>—two SDs above its own mean rather than one—even though 86 is the smaller raw score. This is <strong>not</strong> a claim about which assessment was harder or what percentile the student attained.</p>
+<section id="worked-example-compare-two-assessments" class="level3">
+<h3 class="anchored" data-anchor-id="worked-example-compare-two-assessments">Worked example: compare two assessments</h3>
+<p>On Assessment A, a student scores <strong>86 points</strong>. The population mean is <strong>70 points</strong> and its standard deviation is <strong>8 points</strong>:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>z</mi><mi>A</mi></msub><mo>=</mo><mfrac><mrow><mn>86</mn><mo>−</mo><mn>70</mn></mrow><mn>8</mn></mfrac><mo>=</mo><mfrac><mn>16</mn><mn>8</mn></mfrac><mo>=</mo><menclose notation="box"><mn>2.00</mn></menclose><mi>.</mi></mrow><annotation encoding="application/x-tex">
+z_A=\frac{86-70}{8}=\frac{16}{8}=\boxed{2.00}.
+</annotation></semantics></math></p>
+<p>On Assessment B, the student scores <strong>90 points</strong>. The population mean is <strong>80 points</strong> and its standard deviation is <strong>10 points</strong>:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>z</mi><mi>B</mi></msub><mo>=</mo><mfrac><mrow><mn>90</mn><mo>−</mo><mn>80</mn></mrow><mn>10</mn></mfrac><mo>=</mo><mfrac><mn>10</mn><mn>10</mn></mfrac><mo>=</mo><menclose notation="box"><mn>1.00</mn></menclose><mi>.</mi></mrow><annotation encoding="application/x-tex">
+z_B=\frac{90-80}{10}=\frac{10}{10}=\boxed{1.00}.
+</annotation></semantics></math></p>
+<p>Assessment A has the stronger relative position: <strong>two standard deviations above its own mean</strong>, compared with one on B, even though its raw score is lower.</p>
+</section>
 <section id="interpret-z-19" class="level3">
 <h3 class="anchored" data-anchor-id="interpret-z-19">Interpret signs and compare distributions</h3>
-<p>A z-score of <strong>0</strong> means at the mean; <strong>−1.5</strong> means one and a half standard deviations <em>below</em> the mean; <strong>+2</strong> means two above. Whether a large positive z-score is desirable depends on the measured outcome: unusually high test scores might be desirable, while unusually long emergency wait times might not.</p>
-<p>When two distributions are not similarly shaped, equal z-scores do <strong>not necessarily imply equal percentile ranks</strong>. A z-score is a measure of <em>standardized distance</em>, not a probability. Converting raw scores to z-scores <strong>does not make the distribution normal</strong> or change how its observations are ordered (for positive standard deviation).</p>
-<p>If a question instead gives a z-score and asks for the raw value, rearrange:</p>
+<p>A z-score of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>1.5</mn></mrow><annotation encoding="application/x-tex">-1.5</annotation></semantics></math> means one and a half standard deviations <strong>below</strong> the reference mean; <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>+</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">+2</annotation></semantics></math> means two standard deviations <strong>above</strong> it. Whether a larger value is desirable depends on the variable: a higher assessment score might be desirable, while a longer emergency wait time might not.</p>
+<p>A z-score describes <strong>standardized distance</strong>, not a percentile or probability. Equal z-scores in differently shaped distributions can correspond to different percentile ranks. Standardizing preserves shape and ordering; <strong>it does not make a distribution normal</strong>.</p>
+</section>
+<section id="recover-a-value-from-its-z-score" class="level3">
+<h3 class="anchored" data-anchor-id="recover-a-value-from-its-z-score">Recover a value from its z-score</h3>
+<p>Rearrange the standardization formula:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>μ</mi><mo>+</mo><mi>z</mi><mi>σ</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
 x=\mu+z\sigma.
 </annotation></semantics></math></p>
 <details class="math-note">
 <summary>
-Why can we recover the raw value? — Optional algebraic derivation
+Derivation: recover the raw value (optional)
 </summary>
-<p>
-<strong>Optional enrichment — this derivation is not required for AP Statistics.</strong> Starting with z = (x − μ)/σ and σ &gt; 0, multiply both sides by σ to get zσ = x − μ. Add μ to both sides to obtain x = μ + zσ. This is an inverse calculation, not a new probability model.
-</p>
+<p>Multiply both sides of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>−</mo><mi>μ</mi><mo stretchy="false" form="postfix">)</mo><mi>/</mi><mi>σ</mi></mrow><annotation encoding="application/x-tex">z=(x-\mu)/\sigma</annotation></semantics></math> by <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>, then add <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>μ</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math>:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><mi>z</mi><mi>σ</mi></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mi>x</mi><mo>−</mo><mi>μ</mi><mo>,</mo></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><mi>x</mi></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mi>μ</mi><mo>+</mo><mi>z</mi><mi>σ</mi><mi>.</mi></mtd></mtr></mtable><annotation encoding="application/x-tex">
+\begin{aligned}
+z\sigma&amp;=x-\mu,\\
+x&amp;=\mu+z\sigma.
+\end{aligned}
+</annotation></semantics></math></p>
+<p>For example, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>=</mo><mn>1.5</mn></mrow><annotation encoding="application/x-tex">z=1.5</annotation></semantics></math>, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>μ</mi><mo>=</mo><mn>70</mn></mrow><annotation encoding="application/x-tex">\mu=70</annotation></semantics></math> points and <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>σ</mi><mo>=</mo><mn>8</mn></mrow><annotation encoding="application/x-tex">\sigma=8</annotation></semantics></math> points give <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>70</mn><mo>+</mo><mn>1.5</mn><mo stretchy="false" form="prefix">(</mo><mn>8</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>82</mn></mrow><annotation encoding="application/x-tex">x=70+1.5(8)=82</annotation></semantics></math> points.</p>
 </details>
-<p>If population parameters are not known and the problem permits estimates from a sample, we can report a <strong>sample-referenced</strong> standardized score:</p>
-<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>z</mi><mtext mathvariant="normal">sample</mtext></msub><mo>=</mo><mfrac><mrow><mi>x</mi><mo>−</mo><mover><mi>x</mi><mo accent="true">‾</mo></mover></mrow><mi>s</mi></mfrac><mo>,</mo><mspace width="2.0em"></mspace><mi>s</mi><mo>&gt;</mo><mn>0</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">
-z_{\text{sample}}=\frac{x-\bar{x}}{s}, \qquad s&gt;0.
+</section>
+<section id="describe-relative-position-within-a-sample" class="level3">
+<h3 class="anchored" data-anchor-id="describe-relative-position-within-a-sample">Describe relative position within a sample</h3>
+<p>Use the sample’s own mean <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>x</mi><mo accent="true">‾</mo></mover><annotation encoding="application/x-tex">\bar{x}</annotation></semantics></math> and sample standard deviation <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">s&gt;0</annotation></semantics></math>:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>z</mi><mrow><mi mathvariant="normal">s</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">e</mi></mrow></msub><mo>=</mo><mfrac><mrow><mi>x</mi><mo>−</mo><mover><mi>x</mi><mo accent="true">‾</mo></mover></mrow><mi>s</mi></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">
+z_{\mathrm{sample}}=\frac{x-\bar{x}}{s}.
 </annotation></semantics></math></p>
 <details class="math-note">
 <summary>
-Why substitute sample summaries? — Conditions and limitation
+Why use the sample summaries?
 </summary>
-<p>
-This is a sample-based <strong>definition of relative position</strong>, not proof that a sample mean and SD equal their population counterparts. Replacing unknown μ and σ with the sample mean and sample SD gives a descriptive standardized distance relative to that sample. It is meaningful only when the reference group is specified and s is positive. Do not quietly use a sample mean when a population mean is supplied.
-</p>
+<p>This defines relative position using the sample’s own center and spread. Sample summaries estimate population parameters when the sampling context supports that use; they are not automatically equal to them. State which reference group the standardized score describes.</p>
 </details>
-<p>For example, in Route A’s sample a 21-minute trip has sample-referenced z approximately ((21-16.5)/2.393). In Route B’s sample a 19-minute trip has z approximately ((19-15.583)/7.633). A is farther above <strong>its own route’s</strong> typical time; this does not say that 21 minutes is a rarer percentile without comparing the shapes.</p>
+<p>In Route A’s sample, a 21-minute trip has</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>z</mi><mi>A</mi></msub><mo>=</mo><mfrac><mrow><mn>21</mn><mo>−</mo><mn>16.5</mn></mrow><mn>2.393</mn></mfrac><mo>≈</mo><mn>1.88</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">
+z_A=\frac{21-16.5}{2.393}\approx1.88.
+</annotation></semantics></math></p>
+<p>In Route B’s sample, a 19-minute trip has</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>z</mi><mi>B</mi></msub><mo>=</mo><mfrac><mrow><mn>19</mn><mo>−</mo><mn>15.583</mn></mrow><mn>7.633</mn></mfrac><mo>≈</mo><mn>0.45</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">
+z_B=\frac{19-15.583}{7.633}\approx0.45.
+</annotation></semantics></math></p>
+<p>The Route A trip is farther above <strong>its own route’s mean</strong> in standard-deviation units. Percentile comparisons would also require the shapes of the distributions.</p>
 </section>
 <section id="zlab-19" class="level3">
 <h3 class="anchored" data-anchor-id="zlab-19">Z-score explorer: predict, change, compare</h3>
@@ -562,10 +607,10 @@ This is a sample-based <strong>definition of relative position</strong>, not pro
 <div class="compare19-lab" data-z19="">
 <div class="compare19-zgrid">
 <fieldset>
-<legend>Assessment A (hypothetical population)</legend> <label>Population mean μ (points) <input data-z19-key="muA" type="number" step="any" value="70"></label> <label>Population SD σ (points) <input data-z19-key="sdA" type="number" min="0" step="any" value="8"></label> <label>Observed score x (points) <input data-z19-key="xA" type="number" step="any" value="86"></label>
+<legend>Assessment A (population)</legend> <label>Population mean μ (points) <input data-z19-key="muA" type="number" step="any" value="70"></label> <label>Population SD σ (points) <input data-z19-key="sdA" type="number" min="0" step="any" value="8"></label> <label>Observed score x (points) <input data-z19-key="xA" type="number" step="any" value="86"></label>
 </fieldset>
 <fieldset>
-<legend>Assessment B (hypothetical population)</legend> <label>Population mean μ (points) <input data-z19-key="muB" type="number" step="any" value="80"></label> <label>Population SD σ (points) <input data-z19-key="sdB" type="number" min="0" step="any" value="10"></label> <label>Observed score x (points) <input data-z19-key="xB" type="number" step="any" value="90"></label>
+<legend>Assessment B (population)</legend> <label>Population mean μ (points) <input data-z19-key="muB" type="number" step="any" value="80"></label> <label>Population SD σ (points) <input data-z19-key="sdB" type="number" min="0" step="any" value="10"></label> <label>Observed score x (points) <input data-z19-key="xB" type="number" step="any" value="90"></label>
 </fieldset>
 </div>
 <div class="compare19-buttons">
@@ -586,63 +631,353 @@ Assessment A: z = 2.00; Assessment B: z = 1.00.
 Assessment A is farther above its own mean. Graphs display the relative-position scales, not normal probability curves.
 </p>
 <p class="compare19-access">
-Static alternative: Assessment A has x = 86, μ = 70, σ = 8, so z = 2. Assessment B has x = 90, μ = 80, σ = 10, so z = 1. Smaller positive SD makes a fixed positive distance from the mean correspond to more standard deviations.
+Assessment A: <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>86</mn></mrow><annotation encoding="application/x-tex">x=86</annotation></semantics></math>, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>μ</mi><mo>=</mo><mn>70</mn></mrow><annotation encoding="application/x-tex">\mu=70</annotation></semantics></math>, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>σ</mi><mo>=</mo><mn>8</mn></mrow><annotation encoding="application/x-tex">\sigma=8</annotation></semantics></math> and <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">z=2</annotation></semantics></math>. Assessment B: <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>90</mn></mrow><annotation encoding="application/x-tex">x=90</annotation></semantics></math>, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>μ</mi><mo>=</mo><mn>80</mn></mrow><annotation encoding="application/x-tex">\mu=80</annotation></semantics></math>, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>σ</mi><mo>=</mo><mn>10</mn></mrow><annotation encoding="application/x-tex">\sigma=10</annotation></semantics></math> and <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">z=1</annotation></semantics></math>. Reducing a positive SD makes a fixed positive distance correspond to more standard deviations.
 </p>
 </div>
 <p><strong>The entire lesson in one comparison:</strong> use a common-scale graph to understand shape, center, spread, and unusual features. Use a numerical summary to quantify evidence. Use a z-score when the question concerns an individual’s relative distance from their reference mean. Never substitute a z-score for a complete description or an experimental design.</p>
 </section>
 </section>
 <section id="released-19" class="level2">
-<h2 class="anchored" data-anchor-id="released-19">4 · Real released AP exam connection</h2>
-<p>The <strong>2026 AP Statistics Free-Response Question 1, parts B and C</strong>, is a particularly close match for this topic. In the released question, two goat breeds have separately summarized weights. Refer to the official <a href="https://apcentral.collegeboard.org/media/pdf/ap26-frq-statistics.pdf">2026 question PDF (Question 1, pp.&nbsp;3–4)</a> and <a href="https://apcentral.collegeboard.org/media/pdf/ap26-sg-statistics.pdf">2026 scoring guidelines (Question 1, pp.&nbsp;2–4)</a>. We link to the original rather than reproduce its copyrighted graphics or question text.</p>
-<p><strong>Independent instructional walkthrough of part B.</strong> The released Breed H sample’s median weight is <strong>64 pounds</strong> and its IQR is <strong>16 pounds</strong> (Q1 56, Q3 72); the Breed J boxplot indicates a median also near <strong>64 pounds</strong> but a larger IQR, approximately <strong>24 pounds</strong>. H’s observed range is <strong>32 pounds</strong>, compared with approximately <strong>40 pounds</strong> for J. Thus <strong>the sampled goat breeds have similar medians, but J’s sampled weights have greater middle-half and overall variability</strong>. Naming <strong>goat weights in pounds</strong> and <strong>both breeds</strong> is essential: reporting unlabelled numbers is not a full contextual comparison.</p>
-<p><strong>Independent instructional walkthrough of part C.</strong> The original stem-and-leaf plot displays <strong>two prominent peaks in Breed H’s weights</strong>, whereas a boxplot based on the five-number summary cannot reliably display the number of modes because it compresses individual observations. The boxplot may appear roughly symmetric without establishing unimodality. This is precisely why graphical representations complement each other.</p>
-<p>The numeric commentary above is independently written for instruction; consult the linked official scoring guidelines for actual scoring criteria and the exact graphical evidence. <strong>This released question precedes the 2027 exam-format changes</strong>, so its topic concepts are relevant, but its original question format does not define the revised exam.</p>
+<h2 class="anchored" data-anchor-id="released-19">4 · AP exam example</h2>
+<p><strong>2026 AP Statistics, Question 1: comparing goat weights.</strong></p>
+<figure class="exam-source figure" data-exam-id="ap26-q1-ab">
+<a class="exam-enlarge" href="assets/exam/ap26-q1-ab.png" aria-label="Enlarge 2026 AP Statistics, Question 1(a)–(b)"> <img src="assets/exam/ap26-q1-ab.png" alt="2026 AP Statistics, Question 1(a)–(b). Readable description below." loading="lazy" decoding="async" class="figure-img"> </a>
+<figcaption>
+2026 AP Statistics, Question 1(a)–(b) · <a href="https://apcentral.collegeboard.org/media/pdf/ap26-frq-statistics.pdf">College Board</a> · © College Board
+</figcaption>
+<details class="exam-description">
+<summary>
+Read the question description
+</summary>
+<p>
+The sampled Breed H goat weights in pounds are 48, 48, 55, 56, 56, 57, 62, 66, 72, 72, 72, 73, 80, 80. Find their five-number summary and compare their median and variability with Breed J. The Breed J boxplot has an approximate five-number summary of 48, 56, 64, 80, 88.
+</p>
+</details>
+</figure>
+<figure class="exam-source figure" data-exam-id="ap26-q1-c">
+<a class="exam-enlarge" href="assets/exam/ap26-q1-c.png" aria-label="Enlarge 2026 AP Statistics, Question 1(c)"> <img src="assets/exam/ap26-q1-c.png" alt="2026 AP Statistics, Question 1(c). Readable description below." loading="lazy" decoding="async" class="figure-img"> </a>
+<figcaption>
+2026 AP Statistics, Question 1(c) · <a href="https://apcentral.collegeboard.org/media/pdf/ap26-frq-statistics.pdf">College Board</a> · © College Board
+</figcaption>
+<details class="exam-description">
+<summary>
+Read the question description
+</summary>
+<p>
+The Breed H stemplot has stems 4 through 8 and leaves 8 8; 5 6 6 7; 2 6; 2 2 2 3; 0 0. Describe a feature shown by the stemplot but not by a boxplot.
+</p>
+</details>
+</figure>
+<section id="worked-solution-part-b" class="level3">
+<h3 class="anchored" data-anchor-id="worked-solution-part-b">Worked solution: part B</h3>
+<p>Breed H has median weight <strong>64 pounds</strong>, with <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Q</mi><mn>1</mn></msub><mo>=</mo><mn>56</mn></mrow><annotation encoding="application/x-tex">Q_1=56</annotation></semantics></math> and <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Q</mi><mn>3</mn></msub><mo>=</mo><mn>72</mn></mrow><annotation encoding="application/x-tex">Q_3=72</annotation></semantics></math>, so</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">I</mi><mi mathvariant="normal">Q</mi><mi mathvariant="normal">R</mi></mrow><mi>H</mi></msub><mo>=</mo><mn>72</mn><mo>−</mo><mn>56</mn><mo>=</mo><mn>16</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> pounds</mtext></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\mathrm{IQR}_H=72-56=16\text{ pounds}.
+</annotation></semantics></math></p>
+<p>Breed J’s boxplot indicates a median near <strong>64 pounds</strong> and quartiles near <strong>56 and 80 pounds</strong>, giving an IQR of approximately <strong>24 pounds</strong>. The observed ranges are <strong>32 pounds</strong> for H and approximately <strong>40 pounds</strong> for J.</p>
+<p><strong>The sampled breeds have similar median weights, but Breed J has greater middle-half and overall variability.</strong> State the groups, variable and units, then support the comparison with numerical evidence.</p>
+</section>
+<section id="worked-solution-part-c" class="level3">
+<h3 class="anchored" data-anchor-id="worked-solution-part-c">Worked solution: part C</h3>
+<p>The stem-and-leaf plot shows <strong>two concentrations of Breed H weights</strong>. A boxplot records the five-number summary rather than the individual arrangement, so it does not reliably display those two peaks. The stemplot shows detail; the boxplot emphasizes center and spread.</p>
+</section>
 </section>
 <section id="takeaway-19" class="level2">
 <h2 class="anchored" data-anchor-id="takeaway-19">Common errors and final checklist</h2>
-<p>Do not say that a distribution with a larger mean necessarily has less variability. Do not mistake a taller bar for a longer tail. Do not treat a single boxplot as proof of normality, uniformity, or unimodality. Never write “more spread” without specifying which statistic or graphical feature supports that conclusion. For comparisons of different-sized samples, distinguish frequency from relative frequency. Do not assert population generalizations or causal mechanisms from descriptive displays alone.</p>
-<p>For z-scores, always specify the reference distribution; check that the appropriate SD is <strong>positive</strong>, keep raw measurement units distinct from unit-free z, interpret the <strong>sign and magnitude</strong>, and remember: <strong>standardization does not produce normality or automatically identify percentiles</strong>.</p>
+<ul>
+<li><strong>Compare like with like.</strong> Name both groups, use the same variable and units, and use common scales. For unequal sample sizes, use relative frequencies when comparing proportions.</li>
+<li><strong>Describe more than the average.</strong> Compare center, spread, shape and unusual features. Name the statistic or graphical feature supporting each claim.</li>
+<li><strong>Choose a graph for the feature.</strong> Dotplots and histograms reveal gaps and peaks; boxplots summarize quartiles, median and spread. A boxplot alone does not establish normality or the number of modes.</li>
+<li><strong>Interpret z-scores in their reference groups.</strong> Use a positive standard deviation and explain the sign and magnitude. Standardized distance is not a percentile, and standardization does not create normality.</li>
+<li><strong>Match conclusions to the evidence.</strong> Descriptive displays show sample patterns; population and causal conclusions depend on study design.</li>
+</ul>
 </section>
 <section id="practice-19" class="level2">
-<h2 class="anchored" data-anchor-id="practice-19">Practice · one question at a time</h2>
-<p>The following <strong>10 original teacher-authored exercises</strong> span visual comparisons, numerical summaries, z-scores, and written contextual conclusions. They are stored once in the public original problem bank, separate from copyright-restricted homework references. Switch questions using Previous / Next without leaving this part of the chapter; reveal a hint or full model solution when needed. For written justifications, <strong>self-assess using the rubric</strong>—there is no automated semantic grading.</p>
+<h2 class="anchored" data-anchor-id="practice-19">Practice</h2>
+<p>Try each question before opening its solution.</p>
 <section class="original-practice" data-original-practice="1.9" data-bank-url="../../Problem%20Bank/original/unit-1/topic-1-9.json">
-<p>Loading the original practice questions. Enable JavaScript for the compact one-question-at-a-time reader.</p>
-<noscript><div class="original-nojs"><p>JavaScript is disabled. These are the complete original questions with model solutions; all content comes from the same public JSON bank.</p><ol>
-<li><strong>MHS-U1-T19-001</strong><p>Two classes recorded daily screen time in minutes. Class X has 20 students and Class Y has 80. Which graph best compares the shapes of the time distributions without confusing different sample sizes?</p>
-<p>A. Two histograms of raw frequency, one with 5-minute bins and one with 20-minute bins.</p>
-<p>B. Two bar charts of class names showing the number of students.</p>
-<p>C. Two relative-frequency histograms with equal 5-minute bins on a common time axis.</p>
-<p>D. Two pie charts showing just each class's total minutes.</p>
-<details><summary>Show solution</summary><p>C. Relative-frequency histograms use the same measurement, common bin boundaries and relative heights, so group size does not determine the bar heights.</p></details></li>
-<li><strong>MHS-U1-T19-002</strong><p>Route A has 12 hypothetical journey times with median 16.5 minutes, IQR 3 minutes and a fairly balanced dotplot. Route B has 12 times with median 13.5 minutes, IQR 5 minutes and a pronounced high right tail, including 38 minutes. Write a three-sentence comparison containing center, variability and one feature of shape or unusual observations.</p>
-<details><summary>Show solution</summary><p>Route B's sample median journey time is 3 minutes shorter (13.5 versus 16.5), but its middle-half journey times vary more (IQR 5 versus 3 minutes). Route B has a long right tail and unusually high 38-minute trip, whereas A is more balanced. These observations describe the sampled hypothetical trips only; they do not show that riding B causes a shorter trip.</p></details></li>
-<li><strong>MHS-U1-T19-003</strong><p>In the route example, median A = 16.5 minutes and median B = 13.5 minutes. By how many minutes is A's median LONGER than B's? Enter a positive number.</p>
-<details><summary>Show solution</summary><p>16.5 − 13.5 = 3 minutes. This is the difference between sample medians, not a statement about every individual's journey.</p></details></li>
-<li><strong>MHS-U1-T19-004</strong><p>Two numerical samples have identical five-number summaries. Which statement is still possible?</p>
-<p>A. They must have identical dotplots.</p>
-<p>B. One may be bimodal while the other is unimodal.</p>
-<p>C. Both must come from normal populations.</p>
-<p>D. They must have identical numerical observations in the same order.</p>
-<details><summary>Show solution</summary><p>B. The samples may have very different modes or gaps even with matching five-number summaries; a dotplot or histogram is needed to see those.</p></details></li>
-<li><strong>MHS-U1-T19-005</strong><p>On an assessment, the population mean is 70 points and population SD is 8 points. A student's score is 86 points. Compute the population-referenced z-score.</p>
-<details><summary>Show solution</summary><p>z = (86 − 70)/8 = 2. The score is two population SDs above the mean; z has no units.</p></details></li>
-<li><strong>MHS-U1-T19-006</strong><p>At a hypothetical workplace, the population mean travel time is 85 minutes with population SD 6 minutes. An employee takes 73 minutes. Compute the employee's z-score.</p>
-<details><summary>Show solution</summary><p>z = (73 − 85)/6 = −2. This journey is two population SDs below the population mean. The sign is negative; z is unit-free.</p></details></li>
-<li><strong>MHS-U1-T19-007</strong><p>A student scores 86 on Assessment A (population mean 70, SD 8) and 90 on Assessment B (population mean 80, SD 10). Which statement compares the relative positions correctly?</p>
-<p>A. The score on A is farther above its reference mean in SD units.</p>
-<p>B. The score on B has a higher z-score because 90 &gt; 86.</p>
-<p>C. Both z-scores equal 1 because the student is above average on both.</p>
-<p>D. One cannot calculate either z-score from these population summaries.</p>
-<details><summary>Show solution</summary><p>A. The z-scores are z_A = 2 and z_B = 1. A's score is farther above its own population mean in standard-deviation units, despite the lower raw score.</p></details></li>
-<li><strong>MHS-U1-T19-008</strong><p>Two reference populations both have mean 50 and standard deviation 10, but one is strongly right-skewed while the other is approximately symmetric. A score of 60 has z = 1 in both. Does this prove that 60 is at the same percentile in both populations? Explain.</p>
-<details><summary>Show solution</summary><p>No. Both scores are 10 units above their respective mean, which is one standard deviation in each population. But a percentile is determined by the shape of each entire distribution—the fraction of observations at or below 60. Different shapes can give different cumulative proportions at the same z-score; z-scoring does not transform either distribution to normal.</p></details></li>
-<li><strong>MHS-U1-T19-009</strong><p>A hypothetical population has mean 60 points and population SD 4 points. What RAW score has z = −1.5? Enter the score in points.</p>
-<details><summary>Show solution</summary><p>x = 60 + (−1.5)(4) = 54 points. Verify: (54 − 60)/4 = −1.5.</p></details></li>
-<li><strong>MHS-U1-T19-010</strong><p>Someone reads the two hypothetical route samples and writes: ‘Because Route B's median is three minutes shorter, switching everyone from A to B will cause each person's travel time to drop by three minutes.’ Explain TWO logically separate problems with this claim, and state a supported descriptive conclusion.</p>
-<details><summary>Show solution</summary><p>First, a difference between sample medians is a comparison of group summaries, not a three-minute saving for every rider—journey times overlap and vary substantially. Second, without an appropriate randomized or otherwise justified causal design, observed groups cannot show that changing routes causes a reduction. Supported descriptive claim: in the two hypothetical samples, B's median is 13.5 minutes compared with A's 16.5 minutes (three minutes lower), while B has greater IQR (5 versus 3 minutes) and an unusually long high trip.</p></details></li>
+<p class="original-loading">Loading practice…</p>
+<template data-practice-rich="" data-bank-revision="2.0">
+<article data-practice-id="MHS-U1-T19-001">
+<div data-field="prompt"><p>Two classes recorded daily screen time in minutes. Class X has 20
+students and Class Y has 80. Which graph best compares the shapes of the
+time distributions without confusing different sample sizes?</p></div>
+<div data-field="hint"><p>Ask which display uses a common unit, matching intervals and
+proportions rather than unequal raw counts.</p></div>
+<div data-field="solution"><p>C. Relative-frequency histograms use the same measurement, common bin
+boundaries and relative heights, so group size does not determine the
+bar heights.</p></div>
+<div data-field="rubric"></div>
+<div data-field="option-A"><p>Two histograms of raw frequency, one with 5-minute bins and one with
+20-minute bins.</p></div>
+<div data-field="option-B"><p>Two bar charts of class names showing the number of students.</p></div>
+<div data-field="option-C"><p>Two relative-frequency histograms with equal 5-minute bins on a
+common time axis.</p></div>
+<div data-field="option-D"><p>Two pie charts showing just each class’s total minutes.</p></div>
+</article>
+<article data-practice-id="MHS-U1-T19-002">
+<div data-field="prompt"><p>Route A has 12 journey times with median 16.5 minutes, IQR 3 minutes
+and a fairly balanced dotplot. Route B has 12 times with median 13.5
+minutes, IQR 5 minutes and a pronounced high right tail, including 38
+minutes. Write a three-sentence comparison containing center,
+variability and one feature of shape or unusual observations.</p></div>
+<div data-field="hint"><p>Write a sentence that directly compares the two groups rather than
+independently describing each. Quantify two differences.</p></div>
+<div data-field="solution"><p>Route B’s sample median journey time is 3 minutes shorter (13.5
+versus 16.5), but its middle-half journey times vary more (IQR 5 versus
+3 minutes). Route B has a long right tail and unusually high 38-minute
+trip, whereas A is more balanced. These observations describe the
+sampled trips only; they do not show that riding B causes a shorter
+trip.</p></div>
+<div data-field="rubric"><p>Award credit for named groups and minutes, correct median
+comparison/difference, correct IQR comparison, justified tail or outlier
+feature, and no unsupported causal claim.</p></div>
+</article>
+<article data-practice-id="MHS-U1-T19-003">
+<div data-field="prompt"><p>In the route example, median A = 16.5 minutes and median B = 13.5
+minutes. By how many minutes is A’s median LONGER than B’s? Enter a
+positive number.</p></div>
+<div data-field="hint"><p>Subtract the median for Route B from the median for Route A; units
+are minutes.</p></div>
+<div data-field="solution"><p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>16.5</mn><mo>−</mo><mn>13.5</mn><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">16.5-13.5=3</annotation></semantics></math>
+minutes. This is the difference between sample medians, not a statement
+about every individual’s journey.</p></div>
+<div data-field="rubric"></div>
+</article>
+<article data-practice-id="MHS-U1-T19-004">
+<div data-field="prompt"><p>Two numerical samples have identical five-number summaries. Which
+statement is still possible?</p></div>
+<div data-field="hint"><p>A boxplot compresses many observations into just a few numbers.
+Imagine different interior arrangements.</p></div>
+<div data-field="solution"><p>B. The samples may have very different modes or gaps even with
+matching five-number summaries; a dotplot or histogram is needed to see
+those.</p></div>
+<div data-field="rubric"></div>
+<div data-field="option-A"><p>They must have identical dotplots.</p></div>
+<div data-field="option-B"><p>One may be bimodal while the other is unimodal.</p></div>
+<div data-field="option-C"><p>Both must come from normal populations.</p></div>
+<div data-field="option-D"><p>They must have identical numerical observations in the same
+order.</p></div>
+</article>
+<article data-practice-id="MHS-U1-T19-005">
+<div data-field="prompt"><p>On an assessment, the population mean is 70 points and population SD
+is 8 points. A student’s score is 86 points. Compute the
+population-referenced z-score.</p></div>
+<div data-field="hint"><p>Subtract the population mean from the observed score, then divide by
+population SD.</p></div>
+<div data-field="solution"><p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>=</mo><mfrac><mrow><mn>86</mn><mo>−</mo><mn>70</mn></mrow><mn>8</mn></mfrac><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">z=\frac{86-70}{8}=2</annotation></semantics></math>.
+The score is two population SDs above the mean; z has no units.</p></div>
+<div data-field="rubric"></div>
+</article>
+<article data-practice-id="MHS-U1-T19-006">
+<div data-field="prompt"><p>At a workplace, the population mean travel time is 85 minutes with
+population SD 6 minutes. An employee takes 73 minutes. Compute the
+employee’s z-score.</p></div>
+<div data-field="hint"><p>A value below the mean should produce a negative standardized
+distance.</p></div>
+<div data-field="solution"><p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>=</mo><mfrac><mrow><mn>73</mn><mo>−</mo><mn>85</mn></mrow><mn>6</mn></mfrac><mo>=</mo><mi>−</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">z=\frac{73-85}{6}=-2</annotation></semantics></math>.
+This journey is two population SDs below the population mean. The sign
+is negative; z is unit-free.</p></div>
+<div data-field="rubric"></div>
+</article>
+<article data-practice-id="MHS-U1-T19-007">
+<div data-field="prompt"><p>A student scores 86 on Assessment A (population mean 70, SD 8) and 90
+on Assessment B (population mean 80, SD 10). Which statement compares
+the relative positions correctly?</p></div>
+<div data-field="hint"><p>Evaluate (x − population mean)/population SD for each test, then
+compare, not the raw scores.</p></div>
+<div data-field="solution"><p>A. The z-scores are
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>z</mi><mi>A</mi></msub><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">z_A=2</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>z</mi><mi>B</mi></msub><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">z_B=1</annotation></semantics></math>.
+A’s score is farther above its own population mean in standard-deviation
+units, despite the lower raw score.</p></div>
+<div data-field="rubric"></div>
+<div data-field="option-A"><p>The score on A is farther above its reference mean in SD units.</p></div>
+<div data-field="option-B"><p>The score on B has a higher z-score because 90 &gt; 86.</p></div>
+<div data-field="option-C"><p>Both z-scores equal 1 because the student is above average on
+both.</p></div>
+<div data-field="option-D"><p>One cannot calculate either z-score from these population
+summaries.</p></div>
+</article>
+<article data-practice-id="MHS-U1-T19-008">
+<div data-field="prompt"><p>Two reference populations both have mean 50 and standard deviation
+10, but one is strongly right-skewed while the other is approximately
+symmetric. A score of 60 has
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">z=1</annotation></semantics></math>
+in both. Does this prove that 60 is at the same percentile in both
+populations? Explain.</p></div>
+<div data-field="hint"><p>Standardizing measures distance from the mean. What else determines
+the fraction of values below a score?</p></div>
+<div data-field="solution"><p>No. Both scores are 10 units above their respective mean, which is
+one standard deviation in each population. But a percentile is
+determined by the shape of each entire distribution—the fraction of
+observations at or below 60. Different shapes can give different
+cumulative proportions at the same z-score; z-scoring does not transform
+either distribution to normal.</p></div>
+<div data-field="rubric"><p>Correctly state no, recognize both standardized distances equal +1,
+explain that percentile depends on cumulative distribution shape and
+cannot be inferred from mean and SD alone.</p></div>
+</article>
+<article data-practice-id="MHS-U1-T19-009">
+<div data-field="prompt"><p>A population has mean 60 points and population SD 4 points. What RAW
+score has
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>=</mo><mi>−</mi><mn>1.5</mn></mrow><annotation encoding="application/x-tex">z=-1.5</annotation></semantics></math>?
+Enter the score in points.</p></div>
+<div data-field="hint"><p>Rearrange
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>μ</mi><mo>+</mo><mi>z</mi><mi>σ</mi></mrow><annotation encoding="application/x-tex">x=\mu+z\sigma</annotation></semantics></math>;
+a negative z means the raw score is below the mean.</p></div>
+<div data-field="solution"><p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>60</mn><mo>+</mo><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mn>1.5</mn><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">(</mo><mn>4</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>54</mn></mrow><annotation encoding="application/x-tex">x=60+(-1.5)(4)=54</annotation></semantics></math>
+points. Verify:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mn>54</mn><mo>−</mo><mn>60</mn></mrow><mn>4</mn></mfrac><mo>=</mo><mi>−</mi><mn>1.5</mn></mrow><annotation encoding="application/x-tex">\frac{54-60}{4}=-1.5</annotation></semantics></math>.</p></div>
+<div data-field="rubric"></div>
+</article>
+<article data-practice-id="MHS-U1-T19-010">
+<div data-field="prompt"><p>Someone reads the two route samples and writes: ‘Because Route B’s
+median is three minutes shorter, switching everyone from A to B will
+cause each person’s travel time to drop by three minutes.’ Explain TWO
+logically separate problems with this claim, and state a supported
+descriptive conclusion.</p></div>
+<div data-field="hint"><p>Does a difference of medians predict each individual’s value? Does an
+observational comparison establish a causal effect?</p></div>
+<div data-field="solution"><p>First, a difference between sample medians is a comparison of group
+summaries, not a three-minute saving for every rider—journey times
+overlap and vary substantially. Second, without an appropriate
+randomized or otherwise justified causal design, observed groups cannot
+show that changing routes causes a reduction. Supported descriptive
+claim: in the two samples, B’s median is 13.5 minutes compared with A’s
+16.5 minutes (three minutes lower), while B has greater IQR (5 versus 3
+minutes) and an unusually long high trip.</p></div>
+<div data-field="rubric"><p>Credit both group-versus-individual limitation and causal-inference
+limitation distinctly; include a correct in-context descriptive
+comparison with numbers and units.</p></div>
+</article>
+</template><noscript><div class="original-nojs"><ol>
+<li><strong>Question 1</strong><p>Two classes recorded daily screen time in minutes. Class X has 20
+students and Class Y has 80. Which graph best compares the shapes of the
+time distributions without confusing different sample sizes?</p>
+<div><strong>A.</strong> <p>Two histograms of raw frequency, one with 5-minute bins and one with
+20-minute bins.</p></div>
+<div><strong>B.</strong> <p>Two bar charts of class names showing the number of students.</p></div>
+<div><strong>C.</strong> <p>Two relative-frequency histograms with equal 5-minute bins on a
+common time axis.</p></div>
+<div><strong>D.</strong> <p>Two pie charts showing just each class’s total minutes.</p></div>
+<details><summary>Show solution</summary><p>C. Relative-frequency histograms use the same measurement, common bin
+boundaries and relative heights, so group size does not determine the
+bar heights.</p>
+</details></li>
+<li><strong>Question 2</strong><p>Route A has 12 journey times with median 16.5 minutes, IQR 3 minutes
+and a fairly balanced dotplot. Route B has 12 times with median 13.5
+minutes, IQR 5 minutes and a pronounced high right tail, including 38
+minutes. Write a three-sentence comparison containing center,
+variability and one feature of shape or unusual observations.</p>
+<details><summary>Show solution</summary><p>Route B’s sample median journey time is 3 minutes shorter (13.5
+versus 16.5), but its middle-half journey times vary more (IQR 5 versus
+3 minutes). Route B has a long right tail and unusually high 38-minute
+trip, whereas A is more balanced. These observations describe the
+sampled trips only; they do not show that riding B causes a shorter
+trip.</p>
+<p>Award credit for named groups and minutes, correct median
+comparison/difference, correct IQR comparison, justified tail or outlier
+feature, and no unsupported causal claim.</p>
+</details></li>
+<li><strong>Question 3</strong><p>In the route example, median A = 16.5 minutes and median B = 13.5
+minutes. By how many minutes is A’s median LONGER than B’s? Enter a
+positive number.</p>
+<details><summary>Show solution</summary><p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>16.5</mn><mo>−</mo><mn>13.5</mn><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">16.5-13.5=3</annotation></semantics></math>
+minutes. This is the difference between sample medians, not a statement
+about every individual’s journey.</p>
+</details></li>
+<li><strong>Question 4</strong><p>Two numerical samples have identical five-number summaries. Which
+statement is still possible?</p>
+<div><strong>A.</strong> <p>They must have identical dotplots.</p></div>
+<div><strong>B.</strong> <p>One may be bimodal while the other is unimodal.</p></div>
+<div><strong>C.</strong> <p>Both must come from normal populations.</p></div>
+<div><strong>D.</strong> <p>They must have identical numerical observations in the same
+order.</p></div>
+<details><summary>Show solution</summary><p>B. The samples may have very different modes or gaps even with
+matching five-number summaries; a dotplot or histogram is needed to see
+those.</p>
+</details></li>
+<li><strong>Question 5</strong><p>On an assessment, the population mean is 70 points and population SD
+is 8 points. A student’s score is 86 points. Compute the
+population-referenced z-score.</p>
+<details><summary>Show solution</summary><p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>=</mo><mfrac><mrow><mn>86</mn><mo>−</mo><mn>70</mn></mrow><mn>8</mn></mfrac><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">z=\frac{86-70}{8}=2</annotation></semantics></math>.
+The score is two population SDs above the mean; z has no units.</p>
+</details></li>
+<li><strong>Question 6</strong><p>At a workplace, the population mean travel time is 85 minutes with
+population SD 6 minutes. An employee takes 73 minutes. Compute the
+employee’s z-score.</p>
+<details><summary>Show solution</summary><p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>=</mo><mfrac><mrow><mn>73</mn><mo>−</mo><mn>85</mn></mrow><mn>6</mn></mfrac><mo>=</mo><mi>−</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">z=\frac{73-85}{6}=-2</annotation></semantics></math>.
+This journey is two population SDs below the population mean. The sign
+is negative; z is unit-free.</p>
+</details></li>
+<li><strong>Question 7</strong><p>A student scores 86 on Assessment A (population mean 70, SD 8) and 90
+on Assessment B (population mean 80, SD 10). Which statement compares
+the relative positions correctly?</p>
+<div><strong>A.</strong> <p>The score on A is farther above its reference mean in SD units.</p></div>
+<div><strong>B.</strong> <p>The score on B has a higher z-score because 90 &gt; 86.</p></div>
+<div><strong>C.</strong> <p>Both z-scores equal 1 because the student is above average on
+both.</p></div>
+<div><strong>D.</strong> <p>One cannot calculate either z-score from these population
+summaries.</p></div>
+<details><summary>Show solution</summary><p>A. The z-scores are
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>z</mi><mi>A</mi></msub><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">z_A=2</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>z</mi><mi>B</mi></msub><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">z_B=1</annotation></semantics></math>.
+A’s score is farther above its own population mean in standard-deviation
+units, despite the lower raw score.</p>
+</details></li>
+<li><strong>Question 8</strong><p>Two reference populations both have mean 50 and standard deviation
+10, but one is strongly right-skewed while the other is approximately
+symmetric. A score of 60 has
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">z=1</annotation></semantics></math>
+in both. Does this prove that 60 is at the same percentile in both
+populations? Explain.</p>
+<details><summary>Show solution</summary><p>No. Both scores are 10 units above their respective mean, which is
+one standard deviation in each population. But a percentile is
+determined by the shape of each entire distribution—the fraction of
+observations at or below 60. Different shapes can give different
+cumulative proportions at the same z-score; z-scoring does not transform
+either distribution to normal.</p>
+<p>Correctly state no, recognize both standardized distances equal +1,
+explain that percentile depends on cumulative distribution shape and
+cannot be inferred from mean and SD alone.</p>
+</details></li>
+<li><strong>Question 9</strong><p>A population has mean 60 points and population SD 4 points. What RAW
+score has
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>=</mo><mi>−</mi><mn>1.5</mn></mrow><annotation encoding="application/x-tex">z=-1.5</annotation></semantics></math>?
+Enter the score in points.</p>
+<details><summary>Show solution</summary><p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>60</mn><mo>+</mo><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mn>1.5</mn><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">(</mo><mn>4</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>54</mn></mrow><annotation encoding="application/x-tex">x=60+(-1.5)(4)=54</annotation></semantics></math>
+points. Verify:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mn>54</mn><mo>−</mo><mn>60</mn></mrow><mn>4</mn></mfrac><mo>=</mo><mi>−</mi><mn>1.5</mn></mrow><annotation encoding="application/x-tex">\frac{54-60}{4}=-1.5</annotation></semantics></math>.</p>
+</details></li>
+<li><strong>Question 10</strong><p>Someone reads the two route samples and writes: ‘Because Route B’s
+median is three minutes shorter, switching everyone from A to B will
+cause each person’s travel time to drop by three minutes.’ Explain TWO
+logically separate problems with this claim, and state a supported
+descriptive conclusion.</p>
+<details><summary>Show solution</summary><p>First, a difference between sample medians is a comparison of group
+summaries, not a three-minute saving for every rider—journey times
+overlap and vary substantially. Second, without an appropriate
+randomized or otherwise justified causal design, observed groups cannot
+show that changing routes causes a reduction. Supported descriptive
+claim: in the two samples, B’s median is 13.5 minutes compared with A’s
+16.5 minutes (three minutes lower), while B has greater IQR (5 versus 3
+minutes) and an unusually long high trip.</p>
+<p>Credit both group-versus-individual limitation and causal-inference
+limitation distinctly; include a correct in-context descriptive
+comparison with numbers and units.</p>
+</details></li>
 </ol></div></noscript></section>
+<div class="lesson-sources">
+<details>
+<summary>
+Sources
+</summary>
+<p><a href="https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description-effective-fall-2026.pdf">College Board course framework</a>, Topic 1.9. <a href="https://apcentral.collegeboard.org/media/pdf/ap26-sg-statistics.pdf">2026 scoring guidelines, Question 1</a>. The route and assessment datasets are course examples.</p>
+</details>
+</div>
 
 
 </section>
@@ -656,6 +991,7 @@ Static alternative: Assessment A has x = 86, μ = 70, σ = 8, so z = 2. Assessme
 <script src="../Shared/assets/foundations-data.js"></script>
 <script src="../Topic%201.2/assets/variables.js"></script>
 <script src="../../site/assets/navigation.js"></script>
+<script src="../../site/assets/student-presentation.js" defer=""></script>
 <script src="../../Problem%20Bank/assets/catalog.js"></script>
 <script src="../../Problem%20Bank/assets/practice.js"></script>
 <script src="../../Problem%20Bank/assets/original-practice.js"></script>
@@ -664,6 +1000,16 @@ Static alternative: Assessment A has x = 86, μ = 70, σ = 8, so z = 2. Assessme
 <script src="../Topic%201.8/assets/box18.js"></script>
 <script src="assets/compare19-math.js"></script>
 <script src="assets/compare19.js"></script>
+<script>
+(function () {
+  const css = Array.from(document.querySelectorAll('link[rel="stylesheet"]'))
+    .find(el => el.href.includes('/study110.css'));
+  if (!css) return;
+  const script = document.createElement('script');
+  script.src = css.href.replace(/study110\.css(?:\?.*)?$/, 'study110.js');
+  document.body.appendChild(script);
+})();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -1071,8 +1417,8 @@ Static alternative: Assessment A has x = 86, μ = 70, σ = 8, so z = 2. Assessme
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../Shared/practice.html" class="pagination-link" aria-label="Practice and solutions">
-        <span class="nav-page-text"><span class="chapter-title">Practice and solutions</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../Topic%201.10/topic-1-10.html" class="pagination-link" aria-label="Topic 1.10 The Investigative Question Revisited and Data Collection">
+        <span class="nav-page-text"><span class="chapter-title">Topic 1.10 The Investigative Question Revisited and Data Collection</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

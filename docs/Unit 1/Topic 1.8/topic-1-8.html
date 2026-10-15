@@ -80,11 +80,13 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../Topic%201.4/assets/categorical-charts.css">
 <link rel="stylesheet" href="../Topic%201.2/assets/variables.css">
 <link rel="stylesheet" href="../../site/assets/navigation.css">
+<link rel="stylesheet" href="../../site/assets/student-presentation.css">
 <link rel="stylesheet" href="../../Problem%20Bank/assets/practice.css">
 <link rel="stylesheet" href="../../Problem%20Bank/assets/original-practice.css">
 <link rel="stylesheet" href="../Topic%201.7/assets/summary17.css">
 <link rel="stylesheet" href="assets/box18.css">
 <link rel="stylesheet" href="../Topic%201.9/assets/compare19.css">
+<link rel="stylesheet" href="../Topic%201.10/assets/study110.css">
 </head>
 
 <body class="nav-sidebar docked quarto-light">
@@ -183,6 +185,11 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../Topic%201.10/topic-1-10.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Topic 1.10 The Investigative Question Revisited and Data Collection</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../Shared/practice.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Practice and solutions</span></a>
   </div>
 </li>
@@ -237,9 +244,9 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#construction-18" id="toc-construction-18" class="nav-link" data-scroll-target="#construction-18">2 · Drawing a boxplot in five decisions</a></li>
   <li><a href="#lab-18" id="toc-lab-18" class="nav-link" data-scroll-target="#lab-18">3 · Interactive boxplot construction studio</a></li>
   <li><a href="#reading-18" id="toc-reading-18" class="nav-link" data-scroll-target="#reading-18">4 · Reading and interpreting boxplots</a></li>
-  <li><a href="#released-exam-connection" id="toc-released-exam-connection" class="nav-link" data-scroll-target="#released-exam-connection">5 · Released exam connection</a></li>
+  <li><a href="#released-exam-connection" id="toc-released-exam-connection" class="nav-link" data-scroll-target="#released-exam-connection">5 · AP exam example</a></li>
   <li><a href="#takeaway-18" id="toc-takeaway-18" class="nav-link" data-scroll-target="#takeaway-18">Common mistakes and a final synthesis</a></li>
-  <li><a href="#practice-18" id="toc-practice-18" class="nav-link" data-scroll-target="#practice-18">Practice · one question at a time</a></li>
+  <li><a href="#practice-18" id="toc-practice-18" class="nav-link" data-scroll-target="#practice-18">Practice</a></li>
   </ul>
 </nav>
     </div>
@@ -270,24 +277,23 @@ math[display=block] { display:block; max-width:100%; overflow-x:auto; overflow-y
 </style>
 <div class="chapter-lead">
 <p><strong>From five numbers to a picture.</strong> A dotplot shows individual observations. A <em>boxplot</em> compresses a numerical distribution into a picture of its center, middle half, extremes, and potential outliers.</p>
-<p><strong>Learning targets (Fall 2026 AP Statistics):</strong> construct a five-number summary and its boxplot (<strong>1.8.A; Skill 3.A</strong>), and describe mean–median patterns in approximately symmetric and skewed distributions (<strong>1.8.B; Skill 4.A</strong>). See the <a href="https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf">official Course and Exam Description, printed page 42</a>.</p>
 </div>
 <section id="purpose-18" class="level2">
 <h2 class="anchored" data-anchor-id="purpose-18">Why compress a dotplot?</h2>
-<p>Imagine <strong>nine hypothetical workshop students</strong> whose one-way travel times, in minutes, are <strong>5, 8, 10, 12, 12, 14, 15, 16, 18</strong>. These are <em>invented teaching observations</em>, not actual Maple Hill School data and not the separate 24-commute dataset in <a href="../Topic%201.5/topic-1-5.html">Topic 1.5</a>. A dotplot retains each time. A boxplot makes it easier to compare a few important numerical landmarks, though it loses some detail.</p>
+<p>Imagine <strong>nine workshop students</strong> whose one-way travel times, in minutes, are <strong>5, 8, 10, 12, 12, 14, 15, 16, 18</strong>. A dotplot retains each time. A boxplot makes it easier to compare a few important numerical landmarks, though it loses some detail.</p>
 <p><strong>Before calculating:</strong> predict which values bracket approximately the middle half of the nine journeys. What happens to the box if we change only the largest time?</p>
 </section>
 <section id="five-18" class="level2">
 <h2 class="anchored" data-anchor-id="five-18">1 · The five-number summary</h2>
-<p><strong>Sort the data first.</strong> Record the <em>minimum</em>, <em>first quartile</em> ((Q_1)), <em>median</em>, <em>third quartile</em> ((Q_3)), and <em>maximum</em> <strong>in that order</strong>:</p>
+<p><strong>Sort the data first.</strong> Record the <em>minimum</em>, <em>first quartile</em> (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>Q</mi><mn>1</mn></msub><annotation encoding="application/x-tex">Q_1</annotation></semantics></math>), <em>median</em>, <em>third quartile</em> (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>Q</mi><mn>3</mn></msub><annotation encoding="application/x-tex">Q_3</annotation></semantics></math>), and <em>maximum</em> <strong>in that order</strong>:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mtext mathvariant="normal">minimum</mtext><mo>,</mo><mspace width="0.222em"></mspace><msub><mi>Q</mi><mn>1</mn></msub><mo>,</mo><mspace width="0.222em"></mspace><mtext mathvariant="normal">median</mtext><mo>,</mo><mspace width="0.222em"></mspace><msub><mi>Q</mi><mn>3</mn></msub><mo>,</mo><mspace width="0.222em"></mspace><mtext mathvariant="normal">maximum</mtext><mo stretchy="false" form="postfix">)</mo><mi>.</mi></mrow><annotation encoding="application/x-tex">
 (\text{minimum},\ Q_1,\ \text{median},\ Q_3,\ \text{maximum}).
 </annotation></semantics></math></p>
-<p>The middle observation of our nine sorted travel times is the <strong>fifth</strong>, 12 minutes, so the median is 12. We use the <em>median-of-halves</em> convention from <a href="../Topic%201.7/topic-1-7.html">Topic 1.7</a>: for odd sample sizes, <strong>exclude the overall median</strong> when forming the two halves. The lower half <strong>5, 8, 10, 12</strong> has quartile (Q_1=(8+10)/2=9) minutes. The upper half <strong>14, 15, 16, 18</strong> has (Q_3=(15+16)/2=15.5) minutes. Therefore,</p>
+<p>The middle observation of our nine sorted travel times is the <strong>fifth</strong>, 12 minutes, so the median is 12. We use the <em>median-of-halves</em> convention from <a href="../Topic%201.7/topic-1-7.html">Topic 1.7</a>: for odd sample sizes, <strong>exclude the overall median</strong> when forming the two halves. The lower half <strong>5, 8, 10, 12</strong> has quartile <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Q</mi><mn>1</mn></msub><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mn>8</mn><mo>+</mo><mn>10</mn><mo stretchy="false" form="postfix">)</mo><mi>/</mi><mn>2</mn><mo>=</mo><mn>9</mn></mrow><annotation encoding="application/x-tex">Q_1=(8+10)/2=9</annotation></semantics></math> minutes. The upper half <strong>14, 15, 16, 18</strong> has <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Q</mi><mn>3</mn></msub><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mn>15</mn><mo>+</mo><mn>16</mn><mo stretchy="false" form="postfix">)</mo><mi>/</mi><mn>2</mn><mo>=</mo><mn>15.5</mn></mrow><annotation encoding="application/x-tex">Q_3=(15+16)/2=15.5</annotation></semantics></math> minutes. Therefore,</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><menclose notation="box"><mrow><mo stretchy="false" form="prefix">(</mo><mn>5</mn><mo>,</mo><mspace width="0.222em"></mspace><mn>9</mn><mo>,</mo><mspace width="0.222em"></mspace><mn>12</mn><mo>,</mo><mspace width="0.222em"></mspace><mn>15.5</mn><mo>,</mo><mspace width="0.222em"></mspace><mn>18</mn><mo stretchy="false" form="postfix">)</mo><mspace width="0.222em"></mspace><mtext mathvariant="normal">minutes</mtext></mrow></menclose><mi>.</mi></mrow><annotation encoding="application/x-tex">
 \boxed{(5,\ 9,\ 12,\ 15.5,\ 18)\ \text{minutes}}.
 </annotation></semantics></math></p>
-<p>A numerical five-number summary should identify the <strong>measured variable</strong> and its <strong>units</strong>. Never report these figures as measurements of the full school population: they describe only the nine hypothetical travel times.</p>
+<p>A numerical five-number summary should identify the <strong>measured variable</strong> and its <strong>units</strong>. These summaries describe the nine travel times in the sample.</p>
 <details class="math-note">
 <summary>
 Why these five numbers? — A convention, not a theorem
@@ -321,20 +327,20 @@ The length of any numerical interval from a to b is b−a. Because the box exten
 <li><strong>Sort</strong> the observations and calculate the five-number summary.</li>
 <li><strong>Screen</strong> for potential outliers using the chosen rule and identify the most extreme observations that are <em>not</em> flagged.</li>
 <li>Draw and label a <strong>numerical scale</strong> containing the observed range.</li>
-<li>Draw a <strong>box from (Q_1) to (Q_3)</strong>, with a median stroke inside it.</li>
+<li>Draw a <strong>box from <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>Q</mi><mn>1</mn></msub><annotation encoding="application/x-tex">Q_1</annotation></semantics></math> to <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>Q</mi><mn>3</mn></msub><annotation encoding="application/x-tex">Q_3</annotation></semantics></math></strong>, with a median stroke inside it.</li>
 <li>Draw <strong>whiskers from the box to the most extreme actual non-outlying data values</strong> and mark any outliers with separate points or asterisks.</li>
 </ol>
 <p>For a <em>modified</em> (Tukey-style) boxplot, the lower and upper <strong>1.5-IQR fences</strong> are</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo>=</mo><msub><mi>Q</mi><mn>1</mn></msub><mo>−</mo><mn>1.5</mn><mo stretchy="false" form="prefix">(</mo><mi>I</mi><mi>Q</mi><mi>R</mi><mo stretchy="false" form="postfix">)</mo><mo>,</mo><mspace width="2.0em"></mspace><mi>U</mi><mo>=</mo><msub><mi>Q</mi><mn>3</mn></msub><mo>+</mo><mn>1.5</mn><mo stretchy="false" form="prefix">(</mo><mi>I</mi><mi>Q</mi><mi>R</mi><mo stretchy="false" form="postfix">)</mo><mi>.</mi></mrow><annotation encoding="application/x-tex">
 L=Q_1-1.5(IQR),\qquad U=Q_3+1.5(IQR).
 </annotation></semantics></math></p>
-<p>An observation is flagged only if it lies <strong>strictly outside</strong> the interval from (L) to (U). Without outliers, the whiskers reach the actual minimum and maximum. With outliers, the <strong>five-number summary still retains the original minimum and maximum</strong>, but the modified boxplot whiskers stop earlier.</p>
+<p>An observation is flagged only if it lies <strong>strictly outside</strong> the interval from <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math> to <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>U</mi><annotation encoding="application/x-tex">U</annotation></semantics></math>. Without outliers, the whiskers reach the actual minimum and maximum. With outliers, the <strong>five-number summary still retains the original minimum and maximum</strong>, but the modified boxplot whiskers stop earlier.</p>
 <details class="math-note">
 <summary>
 Why 1.5 times the IQR? — Optional screening convention
 </summary>
 <p>
-<strong>Optional enrichment — this mathematical rationale is not required for AP Statistics.</strong> The 1.5 multiplier is a widely used rule of thumb for observations distant from the middle half. The formula extends the central interval by 1.5 copies of its length on each side. It is <strong>not a theorem</strong>, cannot prove a flagged value is erroneous, and can disagree with the two-standard-deviation rule. There is no mathematical proof that 1.5 is the uniquely correct cutoff.
+The 1.5 multiplier is a widely used rule of thumb for observations distant from the middle half. The formula extends the central interval by 1.5 copies of its length on each side. It is <strong>not a theorem</strong>, cannot prove a flagged value is erroneous, and can disagree with the two-standard-deviation rule. There is no mathematical proof that 1.5 is the uniquely correct cutoff.
 </p>
 </details>
 <p><strong>Critical distinction:</strong> A fence is a screening boundary, <strong>not necessarily an observed value</strong>. Never draw a whisker to a computed fence unless a genuine non-outlying observation happens to equal that fence. Even a negative lower fence can be valid as a calculation for a nonnegative variable; it is not a claimed negative observation.</p>
@@ -345,7 +351,7 @@ Why 1.5 times the IQR? — Optional screening convention
 L=9-1.5(6.5)=-0.75,\qquad
 U=15.5+1.5(6.5)=25.25.
 </annotation></semantics></math></p>
-<p>Because 50 &gt; 25.25, <strong>50 minutes is a potential outlier</strong>. In a modified boxplot, draw the box from <strong>9 to 15.5</strong> with the median at <strong>12</strong>; draw the left whisker to <strong>5</strong> and the right whisker to <strong>16</strong>, the largest observed <em>non-outlier</em>. Then draw a separate outlier marker at <strong>50</strong>. The right whisker goes to <strong>16</strong>, <strong>not 25.25</strong> and <strong>not 50</strong>.</p>
+<p>Because <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>50</mn><mo>&gt;</mo><mn>25.25</mn></mrow><annotation encoding="application/x-tex">50&gt;25.25</annotation></semantics></math>, <strong>50 minutes is a potential outlier</strong>. In a modified boxplot, draw the box from <strong>9 to 15.5</strong> with the median at <strong>12</strong>; draw the left whisker to <strong>5</strong> and the right whisker to <strong>16</strong>, the largest observed <em>non-outlier</em>. Then draw a separate outlier marker at <strong>50</strong>. The right whisker goes to <strong>16</strong>, <strong>not 25.25</strong> and <strong>not 50</strong>.</p>
 <details class="math-note">
 <summary>
 Why does the right whisker end at 16? — Modified-boxplot definition
@@ -446,7 +452,7 @@ Without scripts: the ordinary data have five-number summary (5, 9, 12, 15.5, 18)
 </section>
 <section id="skew-18" class="level3">
 <h3 class="anchored" data-anchor-id="skew-18">Mean versus median: a helpful, nonabsolute pattern</h3>
-<p>The <strong>mean</strong> uses every observed value, whereas the <strong>median</strong> depends on rank. In a <em>roughly symmetric</em> distribution, mean and median are typically close. In a <em>right-skewed</em> distribution, the mean is <strong>usually larger</strong> than the median; in a <em>left-skewed</em> distribution, the mean is <strong>usually smaller</strong>. This is a <strong>tendency, not a logical equivalence</strong>: mean &gt; median does not prove right skew, and close values do not prove symmetry. Interpret shape with a dotplot or histogram whenever possible.</p>
+<p>The <strong>mean</strong> uses every observed value, whereas the <strong>median</strong> depends on rank. In a <em>roughly symmetric</em> distribution, mean and median are typically close. In a <em>right-skewed</em> distribution, the mean is <strong>usually larger</strong> than the median; in a <em>left-skewed</em> distribution, the mean is <strong>usually smaller</strong>. This is a <strong>tendency, not a logical equivalence</strong>: <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="normal">mean</mtext><mo>&gt;</mo><mtext mathvariant="normal">median</mtext></mrow><annotation encoding="application/x-tex">\text{mean}&gt;\text{median}</annotation></semantics></math> does not prove right skew, and close values do not prove symmetry. Interpret shape with a dotplot or histogram whenever possible.</p>
 <p>Recall the sample mean formula from <a href="../Topic%201.7/topic-1-7.html#mean">Topic 1.7</a>:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>x</mi><mo accent="true">‾</mo></mover><mo>=</mo><mfrac><mrow><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msub><mi>x</mi><mi>i</mi></msub></mrow><mi>n</mi></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">
 \bar x = \frac{\sum_{i=1}^n x_i}{n}.
@@ -455,63 +461,335 @@ Without scripts: the ordinary data have five-number summary (5, 9, 12, 15.5, 18)
 <summary>
 Why does changing one value move the mean? — Optional algebra
 </summary>
-<p>
-<strong>Optional enrichment — this derivation is not required for AP Statistics.</strong> If a single observation increases by d, the sum increases by d; the new mean becomes (S+d)/n = S/n+d/n.&nbsp;The original times sum to 110, giving 110/9 = 12.22 minutes. Changing 18 to 50 increases the total by 32, so the mean rises by 32/9 ≈ 3.56 to 142/9 ≈ 15.78 minutes. The middle observation remains 12, so the median does not change. This is an algebraic statement about the mean, <em>not</em> a universal test of shape.
-</p>
+<p>If one observation increases by <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math>, the sum <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math> increases by <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math>. Therefore,</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mover><mi>x</mi><mo accent="true">‾</mo></mover><mrow><mi mathvariant="normal">n</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">w</mi></mrow></msub><mo>=</mo><mfrac><mrow><mi>S</mi><mo>+</mo><mi>d</mi></mrow><mi>n</mi></mfrac><mo>=</mo><mfrac><mi>S</mi><mi>n</mi></mfrac><mo>+</mo><mfrac><mi>d</mi><mi>n</mi></mfrac><mo>=</mo><mover><mi>x</mi><mo accent="true">‾</mo></mover><mo>+</mo><mfrac><mi>d</mi><mi>n</mi></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\bar{x}_{\mathrm{new}}=\frac{S+d}{n}=\frac{S}{n}+\frac{d}{n}=\bar{x}+\frac{d}{n}.
+</annotation></semantics></math></p>
+<p>The times sum to <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>110</mn><annotation encoding="application/x-tex">110</annotation></semantics></math> minutes. Changing <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>18</mn><annotation encoding="application/x-tex">18</annotation></semantics></math> to <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>50</mn><annotation encoding="application/x-tex">50</annotation></semantics></math> increases the sum by <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>32</mn><annotation encoding="application/x-tex">32</annotation></semantics></math>, so the mean increases by <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>32</mn><mi>/</mi><mn>9</mn><mo>≈</mo><mn>3.56</mn></mrow><annotation encoding="application/x-tex">32/9\approx3.56</annotation></semantics></math> minutes:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mn>110</mn><mo>+</mo><mn>32</mn></mrow><mn>9</mn></mfrac><mo>=</mo><mfrac><mn>142</mn><mn>9</mn></mfrac><mo>≈</mo><mn>15.78</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> minutes</mtext></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\frac{110+32}{9}=\frac{142}{9}\approx15.78\text{ minutes}.
+</annotation></semantics></math></p>
+<p>The middle observation remains <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>12</mn><annotation encoding="application/x-tex">12</annotation></semantics></math>, so the median is unchanged.</p>
 </details>
 <p><strong>Right-tail example.</strong> The original times have mean <strong>12.22 minutes</strong> and median <strong>12 minutes</strong>. With 50 replacing 18, the mean rises to <strong>15.78 minutes</strong>, while the median stays <strong>12</strong>. The resulting long right tail has pulled the mean above the median.</p>
-<p><strong>Left-tail example.</strong> For the hypothetical times <strong>1, 32, 33, 34, 35, 36, 37, 38, 39</strong> minutes, the median is <strong>35</strong>, but the total is <strong>285</strong>, giving mean <strong>285/9 ≈ 31.67</strong> minutes. One unusually low value pulls the mean below the median. Remember: the <em>relative positions of mean and median are evidence about skewness</em>, but the complete distribution is needed to assess shape reliably.</p>
+<p><strong>Left-tail example.</strong> For the times <strong>1, 32, 33, 34, 35, 36, 37, 38, 39</strong> minutes, the median is <strong>35</strong>, but the total is <strong>285</strong>, giving mean <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>285</mn><mi>/</mi><mn>9</mn><mo>≈</mo><mn>31.67</mn></mrow><annotation encoding="application/x-tex">285/9\approx31.67</annotation></semantics></math> minutes. One unusually low value pulls the mean below the median. Remember: the <em>relative positions of mean and median are evidence about skewness</em>, but the complete distribution is needed to assess shape reliably.</p>
 <p><strong>Think carefully:</strong> Does the median ever lie outside the box? No—the two quartile boundaries enclose the middle ranked position. Does the mean have to be inside the box? <strong>No.</strong> It may lie outside when sufficiently extreme observations shift it.</p>
 </section>
 </section>
 <section id="released-exam-connection" class="level2">
-<h2 class="anchored" data-anchor-id="released-exam-connection">5 · Released exam connection</h2>
-<p>The final section discusses a released exam question and provides original practice.</p>
-<p>The official 2019 AP Statistics FRQ 1(b)–(c) tests outlier screening and boxplot construction.</p>
-<p>The released <a href="https://apstudents.collegeboard.org/ap/2019-05/ap19-frq-statistics.pdf">2019 exam, Question 1</a> and its <a href="https://apstudents.collegeboard.org/ap/2019-08/ap19-sg-statistics.pdf">official scoring guide</a> give the university room-size problem. For this independent walkthrough, the five-number summary in square feet is <strong>(134, 174, 253.5, 292, 315)</strong>. The IQR is <strong>118</strong>; the two 1.5-IQR fences are <strong>−3</strong> and <strong>469</strong>. Neither extreme is an outlier. Draw a box from 174 to 292, a median line at 253.5, and whiskers at the actual observed extrema, 134 and 315.</p>
-<p>The released histogram has two clusters that the boxplot does not directly reveal. That comparison is a key reason to examine both a distribution plot and a numerical-summary plot. The calculation above is independent teaching commentary, not a reproduction of the official question or graph.</p>
+<h2 class="anchored" data-anchor-id="released-exam-connection">5 · AP exam example</h2>
+<p><strong>2019 AP Statistics, Question 1: university room sizes.</strong></p>
+<figure class="exam-source figure" data-exam-id="ap19-q1-data">
+<a class="exam-enlarge" href="assets/exam/ap19-q1-data.png" aria-label="Enlarge 2019 AP Statistics, Question 1: room sizes"> <img src="assets/exam/ap19-q1-data.png" alt="2019 AP Statistics, Question 1: room sizes. Readable description below." loading="lazy" decoding="async" class="figure-img"> </a>
+<figcaption>
+2019 AP Statistics, Question 1: room sizes · <a href="https://apstudents.collegeboard.org/ap/2019-05/ap19-frq-statistics.pdf">College Board</a> · © College Board
+</figcaption>
+<details class="exam-description">
+<summary>
+Read the question description
+</summary>
+<p>
+For 20 rooms, the five-number summary in square feet is 134, 174, 253.5, 292, 315. The mean is 231.4 and the SD is 68.12. Describe the distribution using the histogram.
+</p>
+</details>
+</figure>
+<figure class="exam-source figure" data-exam-id="ap19-q1-bc">
+<a class="exam-enlarge" href="assets/exam/ap19-q1-bc.png" aria-label="Enlarge 2019 AP Statistics, Question 1(b)–(c)"> <img src="assets/exam/ap19-q1-bc.png" alt="2019 AP Statistics, Question 1(b)–(c). Readable description below." loading="lazy" decoding="async" class="figure-img"> </a>
+<figcaption>
+2019 AP Statistics, Question 1(b)–(c) · <a href="https://apstudents.collegeboard.org/ap/2019-05/ap19-frq-statistics.pdf">College Board</a> · © College Board
+</figcaption>
+<details class="exam-description">
+<summary>
+Read the question description
+</summary>
+<p>
+Determine whether the data contain outliers and construct a boxplot. Identify a feature visible in the histogram that the boxplot does not show.
+</p>
+</details>
+</figure>
+<section id="worked-solution-parts-b-and-c" class="level3">
+<h3 class="anchored" data-anchor-id="worked-solution-parts-b-and-c">Worked solution: parts (b) and (c)</h3>
+<p>The five-number summary, in square feet, is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>134</mn><mo>,</mo><mn>174</mn><mo>,</mo><mn>253.5</mn><mo>,</mo><mn>292</mn><mo>,</mo><mn>315</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(134,174,253.5,292,315)</annotation></semantics></math>. Calculate the middle-half spread and the two fences:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><mrow><mi mathvariant="normal">I</mi><mi mathvariant="normal">Q</mi><mi mathvariant="normal">R</mi></mrow></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mn>292</mn><mo>−</mo><mn>174</mn><mo>=</mo><mn>118</mn><mo>,</mo></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><mi>L</mi></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mn>174</mn><mo>−</mo><mn>1.5</mn><mo stretchy="false" form="prefix">(</mo><mn>118</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>−</mi><mn>3</mn><mo>,</mo></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><mi>U</mi></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mn>292</mn><mo>+</mo><mn>1.5</mn><mo stretchy="false" form="prefix">(</mo><mn>118</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>469</mn><mi>.</mi></mtd></mtr></mtable><annotation encoding="application/x-tex">
+\begin{aligned}
+\mathrm{IQR}&amp;=292-174=118,\\
+L&amp;=174-1.5(118)=-3,\\
+U&amp;=292+1.5(118)=469.
+\end{aligned}
+</annotation></semantics></math></p>
+<p>Both extremes lie between the fences, so there are no potential outliers. Draw the box from <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>174</mn><annotation encoding="application/x-tex">174</annotation></semantics></math> to <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>292</mn><annotation encoding="application/x-tex">292</annotation></semantics></math>, the median at <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>253.5</mn><annotation encoding="application/x-tex">253.5</annotation></semantics></math>, and whiskers at the observed minimum <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>134</mn><annotation encoding="application/x-tex">134</annotation></semantics></math> and maximum <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>315</mn><annotation encoding="application/x-tex">315</annotation></semantics></math>.</p>
+<p>The histogram shows two clusters that the boxplot does not reveal. A boxplot summarizes ranks and spread, while a histogram shows where observations are concentrated.</p>
+</section>
 </section>
 <section id="takeaway-18" class="level2">
 <h2 class="anchored" data-anchor-id="takeaway-18">Common mistakes and a final synthesis</h2>
 <p>The median stroke is <strong>not</strong> the mean. A computed fence is <strong>not</strong> a whisker endpoint. A box length measures numerical middle-half spread, <strong>not</strong> the number of distinct observations. A modified boxplot with an outlier still has a five-number summary that records the actual minimum and maximum. Always report the measured variable, group and units, and consult a dotplot or histogram when shape matters.</p>
 </section>
 <section id="practice-18" class="level2">
-<h2 class="anchored" data-anchor-id="practice-18">Practice · one question at a time</h2>
-<p>The following original exercises are stored centrally under <strong>Problem Bank</strong>, rather than copied into lesson files. Use Previous and Next question while keeping this page of notes accessible. Hints, checking feedback and detailed model solutions are provided without submitting personal answers.</p>
+<h2 class="anchored" data-anchor-id="practice-18">Practice</h2>
+<p>Try each question before opening its solution.</p>
 <section class="original-practice" data-original-practice="1.8" data-bank-url="../../Problem%20Bank/original/unit-1/topic-1-8.json">
-<p>Loading the original practice questions. Enable JavaScript for the compact one-question-at-a-time reader.</p>
-<noscript><div class="original-nojs"><p>JavaScript is disabled. These are the complete original questions with model solutions; all content comes from the same public JSON bank.</p><ol>
-<li><strong>MHS-U1-T18-001</strong><p>Seven ordered practice scores are 4, 6, 8, 8, 9, 12, 14. Under the median-of-halves convention excluding the overall median, which is the five-number summary?</p>
-<p>A. (4, 6, 8, 12, 14)</p>
-<p>B. (4, 8, 8, 9, 14)</p>
-<p>C. (4, 6, 8, 9, 14)</p>
-<p>D. (4, 8, 9, 12, 14)</p>
-<details><summary>Show solution</summary><p>A. Minimum 4, Q1=median(4,6,8)=6, overall median 8, Q3=median(9,12,14)=12, maximum 14. These are scores and should be labelled as such.</p></details></li>
-<li><strong>MHS-U1-T18-002</strong><p>The nine ordered travel distances, in kilometres, are 2, 4, 5, 6, 8, 10, 12, 14, 20. Find the IQR using the median-of-halves convention that excludes the overall median.</p>
-<details><summary>Show solution</summary><p>The lower half 2,4,5,6 has median Q1=(4+5)/2=4.5 km. The upper half 10,12,14,20 has median Q3=(12+14)/2=13 km. IQR=13−4.5=8.5 km.</p></details></li>
-<li><strong>MHS-U1-T18-003</strong><p>For the nine workshop journeys 5, 8, 10, 12, 12, 14, 15, 16, 18 minutes, calculate the UPPER 1.5-IQR fence in minutes using the chapter's quartile convention.</p>
-<details><summary>Show solution</summary><p>IQR=15.5−9=6.5 minutes. Upper fence U=15.5+1.5(6.5)=25.25 minutes. This is a screening boundary, not necessarily an observed time.</p></details></li>
-<li><strong>MHS-U1-T18-004</strong><p>The sorted times 5, 8, 10, 12, 12, 14, 15, 16, 50 minutes have upper 1.5-IQR fence 25.25. Where should the RIGHT whisker end in a MODIFIED boxplot? Enter the observed value in minutes.</p>
-<details><summary>Show solution</summary><p>The 50-minute time lies beyond the upper fence, so plot 50 separately. The largest observed non-outlier is 16 minutes; the right modified whisker ends at 16.</p></details></li>
-<li><strong>MHS-U1-T18-005</strong><p>Which feature is most likely to be visible in a dotplot or histogram but hidden in a boxplot?</p>
-<p>A. The median</p>
-<p>B. The interquartile range</p>
-<p>C. Two separate clusters or peaks</p>
-<p>D. The approximate location of the quartiles</p>
-<details><summary>Show solution</summary><p>C. A boxplot preserves the five landmarks (and potentially outlier markings) but cannot reliably communicate the number of peaks or gaps. Use a dotplot/histogram to study detailed shape.</p></details></li>
-<li><strong>MHS-U1-T18-006</strong><p>Which statement is generally accurate for a strongly right-skewed quantitative distribution?</p>
-<p>A. The mean is usually larger than the median, but this is not a universal test.</p>
-<p>B. The mean is always smaller than the median.</p>
-<p>C. The mean and median must be exactly equal.</p>
-<p>D. If the mean exceeds the median, the distribution must be right-skewed.</p>
-<details><summary>Show solution</summary><p>A. A long right tail often pulls the mean above the median. It is only a tendency: mean greater than median is not a sufficient condition for right skew.</p></details></li>
-<li><strong>MHS-U1-T18-007</strong><p>Two hypothetical groups' travel times are in minutes. Group A has five-number summary (2, 4, 6, 8, 10); Group B has (2, 3, 6, 9, 10). Compare medians and middle-half variability using numbers, and explain one conclusion that is NOT justified by these summaries.</p>
-<details><summary>Show solution</summary><p>Both groups have median 6 minutes. Group A has IQR=8−4=4 minutes, whereas Group B has IQR=9−3=6 minutes, so Group B's central half is more variable by 2 minutes. The summaries alone cannot identify causes of the difference, reveal gaps/modes, or establish a population-level difference.</p></details></li>
-<li><strong>MHS-U1-T18-008</strong><p>Construct a modified boxplot on a number line for 3, 4, 5, 6, 7, 8, 9, 10, 30 minutes. State the five-number summary, IQR, numerical fences, actual whisker endpoints, and any separate outlier marker. Explain the difference between fence and whisker.</p>
-<details><summary>Show solution</summary><p>Minimum 3, Q1=(4+5)/2=4.5, median 7, Q3=(9+10)/2=9.5, maximum 30 minutes. IQR=5. Fences are L=4.5−7.5=−3 and U=9.5+7.5=17 minutes. Draw a box from 4.5 to 9.5 with median at 7; left whisker to observed 3, right whisker to observed 10; mark 30 separately as a potential outlier. The fence 17 is a boundary, not an observation.</p></details></li>
-<li><strong>MHS-U1-T18-009</strong><p>Hypothetical travel times in minutes are 1, 32, 33, 34, 35, 36, 37, 38, 39. What is the sample mean in minutes? Enter your answer to two decimals.</p>
-<details><summary>Show solution</summary><p>Sum=285 minutes, n=9; mean=285/9≈31.67 minutes, less than median 35. The low observation contributes to a long left tail; the mean–median pattern is a tendency, not a proof of skewness.</p></details></li>
+<p class="original-loading">Loading practice…</p>
+<template data-practice-rich="" data-bank-revision="2.0">
+<article data-practice-id="MHS-U1-T18-001">
+<div data-field="prompt"><p>Seven ordered practice scores are 4, 6, 8, 8, 9, 12, 14. Under the
+median-of-halves convention excluding the overall median, which is the
+five-number summary?</p></div>
+<div data-field="hint"><p>The overall median is the fourth value. Remove it, then take medians
+of the lower three and upper three.</p></div>
+<div data-field="solution"><p>A. The minimum is 4;
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Q</mi><mn>1</mn></msub><mo>=</mo><mrow><mi mathvariant="normal">median</mi><mo>⁡</mo></mrow><mo stretchy="false" form="prefix">(</mo><mn>4</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>8</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">Q_1=\operatorname{median}(4,6,8)=6</annotation></semantics></math>;
+the median is 8;
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Q</mi><mn>3</mn></msub><mo>=</mo><mrow><mi mathvariant="normal">median</mi><mo>⁡</mo></mrow><mo stretchy="false" form="prefix">(</mo><mn>9</mn><mo>,</mo><mn>12</mn><mo>,</mo><mn>14</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>12</mn></mrow><annotation encoding="application/x-tex">Q_3=\operatorname{median}(9,12,14)=12</annotation></semantics></math>;
+the maximum is 14. Label the display in points.</p></div>
+<div data-field="rubric"></div>
+<div data-field="option-A"><p>(4, 6, 8, 12, 14)</p></div>
+<div data-field="option-B"><p>(4, 8, 8, 9, 14)</p></div>
+<div data-field="option-C"><p>(4, 6, 8, 9, 14)</p></div>
+<div data-field="option-D"><p>(4, 8, 9, 12, 14)</p></div>
+</article>
+<article data-practice-id="MHS-U1-T18-002">
+<div data-field="prompt"><p>The nine ordered travel distances, in kilometres, are 2, 4, 5, 6, 8,
+10, 12, 14, 20. Find the IQR using the median-of-halves convention that
+excludes the overall median.</p></div>
+<div data-field="hint"><p>Exclude the central 8. Average 4 and 5 for Q1, then 12 and 14 for
+Q3.</p></div>
+<div data-field="solution"><p>The lower half has
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Q</mi><mn>1</mn></msub><mo>=</mo><mfrac><mrow><mn>4</mn><mo>+</mo><mn>5</mn></mrow><mn>2</mn></mfrac><mo>=</mo><mn>4.5</mn></mrow><annotation encoding="application/x-tex">Q_1=\frac{4+5}{2}=4.5</annotation></semantics></math>
+km. The upper half has
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Q</mi><mn>3</mn></msub><mo>=</mo><mfrac><mrow><mn>12</mn><mo>+</mo><mn>14</mn></mrow><mn>2</mn></mfrac><mo>=</mo><mn>13</mn></mrow><annotation encoding="application/x-tex">Q_3=\frac{12+14}{2}=13</annotation></semantics></math>
+km. Therefore
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">I</mi><mi mathvariant="normal">Q</mi><mi mathvariant="normal">R</mi></mrow><mo>=</mo><mn>13</mn><mo>−</mo><mn>4.5</mn><mo>=</mo><mn>8.5</mn></mrow><annotation encoding="application/x-tex">\mathrm{IQR}=13-4.5=8.5</annotation></semantics></math>
+km.</p></div>
+<div data-field="rubric"></div>
+</article>
+<article data-practice-id="MHS-U1-T18-003">
+<div data-field="prompt"><p>For the nine workshop journeys 5, 8, 10, 12, 12, 14, 15, 16, 18
+minutes, calculate the UPPER 1.5-IQR fence in minutes using the
+chapter’s quartile convention.</p></div>
+<div data-field="hint"><p>Q1=9, Q3=15.5; upper fence is Q3+1.5×IQR.</p></div>
+<div data-field="solution"><p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">I</mi><mi mathvariant="normal">Q</mi><mi mathvariant="normal">R</mi></mrow><mo>=</mo><mn>15.5</mn><mo>−</mo><mn>9</mn><mo>=</mo><mn>6.5</mn></mrow><annotation encoding="application/x-tex">\mathrm{IQR}=15.5-9=6.5</annotation></semantics></math>
+minutes. The upper fence is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi><mo>=</mo><mn>15.5</mn><mo>+</mo><mn>1.5</mn><mo stretchy="false" form="prefix">(</mo><mn>6.5</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>25.25</mn></mrow><annotation encoding="application/x-tex">U=15.5+1.5(6.5)=25.25</annotation></semantics></math>
+minutes. The fence is a screening boundary; a whisker ends at an
+observed non-outlier.</p></div>
+<div data-field="rubric"></div>
+</article>
+<article data-practice-id="MHS-U1-T18-004">
+<div data-field="prompt"><p>The sorted times 5, 8, 10, 12, 12, 14, 15, 16, 50 minutes have upper
+1.5-IQR fence 25.25. Where should the RIGHT whisker end in a MODIFIED
+boxplot? Enter the observed value in minutes.</p></div>
+<div data-field="hint"><p>Do not draw the whisker to the fence or to the flagged 50. Which time
+is the largest non-outlier?</p></div>
+<div data-field="solution"><p>The 50-minute time lies beyond the upper fence, so plot 50
+separately. The largest observed non-outlier is 16 minutes; the right
+modified whisker ends at 16.</p></div>
+<div data-field="rubric"></div>
+</article>
+<article data-practice-id="MHS-U1-T18-005">
+<div data-field="prompt"><p>Which feature is most likely to be visible in a dotplot or histogram
+but hidden in a boxplot?</p></div>
+<div data-field="hint"><p>A boxplot retains a few summary landmarks, not every individual
+point.</p></div>
+<div data-field="solution"><p>C. A boxplot preserves the five landmarks (and potentially outlier
+markings) but cannot reliably communicate the number of peaks or gaps.
+Use a dotplot/histogram to study detailed shape.</p></div>
+<div data-field="rubric"></div>
+<div data-field="option-A"><p>The median</p></div>
+<div data-field="option-B"><p>The interquartile range</p></div>
+<div data-field="option-C"><p>Two separate clusters or peaks</p></div>
+<div data-field="option-D"><p>The approximate location of the quartiles</p></div>
+</article>
+<article data-practice-id="MHS-U1-T18-006">
+<div data-field="prompt"><p>Which statement is generally accurate for a strongly right-skewed
+quantitative distribution?</p></div>
+<div data-field="hint"><p>Think about how exceptionally high observations affect the sum and
+the ranked middle value.</p></div>
+<div data-field="solution"><p>A. A long right tail often pulls the mean above the median. It is
+only a tendency: mean greater than median is not a sufficient condition
+for right skew.</p></div>
+<div data-field="rubric"></div>
+<div data-field="option-A"><p>The mean is usually larger than the median, but this is not a
+universal test.</p></div>
+<div data-field="option-B"><p>The mean is always smaller than the median.</p></div>
+<div data-field="option-C"><p>The mean and median must be exactly equal.</p></div>
+<div data-field="option-D"><p>If the mean exceeds the median, the distribution must be
+right-skewed.</p></div>
+</article>
+<article data-practice-id="MHS-U1-T18-007">
+<div data-field="prompt"><p>Two groups’ travel times are in minutes. Group A has five-number
+summary (2, 4, 6, 8, 10); Group B has (2, 3, 6, 9, 10). Compare medians
+and middle-half variability using numbers, and explain one conclusion
+that is NOT justified by these summaries.</p></div>
+<div data-field="hint"><p>Compare both medians, then subtract Q1 from Q3. Ask whether a cause
+or entire shape can be inferred.</p></div>
+<div data-field="solution"><p>Both groups have median 6 minutes. Group A has
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">I</mi><mi mathvariant="normal">Q</mi><mi mathvariant="normal">R</mi></mrow><mi>A</mi></msub><mo>=</mo><mn>8</mn><mo>−</mo><mn>4</mn><mo>=</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">\mathrm{IQR}_A=8-4=4</annotation></semantics></math>
+minutes, whereas Group B has
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">I</mi><mi mathvariant="normal">Q</mi><mi mathvariant="normal">R</mi></mrow><mi>B</mi></msub><mo>=</mo><mn>9</mn><mo>−</mo><mn>3</mn><mo>=</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">\mathrm{IQR}_B=9-3=6</annotation></semantics></math>
+minutes. Group B’s middle half is more variable by 2 minutes. These
+summaries compare the observed groups; dotplots would provide additional
+evidence about modes and gaps.</p></div>
+<div data-field="rubric"><p>Award credit for the equal median (6 minutes), both correctly
+computed IQRs (4 and 6 minutes), an in-context comparison, and an
+explicit valid limitation.</p></div>
+</article>
+<article data-practice-id="MHS-U1-T18-008">
+<div data-field="prompt"><p>Construct a modified boxplot on a number line for 3, 4, 5, 6, 7, 8,
+9, 10, 30 minutes. State the five-number summary, IQR, numerical fences,
+actual whisker endpoints, and any separate outlier marker. Explain the
+difference between fence and whisker.</p></div>
+<div data-field="hint"><p>The median is 7; halves are 3,4,5,6 and 8,9,10,30. Check whether 30
+crosses the upper fence.</p></div>
+<div data-field="solution"><p>The five-number summary is 3,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Q</mi><mn>1</mn></msub><mo>=</mo><mfrac><mrow><mn>4</mn><mo>+</mo><mn>5</mn></mrow><mn>2</mn></mfrac><mo>=</mo><mn>4.5</mn></mrow><annotation encoding="application/x-tex">Q_1=\frac{4+5}{2}=4.5</annotation></semantics></math>,
+7,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Q</mi><mn>3</mn></msub><mo>=</mo><mfrac><mrow><mn>9</mn><mo>+</mo><mn>10</mn></mrow><mn>2</mn></mfrac><mo>=</mo><mn>9.5</mn></mrow><annotation encoding="application/x-tex">Q_3=\frac{9+10}{2}=9.5</annotation></semantics></math>,
+30 minutes. Thus
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">I</mi><mi mathvariant="normal">Q</mi><mi mathvariant="normal">R</mi></mrow><mo>=</mo><mn>9.5</mn><mo>−</mo><mn>4.5</mn><mo>=</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">\mathrm{IQR}=9.5-4.5=5</annotation></semantics></math>
+minutes. The fences are
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo>=</mo><mn>4.5</mn><mo>−</mo><mn>1.5</mn><mo stretchy="false" form="prefix">(</mo><mn>5</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>−</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">L=4.5-1.5(5)=-3</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi><mo>=</mo><mn>9.5</mn><mo>+</mo><mn>1.5</mn><mo stretchy="false" form="prefix">(</mo><mn>5</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>17</mn></mrow><annotation encoding="application/x-tex">U=9.5+1.5(5)=17</annotation></semantics></math>
+minutes. Draw the box from 4.5 to 9.5 and the median at 7. Extend
+whiskers to observed values 3 and 10, and mark 30 separately. The
+boundary 17 is not a whisker endpoint.</p></div>
+<div data-field="rubric"><p>Include all five numbers; calculate IQR/fences accurately; label axis
+in minutes; show whiskers at 3 and 10, not −3 and 17; plot outlier 30
+separately; explain the distinction.</p></div>
+</article>
+<article data-practice-id="MHS-U1-T18-009">
+<div data-field="prompt"><p>travel times in minutes are 1, 32, 33, 34, 35, 36, 37, 38, 39. What
+is the sample mean in minutes? Enter your answer to two decimals.</p></div>
+<div data-field="hint"><p>Sum all nine observations and divide by nine. Compare the result with
+median 35.</p></div>
+<div data-field="solution"><p>The total is 285 minutes and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>9</mn></mrow><annotation encoding="application/x-tex">n=9</annotation></semantics></math>,
+so
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>x</mi><mo accent="true">‾</mo></mover><mo>=</mo><mfrac><mn>285</mn><mn>9</mn></mfrac><mo>≈</mo><mn>31.67</mn></mrow><annotation encoding="application/x-tex">\bar{x}=\frac{285}{9}\approx31.67</annotation></semantics></math>
+minutes, below the median of 35. The low observation contributes to the
+long left tail. The graph, rather than the mean–median ordering alone,
+establishes the tail pattern.</p></div>
+<div data-field="rubric"></div>
+</article>
+</template><noscript><div class="original-nojs"><ol>
+<li><strong>Question 1</strong><p>Seven ordered practice scores are 4, 6, 8, 8, 9, 12, 14. Under the
+median-of-halves convention excluding the overall median, which is the
+five-number summary?</p>
+<div><strong>A.</strong> <p>(4, 6, 8, 12, 14)</p></div>
+<div><strong>B.</strong> <p>(4, 8, 8, 9, 14)</p></div>
+<div><strong>C.</strong> <p>(4, 6, 8, 9, 14)</p></div>
+<div><strong>D.</strong> <p>(4, 8, 9, 12, 14)</p></div>
+<details><summary>Show solution</summary><p>A. The minimum is 4;
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Q</mi><mn>1</mn></msub><mo>=</mo><mrow><mi mathvariant="normal">median</mi><mo>⁡</mo></mrow><mo stretchy="false" form="prefix">(</mo><mn>4</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>8</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">Q_1=\operatorname{median}(4,6,8)=6</annotation></semantics></math>;
+the median is 8;
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Q</mi><mn>3</mn></msub><mo>=</mo><mrow><mi mathvariant="normal">median</mi><mo>⁡</mo></mrow><mo stretchy="false" form="prefix">(</mo><mn>9</mn><mo>,</mo><mn>12</mn><mo>,</mo><mn>14</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>12</mn></mrow><annotation encoding="application/x-tex">Q_3=\operatorname{median}(9,12,14)=12</annotation></semantics></math>;
+the maximum is 14. Label the display in points.</p>
+</details></li>
+<li><strong>Question 2</strong><p>The nine ordered travel distances, in kilometres, are 2, 4, 5, 6, 8,
+10, 12, 14, 20. Find the IQR using the median-of-halves convention that
+excludes the overall median.</p>
+<details><summary>Show solution</summary><p>The lower half has
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Q</mi><mn>1</mn></msub><mo>=</mo><mfrac><mrow><mn>4</mn><mo>+</mo><mn>5</mn></mrow><mn>2</mn></mfrac><mo>=</mo><mn>4.5</mn></mrow><annotation encoding="application/x-tex">Q_1=\frac{4+5}{2}=4.5</annotation></semantics></math>
+km. The upper half has
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Q</mi><mn>3</mn></msub><mo>=</mo><mfrac><mrow><mn>12</mn><mo>+</mo><mn>14</mn></mrow><mn>2</mn></mfrac><mo>=</mo><mn>13</mn></mrow><annotation encoding="application/x-tex">Q_3=\frac{12+14}{2}=13</annotation></semantics></math>
+km. Therefore
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">I</mi><mi mathvariant="normal">Q</mi><mi mathvariant="normal">R</mi></mrow><mo>=</mo><mn>13</mn><mo>−</mo><mn>4.5</mn><mo>=</mo><mn>8.5</mn></mrow><annotation encoding="application/x-tex">\mathrm{IQR}=13-4.5=8.5</annotation></semantics></math>
+km.</p>
+</details></li>
+<li><strong>Question 3</strong><p>For the nine workshop journeys 5, 8, 10, 12, 12, 14, 15, 16, 18
+minutes, calculate the UPPER 1.5-IQR fence in minutes using the
+chapter’s quartile convention.</p>
+<details><summary>Show solution</summary><p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">I</mi><mi mathvariant="normal">Q</mi><mi mathvariant="normal">R</mi></mrow><mo>=</mo><mn>15.5</mn><mo>−</mo><mn>9</mn><mo>=</mo><mn>6.5</mn></mrow><annotation encoding="application/x-tex">\mathrm{IQR}=15.5-9=6.5</annotation></semantics></math>
+minutes. The upper fence is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi><mo>=</mo><mn>15.5</mn><mo>+</mo><mn>1.5</mn><mo stretchy="false" form="prefix">(</mo><mn>6.5</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>25.25</mn></mrow><annotation encoding="application/x-tex">U=15.5+1.5(6.5)=25.25</annotation></semantics></math>
+minutes. The fence is a screening boundary; a whisker ends at an
+observed non-outlier.</p>
+</details></li>
+<li><strong>Question 4</strong><p>The sorted times 5, 8, 10, 12, 12, 14, 15, 16, 50 minutes have upper
+1.5-IQR fence 25.25. Where should the RIGHT whisker end in a MODIFIED
+boxplot? Enter the observed value in minutes.</p>
+<details><summary>Show solution</summary><p>The 50-minute time lies beyond the upper fence, so plot 50
+separately. The largest observed non-outlier is 16 minutes; the right
+modified whisker ends at 16.</p>
+</details></li>
+<li><strong>Question 5</strong><p>Which feature is most likely to be visible in a dotplot or histogram
+but hidden in a boxplot?</p>
+<div><strong>A.</strong> <p>The median</p></div>
+<div><strong>B.</strong> <p>The interquartile range</p></div>
+<div><strong>C.</strong> <p>Two separate clusters or peaks</p></div>
+<div><strong>D.</strong> <p>The approximate location of the quartiles</p></div>
+<details><summary>Show solution</summary><p>C. A boxplot preserves the five landmarks (and potentially outlier
+markings) but cannot reliably communicate the number of peaks or gaps.
+Use a dotplot/histogram to study detailed shape.</p>
+</details></li>
+<li><strong>Question 6</strong><p>Which statement is generally accurate for a strongly right-skewed
+quantitative distribution?</p>
+<div><strong>A.</strong> <p>The mean is usually larger than the median, but this is not a
+universal test.</p></div>
+<div><strong>B.</strong> <p>The mean is always smaller than the median.</p></div>
+<div><strong>C.</strong> <p>The mean and median must be exactly equal.</p></div>
+<div><strong>D.</strong> <p>If the mean exceeds the median, the distribution must be
+right-skewed.</p></div>
+<details><summary>Show solution</summary><p>A. A long right tail often pulls the mean above the median. It is
+only a tendency: mean greater than median is not a sufficient condition
+for right skew.</p>
+</details></li>
+<li><strong>Question 7</strong><p>Two groups’ travel times are in minutes. Group A has five-number
+summary (2, 4, 6, 8, 10); Group B has (2, 3, 6, 9, 10). Compare medians
+and middle-half variability using numbers, and explain one conclusion
+that is NOT justified by these summaries.</p>
+<details><summary>Show solution</summary><p>Both groups have median 6 minutes. Group A has
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">I</mi><mi mathvariant="normal">Q</mi><mi mathvariant="normal">R</mi></mrow><mi>A</mi></msub><mo>=</mo><mn>8</mn><mo>−</mo><mn>4</mn><mo>=</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">\mathrm{IQR}_A=8-4=4</annotation></semantics></math>
+minutes, whereas Group B has
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">I</mi><mi mathvariant="normal">Q</mi><mi mathvariant="normal">R</mi></mrow><mi>B</mi></msub><mo>=</mo><mn>9</mn><mo>−</mo><mn>3</mn><mo>=</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">\mathrm{IQR}_B=9-3=6</annotation></semantics></math>
+minutes. Group B’s middle half is more variable by 2 minutes. These
+summaries compare the observed groups; dotplots would provide additional
+evidence about modes and gaps.</p>
+<p>Award credit for the equal median (6 minutes), both correctly
+computed IQRs (4 and 6 minutes), an in-context comparison, and an
+explicit valid limitation.</p>
+</details></li>
+<li><strong>Question 8</strong><p>Construct a modified boxplot on a number line for 3, 4, 5, 6, 7, 8,
+9, 10, 30 minutes. State the five-number summary, IQR, numerical fences,
+actual whisker endpoints, and any separate outlier marker. Explain the
+difference between fence and whisker.</p>
+<details><summary>Show solution</summary><p>The five-number summary is 3,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Q</mi><mn>1</mn></msub><mo>=</mo><mfrac><mrow><mn>4</mn><mo>+</mo><mn>5</mn></mrow><mn>2</mn></mfrac><mo>=</mo><mn>4.5</mn></mrow><annotation encoding="application/x-tex">Q_1=\frac{4+5}{2}=4.5</annotation></semantics></math>,
+7,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Q</mi><mn>3</mn></msub><mo>=</mo><mfrac><mrow><mn>9</mn><mo>+</mo><mn>10</mn></mrow><mn>2</mn></mfrac><mo>=</mo><mn>9.5</mn></mrow><annotation encoding="application/x-tex">Q_3=\frac{9+10}{2}=9.5</annotation></semantics></math>,
+30 minutes. Thus
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">I</mi><mi mathvariant="normal">Q</mi><mi mathvariant="normal">R</mi></mrow><mo>=</mo><mn>9.5</mn><mo>−</mo><mn>4.5</mn><mo>=</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">\mathrm{IQR}=9.5-4.5=5</annotation></semantics></math>
+minutes. The fences are
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo>=</mo><mn>4.5</mn><mo>−</mo><mn>1.5</mn><mo stretchy="false" form="prefix">(</mo><mn>5</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>−</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">L=4.5-1.5(5)=-3</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi><mo>=</mo><mn>9.5</mn><mo>+</mo><mn>1.5</mn><mo stretchy="false" form="prefix">(</mo><mn>5</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>17</mn></mrow><annotation encoding="application/x-tex">U=9.5+1.5(5)=17</annotation></semantics></math>
+minutes. Draw the box from 4.5 to 9.5 and the median at 7. Extend
+whiskers to observed values 3 and 10, and mark 30 separately. The
+boundary 17 is not a whisker endpoint.</p>
+<p>Include all five numbers; calculate IQR/fences accurately; label axis
+in minutes; show whiskers at 3 and 10, not −3 and 17; plot outlier 30
+separately; explain the distinction.</p>
+</details></li>
+<li><strong>Question 9</strong><p>travel times in minutes are 1, 32, 33, 34, 35, 36, 37, 38, 39. What
+is the sample mean in minutes? Enter your answer to two decimals.</p>
+<details><summary>Show solution</summary><p>The total is 285 minutes and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>9</mn></mrow><annotation encoding="application/x-tex">n=9</annotation></semantics></math>,
+so
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>x</mi><mo accent="true">‾</mo></mover><mo>=</mo><mfrac><mn>285</mn><mn>9</mn></mfrac><mo>≈</mo><mn>31.67</mn></mrow><annotation encoding="application/x-tex">\bar{x}=\frac{285}{9}\approx31.67</annotation></semantics></math>
+minutes, below the median of 35. The low observation contributes to the
+long left tail. The graph, rather than the mean–median ordering alone,
+establishes the tail pattern.</p>
+</details></li>
 </ol></div></noscript></section>
+<div class="lesson-sources">
+<details>
+<summary>
+Sources
+</summary>
+<p><a href="https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description-effective-fall-2026.pdf">College Board course framework</a>, Topic 1.8. <a href="https://apstudents.collegeboard.org/ap/2019-08/ap19-sg-statistics.pdf">2019 scoring guidelines, Question 1</a>. Workshop travel times are a course example.</p>
+</details>
+</div>
 
 
 </section>
@@ -525,6 +803,7 @@ Why does changing one value move the mean? — Optional algebra
 <script src="../Shared/assets/foundations-data.js"></script>
 <script src="../Topic%201.2/assets/variables.js"></script>
 <script src="../../site/assets/navigation.js"></script>
+<script src="../../site/assets/student-presentation.js" defer=""></script>
 <script src="../../Problem%20Bank/assets/catalog.js"></script>
 <script src="../../Problem%20Bank/assets/practice.js"></script>
 <script src="../../Problem%20Bank/assets/original-practice.js"></script>
@@ -533,6 +812,16 @@ Why does changing one value move the mean? — Optional algebra
 <script src="assets/box18.js"></script>
 <script src="../Topic%201.9/assets/compare19-math.js"></script>
 <script src="../Topic%201.9/assets/compare19.js"></script>
+<script>
+(function () {
+  const css = Array.from(document.querySelectorAll('link[rel="stylesheet"]'))
+    .find(el => el.href.includes('/study110.css'));
+  if (!css) return;
+  const script = document.createElement('script');
+  script.src = css.href.replace(/study110\.css(?:\?.*)?$/, 'study110.js');
+  document.body.appendChild(script);
+})();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

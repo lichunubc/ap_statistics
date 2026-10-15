@@ -79,11 +79,13 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="Unit%201/Topic%201.4/assets/categorical-charts.css">
 <link rel="stylesheet" href="Unit%201/Topic%201.2/assets/variables.css">
 <link rel="stylesheet" href="site/assets/navigation.css">
+<link rel="stylesheet" href="site/assets/student-presentation.css">
 <link rel="stylesheet" href="Problem%20Bank/assets/practice.css">
 <link rel="stylesheet" href="Problem%20Bank/assets/original-practice.css">
 <link rel="stylesheet" href="Unit%201/Topic%201.7/assets/summary17.css">
 <link rel="stylesheet" href="Unit%201/Topic%201.8/assets/box18.css">
 <link rel="stylesheet" href="Unit%201/Topic%201.9/assets/compare19.css">
+<link rel="stylesheet" href="Unit%201/Topic%201.10/assets/study110.css">
 </head>
 
 <body class="nav-sidebar docked fullcontent quarto-light">
@@ -182,6 +184,11 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="Unit%201/Topic%201.10/topic-1-10.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Topic 1.10 The Investigative Question Revisited and Data Collection</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="Unit%201/Shared/practice.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Practice and solutions</span></a>
   </div>
 </li>
@@ -273,7 +280,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="route-grid unit-grid">
 <section id="unit-1-exploring-one-variable-data-and-collecting-data" class="level3 route-card unit-card" data-unit="1">
 <h3 data-anchor-id="unit-1-exploring-one-variable-data-and-collecting-data"><a href="Unit%201/unit-1.html">Unit 1: Exploring One-Variable Data and Collecting Data</a></h3>
-<p><span class="unit-state" data-unit-status="partial">Topics 1.1–1.6 available</span></p>
+<p><span class="unit-state" data-unit-status="partial">Explore available topics</span></p>
 <p>Browse the available lessons, interactive activities, and worked practice.</p>
 </section>
 <section id="unit-2-probability-random-variables-and-probability-distributions" class="level3 route-card unit-card" data-unit="2">
@@ -301,8 +308,6 @@ ul.task-list li input[type="checkbox"] {
 <section id="how-to-study-with-this-book" class="level2">
 <h2 data-anchor-id="how-to-study-with-this-book">How to study with this book</h2>
 <p>Read an explanation, predict what will happen, and then use the activity. For construction questions, draw on paper before opening <strong>Show solution</strong>. A correct answer includes appropriate labels, a sensible scale, and reasoning in context—not only arithmetic.</p>
-<p>The activities run in your browser without an account or notebook kernel. Choices are not submitted to a teacher and reset when you reload the page. Core explanations and worked answers remain readable without JavaScript. Printing expands solutions and includes activity reference states.</p>
-<p>This book is being developed unit by unit. Unit 1 currently contains Topics 1.1–1.6, not the entire unit. Units 2–5 are <strong>under construction</strong>.</p>
 <p><a href="resources.html">Sources and study resources</a></p>
 
 
@@ -318,6 +323,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="Unit%201/Shared/assets/foundations-data.js"></script>
 <script src="Unit%201/Topic%201.2/assets/variables.js"></script>
 <script src="site/assets/navigation.js"></script>
+<script src="site/assets/student-presentation.js" defer=""></script>
 <script src="Problem%20Bank/assets/catalog.js"></script>
 <script src="Problem%20Bank/assets/practice.js"></script>
 <script src="Problem%20Bank/assets/original-practice.js"></script>
@@ -326,6 +332,16 @@ ul.task-list li input[type="checkbox"] {
 <script src="Unit%201/Topic%201.8/assets/box18.js"></script>
 <script src="Unit%201/Topic%201.9/assets/compare19-math.js"></script>
 <script src="Unit%201/Topic%201.9/assets/compare19.js"></script>
+<script>
+(function () {
+  const css = Array.from(document.querySelectorAll('link[rel="stylesheet"]'))
+    .find(el => el.href.includes('/study110.css'));
+  if (!css) return;
+  const script = document.createElement('script');
+  script.src = css.href.replace(/study110\.css(?:\?.*)?$/, 'study110.js');
+  document.body.appendChild(script);
+})();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const isCodeAnnotation = (el) => {

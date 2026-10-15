@@ -80,11 +80,13 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../Topic%201.4/assets/categorical-charts.css">
 <link rel="stylesheet" href="../Topic%201.2/assets/variables.css">
 <link rel="stylesheet" href="../../site/assets/navigation.css">
+<link rel="stylesheet" href="../../site/assets/student-presentation.css">
 <link rel="stylesheet" href="../../Problem%20Bank/assets/practice.css">
 <link rel="stylesheet" href="../../Problem%20Bank/assets/original-practice.css">
 <link rel="stylesheet" href="assets/summary17.css">
 <link rel="stylesheet" href="../Topic%201.8/assets/box18.css">
 <link rel="stylesheet" href="../Topic%201.9/assets/compare19.css">
+<link rel="stylesheet" href="../Topic%201.10/assets/study110.css">
 </head>
 
 <body class="nav-sidebar docked quarto-light">
@@ -183,6 +185,11 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../Topic%201.10/topic-1-10.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Topic 1.10 The Investigative Question Revisited and Data Collection</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../Shared/practice.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Practice and solutions</span></a>
   </div>
 </li>
@@ -241,9 +248,9 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#outliers" id="toc-outliers" class="nav-link" data-scroll-target="#outliers">6 · Two different screens for potential outliers</a></li>
   <li><a href="#comparisons" id="toc-comparisons" class="nav-link" data-scroll-target="#comparisons">7 · Comparing independent samples</a></li>
   <li><a href="#resistance" id="toc-resistance" class="nav-link" data-scroll-target="#resistance">8 · Which summaries should we choose?</a></li>
-  <li><a href="#exam-example" id="toc-exam-example" class="nav-link" data-scroll-target="#exam-example">9 · A real released AP Statistics exam connection</a></li>
+  <li><a href="#exam-example" id="toc-exam-example" class="nav-link" data-scroll-target="#exam-example">9 · AP exam example</a></li>
   <li><a href="#takeaway-a-statistic-is-evidence-not-the-whole-picture" id="toc-takeaway-a-statistic-is-evidence-not-the-whole-picture" class="nav-link" data-scroll-target="#takeaway-a-statistic-is-evidence-not-the-whole-picture">Takeaway: a statistic is evidence, not the whole picture</a></li>
-  <li><a href="#practice-17" id="toc-practice-17" class="nav-link" data-scroll-target="#practice-17">Practice · one question at a time</a></li>
+  <li><a href="#practice-17" id="toc-practice-17" class="nav-link" data-scroll-target="#practice-17">Practice</a></li>
   </ul>
 </nav>
     </div>
@@ -274,14 +281,13 @@ math[display=block] {display:block;max-width:100%;overflow-x:auto;overflow-y:hid
 </style>
 <div class="chapter-lead">
 <p><strong>A graph shows the distribution; a numerical summary makes a specific feature measurable.</strong> In this chapter you will learn to calculate, interpret, and choose summaries of <strong>center, position, and spread</strong> without losing sight of the original data.</p>
-<p><strong>Learning targets (2026 CED):</strong> calculate center and position (1.7.A); measure variability (1.7.B); convert units (1.7.C); screen for possible outliers with two different rules (1.7.D); compare samples (1.7.E); and justify a summary in context (1.7.F). These are skills <strong>3.B, 4.A, and 4.B</strong>.</p>
 </div>
 <section id="motivation" class="level2">
 <h2 class="anchored" data-anchor-id="motivation">From a dotplot to a meaningful summary</h2>
-<p>Imagine a hypothetical group of <strong>nine students</strong> reporting one-way travel times to a workshop, in minutes:</p>
+<p>Imagine <strong>nine students</strong> reporting one-way travel times to a workshop, in minutes:</p>
 <p><strong>5, 8, 10, 12, 12, 14, 15, 16, 18.</strong></p>
 <p>A dotplot from <a href="../Topic%201.5/topic-1-5.html">Topic 1.5</a> tells us where the individual values are, and <a href="../Topic%201.6/topic-1-6.html">Topic 1.6</a> helps us describe the shape. Now we also need defensible numbers to answer three distinct questions: <em>What is a typical travel time? How much do the times vary? Is any time unusually far from the rest?</em></p>
-<p>Every statistic must refer to a clearly defined group and variable. The nine times above are <strong>hypothetical teaching data</strong>, not measurements from Maple Hill School. They are also <strong>not</strong> the separate 24-time dataset used in earlier lessons.</p>
+<p>Every statistic refers to a clearly defined group and variable: here, the nine students and their travel times in minutes.</p>
 <p>Before calculating, predict: if we change <strong>18 minutes to 50 minutes</strong>, which will move more—the mean or the median? Why? Test the prediction in the laboratory below.</p>
 </section>
 <section id="mean" class="level2">
@@ -297,7 +303,7 @@ math[display=block] {display:block;max-width:100%;overflow-x:auto;overflow-y:hid
 Why does the mean balance? — Optional derivation
 </summary>
 <p>
-<strong>Optional enrichment — this algebraic derivation is not required for AP Statistics.</strong> The total signed deviation from any candidate center <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math> is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mo stretchy="false" form="prefix">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo>−</mo><mi>c</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mo>∑</mo><msub><mi>x</mi><mi>i</mi></msub><mo>−</mo><mi>n</mi><mi>c</mi></mrow><annotation encoding="application/x-tex">\sum_{i=1}^{n}(x_i-c)=\sum x_i-nc</annotation></semantics></math>. Setting the signed deviation to zero gives <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>=</mo><mo>∑</mo><msub><mi>x</mi><mi>i</mi></msub><mi>/</mi><mi>n</mi><mo>=</mo><mover><mi>x</mi><mo accent="true">‾</mo></mover></mrow><annotation encoding="application/x-tex">c=\sum x_i/n=\bar{x}</annotation></semantics></math>. Consequently, observations above the mean exactly balance observations below it when their signed distances are counted. This explains the seesaw analogy; it does not claim that every person travels for exactly the mean time.
+The total signed deviation from any candidate center <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math> is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mo stretchy="false" form="prefix">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo>−</mo><mi>c</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mo>∑</mo><msub><mi>x</mi><mi>i</mi></msub><mo>−</mo><mi>n</mi><mi>c</mi></mrow><annotation encoding="application/x-tex">\sum_{i=1}^{n}(x_i-c)=\sum x_i-nc</annotation></semantics></math>. Setting the signed deviation to zero gives <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>=</mo><mo>∑</mo><msub><mi>x</mi><mi>i</mi></msub><mi>/</mi><mi>n</mi><mo>=</mo><mover><mi>x</mi><mo accent="true">‾</mo></mover></mrow><annotation encoding="application/x-tex">c=\sum x_i/n=\bar{x}</annotation></semantics></math>. Consequently, observations above the mean exactly balance observations below it when their signed distances are counted. This explains the seesaw analogy; it does not claim that every person travels for exactly the mean time.
 </p>
 </details>
 <section id="median" class="level3">
@@ -386,7 +392,7 @@ s=\sqrt{s^2}.
 Why square deviations and divide by n−1? — Optional derivation
 </summary>
 <p>
-<strong>Optional enrichment — this mathematical derivation is not required for AP Statistics.</strong> The mean minimizes the sum of squared deviations: <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∑</mo><mo stretchy="false" form="prefix">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo>−</mo><mi>c</mi><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup><mo>=</mo><mo>∑</mo><mo stretchy="false" form="prefix">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo>−</mo><mover><mi>x</mi><mo accent="true">‾</mo></mover><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup><mo>+</mo><mi>n</mi><mo stretchy="false" form="prefix">(</mo><mi>c</mi><mo>−</mo><mover><mi>x</mi><mo accent="true">‾</mo></mover><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\sum (x_i-c)^2=\sum(x_i-\bar{x})^2+n(c-\bar{x})^2</annotation></semantics></math>, so the squared-deviation total is smallest at <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>=</mo><mover><mi>x</mi><mo accent="true">‾</mo></mover></mrow><annotation encoding="application/x-tex">c=\bar{x}</annotation></semantics></math>. Because <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∑</mo><mo stretchy="false" form="prefix">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo>−</mo><mover><mi>x</mi><mo accent="true">‾</mo></mover><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\sum(x_i-\bar{x})=0</annotation></semantics></math>, after estimating the sample mean only <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n-1</annotation></semantics></math> deviations are free to vary. More formally, for independent identically distributed observations with finite population variance <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>σ</mi><mn>2</mn></msup><annotation encoding="application/x-tex">\sigma^2</annotation></semantics></math>, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo stretchy="false" form="prefix">[</mo><mo>∑</mo><mo stretchy="false" form="prefix">(</mo><msub><mi>X</mi><mi>i</mi></msub><mo>−</mo><mover><mi>X</mi><mo accent="true">‾</mo></mover><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup><mo stretchy="false" form="postfix">]</mo><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><msup><mi>σ</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">E[\sum(X_i-\bar X)^2]=(n-1)\sigma^2</annotation></semantics></math>, so dividing by <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n-1</annotation></semantics></math> makes <em>sample variance</em> an unbiased estimator of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>σ</mi><mn>2</mn></msup><annotation encoding="application/x-tex">\sigma^2</annotation></semantics></math>. This does <strong>not</strong> make <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>s</mi><annotation encoding="application/x-tex">s</annotation></semantics></math> itself an unbiased estimator of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>. Taking the square root produces a spread in the original units.
+The mean minimizes the sum of squared deviations: <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∑</mo><mo stretchy="false" form="prefix">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo>−</mo><mi>c</mi><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup><mo>=</mo><mo>∑</mo><mo stretchy="false" form="prefix">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo>−</mo><mover><mi>x</mi><mo accent="true">‾</mo></mover><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup><mo>+</mo><mi>n</mi><mo stretchy="false" form="prefix">(</mo><mi>c</mi><mo>−</mo><mover><mi>x</mi><mo accent="true">‾</mo></mover><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\sum (x_i-c)^2=\sum(x_i-\bar{x})^2+n(c-\bar{x})^2</annotation></semantics></math>, so the squared-deviation total is smallest at <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>=</mo><mover><mi>x</mi><mo accent="true">‾</mo></mover></mrow><annotation encoding="application/x-tex">c=\bar{x}</annotation></semantics></math>. Because <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∑</mo><mo stretchy="false" form="prefix">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo>−</mo><mover><mi>x</mi><mo accent="true">‾</mo></mover><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\sum(x_i-\bar{x})=0</annotation></semantics></math>, after estimating the sample mean only <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n-1</annotation></semantics></math> deviations are free to vary. More formally, for independent identically distributed observations with finite population variance <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>σ</mi><mn>2</mn></msup><annotation encoding="application/x-tex">\sigma^2</annotation></semantics></math>, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo stretchy="false" form="prefix">[</mo><mo>∑</mo><mo stretchy="false" form="prefix">(</mo><msub><mi>X</mi><mi>i</mi></msub><mo>−</mo><mover><mi>X</mi><mo accent="true">‾</mo></mover><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup><mo stretchy="false" form="postfix">]</mo><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><msup><mi>σ</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">E[\sum(X_i-\bar X)^2]=(n-1)\sigma^2</annotation></semantics></math>, so dividing by <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n-1</annotation></semantics></math> makes <em>sample variance</em> an unbiased estimator of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>σ</mi><mn>2</mn></msup><annotation encoding="application/x-tex">\sigma^2</annotation></semantics></math>. This does <strong>not</strong> make <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>s</mi><annotation encoding="application/x-tex">s</annotation></semantics></math> itself an unbiased estimator of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>. Taking the square root produces a spread in the original units.
 </p>
 </details>
 <p><strong>Interpretation check.</strong> If two groups have similar means but group B has a substantially larger <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>s</mi><annotation encoding="application/x-tex">s</annotation></semantics></math>, the observations in B are generally more spread out <strong>around their group mean</strong>. This alone does not prove that one group has outliers or that either distribution is normal.</p>
@@ -416,16 +422,16 @@ Reset example
 Use the buttons to explore how the summaries respond.
 </p>
 <figure class="summary17-figure figure">
-<div data-summary17-plot="" role="img" aria-label="Dotplot of the hypothetical travel times">
+<div data-summary17-plot="" role="img" aria-label="Dotplot of the travel times">
 
 </div>
 <figcaption data-summary17-caption="">
-Hypothetical nine-person sample: dotplot with mean, median and quartile markers.
+Nine travel times: dotplot with mean, median and quartile markers.
 </figcaption>
 </figure>
 <div class="summary17-results" data-summary17-results="">
 <p>
-<strong>Starting reference:</strong> n = 9; mean ≈ 12.22 min; median = 12 min; Q1 = 9 min; Q3 = 15.5 min; range = 13 min; IQR = 6.5 min; sample SD ≈ 4.09 min.
+<strong>Starting reference:</strong> <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>9</mn></mrow><annotation encoding="application/x-tex">n=9</annotation></semantics></math>; <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>x</mi><mo accent="true">‾</mo></mover><mo>≈</mo><mn>12.22</mn></mrow><annotation encoding="application/x-tex">\bar{x}\approx12.22</annotation></semantics></math> min; median <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>12</mn><annotation encoding="application/x-tex">12</annotation></semantics></math> min; <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Q</mi><mn>1</mn></msub><mo>=</mo><mn>9</mn></mrow><annotation encoding="application/x-tex">Q_1=9</annotation></semantics></math> min; <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Q</mi><mn>3</mn></msub><mo>=</mo><mn>15.5</mn></mrow><annotation encoding="application/x-tex">Q_3=15.5</annotation></semantics></math> min; range <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>13</mn><annotation encoding="application/x-tex">13</annotation></semantics></math> min; IQR <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>6.5</mn><annotation encoding="application/x-tex">6.5</annotation></semantics></math> min; <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>≈</mo><mn>4.09</mn></mrow><annotation encoding="application/x-tex">s\approx4.09</annotation></semantics></math> min.
 </p>
 </div>
 </section>
@@ -449,14 +455,14 @@ s_y^2=b^2s_x^2.
 Why these unit-conversion rules? — Optional algebraic derivation
 </summary>
 <p>
-<strong>Optional enrichment — these derivations are not required for AP Statistics.</strong> Since <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>y</mi><mi>i</mi></msub><mo>=</mo><mi>a</mi><mo>+</mo><mi>b</mi><msub><mi>x</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">y_i=a+bx_i</annotation></semantics></math>, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>y</mi><mo accent="true">‾</mo></mover><mo>=</mo><msup><mi>n</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup><mo>∑</mo><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo>+</mo><mi>b</mi><msub><mi>x</mi><mi>i</mi></msub><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>a</mi><mo>+</mo><mi>b</mi><mover><mi>x</mi><mo accent="true">‾</mo></mover></mrow><annotation encoding="application/x-tex">\bar y=n^{-1}\sum(a+bx_i)=a+b\bar x</annotation></semantics></math>. Each centered deviation is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>y</mi><mi>i</mi></msub><mo>−</mo><mover><mi>y</mi><mo accent="true">‾</mo></mover><mo>=</mo><mi>b</mi><mo stretchy="false" form="prefix">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo>−</mo><mover><mi>x</mi><mo accent="true">‾</mo></mover><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">y_i-\bar y=b(x_i-\bar x)</annotation></semantics></math>, so <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>s</mi><mi>y</mi><mn>2</mn></msubsup><mo>=</mo><msup><mi>b</mi><mn>2</mn></msup><msubsup><mi>s</mi><mi>x</mi><mn>2</mn></msubsup></mrow><annotation encoding="application/x-tex">s_y^2=b^2s_x^2</annotation></semantics></math> and <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mi>y</mi></msub><mo>=</mo><mo stretchy="false" form="prefix">|</mo><mi>b</mi><mo stretchy="false" form="prefix">|</mo><msub><mi>s</mi><mi>x</mi></msub></mrow><annotation encoding="application/x-tex">s_y=|b|s_x</annotation></semantics></math>. Translation adds <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math> to all ordered values, and multiplication by a positive <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math> preserves their order, so quantile positions transform likewise. Negative <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math> reverses the order, which swaps the lower and upper quartiles while keeping the median’s central position. Any difference of endpoints such as a range or IQR scales by the absolute factor.
+Since <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>y</mi><mi>i</mi></msub><mo>=</mo><mi>a</mi><mo>+</mo><mi>b</mi><msub><mi>x</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">y_i=a+bx_i</annotation></semantics></math>, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>y</mi><mo accent="true">‾</mo></mover><mo>=</mo><msup><mi>n</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup><mo>∑</mo><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo>+</mo><mi>b</mi><msub><mi>x</mi><mi>i</mi></msub><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>a</mi><mo>+</mo><mi>b</mi><mover><mi>x</mi><mo accent="true">‾</mo></mover></mrow><annotation encoding="application/x-tex">\bar y=n^{-1}\sum(a+bx_i)=a+b\bar x</annotation></semantics></math>. Each centered deviation is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>y</mi><mi>i</mi></msub><mo>−</mo><mover><mi>y</mi><mo accent="true">‾</mo></mover><mo>=</mo><mi>b</mi><mo stretchy="false" form="prefix">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo>−</mo><mover><mi>x</mi><mo accent="true">‾</mo></mover><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">y_i-\bar y=b(x_i-\bar x)</annotation></semantics></math>, so <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>s</mi><mi>y</mi><mn>2</mn></msubsup><mo>=</mo><msup><mi>b</mi><mn>2</mn></msup><msubsup><mi>s</mi><mi>x</mi><mn>2</mn></msubsup></mrow><annotation encoding="application/x-tex">s_y^2=b^2s_x^2</annotation></semantics></math> and <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mi>y</mi></msub><mo>=</mo><mo stretchy="false" form="prefix">|</mo><mi>b</mi><mo stretchy="false" form="prefix">|</mo><msub><mi>s</mi><mi>x</mi></msub></mrow><annotation encoding="application/x-tex">s_y=|b|s_x</annotation></semantics></math>. Translation adds <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math> to all ordered values, and multiplication by a positive <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math> preserves their order, so quantile positions transform likewise. Negative <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math> reverses the order, which swaps the lower and upper quartiles while keeping the median’s central position. Any difference of endpoints such as a range or IQR scales by the absolute factor.
 </p>
 </details>
 <p><strong>Worked example.</strong> A sample mean travel time of 12.22 minutes becomes approximately <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>733.33</mn><annotation encoding="application/x-tex">733.33</annotation></semantics></math> seconds. Its sample standard deviation of 4.086 minutes becomes approximately <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>245.15</mn><annotation encoding="application/x-tex">245.15</annotation></semantics></math> seconds, <strong>not</strong> <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>245.15</mn><annotation encoding="application/x-tex">245.15</annotation></semantics></math> seconds². If we also add 3 minutes to every travel time, the mean and median rise by 3 minutes but SD and IQR stay the same.</p>
 </section>
 <section id="outliers" class="level2">
 <h2 class="anchored" data-anchor-id="outliers">6 · Two different screens for potential outliers</h2>
-<p>Unusual observations deserve investigation, not automatic deletion. Two screening methods appear in the Fall 2026 CED, and <strong>they may disagree</strong>.</p>
+<p>Unusual observations deserve investigation, not automatic deletion. Two useful screening methods <strong>may disagree</strong>.</p>
 <p><strong>IQR method.</strong> A value is a potential outlier if it is <strong>strictly outside</strong> the fences</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="normal">lower fence</mtext><mo>=</mo><msub><mi>Q</mi><mn>1</mn></msub><mo>−</mo><mn>1.5</mn><mspace width="0.167em"></mspace><mrow><mi mathvariant="normal">I</mi><mi mathvariant="normal">Q</mi><mi mathvariant="normal">R</mi></mrow><mo>,</mo><mspace width="1.0em"></mspace><mtext mathvariant="normal">upper fence</mtext><mo>=</mo><msub><mi>Q</mi><mn>3</mn></msub><mo>+</mo><mn>1.5</mn><mspace width="0.167em"></mspace><mrow><mi mathvariant="normal">I</mi><mi mathvariant="normal">Q</mi><mi mathvariant="normal">R</mi></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">
 \text{lower fence}=Q_1-1.5\,\mathrm{IQR},
@@ -489,7 +495,7 @@ Two standard deviations is another conventional threshold for unusual values rel
 </section>
 <section id="comparisons" class="level2">
 <h2 class="anchored" data-anchor-id="comparisons">7 · Comparing independent samples</h2>
-<p>Consider <strong>two independent, hypothetical</strong> groups of workshop travelers, both measured in <strong>minutes</strong>:</p>
+<p>Consider <strong>two independent groups</strong> of workshop travelers, both measured in <strong>minutes</strong>:</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 33%">
@@ -548,57 +554,337 @@ Two standard deviations is another conventional threshold for unusual values rel
 <h2 class="anchored" data-anchor-id="resistance">8 · Which summaries should we choose?</h2>
 <p>The <strong>mean</strong> and <strong>standard deviation</strong> are sensitive to unusually large or small observations because they use all numerical values (SD squares deviations). The <strong>range</strong> uses the extremes and is also sensitive. By contrast, the <strong>median</strong> and <strong>IQR</strong> depend mainly on ordered positions and are <strong>resistant</strong> to extreme values, though they are not completely unaffected by every data change.</p>
 <p>Choose <strong>median and IQR</strong> for a highly skewed distribution or when possible outliers would distort a description of a typical observation and the middle spread. For a roughly symmetric distribution without notable outliers, <strong>mean and SD</strong> often provide a useful center/spread pair. Use the graph and investigative question as part of this decision; don’t select a statistic simply because it is easier to calculate.</p>
-<p><strong>Worked interpretation with an extreme.</strong> Replace the 18-minute observation with 50 minutes. The median remains 12 minutes even though the mean rises from about 12.22 to <strong>15.78 minutes</strong>. Reporting only the new mean would overstate what a typical student in this nine-person sample experienced. The 50-minute observation is real <em>within the hypothetical data scenario</em> and should be investigated, not erased merely to improve the summary.</p>
+<p><strong>Worked interpretation with an extreme.</strong> Replace the 18-minute observation with 50 minutes. The median remains 12 minutes even though the mean rises from about 12.22 to <strong>15.78 minutes</strong>. Reporting only the new mean would overstate what a typical student in this nine-person sample experienced. Investigate the unusually long trip before deciding how to interpret it.</p>
 </section>
 <section id="exam-example" class="level2">
-<h2 class="anchored" data-anchor-id="exam-example">9 · A real released AP Statistics exam connection</h2>
-<p><strong>2024 released AP Statistics free-response Question 6(b)</strong> includes numerical summaries for a sample of 20 reported sale prices. The official public <a href="https://apcentral.collegeboard.org/media/pdf/ap24-frq-statistics.pdf">2024 Question 6 (PDF)</a> and <a href="https://apcentral.collegeboard.org/media/pdf/ap24-sg-statistics.pdf">2024 scoring guidelines (PDF)</a> are the sources; the following is an <strong>independent worked walkthrough</strong>, not a reproduction of the protected question or an official scoring response.</p>
+<h2 class="anchored" data-anchor-id="exam-example">9 · AP exam example</h2>
+<p><strong>2024 AP Statistics, Question 6(b): whistle prices.</strong></p>
+<figure class="exam-source figure" data-exam-id="ap24-q6b-summary">
+<a class="exam-enlarge" href="assets/exam/ap24-q6b-summary.png" aria-label="Enlarge 2024 AP Statistics, Question 6(b)(i)"> <img src="assets/exam/ap24-q6b-summary.png" alt="2024 AP Statistics, Question 6(b)(i). Readable description below." loading="lazy" decoding="async" class="figure-img"> </a>
+<figcaption>
+2024 AP Statistics, Question 6(b)(i) · <a href="https://apcentral.collegeboard.org/media/pdf/ap24-frq-statistics.pdf">College Board</a> · © College Board
+</figcaption>
+<details class="exam-description">
+<summary>
+Read the question description
+</summary>
+<p>
+For 20 whistle prices, the mean is 5.12 dollars, SD 0.743 dollars, minimum 4.25 dollars, first quartile 4.51 dollars, median 4.885 dollars, third quartile 5.475 dollars and maximum 6.58 dollars. Use these summaries to describe the shape.
+</p>
+</details>
+</figure>
+<figure class="exam-source figure" data-exam-id="ap24-q6b-outliers">
+<a class="exam-enlarge" href="assets/exam/ap24-q6b-outliers.png" aria-label="Enlarge 2024 AP Statistics, Question 6(b)(ii)"> <img src="assets/exam/ap24-q6b-outliers.png" alt="2024 AP Statistics, Question 6(b)(ii). Readable description below." loading="lazy" decoding="async" class="figure-img"> </a>
+<figcaption>
+2024 AP Statistics, Question 6(b)(ii) · <a href="https://apcentral.collegeboard.org/media/pdf/ap24-frq-statistics.pdf">College Board</a> · © College Board
+</figcaption>
+<details class="exam-description">
+<summary>
+Read the question description
+</summary>
+<p>
+Determine whether the whistle prices contain outliers using the 1.5-IQR rule, and show the calculations.
+</p>
+</details>
+</figure>
+<section id="worked-solution" class="level3">
+<h3 class="anchored" data-anchor-id="worked-solution">Worked solution</h3>
 <p>The given summaries include <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Q</mi><mn>1</mn></msub><mo>=</mo><mi>$</mi><mn>4.51</mn></mrow><annotation encoding="application/x-tex">Q_1=\$4.51</annotation></semantics></math>, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Q</mi><mn>3</mn></msub><mo>=</mo><mi>$</mi><mn>5.475</mn></mrow><annotation encoding="application/x-tex">Q_3=\$5.475</annotation></semantics></math>, minimum $4.25, maximum $6.58, mean $5.12, and sample SD $0.743. The IQR is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>$</mi><mn>5.475</mn><mo>−</mo><mi>$</mi><mn>4.51</mn><mo>=</mo><mi>$</mi><mn>0.965</mn></mrow><annotation encoding="application/x-tex">\$5.475-\$4.51=\$0.965</annotation></semantics></math>. The 1.5-IQR fences are <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4.51</mn><mo>−</mo><mn>1.5</mn><mo stretchy="false" form="prefix">(</mo><mn>0.965</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>$</mi><mn>3.0625</mn></mrow><annotation encoding="application/x-tex">4.51-1.5(0.965)=\$3.0625</annotation></semantics></math> and <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5.475</mn><mo>+</mo><mn>1.5</mn><mo stretchy="false" form="prefix">(</mo><mn>0.965</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>$</mi><mn>6.9225</mn></mrow><annotation encoding="application/x-tex">5.475+1.5(0.965)=\$6.9225</annotation></semantics></math>. Because the observed minimum and maximum lie between those two fences, <strong>none of these 20 prices</strong> would be classified as a potential outlier by the 1.5-IQR method. The separate two-SD boundaries would be <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5.12</mn><mo>±</mo><mn>2</mn><mo stretchy="false" form="prefix">(</mo><mn>0.743</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">5.12\pm2(0.743)</annotation></semantics></math>, or $3.634 to $6.606, and the given extremes also fall inside them.</p>
-<p>A strong solution names the <strong>sale-price variable</strong>, writes and calculates the criterion, checks <strong>both</strong> extremes, and concludes <strong>in context</strong>. Other parts of 2024 Question 6 involve additional topics and are not prerequisites for this lesson. Always check the actual exam’s instructions and the official rubric when practicing released questions.</p>
+<p>A strong solution names the <strong>sale-price variable</strong>, writes and calculates the criterion, checks <strong>both</strong> extremes, and concludes <strong>in context</strong>.</p>
+</section>
 </section>
 <section id="takeaway-a-statistic-is-evidence-not-the-whole-picture" class="level2">
 <h2 class="anchored" data-anchor-id="takeaway-a-statistic-is-evidence-not-the-whole-picture">Takeaway: a statistic is evidence, not the whole picture</h2>
 <p>You can now identify a typical value by <strong>mean or median</strong>, locate the middle portion by <strong>quartiles/percentiles</strong>, quantify spread by <strong>range, IQR, sample variance and sample SD</strong>, understand unit conversion, screen for unusual data by <strong>two distinct methods</strong>, and justify a comparison and a resistant summary. Remember the three checks behind any claim: <em>Which group? Which units? Which evidence?</em></p>
 </section>
 <section id="practice-17" class="level2">
-<h2 class="anchored" data-anchor-id="practice-17">Practice · one question at a time</h2>
-<p>The independent, teacher-authored questions below are stored once in the repository’s original-content problem bank. Use <strong>Next question</strong> to change problems without jumping to another page, and scroll upward to consult these notes whenever needed. Hints, feedback, and fully worked solutions start hidden. For written justifications, compare your reasoning with a revealable model answer rather than expecting automatic essay grading.</p>
+<h2 class="anchored" data-anchor-id="practice-17">Practice</h2>
+<p>Try each question before opening its solution.</p>
 <section class="original-practice" data-original-practice="1.7" data-bank-url="../../Problem%20Bank/original/unit-1/topic-1-7.json">
-<p>Loading the original practice questions. Enable JavaScript for the compact one-question-at-a-time reader.</p>
-<noscript><div class="original-nojs"><p>JavaScript is disabled. These are the complete original questions with model solutions; all content comes from the same public JSON bank.</p><ol>
-<li><strong>MHS-U1-T17-001</strong><p>Nine hypothetical workshop travel times, in minutes, are 5, 8, 10, 12, 12, 14, 15, 16, 18. Calculate the sample mean in minutes. Enter a number rounded to two decimal places.</p>
-<details><summary>Show solution</summary><p>Sum = 110 minutes; n = 9. The sample mean is x̄ = 110/9 ≈ 12.22 minutes. This is a sample average, not a population parameter.</p></details></li>
-<li><strong>MHS-U1-T17-002</strong><p>Four ordered test scores are 6, 8, 11 and 12. Find the median.</p>
-<details><summary>Show solution</summary><p>The middle pair is 8 and 11, so the median is (8 + 11)/2 = 9.5 points. The median need not be an observed score.</p></details></li>
-<li><strong>MHS-U1-T17-003</strong><p>Seven ordered distances, in kilometres, are 4, 5, 7, 7, 9, 11, 13. Using the median-of-halves method that EXCLUDES the overall median, calculate the interquartile range (IQR), in kilometres.</p>
-<details><summary>Show solution</summary><p>The median is 7. The lower half 4,5,7 gives Q1 = 5 km; the upper half 9,11,13 gives Q3 = 11 km. IQR = 11 − 5 = 6 km. Always keep the quartile convention consistent.</p></details></li>
-<li><strong>MHS-U1-T17-004</strong><p>A sample of three daily temperatures, in °C, is 2, 4, 6. Find the SAMPLE VARIANCE. Enter the numerical value in °C².</p>
-<details><summary>Show solution</summary><p>Mean = 4 °C; squared deviations total 8 °C². Sample variance s² = 8/(3−1) = 4 °C². Sample standard deviation would be 2 °C, not 4 °C².</p></details></li>
-<li><strong>MHS-U1-T17-005</strong><p>A sample of waiting times has sample standard deviation s = 4.2 minutes. Which interpretation is best?</p>
-<p>A. The longest wait was exactly 4.2 minutes.</p>
-<p>B. Waiting times typically deviate from their sample mean by about 4.2 minutes.</p>
-<p>C. Half of the patients waited exactly 4.2 minutes.</p>
-<p>D. The sample variance must equal 4.2 minutes.</p>
-<details><summary>Show solution</summary><p>B. Standard deviation describes a typical scale of deviations around the sample mean, not a maximum, median, or exact mean absolute deviation. Variance would have squared units.</p></details></li>
-<li><strong>MHS-U1-T17-006</strong><p>A sample mean travel time is 15 minutes. The same observations are now reported in seconds. What is the sample mean in SECONDS?</p>
-<details><summary>Show solution</summary><p>15 minutes × 60 seconds/minute = 900 seconds. The sample SD, median, range and IQR would also multiply by 60; variance would multiply by 3,600.</p></details></li>
-<li><strong>MHS-U1-T17-007</strong><p>A hypothetical data sample has ordered values 4, 5, 7, 7, 9, 11, 30. Which statement is correct using the median-of-halves quartiles and both outlier screens?</p>
-<p>A. 30 is an IQR outlier but not a two-standard-deviation outlier.</p>
-<p>B. 30 is a two-standard-deviation outlier but not an IQR outlier.</p>
-<p>C. 30 is flagged by both methods.</p>
-<p>D. 30 is flagged by neither method.</p>
-<details><summary>Show solution</summary><p>C. IQR = 6 and upper fence = 11 + 1.5(6) = 20, so 30 is outside. The mean is 73/7 ≈ 10.43; s ≈ 8.942; mean + 2s ≈ 28.31, so 30 also exceeds the two-SD limit. Neither rule proves an error or authorizes automatic removal.</p></details></li>
-<li><strong>MHS-U1-T17-008</strong><p>For the sample 4, 5, 7, 7, 9, 11, 30, calculate the UPPER two-standard-deviation screening boundary x̄ + 2s. Use SAMPLE standard deviation and round to two decimals.</p>
-<details><summary>Show solution</summary><p>Mean = 73/7 ≈ 10.42857; sample variance ≈ 79.95238, so s ≈ 8.94161. Upper boundary ≈ 10.42857 + 2(8.94161) = 28.31179, or 28.31. Since 30 &gt; 28.31, it is flagged. We use a strict boundary.</p></details></li>
-<li><strong>MHS-U1-T17-009</strong><p>Two independent samples of workshop travel times (minutes) are recorded. Group A has median 14 and IQR 4; Group B has median 14 and IQR 8. Compare center and spread in context, then state one conclusion that these summaries do NOT justify.</p>
-<details><summary>Show solution</summary><p>Both groups' observed median workshop travel time was 14 minutes. Group B's middle 50% of travel times was more variable (IQR 8 minutes versus Group A's 4 minutes), twice the IQR. These sample summaries do not, by themselves, prove a population difference or a causal effect, and do not completely specify the distribution's shape.</p></details></li>
-<li><strong>MHS-U1-T17-010</strong><p>A student is at approximately the 90th percentile for completion time in a sample, and a different sample of incomes is strongly right-skewed with some extreme values. Which statement is most defensible?</p>
-<p>A. About 90% of completion times are at or below the student's time; median and IQR often summarize the skewed incomes more robustly.</p>
-<p>B. The student completed 90% of the task; the mean and standard deviation can never change with outliers.</p>
-<p>C. Exactly 90% of the sample must have a smaller time with no ties; the range resists extreme incomes.</p>
-<p>D. A 90th percentile is always the largest observation; the mean is the best summary for every income distribution.</p>
-<details><summary>Show solution</summary><p>A. A 90th percentile is a position with approximately 90% of observations at or below that value, depending on ties and the percentile convention. The median and IQR are generally resistant to extreme incomes, unlike the mean, range, and SD.</p></details></li>
+<p class="original-loading">Loading practice…</p>
+<template data-practice-rich="" data-bank-revision="2.0">
+<article data-practice-id="MHS-U1-T17-001">
+<div data-field="prompt"><p>Nine workshop travel times, in minutes, are 5, 8, 10, 12, 12, 14, 15,
+16, 18. Calculate the sample mean in minutes. Enter a number rounded to
+two decimal places.</p></div>
+<div data-field="hint"><p>Add all nine times, then divide by nine.</p></div>
+<div data-field="solution"><p>The total is 110 minutes and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>9</mn></mrow><annotation encoding="application/x-tex">n=9</annotation></semantics></math>.
+The sample mean is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>x</mi><mo accent="true">‾</mo></mover><mo>=</mo><mfrac><mn>110</mn><mn>9</mn></mfrac><mo>≈</mo><mn>12.22</mn></mrow><annotation encoding="application/x-tex">\bar{x}=\frac{110}{9}\approx12.22</annotation></semantics></math>
+minutes. It describes the average in this sample.</p></div>
+<div data-field="rubric"></div>
+</article>
+<article data-practice-id="MHS-U1-T17-002">
+<div data-field="prompt"><p>Four ordered test scores are 6, 8, 11 and 12. Find the median.</p></div>
+<div data-field="hint"><p>For an even sample size, average the two middle observations.</p></div>
+<div data-field="solution"><p>The middle pair is 8 and 11, so the median is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mn>8</mn><mo>+</mo><mn>11</mn></mrow><mn>2</mn></mfrac><mo>=</mo><mn>9.5</mn></mrow><annotation encoding="application/x-tex">\frac{8+11}{2}=9.5</annotation></semantics></math>
+points. The median can fall between observed scores.</p></div>
+<div data-field="rubric"></div>
+</article>
+<article data-practice-id="MHS-U1-T17-003">
+<div data-field="prompt"><p>Seven ordered distances, in kilometres, are 4, 5, 7, 7, 9, 11, 13.
+Using the median-of-halves method that EXCLUDES the overall median,
+calculate the interquartile range (IQR), in kilometres.</p></div>
+<div data-field="hint"><p>Remove the overall median before splitting into halves; find the
+medians of the lower and upper triples.</p></div>
+<div data-field="solution"><p>The median is 7 km. The lower half gives
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Q</mi><mn>1</mn></msub><mo>=</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">Q_1=5</annotation></semantics></math>
+km; the upper half gives
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Q</mi><mn>3</mn></msub><mo>=</mo><mn>11</mn></mrow><annotation encoding="application/x-tex">Q_3=11</annotation></semantics></math>
+km. Thus
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">I</mi><mi mathvariant="normal">Q</mi><mi mathvariant="normal">R</mi></mrow><mo>=</mo><mn>11</mn><mo>−</mo><mn>5</mn><mo>=</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">\mathrm{IQR}=11-5=6</annotation></semantics></math>
+km.</p></div>
+<div data-field="rubric"></div>
+</article>
+<article data-practice-id="MHS-U1-T17-004">
+<div data-field="prompt"><p>A sample of three daily temperatures, in °C, is 2, 4, 6. Find the
+SAMPLE VARIANCE. Enter the numerical value in °C².</p></div>
+<div data-field="hint"><p>The mean is 4; squared deviations are 4, 0 and 4. Divide their sum by
+n − 1.</p></div>
+<div data-field="solution"><p>The mean is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mspace width="0.167em"></mspace><msup><mrow></mrow><mo>∘</mo></msup><mi mathvariant="normal">C</mi></mrow><annotation encoding="application/x-tex">4\,{}^\circ\mathrm{C}</annotation></semantics></math>
+and the squared deviations total
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>8</mn><mspace width="0.167em"></mspace><msup><mrow></mrow><mo>∘</mo></msup><msup><mi mathvariant="normal">C</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">8\,{}^\circ\mathrm{C}^2</annotation></semantics></math>.
+The sample variance is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>s</mi><mn>2</mn></msup><mo>=</mo><mfrac><mn>8</mn><mrow><mn>3</mn><mo>−</mo><mn>1</mn></mrow></mfrac><mo>=</mo><mn>4</mn><mspace width="0.167em"></mspace><msup><mrow></mrow><mo>∘</mo></msup><msup><mi mathvariant="normal">C</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">s^2=\frac{8}{3-1}=4\,{}^\circ\mathrm{C}^2</annotation></semantics></math>.
+The sample standard deviation is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><msqrt><mn>4</mn></msqrt><mo>=</mo><mn>2</mn><mspace width="0.167em"></mspace><msup><mrow></mrow><mo>∘</mo></msup><mi mathvariant="normal">C</mi></mrow><annotation encoding="application/x-tex">s=\sqrt{4}=2\,{}^\circ\mathrm{C}</annotation></semantics></math>.</p></div>
+<div data-field="rubric"></div>
+</article>
+<article data-practice-id="MHS-U1-T17-005">
+<div data-field="prompt"><p>A sample of waiting times has sample standard deviation
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><mn>4.2</mn></mrow><annotation encoding="application/x-tex">s=4.2</annotation></semantics></math>
+minutes. Which interpretation is best?</p></div>
+<div data-field="hint"><p>Standard deviation describes spread around a mean, and its units
+match the variable.</p></div>
+<div data-field="solution"><p>B. Standard deviation describes a typical scale of deviations around
+the sample mean, not a maximum, median, or exact mean absolute
+deviation. Variance would have squared units.</p></div>
+<div data-field="rubric"></div>
+<div data-field="option-A"><p>The longest wait was exactly 4.2 minutes.</p></div>
+<div data-field="option-B"><p>Waiting times typically deviate from their sample mean by about 4.2
+minutes.</p></div>
+<div data-field="option-C"><p>Half of the patients waited exactly 4.2 minutes.</p></div>
+<div data-field="option-D"><p>The sample variance must equal 4.2 minutes.</p></div>
+</article>
+<article data-practice-id="MHS-U1-T17-006">
+<div data-field="prompt"><p>A sample mean travel time is 15 minutes. The same observations are
+now reported in seconds. What is the sample mean in SECONDS?</p></div>
+<div data-field="hint"><p>Each observation is multiplied by 60; the mean follows the same
+multiplicative conversion.</p></div>
+<div data-field="solution"><p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>15</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> minutes</mtext></mrow><mo>×</mo><mn>60</mn><mfrac><mtext mathvariant="normal">seconds</mtext><mtext mathvariant="normal">minute</mtext></mfrac><mo>=</mo><mn>900</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> seconds</mtext></mrow></mrow><annotation encoding="application/x-tex">15\text{ minutes}\times60\frac{\text{seconds}}{\text{minute}}=900\text{ seconds}</annotation></semantics></math>.
+The sample SD, median, range and IQR also multiply by 60; variance
+multiplies by
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>60</mn><mn>2</mn></msup><mo>=</mo><mn>3600</mn></mrow><annotation encoding="application/x-tex">60^2=3600</annotation></semantics></math>.</p></div>
+<div data-field="rubric"></div>
+</article>
+<article data-practice-id="MHS-U1-T17-007">
+<div data-field="prompt"><p>A data sample has ordered values 4, 5, 7, 7, 9, 11, 30. Which
+statement is correct using the median-of-halves quartiles and both
+outlier screens?</p></div>
+<div data-field="hint"><p>Find Q1 = 5, Q3 = 11, and the IQR upper fence; also check mean + 2 ×
+sample SD.</p></div>
+<div data-field="solution"><p>C. The IQR is 6 and the upper fence is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>11</mn><mo>+</mo><mn>1.5</mn><mo stretchy="false" form="prefix">(</mo><mn>6</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>20</mn></mrow><annotation encoding="application/x-tex">11+1.5(6)=20</annotation></semantics></math>,
+so 30 is outside. The mean is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>x</mi><mo accent="true">‾</mo></mover><mo>=</mo><mfrac><mn>73</mn><mn>7</mn></mfrac><mo>≈</mo><mn>10.43</mn></mrow><annotation encoding="application/x-tex">\bar{x}=\frac{73}{7}\approx10.43</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>≈</mo><mn>8.942</mn></mrow><annotation encoding="application/x-tex">s\approx8.942</annotation></semantics></math>.
+Thus
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>x</mi><mo accent="true">‾</mo></mover><mo>+</mo><mn>2</mn><mi>s</mi><mo>≈</mo><mn>28.31</mn></mrow><annotation encoding="application/x-tex">\bar{x}+2s\approx28.31</annotation></semantics></math>,
+so 30 also exceeds the two-SD boundary. Both rules identify an
+observation to investigate.</p></div>
+<div data-field="rubric"></div>
+<div data-field="option-A"><p>30 is an IQR outlier but not a two-standard-deviation outlier.</p></div>
+<div data-field="option-B"><p>30 is a two-standard-deviation outlier but not an IQR outlier.</p></div>
+<div data-field="option-C"><p>30 is flagged by both methods.</p></div>
+<div data-field="option-D"><p>30 is flagged by neither method.</p></div>
+</article>
+<article data-practice-id="MHS-U1-T17-008">
+<div data-field="prompt"><p>For the sample 4, 5, 7, 7, 9, 11, 30, calculate the UPPER
+two-standard-deviation screening boundary x̄ + 2s. Use SAMPLE standard
+deviation and round to two decimals.</p></div>
+<div data-field="hint"><p>Mean is 73/7; sample standard deviation is approximately 8.94161.</p></div>
+<div data-field="solution"><p>The mean is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>x</mi><mo accent="true">‾</mo></mover><mo>=</mo><mfrac><mn>73</mn><mn>7</mn></mfrac><mo>≈</mo><mn>10.42857</mn></mrow><annotation encoding="application/x-tex">\bar{x}=\frac{73}{7}\approx10.42857</annotation></semantics></math>;
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>s</mi><mn>2</mn></msup><mo>≈</mo><mn>79.95238</mn></mrow><annotation encoding="application/x-tex">s^2\approx79.95238</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>≈</mo><mn>8.94161</mn></mrow><annotation encoding="application/x-tex">s\approx8.94161</annotation></semantics></math>.
+The upper boundary is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>x</mi><mo accent="true">‾</mo></mover><mo>+</mo><mn>2</mn><mi>s</mi><mo>≈</mo><mn>10.42857</mn><mo>+</mo><mn>2</mn><mo stretchy="false" form="prefix">(</mo><mn>8.94161</mn><mo stretchy="false" form="postfix">)</mo><mo>≈</mo><mn>28.31179</mn></mrow><annotation encoding="application/x-tex">\bar{x}+2s\approx10.42857+2(8.94161)\approx28.31179</annotation></semantics></math>,
+or 28.31. Because
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>30</mn><mo>&gt;</mo><mn>28.31</mn></mrow><annotation encoding="application/x-tex">30&gt;28.31</annotation></semantics></math>,
+the value is flagged.</p></div>
+<div data-field="rubric"></div>
+</article>
+<article data-practice-id="MHS-U1-T17-009">
+<div data-field="prompt"><p>Two independent samples of workshop travel times (minutes) are
+recorded. Group A has median 14 and IQR 4; Group B has median 14 and IQR
+8. Compare center and spread in context, then state one conclusion that
+these summaries do NOT justify.</p></div>
+<div data-field="hint"><p>Name the group, variable and units; compare both the medians and the
+IQRs numerically; do not infer population differences or causes.</p></div>
+<div data-field="solution"><p>Both groups’ observed median workshop travel time was 14 minutes.
+Group B’s middle 50% of travel times was more variable (IQR 8 minutes
+versus Group A’s 4 minutes), twice the IQR. These sample summaries do
+not, by themselves, prove a population difference or a causal effect,
+and do not completely specify the distribution’s shape.</p></div>
+<div data-field="rubric"><p>Full-credit self-check: (1) states equal medians of 14 minutes for
+the two groups; (2) states Group B has larger spread using both IQR
+values and units; (3) identifies a justified limitation, such as no
+causal claim, no population inference without design/uncertainty, or no
+complete distribution shape from these summaries alone.</p></div>
+</article>
+<article data-practice-id="MHS-U1-T17-010">
+<div data-field="prompt"><p>A student is at approximately the 90th percentile for completion time
+in a sample, and a different sample of incomes is strongly right-skewed
+with some extreme values. Which statement is most defensible?</p></div>
+<div data-field="hint"><p>Percentiles describe relative position, not percentage completed.
+Which summaries are resistant to extreme observations?</p></div>
+<div data-field="solution"><p>A. A 90th percentile is a position with approximately 90% of
+observations at or below that value, depending on ties and the
+percentile convention. The median and IQR are generally resistant to
+extreme incomes, unlike the mean, range, and SD.</p></div>
+<div data-field="rubric"></div>
+<div data-field="option-A"><p>About 90% of completion times are at or below the student’s time;
+median and IQR often summarize the skewed incomes more robustly.</p></div>
+<div data-field="option-B"><p>The student completed 90% of the task; the mean and standard
+deviation can never change with outliers.</p></div>
+<div data-field="option-C"><p>Exactly 90% of the sample must have a smaller time with no ties; the
+range resists extreme incomes.</p></div>
+<div data-field="option-D"><p>A 90th percentile is always the largest observation; the mean is the
+best summary for every income distribution.</p></div>
+</article>
+</template><noscript><div class="original-nojs"><ol>
+<li><strong>Question 1</strong><p>Nine workshop travel times, in minutes, are 5, 8, 10, 12, 12, 14, 15,
+16, 18. Calculate the sample mean in minutes. Enter a number rounded to
+two decimal places.</p>
+<details><summary>Show solution</summary><p>The total is 110 minutes and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>9</mn></mrow><annotation encoding="application/x-tex">n=9</annotation></semantics></math>.
+The sample mean is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>x</mi><mo accent="true">‾</mo></mover><mo>=</mo><mfrac><mn>110</mn><mn>9</mn></mfrac><mo>≈</mo><mn>12.22</mn></mrow><annotation encoding="application/x-tex">\bar{x}=\frac{110}{9}\approx12.22</annotation></semantics></math>
+minutes. It describes the average in this sample.</p>
+</details></li>
+<li><strong>Question 2</strong><p>Four ordered test scores are 6, 8, 11 and 12. Find the median.</p>
+<details><summary>Show solution</summary><p>The middle pair is 8 and 11, so the median is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mn>8</mn><mo>+</mo><mn>11</mn></mrow><mn>2</mn></mfrac><mo>=</mo><mn>9.5</mn></mrow><annotation encoding="application/x-tex">\frac{8+11}{2}=9.5</annotation></semantics></math>
+points. The median can fall between observed scores.</p>
+</details></li>
+<li><strong>Question 3</strong><p>Seven ordered distances, in kilometres, are 4, 5, 7, 7, 9, 11, 13.
+Using the median-of-halves method that EXCLUDES the overall median,
+calculate the interquartile range (IQR), in kilometres.</p>
+<details><summary>Show solution</summary><p>The median is 7 km. The lower half gives
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Q</mi><mn>1</mn></msub><mo>=</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">Q_1=5</annotation></semantics></math>
+km; the upper half gives
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Q</mi><mn>3</mn></msub><mo>=</mo><mn>11</mn></mrow><annotation encoding="application/x-tex">Q_3=11</annotation></semantics></math>
+km. Thus
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">I</mi><mi mathvariant="normal">Q</mi><mi mathvariant="normal">R</mi></mrow><mo>=</mo><mn>11</mn><mo>−</mo><mn>5</mn><mo>=</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">\mathrm{IQR}=11-5=6</annotation></semantics></math>
+km.</p>
+</details></li>
+<li><strong>Question 4</strong><p>A sample of three daily temperatures, in °C, is 2, 4, 6. Find the
+SAMPLE VARIANCE. Enter the numerical value in °C².</p>
+<details><summary>Show solution</summary><p>The mean is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mspace width="0.167em"></mspace><msup><mrow></mrow><mo>∘</mo></msup><mi mathvariant="normal">C</mi></mrow><annotation encoding="application/x-tex">4\,{}^\circ\mathrm{C}</annotation></semantics></math>
+and the squared deviations total
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>8</mn><mspace width="0.167em"></mspace><msup><mrow></mrow><mo>∘</mo></msup><msup><mi mathvariant="normal">C</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">8\,{}^\circ\mathrm{C}^2</annotation></semantics></math>.
+The sample variance is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>s</mi><mn>2</mn></msup><mo>=</mo><mfrac><mn>8</mn><mrow><mn>3</mn><mo>−</mo><mn>1</mn></mrow></mfrac><mo>=</mo><mn>4</mn><mspace width="0.167em"></mspace><msup><mrow></mrow><mo>∘</mo></msup><msup><mi mathvariant="normal">C</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">s^2=\frac{8}{3-1}=4\,{}^\circ\mathrm{C}^2</annotation></semantics></math>.
+The sample standard deviation is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><msqrt><mn>4</mn></msqrt><mo>=</mo><mn>2</mn><mspace width="0.167em"></mspace><msup><mrow></mrow><mo>∘</mo></msup><mi mathvariant="normal">C</mi></mrow><annotation encoding="application/x-tex">s=\sqrt{4}=2\,{}^\circ\mathrm{C}</annotation></semantics></math>.</p>
+</details></li>
+<li><strong>Question 5</strong><p>A sample of waiting times has sample standard deviation
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><mn>4.2</mn></mrow><annotation encoding="application/x-tex">s=4.2</annotation></semantics></math>
+minutes. Which interpretation is best?</p>
+<div><strong>A.</strong> <p>The longest wait was exactly 4.2 minutes.</p></div>
+<div><strong>B.</strong> <p>Waiting times typically deviate from their sample mean by about 4.2
+minutes.</p></div>
+<div><strong>C.</strong> <p>Half of the patients waited exactly 4.2 minutes.</p></div>
+<div><strong>D.</strong> <p>The sample variance must equal 4.2 minutes.</p></div>
+<details><summary>Show solution</summary><p>B. Standard deviation describes a typical scale of deviations around
+the sample mean, not a maximum, median, or exact mean absolute
+deviation. Variance would have squared units.</p>
+</details></li>
+<li><strong>Question 6</strong><p>A sample mean travel time is 15 minutes. The same observations are
+now reported in seconds. What is the sample mean in SECONDS?</p>
+<details><summary>Show solution</summary><p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>15</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> minutes</mtext></mrow><mo>×</mo><mn>60</mn><mfrac><mtext mathvariant="normal">seconds</mtext><mtext mathvariant="normal">minute</mtext></mfrac><mo>=</mo><mn>900</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> seconds</mtext></mrow></mrow><annotation encoding="application/x-tex">15\text{ minutes}\times60\frac{\text{seconds}}{\text{minute}}=900\text{ seconds}</annotation></semantics></math>.
+The sample SD, median, range and IQR also multiply by 60; variance
+multiplies by
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>60</mn><mn>2</mn></msup><mo>=</mo><mn>3600</mn></mrow><annotation encoding="application/x-tex">60^2=3600</annotation></semantics></math>.</p>
+</details></li>
+<li><strong>Question 7</strong><p>A data sample has ordered values 4, 5, 7, 7, 9, 11, 30. Which
+statement is correct using the median-of-halves quartiles and both
+outlier screens?</p>
+<div><strong>A.</strong> <p>30 is an IQR outlier but not a two-standard-deviation outlier.</p></div>
+<div><strong>B.</strong> <p>30 is a two-standard-deviation outlier but not an IQR outlier.</p></div>
+<div><strong>C.</strong> <p>30 is flagged by both methods.</p></div>
+<div><strong>D.</strong> <p>30 is flagged by neither method.</p></div>
+<details><summary>Show solution</summary><p>C. The IQR is 6 and the upper fence is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>11</mn><mo>+</mo><mn>1.5</mn><mo stretchy="false" form="prefix">(</mo><mn>6</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>20</mn></mrow><annotation encoding="application/x-tex">11+1.5(6)=20</annotation></semantics></math>,
+so 30 is outside. The mean is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>x</mi><mo accent="true">‾</mo></mover><mo>=</mo><mfrac><mn>73</mn><mn>7</mn></mfrac><mo>≈</mo><mn>10.43</mn></mrow><annotation encoding="application/x-tex">\bar{x}=\frac{73}{7}\approx10.43</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>≈</mo><mn>8.942</mn></mrow><annotation encoding="application/x-tex">s\approx8.942</annotation></semantics></math>.
+Thus
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>x</mi><mo accent="true">‾</mo></mover><mo>+</mo><mn>2</mn><mi>s</mi><mo>≈</mo><mn>28.31</mn></mrow><annotation encoding="application/x-tex">\bar{x}+2s\approx28.31</annotation></semantics></math>,
+so 30 also exceeds the two-SD boundary. Both rules identify an
+observation to investigate.</p>
+</details></li>
+<li><strong>Question 8</strong><p>For the sample 4, 5, 7, 7, 9, 11, 30, calculate the UPPER
+two-standard-deviation screening boundary x̄ + 2s. Use SAMPLE standard
+deviation and round to two decimals.</p>
+<details><summary>Show solution</summary><p>The mean is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>x</mi><mo accent="true">‾</mo></mover><mo>=</mo><mfrac><mn>73</mn><mn>7</mn></mfrac><mo>≈</mo><mn>10.42857</mn></mrow><annotation encoding="application/x-tex">\bar{x}=\frac{73}{7}\approx10.42857</annotation></semantics></math>;
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>s</mi><mn>2</mn></msup><mo>≈</mo><mn>79.95238</mn></mrow><annotation encoding="application/x-tex">s^2\approx79.95238</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>≈</mo><mn>8.94161</mn></mrow><annotation encoding="application/x-tex">s\approx8.94161</annotation></semantics></math>.
+The upper boundary is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>x</mi><mo accent="true">‾</mo></mover><mo>+</mo><mn>2</mn><mi>s</mi><mo>≈</mo><mn>10.42857</mn><mo>+</mo><mn>2</mn><mo stretchy="false" form="prefix">(</mo><mn>8.94161</mn><mo stretchy="false" form="postfix">)</mo><mo>≈</mo><mn>28.31179</mn></mrow><annotation encoding="application/x-tex">\bar{x}+2s\approx10.42857+2(8.94161)\approx28.31179</annotation></semantics></math>,
+or 28.31. Because
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>30</mn><mo>&gt;</mo><mn>28.31</mn></mrow><annotation encoding="application/x-tex">30&gt;28.31</annotation></semantics></math>,
+the value is flagged.</p>
+</details></li>
+<li><strong>Question 9</strong><p>Two independent samples of workshop travel times (minutes) are
+recorded. Group A has median 14 and IQR 4; Group B has median 14 and IQR
+8. Compare center and spread in context, then state one conclusion that
+these summaries do NOT justify.</p>
+<details><summary>Show solution</summary><p>Both groups’ observed median workshop travel time was 14 minutes.
+Group B’s middle 50% of travel times was more variable (IQR 8 minutes
+versus Group A’s 4 minutes), twice the IQR. These sample summaries do
+not, by themselves, prove a population difference or a causal effect,
+and do not completely specify the distribution’s shape.</p>
+<p>Full-credit self-check: (1) states equal medians of 14 minutes for
+the two groups; (2) states Group B has larger spread using both IQR
+values and units; (3) identifies a justified limitation, such as no
+causal claim, no population inference without design/uncertainty, or no
+complete distribution shape from these summaries alone.</p>
+</details></li>
+<li><strong>Question 10</strong><p>A student is at approximately the 90th percentile for completion time
+in a sample, and a different sample of incomes is strongly right-skewed
+with some extreme values. Which statement is most defensible?</p>
+<div><strong>A.</strong> <p>About 90% of completion times are at or below the student’s time;
+median and IQR often summarize the skewed incomes more robustly.</p></div>
+<div><strong>B.</strong> <p>The student completed 90% of the task; the mean and standard
+deviation can never change with outliers.</p></div>
+<div><strong>C.</strong> <p>Exactly 90% of the sample must have a smaller time with no ties; the
+range resists extreme incomes.</p></div>
+<div><strong>D.</strong> <p>A 90th percentile is always the largest observation; the mean is the
+best summary for every income distribution.</p></div>
+<details><summary>Show solution</summary><p>A. A 90th percentile is a position with approximately 90% of
+observations at or below that value, depending on ties and the
+percentile convention. The median and IQR are generally resistant to
+extreme incomes, unlike the mean, range, and SD.</p>
+</details></li>
 </ol></div></noscript></section>
+<div class="lesson-sources">
+<details>
+<summary>
+Sources
+</summary>
+<p><a href="https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description-effective-fall-2026.pdf">College Board course framework</a>, Topic 1.7. <a href="https://apcentral.collegeboard.org/media/pdf/ap24-sg-statistics.pdf">2024 Question 6 and scoring guidelines</a>. Workshop travel times are a course example.</p>
+</details>
+</div>
 
 
 </section>
@@ -612,6 +898,7 @@ Two standard deviations is another conventional threshold for unusual values rel
 <script src="../Shared/assets/foundations-data.js"></script>
 <script src="../Topic%201.2/assets/variables.js"></script>
 <script src="../../site/assets/navigation.js"></script>
+<script src="../../site/assets/student-presentation.js" defer=""></script>
 <script src="../../Problem%20Bank/assets/catalog.js"></script>
 <script src="../../Problem%20Bank/assets/practice.js"></script>
 <script src="../../Problem%20Bank/assets/original-practice.js"></script>
@@ -620,6 +907,16 @@ Two standard deviations is another conventional threshold for unusual values rel
 <script src="../Topic%201.8/assets/box18.js"></script>
 <script src="../Topic%201.9/assets/compare19-math.js"></script>
 <script src="../Topic%201.9/assets/compare19.js"></script>
+<script>
+(function () {
+  const css = Array.from(document.querySelectorAll('link[rel="stylesheet"]'))
+    .find(el => el.href.includes('/study110.css'));
+  if (!css) return;
+  const script = document.createElement('script');
+  script.src = css.href.replace(/study110\.css(?:\?.*)?$/, 'study110.js');
+  document.body.appendChild(script);
+})();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

@@ -56,7 +56,7 @@ document.querySelectorAll("[data-compare19]").forEach(root=>{
    [...row.querySelectorAll("td")].forEach((td,i)=>{td.textContent=[s.n,fmt(s.mean),fmt(s.median),fmt(s.iqr),fmt(s.sd),fmt(s.range),s.outliers.length][i];});
   }
   const graph=node("svg",{viewBox:"0 0 800 350",role:"img","aria-label":"Route A and Route B "+mode.value+" plots on a common journey-time axis. Numerical comparison follows in a table."});
-  graph.append(node("title",{},"Two hypothetical route distributions, common numerical scale"));
+  graph.append(node("title",{},"Two route distributions, common numerical scale"));
   const display=mode.value;
   text(graph,65,24,"Compare one-way journey times (minutes)",{"font-size":18,"font-weight":"bold"});
   for(const v of [0,5,10,15,20,25,30,35,40,45]){
