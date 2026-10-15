@@ -37,7 +37,7 @@ for name in [canonical,'topic-1-2.html']:
     assert len(soup.select('.solution details'))==10
     assert len(soup.select('math'))>10
     assert len(soup.select('[data-variables]'))==3
-    assert 'not a raw-data extract' in soup.get_text(' ',strip=True)
+    assert 'Each row represents' in soup.get_text(' ',strip=True), 'Keep a substantive explanation of observational units'
 class Quiet(SimpleHTTPRequestHandler):
     def log_message(self,*args):pass
 server=ThreadingHTTPServer(('127.0.0.1',0),partial(Quiet,directory=str(DOCS)))
