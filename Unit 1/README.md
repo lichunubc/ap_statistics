@@ -23,3 +23,5 @@ A topic folder contains its main `topic-1-x.qmd`, `objectives.json`, local docum
 Repository-wide infrastructure remains at the root: `_quarto.yml`, `index.qmd`, `resources.qmd`, `tools/`, `project/`, `site/`, `.github/`, and global documentation. These support the whole book, not just one topic. Generated `docs/` mirrors the published structure and contains compatibility pages at old URLs; never edit it manually.
 
 Run `quarto preview` for editing. Run `quarto render` followed by `python tools/check_all.py` for release checks. `tools/prepare.py` regenerates browser data from the shared JSON; `tools/postrender.py` creates compatibility pages/resources and removes bundled fonts.
+
+Topic **1.10** provides the investigative-question and study-design chapter in `Topic 1.10/`, with a visually linked design explorer, original practice and an official 2024 exam connection. Topic-specific source, objective mapping, assets and tests are kept with its chapter.

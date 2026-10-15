@@ -1,0 +1,197 @@
+# Topic 1.10 The Investigative Question Revisited and Data Collection
+
+A statistical investigation begins before the first graph is drawn. We must decide **what information would answer the question, from whom it should be collected, and what conclusions the design can justify**. Consider a school that wants to know whether a short morning mathematics review improves students' next quiz scores.
+
+## 1. Turn curiosity into a statistical question {#question-110}
+
+“Does review help?” is too vague to investigate. Who is being studied? What counts as “help”? Will students choose whether to attend, or will the school assign sessions? A useful investigative question has three linked components.
+
+**Variables and population.** Specify the observational units, explanatory and response variables when relevant, and the population of interest. Here the observational unit might be one grade 10 student, with next quiz score (points) as the quantitative response variable.
+
+**Statistical purpose.** Decide whether the aim is to estimate a population characteristic, compare groups, or evaluate a claim about a parameter. An estimate of the proportion willing to attend is different from a test of whether assigned review increases the population mean score.
+
+**Intended conclusion.** Identify the group to which results should apply and whether the claim is descriptive, associational or causal. Study design limits conclusions even when observed differences are large.
+
+| Investigative question | What must be measured? | Purpose |
+|:--|:--|:--|
+| What proportion of current grade 10 students at this school would attend morning review? | Willingness to attend, yes/no, from students representing that school population | Estimate a population proportion |
+| Among current grade 10 students, is the mean next-quiz score **greater** under assigned review than under assigned no review? | Assigned treatment and quiz score in points | Compare two population means; evaluate a directional causal claim with an appropriate experiment |
+| Is students' **self-chosen** attendance associated with their quiz scores? | Natural attendance status and quiz score | Assess an observational association, not automatically a causal effect |
+
+A **population parameter** summarizes a population; a **sample statistic** summarizes the measured sample. If $p$ denotes the proportion of all current grade 10 students willing to attend, the sample proportion $\hat p$ can help estimate it. A **confidence interval** seeks a plausible range for $p$. The calculation will be developed in a later unit, but the target parameter must be clear now.
+
+For a hypothesis test about the assigned review experiment, let $\mu_R$ denote the population mean score under the review condition and $\mu_N$ the population mean under no review. The **directional question** is expressed by
+
+$$
+H_0:\mu_R-\mu_N=0
+\quad\text{versus}\quad
+H_a:\mu_R-\mu_N>0.
+$$
+
+The null hypothesis $H_0$ represents no mean difference; the alternative $H_a$ represents higher mean performance under review. A different question—whether the means differ in **either** direction—would use $H_a:\mu_R-\mu_N\ne0$. Declaring a hypothesis is not evidence that it is true.
+
+<details class="study110-disclosure"><summary>Why these hypotheses? — definition and rationale</summary><p>The contrast $\mu_R-\mu_N$ represents the difference between population means. Equality corresponds to a difference of zero; the claim that review increases the mean corresponds to a positive difference. The sign is chosen to match the investigative question. These are definitions of competing claims, not a theorem requiring a proof.</p></details>
+
+### Interactive investigative-question builder
+
+Predict how the target parameter and justified conclusion should change when the question changes. Change both menus to investigate different purposes and outcomes.
+
+<div class="study110" data-study110-builder>
+  <div class="study110-controls">
+    <label>What do you want to investigate?
+      <select data-study110-goal>
+        <option value="estimate">Estimate a population characteristic</option>
+        <option value="compare">Test an assigned intervention</option>
+        <option value="association">Investigate a naturally occurring association</option>
+      </select>
+    </label>
+    <label>What will you measure?
+      <select data-study110-outcome>
+        <option value="attendance">Willingness to attend (yes/no)</option>
+        <option value="quiz">Next mathematics quiz score (points)</option>
+        <option value="sleep">Hours of sleep on school nights</option>
+      </select>
+    </label>
+    <button type="button" data-study110-builder-reset>Reset question</button>
+  </div>
+  <div class="study110-card" aria-live="polite" data-study110-question>
+    <strong>Investigative question</strong>
+    <p>What proportion of current grade 10 students would attend the morning review session?</p>
+    <p>Parameter: the population proportion willing to attend.</p>
+  </div>
+</div>
+
+For example, knowing how many students *want* to attend does not answer whether review *causes* higher scores. An effect question needs an appropriate assigned treatment and a measured outcome; an association question records naturally occurring behaviour.
+
+## 2. Population, census and sample {#census-110}
+
+The **population** is the entire group the question targets. A **census** records the variable for **every** member of that group; a **sample** records it for some members. If a school has 240 grade 10 students, recording all 240 is a census of that school's current grade 10 population, but not of every student in the district. Recording 60 of the 240 is a sample.
+
+A census need not be perfect: nonresponse and measurement errors remain possible. Likewise, a large sample is not necessarily representative if the selection process systematically excludes some people. The procedures for random sampling and sampling bias are examined in Topics 1.11 and 1.12.
+
+**Check your understanding.** A researcher asks every student in one school's basketball team about sleep. This is a census **of that team**, but is not a census of all students at the school.
+
+## 3. Observational studies and experiments {#designs-110}
+
+The most important distinction is **whether the researcher imposes a treatment**, not whether the researcher collects numerical data, follows people over time, or asks for volunteers.
+
+### Observational studies {#observation-110}
+
+An **observational study** records naturally occurring variables without assigning the explanatory conditions. Investigators could ask students whether they voluntarily attend review sessions and compare their later quiz scores. Attending may be related to score, but this design by itself does not isolate a causal effect of review.
+
+A **survey** is an observational study that collects answers from people using a standard set of questions. A **prospective study** selects its observational units at a point in time and gathers information then and into the future, whereas a **retrospective study** selects units now and gathers information from the past, perhaps using records. Both can be observational: simply observing people for many months does not turn a study into an experiment.
+
+A **confounding variable** provides an alternative explanation for an observed association. Prior mathematics preparation might affect **both** students' decision to attend review and their quiz scores. It is a plausible confounder because it relates to both the explanatory and response variables, not merely because it affects scores.
+
+<div class="study110 causal" role="img" aria-label="Prior preparation can influence both voluntary review attendance and quiz score, producing a confounded association.">
+  <p><strong>Prior preparation</strong></p>
+  <p class="study110-arrow" aria-hidden="true">↙ &nbsp;&nbsp;&nbsp;&nbsp; ↘</p>
+  <div class="study110-two"><span>Voluntary review attendance</span><span>Quiz score</span></div>
+  <p class="study110-small">The observed attendance–score association may have an alternative explanation.</p>
+</div>
+
+### Experiments {#experiments-110}
+
+An **experiment** deliberately assigns conditions, called **treatments**, to **experimental units** and measures outcomes. The experimental unit is the smallest unit receiving a treatment; if individuals receive it, they may be called subjects or participants. For a review-session experiment where students are assigned separately, each student is an experimental unit.
+
+A **factor** is an explanatory variable deliberately manipulated; its different settings are **levels**. The treatment is a factor level or a combination of levels across factors. In a two-factor experiment with review (yes/no) and practice format (paper/digital), there are **four treatments**, not two:
+
+| | Paper practice | Digital practice |
+|:--|:--|:--|
+| **Assigned review** | Review + paper | Review + digital |
+| **No review** | No review + paper | No review + digital |
+
+The **response variable** is the observed outcome measured after treatment, for example next-quiz score in points. Treatment assignment and the response are different variables.
+
+**Random assignment** uses chance to allocate treatments among units. It makes systematic selection into treatment groups less likely and supports a cause-and-effect interpretation when the rest of the experiment is sound. It does **not** guarantee that the groups are identical on every characteristic.
+
+**Random selection**, in contrast, uses chance to choose observational units from the target population. Random selection addresses **to whom** results may be generalized; random assignment addresses **whether a treatment caused** an observed difference. A volunteer experiment can randomly assign treatments without randomly sampling the wider population.
+
+## 4. What can your design conclude? {#design-check-110}
+
+Ask two separate questions: **How did participants enter the study?** and **How were treatments allocated?** For sound designs with appropriate measurement and response rates, these decisions give the following broad guidance.
+
+| Randomly selected from target population? | Treatments randomly assigned? | Appropriate conclusion |
+|:--|:--|:--|
+| Yes | Yes | Population generalization and a causal treatment comparison may both be justified. |
+| Yes | No | Generalize measured descriptions or associations; causation still needs justification. |
+| No | Yes | A causal comparison can apply to participants and similar people, but not automatically to the entire population. |
+| No | No | Describe participants and observed associations; broad generalization and causal claims are limited. |
+
+In an observational study no treatment is assigned, so the random-assignment question does not apply. Some experiments impose treatments without random assignment; pre-existing differences may then undermine a causal conclusion.
+
+### Interactive study-design laboratory
+
+Try each possible design. Before changing a menu, predict which of the two conclusions—**population generalization** or **treatment causation**—the study can support.
+
+<div class="study110" data-study110-lab>
+  <div class="study110-controls">
+    <label>Participant selection
+      <select data-study110-selection>
+        <option value="voluntary">Volunteers / convenience selection</option>
+        <option value="random">Random sample from stated population</option>
+      </select>
+    </label>
+    <label>Researcher's role
+      <select data-study110-type>
+        <option value="observe">Observe existing behaviour</option>
+        <option value="impose">Impose two assigned treatments</option>
+      </select>
+    </label>
+    <label>Treatment assignment
+      <select data-study110-assignment disabled>
+        <option value="none">Not applicable</option>
+        <option value="random">Randomly allocated</option>
+        <option value="deliberate">Deliberately allocated</option>
+      </select>
+    </label>
+  </div>
+  <div class="study110-flow" role="group" aria-label="Flow from target population through selection and treatment to measured outcome">
+    <span>Target population</span><span aria-hidden="true">→</span>
+    <span data-study110-node="selection">Volunteers selected</span><span aria-hidden="true">→</span>
+    <span data-study110-node="treatment">Observe existing habits</span><span aria-hidden="true">→</span>
+    <span>Measure quiz score</span>
+  </div>
+  <div class="study110-claims" role="status" aria-live="polite">
+    <p data-study110-generalize><strong>Generalization:</strong> Limited primarily to similar volunteers.</p>
+    <p data-study110-cause><strong>Causation:</strong> An observational association does not establish causation.</p>
+    <p data-study110-explain>Self-selection might produce systematic group differences.</p>
+  </div>
+  <button type="button" data-study110-lab-reset>Reset design</button>
+</div>
+
+Try these cases and explain the difference: (1) randomly select students but observe naturally occurring attendance; (2) invite volunteers and randomly assign review; (3) randomly select students **and** randomly assign review. The first supports population descriptions, the second helps assess a causal effect among people like the volunteers, and the third can support both conclusions, subject to the study's other conditions.
+
+<details class="study110-disclosure"><summary>Further design considerations</summary><p>Randomization does not repair poor measurement, substantial nonresponse, failure to follow assigned conditions, or serious attrition. Ethical research requires informed consent as appropriate, privacy safeguards, accurate recording, reasonable risk, and fair treatment of participants. Sometimes an experimental treatment would be unethical or infeasible; an observational investigation may then be the suitable design.</p></details>
+
+## 5. Worked AP exam example {#exam-110}
+
+The released **2024 AP Statistics Free-Response Question 3** asks students to distinguish an observational car-mileage study from a randomized driving comparison, then evaluate generalization. Read the original question directly below, followed by its worked explanation.
+
+<div class="study110-exam">
+  <div><iframe loading="lazy" title="2024 AP Statistics Question 3, original page 7 (parts a and b)" src="https://apcentral.collegeboard.org/media/pdf/ap24-frq-statistics.pdf#page=7&amp;view=FitH" height="580"></iframe></div>
+  <div><iframe loading="lazy" title="2024 AP Statistics Question 3, original page 8 (part c)" src="https://apcentral.collegeboard.org/media/pdf/ap24-frq-statistics.pdf#page=8&amp;view=FitH" height="580"></iframe></div>
+  <p class="study110-small">College Board · 2024 AP Statistics · Question 3, pp. 7–8.</p>
+</div>
+
+<details class="study110-disclosure"><summary>Accessible text summary of the original question</summary><p>Researchers ask owners of four car models to estimate gas mileage. A Model D owner, James, then compares mileage on 70 commuting days, randomly assigning autopilot to 35 days and manual driving to the other 35. Finally he asks whether the result applies to all Model D cars in his club.</p></details>
+
+**Part (a):** This is an **observational study**, because researchers record existing car ownership and mileage without assigning car models to people.
+
+**Part (b):** Label the 70 commuting days $1$ through $70$. Use a random-number generator to select **35 distinct labels without replacement**; those days receive autopilot driving, while the other 35 receive manual driving. This randomly assigns two treatments to days (the experimental units). Merely alternating days would not be random.
+
+**Part (c):** James's car was not randomly sampled from the Model D club's cars. To generalize to the club's population, he should randomly select club-owned Model D cars and conduct a suitable experiment on those sampled cars. Random assignment of treatment days cannot substitute for random selection of cars.
+
+The lesson of the question is to describe **selection** and **assignment** in different sentences before making a population or causal claim.
+
+## 6. Synthesis
+
+Before collecting data, check the target population and observational units; the variables to be measured; whether the goal is estimation, testing or association; whether the study is a census, observational investigation or experiment; any assignment and selection mechanisms; plausible confounders; and the ethical and practical limits of the conclusions.
+
+## Practice {#practice-110}
+
+::: {.original-practice-host data-original-practice="1.10"}
+<p>Practice questions and revealable solutions appear here.</p>
+:::
+
+<details class="study110-disclosure study110-sources"><summary>Sources</summary><p><a href="https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description-effective-fall-2026.pdf">College Board AP Statistics Course and Exam Description, effective Fall 2026</a>, Topic 1.10, pp. 45–47; <a href="https://apcentral.collegeboard.org/media/pdf/ap24-frq-statistics.pdf">2024 AP Statistics Free-Response Questions</a>, Question 3, pp. 7–8; <a href="https://apcentral.collegeboard.org/media/pdf/ap24-sg-statistics.pdf">Scoring guidelines</a>, Question 3.</p></details>

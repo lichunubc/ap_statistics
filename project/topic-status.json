@@ -271,6 +271,53 @@
       ],
       "implemented_on": "2026-10-15",
       "data_source": "Original hypothetical route and assessment values"
+    },
+    {
+      "id": "1.10",
+      "title": "The Investigative Question Revisited and Data Collection",
+      "status": "implemented",
+      "directory": "Unit 1/Topic 1.10",
+      "chapter": "Unit 1/Topic 1.10/topic-1-10.qmd",
+      "learning_objectives": [
+        "1.10.A",
+        "1.10.B",
+        "1.10.C",
+        "1.10.D",
+        "1.10.E"
+      ],
+      "essential_knowledge": [
+        "1.10.A.1",
+        "1.10.A.2",
+        "1.10.A.2.i",
+        "1.10.A.2.ii",
+        "1.10.A.3",
+        "1.10.B.1",
+        "1.10.C.1",
+        "1.10.C.2",
+        "1.10.C.3",
+        "1.10.C.4",
+        "1.10.D.1",
+        "1.10.D.2",
+        "1.10.D.3",
+        "1.10.D.4",
+        "1.10.D.5",
+        "1.10.E.1",
+        "1.10.E.2",
+        "1.10.E.3",
+        "1.10.E.4"
+      ],
+      "ced_printed_pages": "45–47",
+      "skills": [
+        "1.A",
+        "2.A",
+        "2.B"
+      ],
+      "practice_count": 10,
+      "interactions": [
+        "investigative-question goal/outcome builder",
+        "selection-versus-assignment conclusion laboratory"
+      ],
+      "source_exam": "2024 AP Statistics FRQ 3"
     }
   ]
 }
