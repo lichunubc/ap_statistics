@@ -1,0 +1,332 @@
+{
+  "schema_version": 1,
+  "bank_id": "mhs-ap-statistics-original",
+  "topic": "1.10",
+  "title": "The Investigative Question Revisited and Data Collection",
+  "rights": "Original teacher-authored practice only. Released exam content is referenced separately in the chapter under instructor-reported educational permission.",
+  "revision": 1,
+  "items": [
+    {
+      "id": "MHS-U1-T110-001",
+      "type": "mc",
+      "difficulty": "Foundation",
+      "primary_topic": "1.10",
+      "tags": [
+        "investigative question",
+        "response"
+      ],
+      "objectives": [
+        "1.10.A"
+      ],
+      "prompt": "A school plans to compare students assigned 15 minutes versus 25 minutes of lunch. Which question clearly identifies a response and a population?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Is the lunchroom pleasant?"
+        },
+        {
+          "label": "B",
+          "text": "Among students at this school, does mean food waste per student (grams) differ between the assigned lunch periods?"
+        },
+        {
+          "label": "C",
+          "text": "Does the principal like lunch?"
+        },
+        {
+          "label": "D",
+          "text": "Are longer lunches good?"
+        }
+      ],
+      "answer": "B",
+      "hint": "Name a measurable response, the groups, and whose outcomes matter.",
+      "solution": "B. The response is grams of food discarded per student and the population is students at this school; assigned lunch duration is the explanatory factor.",
+      "rights": "original",
+      "provenance": "Maple Hill School original practice, October 2026"
+    },
+    {
+      "id": "MHS-U1-T110-002",
+      "type": "mc",
+      "difficulty": "Foundation",
+      "primary_topic": "1.10",
+      "tags": [
+        "census",
+        "population"
+      ],
+      "objectives": [
+        "1.10.B"
+      ],
+      "prompt": "All 240 current grade 10 students at one school report last night's sleep duration. Relative to that school's grade 10 population this is",
+      "options": [
+        {
+          "label": "A",
+          "text": "a census"
+        },
+        {
+          "label": "B",
+          "text": "a simple random sample"
+        },
+        {
+          "label": "C",
+          "text": "a convenience sample"
+        },
+        {
+          "label": "D",
+          "text": "a randomized experiment"
+        }
+      ],
+      "answer": "A",
+      "hint": "Determine whether every member of the stated population was included.",
+      "solution": "A. All 240 current grade 10 students are included; it is a census of that specific population, not of the whole district.",
+      "rights": "original",
+      "provenance": "Maple Hill School original practice, October 2026"
+    },
+    {
+      "id": "MHS-U1-T110-003",
+      "type": "mc",
+      "difficulty": "Foundation",
+      "primary_topic": "1.10",
+      "tags": [
+        "observational study"
+      ],
+      "objectives": [
+        "1.10.D"
+      ],
+      "prompt": "Researchers record existing phone brands and customers' satisfaction ratings without changing the phones used. The research is",
+      "options": [
+        {
+          "label": "A",
+          "text": "a completely randomized experiment"
+        },
+        {
+          "label": "B",
+          "text": "a matched-pairs experiment"
+        },
+        {
+          "label": "C",
+          "text": "an observational study"
+        },
+        {
+          "label": "D",
+          "text": "a stratified random sample by design"
+        }
+      ],
+      "answer": "C",
+      "hint": "Did investigators impose a brand on any participant?",
+      "solution": "C. Researchers measured naturally occurring ownership and responses; no brand treatment was assigned.",
+      "rights": "original",
+      "provenance": "Maple Hill School original practice, October 2026"
+    },
+    {
+      "id": "MHS-U1-T110-004",
+      "type": "mc",
+      "difficulty": "Developing",
+      "primary_topic": "1.10",
+      "tags": [
+        "prospective"
+      ],
+      "objectives": [
+        "1.10.D"
+      ],
+      "prompt": "Researchers select people today, measure activity now, and collect blood-pressure outcomes in subsequent years. They never assign an exercise program. This is best described as",
+      "options": [
+        {
+          "label": "A",
+          "text": "a randomized experiment"
+        },
+        {
+          "label": "B",
+          "text": "a prospective observational study"
+        },
+        {
+          "label": "C",
+          "text": "a retrospective observational study"
+        },
+        {
+          "label": "D",
+          "text": "a census"
+        }
+      ],
+      "answer": "B",
+      "hint": "When are the outcomes recorded relative to recruitment?",
+      "solution": "B. The study follows participants into the future and does not impose treatments, so it is prospective and observational.",
+      "rights": "original",
+      "provenance": "Maple Hill School original practice, October 2026"
+    },
+    {
+      "id": "MHS-U1-T110-005",
+      "type": "mc",
+      "difficulty": "Developing",
+      "primary_topic": "1.10",
+      "tags": [
+        "retrospective"
+      ],
+      "objectives": [
+        "1.10.D"
+      ],
+      "prompt": "Researchers recruit adults now and inspect medical records from the past ten years; no treatment is imposed. What type of study is this?",
+      "options": [
+        {
+          "label": "A",
+          "text": "retrospective observational study"
+        },
+        {
+          "label": "B",
+          "text": "prospective experiment"
+        },
+        {
+          "label": "C",
+          "text": "randomized experiment"
+        },
+        {
+          "label": "D",
+          "text": "factorial experiment"
+        }
+      ],
+      "answer": "A",
+      "hint": "The recorded events happened before the participants were identified for this investigation.",
+      "solution": "A. Data are drawn from past records, so the observational study is retrospective.",
+      "rights": "original",
+      "provenance": "Maple Hill School original practice, October 2026"
+    },
+    {
+      "id": "MHS-U1-T110-006",
+      "type": "written",
+      "difficulty": "Developing",
+      "primary_topic": "1.10",
+      "tags": [
+        "experimental units",
+        "factor",
+        "treatment",
+        "response"
+      ],
+      "objectives": [
+        "1.10.C"
+      ],
+      "prompt": "A researcher assigns each student either 10 or 20 minutes of mathematics review, then measures a 20-point quiz. Identify the experimental units, explanatory variable, factor levels, treatments, and response variable.",
+      "hint": "Separate what researchers assign from what they measure afterwards.",
+      "solution": "Each student is an experimental unit; review duration is the explanatory factor, with levels 10 and 20 minutes, which are also the two treatments. The response is that student's quiz score, measured out of 20 points.",
+      "rubric": "Identify the relevant units or population; state an accurate design classification; justify the conclusion using selection, assignment or possible confounding; avoid unsupported causal or population claims.",
+      "rights": "original",
+      "provenance": "Maple Hill School original practice, October 2026"
+    },
+    {
+      "id": "MHS-U1-T110-007",
+      "type": "written",
+      "difficulty": "Developing",
+      "primary_topic": "1.10",
+      "tags": [
+        "confounding",
+        "causation"
+      ],
+      "objectives": [
+        "1.10.D"
+      ],
+      "prompt": "Students who voluntarily participate in a study club have a higher average test score than nonmembers. Describe a plausible confounder and explain why the data do not establish that the club caused better scores.",
+      "hint": "A confounder must be associated with both club participation and exam performance.",
+      "solution": "Prior academic preparation or motivation could influence both the choice to join the club and test scores. Because membership was not randomly assigned, the association could partly reflect those pre-existing differences. A higher mean alone cannot establish a causal club effect.",
+      "rubric": "Identify the relevant units or population; state an accurate design classification; justify the conclusion using selection, assignment or possible confounding; avoid unsupported causal or population claims.",
+      "rights": "original",
+      "provenance": "Maple Hill School original practice, October 2026",
+      "essential_knowledge": [
+        "1.10.D.5"
+      ]
+    },
+    {
+      "id": "MHS-U1-T110-008",
+      "type": "mc",
+      "difficulty": "Developing",
+      "primary_topic": "1.10",
+      "tags": [
+        "generalization",
+        "association"
+      ],
+      "objectives": [
+        "1.10.E"
+      ],
+      "prompt": "A simple random sample of students is surveyed about existing sleep habits and scores, without assigning any sleep schedule. Which claim is most defensible?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The study proves additional sleep causes higher scores."
+        },
+        {
+          "label": "B",
+          "text": "A random sample makes this a randomized experiment."
+        },
+        {
+          "label": "C",
+          "text": "The study cannot describe sleep and scores in the population."
+        },
+        {
+          "label": "D",
+          "text": "With sound measurement and response, the sample may describe a population association, but causal conclusions are limited."
+        }
+      ],
+      "answer": "D",
+      "hint": "Random selection and random treatment assignment answer different questions.",
+      "solution": "D. Random selection supports population generalization; observing habits without imposing treatment does not establish causation.",
+      "rights": "original",
+      "provenance": "Maple Hill School original practice, October 2026"
+    },
+    {
+      "id": "MHS-U1-T110-009",
+      "type": "mc",
+      "difficulty": "Developing",
+      "primary_topic": "1.10",
+      "tags": [
+        "random assignment",
+        "external validity"
+      ],
+      "objectives": [
+        "1.10.E"
+      ],
+      "prompt": "Twenty self-selected volunteers are randomly assigned to receive a study aid or no aid. What is the strongest warranted conclusion under an otherwise sound experiment?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The results generalize automatically to all students in the province."
+        },
+        {
+          "label": "B",
+          "text": "Differences can support a causal effect for participants like these volunteers, not automatic generalization to the whole province."
+        },
+        {
+          "label": "C",
+          "text": "No causal conclusion can ever follow from volunteer participants."
+        },
+        {
+          "label": "D",
+          "text": "Random assignment proves identical treatment groups in every characteristic."
+        }
+      ],
+      "answer": "B",
+      "hint": "Which step was random: entering the study, or receiving a condition?",
+      "solution": "B. Random treatment assignment can justify causal comparisons among comparable volunteers, while the nonrandom recruitment limits wider generalization.",
+      "rights": "original",
+      "provenance": "Maple Hill School original practice, October 2026"
+    },
+    {
+      "id": "MHS-U1-T110-010",
+      "type": "written",
+      "difficulty": "Developing",
+      "primary_topic": "1.10",
+      "tags": [
+        "design",
+        "random sampling",
+        "random assignment",
+        "ethics"
+      ],
+      "objectives": [
+        "1.10.A",
+        "1.10.C",
+        "1.10.E"
+      ],
+      "prompt": "A district wants to know whether an online tutoring service improves grade 10 mathematics achievement throughout the district. Propose an investigative question, identify a relevant outcome, explain how to select participants and allocate treatments, and describe the conclusions your design could justify.",
+      "hint": "Consider random selection from the district and random assignment to tutoring versus comparison conditions; include safeguards.",
+      "solution": "Question: Among district grade 10 students, is the population mean score on a common mathematics assessment higher for those assigned access to tutoring than for those assigned usual instruction? Select eligible students at random from the district and, with appropriate consent and school safeguards, randomly assign selected students to tutoring access or comparison. Measure the common assessment consistently. Random selection supports generalization to the sampled district population; random assignment supports a causal treatment comparison if implementation and follow-up are sound.",
+      "rubric": "Identify the relevant units or population; state an accurate design classification; justify the conclusion using selection, assignment or possible confounding; avoid unsupported causal or population claims.",
+      "rights": "original",
+      "provenance": "Maple Hill School original practice, October 2026"
+    }
+  ]
+}

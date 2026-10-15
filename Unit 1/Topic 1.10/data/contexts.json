@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "topic": "1.10",
+  "contexts": [
+    {
+      "name": "School grade 10 morning review",
+      "population": "All current grade 10 students at one school",
+      "variables": [
+        "Willingness to attend (categorical)",
+        "Review assignment (categorical)",
+        "Quiz score (quantitative points)"
+      ],
+      "population_size_in_census_example": 240,
+      "classification": "Original classroom example",
+      "real_observations": false
+    },
+    {
+      "name": "2024 released College Board AP Statistics FRQ 3",
+      "source": "https://apcentral.collegeboard.org/media/pdf/ap24-frq-statistics.pdf",
+      "pages": [
+        7,
+        8
+      ],
+      "classification": "Released public exam, referenced with educator-reported permission"
+    }
+  ]
+}

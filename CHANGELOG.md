@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-15 — Topic 1.10 investigative questions and data collection (development)
+
+- Added a self-contained textbook chapter mapped to all Fall 2026 CED Topic 1.10 learning objectives and knowledge statements.
+- Added an interactive question builder and a selection/assignment conclusion laboratory with keyboard controls, reset and static interpretation.
+- Added ten original topic-tagged questions in the reusable public practice reader with detailed solutions; retained the private homework reader.
+- Embedded the official 2024 AP Statistics Free-Response Question 3 as same-page source PDF views with accessible text and an instructional walkthrough.
+- Added deterministic objective/content tests and desktop/tablet/mobile Playwright checks for controls, MathML, practice, print and no-JavaScript content.
+
 ## 2026-10-15 — Topic 1.9 quantitative distribution comparisons
 
 - Authored a textbook-style 1.9.A–E chapter with rigorous in-context graphical and numerical comparisons, interpretation of standardized relative positions and clear limits to z-score reasoning.

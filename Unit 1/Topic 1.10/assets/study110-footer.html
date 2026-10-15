@@ -1,0 +1,10 @@
+<script>
+(function () {
+  const css = Array.from(document.querySelectorAll('link[rel="stylesheet"]'))
+    .find(el => el.href.includes('/study110.css'));
+  if (!css) return;
+  const script = document.createElement('script');
+  script.src = css.href.replace(/study110\.css(?:\?.*)?$/, 'study110.js');
+  document.body.appendChild(script);
+})();
+</script>
