@@ -22,7 +22,7 @@ jobs:
         env:
           SOURCE_ROOT: ${{ github.workspace }}/source
         run: |
-          python recipe/editorial-transfer/05_polish.py
+          python recipe/editorial-transfer/06_ui_labels.py
           cd source
           python -m compileall -q tools site/tests 'Unit 1'
           find 'Unit 1' site 'Problem Bank' -name '*.js' -print0 | xargs -0 -n1 node --check
@@ -30,7 +30,7 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add -- 'Unit 1' 'Problem Bank'
           git diff --cached --check
-          git commit -m 'Complete presentation-only label and equation refinements'
+          git commit -m 'Remove repeated provenance and submission commentary from activity captions'
           git push origin HEAD:refs/heads/preview/student-presentation-20261015
           mkdir -p ../polished-result
           git rev-parse HEAD > ../polished-result/revision.txt
