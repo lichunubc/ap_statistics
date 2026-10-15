@@ -55,7 +55,7 @@ try:
      assert any('z_A' in x and r'\boxed{2.00}' in x for x in tex),tex
      assert any('z_B' in x and r'\boxed{1.00}' in x for x in tex),tex
      assert any(r'\bar' in x and 'x_i' in x for x in tex),tex
-     assert page.locator('#takeaway-19').locator('xpath=following-sibling::ul[1]/li').count()>=5
+     assert page.locator('section#takeaway-19 > ul > li').count()>=5
      anchor=page.locator('.exam-enlarge').first
      anchor.focus();page.keyboard.press('Enter');assert page.locator('.exam-zoom').is_visible()
      page.keyboard.press('Escape');assert page.locator('.exam-zoom').is_hidden()
