@@ -52,23 +52,23 @@ For example, in Route A's sample a 21-minute trip has sample-referenced z approx
 Before changing any inputs, predict: if the population SD for Assessment B were smaller while its mean and observed score stayed fixed, would the B z-score increase or decrease?
 
 <div class="compare19-lab" data-z19>
-  <div class="compare19-zgrid">
-    <fieldset><legend>Assessment A (hypothetical population)</legend>
-      <label>Population mean μ (points) <input data-z19-key="muA" type="number" step="any" value="70"></label>
-      <label>Population SD σ (points) <input data-z19-key="sdA" type="number" min="0" step="any" value="8"></label>
-      <label>Observed score x (points) <input data-z19-key="xA" type="number" step="any" value="86"></label>
-    </fieldset>
-    <fieldset><legend>Assessment B (hypothetical population)</legend>
-      <label>Population mean μ (points) <input data-z19-key="muB" type="number" step="any" value="80"></label>
-      <label>Population SD σ (points) <input data-z19-key="sdB" type="number" min="0" step="any" value="10"></label>
-      <label>Observed score x (points) <input data-z19-key="xB" type="number" step="any" value="90"></label>
-    </fieldset>
-  </div>
-  <div class="compare19-buttons"><button type="button" data-z19-action="calculate">Calculate and compare</button><button type="button" data-z19-action="reset">Reset scores</button></div>
-  <p role="status" aria-live="polite" data-z19-status>Assessment A: z = 2.00; Assessment B: z = 1.00.</p>
-  <div data-z19-figure class="compare19-chart" aria-label="Two standard-deviation scales, one for each assessment."></div>
-  <p data-z19-result>Assessment A is farther above its own mean. Graphs display the relative-position scales, not normal probability curves.</p>
-  <p class="compare19-access">Static alternative: Assessment A has x = 86, μ = 70, σ = 8, so z = 2. Assessment B has x = 90, μ = 80, σ = 10, so z = 1. Smaller positive SD makes a fixed positive distance from the mean correspond to more standard deviations.</p>
+<div class="compare19-zgrid">
+<fieldset><legend>Assessment A (hypothetical population)</legend>
+<label>Population mean μ (points) <input data-z19-key="muA" type="number" step="any" value="70"></label>
+<label>Population SD σ (points) <input data-z19-key="sdA" type="number" min="0" step="any" value="8"></label>
+<label>Observed score x (points) <input data-z19-key="xA" type="number" step="any" value="86"></label>
+</fieldset>
+<fieldset><legend>Assessment B (hypothetical population)</legend>
+<label>Population mean μ (points) <input data-z19-key="muB" type="number" step="any" value="80"></label>
+<label>Population SD σ (points) <input data-z19-key="sdB" type="number" min="0" step="any" value="10"></label>
+<label>Observed score x (points) <input data-z19-key="xB" type="number" step="any" value="90"></label>
+</fieldset>
+</div>
+<div class="compare19-buttons"><button type="button" data-z19-action="calculate">Calculate and compare</button><button type="button" data-z19-action="reset">Reset scores</button></div>
+<p role="status" aria-live="polite" data-z19-status>Assessment A: z = 2.00; Assessment B: z = 1.00.</p>
+<div data-z19-figure class="compare19-chart" aria-label="Two standard-deviation scales, one for each assessment."></div>
+<p data-z19-result>Assessment A is farther above its own mean. Graphs display the relative-position scales, not normal probability curves.</p>
+<p class="compare19-access">Static alternative: Assessment A has x = 86, μ = 70, σ = 8, so z = 2. Assessment B has x = 90, μ = 80, σ = 10, so z = 1. Smaller positive SD makes a fixed positive distance from the mean correspond to more standard deviations.</p>
 </div>
 
 **The entire lesson in one comparison:** use a common-scale graph to understand shape, center, spread, and unusual features. Use a numerical summary to quantify evidence. Use a z-score when the question concerns an individual's relative distance from their reference mean. Never substitute a z-score for a complete description or an experimental design.

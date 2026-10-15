@@ -3,42 +3,42 @@
 **Predict before clicking.** The original Route B includes a 38-minute trip. If you replace that value with 20, which summary will change more—the median or the standard deviation? Which graph best reveals the gap? Then try the controls. Changing the scenario **does not** change the definition of the variable, the axes, or any real student record.
 
 <div class="compare19-lab" data-compare19>
-  <div class="compare19-controls">
-    <label>Dataset scenario
-      <select data-compare19-scenario>
-        <option value="original">Original two-route comparison</option>
-        <option value="replaced">Replace Route B's 38 with 20</option>
-        <option value="shifted">Two identical shapes, B shifted five minutes</option>
-        <option value="concentrated">Different middle-half concentration</option>
-      </select>
-    </label>
-    <label>Linked graph type
-      <select data-compare19-mode>
-        <option value="dot">Dotplots (observe gaps and peaks)</option>
-        <option value="box">Side-by-side modified boxplots</option>
-        <option value="hist">Frequency histograms (common five-minute bins)</option>
-      </select>
-    </label>
-    <label>Experiment: replace the largest Route B time (0–45 minutes)
-      <input type="number" data-compare19-largest min="0" max="45" step="1" value="38">
-    </label>
-  </div>
-  <div class="compare19-buttons">
-    <button type="button" data-compare19-action="apply">Apply largest-time change</button>
-    <button type="button" data-compare19-action="reset">Reset comparison</button>
-  </div>
-  <p data-compare19-message role="status" aria-live="polite">Graphs compare the same measurement on a common scale.</p>
-  <div data-compare19-chart class="compare19-chart" aria-label="Linked Route A and Route B comparison graph; numerical equivalent follows."></div>
-  <div class="compare19-scroll"><table class="compare19-table">
-    <caption>Live numerical equivalents (all times are minutes; sample SD rounded to 2 decimal places)</caption>
-    <thead><tr><th scope="col">Group</th><th scope="col">n</th><th scope="col">Mean</th><th scope="col">Median</th><th scope="col">IQR</th><th scope="col">Sample SD</th><th scope="col">Range</th><th scope="col">Potential outliers</th></tr></thead>
-    <tbody>
-      <tr data-compare19-row="a"><th scope="row">Route A</th><td>12</td><td>16.50</td><td>16.50</td><td>3.00</td><td>2.39</td><td>9</td><td>0</td></tr>
-      <tr data-compare19-row="b"><th scope="row">Route B</th><td>12</td><td>15.58</td><td>13.50</td><td>5.00</td><td>7.63</td><td>29</td><td>1</td></tr>
-    </tbody>
-  </table></div>
-  <p data-compare19-interpret class="compare19-insight">In the default dataset, Route A's sample median is higher; Route B has the larger IQR and a high extreme. Dotplots make the gap visible.</p>
-  <p class="compare19-access">Static alternative: the original 12 observations for each route and their verified comparison are above; all scenarios use invented teaching data. Dotplots encode individual repeated values; boxplots encode medians/quartiles and whiskers; histograms group observations into the same five-minute intervals.</p>
+<div class="compare19-controls">
+<label>Dataset scenario
+<select data-compare19-scenario>
+<option value="original">Original two-route comparison</option>
+<option value="replaced">Replace Route B's 38 with 20</option>
+<option value="shifted">Two identical shapes, B shifted five minutes</option>
+<option value="concentrated">Different middle-half concentration</option>
+</select>
+</label>
+<label>Linked graph type
+<select data-compare19-mode>
+<option value="dot">Dotplots (observe gaps and peaks)</option>
+<option value="box">Side-by-side modified boxplots</option>
+<option value="hist">Frequency histograms (common five-minute bins)</option>
+</select>
+</label>
+<label>Experiment: replace the largest Route B time (0–45 minutes)
+<input type="number" data-compare19-largest min="0" max="45" step="1" value="38">
+</label>
+</div>
+<div class="compare19-buttons">
+<button type="button" data-compare19-action="apply">Apply largest-time change</button>
+<button type="button" data-compare19-action="reset">Reset comparison</button>
+</div>
+<p data-compare19-message role="status" aria-live="polite">Graphs compare the same measurement on a common scale.</p>
+<div data-compare19-chart class="compare19-chart" aria-label="Linked Route A and Route B comparison graph; numerical equivalent follows."></div>
+<div class="compare19-scroll"><table class="compare19-table">
+<caption>Live numerical equivalents (all times are minutes; sample SD rounded to 2 decimal places)</caption>
+<thead><tr><th scope="col">Group</th><th scope="col">n</th><th scope="col">Mean</th><th scope="col">Median</th><th scope="col">IQR</th><th scope="col">Sample SD</th><th scope="col">Range</th><th scope="col">Potential outliers</th></tr></thead>
+<tbody>
+<tr data-compare19-row="a"><th scope="row">Route A</th><td>12</td><td>16.50</td><td>16.50</td><td>3.00</td><td>2.39</td><td>9</td><td>0</td></tr>
+<tr data-compare19-row="b"><th scope="row">Route B</th><td>12</td><td>15.58</td><td>13.50</td><td>5.00</td><td>7.63</td><td>29</td><td>1</td></tr>
+</tbody>
+</table></div>
+<p data-compare19-interpret class="compare19-insight">In the default dataset, Route A's sample median is higher; Route B has the larger IQR and a high extreme. Dotplots make the gap visible.</p>
+<p class="compare19-access">Static alternative: the original 12 observations for each route and their verified comparison are above; all scenarios use invented teaching data. Dotplots encode individual repeated values; boxplots encode medians/quartiles and whiskers; histograms group observations into the same five-minute intervals.</p>
 </div>
 
 **What to discover:** when you replace Route B's 38-minute trip with 20 minutes, its large high gap vanishes and its standard deviation falls sharply; its median remains 13.5 minutes. Choosing “shifted” produces groups with equal IQR and sample SD, although the center is five minutes apart. Changing to boxplots hides the detailed dot pattern. A graph should answer your question, not merely look attractive.
