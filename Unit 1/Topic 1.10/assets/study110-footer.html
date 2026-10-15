@@ -1,1 +1,10 @@
-<script defer src="../../Unit%201/Topic%201.10/assets/study110.js"></script>
+<script>
+(function () {
+  const css = Array.from(document.querySelectorAll('link[rel="stylesheet"]'))
+    .find(el => el.href.includes('/study110.css'));
+  if (!css) return;
+  const script = document.createElement('script');
+  script.src = css.href.replace(/study110\.css(?:\?.*)?$/, 'study110.js');
+  document.body.appendChild(script);
+})();
+</script>

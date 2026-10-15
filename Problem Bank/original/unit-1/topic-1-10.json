@@ -219,14 +219,17 @@
         "causation"
       ],
       "objectives": [
-        "1.10.D.5"
+        "1.10.D"
       ],
       "prompt": "Students who voluntarily participate in a study club have a higher average test score than nonmembers. Describe a plausible confounder and explain why the data do not establish that the club caused better scores.",
       "hint": "A confounder must be associated with both club participation and exam performance.",
       "solution": "Prior academic preparation or motivation could influence both the choice to join the club and test scores. Because membership was not randomly assigned, the association could partly reflect those pre-existing differences. A higher mean alone cannot establish a causal club effect.",
       "rubric": "Identify the relevant units or population; state an accurate design classification; justify the conclusion using selection, assignment or possible confounding; avoid unsupported causal or population claims.",
       "rights": "original",
-      "provenance": "Maple Hill School original practice, October 2026"
+      "provenance": "Maple Hill School original practice, October 2026",
+      "essential_knowledge": [
+        "1.10.D.5"
+      ]
     },
     {
       "id": "MHS-U1-T110-008",

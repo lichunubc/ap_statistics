@@ -36,6 +36,7 @@ The null hypothesis $H_0$ represents no mean difference; the alternative $H_a$ r
 
 Predict how the target parameter and justified conclusion should change when the question changes. Change both menus to investigate different purposes and outcomes.
 
+```{=html}
 <div class="study110" data-study110-builder>
   <div class="study110-controls">
     <label>What do you want to investigate?
@@ -60,6 +61,8 @@ Predict how the target parameter and justified conclusion should change when the
     <p>Parameter: the population proportion willing to attend.</p>
   </div>
 </div>
+```
+
 
 For example, knowing how many students *want* to attend does not answer whether review *causes* higher scores. An effect question needs an appropriate assigned treatment and a measured outcome; an association question records naturally occurring behaviour.
 
@@ -83,12 +86,15 @@ A **survey** is an observational study that collects answers from people using a
 
 A **confounding variable** provides an alternative explanation for an observed association. Prior mathematics preparation might affect **both** students' decision to attend review and their quiz scores. It is a plausible confounder because it relates to both the explanatory and response variables, not merely because it affects scores.
 
+```{=html}
 <div class="study110 causal" role="img" aria-label="Prior preparation can influence both voluntary review attendance and quiz score, producing a confounded association.">
   <p><strong>Prior preparation</strong></p>
   <p class="study110-arrow" aria-hidden="true">↙ &nbsp;&nbsp;&nbsp;&nbsp; ↘</p>
   <div class="study110-two"><span>Voluntary review attendance</span><span>Quiz score</span></div>
   <p class="study110-small">The observed attendance–score association may have an alternative explanation.</p>
 </div>
+```
+
 
 ### Experiments {#experiments-110}
 
@@ -124,6 +130,7 @@ In an observational study no treatment is assigned, so the random-assignment que
 
 Try each possible design. Before changing a menu, predict which of the two conclusions—**population generalization** or **treatment causation**—the study can support.
 
+```{=html}
 <div class="study110" data-study110-lab>
   <div class="study110-controls">
     <label>Participant selection
@@ -159,6 +166,8 @@ Try each possible design. Before changing a menu, predict which of the two concl
   </div>
   <button type="button" data-study110-lab-reset>Reset design</button>
 </div>
+```
+
 
 Try these cases and explain the difference: (1) randomly select students but observe naturally occurring attendance; (2) invite volunteers and randomly assign review; (3) randomly select students **and** randomly assign review. The first supports population descriptions, the second helps assess a causal effect among people like the volunteers, and the third can support both conclusions, subject to the study's other conditions.
 
