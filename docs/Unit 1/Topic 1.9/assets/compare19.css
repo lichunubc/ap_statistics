@@ -1,0 +1,19 @@
+.compare19-lab{margin:1.2rem 0;padding:1.1rem;max-width:100%;box-sizing:border-box;overflow-wrap:anywhere;background:#f5fbfd;border:1px solid #bbd2df;border-radius:12px}
+.compare19-controls,.compare19-zgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,215px),1fr));gap:1rem}
+.compare19-lab label{display:grid;gap:.35rem;font-size:.96rem;font-weight:600}
+.compare19-lab select,.compare19-lab input{display:block;font:inherit;color:#163849;background:#fff;padding:.5rem;max-width:100%;width:100%;box-sizing:border-box;border:1px solid #8ea9b9;border-radius:6px}
+.compare19-lab fieldset{min-width:0;border:1px solid #c5d5df;border-radius:8px;background:#fff;padding:.8rem}.compare19-lab fieldset legend{font-weight:bold}.compare19-lab fieldset label{margin:.7rem 0}
+.compare19-lab select:focus-visible,.compare19-lab input:focus-visible,.compare19-lab button:focus-visible{outline:3px solid #146b8a;outline-offset:2px}
+.compare19-buttons{display:flex;gap:.6rem;flex-wrap:wrap;margin:.85rem 0}
+.compare19-buttons button{font:inherit;cursor:pointer;border:2px solid #0b5977;background:#0b5977;color:#fff;border-radius:7px;padding:.55rem .9rem;min-height:44px}
+.compare19-buttons button:hover{background:#093f56}
+.compare19-chart{width:100%;margin:.75rem auto;background:#fff;border:1px solid #d3e1e7;border-radius:8px;padding:.3rem;box-sizing:border-box}
+.compare19-chart svg{display:block;width:100%;height:auto;max-width:100%}
+.compare19-scroll{max-width:100%;overflow-x:auto;border:1px solid #c5d5df;background:white;border-radius:8px}
+.compare19-table{min-width:680px;border-collapse:collapse;width:100%;font-size:.9rem}
+.compare19-table th,.compare19-table td{padding:.4rem .5rem;text-align:center;border-bottom:1px solid #d7e4ed}
+.compare19-table caption{font-weight:bold;text-align:left;padding:.65rem}
+.compare19-insight,.compare19-lab [data-z19-result]{padding:.7rem .85rem;background:#e4f1f5;border-left:4px solid #0b6687}
+.compare19-access{font-size:.87rem;line-height:1.6;color:#38566a}
+@media(max-width:500px){.compare19-lab{padding:.55rem}.compare19-buttons button{flex:1 1 150px}.compare19-chart{padding:0}.compare19-table{font-size:.8rem}}
+@media print{.compare19-buttons,.compare19-controls,.compare19-zgrid{display:none!important}.compare19-chart{break-inside:avoid}.compare19-scroll{overflow:visible}.compare19-table{min-width:0;font-size:.65rem}}

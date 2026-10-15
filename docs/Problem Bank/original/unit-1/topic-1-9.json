@@ -1,0 +1,268 @@
+{
+  "schema_version": 1,
+  "bank_id": "mhs-ap-statistics-original",
+  "topic": "1.9",
+  "title": "Comparisons of the Distributions for One Quantitative Variable",
+  "rights": "Original instructor-authored exercises only. No College Board question, figure or scoring key reproduced.",
+  "revision": 1,
+  "items": [
+    {
+      "id": "MHS-U1-T19-001",
+      "type": "mc",
+      "difficulty": "Foundation",
+      "tags": [
+        "fair graph comparison",
+        "different sample sizes"
+      ],
+      "objectives": [
+        "1.9.A",
+        "1.9.C"
+      ],
+      "prompt": "Two classes recorded daily screen time in minutes. Class X has 20 students and Class Y has 80. Which graph best compares the shapes of the time distributions without confusing different sample sizes?",
+      "hint": "Ask which display uses a common unit, matching intervals and proportions rather than unequal raw counts.",
+      "solution": "C. Relative-frequency histograms use the same measurement, common bin boundaries and relative heights, so group size does not determine the bar heights.",
+      "rights": "original",
+      "provenance": "Original Maple Hill School hypothetical question, 2026-10-15",
+      "primary_topic": "1.9",
+      "options": [
+        {
+          "label": "A",
+          "text": "Two histograms of raw frequency, one with 5-minute bins and one with 20-minute bins."
+        },
+        {
+          "label": "B",
+          "text": "Two bar charts of class names showing the number of students."
+        },
+        {
+          "label": "C",
+          "text": "Two relative-frequency histograms with equal 5-minute bins on a common time axis."
+        },
+        {
+          "label": "D",
+          "text": "Two pie charts showing just each class's total minutes."
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "MHS-U1-T19-002",
+      "type": "written",
+      "difficulty": "Developing",
+      "tags": [
+        "comparative distributions",
+        "shape center spread",
+        "context"
+      ],
+      "objectives": [
+        "1.9.A",
+        "1.9.B",
+        "1.9.C"
+      ],
+      "prompt": "Route A has 12 hypothetical journey times with median 16.5 minutes, IQR 3 minutes and a fairly balanced dotplot. Route B has 12 times with median 13.5 minutes, IQR 5 minutes and a pronounced high right tail, including 38 minutes. Write a three-sentence comparison containing center, variability and one feature of shape or unusual observations.",
+      "hint": "Write a sentence that directly compares the two groups rather than independently describing each. Quantify two differences.",
+      "solution": "Route B's sample median journey time is 3 minutes shorter (13.5 versus 16.5), but its middle-half journey times vary more (IQR 5 versus 3 minutes). Route B has a long right tail and unusually high 38-minute trip, whereas A is more balanced. These observations describe the sampled hypothetical trips only; they do not show that riding B causes a shorter trip.",
+      "rights": "original",
+      "provenance": "Original Maple Hill School hypothetical question, 2026-10-15",
+      "primary_topic": "1.9",
+      "rubric": "Award credit for named groups and minutes, correct median comparison/difference, correct IQR comparison, justified tail or outlier feature, and no unsupported causal claim."
+    },
+    {
+      "id": "MHS-U1-T19-003",
+      "type": "number",
+      "difficulty": "Foundation",
+      "tags": [
+        "difference of medians",
+        "comparable units"
+      ],
+      "objectives": [
+        "1.9.B"
+      ],
+      "prompt": "In the route example, median A = 16.5 minutes and median B = 13.5 minutes. By how many minutes is A's median LONGER than B's? Enter a positive number.",
+      "hint": "Subtract the median for Route B from the median for Route A; units are minutes.",
+      "solution": "16.5 − 13.5 = 3 minutes. This is the difference between sample medians, not a statement about every individual's journey.",
+      "rights": "original",
+      "provenance": "Original Maple Hill School hypothetical question, 2026-10-15",
+      "primary_topic": "1.9",
+      "answer": 3,
+      "tolerance": 1e-9
+    },
+    {
+      "id": "MHS-U1-T19-004",
+      "type": "mc",
+      "difficulty": "Foundation",
+      "tags": [
+        "boxplot limitations",
+        "modes",
+        "graphs"
+      ],
+      "objectives": [
+        "1.9.A",
+        "1.9.C"
+      ],
+      "prompt": "Two numerical samples have identical five-number summaries. Which statement is still possible?",
+      "hint": "A boxplot compresses many observations into just a few numbers. Imagine different interior arrangements.",
+      "solution": "B. The samples may have very different modes or gaps even with matching five-number summaries; a dotplot or histogram is needed to see those.",
+      "rights": "original",
+      "provenance": "Original Maple Hill School hypothetical question, 2026-10-15",
+      "primary_topic": "1.9",
+      "options": [
+        {
+          "label": "A",
+          "text": "They must have identical dotplots."
+        },
+        {
+          "label": "B",
+          "text": "One may be bimodal while the other is unimodal."
+        },
+        {
+          "label": "C",
+          "text": "Both must come from normal populations."
+        },
+        {
+          "label": "D",
+          "text": "They must have identical numerical observations in the same order."
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "MHS-U1-T19-005",
+      "type": "number",
+      "difficulty": "Foundation",
+      "tags": [
+        "population z score",
+        "interpretation"
+      ],
+      "objectives": [
+        "1.9.D"
+      ],
+      "prompt": "On an assessment, the population mean is 70 points and population SD is 8 points. A student's score is 86 points. Compute the population-referenced z-score.",
+      "hint": "Subtract the population mean from the observed score, then divide by population SD.",
+      "solution": "z = (86 − 70)/8 = 2. The score is two population SDs above the mean; z has no units.",
+      "rights": "original",
+      "provenance": "Original Maple Hill School hypothetical question, 2026-10-15",
+      "primary_topic": "1.9",
+      "answer": 2,
+      "tolerance": 1e-9
+    },
+    {
+      "id": "MHS-U1-T19-006",
+      "type": "number",
+      "difficulty": "Developing",
+      "tags": [
+        "negative z",
+        "population parameters"
+      ],
+      "objectives": [
+        "1.9.D"
+      ],
+      "prompt": "At a hypothetical workplace, the population mean travel time is 85 minutes with population SD 6 minutes. An employee takes 73 minutes. Compute the employee's z-score.",
+      "hint": "A value below the mean should produce a negative standardized distance.",
+      "solution": "z = (73 − 85)/6 = −2. This journey is two population SDs below the population mean. The sign is negative; z is unit-free.",
+      "rights": "original",
+      "provenance": "Original Maple Hill School hypothetical question, 2026-10-15",
+      "primary_topic": "1.9",
+      "answer": -2,
+      "tolerance": 1e-9
+    },
+    {
+      "id": "MHS-U1-T19-007",
+      "type": "mc",
+      "difficulty": "Developing",
+      "tags": [
+        "relative standing",
+        "z comparison"
+      ],
+      "objectives": [
+        "1.9.E"
+      ],
+      "prompt": "A student scores 86 on Assessment A (population mean 70, SD 8) and 90 on Assessment B (population mean 80, SD 10). Which statement compares the relative positions correctly?",
+      "hint": "Evaluate (x − population mean)/population SD for each test, then compare, not the raw scores.",
+      "solution": "A. The z-scores are z_A = 2 and z_B = 1. A's score is farther above its own population mean in standard-deviation units, despite the lower raw score.",
+      "rights": "original",
+      "provenance": "Original Maple Hill School hypothetical question, 2026-10-15",
+      "primary_topic": "1.9",
+      "options": [
+        {
+          "label": "A",
+          "text": "The score on A is farther above its reference mean in SD units."
+        },
+        {
+          "label": "B",
+          "text": "The score on B has a higher z-score because 90 > 86."
+        },
+        {
+          "label": "C",
+          "text": "Both z-scores equal 1 because the student is above average on both."
+        },
+        {
+          "label": "D",
+          "text": "One cannot calculate either z-score from these population summaries."
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "MHS-U1-T19-008",
+      "type": "written",
+      "difficulty": "Challenge",
+      "tags": [
+        "z score and percentile",
+        "distribution shape",
+        "limitations"
+      ],
+      "objectives": [
+        "1.9.D",
+        "1.9.E"
+      ],
+      "prompt": "Two reference populations both have mean 50 and standard deviation 10, but one is strongly right-skewed while the other is approximately symmetric. A score of 60 has z = 1 in both. Does this prove that 60 is at the same percentile in both populations? Explain.",
+      "hint": "Standardizing measures distance from the mean. What else determines the fraction of values below a score?",
+      "solution": "No. Both scores are 10 units above their respective mean, which is one standard deviation in each population. But a percentile is determined by the shape of each entire distribution—the fraction of observations at or below 60. Different shapes can give different cumulative proportions at the same z-score; z-scoring does not transform either distribution to normal.",
+      "rights": "original",
+      "provenance": "Original Maple Hill School hypothetical question, 2026-10-15",
+      "primary_topic": "1.9",
+      "rubric": "Correctly state no, recognize both standardized distances equal +1, explain that percentile depends on cumulative distribution shape and cannot be inferred from mean and SD alone."
+    },
+    {
+      "id": "MHS-U1-T19-009",
+      "type": "number",
+      "difficulty": "Developing",
+      "tags": [
+        "inverse standardization",
+        "raw value"
+      ],
+      "objectives": [
+        "1.9.D"
+      ],
+      "prompt": "A hypothetical population has mean 60 points and population SD 4 points. What RAW score has z = −1.5? Enter the score in points.",
+      "hint": "Rearrange x = μ + zσ; a negative z means the raw score is below the mean.",
+      "solution": "x = 60 + (−1.5)(4) = 54 points. Verify: (54 − 60)/4 = −1.5.",
+      "rights": "original",
+      "provenance": "Original Maple Hill School hypothetical question, 2026-10-15",
+      "primary_topic": "1.9",
+      "answer": 54,
+      "tolerance": 1e-9
+    },
+    {
+      "id": "MHS-U1-T19-010",
+      "type": "written",
+      "difficulty": "Challenge",
+      "tags": [
+        "claims and limitations",
+        "study design",
+        "generalization"
+      ],
+      "objectives": [
+        "1.9.B",
+        "1.9.C"
+      ],
+      "prompt": "Someone reads the two hypothetical route samples and writes: ‘Because Route B's median is three minutes shorter, switching everyone from A to B will cause each person's travel time to drop by three minutes.’ Explain TWO logically separate problems with this claim, and state a supported descriptive conclusion.",
+      "hint": "Does a difference of medians predict each individual's value? Does an observational comparison establish a causal effect?",
+      "solution": "First, a difference between sample medians is a comparison of group summaries, not a three-minute saving for every rider—journey times overlap and vary substantially. Second, without an appropriate randomized or otherwise justified causal design, observed groups cannot show that changing routes causes a reduction. Supported descriptive claim: in the two hypothetical samples, B's median is 13.5 minutes compared with A's 16.5 minutes (three minutes lower), while B has greater IQR (5 versus 3 minutes) and an unusually long high trip.",
+      "rights": "original",
+      "provenance": "Original Maple Hill School hypothetical question, 2026-10-15",
+      "primary_topic": "1.9",
+      "rubric": "Credit both group-versus-individual limitation and causal-inference limitation distinctly; include a correct in-context descriptive comparison with numbers and units."
+    }
+  ]
+}
