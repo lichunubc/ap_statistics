@@ -1,60 +1,23 @@
 # Sources and study resources
 
-## Basis of the pilot
+## Course framework
 
-This book adapts Chun Li's revised **45-slide Seeing Quantitative Data** presentation and **30-page Representing and Describing Quantitative Data** study guide for Maple Hill School. It retains the revised sequence, classroom datasets, whole-bar construction, endpoint convention, and evidence-based descriptions.
+The [College Board AP Statistics course framework](https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description-effective-fall-2026.pdf) lists the course topics. The [released exam archive](https://apcentral.collegeboard.org/courses/ap-statistics/exam/past-exam-questions) provides additional questions and scoring guidelines.
 
-| Book section | Revised lecture slides |
-|:--|:--|
-| Individual values | 3–9 |
-| Histogram construction and laboratory | 10–19 |
-| Hand construction and data recovery | 20–23 |
-| Shape, center, spread, unusual features | 24–32 |
-| Descriptions and supported claims | 33–37 |
-| Oxygen and closing practice | 38–45 |
+## Datasets
 
-The scope follows the instructor-supplied College Board essential-knowledge excerpts **1.5.A.1–4, 1.6.A.1–6, and 1.6.B.1**. Detailed numerical-summary formulas and inference are left to later lessons.
+| Dataset | Measurement | Source |
+|:--|:--|:--|
+| Rivers | Major North American river lengths, in miles | [R datasets: rivers](https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/rivers.html) |
+| Old Faithful | Eruption duration, in minutes | [R datasets: faithful](https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/faithful.html) |
+| Iris flowers | Sepal length, in centimetres | [R datasets: iris](https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/iris.html) |
 
-## Published datasets
+[Download the commute-time data](<Unit 1/Shared/data/commute-times.csv>) to build a dotplot, stemplot, or histogram.
 
-The shape challenge uses the values packaged with the revised lecture. Their documented sources are:
+## Practice
 
-- [R datasets: rivers](https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/rivers.html): 141 major North American river lengths in miles, a historical compilation identified as the 1975 World Almanac.
-- [R datasets: faithful](https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/faithful.html): 272 waiting times between Old Faithful eruptions, in minutes.
-- [R datasets: iris](https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/iris.html): the 50 Iris setosa sepal lengths, in centimeters, from Anderson's iris measurements.
+Use the **Practice** section in each lesson to check your understanding. Try a question before opening its solution, then compare both the result and reasoning. The **Selected Homework** bank uses the class file supplied by your teacher.
 
-These are published observations, not freshly simulated data. Other classroom datasets are explicitly hypothetical. Bin choices are teaching decisions, not properties of the observations.
+## Printing
 
-## Exam connections
-
-**2023 AP Statistics, Question 1(a):** the [official question, PDF page 4](https://apcentral.collegeboard.org/media/pdf/ap23-frq-statistics.pdf#page=4) supplies the oxygen histogram. This book redraws its numerical frequencies and provides classroom explanations and follow-ups, not an official scoring key.
-
-**2022 AP Statistics, Question 5:** chocolate values are the revised lecture's numerical transcription of the instructor-supplied dotplots. The public site does not upload the original screenshot or exam text. Consult [College Board's exam archive](https://apcentral.collegeboard.org/courses/ap-statistics/exam/past-exam-questions) for currently available materials; older exam availability may differ.
-
-AP is a registered trademark of the College Board. This independent classroom resource is not affiliated with or endorsed by the College Board. Third-party material retains its owners' rights; no blanket open-content license is asserted for it.
-
-## Printing and downloads
-
-Your browser's **Print / Save as PDF** command saves a chapter. Printing expands solutions and displays completed construction examples. The screen version keeps solutions hidden until you open them.
-
-[Download the commute values as CSV](<Unit 1/Shared/data/commute-times.csv>). Editable `.qmd` source, a portable preview builder, Quarto configuration, tests, and publishing instructions are included in the project.
-
-## Privacy and limitations
-
-There are **no accounts, analytics scripts, advertisements, grades database, or student-submission service**. Activity choices remain in the current page and disappear on refresh; they are not sent to a teacher. Normal hosting logs are separate: [GitHub documents IP logging for Pages security](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection).
-
-JavaScript enables the activities. Core prose, tables, and solution text remain available without it. Charts use bundled data and do not request a remote statistical service. Search operates on the hosted site or a locally served copy; browser restrictions may affect search when opening a downloaded file directly.
-
-## Technical format
-
-The publishing source is a **Quarto HTML book** with chapter navigation, search, mathematical typesetting, and custom JavaScript/SVG activities. It needs no running notebook kernel or paid backend. The downloadable portable preview uses Pandoc with the same chapter text and activities; the automated Quarto build produces the hosted book.
-
-## Foundations curriculum alignment
-
-The foundations sequence follows the [official AP Statistics Course and Exam Description, effective Fall 2026](https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf): Topic 1.1 on printed pp. 30–31; Topic 1.2 on pp. 32–33; Topic 1.3 on p. 34; Topic 1.4 on p. 35. The curriculum was checked on October 13, 2026. Explanations and new practice are independently authored; the book does not reproduce secure AP Classroom questions.
-
-The School A, School B, movie-survey and study-location examples originated in Chun Li's revised Topics 1.1–1.4 materials. They are hypothetical, not records of actual Maple Hill School students. Their reusable summaries are in [foundations.json](<Unit 1/Shared/data/foundations.json>). The 24 commute times used in Topic 1.5 are a separate dataset.
-
-## Topic 1.4 charts
-
-The [categorical graph lesson](<Unit 1/Topic 1.4/topic-1-4.qmd>) is based on the official Fall 2026 CED Topic 1.4 (printed p. 35). Count/percentage bars, pie diagrams, chart-audit cases and print references are original classroom material. Their reusable source assets are `Unit 1/Topic 1.4/assets/categorical-charts.js` and `Unit 1/Topic 1.4/assets/categorical-charts.css`. The hypothetical School A and School B summaries and their provenance are in [foundations.json](<Unit 1/Shared/data/foundations.json>). No secure AP Classroom assessments are reproduced.
+Use your browser’s Print command for a paper copy of a lesson. Open the explanations you wish to include before printing.

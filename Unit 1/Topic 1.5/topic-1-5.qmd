@@ -1,7 +1,7 @@
 # Topic 1.5 Graphical Representations for One Quantitative Variable
 
 ::: {.chapter-lead}
-This topic keeps the original worked lessons and interactive activities together. Use the section links below to continue directly to a particular lesson.
+**Choose a graph that makes the numerical values meaningful.** Build dotplots, stem-and-leaf plots and histograms, then explore how grouping observations changes the display.
 :::
 
 [Individual values](#individual-values) · [Build a histogram](#histograms) · [Histogram laboratory](#histogram-lab)

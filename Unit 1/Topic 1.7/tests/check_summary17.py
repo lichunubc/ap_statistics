@@ -3,7 +3,7 @@ from pathlib import Path
 import json,math,statistics
 ROOT=Path(__file__).resolve().parents[3]
 topic=ROOT/'Unit 1/Topic 1.7'
-chapter=(topic/'topic-1-7.qmd').read_text()
+chapter=(topic/'topic-1-7.qmd').read_text()+'\n'+(topic/'_exam-question.qmd').read_text()
 objectives=json.loads((topic/'objectives.json').read_text())
 bank=json.loads((ROOT/'Problem Bank/original/unit-1/topic-1-7.json').read_text())
 assert chapter.startswith('# Topic 1.7 Summary Statistics for One Quantitative Variable')

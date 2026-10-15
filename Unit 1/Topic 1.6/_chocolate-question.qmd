@@ -1,0 +1,7 @@
+<figure class="exam-source" data-exam-id="ap22-chocolate">
+<a class="exam-enlarge" href="assets/exam/ap22-chocolate.png" aria-label="Enlarge 2022 AP Statistics question · College Board AP Daily Session 4 (2023)">
+<img src="assets/exam/ap22-chocolate.png" alt="2022 AP Statistics question · College Board AP Daily Session 4 (2023). Readable description below." loading="lazy" decoding="async">
+</a>
+<figcaption>2022 AP Statistics question · College Board AP Daily Session 4 (2023) · <a href="https://apclassroom.collegeboard.org/video-resources/AP_Statistics/_Session_4_Statistics_2023_AP_Daily_Practice_Sessions.pdf">College Board</a> · © College Board</figcaption>
+<details class="exam-description"><summary>Read the question description</summary><p>The study assigns 13 adults to dark chocolate and 12 to white chocolate. The dotplots display before-minus-after blood-pressure reductions in mmHg. Compare the medians. The values are listed in the solution below.</p></details>
+</figure>

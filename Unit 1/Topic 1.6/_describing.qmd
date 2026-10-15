@@ -1,9 +1,5 @@
 ## Describe a distribution {#describing}
 
-::: {.chapter-lead}
-**Learning goal:** Describe shape, approximate center, spread, and unusual features in context, then support your description with graph evidence.
-:::
-
 ### The four-part description
 
 | Part | Ask yourself | Include in the response |
@@ -26,9 +22,9 @@ Right-skewed distributions have a longer tail toward **larger values**. Left-ske
 
 **Unimodal** means one main peak; **bimodal** means two prominent peaks. Approximately **uniform** means similar frequencies across equal-width intervals, without prominent peaks. Two adjacent tall bars may form one broad peak; not every small bump is a separate mode.
 
-<div class="interactive" data-widget="shape-gallery"><p>Hypothetical illustrations: symmetric with one broad peak; symmetric and bimodal; approximately uniform.</p></div>
+<div class="interactive" data-widget="shape-gallery"><p>Compare these shapes: symmetric with one broad peak; symmetric and bimodal; approximately uniform.</p></div>
 
-A distribution may be symmetric **and** bimodal. Symmetric does not necessarily mean bell-shaped. These are teaching illustrations; the next activity uses published observations.
+A distribution may be symmetric **and** bimodal. Symmetric does not necessarily mean bell-shaped.
 
 ### Shape detective: published data
 
@@ -38,7 +34,7 @@ Inspect each histogram before choosing A–E. These are the published datasets f
 
 ### Center and spread are different
 
-The next hypothetical group has **30 practice-task times**. Its balance is easy to see near 20 minutes. Observations extend from 12 to 28 minutes, giving an overall span of $28-12=16$ minutes.
+The next group has **30 practice-task times**. Its balance is easy to see near 20 minutes. Observations extend from 12 to 28 minutes, giving an overall span of $28-12=16$ minutes.
 
 <div data-chart="center" class="chart-frame"><p>Symmetric task-time data centered at 20 minutes; minimum 12, maximum 28.</p></div>
 

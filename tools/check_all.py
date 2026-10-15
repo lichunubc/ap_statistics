@@ -15,6 +15,7 @@ checks=['Unit 1/Shared/tests/check_structure.py',
 'Unit 1/Topic 1.8/tests/check_box18_browser.py',
 'Unit 1/Topic 1.9/tests/check_compare19.py',
 'Unit 1/Topic 1.9/tests/check_compare19_browser.py',
+'site/tests/check_student_presentation.py']
 'Unit 1/Topic 1.10/tests/check_study110.py',
 'Unit 1/Topic 1.10/tests/check_study110_browser.py']
 failures=[]

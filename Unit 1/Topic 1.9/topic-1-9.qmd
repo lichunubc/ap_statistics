@@ -7,7 +7,6 @@ math[display=block] {display:block; max-width:100%; overflow-x:auto; overflow-y:
 ::: {.chapter-lead}
 **Comparing distributions is more than comparing two averages.** If two groups have different centers, spreads, shapes, or unusual observations, the complete evidence matters. This chapter joins numerical summaries, common-scale graphs, contextual conclusions, and standardized *z*-scores.
 
-**Learning targets (Fall 2026 CED):** compare graphical distributions (1.9.A), compare their summary statistics (1.9.B), justify claims using multiple graphs (1.9.C), calculate population-based z-scores (1.9.D), and compare relative positions using z-scores (1.9.E). Required skills: **4.A, 4.B, 3.B, 4.C**. [Official College Board course framework, printed pp. 43–44](https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description-effective-fall-2026.pdf).
 :::
 
 {{< include _comparison.qmd >}}

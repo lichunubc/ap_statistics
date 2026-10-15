@@ -7,18 +7,17 @@ math[display=block] {display:block;max-width:100%;overflow-x:auto;overflow-y:hid
 ::: {.chapter-lead}
 **A graph shows the distribution; a numerical summary makes a specific feature measurable.** In this chapter you will learn to calculate, interpret, and choose summaries of **center, position, and spread** without losing sight of the original data.
 
-**Learning targets (2026 CED):** calculate center and position (1.7.A); measure variability (1.7.B); convert units (1.7.C); screen for possible outliers with two different rules (1.7.D); compare samples (1.7.E); and justify a summary in context (1.7.F). These are skills **3.B, 4.A, and 4.B**.
 :::
 
 ## From a dotplot to a meaningful summary {#motivation}
 
-Imagine a hypothetical group of **nine students** reporting one-way travel times to a workshop, in minutes:
+Imagine **nine students** reporting one-way travel times to a workshop, in minutes:
 
 **5, 8, 10, 12, 12, 14, 15, 16, 18.**
 
 A dotplot from [Topic 1.5](<../Topic 1.5/topic-1-5.qmd>) tells us where the individual values are, and [Topic 1.6](<../Topic 1.6/topic-1-6.qmd>) helps us describe the shape. Now we also need defensible numbers to answer three distinct questions: *What is a typical travel time? How much do the times vary? Is any time unusually far from the rest?*
 
-Every statistic must refer to a clearly defined group and variable. The nine times above are **hypothetical teaching data**, not measurements from Maple Hill School. They are also **not** the separate 24-time dataset used in earlier lessons.
+Every statistic refers to a clearly defined group and variable: here, the nine students and their travel times in minutes.
 
 Before calculating, predict: if we change **18 minutes to 50 minutes**, which will move more—the mean or the median? Why? Test the prediction in the laboratory below.
 
@@ -37,7 +36,7 @@ Here $x_i$ means observation number $i$, $\sum$ means add, $n$ is the number of 
 **Worked example.** The nine workshop travel times add to $110$ minutes, so their mean is $110/9\approx12.22$ **minutes per student**. A mean need not equal any observed travel time. It is the balance point of the plotted values, not necessarily the most common one.
 
 <details class="math-note"><summary>Why does the mean balance? — Optional derivation</summary>
-<p><strong>Optional enrichment — this algebraic derivation is not required for AP Statistics.</strong> The total signed deviation from any candidate center $c$ is $\sum_{i=1}^{n}(x_i-c)=\sum x_i-nc$. Setting the signed deviation to zero gives $c=\sum x_i/n=\bar{x}$. Consequently, observations above the mean exactly balance observations below it when their signed distances are counted. This explains the seesaw analogy; it does not claim that every person travels for exactly the mean time.</p>
+<p>The total signed deviation from any candidate center $c$ is $\sum_{i=1}^{n}(x_i-c)=\sum x_i-nc$. Setting the signed deviation to zero gives $c=\sum x_i/n=\bar{x}$. Consequently, observations above the mean exactly balance observations below it when their signed distances are counted. This explains the seesaw analogy; it does not claim that every person travels for exactly the mean time.</p>
 </details>
 
 ### The median: the ordered middle {#median}
@@ -120,7 +119,7 @@ Each $(x_i-\bar{x})$ is a deviation from the sample mean. Squaring keeps positiv
 **Worked computation.** For the nine workshop times, $\bar{x}\approx12.222$. Substituting all nine deviations into the sample formula gives $s^2\approx16.6944$ minutes² and $s\approx4.086$ minutes. In context, travel times typically differ from the mean by **roughly four minutes**. Standard deviation is *not* exactly the arithmetic mean of the absolute deviations.
 
 <details class="math-note"><summary>Why square deviations and divide by n−1? — Optional derivation</summary>
-<p><strong>Optional enrichment — this mathematical derivation is not required for AP Statistics.</strong> The mean minimizes the sum of squared deviations: $\sum (x_i-c)^2=\sum(x_i-\bar{x})^2+n(c-\bar{x})^2$, so the squared-deviation total is smallest at $c=\bar{x}$. Because $\sum(x_i-\bar{x})=0$, after estimating the sample mean only $n-1$ deviations are free to vary. More formally, for independent identically distributed observations with finite population variance $\sigma^2$, $E[\sum(X_i-\bar X)^2]=(n-1)\sigma^2$, so dividing by $n-1$ makes <em>sample variance</em> an unbiased estimator of $\sigma^2$. This does <strong>not</strong> make $s$ itself an unbiased estimator of $\sigma$. Taking the square root produces a spread in the original units.</p>
+<p>The mean minimizes the sum of squared deviations: $\sum (x_i-c)^2=\sum(x_i-\bar{x})^2+n(c-\bar{x})^2$, so the squared-deviation total is smallest at $c=\bar{x}$. Because $\sum(x_i-\bar{x})=0$, after estimating the sample mean only $n-1$ deviations are free to vary. More formally, for independent identically distributed observations with finite population variance $\sigma^2$, $E[\sum(X_i-\bar X)^2]=(n-1)\sigma^2$, so dividing by $n-1$ makes <em>sample variance</em> an unbiased estimator of $\sigma^2$. This does <strong>not</strong> make $s$ itself an unbiased estimator of $\sigma$. Taking the square root produces a spread in the original units.</p>
 </details>
 
 **Interpretation check.** If two groups have similar means but group B has a substantially larger $s$, the observations in B are generally more spread out **around their group mean**. This alone does not prove that one group has outliers or that either distribution is normal.
@@ -139,9 +138,9 @@ Predict the direction of the mean, median, IQR, and standard deviation before us
 <button type="button" data-summary17-action="reset">Reset example</button>
   </div>
   <p class="summary17-feedback" data-summary17-feedback role="status" aria-live="polite">Use the buttons to explore how the summaries respond.</p>
-  <figure class="summary17-figure"><div data-summary17-plot role="img" aria-label="Dotplot of the hypothetical travel times"></div><figcaption data-summary17-caption>Hypothetical nine-person sample: dotplot with mean, median and quartile markers.</figcaption></figure>
+  <figure class="summary17-figure"><div data-summary17-plot role="img" aria-label="Dotplot of the travel times"></div><figcaption data-summary17-caption>Nine travel times: dotplot with mean, median and quartile markers.</figcaption></figure>
   <div data-summary17-results class="summary17-results">
-<p><strong>Starting reference:</strong> n = 9; mean ≈ 12.22 min; median = 12 min; Q1 = 9 min; Q3 = 15.5 min; range = 13 min; IQR = 6.5 min; sample SD ≈ 4.09 min.</p>
+<p><strong>Starting reference:</strong> $n=9$; $\bar{x}\approx12.22$ min; median $12$ min; $Q_1=9$ min; $Q_3=15.5$ min; range $13$ min; IQR $6.5$ min; $s\approx4.09$ min.</p>
   </div>
 </section>
 
@@ -165,14 +164,14 @@ $$
 For any nonzero $b$, **range and IQR multiply by $|b|$**; adding $a$ does not change spread. If $b<0$, order reverses: minimum and maximum exchange roles, and first/third quartiles exchange after transformation. The median transforms linearly under the stated convention.
 
 <details class="math-note"><summary>Why these unit-conversion rules? — Optional algebraic derivation</summary>
-<p><strong>Optional enrichment — these derivations are not required for AP Statistics.</strong> Since $y_i=a+bx_i$, $\bar y=n^{-1}\sum(a+bx_i)=a+b\bar x$. Each centered deviation is $y_i-\bar y=b(x_i-\bar x)$, so $s_y^2=b^2s_x^2$ and $s_y=|b|s_x$. Translation adds $a$ to all ordered values, and multiplication by a positive $b$ preserves their order, so quantile positions transform likewise. Negative $b$ reverses the order, which swaps the lower and upper quartiles while keeping the median's central position. Any difference of endpoints such as a range or IQR scales by the absolute factor.</p>
+<p>Since $y_i=a+bx_i$, $\bar y=n^{-1}\sum(a+bx_i)=a+b\bar x$. Each centered deviation is $y_i-\bar y=b(x_i-\bar x)$, so $s_y^2=b^2s_x^2$ and $s_y=|b|s_x$. Translation adds $a$ to all ordered values, and multiplication by a positive $b$ preserves their order, so quantile positions transform likewise. Negative $b$ reverses the order, which swaps the lower and upper quartiles while keeping the median's central position. Any difference of endpoints such as a range or IQR scales by the absolute factor.</p>
 </details>
 
 **Worked example.** A sample mean travel time of 12.22 minutes becomes approximately $733.33$ seconds. Its sample standard deviation of 4.086 minutes becomes approximately $245.15$ seconds, **not** $245.15$ seconds². If we also add 3 minutes to every travel time, the mean and median rise by 3 minutes but SD and IQR stay the same.
 
 ## 6 · Two different screens for potential outliers {#outliers}
 
-Unusual observations deserve investigation, not automatic deletion. Two screening methods appear in the Fall 2026 CED, and **they may disagree**.
+Unusual observations deserve investigation, not automatic deletion. Two useful screening methods **may disagree**.
 
 **IQR method.** A value is a potential outlier if it is **strictly outside** the fences
 
@@ -208,7 +207,7 @@ For the nine times, $\bar{x}\pm2s$ is approximately $4.05$ to $20.39$ minutes; n
 
 ## 7 · Comparing independent samples {#comparisons}
 
-Consider **two independent, hypothetical** groups of workshop travelers, both measured in **minutes**:
+Consider **two independent groups** of workshop travelers, both measured in **minutes**:
 
 | Summary | Group A | Group B |
 |:--|--:|--:|
@@ -230,24 +229,36 @@ The **mean** and **standard deviation** are sensitive to unusually large or smal
 
 Choose **median and IQR** for a highly skewed distribution or when possible outliers would distort a description of a typical observation and the middle spread. For a roughly symmetric distribution without notable outliers, **mean and SD** often provide a useful center/spread pair. Use the graph and investigative question as part of this decision; don't select a statistic simply because it is easier to calculate.
 
-**Worked interpretation with an extreme.** Replace the 18-minute observation with 50 minutes. The median remains 12 minutes even though the mean rises from about 12.22 to **15.78 minutes**. Reporting only the new mean would overstate what a typical student in this nine-person sample experienced. The 50-minute observation is real *within the hypothetical data scenario* and should be investigated, not erased merely to improve the summary.
+**Worked interpretation with an extreme.** Replace the 18-minute observation with 50 minutes. The median remains 12 minutes even though the mean rises from about 12.22 to **15.78 minutes**. Reporting only the new mean would overstate what a typical student in this nine-person sample experienced. Investigate the unusually long trip before deciding how to interpret it.
 
-## 9 · A real released AP Statistics exam connection {#exam-example}
+## 9 · AP exam example {#exam-example}
 
-**2024 released AP Statistics free-response Question 6(b)** includes numerical summaries for a sample of 20 reported sale prices. The official public [2024 Question 6 (PDF)](https://apcentral.collegeboard.org/media/pdf/ap24-frq-statistics.pdf) and [2024 scoring guidelines (PDF)](https://apcentral.collegeboard.org/media/pdf/ap24-sg-statistics.pdf) are the sources; the following is an **independent worked walkthrough**, not a reproduction of the protected question or an official scoring response.
+**2024 AP Statistics, Question 6(b): whistle prices.**
+
+{{< include _exam-question.qmd >}}
+
+### Worked solution
 
 The given summaries include $Q_1=\$4.51$, $Q_3=\$5.475$, minimum \$4.25, maximum \$6.58, mean \$5.12, and sample SD \$0.743. The IQR is $\$5.475-\$4.51=\$0.965$. The 1.5-IQR fences are $4.51-1.5(0.965)=\$3.0625$ and $5.475+1.5(0.965)=\$6.9225$. Because the observed minimum and maximum lie between those two fences, **none of these 20 prices** would be classified as a potential outlier by the 1.5-IQR method. The separate two-SD boundaries would be $5.12\pm2(0.743)$, or \$3.634 to \$6.606, and the given extremes also fall inside them.
 
-A strong solution names the **sale-price variable**, writes and calculates the criterion, checks **both** extremes, and concludes **in context**. Other parts of 2024 Question 6 involve additional topics and are not prerequisites for this lesson. Always check the actual exam's instructions and the official rubric when practicing released questions.
+A strong solution names the **sale-price variable**, writes and calculates the criterion, checks **both** extremes, and concludes **in context**.
 
 ## Takeaway: a statistic is evidence, not the whole picture
 
 You can now identify a typical value by **mean or median**, locate the middle portion by **quartiles/percentiles**, quantify spread by **range, IQR, sample variance and sample SD**, understand unit conversion, screen for unusual data by **two distinct methods**, and justify a comparison and a resistant summary. Remember the three checks behind any claim: *Which group? Which units? Which evidence?*
 
-## Practice · one question at a time {#practice-17}
+## Practice {#practice-17}
 
-The independent, teacher-authored questions below are stored once in the repository's original-content problem bank. Use **Next question** to change problems without jumping to another page, and scroll upward to consult these notes whenever needed. Hints, feedback, and fully worked solutions start hidden. For written justifications, compare your reasoning with a revealable model answer rather than expecting automatic essay grading.
+Try each question before opening its solution.
 
 ::: {.original-practice-host data-original-practice="1.7"}
-<p><strong>Interactive practice:</strong> enable JavaScript to use the one-question panel; a complete printable text fallback appears below when scripts are disabled.</p>
+
+:::
+
+::: {.lesson-sources}
+<details><summary>Sources</summary>
+
+[College Board course framework](https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description-effective-fall-2026.pdf), Topic 1.7. [2024 Question 6 and scoring guidelines](https://apcentral.collegeboard.org/media/pdf/ap24-sg-statistics.pdf). Workshop travel times are a course example.
+
+</details>
 :::

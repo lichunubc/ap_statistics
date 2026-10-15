@@ -22,7 +22,7 @@ Seventeen is more than half of 24, so the claim is supported. Write: **“About 
 
 ### Evidence check
 
-Decide what the histogram alone establishes. Each new statement begins with no answer selected.
+Decide what the histogram alone establishes. Explain which part of the graph supports your answer.
 
 <div class="interactive" data-widget="evidence"><p>Four statements test bin counts, exact values, majority, and the exact maximum.</p></div>
 
@@ -32,7 +32,11 @@ Exactly $2+1=3$ times are at least 40 minutes. But **at least 45 minutes** split
 
 ### Dissolved oxygen in cold streams {#oxygen-example}
 
-The revised lecture uses **2023 AP Statistics Free-Response Question 1(a)**. The [official question, PDF page 4](https://apcentral.collegeboard.org/media/pdf/ap23-frq-statistics.pdf#page=4) contains the original figure. Below is a **classroom redraw from the printed frequencies**, not an official College Board graphic.
+**2023 AP Statistics, Question 1(a).**
+
+{{< include _oxygen-question.qmd >}}
+
+### Worked solution
 
 The variable is dissolved oxygen concentration, in **mg/L**, for sampled Alaskan streams colder than **8°C**.
 
@@ -57,11 +61,13 @@ The total frequency is **429**. The four bins from 10 to under 14 mg/L contain
 
 $$94+117+89+46=346,\qquad \frac{346}{429}\times100\%\approx80.7\%.$$
 
-About **81%** of these sampled cold streams occupy those bins. Height 117 means 117 observations in the **whole 11–12 mg/L interval**, not exactly 11. These classroom follow-ups use our left-inclusive, right-exclusive convention; they are not additional parts of the original exam.
+About **81%** of these sampled cold streams occupy those bins. Height 117 means 117 observations in the **whole 11–12 mg/L interval**, not exactly 11. Use left-inclusive, right-exclusive intervals for this calculation.
 
 ### Recover values from a dotplot
 
-The lecture identifies these numerical data as transcribed from the **2022 AP Statistics Question 5** chocolate dotplots. The book shows a new classroom rendering of that transcription; it does not upload the exam screenshot. Original-material availability is managed by [College Board's exam archive](https://apcentral.collegeboard.org/courses/ap-statistics/exam/past-exam-questions).
+**2022 AP Statistics: chocolate study.**
+
+{{< include _chocolate-question.qmd >}}
 
 <div data-chart="chocolate" class="chart-frame"><p>Two dotplots show recorded reductions in blood pressure in mmHg.</p></div>
 
@@ -81,6 +87,6 @@ Read one entry per dot, including stacked dots. What are the two sorted lists?
 -12, -6, -3, -3, -2, -2, 2, 3, 4, 4, 5, 15
 ```
 
-Units are mmHg of reduction. Negative reduction means blood pressure increased; zero means no change. The order is sorted, not the original observation order. Our task here is data recovery, not a causal conclusion about the treatments.
+Units are mmHg of reduction. Negative reduction means blood pressure increased; zero means no change. The order is sorted, not the original observation order. Each dot contributes one observation, including repeated values.
 
 </details>

@@ -4,7 +4,7 @@
   "topic": "1.7",
   "title": "Summary Statistics for One Quantitative Variable",
   "rights": "Original instructor-authored practice; reproducible hypothetical datasets; not College Board questions",
-  "revision": 1,
+  "revision": 2,
   "items": [
     {
       "id": "MHS-U1-T17-001",
@@ -17,11 +17,11 @@
       "objectives": [
         "1.7.A"
       ],
-      "prompt": "Nine hypothetical workshop travel times, in minutes, are 5, 8, 10, 12, 12, 14, 15, 16, 18. Calculate the sample mean in minutes. Enter a number rounded to two decimal places.",
+      "prompt": "Nine workshop travel times, in minutes, are 5, 8, 10, 12, 12, 14, 15, 16, 18. Calculate the sample mean in minutes. Enter a number rounded to two decimal places.",
       "answer": 12.22,
       "tolerance": 0.015,
       "hint": "Add all nine times, then divide by nine.",
-      "solution": "Sum = 110 minutes; n = 9. The sample mean is x̄ = 110/9 ≈ 12.22 minutes. This is a sample average, not a population parameter.",
+      "solution": "The total is 110 minutes and $n=9$. The sample mean is $\\bar{x}=\\frac{110}{9}\\approx12.22$ minutes. It describes the average in this sample.",
       "rights": "original",
       "provenance": "Maple Hill School independently authored hypothetical exercise, 2026-10-14",
       "primary_topic": "1.7"
@@ -41,7 +41,7 @@
       "answer": 9.5,
       "tolerance": 0.001,
       "hint": "For an even sample size, average the two middle observations.",
-      "solution": "The middle pair is 8 and 11, so the median is (8 + 11)/2 = 9.5 points. The median need not be an observed score.",
+      "solution": "The middle pair is 8 and 11, so the median is $\\frac{8+11}{2}=9.5$ points. The median can fall between observed scores.",
       "rights": "original",
       "provenance": "Maple Hill School independently authored hypothetical exercise, 2026-10-14",
       "primary_topic": "1.7"
@@ -62,7 +62,7 @@
       "answer": 6,
       "tolerance": 0.001,
       "hint": "Remove the overall median before splitting into halves; find the medians of the lower and upper triples.",
-      "solution": "The median is 7. The lower half 4,5,7 gives Q1 = 5 km; the upper half 9,11,13 gives Q3 = 11 km. IQR = 11 − 5 = 6 km. Always keep the quartile convention consistent.",
+      "solution": "The median is 7 km. The lower half gives $Q_1=5$ km; the upper half gives $Q_3=11$ km. Thus $\\mathrm{IQR}=11-5=6$ km.",
       "rights": "original",
       "provenance": "Maple Hill School independently authored hypothetical exercise, 2026-10-14",
       "primary_topic": "1.7"
@@ -82,7 +82,7 @@
       "answer": 4,
       "tolerance": 0.001,
       "hint": "The mean is 4; squared deviations are 4, 0 and 4. Divide their sum by n − 1.",
-      "solution": "Mean = 4 °C; squared deviations total 8 °C². Sample variance s² = 8/(3−1) = 4 °C². Sample standard deviation would be 2 °C, not 4 °C².",
+      "solution": "The mean is $4\\,{}^\\circ\\mathrm{C}$ and the squared deviations total $8\\,{}^\\circ\\mathrm{C}^2$. The sample variance is $s^2=\\frac{8}{3-1}=4\\,{}^\\circ\\mathrm{C}^2$. The sample standard deviation is $s=\\sqrt{4}=2\\,{}^\\circ\\mathrm{C}$.",
       "rights": "original",
       "provenance": "Maple Hill School independently authored hypothetical exercise, 2026-10-14",
       "primary_topic": "1.7"
@@ -99,7 +99,7 @@
         "1.7.B",
         "1.7.F"
       ],
-      "prompt": "A sample of waiting times has sample standard deviation s = 4.2 minutes. Which interpretation is best?",
+      "prompt": "A sample of waiting times has sample standard deviation $s=4.2$ minutes. Which interpretation is best?",
       "options": [
         {
           "label": "A",
@@ -140,7 +140,7 @@
       "answer": 900,
       "tolerance": 0.001,
       "hint": "Each observation is multiplied by 60; the mean follows the same multiplicative conversion.",
-      "solution": "15 minutes × 60 seconds/minute = 900 seconds. The sample SD, median, range and IQR would also multiply by 60; variance would multiply by 3,600.",
+      "solution": "$15\\text{ minutes}\\times60\\frac{\\text{seconds}}{\\text{minute}}=900\\text{ seconds}$. The sample SD, median, range and IQR also multiply by 60; variance multiplies by $60^2=3600$.",
       "rights": "original",
       "provenance": "Maple Hill School independently authored hypothetical exercise, 2026-10-14",
       "primary_topic": "1.7"
@@ -156,7 +156,7 @@
       "objectives": [
         "1.7.D"
       ],
-      "prompt": "A hypothetical data sample has ordered values 4, 5, 7, 7, 9, 11, 30. Which statement is correct using the median-of-halves quartiles and both outlier screens?",
+      "prompt": "A data sample has ordered values 4, 5, 7, 7, 9, 11, 30. Which statement is correct using the median-of-halves quartiles and both outlier screens?",
       "options": [
         {
           "label": "A",
@@ -177,7 +177,7 @@
       ],
       "answer": "C",
       "hint": "Find Q1 = 5, Q3 = 11, and the IQR upper fence; also check mean + 2 × sample SD.",
-      "solution": "C. IQR = 6 and upper fence = 11 + 1.5(6) = 20, so 30 is outside. The mean is 73/7 ≈ 10.43; s ≈ 8.942; mean + 2s ≈ 28.31, so 30 also exceeds the two-SD limit. Neither rule proves an error or authorizes automatic removal.",
+      "solution": "C. The IQR is 6 and the upper fence is $11+1.5(6)=20$, so 30 is outside. The mean is $\\bar{x}=\\frac{73}{7}\\approx10.43$ and $s\\approx8.942$. Thus $\\bar{x}+2s\\approx28.31$, so 30 also exceeds the two-SD boundary. Both rules identify an observation to investigate.",
       "rights": "original",
       "provenance": "Maple Hill School independently authored hypothetical exercise, 2026-10-14",
       "primary_topic": "1.7"
@@ -198,7 +198,7 @@
       "answer": 28.31,
       "tolerance": 0.025,
       "hint": "Mean is 73/7; sample standard deviation is approximately 8.94161.",
-      "solution": "Mean = 73/7 ≈ 10.42857; sample variance ≈ 79.95238, so s ≈ 8.94161. Upper boundary ≈ 10.42857 + 2(8.94161) = 28.31179, or 28.31. Since 30 > 28.31, it is flagged. We use a strict boundary.",
+      "solution": "The mean is $\\bar{x}=\\frac{73}{7}\\approx10.42857$; $s^2\\approx79.95238$ and $s\\approx8.94161$. The upper boundary is $\\bar{x}+2s\\approx10.42857+2(8.94161)\\approx28.31179$, or 28.31. Because $30>28.31$, the value is flagged.",
       "rights": "original",
       "provenance": "Maple Hill School independently authored hypothetical exercise, 2026-10-14",
       "primary_topic": "1.7"

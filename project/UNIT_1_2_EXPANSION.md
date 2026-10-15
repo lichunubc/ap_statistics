@@ -1,5 +1,8 @@
 # Unit 1 completion and Unit 2 expansion
 
+**Student presentation:** follow [Chun Li’s current presentation settings](STUDENT_PRESENTATION.md). The October 15 review supersedes earlier instructions about visible curriculum blocks, source disclaimers, question metadata, practice headings and exam-image presentation. Keep complete objective/provenance records in source.
+
+
 Authorized by Chun Li on 2026-10-14. This is an actual lesson-authoring, testing and website-publication assignment, not a reminder to the instructor. The requested cadence is one topic per hour, starting immediately, in the order below. The finite automation provides 19 work sessions. Scheduled starts are not publication deadlines; failed validation must never be reported as completion.
 
 ## Source of truth and scope

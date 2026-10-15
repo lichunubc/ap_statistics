@@ -1,28 +1,36 @@
--- Progressive enhancement: original practice is one question at a time with JS,
--- but no-JS readers receive all original questions and answers from the SAME JSON.
+-- Compile curated question Markdown once; share rendered math across all views.
 local function escape(s)
-  return tostring(s):gsub('&','&amp;'):gsub('<','&lt;'):gsub('>','&gt;'):gsub('"','&quot;')
+ return tostring(s):gsub('&','&amp;'):gsub('<','&lt;'):gsub('>','&gt;'):gsub('"','&quot;')
+end
+local function rich(s)
+ local doc=pandoc.read(s or '', 'markdown+tex_math_dollars-raw_html-raw_tex')
+ return pandoc.write(doc,'html5',{html_math_method='mathml'})
 end
 function Div(div)
-  if not div.classes:includes('original-practice-host') then return nil end
-  local topic=div.attributes['data-original-practice']
-  if not topic or not topic:match('^%d+%.%d+$') then return nil end
-  local slug=topic:gsub('%.','-')
-  local unit=topic:match('^(%d+)')
-  local path=quarto.project.directory..'/Problem Bank/original/unit-'..unit..'/topic-'..slug..'.json'
-  local file=io.open(path,'r')
-  if not file then return nil end
-  local bank=pandoc.json.decode(file:read('*a'));file:close()
-  local blocks={'<section class="original-practice" data-original-practice="'..escape(topic)..'" data-bank-url="../../Problem%20Bank/original/unit-'..unit..'/topic-'..slug..'.json">'}
-  table.insert(blocks,'<p>Loading the original practice questions. Enable JavaScript for the compact one-question-at-a-time reader.</p>')
-  table.insert(blocks,'<noscript><div class="original-nojs"><p>JavaScript is disabled. These are the complete original questions with model solutions; all content comes from the same public JSON bank.</p><ol>')
-  for _,q in ipairs(bank.items or {}) do
-    table.insert(blocks,'<li><strong>'..escape(q.id)..'</strong><p>'..escape(q.prompt)..'</p>')
-    if q.options then for _,o in ipairs(q.options) do
-      table.insert(blocks,'<p>'..escape(o.label)..'. '..escape(o.text)..'</p>')
-    end end
-    table.insert(blocks,'<details><summary>Show solution</summary><p>'..escape(q.solution)..'</p></details></li>')
-  end
-  table.insert(blocks,'</ol></div></noscript></section>')
-  return pandoc.RawBlock('html',table.concat(blocks,'\n'))
+ if not div.classes:includes('original-practice-host') then return nil end
+ local topic=div.attributes['data-original-practice']
+ if not topic or not topic:match('^%d+%.%d+$') then return nil end
+ local slug=topic:gsub('%.','-');local unit=topic:match('^(%d+)')
+ local path=quarto.project.directory..'/Problem Bank/original/unit-'..unit..'/topic-'..slug..'.json'
+ local file=assert(io.open(path,'r'),'Missing original practice: '..path)
+ local bank=pandoc.json.decode(file:read('*a'));file:close()
+ local out={'<section class="original-practice" data-original-practice="'..escape(topic)..'" data-bank-url="../../Problem%20Bank/original/unit-'..unit..'/topic-'..slug..'.json">'}
+ table.insert(out,'<p class="original-loading">Loading practice…</p>')
+ table.insert(out,'<template data-practice-rich data-bank-revision="'..escape(bank.revision or 1)..'">')
+ for _,q in ipairs(bank.items or {}) do
+  table.insert(out,'<article data-practice-id="'..escape(q.id)..'">')
+  for _,field in ipairs({'prompt','hint','solution','rubric'}) do table.insert(out,'<div data-field="'..field..'">'..rich(q[field])..'</div>') end
+  for _,o in ipairs(q.options or {}) do table.insert(out,'<div data-field="option-'..escape(o.label)..'">'..rich(o.text)..'</div>') end
+  table.insert(out,'</article>')
+ end
+ table.insert(out,'</template><noscript><div class="original-nojs"><ol>')
+ for i,q in ipairs(bank.items or {}) do
+  table.insert(out,'<li><strong>Question '..i..'</strong>'..rich(q.prompt))
+  for _,o in ipairs(q.options or {}) do table.insert(out,'<div><strong>'..escape(o.label)..'.</strong> '..rich(o.text)..'</div>') end
+  table.insert(out,'<details><summary>Show solution</summary>'..rich(q.solution))
+  if q.rubric then table.insert(out,rich(q.rubric)) end
+  table.insert(out,'</details></li>')
+ end
+ table.insert(out,'</ol></div></noscript></section>')
+ return pandoc.RawBlock('html',table.concat(out,'\n'))
 end

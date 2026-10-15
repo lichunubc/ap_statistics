@@ -1,21 +1,41 @@
-## 5 · Released exam connection
+## 5 · AP exam example {#released-exam-connection}
 
-The final section discusses a released exam question and provides original practice.
+**2019 AP Statistics, Question 1: university room sizes.**
 
-The official 2019 AP Statistics FRQ 1(b)–(c) tests outlier screening and boxplot construction.
+{{< include _exam-question.qmd >}}
 
-The released [2019 exam, Question 1](https://apstudents.collegeboard.org/ap/2019-05/ap19-frq-statistics.pdf) and its [official scoring guide](https://apstudents.collegeboard.org/ap/2019-08/ap19-sg-statistics.pdf) give the university room-size problem. For this independent walkthrough, the five-number summary in square feet is **(134, 174, 253.5, 292, 315)**. The IQR is **118**; the two 1.5-IQR fences are **−3** and **469**. Neither extreme is an outlier. Draw a box from 174 to 292, a median line at 253.5, and whiskers at the actual observed extrema, 134 and 315.
+### Worked solution: parts (b) and (c)
 
-The released histogram has two clusters that the boxplot does not directly reveal. That comparison is a key reason to examine both a distribution plot and a numerical-summary plot. The calculation above is independent teaching commentary, not a reproduction of the official question or graph.
+The five-number summary, in square feet, is $(134,174,253.5,292,315)$. Calculate the middle-half spread and the two fences:
+
+$$
+\begin{aligned}
+\mathrm{IQR}&=292-174=118,\\
+L&=174-1.5(118)=-3,\\
+U&=292+1.5(118)=469.
+\end{aligned}
+$$
+
+Both extremes lie between the fences, so there are no potential outliers. Draw the box from $174$ to $292$, the median at $253.5$, and whiskers at the observed minimum $134$ and maximum $315$.
+
+The histogram shows two clusters that the boxplot does not reveal. A boxplot summarizes ranks and spread, while a histogram shows where observations are concentrated.
 
 ## Common mistakes and a final synthesis {#takeaway-18}
 
 The median stroke is **not** the mean. A computed fence is **not** a whisker endpoint. A box length measures numerical middle-half spread, **not** the number of distinct observations. A modified boxplot with an outlier still has a five-number summary that records the actual minimum and maximum. Always report the measured variable, group and units, and consult a dotplot or histogram when shape matters.
 
-## Practice · one question at a time {#practice-18}
+## Practice {#practice-18}
 
-The following original exercises are stored centrally under **Problem Bank**, rather than copied into lesson files. Use Previous and Next question while keeping this page of notes accessible. Hints, checking feedback and detailed model solutions are provided without submitting personal answers.
+Try each question before opening its solution.
 
 ::: {.original-practice-host data-original-practice="1.8"}
-<p>Enable JavaScript for the one-question panel; a no-JavaScript text version with revealable solutions is also provided.</p>
+
+:::
+
+::: {.lesson-sources}
+<details><summary>Sources</summary>
+
+[College Board course framework](https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description-effective-fall-2026.pdf), Topic 1.8. [2019 scoring guidelines, Question 1](https://apstudents.collegeboard.org/ap/2019-08/ap19-sg-statistics.pdf). Workshop travel times are a course example.
+
+</details>
 :::

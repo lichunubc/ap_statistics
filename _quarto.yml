@@ -2,6 +2,7 @@ project:
   type: book
   output-dir: docs
   pre-render:
+    - python tools/prepare_exam_figures.py
     - python tools/prepare.py
     - python "Problem Bank/tools/prepare_bank.py"
   post-render:
@@ -63,6 +64,7 @@ format:
       - "Unit 1/Topic 1.4/assets/categorical-charts.css"
       - "Unit 1/Topic 1.2/assets/variables.css"
       - site/assets/navigation.css
+      - site/assets/student-presentation.css
       - "Problem Bank/assets/practice.css"
       - "Problem Bank/assets/original-practice.css"
       - "Unit 1/Topic 1.7/assets/summary17.css"
@@ -77,6 +79,7 @@ format:
     include-after-body:
       - "Unit 1/Shared/assets/footer.html"
       - site/assets/navigation.html
+      - site/assets/student-presentation.html
       - "Problem Bank/assets/footer.html"
       - "Problem Bank/assets/original-footer.html"
       - "Unit 1/Topic 1.7/assets/summary17-footer.html"

@@ -64,7 +64,7 @@
         </fieldset><div class="controls"><button type="submit" data-check>Check answer</button>
         <button type="button" data-clear>Clear answer</button><button type="button" data-next>Next case</button>
         <button type="button" data-restart>Restart</button></div></form>
-        <p class="status" role="status" aria-live="polite" aria-atomic="true">Choose an answer before checking. Nothing is submitted.</p>`;
+        <p class="status" role="status" aria-live="polite" aria-atomic="true">Choose an answer before checking.</p>`;
       const feedback = root.querySelector('.status');
       root.querySelector('form').addEventListener('submit', event => {
         event.preventDefault();

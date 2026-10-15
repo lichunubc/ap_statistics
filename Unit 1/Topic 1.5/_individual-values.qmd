@@ -1,9 +1,5 @@
 ## Individual values {#individual-values}
 
-::: {.chapter-lead}
-**Learning goal:** Construct and interpret dotplots and stem-and-leaf plots while preserving numerical order, units, and repeated values.
-:::
-
 ### Start with the variable
 
 An **observational unit** is one student. The **variable** is that student's one-way commute time, in minutes. A **distribution** tells us which values occur and how often they occur.

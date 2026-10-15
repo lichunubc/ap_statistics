@@ -1,0 +1,7 @@
+<figure class="exam-source" data-exam-id="ap23-q1a">
+<a class="exam-enlarge" href="assets/exam/ap23-q1a.png" aria-label="Enlarge 2023 AP Statistics, Question 1(a)">
+<img src="assets/exam/ap23-q1a.png" alt="2023 AP Statistics, Question 1(a). Readable description below." loading="lazy" decoding="async">
+</a>
+<figcaption>2023 AP Statistics, Question 1(a) · <a href="https://apcentral.collegeboard.org/media/pdf/ap23-frq-statistics.pdf">College Board</a> · © College Board</figcaption>
+<details class="exam-description"><summary>Read the question description</summary><p>Describe the distribution of dissolved oxygen in streams colder than 8°C. The histogram frequencies are also provided in the lesson below.</p></details>
+</figure>

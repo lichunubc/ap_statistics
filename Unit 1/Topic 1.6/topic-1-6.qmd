@@ -1,7 +1,7 @@
 # Topic 1.6 Descriptions for One Quantitative Variable Distributions
 
 ::: {.chapter-lead}
-This topic keeps the original worked lessons and interactive activities together. Use the section links below to continue directly to a particular lesson.
+**Describe the whole distribution, not just its average.** Connect shape, center, spread and unusual features to the variable and its context.
 :::
 
 [Describe a distribution](#describing) · [Worked examples and evidence](#worked-examples)

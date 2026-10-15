@@ -6,7 +6,7 @@ topic=ROOT/'Unit 1/Topic 1.8'
 main=(topic/'topic-1-8.qmd').read_text()
 parts=['_fundamentals.qmd','_construction.qmd','_lab.qmd','_interpretation.qmd','_shape.qmd','_skew.qmd','_exam_practice.qmd']
 for p in parts:assert (topic/p).is_file(),p
-text='\n'.join((topic/p).read_text() for p in parts)
+text='\n'.join((topic/p).read_text() for p in parts+['_exam-question.qmd'])
 obj=json.loads((topic/'objectives.json').read_text())
 bank=json.loads((ROOT/'Problem Bank/original/unit-1/topic-1-8.json').read_text())
 assert main.startswith('# Topic 1.8 Graphical Representations of Summary Statistics for One Quantitative Variable')
@@ -15,7 +15,7 @@ assert obj['essential_knowledge']==['1.8.A.1','1.8.A.2','1.8.B.1']
 covered={x for c in obj['coverage'] for x in c['ids']}
 assert covered==set(obj['essential_knowledge'])
 assert text.count('<details')>=4
-assert '2019 AP Statistics FRQ' in text
+assert '2019 AP Statistics' in text
 assert 'ap19-frq-statistics.pdf' in text
 assert bank['topic']=='1.8' and len(bank['items'])==9
 assert len({q['id'] for q in bank['items']})==9

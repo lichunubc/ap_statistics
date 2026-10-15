@@ -1,23 +1,44 @@
-## 4 · Real released AP exam connection {#released-19}
+## 4 · AP exam example {#released-19}
 
-The **2026 AP Statistics Free-Response Question 1, parts B and C**, is a particularly close match for this topic. In the released question, two goat breeds have separately summarized weights. Refer to the official [2026 question PDF (Question 1, pp. 3–4)](https://apcentral.collegeboard.org/media/pdf/ap26-frq-statistics.pdf) and [2026 scoring guidelines (Question 1, pp. 2–4)](https://apcentral.collegeboard.org/media/pdf/ap26-sg-statistics.pdf). We link to the original rather than reproduce its copyrighted graphics or question text.
+**2026 AP Statistics, Question 1: comparing goat weights.**
 
-**Independent instructional walkthrough of part B.** The released Breed H sample's median weight is **64 pounds** and its IQR is **16 pounds** (Q1 56, Q3 72); the Breed J boxplot indicates a median also near **64 pounds** but a larger IQR, approximately **24 pounds**. H's observed range is **32 pounds**, compared with approximately **40 pounds** for J. Thus **the sampled goat breeds have similar medians, but J's sampled weights have greater middle-half and overall variability**. Naming **goat weights in pounds** and **both breeds** is essential: reporting unlabelled numbers is not a full contextual comparison.
+{{< include _exam-question.qmd >}}
 
-**Independent instructional walkthrough of part C.** The original stem-and-leaf plot displays **two prominent peaks in Breed H's weights**, whereas a boxplot based on the five-number summary cannot reliably display the number of modes because it compresses individual observations. The boxplot may appear roughly symmetric without establishing unimodality. This is precisely why graphical representations complement each other.
+### Worked solution: part B
 
-The numeric commentary above is independently written for instruction; consult the linked official scoring guidelines for actual scoring criteria and the exact graphical evidence. **This released question precedes the 2027 exam-format changes**, so its topic concepts are relevant, but its original question format does not define the revised exam.
+Breed H has median weight **64 pounds**, with $Q_1=56$ and $Q_3=72$, so
+
+$$
+\mathrm{IQR}_H=72-56=16\text{ pounds}.
+$$
+
+Breed J's boxplot indicates a median near **64 pounds** and quartiles near **56 and 80 pounds**, giving an IQR of approximately **24 pounds**. The observed ranges are **32 pounds** for H and approximately **40 pounds** for J.
+
+**The sampled breeds have similar median weights, but Breed J has greater middle-half and overall variability.** State the groups, variable and units, then support the comparison with numerical evidence.
+
+### Worked solution: part C
+
+The stem-and-leaf plot shows **two concentrations of Breed H weights**. A boxplot records the five-number summary rather than the individual arrangement, so it does not reliably display those two peaks. The stemplot shows detail; the boxplot emphasizes center and spread.
 
 ## Common errors and final checklist {#takeaway-19}
 
-Do not say that a distribution with a larger mean necessarily has less variability. Do not mistake a taller bar for a longer tail. Do not treat a single boxplot as proof of normality, uniformity, or unimodality. Never write “more spread” without specifying which statistic or graphical feature supports that conclusion. For comparisons of different-sized samples, distinguish frequency from relative frequency. Do not assert population generalizations or causal mechanisms from descriptive displays alone.
+- **Compare like with like.** Name both groups, use the same variable and units, and use common scales. For unequal sample sizes, use relative frequencies when comparing proportions.
+- **Describe more than the average.** Compare center, spread, shape and unusual features. Name the statistic or graphical feature supporting each claim.
+- **Choose a graph for the feature.** Dotplots and histograms reveal gaps and peaks; boxplots summarize quartiles, median and spread. A boxplot alone does not establish normality or the number of modes.
+- **Interpret z-scores in their reference groups.** Use a positive standard deviation and explain the sign and magnitude. Standardized distance is not a percentile, and standardization does not create normality.
+- **Match conclusions to the evidence.** Descriptive displays show sample patterns; population and causal conclusions depend on study design.
 
-For z-scores, always specify the reference distribution; check that the appropriate SD is **positive**, keep raw measurement units distinct from unit-free z, interpret the **sign and magnitude**, and remember: **standardization does not produce normality or automatically identify percentiles**.
+## Practice {#practice-19}
 
-## Practice · one question at a time {#practice-19}
-
-The following **10 original teacher-authored exercises** span visual comparisons, numerical summaries, z-scores, and written contextual conclusions. They are stored once in the public original problem bank, separate from copyright-restricted homework references. Switch questions using Previous / Next without leaving this part of the chapter; reveal a hint or full model solution when needed. For written justifications, **self-assess using the rubric**—there is no automated semantic grading.
+Try each question before opening its solution.
 
 ::: {.original-practice-host data-original-practice="1.9"}
-<p>Enable JavaScript for the compact one-question-at-a-time panel. Without JavaScript, the same original questions and revealable solutions remain available.</p>
+:::
+
+::: {.lesson-sources}
+<details><summary>Sources</summary>
+
+[College Board course framework](https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description-effective-fall-2026.pdf), Topic 1.9. [2026 scoring guidelines, Question 1](https://apcentral.collegeboard.org/media/pdf/ap26-sg-statistics.pdf). The route and assessment datasets are course examples.
+
+</details>
 :::

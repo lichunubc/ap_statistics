@@ -1,24 +1,24 @@
 ## Why compress a dotplot? {#purpose-18}
 
-Imagine **nine hypothetical workshop students** whose one-way travel times, in minutes, are **5, 8, 10, 12, 12, 14, 15, 16, 18**. These are *invented teaching observations*, not actual Maple Hill School data and not the separate 24-commute dataset in [Topic 1.5](<../Topic 1.5/topic-1-5.qmd>). A dotplot retains each time. A boxplot makes it easier to compare a few important numerical landmarks, though it loses some detail.
+Imagine **nine workshop students** whose one-way travel times, in minutes, are **5, 8, 10, 12, 12, 14, 15, 16, 18**. A dotplot retains each time. A boxplot makes it easier to compare a few important numerical landmarks, though it loses some detail.
 
 **Before calculating:** predict which values bracket approximately the middle half of the nine journeys. What happens to the box if we change only the largest time?
 
 ## 1 · The five-number summary {#five-18}
 
-**Sort the data first.** Record the *minimum*, *first quartile* (\(Q_1\)), *median*, *third quartile* (\(Q_3\)), and *maximum* **in that order**:
+**Sort the data first.** Record the *minimum*, *first quartile* ($Q_1$), *median*, *third quartile* ($Q_3$), and *maximum* **in that order**:
 
 $$
 (\text{minimum},\ Q_1,\ \text{median},\ Q_3,\ \text{maximum}).
 $$
 
-The middle observation of our nine sorted travel times is the **fifth**, 12 minutes, so the median is 12. We use the *median-of-halves* convention from [Topic 1.7](<../Topic 1.7/topic-1-7.qmd>): for odd sample sizes, **exclude the overall median** when forming the two halves. The lower half **5, 8, 10, 12** has quartile \(Q_1=(8+10)/2=9\) minutes. The upper half **14, 15, 16, 18** has \(Q_3=(15+16)/2=15.5\) minutes. Therefore,
+The middle observation of our nine sorted travel times is the **fifth**, 12 minutes, so the median is 12. We use the *median-of-halves* convention from [Topic 1.7](<../Topic 1.7/topic-1-7.qmd>): for odd sample sizes, **exclude the overall median** when forming the two halves. The lower half **5, 8, 10, 12** has quartile $Q_1=(8+10)/2=9$ minutes. The upper half **14, 15, 16, 18** has $Q_3=(15+16)/2=15.5$ minutes. Therefore,
 
 $$
 \boxed{(5,\ 9,\ 12,\ 15.5,\ 18)\ \text{minutes}}.
 $$
 
-A numerical five-number summary should identify the **measured variable** and its **units**. Never report these figures as measurements of the full school population: they describe only the nine hypothetical travel times.
+A numerical five-number summary should identify the **measured variable** and its **units**. These summaries describe the nine travel times in the sample.
 
 <details class="math-note"><summary>Why these five numbers? — A convention, not a theorem</summary>
 <p>The extremes locate the endpoints, and the three quartiles divide an ordered sample into approximately four equal-count portions. Some software uses interpolation or includes the overall median in both halves. These definitions may disagree for small samples. <strong>No universal mathematical proof selects one quartile convention.</strong> State the method and apply it consistently to the table, graph, and worked solutions.</p>

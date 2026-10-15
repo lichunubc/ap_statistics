@@ -1,0 +1,15 @@
+<figure class="exam-source" data-exam-id="ap26-q1-ab">
+<a class="exam-enlarge" href="assets/exam/ap26-q1-ab.png" aria-label="Enlarge 2026 AP Statistics, Question 1(a)–(b)">
+<img src="assets/exam/ap26-q1-ab.png" alt="2026 AP Statistics, Question 1(a)–(b). Readable description below." loading="lazy" decoding="async">
+</a>
+<figcaption>2026 AP Statistics, Question 1(a)–(b) · <a href="https://apcentral.collegeboard.org/media/pdf/ap26-frq-statistics.pdf">College Board</a> · © College Board</figcaption>
+<details class="exam-description"><summary>Read the question description</summary><p>The sampled Breed H goat weights in pounds are 48, 48, 55, 56, 56, 57, 62, 66, 72, 72, 72, 73, 80, 80. Find their five-number summary and compare their median and variability with Breed J. The Breed J boxplot has an approximate five-number summary of 48, 56, 64, 80, 88.</p></details>
+</figure>
+
+<figure class="exam-source" data-exam-id="ap26-q1-c">
+<a class="exam-enlarge" href="assets/exam/ap26-q1-c.png" aria-label="Enlarge 2026 AP Statistics, Question 1(c)">
+<img src="assets/exam/ap26-q1-c.png" alt="2026 AP Statistics, Question 1(c). Readable description below." loading="lazy" decoding="async">
+</a>
+<figcaption>2026 AP Statistics, Question 1(c) · <a href="https://apcentral.collegeboard.org/media/pdf/ap26-frq-statistics.pdf">College Board</a> · © College Board</figcaption>
+<details class="exam-description"><summary>Read the question description</summary><p>The Breed H stemplot has stems 4 through 8 and leaves 8 8; 5 6 6 7; 2 6; 2 2 2 3; 0 0. Describe a feature shown by the stemplot but not by a boxplot.</p></details>
+</figure>

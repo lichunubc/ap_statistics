@@ -3,19 +3,14 @@
 ::: {.chapter-lead}
 **Before calculating, identify what each value means.** A number can be a measurement, a count, a category code, or a summary of many observations. Those roles are not interchangeable.
 
-**Learning targets:** identify observational units, variables, parameters, and statistics (**1.2.A**); distinguish categorical and quantitative variables (**1.2.B**); and distinguish discrete and continuous quantitative variables (**1.2.C**).
 :::
 
 ## Start with the School A study {#school-a-study}
 
-Recall the hypothetical school from Topic 1.1. The population is **all 1,000 students enrolled at School A this term**. An investigator randomly selects **40 students**, all of whom respond, and records each student's usual main travel method. “Main” means the method used for the greatest distance on a typical school day.
+Recall the School A study from Topic 1.1. The population is **all 1,000 students enrolled at School A this term**. An investigator randomly selects **40 students**, all of whom respond, and records each student's usual main travel method. “Main” means the method used for the greatest distance on a typical school day.
 
 The fixed sample contains **Walk 8, Bicycle 6, Bus 18, and Car 8**. Its recorded commute times total **960 minutes**. We know these sample summaries; we have **not** been given the population's bus proportion or mean commute time.
 
-::: {.callout-note}
-## Data provenance
-School A is fictional, not Maple Hill School. These are the same hypothetical summaries used in the earlier chapters, not newly collected observations. The 40 individual commute times are **not supplied**; do not reconstruct them from their total. This sample is separate from the **24 commute times in Topic 1.5** and the **24 study-location responses in Topics 1.3–1.4**.
-:::
 
 ## Observational unit, variable, and value {#units-variables-values}
 
@@ -33,7 +28,7 @@ An **observational unit** is the individual or item on which information is reco
 
 ### Read a data table by rows and columns
 
-The following **four illustrative records** repeat the examples from Topic 1.1. They illustrate table structure; they are **not a raw-data extract of the fixed 40-response sample**.
+These four example records show how variables and their values are organized in a table.
 
 | Student label | Main travel method | One-way commute time (minutes) |
 |:--|:--|--:|
@@ -46,7 +41,7 @@ Each row represents **one student**. The last two columns record **two study var
 
 An identifier such as student number 1042 is a label, not a measured amount. Differences or averages of identifier numbers usually have no interpretation. Likewise, a characteristic is still a variable even when, by coincidence, every observed unit has the same recorded value.
 
-[Illustrative records and their data dictionary](<data/README.md>) · [CSV](<data/illustrative-records.csv>)
+
 
 ## Categorical or quantitative? {#categorical-quantitative}
 
@@ -92,7 +87,7 @@ Similarly, “has a decimal” does not prove continuous, and “is written as a
 
 ## Variable-type laboratory {#variable-lab}
 
-Classify each recorded characteristic. Choose an answer and press **Check answer**; then read the explanation. Each new case begins with no selection, and no response is saved or submitted.
+Classify each recorded characteristic. Choose an answer and press **Check answer**; then read the explanation.
 
 <div class="interactive" data-variables="classify">
 <p><strong>Without JavaScript:</strong> Main travel method and route number are categorical; the number of trips is discrete quantitative; actual elapsed time is continuous quantitative. Use the tables above and the worked practice below to explain why.</p>
@@ -149,7 +144,7 @@ Distinguish a population summary, a sample summary, and a single observation. Th
 Suppose we assign codes to the same four travel categories. The lab below leaves the **40 observations' category memberships and counts unchanged**, but changes the labels.
 
 <div class="interactive" data-variables="recode">
-<p>School A counts remain Walk 8, Bicycle 6, Bus 18, and Car 8. Codes 1, 2, 3, 4 give an arithmetic code average of 2.65; codes 4, 1, 9, 2 give 5.40. Neither average measures a travel method. The Bus proportion remains 18/40 = 45%.</p>
+<p>School A counts remain Walk 8, Bicycle 6, Bus 18, and Car 8. Codes 1, 2, 3, 4 give an arithmetic code average of 2.65; codes 4, 1, 9, 2 give 5.40. Neither average measures a travel method. The Bus proportion remains $18/40=45\%$.</p>
 </div>
 
 Under codes Walk=1, Bicycle=2, Bus=3, Car=4, the arithmetic code average is
@@ -173,9 +168,9 @@ A datum need not begin as a number in a spreadsheet. A photograph, audio clip, v
 
 The recording medium alone does not determine the variable type. A photograph could support either a category such as leaf shape or a measurement such as leaf length, provided an appropriate scale is available.
 
-## Practice: identify and justify {#practice}
+## Practice {#practice}
 
-These ten exercises are original classroom practice. Name the unit or group and give a reason, rather than only writing a classification label.
+Name the unit or group and explain your classification.
 
 ### 1. Rows, columns, and sample size
 
@@ -303,8 +298,10 @@ For a new study, identify **the observational unit**, **the characteristic and i
 
 Continue to [Topic 1.3 Tabular Representation and Summary Statistics for One Categorical Variable](<../Topic 1.3/topic-1-3.qmd>) to organize categorical observations without losing their context.
 
-## Source and reusable materials
+::: {.lesson-sources}
+<details><summary>Sources</summary>
 
-Aligned with the [College Board AP Statistics Course and Exam Description, effective Fall 2026](https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description.pdf#page=37), **Topic 1.2, printed pages 32–33**, objectives **1.2.A–C** (Skill 2.A). Explanations, activities, and practice are independently authored for Chun Li's Maple Hill School course.
+[College Board course framework](https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description-effective-fall-2026.pdf), Topic 1.2. School A and the example records are course datasets.
 
-The shared hypothetical summaries and original provenance are in [foundations.json](<../Shared/data/foundations.json>). The four illustrative rows have their own [data dictionary](<data/README.md>). Editable QMD, activity code, objective mappings, and tests are kept together in this topic's repository folder. No actual student records or secure AP Classroom material are used.
+</details>
+:::

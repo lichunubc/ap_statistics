@@ -4,7 +4,7 @@
   "topic": "1.8",
   "title": "Graphical Representations of Summary Statistics for One Quantitative Variable",
   "rights": "Original instructor-authored material; no College Board copyrighted questions or answer keys.",
-  "revision": 1,
+  "revision": 2,
   "items": [
     {
       "id": "MHS-U1-T18-001",
@@ -38,7 +38,7 @@
       ],
       "answer": "A",
       "hint": "The overall median is the fourth value. Remove it, then take medians of the lower three and upper three.",
-      "solution": "A. Minimum 4, Q1=median(4,6,8)=6, overall median 8, Q3=median(9,12,14)=12, maximum 14. These are scores and should be labelled as such.",
+      "solution": "A. The minimum is 4; $Q_1=\\operatorname{median}(4,6,8)=6$; the median is 8; $Q_3=\\operatorname{median}(9,12,14)=12$; the maximum is 14. Label the display in points.",
       "rights": "original",
       "provenance": "Original Maple Hill School hypothetical question, 2026-10-14",
       "primary_topic": "1.8"
@@ -58,7 +58,7 @@
       "answer": 8.5,
       "tolerance": 0.001,
       "hint": "Exclude the central 8. Average 4 and 5 for Q1, then 12 and 14 for Q3.",
-      "solution": "The lower half 2,4,5,6 has median Q1=(4+5)/2=4.5 km. The upper half 10,12,14,20 has median Q3=(12+14)/2=13 km. IQR=13−4.5=8.5 km.",
+      "solution": "The lower half has $Q_1=\\frac{4+5}{2}=4.5$ km. The upper half has $Q_3=\\frac{12+14}{2}=13$ km. Therefore $\\mathrm{IQR}=13-4.5=8.5$ km.",
       "rights": "original",
       "provenance": "Original Maple Hill School hypothetical question, 2026-10-14",
       "primary_topic": "1.8"
@@ -78,7 +78,7 @@
       "answer": 25.25,
       "tolerance": 0.001,
       "hint": "Q1=9, Q3=15.5; upper fence is Q3+1.5×IQR.",
-      "solution": "IQR=15.5−9=6.5 minutes. Upper fence U=15.5+1.5(6.5)=25.25 minutes. This is a screening boundary, not necessarily an observed time.",
+      "solution": "$\\mathrm{IQR}=15.5-9=6.5$ minutes. The upper fence is $U=15.5+1.5(6.5)=25.25$ minutes. The fence is a screening boundary; a whisker ends at an observed non-outlier.",
       "rights": "original",
       "provenance": "Original Maple Hill School hypothetical question, 2026-10-14",
       "primary_topic": "1.8"
@@ -191,9 +191,9 @@
         "1.8.A",
         "1.8.B"
       ],
-      "prompt": "Two hypothetical groups' travel times are in minutes. Group A has five-number summary (2, 4, 6, 8, 10); Group B has (2, 3, 6, 9, 10). Compare medians and middle-half variability using numbers, and explain one conclusion that is NOT justified by these summaries.",
+      "prompt": "Two groups' travel times are in minutes. Group A has five-number summary (2, 4, 6, 8, 10); Group B has (2, 3, 6, 9, 10). Compare medians and middle-half variability using numbers, and explain one conclusion that is NOT justified by these summaries.",
       "hint": "Compare both medians, then subtract Q1 from Q3. Ask whether a cause or entire shape can be inferred.",
-      "solution": "Both groups have median 6 minutes. Group A has IQR=8−4=4 minutes, whereas Group B has IQR=9−3=6 minutes, so Group B's central half is more variable by 2 minutes. The summaries alone cannot identify causes of the difference, reveal gaps/modes, or establish a population-level difference.",
+      "solution": "Both groups have median 6 minutes. Group A has $\\mathrm{IQR}_A=8-4=4$ minutes, whereas Group B has $\\mathrm{IQR}_B=9-3=6$ minutes. Group B’s middle half is more variable by 2 minutes. These summaries compare the observed groups; dotplots would provide additional evidence about modes and gaps.",
       "rubric": "Award credit for the equal median (6 minutes), both correctly computed IQRs (4 and 6 minutes), an in-context comparison, and an explicit valid limitation.",
       "rights": "original",
       "provenance": "Original Maple Hill School hypothetical question, 2026-10-14",
@@ -213,7 +213,7 @@
       ],
       "prompt": "Construct a modified boxplot on a number line for 3, 4, 5, 6, 7, 8, 9, 10, 30 minutes. State the five-number summary, IQR, numerical fences, actual whisker endpoints, and any separate outlier marker. Explain the difference between fence and whisker.",
       "hint": "The median is 7; halves are 3,4,5,6 and 8,9,10,30. Check whether 30 crosses the upper fence.",
-      "solution": "Minimum 3, Q1=(4+5)/2=4.5, median 7, Q3=(9+10)/2=9.5, maximum 30 minutes. IQR=5. Fences are L=4.5−7.5=−3 and U=9.5+7.5=17 minutes. Draw a box from 4.5 to 9.5 with median at 7; left whisker to observed 3, right whisker to observed 10; mark 30 separately as a potential outlier. The fence 17 is a boundary, not an observation.",
+      "solution": "The five-number summary is 3, $Q_1=\\frac{4+5}{2}=4.5$, 7, $Q_3=\\frac{9+10}{2}=9.5$, 30 minutes. Thus $\\mathrm{IQR}=9.5-4.5=5$ minutes. The fences are $L=4.5-1.5(5)=-3$ and $U=9.5+1.5(5)=17$ minutes. Draw the box from 4.5 to 9.5 and the median at 7. Extend whiskers to observed values 3 and 10, and mark 30 separately. The boundary 17 is not a whisker endpoint.",
       "rubric": "Include all five numbers; calculate IQR/fences accurately; label axis in minutes; show whiskers at 3 and 10, not −3 and 17; plot outlier 30 separately; explain the distinction.",
       "rights": "original",
       "provenance": "Original Maple Hill School hypothetical question, 2026-10-14",
@@ -230,11 +230,11 @@
       "objectives": [
         "1.8.B"
       ],
-      "prompt": "Hypothetical travel times in minutes are 1, 32, 33, 34, 35, 36, 37, 38, 39. What is the sample mean in minutes? Enter your answer to two decimals.",
+      "prompt": "travel times in minutes are 1, 32, 33, 34, 35, 36, 37, 38, 39. What is the sample mean in minutes? Enter your answer to two decimals.",
       "answer": 31.67,
       "tolerance": 0.015,
       "hint": "Sum all nine observations and divide by nine. Compare the result with median 35.",
-      "solution": "Sum=285 minutes, n=9; mean=285/9≈31.67 minutes, less than median 35. The low observation contributes to a long left tail; the mean–median pattern is a tendency, not a proof of skewness.",
+      "solution": "The total is 285 minutes and $n=9$, so $\\bar{x}=\\frac{285}{9}\\approx31.67$ minutes, below the median of 35. The low observation contributes to the long left tail. The graph, rather than the mean–median ordering alone, establishes the tail pattern.",
       "rights": "original",
       "provenance": "Original Maple Hill School hypothetical question, 2026-10-14",
       "primary_topic": "1.8"

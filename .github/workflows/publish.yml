@@ -22,6 +22,8 @@ jobs:
       - uses: quarto-dev/quarto-actions/setup@v2
         with:
           version: '1.9.38'
+      - name: Install question-image renderer
+        run: python -m pip install PyMuPDF==1.26.7
       - name: Render the Quarto book
         run: quarto render
       - name: Check JavaScript syntax
@@ -43,8 +45,9 @@ jobs:
             exit 1
           fi
           git add docs
+          git add -- "Unit 1/Topic 1.6/assets/exam" "Unit 1/Topic 1.7/assets/exam" "Unit 1/Topic 1.8/assets/exam" "Unit 1/Topic 1.9/assets/exam" project/released-exam-figures-provenance.json
           if ! git diff --cached --quiet; then
-            git commit -m 'Render checked Quarto site [skip ci]'
+            git commit -m 'Save checked site and original question images [skip ci]'
             git push
           fi
       - uses: actions/upload-artifact@v4
@@ -54,6 +57,8 @@ jobs:
           path: |
             docs
             qa
+            Unit 1/**/assets/exam/
+            project/released-exam-figures-provenance.json
           retention-days: 7
       - uses: actions/upload-pages-artifact@v3
         if: github.ref == 'refs/heads/main'
@@ -99,6 +104,11 @@ jobs:
         env:
           BANK_BASE_URL: ${{ steps.deployment.outputs.page_url }}
         run: python "Problem Bank/tests/check_bank.py"
+      - name: Verify live student presentation
+        if: steps.deployment.outcome == 'success'
+        env:
+          PRESENTATION_BASE_URL: ${{ steps.deployment.outputs.page_url }}
+        run: python site/tests/check_student_presentation.py
       - uses: actions/upload-artifact@v4
         if: always()
         with:

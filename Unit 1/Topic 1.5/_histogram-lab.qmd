@@ -1,9 +1,5 @@
 ## Histogram laboratory {#histogram-lab}
 
-::: {.chapter-lead}
-**Learning goal:** Explain why different histograms can represent exactly the same data.
-:::
-
 ### Change the bins, not the observations
 
 This lab always uses the same **24 commute times**. The numerical span remains **0–60 minutes**. Choose either a bin width or a number of equal-width bins. Switch the vertical axis between counts and percentages.
