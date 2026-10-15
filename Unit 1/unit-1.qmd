@@ -7,7 +7,7 @@ toc: false
 [← All units](../index.qmd)
 
 ::: {.chapter-lead}
-**Available now: Topics 1.1–1.9.** Each topic has its own chapter and official College Board title. Choose a topic below to read the lesson and explore its activities. Further Unit 1 topics are still being developed.
+**Available now: Topics 1.1–1.10.** Each topic has its own chapter and official College Board title. Choose a topic below to read the lesson and explore its activities. Further Unit 1 topics are still being developed.
 :::
 
 ## Choose a topic
@@ -75,6 +75,13 @@ Construct five-number summaries and modified boxplots with a step-by-step linked
 Compare distribution shapes and summaries on common scales, and calculate standardized relative positions with z-scores.
 
 [Open Topic 1.9 →](<Topic 1.9/topic-1-9.qmd>)
+:::
+::: {.route-card}
+**Topic 1.10 The Investigative Question Revisited and Data Collection**
+
+Build a precise statistical question, distinguish observational studies and experiments, and explore selection, treatment assignment, confounding and the limits of conclusions.
+
+[Open Topic 1.10 →](<Topic 1.10/topic-1-10.qmd>)
 :::
 :::
 
