@@ -19,3 +19,17 @@
 .sampling111-sources{margin-top:2rem}
 @media(max-width:520px){.sampling111{padding:.75rem}.sampling111-grid{gap:.22rem}.sampling111-unit{font-size:.68rem;padding:.2rem 0}.sampling111-unit[data-picked="true"]{padding:calc(.2rem - 2px) 0}}
 @media print{.sampling111 button,.sampling111-controls{display:none!important}.sampling111-unit{break-inside:avoid}.sampling111-source img{max-height:90vh}}
+
+/* Keep a long sampling-method label within the available phone width. */
+.sampling111-controls > label { min-width:0; max-width:100%; }
+.sampling111 select, .sampling111 input { min-width:0; width:100%; box-sizing:border-box; }
+
+/* Full tables and mathematical expressions remain readable by horizontal scrolling. */
+.sampling111-wide { display:block; width:100%; max-width:100%; box-sizing:border-box; overflow-x:auto; overscroll-behavior-x:contain; }
+.sampling111-wide > p { margin-block:.5em; }
+.sampling111-wide table { max-width:none; }
+@media print {
+  .sampling111-wide {overflow:visible;}
+  .sampling111-wide math[display="block"] {font-size:.78em;}
+  .sampling111-wide table {font-size:.8em;}
+}
