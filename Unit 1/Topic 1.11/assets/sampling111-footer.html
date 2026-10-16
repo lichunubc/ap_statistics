@@ -1,0 +1,11 @@
+<script>
+(function () {
+  const css = Array.from(document.querySelectorAll('link[rel="stylesheet"]'))
+    .find(el => el.href.includes('/sampling111.css'));
+  if (!css) return;
+  const script = document.createElement('script');
+  script.src = css.href.replace(/sampling111\.css(?:\?.*)?$/, 'sampling111.js');
+  script.defer = true;
+  document.body.appendChild(script);
+})();
+</script>
