@@ -39,6 +39,7 @@ book:
         - "Unit 1/Topic 1.8/topic-1-8.qmd"
         - "Unit 1/Topic 1.9/topic-1-9.qmd"
         - "Unit 1/Topic 1.10/topic-1-10.qmd"
+        - "Unit 1/Topic 1.11/topic-1-11.qmd"
         - "Unit 1/Shared/practice.qmd"
     - "Unit 2/unit-2.qmd"
     - "Unit 3/unit-3.qmd"
@@ -71,6 +72,7 @@ format:
       - "Unit 1/Topic 1.8/assets/box18.css"
       - "Unit 1/Topic 1.9/assets/compare19.css"
       - "Unit 1/Topic 1.10/assets/study110.css"
+      - "Unit 1/Topic 1.11/assets/sampling111.css"
     toc: true
     toc-depth: 2
     number-sections: false
@@ -86,4 +88,5 @@ format:
       - "Unit 1/Topic 1.8/assets/box18-footer.html"
       - "Unit 1/Topic 1.9/assets/compare19-footer.html"
       - "Unit 1/Topic 1.10/assets/study110-footer.html"
+      - "Unit 1/Topic 1.11/assets/sampling111-footer.html"
 lang: en

@@ -1,144 +1,17 @@
 {
-  "permission": {
-    "basis": "Instructor reported permission from College Board and Maple Hill School for educational website reuse, 2026-10-15",
-    "reported_by": "Chun Li",
-    "independently_verified": false
-  },
-  "render": {
-    "library": "PyMuPDF",
-    "version": "1.26.7",
-    "scale": 2.5,
-    "colorspace": "gray"
-  },
-  "original_pdf_storage": "Fetched into memory only; never committed or copied to the website.",
-  "items": [
-    {
-      "id": "ap23-q1a",
-      "topic": "1.6",
-      "source_url": "https://apcentral.collegeboard.org/media/pdf/ap23-frq-statistics.pdf",
-      "pdf_page_index": 3,
-      "clip_points": [
-        30,
-        278,
-        573,
-        521
-      ],
-      "required_page_text": "Alaskan",
-      "output": "Unit 1/Topic 1.6/assets/exam/ap23-q1a.png",
-      "caption": "2023 AP Statistics, Question 1(a)",
-      "accessible_summary": "Describe the distribution of dissolved oxygen in streams colder than 8°C. The histogram frequencies are also provided in the lesson below."
-    },
-    {
-      "id": "ap22-chocolate",
-      "topic": "1.6",
-      "source_url": "https://apclassroom.collegeboard.org/video-resources/AP_Statistics/_Session_4_Statistics_2023_AP_Daily_Practice_Sessions.pdf",
-      "pdf_page_index": 0,
-      "clip_points": [
-        68,
-        213,
-        557,
-        552
-      ],
-      "required_page_text": "chocolate",
-      "output": "Unit 1/Topic 1.6/assets/exam/ap22-chocolate.png",
-      "caption": "2022 AP Statistics question · College Board AP Daily Session 4 (2023)",
-      "accessible_summary": "The study assigns 13 adults to dark chocolate and 12 to white chocolate. The dotplots display before-minus-after blood-pressure reductions in mmHg. Compare the medians. The values are listed in the solution below."
-    },
-    {
-      "id": "ap24-q6b-summary",
-      "topic": "1.7",
-      "source_url": "https://apcentral.collegeboard.org/media/pdf/ap24-frq-statistics.pdf",
-      "pdf_page_index": 13,
-      "clip_points": [
-        36,
-        45,
-        577,
-        297
-      ],
-      "required_page_text": "outlier",
-      "output": "Unit 1/Topic 1.7/assets/exam/ap24-q6b-summary.png",
-      "caption": "2024 AP Statistics, Question 6(b)(i)",
-      "accessible_summary": "For 20 whistle prices, the mean is 5.12 dollars, SD 0.743 dollars, minimum 4.25 dollars, first quartile 4.51 dollars, median 4.885 dollars, third quartile 5.475 dollars and maximum 6.58 dollars. Use these summaries to describe the shape."
-    },
-    {
-      "id": "ap24-q6b-outliers",
-      "topic": "1.7",
-      "source_url": "https://apcentral.collegeboard.org/media/pdf/ap24-frq-statistics.pdf",
-      "pdf_page_index": 13,
-      "clip_points": [
-        36,
-        465,
-        577,
-        516
-      ],
-      "required_page_text": "outlier",
-      "output": "Unit 1/Topic 1.7/assets/exam/ap24-q6b-outliers.png",
-      "caption": "2024 AP Statistics, Question 6(b)(ii)",
-      "accessible_summary": "Determine whether the whistle prices contain outliers using the 1.5-IQR rule, and show the calculations."
-    },
-    {
-      "id": "ap19-q1-data",
-      "topic": "1.8",
-      "source_url": "https://apstudents.collegeboard.org/ap/2019-05/ap19-frq-statistics.pdf",
-      "pdf_page_index": 5,
-      "clip_points": [
-        45,
-        202,
-        573,
-        559
-      ],
-      "required_page_text": "room",
-      "output": "Unit 1/Topic 1.8/assets/exam/ap19-q1-data.png",
-      "caption": "2019 AP Statistics, Question 1: room sizes",
-      "accessible_summary": "For 20 rooms, the five-number summary in square feet is 134, 174, 253.5, 292, 315. The mean is 231.4 and the SD is 68.12. Describe the distribution using the histogram."
-    },
-    {
-      "id": "ap19-q1-bc",
-      "topic": "1.8",
-      "source_url": "https://apstudents.collegeboard.org/ap/2019-05/ap19-frq-statistics.pdf",
-      "pdf_page_index": 6,
-      "clip_points": [
-        45,
-        48,
-        573,
-        316
-      ],
-      "required_page_text": "outlier",
-      "output": "Unit 1/Topic 1.8/assets/exam/ap19-q1-bc.png",
-      "caption": "2019 AP Statistics, Question 1(b)–(c)",
-      "accessible_summary": "Determine whether the data contain outliers and construct a boxplot. Identify a feature visible in the histogram that the boxplot does not show."
-    },
-    {
-      "id": "ap26-q1-ab",
-      "topic": "1.9",
-      "source_url": "https://apcentral.collegeboard.org/media/pdf/ap26-frq-statistics.pdf",
-      "pdf_page_index": 2,
-      "clip_points": [
-        44,
-        58,
-        568,
-        640
-      ],
-      "required_page_text": "breed",
-      "output": "Unit 1/Topic 1.9/assets/exam/ap26-q1-ab.png",
-      "caption": "2026 AP Statistics, Question 1(a)–(b)",
-      "accessible_summary": "The sampled Breed H goat weights in pounds are 48, 48, 55, 56, 56, 57, 62, 66, 72, 72, 72, 73, 80, 80. Find their five-number summary and compare their median and variability with Breed J. The Breed J boxplot has an approximate five-number summary of 48, 56, 64, 80, 88."
-    },
-    {
-      "id": "ap26-q1-c",
-      "topic": "1.9",
-      "source_url": "https://apcentral.collegeboard.org/media/pdf/ap26-frq-statistics.pdf",
-      "pdf_page_index": 3,
-      "clip_points": [
-        44,
-        50,
-        568,
-        415
-      ],
-      "required_page_text": "stem",
-      "output": "Unit 1/Topic 1.9/assets/exam/ap26-q1-c.png",
-      "caption": "2026 AP Statistics, Question 1(c)",
-      "accessible_summary": "The Breed H stemplot has stems 4 through 8 and leaves 8 8; 5 6 6 7; 2 6; 2 2 2 3; 0 0. Describe a feature shown by the stemplot but not by a boxplot."
-    }
-  ]
+ "permission":{"basis":"Instructor reported permission from College Board and Maple Hill School for educational website reuse, 2026-10-15","reported_by":"Chun Li","independently_verified":false},
+ "render":{"library":"PyMuPDF","version":"1.26.7","scale":2.5,"colorspace":"gray"},
+ "original_pdf_storage":"Fetched into memory only; never committed or copied to the website.",
+ "items":[
+ {"id":"ap23-q1a","topic":"1.6","source_url":"https://apcentral.collegeboard.org/media/pdf/ap23-frq-statistics.pdf","pdf_page_index":3,"clip_points":[30,278,573,521],"required_page_text":"Alaskan","output":"Unit 1/Topic 1.6/assets/exam/ap23-q1a.png","caption":"2023 AP Statistics, Question 1(a)","accessible_summary":"Describe the distribution of dissolved oxygen in streams colder than 8°C. The histogram frequencies are also provided in the lesson below."},
+ {"id":"ap22-chocolate","topic":"1.6","source_url":"https://apclassroom.collegeboard.org/video-resources/AP_Statistics/_Session_4_Statistics_2023_AP_Daily_Practice_Sessions.pdf","pdf_page_index":0,"clip_points":[68,213,557,552],"required_page_text":"chocolate","output":"Unit 1/Topic 1.6/assets/exam/ap22-chocolate.png","caption":"2022 AP Statistics question · College Board AP Daily Session 4 (2023)","accessible_summary":"The study assigns 13 adults to dark chocolate and 12 to white chocolate. The dotplots display before-minus-after blood-pressure reductions in mmHg. Compare the medians. The values are listed in the solution below."},
+ {"id":"ap24-q6b-summary","topic":"1.7","source_url":"https://apcentral.collegeboard.org/media/pdf/ap24-frq-statistics.pdf","pdf_page_index":13,"clip_points":[36,45,577,297],"required_page_text":"outlier","output":"Unit 1/Topic 1.7/assets/exam/ap24-q6b-summary.png","caption":"2024 AP Statistics, Question 6(b)(i)","accessible_summary":"For 20 whistle prices, the mean is 5.12 dollars, SD 0.743 dollars, minimum 4.25 dollars, first quartile 4.51 dollars, median 4.885 dollars, third quartile 5.475 dollars and maximum 6.58 dollars. Use these summaries to describe the shape."},
+ {"id":"ap24-q6b-outliers","topic":"1.7","source_url":"https://apcentral.collegeboard.org/media/pdf/ap24-frq-statistics.pdf","pdf_page_index":13,"clip_points":[36,465,577,516],"required_page_text":"outlier","output":"Unit 1/Topic 1.7/assets/exam/ap24-q6b-outliers.png","caption":"2024 AP Statistics, Question 6(b)(ii)","accessible_summary":"Determine whether the whistle prices contain outliers using the 1.5-IQR rule, and show the calculations."},
+ {"id":"ap19-q1-data","topic":"1.8","source_url":"https://apstudents.collegeboard.org/ap/2019-05/ap19-frq-statistics.pdf","pdf_page_index":5,"clip_points":[45,202,573,559],"required_page_text":"room","output":"Unit 1/Topic 1.8/assets/exam/ap19-q1-data.png","caption":"2019 AP Statistics, Question 1: room sizes","accessible_summary":"For 20 rooms, the five-number summary in square feet is 134, 174, 253.5, 292, 315. The mean is 231.4 and the SD is 68.12. Describe the distribution using the histogram."},
+ {"id":"ap19-q1-bc","topic":"1.8","source_url":"https://apstudents.collegeboard.org/ap/2019-05/ap19-frq-statistics.pdf","pdf_page_index":6,"clip_points":[45,48,573,316],"required_page_text":"outlier","output":"Unit 1/Topic 1.8/assets/exam/ap19-q1-bc.png","caption":"2019 AP Statistics, Question 1(b)–(c)","accessible_summary":"Determine whether the data contain outliers and construct a boxplot. Identify a feature visible in the histogram that the boxplot does not show."},
+ {"id":"ap26-q1-ab","topic":"1.9","source_url":"https://apcentral.collegeboard.org/media/pdf/ap26-frq-statistics.pdf","pdf_page_index":2,"clip_points":[44,58,568,640],"required_page_text":"breed","output":"Unit 1/Topic 1.9/assets/exam/ap26-q1-ab.png","caption":"2026 AP Statistics, Question 1(a)–(b)","accessible_summary":"The sampled Breed H goat weights in pounds are 48, 48, 55, 56, 56, 57, 62, 66, 72, 72, 72, 73, 80, 80. Find their five-number summary and compare their median and variability with Breed J. The Breed J boxplot has an approximate five-number summary of 48, 56, 64, 80, 88."},
+ {"id":"ap26-q1-c","topic":"1.9","source_url":"https://apcentral.collegeboard.org/media/pdf/ap26-frq-statistics.pdf","pdf_page_index":3,"clip_points":[44,50,568,415],"required_page_text":"stem","output":"Unit 1/Topic 1.9/assets/exam/ap26-q1-c.png","caption":"2026 AP Statistics, Question 1(c)","accessible_summary":"The Breed H stemplot has stems 4 through 8 and leaves 8 8; 5 6 6 7; 2 6; 2 2 2 3; 0 0. Describe a feature shown by the stemplot but not by a boxplot."},
+ {"id":"ap25-q2-stem","topic":"1.11","source_url":"https://apcentral.collegeboard.org/media/pdf/ap25-frq-statistics.pdf","pdf_page_index":3,"clip_points":[45,55,570,715],"required_page_text":"aphid","output":"Unit 1/Topic 1.11/assets/exam/ap25-q2-stem.png","caption":"2025 AP Statistics, Question 2: cabbage field sampling","accessible_summary":"A cabbage field is divided into 25 regions arranged in rows A through E. Row E is closest to a river. Methods use the conveniently close region, an entire random row, or one region randomly selected from each row."},
+ {"id":"ap25-q2-parts","topic":"1.11","source_url":"https://apcentral.collegeboard.org/media/pdf/ap25-frq-statistics.pdf","pdf_page_index":4,"clip_points":[54,50,575,285],"required_page_text":"region","output":"Unit 1/Topic 1.11/assets/exam/ap25-q2-parts.png","caption":"2025 AP Statistics, Question 2 parts A–C","accessible_summary":"The question asks about the sampling procedure, potential overestimation when an entire riverside row is selected, and how to carry out stratified selection of one region from each of five rows."}
+ ]
 }

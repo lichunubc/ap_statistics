@@ -47,7 +47,7 @@ jobs:
             exit 1
           fi
           git add docs
-          git add -- "Unit 1/Topic 1.6/assets/exam" "Unit 1/Topic 1.7/assets/exam" "Unit 1/Topic 1.8/assets/exam" "Unit 1/Topic 1.9/assets/exam" project/released-exam-figures-provenance.json
+          git add -- "Unit 1/Topic 1.6/assets/exam" "Unit 1/Topic 1.7/assets/exam" "Unit 1/Topic 1.8/assets/exam" "Unit 1/Topic 1.9/assets/exam" "Unit 1/Topic 1.11/assets/exam" project/released-exam-figures-provenance.json
           if ! git diff --cached --quiet; then
             git commit -m 'Save checked site and original question images [skip ci]'
             git push
@@ -111,6 +111,11 @@ jobs:
         env:
           PRESENTATION_BASE_URL: ${{ steps.deployment.outputs.page_url }}
         run: python site/tests/check_student_presentation.py
+      - name: Verify live random sampling lesson
+        if: steps.deployment.outcome == 'success'
+        env:
+          SAMPLING111_BASE_URL: ${{ steps.deployment.outputs.page_url }}
+        run: python "Unit 1/Topic 1.11/tests/check_sampling111_browser.py"
       - uses: actions/upload-artifact@v4
         if: always()
         with:

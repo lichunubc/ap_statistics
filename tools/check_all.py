@@ -25,6 +25,8 @@ CHECKS = [
     'site/tests/check_student_presentation.py',
     'Unit 1/Topic 1.10/tests/check_study110.py',
     'Unit 1/Topic 1.10/tests/check_study110_browser.py',
+    'Unit 1/Topic 1.11/tests/check_sampling111.py',
+    'Unit 1/Topic 1.11/tests/check_sampling111_browser.py',
 ]
 
 
@@ -40,7 +42,6 @@ def main() -> int:
         print(f'\nCHECK {index}/{len(CHECKS)}: {check}', flush=True)
         path = ROOT / check
         try:
-            # Report missing files or syntax errors before invoking that check.
             ast.parse(path.read_text(encoding='utf-8'), filename=check)
             result = subprocess.run(
                 [sys.executable, str(path)], cwd=ROOT,
@@ -58,7 +59,6 @@ def main() -> int:
             'check': check, 'returncode': code, 'passed': code == 0,
             'log': log.relative_to(ROOT).as_posix(),
         })
-        # Checkpoint after each suite so interrupted runs retain useful evidence.
         report = {
             'source_revision': os.environ.get('GITHUB_SHA'),
             'expected_checks': len(CHECKS), 'completed_checks': len(results),
