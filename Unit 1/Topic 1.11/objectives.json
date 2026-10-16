@@ -1,0 +1,84 @@
+{
+  "topic": "1.11",
+  "official_title": "Random Sampling",
+  "curriculum": "College Board AP Statistics CED effective Fall 2026",
+  "source": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description-effective-fall-2026.pdf",
+  "ced_printed_pages": [
+    48,
+    49
+  ],
+  "pdf_zero_index_pages": [
+    52,
+    53
+  ],
+  "learning_objectives": [
+    "1.11.A",
+    "1.11.B"
+  ],
+  "essential_knowledge": [
+    "1.11.A.1",
+    "1.11.A.2",
+    "1.11.A.3",
+    "1.11.A.4",
+    "1.11.A.5",
+    "1.11.A.6",
+    "1.11.B.1"
+  ],
+  "skills": [
+    "2.A",
+    "2.B"
+  ],
+  "coverage": [
+    {
+      "section": "#replacement-111",
+      "ids": [
+        "1.11.A.1",
+        "1.11.A.2"
+      ]
+    },
+    {
+      "section": "#srs-111",
+      "ids": [
+        "1.11.A.3"
+      ]
+    },
+    {
+      "section": "#stratified-111",
+      "ids": [
+        "1.11.A.4"
+      ]
+    },
+    {
+      "section": "#cluster-111",
+      "ids": [
+        "1.11.A.5"
+      ]
+    },
+    {
+      "section": "#systematic-111",
+      "ids": [
+        "1.11.A.6"
+      ]
+    },
+    {
+      "section": "#choice-111",
+      "ids": [
+        "1.11.B.1"
+      ]
+    }
+  ],
+  "enrichment": [
+    "Combinatorial proof of SRS group probability, grade-balance/periodicity laboratory."
+  ],
+  "source_exam": {
+    "year": 2025,
+    "question": 2,
+    "pages": [
+      4,
+      5
+    ],
+    "official_question_url": "https://apcentral.collegeboard.org/media/pdf/ap25-frq-statistics.pdf",
+    "official_scoring_url": "https://apcentral.collegeboard.org/media/pdf/ap25-sg-statistics.pdf"
+  },
+  "rights": "Instructor-reported educational reuse permission recorded in project/STUDENT_PRESENTATION.md."
+}
