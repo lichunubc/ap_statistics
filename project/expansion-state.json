@@ -21,12 +21,7 @@
     "1.6"
   ],
   "selection_rule": "Resume the earliest item not published_verified. Do not advance on a source commit alone; inspect source, complete tests, deployment and live revision. Do not collide with an active session.",
-  "active_run": {
-    "topic": "1.11",
-    "started_utc": "2026-10-15T22:47:38Z",
-    "branch": "preview/topic-1-11-20261016",
-    "source_base": "ba22bd7049b721399f56af2a35154e724adbdec5"
-  },
+  "active_run": null,
   "resumption": {
     "authorized_on": "2026-10-15",
     "reason": "User explicitly requested continuation of the previously paused work. The authorized non-force GitHub write retry succeeded.",
@@ -44,11 +39,7 @@
     {
       "order": 1,
       "id": "1.7",
-      "ced_printed_pages": [
-        39,
-        40,
-        41
-      ],
+      "ced_printed_pages": [39, 40, 41],
       "status": "published_verified",
       "attempts": 1,
       "source_commit": "046003bcde5399923e40c6dedfa18a7c6d37ddd3",
@@ -58,9 +49,7 @@
     {
       "order": 2,
       "id": "1.8",
-      "ced_printed_pages": [
-        42
-      ],
+      "ced_printed_pages": [42],
       "status": "published_verified",
       "attempts": 1,
       "preview_branch": "preview/topic-1-8-20261014",
@@ -71,10 +60,7 @@
     {
       "order": 3,
       "id": "1.9",
-      "ced_printed_pages": [
-        43,
-        44
-      ],
+      "ced_printed_pages": [43, 44],
       "status": "published_verified",
       "attempts": 2,
       "preview_branch": "preview/topic-1-9-20261015",
@@ -86,11 +72,7 @@
       "validation": {
         "quarto_render": "passed in production GitHub Actions",
         "regressions": "existing and Topic 1.9 mathematical/browser tests passed",
-        "desktop_tablet_phone": [
-          1440,
-          768,
-          390
-        ],
+        "desktop_tablet_phone": [1440, 768, 390],
         "publication": "Publish site succeeded",
         "live_verification": "Production HTTP chapter and release-SHA checks, live navigation and live problem-bank checks passed",
         "local_review": "Validated preview artifact inspected; independent route-summary, numeric-answer, MathML, native-control and no-JavaScript fallback assertions passed",
@@ -100,11 +82,7 @@
     {
       "order": 4,
       "id": "1.10",
-      "ced_printed_pages": [
-        45,
-        46,
-        47
-      ],
+      "ced_printed_pages": [45, 46, 47],
       "status": "published_verified",
       "attempts": 1,
       "preview_branch": "preview/topic-1-10-20261015",
@@ -119,11 +97,7 @@
         "quarto_render": "passed on the integrated repository in preview and production",
         "registered_suites": 17,
         "regressions": "all existing, editorial and Topic 1.10 mathematical/browser checks passed",
-        "desktop_tablet_phone": [
-          1440,
-          768,
-          390
-        ],
+        "desktop_tablet_phone": [1440, 768, 390],
         "publication": "GitHub Pages Publish site succeeded",
         "live_verification": "Revision-matched chapter checks, live unit navigation, live problem bank and live student-presentation checks all succeeded",
         "editorial_test_scope": "Existing student-presentation gate covers Topics 1.1–1.9; Topic 1.10 retains its separate content and browser gates."
@@ -132,147 +106,39 @@
     {
       "order": 5,
       "id": "1.11",
-      "ced_printed_pages": [
-        48,
-        49
-      ],
-      "status": "in_progress",
+      "ced_printed_pages": [48, 49],
+      "status": "published_verified",
       "attempts": 1,
-      "preview_branch": "preview/topic-1-11-20261016"
+      "preview_branch": "preview/topic-1-11-20261016",
+      "source_commit": "1698e719ff80015908ea16959ad5f160fb9b3ac5",
+      "preview_actions_url": "https://github.com/lichunubc/ap_statistics/actions/runs/38876570103",
+      "actions_url": "https://github.com/lichunubc/ap_statistics/actions/runs/39300078519",
+      "live_url": "https://lichunubc.github.io/ap_statistics/Unit%201/Topic%201.11/topic-1-11.html",
+      "verified_on": "2026-10-19",
+      "validation": {
+        "quarto_render": "passed in preview and production with Quarto 1.9.38",
+        "registered_suites": 19,
+        "regressions": "all existing and Topic 1.11 mathematical, source, responsive and browser checks passed",
+        "desktop_tablet_phone": [1440, 768, 390],
+        "publication": "GitHub Pages Publish site succeeded",
+        "live_verification": "Revision-matched chapter, unit navigation, original problem bank, student-presentation and Topic 1.11 random-sampling browser checks all succeeded",
+        "release_marker": "docs/release.json records source commit 1698e719ff80015908ea16959ad5f160fb9b3ac5 and Unit 1 Topics 1.1–1.11"
+      }
     },
-    {
-      "order": 6,
-      "id": "1.12",
-      "ced_printed_pages": [
-        50
-      ],
-      "status": "queued",
-      "attempts": 0
-    },
-    {
-      "order": 7,
-      "id": "1.13",
-      "ced_printed_pages": [
-        51,
-        52,
-        53,
-        54
-      ],
-      "status": "queued",
-      "attempts": 0
-    },
-    {
-      "order": 8,
-      "id": "2.1",
-      "ced_printed_pages": [
-        62
-      ],
-      "status": "queued",
-      "attempts": 0
-    },
-    {
-      "order": 9,
-      "id": "2.2",
-      "ced_printed_pages": [
-        63
-      ],
-      "status": "queued",
-      "attempts": 0
-    },
-    {
-      "order": 10,
-      "id": "2.3",
-      "ced_printed_pages": [
-        64
-      ],
-      "status": "queued",
-      "attempts": 0
-    },
-    {
-      "order": 11,
-      "id": "2.4",
-      "ced_printed_pages": [
-        65
-      ],
-      "status": "queued",
-      "attempts": 0
-    },
-    {
-      "order": 12,
-      "id": "2.5",
-      "ced_printed_pages": [
-        66
-      ],
-      "status": "queued",
-      "attempts": 0
-    },
-    {
-      "order": 13,
-      "id": "2.6",
-      "ced_printed_pages": [
-        67
-      ],
-      "status": "queued",
-      "attempts": 0
-    },
-    {
-      "order": 14,
-      "id": "2.7",
-      "ced_printed_pages": [
-        68
-      ],
-      "status": "queued",
-      "attempts": 0
-    },
-    {
-      "order": 15,
-      "id": "2.8",
-      "ced_printed_pages": [
-        69
-      ],
-      "status": "queued",
-      "attempts": 0
-    },
-    {
-      "order": 16,
-      "id": "2.9",
-      "ced_printed_pages": [
-        70,
-        71
-      ],
-      "status": "queued",
-      "attempts": 0
-    },
-    {
-      "order": 17,
-      "id": "2.10",
-      "ced_printed_pages": [
-        72,
-        73
-      ],
-      "status": "queued",
-      "attempts": 0
-    },
-    {
-      "order": 18,
-      "id": "2.11",
-      "ced_printed_pages": [
-        74,
-        75,
-        76
-      ],
-      "status": "queued",
-      "attempts": 0
-    },
-    {
-      "order": 19,
-      "id": "2.12",
-      "ced_printed_pages": [
-        77
-      ],
-      "status": "queued",
-      "attempts": 0
-    }
+    {"order": 6, "id": "1.12", "ced_printed_pages": [50], "status": "queued", "attempts": 0},
+    {"order": 7, "id": "1.13", "ced_printed_pages": [51, 52, 53, 54], "status": "queued", "attempts": 0},
+    {"order": 8, "id": "2.1", "ced_printed_pages": [62], "status": "queued", "attempts": 0},
+    {"order": 9, "id": "2.2", "ced_printed_pages": [63], "status": "queued", "attempts": 0},
+    {"order": 10, "id": "2.3", "ced_printed_pages": [64], "status": "queued", "attempts": 0},
+    {"order": 11, "id": "2.4", "ced_printed_pages": [65], "status": "queued", "attempts": 0},
+    {"order": 12, "id": "2.5", "ced_printed_pages": [66], "status": "queued", "attempts": 0},
+    {"order": 13, "id": "2.6", "ced_printed_pages": [67], "status": "queued", "attempts": 0},
+    {"order": 14, "id": "2.7", "ced_printed_pages": [68], "status": "queued", "attempts": 0},
+    {"order": 15, "id": "2.8", "ced_printed_pages": [69], "status": "queued", "attempts": 0},
+    {"order": 16, "id": "2.9", "ced_printed_pages": [70, 71], "status": "queued", "attempts": 0},
+    {"order": 17, "id": "2.10", "ced_printed_pages": [72, 73], "status": "queued", "attempts": 0},
+    {"order": 18, "id": "2.11", "ced_printed_pages": [74, 75, 76], "status": "queued", "attempts": 0},
+    {"order": 19, "id": "2.12", "ced_printed_pages": [77], "status": "queued", "attempts": 0}
   ],
   "run_log": [
     {
@@ -305,6 +171,16 @@
       "actions_url": "https://github.com/lichunubc/ap_statistics/actions/runs/38795587326",
       "verified_on": "2026-10-15",
       "note": "User requested repair after manually merging the preview branches. The merged test runner had an unmatched closing bracket; Quarto rendered but the test runner could not start. Restored all 17 suites, added per-suite diagnostic artifacts and a Python syntax preflight. Both final preview and production passed; Pages publication and all configured live checks succeeded. Preserved every merged lesson and editorial change. Cleared the old Topic 1.10 claim. The existing finite schedule was not changed; next unfinished topic is 1.11."
+    },
+    {
+      "topic": "1.11",
+      "status": "published_verified",
+      "source_commit": "1698e719ff80015908ea16959ad5f160fb9b3ac5",
+      "preview_actions_url": "https://github.com/lichunubc/ap_statistics/actions/runs/38876570103",
+      "actions_url": "https://github.com/lichunubc/ap_statistics/actions/runs/39300078519",
+      "live_url": "https://lichunubc.github.io/ap_statistics/Unit%201/Topic%201.11/topic-1-11.html",
+      "verified_on": "2026-10-19",
+      "note": "Recovered the complete Topic 1.11 preview, fixed the required objective title and 390-pixel overflow without weakening tests, and confirmed all 19 suites in preview. Fast-forwarded main with an expected-head non-force update. Production Quarto render, complete regression gate, generated-site commit, Pages publication, revision-matched chapter check, live navigation, original problem bank, student presentation and random-sampling browser checks all succeeded. Cleared the stale Topic 1.11 claim; next unfinished topic is 1.12."
     }
   ],
   "last_build_repair": {
@@ -314,10 +190,7 @@
     "cause": "tools/check_all.py line 20: SyntaxError, unmatched closing bracket after separately merged test-list additions",
     "repair_source_commit": "8d4b4114e95b637e399d4b3cd968d31e2f01b816",
     "verified_actions_url": "https://github.com/lichunubc/ap_statistics/actions/runs/38795587326",
-    "diagnostics": [
-      "qa/test-results.json",
-      "qa/test-logs/"
-    ],
+    "diagnostics": ["qa/test-results.json", "qa/test-logs/"],
     "guidance": "Test the integrated source, not just its independent branches. Preserve the repaired complete test list and all editorial checks. The build failure was a Python syntax error; earlier generic tool-rejection messages did not provide a diagnosed copyright or permission cause. Normal authorized writes and non-force integration succeeded during this repair."
   },
   "publication_rule": "Only published_verified means the new chapter has passed the relevant complete release gate and the actual live page/revision was checked. Scheduling or a generated file is not proof of publication.",
