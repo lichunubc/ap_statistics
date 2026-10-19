@@ -4,17 +4,23 @@
 
 Maintain one reusable, expandable Quarto course book for Chun Li's Maple Hill School AP Statistics course. Preserve editable chapters, original practice, datasets/provenance, activity code, objective mappings and reproducible tests across course iterations.
 
-## Resumed expansion — October 15, 2026
+## Current release — October 19, 2026
 
-Chun Li explicitly requested continuation of the paused work. The non-force retry successfully integrated the already-tested Topic 1.9 branch into main. Production workflow [38772105399](https://github.com/lichunubc/ap_statistics/actions/runs/38772105399) passed Quarto rendering, all regression checks, GitHub Pages deployment and live chapter/revision, navigation and problem-bank verification for source `54746beeba2033d73b413684668956e675386ec5`. Topic **1.9 is published_verified**, alongside 1.7 and 1.8, and the stale active claim has been cleared in [the execution state](expansion-state.json).
+Topic **1.11 Random Sampling** is now `published_verified`. The validated preview source `1698e719ff80015908ea16959ad5f160fb9b3ac5` was integrated into `main` by an expected-head, non-force fast-forward. Production workflow [39300078519](https://github.com/lichunubc/ap_statistics/actions/runs/39300078519) passed the pinned Quarto render, all **19** regression suites, generated-site commit, GitHub Pages deployment, revision-matched chapter verification, live unit navigation, live original problem bank, student-presentation checks and the Topic 1.11 random-sampling browser gate.
 
-The existing hourly automation has been resumed for **16 remaining sessions**, starting October 15 at **10:51:45 a.m. Vancouver time** (17:51:45 UTC): Topics **1.10–1.13**, followed by **2.1–2.12**. Its final planned start is October 16 at 1:51:45 a.m. Vancouver time. These are scheduled starts, not guaranteed release deadlines. Resume any incomplete release before advancing and report actual gaps at the end; never recreate a topic already verified live solely because an older note says it is unfinished.
+Topics **1.7–1.11 are verified live**. The next unfinished item in [the execution state](expansion-state.json) is **Topic 1.12 Potential Problems with Sampling**. Do not advance based only on a scheduled start, source commit or preview build.
+
+## Resumed expansion — October 15–16, 2026
+
+Chun Li explicitly requested continuation of the paused work. The non-force retry first integrated the already-tested Topic 1.9 branch into main. Topic 1.10 then required repair of a merged test-runner syntax error before production publication. Topic 1.11 was recovered from its complete preview source, corrected for objective-schema and 390-pixel overflow defects, and subsequently published through the complete release gate.
+
+The existing hourly automation was resumed for **16 finite sessions**, starting October 15 at **10:51:45 a.m. Vancouver time** (17:51:45 UTC) and ending with its final planned start on October 16 at 1:51:45 a.m. Vancouver time. These were scheduled starts, not guaranteed release deadlines. Resume any incomplete release before advancing and report actual gaps honestly; never recreate a topic already verified live solely because an older note says it is unfinished.
 
 ## Authorized expansion — October 14, 2026
 
-Chun Li has authorized completion of **Topics 1.7–1.13**, followed by **all Topics 2.1–2.12**, one topic per hourly work session starting immediately. Follow [the detailed authoring and publication specification](UNIT_1_2_EXPANSION.md) and [the nineteen-topic execution queue](expansion-state.json). The specification includes exact Fall 2026 CED titles/pages, full LO/EK coverage, textbook-style explanations, visual activities, optional expandable derivations, one-question-at-a-time practice, original problem-bank storage, official past-exam sourcing, and release validation.
+Chun Li authorized completion of **Topics 1.7–1.13**, followed by **all Topics 2.1–2.12**, one topic per work session. Follow [the detailed authoring and publication specification](UNIT_1_2_EXPANSION.md) and [the nineteen-topic execution queue](expansion-state.json). The specification includes exact Fall 2026 CED titles/pages, full LO/EK coverage, textbook-style explanations, visual activities, optional expandable derivations, one-question-at-a-time practice, original problem-bank storage, official past-exam sourcing, and release validation.
 
-At setup these nineteen topics were queued; consult the expansion state for current progress. Topics 1.7, 1.8 and 1.9 now have verified live releases. The execution queue records actual source, test, deployment and live-verification outcomes. Preserve the existing lessons and the five-unit navigation. The authorization does not extend to Units 3–5 or to additional schedules beyond the resumed finite series.
+At setup these nineteen topics were queued. Consult the expansion state for current progress; it records actual source, test, deployment and live-verification outcomes. Preserve the existing lessons and five-unit navigation. The authorization does not extend to Units 3–5 or to additional schedules beyond the original finite series.
 
 ## Five-unit navigation — October 13, 2026
 
@@ -34,7 +40,7 @@ All Unit 1 teaching sources are in `Unit 1/`, with independent `Topic 1.x/` fold
 
 ## Validation and publication
 
-The gate retains all earlier regressions and adds each new topic's arithmetic and browser checks. It verifies arithmetic, old/new links, official names, mobile/desktop behavior, keyboard controls, print restoration, MathML and native Quarto search. Quarto is pinned to 1.9.38. Source status is **implemented**; the GitHub Actions build/deployment, revision-matched live check and live navigation browser check independently establish publication. Do not infer completion from a past scheduled start time.
+The gate retains all earlier regressions and adds each new topic's arithmetic and browser checks. It verifies arithmetic, old/new links, official names, mobile/desktop behavior, keyboard controls, print restoration, MathML and native Quarto search. Quarto is pinned to 1.9.38. Source status is **implemented**; GitHub Actions build/deployment, revision-matched live checks and live browser gates independently establish publication. Do not infer completion from a past scheduled start time.
 
 ## Beyond the authorized expansion
 
@@ -42,4 +48,4 @@ Prioritize teaching feedback, accessibility and mathematical consistency. Topics
 
 ## Curriculum reference
 
-College Board, AP Statistics Course and Exam Description, **effective Fall 2026**, checked October 13, 2026, rechecked for the expansion on October 14 and for Topic 1.9 recovery on October 15. Printed pages: 1.1 pp.30–31; 1.2 pp.32–33; 1.3 p.34; 1.4 p.35; 1.5 p.36; 1.6 pp.37–38. Remaining Unit 1 topic pages are 39–54; Unit 2 topic pages are 62–77. Current official source: https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description-effective-fall-2026.pdf. Link the CED; do not upload secure AP Classroom material or the complete PDF.
+College Board, AP Statistics Course and Exam Description, **effective Fall 2026**, checked October 13, 2026 and rechecked for the expansion. Printed pages: 1.1 pp.30–31; 1.2 pp.32–33; 1.3 p.34; 1.4 p.35; 1.5 p.36; 1.6 pp.37–38; remaining Unit 1 topic pages 39–54; Unit 2 topic pages 62–77. Current official source: https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description-effective-fall-2026.pdf. Link the CED; do not upload secure AP Classroom material or the complete PDF.
