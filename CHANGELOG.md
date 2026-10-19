@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-10-19 — Topic 1.11 Random Sampling release
+
+- Published a self-contained Topic 1.11 chapter covering simple random, stratified, cluster, systematic and with-replacement sampling under the Fall 2026 five-unit CED.
+- Added a deterministic, keyboard-accessible 36-student sampling laboratory with step/all/reset controls, visible duplicate-draw multiplicities, invalid-seed handling, static/no-JavaScript support and responsive phone layout.
+- Added ten original centrally stored practice questions with detailed solutions and rubrics through the shared one-question reader.
+- Added instructor-authorized page-image crops from released 2025 AP Statistics Question 2, accessible descriptions and a sampling-design walkthrough without committing the complete exam PDF.
+- Corrected a required objective-title field and 390-pixel horizontal overflow without weakening the existing regression gate.
+- Preview and production both passed Quarto 1.9.38 rendering and all 19 suites. Production workflow [39300078519](https://github.com/lichunubc/ap_statistics/actions/runs/39300078519) also passed Pages deployment, revision-matched chapter verification, live navigation, problem-bank, student-presentation and Random Sampling browser checks for source `1698e719ff80015908ea16959ad5f160fb9b3ac5`.
+
 ## 2026-10-15 — Student presentation review, Topics 1.1–1.9
 
 - Removed opening curriculum blocks and repeated administrative commentary, retaining source mappings and provenance.
@@ -25,7 +34,6 @@
 - Connected a genuine released 2026 AP Statistics free-response Question 1(B–C) with official scoring guidance using source links and independently written commentary.
 - Added deterministic objective/answer/math checks and native browser tests for desktop/mobile, keyboard, no-JavaScript content, printing and MathML; publication is independently established by GitHub Actions checks.
 
-
 ## 2026-10-14 — Topic 1.8 graphical summaries
 
 - Created a self-contained, officially mapped Topic 1.8 on five-number summaries, modified boxplots, mean–median patterns and responsible interpretation.
@@ -33,7 +41,6 @@
 - Added nine original questions in the centralized public Problem Bank, with keyboard-friendly one-at-a-time practice, hints, feedback, worked solutions and a no-JavaScript print alternative.
 - Documented the released 2019 AP Statistics FRQ 1(b)–(c) and its official rubric without copying the protected question, added independent arithmetic/browser tests, and made release topic counts derive from the live manifest.
 - GitHub Actions' revision-matched build, full regression and Pages checks independently determine publication status.
-
 
 ## 2026-10-13 — Five-unit entrance and collapsed topic navigation
 
@@ -53,8 +60,8 @@
 
 ## 2026-10-13 — Topic 1.4 categorical charts
 
-- Added `topic-1-4.qmd` with categorical bar and pie construction, appropriate baselines, sector angles, group comparisons, original practice and eight worked solutions.
-- Added keyboard-accessible chart builders, a grouped count-versus-percentage comparison and five unselected-initial-state audit questions with explanatory feedback.
+- Added `topic-1-4.qmd` with categorical bar and pie construction, appropriate baselines, clear axes/units/titles, category ordering, sector-angle calculations, count-versus-percentage group comparisons, and eight original worked exercises.
+- Added keyboard-accessible chart builders, a grouped count-versus-percentage comparison and five neutral-initial-state audit questions with explanatory feedback.
 - Preserved the School A/B, movie-satisfaction and study-location hypothetical datasets and their provenance; added static screen tables and print-ready references.
 - Added dedicated Topic 1.4 browser/arithmetic tests, navigation, curriculum mapping and deployment verification. Topic 1.2 is managed independently.
 
@@ -75,7 +82,7 @@
 - Added an authoring template, contributor guide, curriculum/topic manifest and roadmap for future course iterations.
 - Made preview navigation follow the configured chapters; retained the existing regression suite and added foundations tests to publishing.
 
-Source release status and the scheduled follow-on topics are tracked in `project/topic-status.json`. GitHub Actions is the source of truth for build/deployment outcomes.
+Source release status and the scheduled follow-on topics are tracked in `project/topic-status.json` and `project/expansion-state.json`. GitHub Actions is the source of truth for build/deployment outcomes.
 
 ## 2026-10-14 — Topic 1.7 quantitative summaries
 
