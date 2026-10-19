@@ -44,7 +44,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 
-<link href="../../site_libs/bootstrap/bootstrap-6ac1464fa2c1e9cd0b291ef951d667ea.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-32359d20a4566ecd55646a04b55657ce.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -87,6 +87,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../Topic%201.8/assets/box18.css">
 <link rel="stylesheet" href="assets/compare19.css">
 <link rel="stylesheet" href="../Topic%201.10/assets/study110.css">
+<link rel="stylesheet" href="../Topic%201.11/assets/sampling111.css">
 </head>
 
 <body class="nav-sidebar docked quarto-light">
@@ -186,6 +187,11 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Topic%201.10/topic-1-10.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Topic 1.10 The Investigative Question Revisited and Data Collection</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Topic%201.11/topic-1-11.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Topic 1.11 Random Sampling</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -1007,6 +1013,17 @@ Sources
   if (!css) return;
   const script = document.createElement('script');
   script.src = css.href.replace(/study110\.css(?:\?.*)?$/, 'study110.js');
+  document.body.appendChild(script);
+})();
+</script>
+<script>
+(function () {
+  const css = Array.from(document.querySelectorAll('link[rel="stylesheet"]'))
+    .find(el => el.href.includes('/sampling111.css'));
+  if (!css) return;
+  const script = document.createElement('script');
+  script.src = css.href.replace(/sampling111\.css(?:\?.*)?$/, 'sampling111.js');
+  script.defer = true;
   document.body.appendChild(script);
 })();
 </script>

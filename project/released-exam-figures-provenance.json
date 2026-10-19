@@ -141,6 +141,40 @@
       "height": 913,
       "renderer": "PyMuPDF 1.26.7",
       "output": "Unit 1/Topic 1.9/assets/exam/ap26-q1-c.png"
+    },
+    "ap25-q2-stem": {
+      "source_url": "https://apcentral.collegeboard.org/media/pdf/ap25-frq-statistics.pdf",
+      "pdf_sha256": "28deae2e1311b32c6cbc3d1b61b33fa42022d7e08c39b0d716186fa243862c6c",
+      "pdf_page_index": 3,
+      "clip_points": [
+        45,
+        55,
+        570,
+        715
+      ],
+      "spec_sha256": "4a788d7f0c37af6cadb0b522d4d76ef6a4e36004ee28359627f37e6b28b04384",
+      "image_sha256": "91b685c4bc0f3a864d87e1dc94da4777238d750cdc2c99af2317791e42200c6c",
+      "width": 1313,
+      "height": 1651,
+      "renderer": "PyMuPDF 1.26.7",
+      "output": "Unit 1/Topic 1.11/assets/exam/ap25-q2-stem.png"
+    },
+    "ap25-q2-parts": {
+      "source_url": "https://apcentral.collegeboard.org/media/pdf/ap25-frq-statistics.pdf",
+      "pdf_sha256": "28deae2e1311b32c6cbc3d1b61b33fa42022d7e08c39b0d716186fa243862c6c",
+      "pdf_page_index": 4,
+      "clip_points": [
+        54,
+        50,
+        575,
+        285
+      ],
+      "spec_sha256": "3685f961f25c5866c2720831eb0e0d5f80586716c3f5c5ef821abc49e1c296a4",
+      "image_sha256": "393ecf36b38a5acb9e26ad46e5a14ff33c595c443e16f7c65334f85c2a7ce2f4",
+      "width": 1303,
+      "height": 588,
+      "renderer": "PyMuPDF 1.26.7",
+      "output": "Unit 1/Topic 1.11/assets/exam/ap25-q2-parts.png"
     }
   }
 }

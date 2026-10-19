@@ -1,0 +1,1296 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Topic 1.11 Random Sampling – AP Statistics: Learning from Data</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../Shared/practice.html" rel="next">
+<link href="../Topic%201.10/topic-1-10.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+
+<link href="../../site_libs/bootstrap/bootstrap-32359d20a4566ecd55646a04b55657ce.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../Shared/assets/site.css">
+<link rel="stylesheet" href="../Topic%201.1/assets/foundations.css">
+<link rel="stylesheet" href="../Topic%201.3/assets/categorical-tables.css">
+<link rel="stylesheet" href="../Topic%201.4/assets/categorical-charts.css">
+<link rel="stylesheet" href="../Topic%201.2/assets/variables.css">
+<link rel="stylesheet" href="../../site/assets/navigation.css">
+<link rel="stylesheet" href="../../site/assets/student-presentation.css">
+<link rel="stylesheet" href="../../Problem%20Bank/assets/practice.css">
+<link rel="stylesheet" href="../../Problem%20Bank/assets/original-practice.css">
+<link rel="stylesheet" href="../Topic%201.7/assets/summary17.css">
+<link rel="stylesheet" href="../Topic%201.8/assets/box18.css">
+<link rel="stylesheet" href="../Topic%201.9/assets/compare19.css">
+<link rel="stylesheet" href="../Topic%201.10/assets/study110.css">
+<link rel="stylesheet" href="assets/sampling111.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../unit-1.html">Unit 1: Exploring One-Variable Data and Collecting Data</a></li><li class="breadcrumb-item"><a href="topic-1-11.html"><span class="chapter-title">Topic 1.11 Random Sampling</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../..">Maple Hill School</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Welcome</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../unit-1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Unit 1: Exploring One-Variable Data and Collecting Data</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Topic%201.1/topic-1-1.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Topic 1.1 Introducing Statistics: What Can We Learn from Data?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Topic%201.2/topic-1-2.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Topic 1.2 Variables</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Topic%201.3/topic-1-3.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Topic 1.3 Tabular Representation and Summary Statistics for One Categorical Variable</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Topic%201.4/topic-1-4.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Topic 1.4 Graphical Representations for One Categorical Variable</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Topic%201.5/topic-1-5.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Topic 1.5 Graphical Representations for One Quantitative Variable</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Topic%201.6/topic-1-6.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Topic 1.6 Descriptions for One Quantitative Variable Distributions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Topic%201.7/topic-1-7.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Topic 1.7 Summary Statistics for One Quantitative Variable</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Topic%201.8/topic-1-8.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Topic 1.8 Graphical Representations of Summary Statistics for One Quantitative Variable</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Topic%201.9/topic-1-9.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Topic 1.9 Comparisons of the Distributions for One Quantitative Variable</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Topic%201.10/topic-1-10.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Topic 1.10 The Investigative Question Revisited and Data Collection</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="topic-1-11.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Topic 1.11 Random Sampling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Shared/practice.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Practice and solutions</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Unit%202/unit-2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Unit 2: Probability, Random Variables, and Probability Distributions</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Unit%203/unit-3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Unit 3: Inference for Categorical Data: Proportions</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Unit%204/unit-4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Unit 4: Inference for Quantitative Data: Means</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Unit%205/unit-5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Unit 5: Regression Analysis</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Problem%20Bank/practice.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Problem Bank: Selected Homework</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sources and study resources</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul class="collapse">
+  <li><a href="#frame-111" id="toc-frame-111" class="nav-link active" data-scroll-target="#frame-111">1. The sampling frame and the random mechanism</a></li>
+  <li><a href="#replacement-111" id="toc-replacement-111" class="nav-link" data-scroll-target="#replacement-111">2. Replacement changes the experiment</a></li>
+  <li><a href="#srs-111" id="toc-srs-111" class="nav-link" data-scroll-target="#srs-111">3. Simple random sampling: equal chances for whole samples</a></li>
+  <li><a href="#designs-111" id="toc-designs-111" class="nav-link" data-scroll-target="#designs-111">4. Stratified, cluster, and systematic designs</a></li>
+  <li><a href="#lab-111" id="toc-lab-111" class="nav-link" data-scroll-target="#lab-111">5. Interactive sampling laboratory</a></li>
+  <li><a href="#choice-111" id="toc-choice-111" class="nav-link" data-scroll-target="#choice-111">6. Decide which sampling design fits the question</a></li>
+  <li><a href="#exam-111" id="toc-exam-111" class="nav-link" data-scroll-target="#exam-111">7. Released AP examination example</a></li>
+  <li><a href="#practice-111" id="toc-practice-111" class="nav-link" data-scroll-target="#practice-111">Practice</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../unit-1.html">Unit 1: Exploring One-Variable Data and Collecting Data</a></li><li class="breadcrumb-item"><a href="topic-1-11.html"><span class="chapter-title">Topic 1.11 Random Sampling</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-title">Topic 1.11 Random Sampling</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Suppose a school wants to estimate the <strong>mean one-way travel time</strong> among all its students. Asking only people who happen to arrive early may produce a convenient list of times, but it gives many other students no chance to be included. A <strong>sampling design</strong> specifies exactly how people enter the sample <em>before</em> their travel times are examined. This chapter compares five ways to select observations and explains what each design achieves.</p>
+<p>The essential questions are: Which groups should be created before drawing? <strong>What exactly is selected at random?</strong> Who is measured after selection? Those choices determine whether the design is a simple random, stratified, cluster, or systematic sample. We will also distinguish drawing <strong>with</strong> and <strong>without replacement</strong>.</p>
+<section id="frame-111" class="level2">
+<h2 class="anchored" data-anchor-id="frame-111">1. The sampling frame and the random mechanism</h2>
+<p>Start with three distinct objects. The <strong>target population</strong> is the group the investigation is about. The <strong>sampling frame</strong> is the list, map, or other mechanism through which eligible units can be reached. The <strong>sample</strong> is the subset of observational units ultimately measured. For a current school enrollment study, the frame might be the official enrollment roster. If the roster excludes some students, even a perfectly random selection from that frame will not reach the missing students.</p>
+<p>Give every eligible student a unique roster number. A reproducible selection procedure must state the possible numbers, the random device, how many are selected, what happens to repeats, and how the corresponding students are contacted. A random digit <strong>by itself</strong> does not identify a complete sampling plan.</p>
+<p><strong>Random selection is not random assignment.</strong> In a survey, the researcher selects people to <em>observe</em>. In an experiment, a researcher may assign treatments <em>after</em> people enter the study. Selecting a random sample can strengthen population generalization; assigning treatments by chance is a different step that helps assess causation. A larger nonrandom sample cannot replace a sound selection mechanism.</p>
+</section>
+<section id="replacement-111" class="level2">
+<h2 class="anchored" data-anchor-id="replacement-111">2. Replacement changes the experiment</h2>
+<p>A draw <strong>without replacement</strong> removes the selected individual from the pool for the rest of the sample: no individual appears twice. A draw <strong>with replacement</strong> returns that individual to the pool before the next draw, so a repeated ID is possible. The latter is often used when a random mechanism repeatedly samples from the same list; it is <strong>not</strong> a sample of distinct people when a label repeats.</p>
+<p>For example, randomly select three slips labelled A, B, C from a bag. Without replacement, three draws must produce all three labels in some order. With replacement, a valid sequence might be A, A, C. A previously selected individual does not become less likely on the next draw when every draw begins with the same bag.</p>
+<p>For a uniform independent draw <strong>with replacement</strong> from <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math> labelled units, the chance that the next draw repeats a particular previously selected unit is</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false" form="prefix">(</mo><mtext mathvariant="normal">next draw is that unit</mtext><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mfrac><mn>1</mn><mi>N</mi></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">
+P(\text{next draw is that unit})=\frac{1}{N}.
+</annotation></semantics></math></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Optional derivation: why <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><mi>N</mi></mrow><annotation encoding="application/x-tex">1/N</annotation></semantics></math>?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>A properly mixed pool has <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math> equally likely labels on <em>each</em> draw. Exactly one label equals the specified earlier label, so the favorable fraction is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><mi>N</mi></mrow><annotation encoding="application/x-tex">1/N</annotation></semantics></math>. The calculation assumes the pool is restored and each new draw is uniform. Without replacement, a just-selected label has probability zero of reappearing.</p>
+</div>
+</div>
+</div>
+<p><strong>Checkpoint.</strong> If two samples each contain six draws and only one includes the same person twice, which sample definitely used replacement? The duplicate could occur only when replacement was permitted; a sample with no duplicates <strong>might still</strong> have used replacement.</p>
+</section>
+<section id="srs-111" class="level2">
+<h2 class="anchored" data-anchor-id="srs-111">3. Simple random sampling: equal chances for whole samples</h2>
+<p>A <strong>simple random sample (SRS) of size <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math></strong> from a population of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math> distinct units assigns <em>every possible group of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math> different units</em> the <strong>same probability</strong>. The equality concerns the possible <strong>sets</strong>, not merely the chance each person has of being selected. One familiar implementation is to generate <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math> distinct roster numbers uniformly at random, rejecting repeated numbers until the required number of unique students is obtained.</p>
+<p>For example, among six students A through F, an SRS of two could yield AB, AC, AD, AE, AF, BC, BD, BE, BF, CD, CE, CF, DE, DF, or EF. There are 15 possible pairs, and a proper SRS gives <strong>each pair</strong> probability <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><mn>15</mn></mrow><annotation encoding="application/x-tex">1/15</annotation></semantics></math>. Giving each individual a one-third chance of inclusion is necessary here, but by itself does not prove that all fifteen pairs have equal chances.</p>
+<p>If the mechanism is an SRS without replacement and <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>≤</mo><mi>n</mi><mo>≤</mo><mi>N</mi></mrow><annotation encoding="application/x-tex">0\le n\le N</annotation></semantics></math>, the number of possible unordered groups and each particular group’s probability are</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mfrac linethickness="0"><mi>N</mi><mi>n</mi></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mfrac><mrow><mi>N</mi><mi>!</mi></mrow><mrow><mi>n</mi><mi>!</mi><mo stretchy="false" form="prefix">(</mo><mi>N</mi><mo>−</mo><mi>n</mi><mo stretchy="false" form="postfix">)</mo><mi>!</mi></mrow></mfrac><mo>,</mo><mspace width="2.0em"></mspace><mi>P</mi><mo stretchy="false" form="prefix">(</mo><mtext mathvariant="normal">particular SRS group</mtext><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mfrac><mn>1</mn><mrow><mo stretchy="true" form="prefix">(</mo><mfrac linethickness="0"><mi>N</mi><mi>n</mi></mfrac><mo stretchy="true" form="postfix">)</mo></mrow></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\binom{N}{n}=\frac{N!}{n!(N-n)!},\qquad
+P(\text{particular SRS group})=\frac{1}{\binom{N}{n}}.
+</annotation></semantics></math></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Optional derivation: counting equally likely samples
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>There are <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo stretchy="false" form="prefix">(</mo><mi>N</mi><mo>−</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mi>⋯</mi><mo stretchy="false" form="prefix">(</mo><mi>N</mi><mo>−</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">N(N-1)\cdots(N-n+1)</annotation></semantics></math> <strong>ordered</strong> draws without replacement. Each unordered set is counted <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mi>!</mi></mrow><annotation encoding="application/x-tex">n!</annotation></semantics></math> times, once per order. Dividing gives <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><mfrac linethickness="0"><mi>N</mi><mi>n</mi></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\binom{N}{n}</annotation></semantics></math>. Because each ordered sequence has equal probability, each unordered set also does. The reciprocal is the probability of any particular group. This counting derivation is enrichment; the AP skill is recognizing and implementing an SRS correctly.</p>
+</div>
+</div>
+</div>
+<p><strong>Worked example.</strong> A club has 20 members. To select an SRS of five, label members 01 through 20; use a random-integer generator for five <em>distinct</em> numbers from 01–20; contact the members attached to those numbers. Accepting duplicates as additional distinct people, or taking the first five who respond to an open invitation, would <strong>not</strong> be that SRS.</p>
+</section>
+<section id="designs-111" class="level2">
+<h2 class="anchored" data-anchor-id="designs-111">4. Stratified, cluster, and systematic designs</h2>
+<section id="stratified-111" class="level3">
+<h3 class="anchored" data-anchor-id="stratified-111">Stratified random sample: sample <strong>inside every group</strong></h3>
+<p>Divide the population into <strong>nonoverlapping strata</strong> whose members share a relevant characteristic: grade, geographic region, or another factor related to the response. Select an <strong>SRS within each stratum</strong>, then pool those selections. Every stratum contributes some observations. If commute time differs by grade, taking two students at random from each of three grades ensures that all three grades appear in the sample.</p>
+<p>Strata are often chosen to be <strong>relatively homogeneous within each stratum</strong> on a characteristic relevant to the outcome. This design can provide more stable estimates and ensures subgroup coverage. Sampling fractions need not be equal; if some strata are oversampled, a simple unweighted sample mean may not represent the population mean. Appropriate population weights then matter.</p>
+</section>
+<section id="cluster-111" class="level3">
+<h3 class="anchored" data-anchor-id="cluster-111">Cluster random sample: sample <strong>groups, then everyone inside</strong></h3>
+<p>Divide the population into <strong>clusters</strong>—naturally occurring groups such as classrooms, city blocks, or advisory groups. Choose an <strong>SRS of clusters</strong>, then measure <strong>all individuals in every selected cluster</strong>. Each cluster ideally represents a miniature mix of the full population, with clusters broadly comparable. Sampling one randomly chosen advisory group is cheaper than finding scattered students across the entire campus.</p>
+<p>Do not confuse a cluster sample with a stratified sample. A stratified plan draws some individuals <strong>from every stratum</strong>; a one-stage cluster plan chooses <strong>some clusters and includes everyone in those chosen groups</strong>. A plan that randomly chooses clusters <em>and then samples within them</em> is a <strong>two-stage cluster design</strong>, an additional technique, not the one-stage definition in this topic.</p>
+</section>
+<section id="systematic-111" class="level3">
+<h3 class="anchored" data-anchor-id="systematic-111">Systematic random sample: a random start, then fixed steps</h3>
+<p>Arrange the <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math> units in a meaningful list, randomly select the starting position among the first <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math> positions, and take every <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>-th unit after that. When <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math> is divisible by the intended sample size <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>, a common step size is</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>=</mo><mfrac><mi>N</mi><mi>n</mi></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">
+k=\frac{N}{n}.
+</annotation></semantics></math></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Why this choice of interval? — Design rationale
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>For an ordered list of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math> entries, choosing every <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>-th entry yields approximately <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mi>/</mi><mi>k</mi></mrow><annotation encoding="application/x-tex">N/k</annotation></semantics></math> selections. When <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math> divides evenly into <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math> groups, choosing <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>=</mo><mi>N</mi><mi>/</mi><mi>n</mi></mrow><annotation encoding="application/x-tex">k=N/n</annotation></semantics></math> and a start among <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>,</mo><mi>…</mi><mo>,</mo><mi>k</mi></mrow><annotation encoding="application/x-tex">1,\ldots,k</annotation></semantics></math> gives exactly <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math> positions. This is a sampling-design choice, not a universal formula when <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mi>/</mi><mi>n</mi></mrow><annotation encoding="application/x-tex">N/n</annotation></semantics></math> is nonintegral or the list has a different structure.</p>
+</div>
+</div>
+</div>
+<p>For <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>=</mo><mn>36</mn></mrow><annotation encoding="application/x-tex">N=36</annotation></semantics></math> and <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">n=6</annotation></semantics></math>, use <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>=</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">k=6</annotation></semantics></math>. If a fair random start is 4, the selected roster positions are <strong>4, 10, 16, 22, 28, and 34</strong>. Picking position 4 deliberately every time is <em>not</em> a random start. An ordered roster with an underlying cycle of six could cause this design to select a very unrepresentative mix even though the start was random.</p>
+</section>
+</section>
+<section id="lab-111" class="level2">
+<h2 class="anchored" data-anchor-id="lab-111">5. Interactive sampling laboratory</h2>
+<p>Explore a model school with <strong>36 students</strong> in six advisory groups of six. Grade A, B, and C students appear twice in each advisory group. The figures inside each cell are one-way travel times, measured in minutes. The population mean is <strong>17 minutes</strong>.</p>
+<p>Before drawing, <strong>predict the representation</strong>: Which method guarantees that all three grades contribute? With this particular roster order, which method picks six people from just one grade? Which method measures everybody in one selected advisory group?</p>
+<div class="sampling111" data-sampling111="">
+  <div class="sampling111-controls">
+    <label>Sampling method
+      <select data-s111-method="">
+        <option value="srs">Simple random sample (six distinct students)</option>
+        <option value="stratified">Stratified: two from each grade</option>
+        <option value="cluster">Cluster: one entire advisory group</option>
+        <option value="systematic">Systematic: random start, every sixth student</option>
+        <option value="replacement">Six independent draws with replacement</option>
+      </select>
+    </label>
+    <label>Reproducible random seed
+      <input data-s111-seed="" type="number" min="1" max="999999" step="1" value="1729">
+    </label>
+  </div>
+  <div class="sampling111-actions">
+    <button type="button" data-s111-step="">Reveal next selection</button>
+    <button type="button" data-s111-all="">Show entire sample</button>
+    <button type="button" data-s111-reset="">Reset experiment</button>
+  </div>
+  <p data-s111-status="" role="status" aria-live="polite">Ready. Choose a method, predict the result, and reveal the selections.</p>
+  <div data-s111-grid="" class="sampling111-grid" role="list" aria-label="36 labelled population units, organised into six advisory groups"></div>
+  <p data-s111-summary="" aria-live="polite">All 36 students are available.</p>
+  <div data-s111-explanation="" class="sampling111-explanation">Every cell records its roster number, advisory group, grade, and travel time. Selection highlights will also be described in the text summary.</div>
+</div>
+<p><strong>Read the result, not just the colors.</strong> The tool reports the actual selected IDs, number of <em>different students</em>, grade representation, and sample mean. With replacement, repeated draws show a visible <strong>×2 draws</strong> marker (or larger count) on the affected student, as well as repeated IDs in the text summary. Try changing the seed and notice that an SRS does not guarantee identical grade counts; stratification does. Each advisory group deliberately contains a grade mix, so a one-advisory cluster sample does include all three grades. In contrast, these roster positions repeat the same grade pattern every six entries: the systematic sample selects only one grade. This is a feature of <strong>this roster order</strong>, illustrating why order should be inspected before systematic sampling.</p>
+<p>A random sample need not resemble the population perfectly in one draw. Repeating the process can produce different answers through <strong>sampling variability</strong>. That is not itself evidence that the random-number generator is flawed. A bad frame or measurement process can introduce a different problem, <strong>bias</strong>, even with a very large sample; Topic 1.12 develops these distinctions.</p>
+<p><strong>Static example to check by hand.</strong> For a systematic design with start 4 and interval 6, select IDs 04, 10, 16, 22, 28, 34. These are all Grade A in this roster pattern. Their travel times are 10, 12, 14, 10, 12, 14 minutes, so their mean is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>72</mn><mi>/</mi><mn>6</mn><mo>=</mo><mn>12</mn></mrow><annotation encoding="application/x-tex">72/6=12</annotation></semantics></math> minutes, below the population mean of 17. Another random start can give a different grade and a different result. <strong>A disappointing single sample does not establish that the sample mean is biased over repeated random starts.</strong> In fact, because the starting position is uniformly chosen from 1 through 6, this particular systematic design produces the following six equally likely sample means:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 30%">
+<col style="width: 38%">
+<col style="width: 30%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Random starting position</th>
+<th style="text-align: center;">Grade of all six selected students</th>
+<th style="text-align: right;">Sample mean (minutes)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: right;">16</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td style="text-align: center;">C</td>
+<td style="text-align: right;">22</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: right;">12</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: right;">18</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">6</td>
+<td style="text-align: center;">C</td>
+<td style="text-align: right;">24</td>
+</tr>
+</tbody>
+</table>
+<p>Across repeated <em>fairly randomized starts</em>, the average of these possible sample means is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>10</mn><mo>+</mo><mn>16</mn><mo>+</mo><mn>22</mn><mo>+</mo><mn>12</mn><mo>+</mo><mn>18</mn><mo>+</mo><mn>24</mn><mo stretchy="false" form="postfix">)</mo><mi>/</mi><mn>6</mn><mo>=</mo><mn>17</mn></mrow><annotation encoding="application/x-tex">(10+16+22+12+18+24)/6=17</annotation></semantics></math> minutes—the actual population mean. Thus the estimator is <strong>unbiased in this example</strong>, even though a single systematic sample could be as low as 10 or as high as 24 minutes. <strong>Lack of bias does not imply low variability or a representative individual sample.</strong> The periodic roster produces high sampling variability because it selects only one grade each time.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Optional derivation: why this random-start mean is unbiased here
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Let <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>x</mi><mn>36</mn></msub></mrow><annotation encoding="application/x-tex">x_1,\ldots,x_{36}</annotation></semantics></math> denote the 36 travel times. If start <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>∈</mo><mo stretchy="false" form="prefix">{</mo><mn>1</mn><mo>,</mo><mi>…</mi><mo>,</mo><mn>6</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">r\in\{1,\ldots,6\}</annotation></semantics></math> is equally likely, the corresponding sample mean is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mover><mi>x</mi><mo accent="true">‾</mo></mover><mi>r</mi></msub><mo>=</mo><mfrac><mn>1</mn><mn>6</mn></mfrac><msubsup><mo>∑</mo><mrow><mi>j</mi><mo>=</mo><mn>0</mn></mrow><mn>5</mn></msubsup><msub><mi>x</mi><mrow><mi>r</mi><mo>+</mo><mn>6</mn><mi>j</mi></mrow></msub></mrow><annotation encoding="application/x-tex">\bar{x}_r=\frac{1}{6}\sum_{j=0}^{5}x_{r+6j}</annotation></semantics></math>. Its expected value over the six starting positions is</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><mi>E</mi><mo stretchy="false" form="prefix">(</mo><mover><mi>X</mi><mo accent="true">‾</mo></mover><mo stretchy="false" form="postfix">)</mo></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mfrac><mn>1</mn><mn>6</mn></mfrac><munderover><mo>∑</mo><mrow><mi>r</mi><mo>=</mo><mn>1</mn></mrow><mn>6</mn></munderover><msub><mover><mi>x</mi><mo accent="true">‾</mo></mover><mi>r</mi></msub></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mfrac><mn>1</mn><mn>6</mn></mfrac><mo>⋅</mo><mfrac><mn>1</mn><mn>6</mn></mfrac><munderover><mo>∑</mo><mrow><mi>r</mi><mo>=</mo><mn>1</mn></mrow><mn>6</mn></munderover><munderover><mo>∑</mo><mrow><mi>j</mi><mo>=</mo><mn>0</mn></mrow><mn>5</mn></munderover><msub><mi>x</mi><mrow><mi>r</mi><mo>+</mo><mn>6</mn><mi>j</mi></mrow></msub></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mfrac><mn>1</mn><mn>36</mn></mfrac><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mn>36</mn></munderover><msub><mi>x</mi><mi>i</mi></msub><mo>=</mo><mi>μ</mi><mo>=</mo><mn>17</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> minutes</mtext></mrow><mi>.</mi></mtd></mtr></mtable><annotation encoding="application/x-tex">
+\begin{aligned}
+E(\bar{X})
+&amp;=\frac{1}{6}\sum_{r=1}^{6}\bar{x}_r\\
+&amp;=\frac{1}{6}\cdot\frac{1}{6}\sum_{r=1}^{6}\sum_{j=0}^{5}x_{r+6j}\\
+&amp;=\frac{1}{36}\sum_{i=1}^{36}x_i=\mu=17\text{ minutes}.
+\end{aligned}
+</annotation></semantics></math></p>
+<p>Each of the 36 population members appears once across the six possible starting positions. This proof depends on a <strong>uniform random start</strong> and an evenly divisible list; it does not claim that systematic samples have the same variability as SRS, nor that a particular sample must be typical. Expected-value algebra is optional enrichment for this topic.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="choice-111" class="level2">
+<h2 class="anchored" data-anchor-id="choice-111">6. Decide which sampling design fits the question</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Need or constraint</th>
+<th style="text-align: left;">Often a defensible choice</th>
+<th style="text-align: left;">Why</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">A complete numbered roster and feasible individual contact</td>
+<td style="text-align: left;">SRS</td>
+<td style="text-align: left;">Every fixed-size group has equal chance.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Reliable estimates for each grade, including a small grade</td>
+<td style="text-align: left;">Stratified sample</td>
+<td style="text-align: left;">Randomly sample within <strong>each</strong> relevant grade; consider appropriate weights for overall estimates.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Visiting individuals is costly, but complete classrooms are easy to survey</td>
+<td style="text-align: left;">Cluster sample</td>
+<td style="text-align: left;">Randomly choose classrooms and measure everyone in selected classrooms; clustering can increase uncertainty if classmates resemble one another.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Units are listed in a sensible order without an outcome-related repeating cycle</td>
+<td style="text-align: left;">Systematic sample</td>
+<td style="text-align: left;">A random start plus fixed interval is efficient to implement.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Ethical collection</strong> still matters after selection: protect responses, invite participation appropriately, use clear questions and respect refusals. Do not use a random-number generator as an excuse to ignore consent or confidentiality. A design should fit its research question, population, logistical limitations, and data quality—not merely have a random component somewhere.</p>
+<p><strong>Quick synthesis.</strong> An SRS randomizes <em>individual groups of fixed size</em>; a stratified design samples <em>within every stratum</em>; a cluster design samples <em>entire randomly chosen groups</em>; a systematic design selects <em>periodic list positions after a random start</em>. Replacement changes whether a unit can appear again. Explain <strong>who</strong> is selected, <strong>how</strong>, and <strong>why</strong> the design serves the investigator’s question.</p>
+</section>
+<section id="exam-111" class="level2">
+<h2 class="anchored" data-anchor-id="exam-111">7. Released AP examination example</h2>
+<p>The 2025 AP Statistics <strong>Question 2</strong> considers an aphid survey in a cabbage field divided into 25 regions arranged in five rows. Examine the original released question alongside the explanation.</p>
+<div class="exam-source sampling111-source">
+  <figure class="figure"><a class="exam-enlarge" href="assets/exam/ap25-q2-stem.png" aria-label="Enlarge 2025 AP Statistics Question 2 diagram and sampling methods"><img src="assets/exam/ap25-q2-stem.png" alt="Original 2025 AP Statistics Question 2: map of 25 cabbage-field regions in five rows A through E, with river closest to row E; sampling plans include choosing nearby region 3, choosing an entire random row, and randomly choosing one region from each row." loading="lazy" class="figure-img"></a><figcaption>College Board · 2025 AP Statistics · Question 2, problem and diagram. Select to enlarge.</figcaption></figure>
+  <figure class="figure"><a class="exam-enlarge" href="assets/exam/ap25-q2-parts.png" aria-label="Enlarge 2025 AP Statistics Question 2 parts A through C"><img src="assets/exam/ap25-q2-parts.png" alt="Original 2025 AP Statistics Question 2, parts A through C, asking about convenience selection, likely direction of error from selecting row E and the procedure for randomly choosing one region in each row." loading="lazy" class="figure-img"></a><figcaption>College Board · 2025 AP Statistics · Question 2, parts A–C. Select to enlarge.</figcaption></figure>
+</div>
+<p><strong>Part A.</strong> Choosing region 3 merely because it is closest to the farmer’s house is <strong>convenience sampling</strong>; it is not a defensible random representation of the field. If damage is related to river distance, the estimate could be systematically low.</p>
+<p><strong>Part B.</strong> Randomly choosing a row and studying every plant in that row is a <strong>cluster sample of rows</strong>. In the reported draw, row E is nearest the river. Under the farmer’s stated hypothesis that aphid damage is higher nearer the river, <strong>that selected row is likely to give an overestimate</strong> of the damage proportion for the whole field. Random cluster selection does not make the resulting single cluster a perfect miniature of the field.</p>
+<p><strong>Part C.</strong> To implement the proposed sampling plan, form five strata (the five rows). For each row separately, number its five regions, use a uniform random integer from 1 to 5 (or equivalent fair slips), and select the corresponding region. Repeat independently for each row. Examine every cabbage plant in each chosen region. This selects exactly <strong>one region from each row</strong>, not five freely selected regions from the whole field. It is a stratified random selection of regions followed by complete measurement within selected regions.</p>
+<details>
+<summary>
+Accessible description of the released question
+</summary>
+<p>
+The field contains five rows A–E of five numbered regions each; row A is farthest from the river and row E closest. Method I always examines region 3. Method II randomly chooses one entire row. Method III independently randomly chooses one region from each row. The question asks which procedures can represent the field and how to implement the third method accurately.
+</p>
+</details>
+</section>
+<section id="practice-111" class="level2">
+<h2 class="anchored" data-anchor-id="practice-111">Practice</h2>
+<section class="original-practice" data-original-practice="1.11" data-bank-url="../../Problem%20Bank/original/unit-1/topic-1-11.json">
+<p class="original-loading">Loading practice…</p>
+<template data-practice-rich="" data-bank-revision="1.0">
+<article data-practice-id="MHS-U1-T111-001">
+<div data-field="prompt"><p>A researcher selects 5 different names uniformly at random from a
+roster of 20, so that every possible five-person subset has equal
+chance. This is a</p></div>
+<div data-field="hint"><p>The definition is about <em>all possible groups</em> of a fixed
+size.</p></div>
+<div data-field="solution"><p>B. Every group of five has equal chance, precisely the definition of
+a simple random sample (SRS).</p></div>
+<div data-field="rubric"></div>
+<div data-field="option-A"><p>systematic sample</p></div>
+<div data-field="option-B"><p>simple random sample</p></div>
+<div data-field="option-C"><p>convenience sample</p></div>
+<div data-field="option-D"><p>cluster sample</p></div>
+</article>
+<article data-practice-id="MHS-U1-T111-002">
+<div data-field="prompt"><p>A fair app draws one student ID from 01–12, records it, returns it to
+the pool and repeats. Which result is possible?</p></div>
+<div data-field="hint"><p>Ask whether a previously drawn ID was removed.</p></div>
+<div data-field="solution"><p>C. Sampling <em>with replacement</em> restores the complete pool
+after each draw, so the same student ID may recur.</p></div>
+<div data-field="rubric"></div>
+<div data-field="option-A"><p>Only distinct IDs are possible.</p></div>
+<div data-field="option-B"><p>Each draw must alternate grades.</p></div>
+<div data-field="option-C"><p>An ID may appear twice or more.</p></div>
+<div data-field="option-D"><p>All 12 IDs must appear before any repeat.</p></div>
+</article>
+<article data-practice-id="MHS-U1-T111-003">
+<div data-field="prompt"><p>A school has grades A, B and C. The researcher chooses a random
+sample of 10 students <em>within each grade</em> and combines them.
+Which design is this?</p></div>
+<div data-field="hint"><p>Were <em>all</em> groups represented by within-group samples?</p></div>
+<div data-field="solution"><p>D. Grades are the strata; a separate random sample is selected inside
+<strong>each</strong> grade.</p></div>
+<div data-field="rubric"></div>
+<div data-field="option-A"><p>Cluster sampling</p></div>
+<div data-field="option-B"><p>Convenience sampling</p></div>
+<div data-field="option-C"><p>Systematic sampling</p></div>
+<div data-field="option-D"><p>Stratified random sampling</p></div>
+</article>
+<article data-practice-id="MHS-U1-T111-004">
+<div data-field="prompt"><p>A district randomly selects 4 of its 40 classrooms and surveys
+<strong>every student</strong> in the selected classrooms. Which design
+is this?</p></div>
+<div data-field="hint"><p>What was randomly selected: whole classrooms or students within each
+classroom?</p></div>
+<div data-field="solution"><p>A. Classrooms are clusters. An SRS of classrooms is chosen, and
+<strong>all</strong> their students are surveyed.</p></div>
+<div data-field="rubric"></div>
+<div data-field="option-A"><p>Cluster random sample</p></div>
+<div data-field="option-B"><p>Stratified random sample</p></div>
+<div data-field="option-C"><p>Simple random sample of individual students</p></div>
+<div data-field="option-D"><p>Systematic random sample</p></div>
+</article>
+<article data-practice-id="MHS-U1-T111-005">
+<div data-field="prompt"><p>There are 36 student IDs arranged in a list. A systematic sample of
+six uses an evenly spaced interval
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>=</mo><mi>N</mi><mi>/</mi><mi>n</mi></mrow><annotation encoding="application/x-tex">k=N/n</annotation></semantics></math>.
+Find
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>.</p></div>
+<div data-field="hint"><p>Divide population size by desired sample size.</p></div>
+<div data-field="solution"><p>The interval is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>=</mo><mn>36</mn><mi>/</mi><mn>6</mn><mo>=</mo><menclose notation="box"><mn>6</mn></menclose></mrow><annotation encoding="application/x-tex">k=36/6=\boxed{6}</annotation></semantics></math>.
+After a random starting position from 1 to 6, take every sixth ID.</p></div>
+<div data-field="rubric"></div>
+</article>
+<article data-practice-id="MHS-U1-T111-006">
+<div data-field="prompt"><p>An SRS of two students is drawn from six labelled students. How many
+distinct <em>unordered</em> two-person groups are possible?</p></div>
+<div data-field="hint"><p>AB and BA are one group. Count 6 first choices and 5 second choices,
+then account for duplicate orderings.</p></div>
+<div data-field="solution"><p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mfrac linethickness="0"><mn>6</mn><mn>2</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mfrac><mrow><mn>6</mn><mo>⋅</mo><mn>5</mn></mrow><mrow><mn>2</mn><mo>⋅</mo><mn>1</mn></mrow></mfrac><mo>=</mo><menclose notation="box"><mn>15</mn></menclose></mrow><annotation encoding="application/x-tex">\binom{6}{2}=\frac{6\cdot5}{2\cdot1}=\boxed{15}</annotation></semantics></math>
+possible unordered pairs.</p></div>
+<div data-field="rubric"></div>
+</article>
+<article data-practice-id="MHS-U1-T111-007">
+<div data-field="prompt"><p>Describe a valid SRS procedure for selecting six different students
+from a roster of 36. Include the labels, random device, and treatment of
+repeated labels.</p></div>
+<div data-field="hint"><p>Specify the possible random integers and say exactly how you obtain
+six <strong>distinct</strong> labels.</p></div>
+<div data-field="solution"><p>Number the rostered students 01–36. Use a random integer generator
+that assigns equal chance to 1 through 36. Keep each newly generated ID;
+reject repeated IDs and continue until six <strong>distinct</strong> IDs
+have been chosen. Survey those six students. Equivalently, shuffle all
+36 IDs fairly and take the first six. This makes every unordered
+six-person subset equally likely.</p></div>
+<div data-field="rubric"><p>Credit a complete eligible roster, uniformly random selection,
+unambiguous handling of repeats, and six distinct students. An arbitrary
+fixed list, first six volunteers or prechosen start is not an SRS.</p></div>
+</article>
+<article data-practice-id="MHS-U1-T111-008">
+<div data-field="prompt"><p>The roster is grouped into six repeating blocks of six positions with
+grades A, B, C, A, B, C. A researcher uses systematic selection of every
+sixth name after a random start from 1 through 6. Explain one strength
+and one problem with this method.</p></div>
+<div data-field="hint"><p>Compare equal chance of each <em>position</em> with the grades that
+appear in a given realized sample.</p></div>
+<div data-field="solution"><p>The random start gives every roster position the same probability,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><mn>6</mn></mrow><annotation encoding="application/x-tex">1/6</annotation></semantics></math>,
+of appearing and is fast to implement. However, all six selected
+positions share the same position in the repeating block and therefore
+all belong to the same grade. If travel time differs by grade, the
+sample may have high variability from one random start to another and
+give poor grade representation. The risk comes from the ordering
+pattern; a random start does not guarantee balance.</p></div>
+<div data-field="rubric"><p>Identify both a legitimate procedural strength (random start,
+efficient, known inclusion pattern) and the systematic periodicity
+hazard linked explicitly to grade and the survey outcome. Do not claim
+that random systematic selection is always biased in one direction.</p></div>
+</article>
+<article data-practice-id="MHS-U1-T111-009">
+<div data-field="prompt"><p>An orchard has 25 plots arranged in five rows from north to south.
+Explain how to choose a stratified random sample of five plots with one
+plot from <em>each row</em> using a random-number generator.</p></div>
+<div data-field="hint"><p>A single sample of five plots from all 25 does not guarantee one from
+each row.</p></div>
+<div data-field="solution"><p>Treat the five rows as distinct strata. Number the five plots in each
+row 1 through 5. Generate <strong>one independent uniform random integer
+1–5 in each row</strong>, select the corresponding plot, and examine it.
+This produces exactly one selected plot per row, while each plot in a
+row has an equal selection chance.</p></div>
+<div data-field="rubric"><p>Must specify rows as strata; select separately and independently
+within each row; use a clearly uniform mechanism from five plots; and
+collect one selected plot per row. Arbitrary choices or one SRS of five
+from the whole orchard do not satisfy the design.</p></div>
+</article>
+<article data-practice-id="MHS-U1-T111-010">
+<div data-field="prompt"><p>A city needs average transit-wait times by neighbourhood, and
+residents of each neighbourhood vary substantially in age. Compare two
+options: (I) randomly select a few whole neighbourhoods and survey all
+their residents or (II) select a random set of residents <em>within
+every neighbourhood</em>. Recommend one for accurate neighbourhood-level
+summaries, naming both designs.</p></div>
+<div data-field="hint"><p>Think about whether every neighbourhood contributes data.</p></div>
+<div data-field="solution"><p>Option I is a <strong>cluster sample</strong> of neighbourhoods. It
+is cheaper when visiting whole neighbourhoods, but unsampled
+neighbourhoods supply no direct information, making
+neighbourhood-by-neighbourhood reporting impossible. Option II is a
+<strong>stratified random sample</strong>, with neighbourhoods as strata
+and separate random selections within each. It is better for
+neighbourhood-specific estimates because every neighbourhood contributes
+observations; sample sizes and weighting must be planned if estimating
+the whole city.</p></div>
+<div data-field="rubric"><p>Correctly identify cluster and stratified sampling, recommend option
+II for comparisons by neighbourhood, and explain why each neighbourhood
+must contribute sampled residents. Cost tradeoffs and citywide weighting
+should be acknowledged if discussed.</p></div>
+</article>
+</template><noscript><div class="original-nojs"><ol>
+<li><strong>Question 1</strong><p>A researcher selects 5 different names uniformly at random from a
+roster of 20, so that every possible five-person subset has equal
+chance. This is a</p>
+<div><strong>A.</strong> <p>systematic sample</p></div>
+<div><strong>B.</strong> <p>simple random sample</p></div>
+<div><strong>C.</strong> <p>convenience sample</p></div>
+<div><strong>D.</strong> <p>cluster sample</p></div>
+<details><summary>Show solution</summary><p>B. Every group of five has equal chance, precisely the definition of
+a simple random sample (SRS).</p>
+</details></li>
+<li><strong>Question 2</strong><p>A fair app draws one student ID from 01–12, records it, returns it to
+the pool and repeats. Which result is possible?</p>
+<div><strong>A.</strong> <p>Only distinct IDs are possible.</p></div>
+<div><strong>B.</strong> <p>Each draw must alternate grades.</p></div>
+<div><strong>C.</strong> <p>An ID may appear twice or more.</p></div>
+<div><strong>D.</strong> <p>All 12 IDs must appear before any repeat.</p></div>
+<details><summary>Show solution</summary><p>C. Sampling <em>with replacement</em> restores the complete pool
+after each draw, so the same student ID may recur.</p>
+</details></li>
+<li><strong>Question 3</strong><p>A school has grades A, B and C. The researcher chooses a random
+sample of 10 students <em>within each grade</em> and combines them.
+Which design is this?</p>
+<div><strong>A.</strong> <p>Cluster sampling</p></div>
+<div><strong>B.</strong> <p>Convenience sampling</p></div>
+<div><strong>C.</strong> <p>Systematic sampling</p></div>
+<div><strong>D.</strong> <p>Stratified random sampling</p></div>
+<details><summary>Show solution</summary><p>D. Grades are the strata; a separate random sample is selected inside
+<strong>each</strong> grade.</p>
+</details></li>
+<li><strong>Question 4</strong><p>A district randomly selects 4 of its 40 classrooms and surveys
+<strong>every student</strong> in the selected classrooms. Which design
+is this?</p>
+<div><strong>A.</strong> <p>Cluster random sample</p></div>
+<div><strong>B.</strong> <p>Stratified random sample</p></div>
+<div><strong>C.</strong> <p>Simple random sample of individual students</p></div>
+<div><strong>D.</strong> <p>Systematic random sample</p></div>
+<details><summary>Show solution</summary><p>A. Classrooms are clusters. An SRS of classrooms is chosen, and
+<strong>all</strong> their students are surveyed.</p>
+</details></li>
+<li><strong>Question 5</strong><p>There are 36 student IDs arranged in a list. A systematic sample of
+six uses an evenly spaced interval
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>=</mo><mi>N</mi><mi>/</mi><mi>n</mi></mrow><annotation encoding="application/x-tex">k=N/n</annotation></semantics></math>.
+Find
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>.</p>
+<details><summary>Show solution</summary><p>The interval is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>=</mo><mn>36</mn><mi>/</mi><mn>6</mn><mo>=</mo><menclose notation="box"><mn>6</mn></menclose></mrow><annotation encoding="application/x-tex">k=36/6=\boxed{6}</annotation></semantics></math>.
+After a random starting position from 1 to 6, take every sixth ID.</p>
+</details></li>
+<li><strong>Question 6</strong><p>An SRS of two students is drawn from six labelled students. How many
+distinct <em>unordered</em> two-person groups are possible?</p>
+<details><summary>Show solution</summary><p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mfrac linethickness="0"><mn>6</mn><mn>2</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mfrac><mrow><mn>6</mn><mo>⋅</mo><mn>5</mn></mrow><mrow><mn>2</mn><mo>⋅</mo><mn>1</mn></mrow></mfrac><mo>=</mo><menclose notation="box"><mn>15</mn></menclose></mrow><annotation encoding="application/x-tex">\binom{6}{2}=\frac{6\cdot5}{2\cdot1}=\boxed{15}</annotation></semantics></math>
+possible unordered pairs.</p>
+</details></li>
+<li><strong>Question 7</strong><p>Describe a valid SRS procedure for selecting six different students
+from a roster of 36. Include the labels, random device, and treatment of
+repeated labels.</p>
+<details><summary>Show solution</summary><p>Number the rostered students 01–36. Use a random integer generator
+that assigns equal chance to 1 through 36. Keep each newly generated ID;
+reject repeated IDs and continue until six <strong>distinct</strong> IDs
+have been chosen. Survey those six students. Equivalently, shuffle all
+36 IDs fairly and take the first six. This makes every unordered
+six-person subset equally likely.</p>
+<p>Credit a complete eligible roster, uniformly random selection,
+unambiguous handling of repeats, and six distinct students. An arbitrary
+fixed list, first six volunteers or prechosen start is not an SRS.</p>
+</details></li>
+<li><strong>Question 8</strong><p>The roster is grouped into six repeating blocks of six positions with
+grades A, B, C, A, B, C. A researcher uses systematic selection of every
+sixth name after a random start from 1 through 6. Explain one strength
+and one problem with this method.</p>
+<details><summary>Show solution</summary><p>The random start gives every roster position the same probability,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><mn>6</mn></mrow><annotation encoding="application/x-tex">1/6</annotation></semantics></math>,
+of appearing and is fast to implement. However, all six selected
+positions share the same position in the repeating block and therefore
+all belong to the same grade. If travel time differs by grade, the
+sample may have high variability from one random start to another and
+give poor grade representation. The risk comes from the ordering
+pattern; a random start does not guarantee balance.</p>
+<p>Identify both a legitimate procedural strength (random start,
+efficient, known inclusion pattern) and the systematic periodicity
+hazard linked explicitly to grade and the survey outcome. Do not claim
+that random systematic selection is always biased in one direction.</p>
+</details></li>
+<li><strong>Question 9</strong><p>An orchard has 25 plots arranged in five rows from north to south.
+Explain how to choose a stratified random sample of five plots with one
+plot from <em>each row</em> using a random-number generator.</p>
+<details><summary>Show solution</summary><p>Treat the five rows as distinct strata. Number the five plots in each
+row 1 through 5. Generate <strong>one independent uniform random integer
+1–5 in each row</strong>, select the corresponding plot, and examine it.
+This produces exactly one selected plot per row, while each plot in a
+row has an equal selection chance.</p>
+<p>Must specify rows as strata; select separately and independently
+within each row; use a clearly uniform mechanism from five plots; and
+collect one selected plot per row. Arbitrary choices or one SRS of five
+from the whole orchard do not satisfy the design.</p>
+</details></li>
+<li><strong>Question 10</strong><p>A city needs average transit-wait times by neighbourhood, and
+residents of each neighbourhood vary substantially in age. Compare two
+options: (I) randomly select a few whole neighbourhoods and survey all
+their residents or (II) select a random set of residents <em>within
+every neighbourhood</em>. Recommend one for accurate neighbourhood-level
+summaries, naming both designs.</p>
+<details><summary>Show solution</summary><p>Option I is a <strong>cluster sample</strong> of neighbourhoods. It
+is cheaper when visiting whole neighbourhoods, but unsampled
+neighbourhoods supply no direct information, making
+neighbourhood-by-neighbourhood reporting impossible. Option II is a
+<strong>stratified random sample</strong>, with neighbourhoods as strata
+and separate random selections within each. It is better for
+neighbourhood-specific estimates because every neighbourhood contributes
+observations; sample sizes and weighting must be planned if estimating
+the whole city.</p>
+<p>Correctly identify cluster and stratified sampling, recommend option
+II for comparisons by neighbourhood, and explain why each neighbourhood
+must contribute sampled residents. Cost tradeoffs and citywide weighting
+should be acknowledged if discussed.</p>
+</details></li>
+</ol></div></noscript></section>
+<details class="lesson-sources sampling111-sources">
+<summary>
+Sources
+</summary>
+<p>
+College Board, <a href="https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description-effective-fall-2026.pdf">AP Statistics Course and Exam Description (Fall 2026)</a>, Topic 1.11, pp.&nbsp;48–49; <a href="https://apcentral.collegeboard.org/media/pdf/ap25-frq-statistics.pdf">2025 released free-response questions</a>, Question 2; and <a href="https://apcentral.collegeboard.org/media/pdf/ap25-sg-statistics.pdf">2025 scoring guidelines</a>, Question 2. The sampling-laboratory data and original exercises are documented in this topic’s editable source directory.
+</p>
+</details>
+
+
+</section>
+
+</main> <!-- /main -->
+<script src="../Shared/assets/data.js"></script>
+<script src="../Shared/assets/site.js"></script>
+<script src="../Topic%201.1/assets/foundations.js"></script>
+<script src="../Topic%201.3/assets/categorical-tables.js"></script>
+<script src="../Topic%201.4/assets/categorical-charts.js"></script>
+<script src="../Shared/assets/foundations-data.js"></script>
+<script src="../Topic%201.2/assets/variables.js"></script>
+<script src="../../site/assets/navigation.js"></script>
+<script src="../../site/assets/student-presentation.js" defer=""></script>
+<script src="../../Problem%20Bank/assets/catalog.js"></script>
+<script src="../../Problem%20Bank/assets/practice.js"></script>
+<script src="../../Problem%20Bank/assets/original-practice.js"></script>
+<script src="../Topic%201.7/assets/summary17.js"></script>
+<script src="../Topic%201.8/assets/box18-math.js"></script>
+<script src="../Topic%201.8/assets/box18.js"></script>
+<script src="../Topic%201.9/assets/compare19-math.js"></script>
+<script src="../Topic%201.9/assets/compare19.js"></script>
+<script>
+(function () {
+  const css = Array.from(document.querySelectorAll('link[rel="stylesheet"]'))
+    .find(el => el.href.includes('/study110.css'));
+  if (!css) return;
+  const script = document.createElement('script');
+  script.src = css.href.replace(/study110\.css(?:\?.*)?$/, 'study110.js');
+  document.body.appendChild(script);
+})();
+</script>
+<script>
+(function () {
+  const css = Array.from(document.querySelectorAll('link[rel="stylesheet"]'))
+    .find(el => el.href.includes('/sampling111.css'));
+  if (!css) return;
+  const script = document.createElement('script');
+  script.src = css.href.replace(/sampling111\.css(?:\?.*)?$/, 'sampling111.js');
+  script.defer = true;
+  document.body.appendChild(script);
+})();
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/lichunubc\.github\.io\/ap_statistics\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../Topic%201.10/topic-1-10.html" class="pagination-link" aria-label="Topic 1.10 The Investigative Question Revisited and Data Collection">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Topic 1.10 The Investigative Question Revisited and Data Collection</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../Shared/practice.html" class="pagination-link" aria-label="Practice and solutions">
+        <span class="nav-page-text"><span class="chapter-title">Practice and solutions</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Maple Hill School · Chun Li</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>AP Statistics · Interactive course book</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

@@ -54,7 +54,7 @@
     "href": "Unit 1/unit-1.html#choose-a-topic",
     "title": "Unit 1: Exploring One-Variable Data and Collecting Data",
     "section": "",
-    "text": "Topic 1.1 Introducing Statistics: What Can We Learn from Data?\nQuestions, observational units, populations, samples, and evidence in context.\nOpen Topic 1.1 →\n\n\nTopic 1.2 Variables\nIdentify variables and summaries; classify categorical, discrete, and continuous values; investigate numerical category codes.\nOpen Topic 1.2 →\n\n\nTopic 1.3 Tabular Representation and Summary Statistics for One Categorical Variable\nBuild frequency and relative-frequency tables, use correct denominators, and justify contextual claims.\nOpen Topic 1.3 →\n\n\nTopic 1.4 Graphical Representations for One Categorical Variable\nBuild bar and pie charts, compare samples, and audit graphical claims.\nOpen Topic 1.4 →\n\n\nTopic 1.5 Graphical Representations for One Quantitative Variable\nBuild dotplots, stem-and-leaf plots and histograms; explore how bin widths change a display.\nOpen Topic 1.5 →\n\n\nTopic 1.6 Descriptions for One Quantitative Variable Distributions\nDescribe shape, center, spread and unusual features using graphical evidence.\nOpen Topic 1.6 →\n\n\nTopic 1.7 Summary Statistics for One Quantitative Variable\nLearn mean, quartiles, variation, two outlier screens, and unit conversion through a linked dotplot and practice.\nOpen Topic 1.7 →\n\n\nTopic 1.8 Graphical Representations of Summary Statistics for One Quantitative Variable\nConstruct five-number summaries and modified boxplots with a step-by-step linked graph; learn what a boxplot conceals and how mean and median relate to skewness.\nOpen Topic 1.8 →\n\n\nTopic 1.9 Comparisons of the Distributions for One Quantitative Variable\nCompare distribution shapes and summaries on common scales, and calculate standardized relative positions with z-scores.\nOpen Topic 1.9 →\n\n\nTopic 1.10 The Investigative Question Revisited and Data Collection\nBuild a precise statistical question, distinguish observational studies and experiments, and explore selection, treatment assignment, confounding and the limits of conclusions.\nOpen Topic 1.10 →",
+    "text": "Topic 1.1 Introducing Statistics: What Can We Learn from Data?\nQuestions, observational units, populations, samples, and evidence in context.\nOpen Topic 1.1 →\n\n\nTopic 1.2 Variables\nIdentify variables and summaries; classify categorical, discrete, and continuous values; investigate numerical category codes.\nOpen Topic 1.2 →\n\n\nTopic 1.3 Tabular Representation and Summary Statistics for One Categorical Variable\nBuild frequency and relative-frequency tables, use correct denominators, and justify contextual claims.\nOpen Topic 1.3 →\n\n\nTopic 1.4 Graphical Representations for One Categorical Variable\nBuild bar and pie charts, compare samples, and audit graphical claims.\nOpen Topic 1.4 →\n\n\nTopic 1.5 Graphical Representations for One Quantitative Variable\nBuild dotplots, stem-and-leaf plots and histograms; explore how bin widths change a display.\nOpen Topic 1.5 →\n\n\nTopic 1.6 Descriptions for One Quantitative Variable Distributions\nDescribe shape, center, spread and unusual features using graphical evidence.\nOpen Topic 1.6 →\n\n\nTopic 1.7 Summary Statistics for One Quantitative Variable\nLearn mean, quartiles, variation, two outlier screens, and unit conversion through a linked dotplot and practice.\nOpen Topic 1.7 →\n\n\nTopic 1.8 Graphical Representations of Summary Statistics for One Quantitative Variable\nConstruct five-number summaries and modified boxplots with a step-by-step linked graph; learn what a boxplot conceals and how mean and median relate to skewness.\nOpen Topic 1.8 →\n\n\nTopic 1.9 Comparisons of the Distributions for One Quantitative Variable\nCompare distribution shapes and summaries on common scales, and calculate standardized relative positions with z-scores.\nOpen Topic 1.9 →\n\n\nTopic 1.10 The Investigative Question Revisited and Data Collection\nBuild a precise statistical question, distinguish observational studies and experiments, and explore selection, treatment assignment, confounding and the limits of conclusions.\nOpen Topic 1.10 →\n\n\nTopic 1.11 Random Sampling\nCompare simple random, stratified, cluster, systematic and with-replacement sampling using a stepwise population explorer and original practice.\nOpen Topic 1.11 →",
     "crumbs": [
       "Unit 1: Exploring One-Variable Data and Collecting Data"
     ]
@@ -994,6 +994,94 @@
     ]
   },
   {
+    "objectID": "Unit 1/Topic 1.11/topic-1-11.html",
+    "href": "Unit 1/Topic 1.11/topic-1-11.html",
+    "title": "Topic 1.11 Random Sampling",
+    "section": "",
+    "text": "1. The sampling frame and the random mechanism\nSuppose a school wants to estimate the mean one-way travel time among all its students. Asking only people who happen to arrive early may produce a convenient list of times, but it gives many other students no chance to be included. A sampling design specifies exactly how people enter the sample before their travel times are examined. This chapter compares five ways to select observations and explains what each design achieves.\nThe essential questions are: Which groups should be created before drawing? What exactly is selected at random? Who is measured after selection? Those choices determine whether the design is a simple random, stratified, cluster, or systematic sample. We will also distinguish drawing with and without replacement.\nStart with three distinct objects. The target population is the group the investigation is about. The sampling frame is the list, map, or other mechanism through which eligible units can be reached. The sample is the subset of observational units ultimately measured. For a current school enrollment study, the frame might be the official enrollment roster. If the roster excludes some students, even a perfectly random selection from that frame will not reach the missing students.\nGive every eligible student a unique roster number. A reproducible selection procedure must state the possible numbers, the random device, how many are selected, what happens to repeats, and how the corresponding students are contacted. A random digit by itself does not identify a complete sampling plan.\nRandom selection is not random assignment. In a survey, the researcher selects people to observe. In an experiment, a researcher may assign treatments after people enter the study. Selecting a random sample can strengthen population generalization; assigning treatments by chance is a different step that helps assess causation. A larger nonrandom sample cannot replace a sound selection mechanism.",
+    "crumbs": [
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Topic 1.11 Random Sampling</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 1/Topic 1.11/topic-1-11.html#replacement-111",
+    "href": "Unit 1/Topic 1.11/topic-1-11.html#replacement-111",
+    "title": "Topic 1.11 Random Sampling",
+    "section": "2. Replacement changes the experiment",
+    "text": "2. Replacement changes the experiment\nA draw without replacement removes the selected individual from the pool for the rest of the sample: no individual appears twice. A draw with replacement returns that individual to the pool before the next draw, so a repeated ID is possible. The latter is often used when a random mechanism repeatedly samples from the same list; it is not a sample of distinct people when a label repeats.\nFor example, randomly select three slips labelled A, B, C from a bag. Without replacement, three draws must produce all three labels in some order. With replacement, a valid sequence might be A, A, C. A previously selected individual does not become less likely on the next draw when every draw begins with the same bag.\nFor a uniform independent draw with replacement from NN labelled units, the chance that the next draw repeats a particular previously selected unit is\nP(next draw is that unit)=1N.\nP(\\text{next draw is that unit})=\\frac{1}{N}.\n\n\n\n\n\n\n\nNoteOptional derivation: why 1/N1/N?\n\n\n\n\n\nA properly mixed pool has NN equally likely labels on each draw. Exactly one label equals the specified earlier label, so the favorable fraction is 1/N1/N. The calculation assumes the pool is restored and each new draw is uniform. Without replacement, a just-selected label has probability zero of reappearing.\n\n\n\nCheckpoint. If two samples each contain six draws and only one includes the same person twice, which sample definitely used replacement? The duplicate could occur only when replacement was permitted; a sample with no duplicates might still have used replacement.",
+    "crumbs": [
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Topic 1.11 Random Sampling</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 1/Topic 1.11/topic-1-11.html#srs-111",
+    "href": "Unit 1/Topic 1.11/topic-1-11.html#srs-111",
+    "title": "Topic 1.11 Random Sampling",
+    "section": "3. Simple random sampling: equal chances for whole samples",
+    "text": "3. Simple random sampling: equal chances for whole samples\nA simple random sample (SRS) of size nn from a population of NN distinct units assigns every possible group of nn different units the same probability. The equality concerns the possible sets, not merely the chance each person has of being selected. One familiar implementation is to generate nn distinct roster numbers uniformly at random, rejecting repeated numbers until the required number of unique students is obtained.\nFor example, among six students A through F, an SRS of two could yield AB, AC, AD, AE, AF, BC, BD, BE, BF, CD, CE, CF, DE, DF, or EF. There are 15 possible pairs, and a proper SRS gives each pair probability 1/151/15. Giving each individual a one-third chance of inclusion is necessary here, but by itself does not prove that all fifteen pairs have equal chances.\nIf the mechanism is an SRS without replacement and 0≤n≤N0\\le n\\le N, the number of possible unordered groups and each particular group’s probability are\n(Nn)=N!n!(N−n)!,P(particular SRS group)=1(Nn).\n\\binom{N}{n}=\\frac{N!}{n!(N-n)!},\\qquad\nP(\\text{particular SRS group})=\\frac{1}{\\binom{N}{n}}.\n\n\n\n\n\n\n\nNoteOptional derivation: counting equally likely samples\n\n\n\n\n\nThere are N(N−1)⋯(N−n+1)N(N-1)\\cdots(N-n+1) ordered draws without replacement. Each unordered set is counted n!n! times, once per order. Dividing gives (Nn)\\binom{N}{n}. Because each ordered sequence has equal probability, each unordered set also does. The reciprocal is the probability of any particular group. This counting derivation is enrichment; the AP skill is recognizing and implementing an SRS correctly.\n\n\n\nWorked example. A club has 20 members. To select an SRS of five, label members 01 through 20; use a random-integer generator for five distinct numbers from 01–20; contact the members attached to those numbers. Accepting duplicates as additional distinct people, or taking the first five who respond to an open invitation, would not be that SRS.",
+    "crumbs": [
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Topic 1.11 Random Sampling</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 1/Topic 1.11/topic-1-11.html#designs-111",
+    "href": "Unit 1/Topic 1.11/topic-1-11.html#designs-111",
+    "title": "Topic 1.11 Random Sampling",
+    "section": "4. Stratified, cluster, and systematic designs",
+    "text": "4. Stratified, cluster, and systematic designs\n\nStratified random sample: sample inside every group\nDivide the population into nonoverlapping strata whose members share a relevant characteristic: grade, geographic region, or another factor related to the response. Select an SRS within each stratum, then pool those selections. Every stratum contributes some observations. If commute time differs by grade, taking two students at random from each of three grades ensures that all three grades appear in the sample.\nStrata are often chosen to be relatively homogeneous within each stratum on a characteristic relevant to the outcome. This design can provide more stable estimates and ensures subgroup coverage. Sampling fractions need not be equal; if some strata are oversampled, a simple unweighted sample mean may not represent the population mean. Appropriate population weights then matter.\n\n\nCluster random sample: sample groups, then everyone inside\nDivide the population into clusters—naturally occurring groups such as classrooms, city blocks, or advisory groups. Choose an SRS of clusters, then measure all individuals in every selected cluster. Each cluster ideally represents a miniature mix of the full population, with clusters broadly comparable. Sampling one randomly chosen advisory group is cheaper than finding scattered students across the entire campus.\nDo not confuse a cluster sample with a stratified sample. A stratified plan draws some individuals from every stratum; a one-stage cluster plan chooses some clusters and includes everyone in those chosen groups. A plan that randomly chooses clusters and then samples within them is a two-stage cluster design, an additional technique, not the one-stage definition in this topic.\n\n\nSystematic random sample: a random start, then fixed steps\nArrange the NN units in a meaningful list, randomly select the starting position among the first kk positions, and take every kk-th unit after that. When NN is divisible by the intended sample size nn, a common step size is\nk=Nn.\nk=\\frac{N}{n}.\n\n\n\n\n\n\n\nNoteWhy this choice of interval? — Design rationale\n\n\n\n\n\nFor an ordered list of NN entries, choosing every kk-th entry yields approximately N/kN/k selections. When NN divides evenly into nn groups, choosing k=N/nk=N/n and a start among 1,…,k1,\\ldots,k gives exactly nn positions. This is a sampling-design choice, not a universal formula when N/nN/n is nonintegral or the list has a different structure.\n\n\n\nFor N=36N=36 and n=6n=6, use k=6k=6. If a fair random start is 4, the selected roster positions are 4, 10, 16, 22, 28, and 34. Picking position 4 deliberately every time is not a random start. An ordered roster with an underlying cycle of six could cause this design to select a very unrepresentative mix even though the start was random.",
+    "crumbs": [
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Topic 1.11 Random Sampling</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 1/Topic 1.11/topic-1-11.html#lab-111",
+    "href": "Unit 1/Topic 1.11/topic-1-11.html#lab-111",
+    "title": "Topic 1.11 Random Sampling",
+    "section": "5. Interactive sampling laboratory",
+    "text": "5. Interactive sampling laboratory\nExplore a model school with 36 students in six advisory groups of six. Grade A, B, and C students appear twice in each advisory group. The figures inside each cell are one-way travel times, measured in minutes. The population mean is 17 minutes.\nBefore drawing, predict the representation: Which method guarantees that all three grades contribute? With this particular roster order, which method picks six people from just one grade? Which method measures everybody in one selected advisory group?\n\n  \n    Sampling method\n      \n        Simple random sample (six distinct students)\n        Stratified: two from each grade\n        Cluster: one entire advisory group\n        Systematic: random start, every sixth student\n        Six independent draws with replacement\n      \n    \n    Reproducible random seed\n      \n    \n  \n  \n    Reveal next selection\n    Show entire sample\n    Reset experiment\n  \n  Ready. Choose a method, predict the result, and reveal the selections.\n  \n  All 36 students are available.\n  Every cell records its roster number, advisory group, grade, and travel time. Selection highlights will also be described in the text summary.\n\nRead the result, not just the colors. The tool reports the actual selected IDs, number of different students, grade representation, and sample mean. With replacement, repeated draws show a visible ×2 draws marker (or larger count) on the affected student, as well as repeated IDs in the text summary. Try changing the seed and notice that an SRS does not guarantee identical grade counts; stratification does. Each advisory group deliberately contains a grade mix, so a one-advisory cluster sample does include all three grades. In contrast, these roster positions repeat the same grade pattern every six entries: the systematic sample selects only one grade. This is a feature of this roster order, illustrating why order should be inspected before systematic sampling.\nA random sample need not resemble the population perfectly in one draw. Repeating the process can produce different answers through sampling variability. That is not itself evidence that the random-number generator is flawed. A bad frame or measurement process can introduce a different problem, bias, even with a very large sample; Topic 1.12 develops these distinctions.\nStatic example to check by hand. For a systematic design with start 4 and interval 6, select IDs 04, 10, 16, 22, 28, 34. These are all Grade A in this roster pattern. Their travel times are 10, 12, 14, 10, 12, 14 minutes, so their mean is 72/6=1272/6=12 minutes, below the population mean of 17. Another random start can give a different grade and a different result. A disappointing single sample does not establish that the sample mean is biased over repeated random starts. In fact, because the starting position is uniformly chosen from 1 through 6, this particular systematic design produces the following six equally likely sample means:\n\n\n\n\n\n\n\n\nRandom starting position\nGrade of all six selected students\nSample mean (minutes)\n\n\n\n\n1\nA\n10\n\n\n2\nB\n16\n\n\n3\nC\n22\n\n\n4\nA\n12\n\n\n5\nB\n18\n\n\n6\nC\n24\n\n\n\nAcross repeated fairly randomized starts, the average of these possible sample means is (10+16+22+12+18+24)/6=17(10+16+22+12+18+24)/6=17 minutes—the actual population mean. Thus the estimator is unbiased in this example, even though a single systematic sample could be as low as 10 or as high as 24 minutes. Lack of bias does not imply low variability or a representative individual sample. The periodic roster produces high sampling variability because it selects only one grade each time.\n\n\n\n\n\n\nNoteOptional derivation: why this random-start mean is unbiased here\n\n\n\n\n\nLet x1,…,x36x_1,\\ldots,x_{36} denote the 36 travel times. If start r∈{1,…,6}r\\in\\{1,\\ldots,6\\} is equally likely, the corresponding sample mean is x‾r=16∑j=05xr+6j\\bar{x}_r=\\frac{1}{6}\\sum_{j=0}^{5}x_{r+6j}. Its expected value over the six starting positions is\nE(X‾)=16∑r=16x‾r=16⋅16∑r=16∑j=05xr+6j=136∑i=136xi=μ=17 minutes.\n\\begin{aligned}\nE(\\bar{X})\n&=\\frac{1}{6}\\sum_{r=1}^{6}\\bar{x}_r\\\\\n&=\\frac{1}{6}\\cdot\\frac{1}{6}\\sum_{r=1}^{6}\\sum_{j=0}^{5}x_{r+6j}\\\\\n&=\\frac{1}{36}\\sum_{i=1}^{36}x_i=\\mu=17\\text{ minutes}.\n\\end{aligned}\n\nEach of the 36 population members appears once across the six possible starting positions. This proof depends on a uniform random start and an evenly divisible list; it does not claim that systematic samples have the same variability as SRS, nor that a particular sample must be typical. Expected-value algebra is optional enrichment for this topic.",
+    "crumbs": [
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Topic 1.11 Random Sampling</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 1/Topic 1.11/topic-1-11.html#choice-111",
+    "href": "Unit 1/Topic 1.11/topic-1-11.html#choice-111",
+    "title": "Topic 1.11 Random Sampling",
+    "section": "6. Decide which sampling design fits the question",
+    "text": "6. Decide which sampling design fits the question\n\n\n\n\n\n\n\n\nNeed or constraint\nOften a defensible choice\nWhy\n\n\n\n\nA complete numbered roster and feasible individual contact\nSRS\nEvery fixed-size group has equal chance.\n\n\nReliable estimates for each grade, including a small grade\nStratified sample\nRandomly sample within each relevant grade; consider appropriate weights for overall estimates.\n\n\nVisiting individuals is costly, but complete classrooms are easy to survey\nCluster sample\nRandomly choose classrooms and measure everyone in selected classrooms; clustering can increase uncertainty if classmates resemble one another.\n\n\nUnits are listed in a sensible order without an outcome-related repeating cycle\nSystematic sample\nA random start plus fixed interval is efficient to implement.\n\n\n\nEthical collection still matters after selection: protect responses, invite participation appropriately, use clear questions and respect refusals. Do not use a random-number generator as an excuse to ignore consent or confidentiality. A design should fit its research question, population, logistical limitations, and data quality—not merely have a random component somewhere.\nQuick synthesis. An SRS randomizes individual groups of fixed size; a stratified design samples within every stratum; a cluster design samples entire randomly chosen groups; a systematic design selects periodic list positions after a random start. Replacement changes whether a unit can appear again. Explain who is selected, how, and why the design serves the investigator’s question.",
+    "crumbs": [
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Topic 1.11 Random Sampling</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 1/Topic 1.11/topic-1-11.html#exam-111",
+    "href": "Unit 1/Topic 1.11/topic-1-11.html#exam-111",
+    "title": "Topic 1.11 Random Sampling",
+    "section": "7. Released AP examination example",
+    "text": "7. Released AP examination example\nThe 2025 AP Statistics Question 2 considers an aphid survey in a cabbage field divided into 25 regions arranged in five rows. Examine the original released question alongside the explanation.\n\n  College Board · 2025 AP Statistics · Question 2, problem and diagram. Select to enlarge.\n  College Board · 2025 AP Statistics · Question 2, parts A–C. Select to enlarge.\n\nPart A. Choosing region 3 merely because it is closest to the farmer’s house is convenience sampling; it is not a defensible random representation of the field. If damage is related to river distance, the estimate could be systematically low.\nPart B. Randomly choosing a row and studying every plant in that row is a cluster sample of rows. In the reported draw, row E is nearest the river. Under the farmer’s stated hypothesis that aphid damage is higher nearer the river, that selected row is likely to give an overestimate of the damage proportion for the whole field. Random cluster selection does not make the resulting single cluster a perfect miniature of the field.\nPart C. To implement the proposed sampling plan, form five strata (the five rows). For each row separately, number its five regions, use a uniform random integer from 1 to 5 (or equivalent fair slips), and select the corresponding region. Repeat independently for each row. Examine every cabbage plant in each chosen region. This selects exactly one region from each row, not five freely selected regions from the whole field. It is a stratified random selection of regions followed by complete measurement within selected regions.\n\n\nAccessible description of the released question\n\n\nThe field contains five rows A–E of five numbered regions each; row A is farthest from the river and row E closest. Method I always examines region 3. Method II randomly chooses one entire row. Method III independently randomly chooses one region from each row. The question asks which procedures can represent the field and how to implement the third method accurately.",
+    "crumbs": [
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Topic 1.11 Random Sampling</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 1/Topic 1.11/topic-1-11.html#practice-111",
+    "href": "Unit 1/Topic 1.11/topic-1-11.html#practice-111",
+    "title": "Topic 1.11 Random Sampling",
+    "section": "Practice",
+    "text": "Practice\n\nLoading practice…\n\nQuestion 1A researcher selects 5 different names uniformly at random from a\nroster of 20, so that every possible five-person subset has equal\nchance. This is a\nA. systematic sample\nB. simple random sample\nC. convenience sample\nD. cluster sample\nShow solutionB. Every group of five has equal chance, precisely the definition of\na simple random sample (SRS).\n\nQuestion 2A fair app draws one student ID from 01–12, records it, returns it to\nthe pool and repeats. Which result is possible?\nA. Only distinct IDs are possible.\nB. Each draw must alternate grades.\nC. An ID may appear twice or more.\nD. All 12 IDs must appear before any repeat.\nShow solutionC. Sampling with replacement restores the complete pool\nafter each draw, so the same student ID may recur.\n\nQuestion 3A school has grades A, B and C. The researcher chooses a random\nsample of 10 students within each grade and combines them.\nWhich design is this?\nA. Cluster sampling\nB. Convenience sampling\nC. Systematic sampling\nD. Stratified random sampling\nShow solutionD. Grades are the strata; a separate random sample is selected inside\neach grade.\n\nQuestion 4A district randomly selects 4 of its 40 classrooms and surveys\nevery student in the selected classrooms. Which design\nis this?\nA. Cluster random sample\nB. Stratified random sample\nC. Simple random sample of individual students\nD. Systematic random sample\nShow solutionA. Classrooms are clusters. An SRS of classrooms is chosen, and\nall their students are surveyed.\n\nQuestion 5There are 36 student IDs arranged in a list. A systematic sample of\nsix uses an evenly spaced interval\nk=N/nk=N/n.\nFind\nkk.\nShow solutionThe interval is\nk=36/6=6k=36/6=\\boxed{6}.\nAfter a random starting position from 1 to 6, take every sixth ID.\n\nQuestion 6An SRS of two students is drawn from six labelled students. How many\ndistinct unordered two-person groups are possible?\nShow solution(62)=6⋅52⋅1=15\\binom{6}{2}=\\frac{6\\cdot5}{2\\cdot1}=\\boxed{15}\npossible unordered pairs.\n\nQuestion 7Describe a valid SRS procedure for selecting six different students\nfrom a roster of 36. Include the labels, random device, and treatment of\nrepeated labels.\nShow solutionNumber the rostered students 01–36. Use a random integer generator\nthat assigns equal chance to 1 through 36. Keep each newly generated ID;\nreject repeated IDs and continue until six distinct IDs\nhave been chosen. Survey those six students. Equivalently, shuffle all\n36 IDs fairly and take the first six. This makes every unordered\nsix-person subset equally likely.\nCredit a complete eligible roster, uniformly random selection,\nunambiguous handling of repeats, and six distinct students. An arbitrary\nfixed list, first six volunteers or prechosen start is not an SRS.\n\nQuestion 8The roster is grouped into six repeating blocks of six positions with\ngrades A, B, C, A, B, C. A researcher uses systematic selection of every\nsixth name after a random start from 1 through 6. Explain one strength\nand one problem with this method.\nShow solutionThe random start gives every roster position the same probability,\n1/61/6,\nof appearing and is fast to implement. However, all six selected\npositions share the same position in the repeating block and therefore\nall belong to the same grade. If travel time differs by grade, the\nsample may have high variability from one random start to another and\ngive poor grade representation. The risk comes from the ordering\npattern; a random start does not guarantee balance.\nIdentify both a legitimate procedural strength (random start,\nefficient, known inclusion pattern) and the systematic periodicity\nhazard linked explicitly to grade and the survey outcome. Do not claim\nthat random systematic selection is always biased in one direction.\n\nQuestion 9An orchard has 25 plots arranged in five rows from north to south.\nExplain how to choose a stratified random sample of five plots with one\nplot from each row using a random-number generator.\nShow solutionTreat the five rows as distinct strata. Number the five plots in each\nrow 1 through 5. Generate one independent uniform random integer\n1–5 in each row, select the corresponding plot, and examine it.\nThis produces exactly one selected plot per row, while each plot in a\nrow has an equal selection chance.\nMust specify rows as strata; select separately and independently\nwithin each row; use a clearly uniform mechanism from five plots; and\ncollect one selected plot per row. Arbitrary choices or one SRS of five\nfrom the whole orchard do not satisfy the design.\n\nQuestion 10A city needs average transit-wait times by neighbourhood, and\nresidents of each neighbourhood vary substantially in age. Compare two\noptions: (I) randomly select a few whole neighbourhoods and survey all\ntheir residents or (II) select a random set of residents within\nevery neighbourhood. Recommend one for accurate neighbourhood-level\nsummaries, naming both designs.\nShow solutionOption I is a cluster sample of neighbourhoods. It\nis cheaper when visiting whole neighbourhoods, but unsampled\nneighbourhoods supply no direct information, making\nneighbourhood-by-neighbourhood reporting impossible. Option II is a\nstratified random sample, with neighbourhoods as strata\nand separate random selections within each. It is better for\nneighbourhood-specific estimates because every neighbourhood contributes\nobservations; sample sizes and weighting must be planned if estimating\nthe whole city.\nCorrectly identify cluster and stratified sampling, recommend option\nII for comparisons by neighbourhood, and explain why each neighbourhood\nmust contribute sampled residents. Cost tradeoffs and citywide weighting\nshould be acknowledged if discussed.\n\n\n\n\nSources\n\n\nCollege Board, AP Statistics Course and Exam Description (Fall 2026), Topic 1.11, pp. 48–49; 2025 released free-response questions, Question 2; and 2025 scoring guidelines, Question 2. The sampling-laboratory data and original exercises are documented in this topic’s editable source directory.",
+    "crumbs": [
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Topic 1.11 Random Sampling</span>"
+    ]
+  },
+  {
     "objectID": "Unit 1/Shared/practice.html",
     "href": "Unit 1/Shared/practice.html",
     "title": "Practice and solutions",
@@ -1001,7 +1089,7 @@
     "text": "1 · Draw from a frequency table\nThirty students recorded school-shuttle waiting times. Use 5-minute bins from 0 to 30 and the left-inclusive, right-exclusive rule. Draw a histogram on paper with labelled axes, equal-width touching bars, and a zero baseline.\nAfter drawing, use the digital check to reconstruct your heights. It checks heights only, not the labels on your paper.",
     "crumbs": [
       "Unit 1: Exploring One-Variable Data and Collecting Data",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Practice and solutions</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Practice and solutions</span>"
     ]
   },
   {
@@ -1012,7 +1100,7 @@
     "text": "Waiting time (minutes)\nFrequency\n\n\n\n\n0≤x&lt;50\\leq x&lt;5\n3\n\n\n5≤x&lt;105\\leq x&lt;10\n7\n\n\n10≤x&lt;1510\\leq x&lt;15\n10\n\n\n15≤x&lt;2015\\leq x&lt;20\n6\n\n\n20≤x&lt;2520\\leq x&lt;25\n3\n\n\n25≤x&lt;3025\\leq x&lt;30\n1\n\n\n\n\n\n\nEnter six bar heights, check them against the table, and view your attempt.\n\n\n\n\nShow the completed histogram\n\n\n\n\nHeights are 3, 7, 10, 6, 3, 1, totaling 30. Every bar is 5 minutes wide. The tallest bar means ten waits from 10 to under 15 minutes—not ten waits exactly equal to 10.",
     "crumbs": [
       "Unit 1: Exploring One-Variable Data and Collecting Data",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Practice and solutions</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Practice and solutions</span>"
     ]
   },
   {
@@ -1023,7 +1111,7 @@
     "text": "2 · Stem, leaf, and key\nConstruct a stem-and-leaf plot for 1.2, 1.5, 1.5, 2.0, 2.3 seconds. Explain the repeated leaf.\n\n\nShow solution\n\n1 | 2 5 5\n2 | 0 3\nKey: 1 | 2 = 1.2 seconds\nFive leaves represent five observations. The repeated 1.5 needs two leaves of 5. A zero leaf preserves the 2.0-second observation.",
     "crumbs": [
       "Unit 1: Exploring One-Variable Data and Collecting Data",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Practice and solutions</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Practice and solutions</span>"
     ]
   },
   {
@@ -1034,7 +1122,7 @@
     "text": "3 · Bin boundaries\nWhich 10-minute commute bin contains 20? Does the first occupied bin prove the recorded minimum is 0?\n\n\nShow solution\n\n20 enters 20≤x&lt;3020\\leq x&lt;30, not the preceding bin. The first occupied bin establishes a value in 0≤x&lt;100\\leq x&lt;10, not necessarily 0. The original list—not the histogram—identifies the minimum as 5.",
     "crumbs": [
       "Unit 1: Exploring One-Variable Data and Collecting Data",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Practice and solutions</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Practice and solutions</span>"
     ]
   },
   {
@@ -1045,7 +1133,7 @@
     "text": "4 · Repair turnaround times\nDescribe the histogram of 40 bicycle repairs. Find the percentage taking at least 4 hours. Can you recover the most common exact time?\n\n\nOne-hour bins from 0 to 8: frequencies 12, 10, 7, 5, 3, 2, 1, 0.\n\n\n\n\nShow solution\n\nRepair times are unimodal and right-skewed, centered around 1–3 hours. Values occupy bins from 0 to under 7 hours. No displayed internal bin is empty. The one observation in 6–7 hours is not automatically an outlier; an empty final 7–8 bin is not an internal gap.\nAt least 4 hours: (3+2+1)/40=15%(3+2+1)/40=15\\%. The most frequent interval is 0–1 hour. The most common exact value is not recoverable.",
     "crumbs": [
       "Unit 1: Exploring One-Variable Data and Collecting Data",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Practice and solutions</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Practice and solutions</span>"
     ]
   },
   {
@@ -1056,7 +1144,7 @@
     "text": "5 · Two concentrations\nDescribe shape, center, spread, and the empty internal interval for these 40 library study sessions. What percentage lasted from 30 to under 90 minutes?\n\n\nFifteen-minute bins from 0 to 120: frequencies 2, 10, 8, 0, 0, 8, 10, 2.\n\n\n\n\nShow solution\n\nThe displayed distribution is approximately symmetric and bimodal, with main concentrations in 15–45 and 75–105 minutes. The visual center near 60 minutes lies in a gap, not at a typical observed session. Occupied bins span roughly 0–120 minutes. There are no observations from 45 to under 75 minutes.\nThe count from 30 to under 90 is 8+0+0+8=168+0+0+8=16, giving 16/40=40%16/40=40\\%. A single center would hide the two concentrations. The exact median is not available from the histogram.",
     "crumbs": [
       "Unit 1: Exploring One-Variable Data and Collecting Data",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Practice and solutions</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Practice and solutions</span>"
     ]
   },
   {
@@ -1067,7 +1155,7 @@
     "text": "6 · What could be inside a bin?\nTwo commute times lie in 40–50 and one in 50–60 minutes. How many are at least 40? How many could be at least 45?\n\n\nShow solution\n\nExactly 3 are at least 40. Between 1 and 3 could be at least 45: the last-bin observation definitely qualifies; either, neither, or both observations in the preceding bin might qualify. Do not add a uniformity assumption.",
     "crumbs": [
       "Unit 1: Exploring One-Variable Data and Collecting Data",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Practice and solutions</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Practice and solutions</span>"
     ]
   },
   {
@@ -1078,7 +1166,7 @@
     "text": "7 · Oxygen: count and context\nReturn to the oxygen histogram. How many sampled cold streams recorded below 6 mg/L? What percentage is this? What does the empty 3–4 bin establish?\n\n\nShow solution\n\nThe first four counts total 1+0+1+1=31+0+1+1=3. The percentage is 3/429×100%≈0.7%3/429\\times100\\%\\approx0.7\\%. Under our convention, no observed concentration lies in 3≤x&lt;43\\leq x&lt;4 mg/L. This does not show that such concentrations are impossible in all streams.",
     "crumbs": [
       "Unit 1: Exploring One-Variable Data and Collecting Data",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Practice and solutions</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Practice and solutions</span>"
     ]
   },
   {
@@ -1089,7 +1177,7 @@
     "text": "8 · Repair a weak description\nA student writes, “The graph is high in the middle and goes up and down.” Replace this with all four parts of a contextual description.\n\n\nTwenty review-session lengths span 4–30 minutes, with approximate symmetry and a broad central concentration.\n\n\n\n\nShow a model response\n\nAmong these 20 students, review-session lengths are approximately symmetric with one broad central concentration, centered around 16–18 minutes. Recorded values extend from 4 to 30 minutes, with no clearly isolated observation or large internal gap.\nThe dotplot preserves individual values, so the observed endpoints are available. Wide histogram bins would warrant less exact wording.",
     "crumbs": [
       "Unit 1: Exploring One-Variable Data and Collecting Data",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Practice and solutions</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Practice and solutions</span>"
     ]
   },
   {
@@ -1100,7 +1188,7 @@
     "text": "Before the next class\nExplain one dot versus one bin, construct a histogram from a table, name skew from the tail, and support a claim with calculation + context. Return to the relevant chapter when an answer depends on a guess rather than evidence.",
     "crumbs": [
       "Unit 1: Exploring One-Variable Data and Collecting Data",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Practice and solutions</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Practice and solutions</span>"
     ]
   },
   {
@@ -1150,7 +1238,7 @@
     "section": "",
     "text": "Open your class question file\nPractise 20 questions from the Week 2 and Week 3 homework, organized by topic.\nOpen mhs-week-2-3.practice.json, provided by your teacher, using the control below. The questions and diagrams will appear here and in the Selected homework practice section of the relevant lessons. Choose an answer, check your reasoning, and open the solution when ready.",
     "crumbs": [
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Problem Bank: Selected Homework</span>"
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Problem Bank: Selected Homework</span>"
     ]
   },
   {
@@ -1160,7 +1248,7 @@
     "section": "",
     "text": "Open your class question file to practise the selected homework questions below.\nWeek 2.0, Question 1.0 — Topic 1.2: Continuous measurements versus counts (homework pages 1.0).\nWeek 2.0, Question 3.0 — Topic 1.2: A quantitative variable among categorical choices (homework pages 1.0).\nWeek 2.0, Question 4.0 — Topic 1.2: How the recording rule changes the variable type (homework pages 2.0).\nWeek 2.0, Question 6.0 — Topic 1.2: Category observations are not category counts (homework pages 3.0).\nWeek 2.0, Question 15.0 — Topic 1.3: Validate a relative-frequency table (homework pages 8.0, 9.0, 10.0).\nWeek 2.0, Question 17.0 — Topic 1.3: A percentage does not determine an absolute count (homework pages 12.0).\nWeek 2.0, Question 18.0 — Topic 1.3: Check a claim against a frequency table (homework pages 13.0).\nWeek 2.0, Question 20.0 — Topic 1.3: Combine categories using the correct denominator (homework pages 14.0).\nWeek 2.0, Question 16.0 — Topic 1.4: Compare rates without confusing them with counts (homework pages 11.0).\nWeek 2.0, Question 22.0 — Topic 1.4: Read a pie chart as parts of one whole (homework pages 15.0).\nWeek 2.0, Question 24.0 — Topic 1.4: Convert chart proportions to counts when n is known (homework pages 16.0).\nWeek 2.0, Question 25.0 — Topic 1.4: Use the number of games as the percentage denominator (homework pages 17.0).\nWeek 3.0, Question 10.0 — Topic 1.5: What changing histogram bin width preserves (homework pages 5.0).\nWeek 3.0, Question 16.0 — Topic 1.5: Read a split stem-and-leaf display (homework pages 8.0).\nWeek 3.0, Question 17.0 — Topic 1.5: Construct a stemplot without losing repeats (homework pages 9.0, 10.0).\nWeek 3.0, Question 1.0 — Topic 1.6: Compare tails in a back-to-back stemplot (homework pages 1.0).\nWeek 3.0, Question 3.0 — Topic 1.6: Describe shape and features in a dotplot (homework pages 2.0).\nWeek 3.0, Question 8.0 — Topic 1.6: Identify skewness from a histogram tail (homework pages 4.0).\nWeek 3.0, Question 12.0 — Topic 1.6: Distinguish a visual potential outlier from a formal test (homework pages 7.0).\nWeek 3.0, Question 19.0 — Topic 1.6: Recognize approximate uniformity (homework pages 11.0).",
     "crumbs": [
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Problem Bank: Selected Homework</span>"
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Problem Bank: Selected Homework</span>"
     ]
   },
   {
@@ -1170,7 +1258,7 @@
     "section": "Questions by topic",
     "text": "Questions by topic\n\n\n\nTopic\nSelected homework questions\n\n\n\n\n1.1\nSee the Practice section in the lesson.\n\n\n1.2\nWeek 2: 1, 3, 4, 6\n\n\n1.3\nWeek 2: 15, 17, 18, 20\n\n\n1.4\nWeek 2: 16, 22, 24, 25\n\n\n1.5\nWeek 3: 10, 16, 17\n\n\n1.6\nWeek 3: 1, 3, 8, 12, 19\n\n\n\n\n\n\nSources\n\nWeek 2 and Week 3 homework supplied by the instructor. Original question numbers and page references are retained.",
     "crumbs": [
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Problem Bank: Selected Homework</span>"
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Problem Bank: Selected Homework</span>"
     ]
   },
   {
@@ -1180,7 +1268,7 @@
     "section": "",
     "text": "Course framework\nThe College Board AP Statistics course framework lists the course topics. The released exam archive provides additional questions and scoring guidelines.",
     "crumbs": [
-      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Sources and study resources</span>"
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Sources and study resources</span>"
     ]
   },
   {
@@ -1190,7 +1278,7 @@
     "section": "Datasets",
     "text": "Datasets\n\n\n\nDataset\nMeasurement\nSource\n\n\n\n\nRivers\nMajor North American river lengths, in miles\nR datasets: rivers\n\n\nOld Faithful\nEruption duration, in minutes\nR datasets: faithful\n\n\nIris flowers\nSepal length, in centimetres\nR datasets: iris\n\n\n\nDownload the commute-time data to build a dotplot, stemplot, or histogram.",
     "crumbs": [
-      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Sources and study resources</span>"
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Sources and study resources</span>"
     ]
   },
   {
@@ -1200,7 +1288,7 @@
     "section": "Practice",
     "text": "Practice\nUse the Practice section in each lesson to check your understanding. Try a question before opening its solution, then compare both the result and reasoning. The Selected Homework bank uses the class file supplied by your teacher.",
     "crumbs": [
-      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Sources and study resources</span>"
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Sources and study resources</span>"
     ]
   },
   {
@@ -1210,7 +1298,7 @@
     "section": "Printing",
     "text": "Printing\nUse your browser’s Print command for a paper copy of a lesson. Open the explanations you wish to include before printing.",
     "crumbs": [
-      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Sources and study resources</span>"
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Sources and study resources</span>"
     ]
   }
 ]
