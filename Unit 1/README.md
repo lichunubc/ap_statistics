@@ -1,6 +1,6 @@
 # Unit 1: Exploring One-Variable Data and Collecting Data
 
-Each topic is an independent chapter and a separate editorial folder. Use the exact official topic name, not a combined range such as “1.1–1.4”. The current book includes Topics 1.1–1.9; later Unit 1 topics remain under development.
+Each topic is an independent chapter and a separate editorial folder. Use the exact official topic name, not a combined range such as “1.1–1.4”. The current book includes Topics **1.1–1.11**; Topics 1.12–1.13 remain under development.
 
 The student-facing unit entrance is **[unit-1.qmd](unit-1.qmd)**. Edit this file to maintain the currently published topic cards and the unit's dataset introduction. The root `index.qmd` contains only the five-unit overview, not this topic list. The unit title in the sidebar opens this entrance; its separate arrow shows/hides the topics.
 
@@ -13,6 +13,8 @@ The student-facing unit entrance is **[unit-1.qmd](unit-1.qmd)**. Edit this file
 - [Topic 1.7 Summary Statistics for One Quantitative Variable](<Topic 1.7/README.md>)
 - [Topic 1.8 Graphical Representations of Summary Statistics for One Quantitative Variable](<Topic 1.8/README.md>)
 - [Topic 1.9 Comparisons of the Distributions for One Quantitative Variable](<Topic 1.9/README.md>)
+- [Topic 1.10 The Investigative Question Revisited and Data Collection](<Topic 1.10/README.md>)
+- [Topic 1.11 Random Sampling](<Topic 1.11/README.md>)
 
 ## Finding files for manual editing
 
@@ -24,4 +26,4 @@ Repository-wide infrastructure remains at the root: `_quarto.yml`, `index.qmd`, 
 
 Run `quarto preview` for editing. Run `quarto render` followed by `python tools/check_all.py` for release checks. `tools/prepare.py` regenerates browser data from the shared JSON; `tools/postrender.py` creates compatibility pages/resources and removes bundled fonts.
 
-Topic **1.10** provides the investigative-question and study-design chapter in `Topic 1.10/`, with a visually linked design explorer, original practice and an official 2024 exam connection. Topic-specific source, objective mapping, assets and tests are kept with its chapter.
+Topic **1.10** provides the investigative-question and study-design chapter in `Topic 1.10/`, with a visually linked design explorer, original practice and an official 2024 exam connection. Topic **1.11** provides the random-sampling chapter in `Topic 1.11/`, with a reproducible five-method sampling laboratory, ten original practice questions and an official 2025 exam connection. Topic-specific source, objective mappings, assets, data and tests remain in their respective folders.
