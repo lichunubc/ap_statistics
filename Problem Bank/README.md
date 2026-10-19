@@ -47,8 +47,12 @@ Run `python "Problem Bank/tools/prepare_bank.py"`, `quarto render`, then `python
 
 ## Public original question bank
 
-Separately from copyright-restricted homework references, instructor-authored questions for each new lesson are stored as structured JSON. Topic 1.7: `original/unit-1/topic-1-7.json` (ten original questions, keys, hints, worked explanations, objective tags and provenance). The Quarto `original-practice-filter.lua` gives a no-JavaScript fallback from the same JSON, while `assets/original-practice.js` supports the one-at-a-time reader. Keep original and locally restricted bank types separate.
+Separately from copyright-restricted homework references, instructor-authored questions for each new lesson are stored once as structured JSON under `original/`. The Quarto `original-practice-filter.lua` produces MathML and a no-JavaScript fallback from the same JSON, while `assets/original-practice.js` supports the one-at-a-time reader. Keep original and locally restricted bank types separate.
 
-Topic 1.8: `original/unit-1/topic-1-8.json` stores nine original questions with stable IDs, solutions, difficulty and objective tags. Unlike the private College Board homework references, these instructor-authored problems appear directly on the public lesson and require no file upload.
+- Topic 1.7: `original/unit-1/topic-1-7.json` stores ten original questions on quantitative summaries, transformations, resistance and outlier screens.
+- Topic 1.8: `original/unit-1/topic-1-8.json` stores nine original questions on five-number summaries, boxplots and graphical interpretation.
+- Topic 1.9: `original/unit-1/topic-1-9.json` stores ten original comparative-distribution and z-score questions.
+- Topic 1.10: `original/unit-1/topic-1-10.json` stores ten original questions on investigative questions, study types, selection, assignment and permitted conclusions.
+- Topic 1.11: `original/unit-1/topic-1-11.json` stores ten original questions on simple random, stratified, cluster, systematic and with-replacement sampling.
 
-Topic 1.9: `original/unit-1/topic-1-9.json` contains ten new instructor-authored comparative-distribution and z-score questions, using exactly the same public one-at-a-time reader and no-JavaScript fallback. The referenced official 2026 exam remains linked externally; its original questions, images and scoring guide are not republished.
+These instructor-authored problems appear directly on their public lessons and require no file upload. Released AP exam examples are managed separately through compact source metadata and instructor-authorized page-image crops; complete exam PDFs are not committed to the repository.
