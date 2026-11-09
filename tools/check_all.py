@@ -16,6 +16,7 @@ CHECKS = [
     'Unit 1/Topic 1.4/tests/check_charts.py',
     'site/tests/check_navigation.py',
     'Problem Bank/tests/check_bank.py',
+    'Problem Bank/tests/check_expanded_integration.py',
     'Unit 1/Topic 1.7/tests/check_summary17.py',
     'Unit 1/Topic 1.7/tests/check_summary17_browser.py',
     'Unit 1/Topic 1.8/tests/check_box18.py',

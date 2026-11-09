@@ -1,18 +1,28 @@
 ---
-title: "Problem Bank: Selected Homework"
+title: "Problem Bank"
 toc: false
 ---
 
+## Expanded question bank
+
+[Open the expanded bank reader](assets/expanded-bank.html) and choose your authorized `ap_statistics_question_bank.json` file. Filter by topic, source, or question type, then try a question before revealing its answer. The reader opens the file on your device. If your package includes figures, extract it first and select the extracted `assets` folder in the reader.
+
+## Skill dependency map
+
+[Explore the skill dependency map](assets/dependency-map.html) to see what to review before tackling a topic. Try searching for **joint probability**, then trace its prerequisites back to reading a two-way table and finding a part-to-whole fraction. The map opens directly and includes explanations and source references for the learning links. Choose **Find practice for this skill** on a linked skill to open the reader with that skill selected when you load your bank.
+
+## Selected homework
+
 Practise **20 questions** from the Week 2 and Week 3 homework, organized by topic.
 
-## Open your class question file
+### Open your class question file
 
 Open **`mhs-week-2-3.practice.json`**, provided by your teacher, using the control below. The questions and diagrams will appear here and in the **Selected homework practice** section of the relevant lessons. Choose an answer, check your reasoning, and open the solution when ready.
 
 ::: {.homework-bank-host data-topic="all"}
 :::
 
-## Questions by topic
+### Questions by topic
 
 | Topic | Selected homework questions |
 |:--|:--|

@@ -1,0 +1,579 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Recompute the CSP hash from the exact inline script bytes after editing JavaScript. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-RFmS8+8fKsu+FTTyfBYLW0ziyGEauzPR1xCSO1vKXuo='; style-src 'unsafe-inline'; img-src blob:; connect-src 'none'; base-uri 'none'; form-action 'none'">
+<title>AP Statistics · Private Problem Bank</title>
+<style>
+  :root { color-scheme: light dark; --ink: #19242c; --muted: #4a5961; --paper: #fff; --panel: #f2f7f7; --line: #b5c6c7; --accent: #0b6059; --active: #e0f3ed; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink: #f0f7f7; --muted: #b8c8ca; --paper: #172429; --panel: #223238; --line: #557078; --accent: #a6eadb; --active: #243d39; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 1rem/1.5 system-ui, sans-serif; color: var(--ink); background: var(--paper); }
+  main { max-width: 84rem; margin: auto; padding: clamp(1rem, 3vw, 2.5rem); }
+  h1, h2, h3, h4 { line-height: 1.2; }
+  h1 { margin: 0.25rem 0 0.7rem; font-size: clamp(1.8rem, 5vw, 2.6rem); }
+  h2 { font-size: 1.3rem; }
+  p { margin: 0.65rem 0; }
+  .intro { max-width: 70ch; }
+  .eyebrow { color: var(--accent); font-weight: 700; letter-spacing: 0.04em; }
+  .panel { padding: 1rem; background: var(--panel); border: 1px solid var(--line); border-radius: 0.65rem; margin: 1rem 0; }
+  .fields { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr)); gap: 0.65rem 1rem; align-items: end; }
+  .local-files { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr)); gap: 1rem; }
+  label { display: block; font-weight: 650; }
+  input, select, button { font: inherit; }
+  input[type=search], select, button { padding: 0.45rem 0.65rem; border: 1px solid var(--line); border-radius: 0.35rem; background: var(--paper); color: var(--ink); }
+  input[type=file], input[type=search], select { width: 100%; min-width: 0; }
+  input[type=file] { color: var(--ink); }
+  button { cursor: pointer; }
+  button:disabled, input:disabled, select:disabled { opacity: 0.62; cursor: default; }
+  :focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+  .actions { display: flex; align-items: center; gap: 0.6rem; flex-wrap: wrap; }
+  .muted, .metadata { color: var(--muted); font-size: 0.92rem; }
+  .split { display: grid; grid-template-columns: minmax(15rem, 1fr) minmax(0, 2fr); gap: 1.3rem; align-items: start; }
+  .results { padding: 0; list-style: none; display: grid; gap: 0.35rem; }
+  .results button { width: 100%; text-align: start; overflow-wrap: anywhere; }
+  .results button[aria-current=true], button[aria-pressed=true] { background: var(--active); border-color: var(--accent); }
+  .question { min-width: 0; scroll-margin-top: 1rem; overflow-wrap: anywhere; }
+  .copy { white-space: pre-wrap; }
+  details { margin: 1rem 0; }
+  summary { color: var(--accent); cursor: pointer; font-weight: 700; }
+  legend { font-weight: 650; }
+  fieldset { border: 1px solid var(--line); border-radius: 0.35rem; margin: 0; min-width: 0; }
+  fieldset label { font-weight: 400; padding: 0.3rem 0; }
+  .assets img { display: block; max-width: 100%; height: auto; }
+  .assets figure { margin: 1rem 0; }
+  [hidden] { display: none !important; }
+  @media (max-width: 760px) { .split { grid-template-columns: minmax(0, 1fr); } }
+</style>
+</head>
+<body>
+<main>
+  <p><a href="../practice.html">Return to the Problem Bank</a></p>
+  <p class="eyebrow">AP Statistics · Local practice</p>
+  <h1>Private problem bank</h1>
+  <p class="intro">Open an authorized AP Statistics bank JSON or a previously exported subset from your device. Search questions by topic or skill, check your work, and export a smaller practice set.</p>
+  <section class="panel" aria-labelledby="open-heading">
+    <h2 id="open-heading">Open your local files</h2>
+    <div class="local-files">
+      <div>
+        <label for="bank-file">Question bank JSON</label>
+        <input type="file" id="bank-file" accept=".json,application/json" aria-describedby="file-help">
+      </div>
+      <div>
+        <label for="asset-files">Extracted figure folder (optional)</label>
+        <input type="file" id="asset-files" webkitdirectory multiple aria-describedby="asset-help" disabled>
+        <p class="muted" id="asset-help">Select the extracted <code>assets</code> folder for source-page images, tables, and figures.</p>
+      </div>
+    </div>
+    <p class="muted" id="file-help">Files stay in this tab. Closing, reloading, or clearing the viewer discards the session. Export a selection first if you want to keep it.</p>
+    <div class="actions">
+      <button type="button" id="clear-bank" disabled>Clear local files</button>
+      <p id="file-status" role="status">No question bank loaded.</p>
+    </div>
+    <noscript><p>Enable JavaScript in your browser to open the local question bank.</p></noscript>
+  </section>
+  <section class="panel" id="filters" aria-labelledby="filter-heading" hidden>
+    <h2 id="filter-heading">Find questions</h2>
+    <div class="fields">
+      <div><label for="search">Search questions</label><input id="search" type="search" placeholder="Title, text, or skill"></div>
+      <div><label for="source">Source</label><select id="source"></select></div>
+      <div><label for="type">Type</label><select id="type"></select></div>
+      <div><label for="year">Exam year</label><select id="year"></select></div>
+      <div><label for="current">Bank alignment</label><select id="current"></select></div>
+      <div><label for="unit">Unit</label><select id="unit"></select></div>
+      <div><label for="skill">Knowledge component</label><select id="skill"></select></div>
+    </div>
+    <p class="muted">The alignment filter uses the labels in the imported bank.</p>
+    <div class="actions">
+      <label><input id="only-selected" type="checkbox"> Selected questions only</label>
+      <button id="reset-filters" type="button">Reset filters</button>
+      <button id="download" type="button" disabled>Download selected JSON</button>
+      <span id="selected-count" role="status">0 selected</span>
+    </div>
+  </section>
+  <div class="split" id="workspace" hidden>
+    <section aria-labelledby="results-heading">
+      <h2 id="results-heading">Questions</h2>
+      <p class="muted" id="results-status" role="status"></p>
+      <ul class="results" id="results"></ul>
+      <nav class="actions" aria-label="Question result pages">
+        <button id="previous" type="button">Previous page</button>
+        <button id="next" type="button">Next page</button>
+      </nav>
+    </section>
+    <article class="panel question" id="question" aria-label="Selected question">
+      <p>Choose a question to start.</p>
+    </article>
+  </div>
+</main>
+<script>
+'use strict';
+
+const $ = id => document.getElementById(id);
+const list = value => Array.isArray(value) ? value : [];
+const str = value => typeof value === 'string' ? value : '';
+const normalize = value => value.normalize('NFKC').toLowerCase().trim();
+const compact = value => normalize(value).replace(/\s+/g, ' ');
+const record = value => value !== null && typeof value === 'object' && !Array.isArray(value);
+const sourceOf = question => str(question.Source) || 'Other';
+const typeOf = question => str(question.Type) || str(question.question_type) || 'Other';
+const pageSize = 30;
+const filterIds = ['source', 'type', 'year', 'current', 'unit', 'skill'];
+const assetPattern = /^assets\/([a-z0-9][a-z0-9_.-]*\.jpe?g)$/i;
+let bank = null;
+let rows = [];
+let units = new Map();
+let skills = new Map();
+let selected = new Set();
+let figures = new Map();
+let imageUrls = [];
+let active = null;
+let page = 0;
+let fileEpoch = 0;
+
+function indexTaxonomy(items, label) {
+  const entries = new Map();
+  for (const item of items) {
+    if (!record(item) || !str(item.id).trim() || !str(item.label).trim() || entries.has(item.id)) {
+      throw new Error('The ' + label + ' taxonomy contains an invalid or repeated ID.');
+    }
+    entries.set(item.id, item.label);
+  }
+  return entries;
+}
+
+function parseBank(raw) {
+  let value;
+  try {
+    value = JSON.parse(raw);
+  } catch {
+    throw new Error('This file does not contain valid JSON.');
+  }
+  if (!record(value) || !/^1\.\d+\.\d+$/.test(str(value.schema_version)) ||
+      !record(value.metadata) || !record(value.taxonomy) || !Array.isArray(value.taxonomy.units) ||
+      !Array.isArray(value.taxonomy.knowledge_components) || !Array.isArray(value.sources) ||
+      !Array.isArray(value.questions)) {
+    throw new Error('Choose a version 1 AP Statistics bank JSON or an exported question subset.');
+  }
+  if (value.questions.length > 5000) {
+    throw new Error('This viewer supports up to 5,000 questions per file.');
+  }
+  const unitLabels = indexTaxonomy(value.taxonomy.units, 'unit');
+  const skillLabels = indexTaxonomy(value.taxonomy.knowledge_components, 'skill');
+  const ids = new Set();
+  const questionRows = value.questions.map(question => {
+    if (!record(question) || !str(question.id).trim() || ids.has(question.id) ||
+        !str(question.question_text).trim()) {
+      throw new Error('Every question needs a unique ID and plain-text prompt.');
+    }
+    ids.add(question.id);
+    const unitIds = list(question.unit_ids).filter(id => unitLabels.has(id));
+    const skillIds = list(question.knowledge_component_ids).filter(id => skillLabels.has(id));
+    const source = sourceOf(question);
+    const type = typeOf(question);
+    const year = Number.isInteger(question.year) ? String(question.year) : '';
+    const current = str(question.Current);
+    const title = str(question.title) || question.id;
+    const search = normalize([
+      question.id, title, question.question_text, source, year,
+      ...unitIds.map(id => unitLabels.get(id)),
+      ...skillIds.flatMap(id => [id, skillLabels.get(id)])
+    ].join(' '));
+    return { question, title, source, type, year, current, unitIds, skillIds, search };
+  });
+  return { value, unitLabels, skillLabels, questionRows };
+}
+
+function el(tag, text, className) {
+  const node = document.createElement(tag);
+  if (text) node.textContent = text;
+  if (className) node.className = className;
+  return node;
+}
+
+function button(text, callback) {
+  const node = el('button', text);
+  node.type = 'button';
+  node.addEventListener('click', callback);
+  return node;
+}
+
+function options(id, entries) {
+  const input = $(id);
+  input.replaceChildren(new Option('All', ''));
+  for (const [value, label] of entries) input.add(new Option(label, value));
+}
+
+function distinct(field) {
+  return [...new Set(rows.map(row => row[field]).filter(Boolean))]
+    .sort((a, b) => a.localeCompare(b, 'en', { numeric: true }))
+    .map(value => [value, value]);
+}
+
+function resetFilters() {
+  $('search').value = '';
+  $('only-selected').checked = false;
+  for (const id of filterIds) $(id).value = '';
+}
+
+function installBank(parsed) {
+  ({ value: bank, unitLabels: units, skillLabels: skills, questionRows: rows } = parsed);
+  selected = new Set();
+  figures = new Map();
+  $('asset-files').value = '';
+  active = null;
+  options('source', distinct('source'));
+  options('type', distinct('type'));
+  options('year', distinct('year').reverse());
+  const alignmentLabels = new Map([['Yes', 'Current in bank'], ['No', 'Historical in bank']]);
+  options('current', distinct('current').map(([value]) => [
+    value, alignmentLabels.get(value) || value
+  ]));
+  options('unit', units);
+  options('skill', [...skills].sort((a, b) => a[1].localeCompare(b[1])));
+  resetFilters();
+  const requestedSkill = new URLSearchParams(location.search).get('skill');
+  if (skills.has(requestedSkill)) $('skill').value = requestedSkill;
+  $('filters').hidden = false;
+  $('workspace').hidden = false;
+  $('asset-files').disabled = false;
+  renderQuestion();
+  refilter();
+}
+
+function filteredRows() {
+  const words = normalize($('search').value).split(/\s+/).filter(Boolean);
+  const [source, type, year, current, unit, skill] = filterIds.map(id => $(id).value);
+  return rows.filter(row =>
+    (!source || row.source === source) && (!type || row.type === type) &&
+    (!year || row.year === year) && (!current || row.current === current) &&
+    (!unit || row.unitIds.includes(unit)) && (!skill || row.skillIds.includes(skill)) &&
+    (!$('only-selected').checked || selected.has(row.question.id)) &&
+    words.every(word => row.search.includes(word))
+  );
+}
+
+function refilter() {
+  page = 0;
+  renderResults();
+}
+
+function renderResults(keepPaginationFocus = false) {
+  const matches = filteredRows();
+  const pages = Math.ceil(matches.length / pageSize);
+  page = Math.min(page, Math.max(0, pages - 1));
+  if (active && !matches.includes(active)) {
+    active = null;
+    renderQuestion();
+  }
+  $('results-status').textContent = matches.length
+    ? matches.length + ' matching · page ' + (page + 1) + ' of ' + pages
+    : 'No matching questions.';
+  $('results').replaceChildren();
+  for (const row of matches.slice(page * pageSize, (page + 1) * pageSize)) {
+    const item = el('li');
+    const action = button('', () => {
+      active = row;
+      renderResults();
+      renderQuestion();
+      $('question-title').focus();
+    });
+    action.setAttribute('aria-current', String(row === active));
+    action.append(el('strong', row.title), el('div', [
+      row.source, row.type, row.year, selected.has(row.question.id) ? 'Selected' : ''
+    ].filter(Boolean).join(' · '), 'metadata'));
+    item.append(action);
+    $('results').append(item);
+  }
+  const previous = $('previous');
+  const next = $('next');
+  previous.disabled = page === 0;
+  next.disabled = page + 1 >= pages;
+  if (keepPaginationFocus) {
+    (document.activeElement === previous && previous.disabled ? next :
+      document.activeElement === next && next.disabled ? previous : document.activeElement).focus();
+  }
+  $('selected-count').textContent = selected.size + ' selected';
+  $('download').disabled = selected.size === 0;
+}
+
+function appendCopy(container, text) {
+  if (str(text).trim()) container.append(el('p', text, 'copy'));
+}
+
+function releaseImages() {
+  for (const url of imageUrls) URL.revokeObjectURL(url);
+  imageUrls = [];
+}
+
+function selectedFigureFiles(files) {
+  const available = new Map();
+  for (const file of files) {
+    const path = file.webkitRelativePath.split('/').slice(-2).join('/');
+    const match = assetPattern.exec(path);
+    if (!match || file.size < 3 || file.size > 20 * 1024 * 1024) continue;
+    available.set(path, available.has(path) ? null : file);
+  }
+  return available;
+}
+
+function sourcePages(container, entries, label) {
+  if (!entries.length) return;
+  const slot = el('div', '', 'assets');
+  const show = button('Show ' + label.toLowerCase() + ' pages', async () => {
+    show.disabled = true;
+    const selectedFigures = figures;
+    let loaded = 0;
+    for (const entry of entries) {
+      const path = str(entry?.src);
+      const file = assetPattern.test(path) && selectedFigures.get(path);
+      if (!file) continue;
+      let header;
+      try {
+        header = new Uint8Array(await file.slice(0, 3).arrayBuffer());
+      } catch {
+        continue;
+      }
+      if (!slot.isConnected || figures !== selectedFigures) return;
+      if (header[0] !== 255 || header[1] !== 216 || header[2] !== 255) continue;
+      const url = URL.createObjectURL(new Blob([file], { type: 'image/jpeg' }));
+      imageUrls.push(url);
+      const figure = el('figure');
+      const img = el('img');
+      img.src = url;
+      img.alt = label + ' source-page image' + (Number.isInteger(entry.page) ? ' · page ' + entry.page : '');
+      img.loading = 'lazy';
+      figure.append(img, el('figcaption', img.alt, 'muted'));
+      slot.append(figure);
+      loaded++;
+    }
+    if (slot.isConnected && loaded < entries.length) {
+      slot.append(el('p', 'Some source pages are unavailable. Choose the extracted assets folder to load available JPEG images.', 'muted'));
+    }
+  });
+  container.append(show, slot);
+}
+
+function choiceExercise(container, question) {
+  const choices = list(question.choices).filter(choice => str(choice?.label) && str(choice?.text));
+  if (!choices.length) return;
+  const group = el('fieldset');
+  group.append(el('legend', 'Choose an answer'));
+  for (const choice of choices) {
+    const label = el('label');
+    const input = el('input');
+    input.type = 'radio';
+    input.name = 'active-choice';
+    input.value = choice.label;
+    label.append(input, document.createTextNode(' ' + choice.label + '. ' + choice.text));
+    group.append(label);
+  }
+  container.append(group);
+  if (choices.some(choice => choice.label === question.correct_choice)) {
+    const feedback = el('p');
+    feedback.setAttribute('role', 'status');
+    container.append(button('Check answer', () => {
+      const chosen = group.querySelector('input:checked');
+      feedback.textContent = !chosen ? 'Choose an option first.' :
+        chosen.value === question.correct_choice ? 'Correct.' : 'Try again or open the solution.';
+    }), feedback);
+  }
+}
+
+function renderQuestion() {
+  releaseImages();
+  const container = $('question');
+  container.replaceChildren();
+  if (!active) {
+    container.append(el('p', 'Choose a question to start.'));
+    return;
+  }
+  const { question, title, source, type, year, unitIds, skillIds } = active;
+  const heading = el('h2', title);
+  heading.id = 'question-title';
+  heading.tabIndex = -1;
+  const selection = button('', () => {
+    if (!selected.delete(question.id)) selected.add(question.id);
+    showSelection();
+    renderResults();
+    if (!active) $('only-selected').focus();
+  });
+  function showSelection() {
+    const saved = selected.has(question.id);
+    selection.textContent = saved ? 'Remove from selection' : 'Add to selection';
+    selection.setAttribute('aria-pressed', String(saved));
+  }
+  showSelection();
+  container.append(heading, el('p', [source, type, year].filter(Boolean).join(' · '), 'metadata'), selection);
+  if (unitIds.length) container.append(el('p', unitIds.map(id => units.get(id)).join(' · '), 'metadata'));
+  if (skillIds.length) container.append(el('p', skillIds.map(id => skills.get(id)).join(' · '), 'metadata'));
+  container.append(el('p', 'Transcription. Use the original pages for layout, diagrams, and notation when available.', 'muted'));
+  appendCopy(container, question.question_text);
+  choiceExercise(container, question);
+  const parts = list(question.parts).filter(record);
+  const prompt = compact(question.question_text);
+  for (const part of parts) {
+    if (!str(part.prompt).trim() || prompt.includes(compact(part.prompt))) continue;
+    container.append(el('h3', 'Part ' + (str(part.label) || 'prompt')));
+    appendCopy(container, part.prompt);
+  }
+  sourcePages(container, list(question.question_page_assets), 'Question');
+  const solution = el('details');
+  solution.append(el('summary', 'Show solution and scoring'));
+  if (str(question.correct_choice)) {
+    const label = question.answer_key_origin === 'derived_from_scoring_guide' ? 'Inferred answer choice ' : 'Answer choice ';
+    appendCopy(solution, label + question.correct_choice);
+  }
+  if (str(question.answer_overview).trim()) {
+    solution.append(el('h3', 'Answer overview'));
+    appendCopy(solution, question.answer_overview);
+  }
+  if (str(question.official_answer_text).trim() && question.official_answer_text !== question.answer_overview) {
+    solution.append(el('h3', 'Scoring guide transcription'));
+    appendCopy(solution, question.official_answer_text);
+  }
+  for (const part of parts) {
+    if (!str(part.answer_summary).trim()) continue;
+    solution.append(el('h3', 'Part ' + (str(part.label) || 'solution')));
+    appendCopy(solution, part.answer_summary);
+    if (typeof part.max_points === 'number') appendCopy(solution, part.max_points + ' maximum points');
+    const rubric = list(part.rubric_points).map(point => str(point) || str(point?.criterion)).filter(Boolean);
+    if (rubric.length) {
+      const criteria = el('ul');
+      for (const point of rubric) criteria.append(el('li', point));
+      solution.append(criteria);
+    }
+  }
+  sourcePages(solution, list(question.answer_page_assets), 'Answer');
+  container.append(solution);
+}
+
+function countsByType(questions) {
+  return Object.fromEntries(['MCQ', 'FRQ'].map(type => [
+    type, questions.filter(question => typeOf(question) === type).length
+  ]));
+}
+
+function summarizeGroups(questions, fieldsFor, includeTypes = false) {
+  const groups = new Map();
+  for (const question of questions) {
+    const fields = fieldsFor(question);
+    const key = JSON.stringify(fields);
+    if (!groups.has(key)) groups.set(key, { fields, questions: [] });
+    groups.get(key).questions.push(question);
+  }
+  return [...groups.values()].map(group => ({
+    ...group.fields,
+    question_count: group.questions.length,
+    ...(includeTypes ? { type_counts: countsByType(group.questions) } : {})
+  }));
+}
+
+function exportSelection(bankData, selection) {
+  const questions = bankData.questions.filter(question => selection.has(question.id));
+  const past = questions.filter(question => sourceOf(question) === 'Past Exam');
+  const progress = questions.filter(question => sourceOf(question) === 'Progress Check');
+  const practice = questions.filter(question => sourceOf(question) === 'Practice Exam');
+  const papers = summarizeGroups(past, question => ({ year: question.year, form: question.form || null }));
+  const metadata = {
+    ...bankData.metadata,
+    exported_at: new Date().toISOString(),
+    question_count: questions.length,
+    paper_count: papers.length,
+    papers,
+    subpart_count: questions.reduce((total, question) => total + list(question.parts).length, 0),
+    years: [...new Set(questions.map(question => question.year).filter(Number.isInteger))].sort((a, b) => a - b),
+    past_exam_count: past.length,
+    progress_check_count: progress.length,
+    progress_check_sets: summarizeGroups(progress, question => ({
+      unit: question.Unit, type: typeOf(question), part: question.progress_check_part || null
+    })),
+    practice_exam_count: practice.length,
+    practice_exams: summarizeGroups(practice, question => ({ name: question.practice_exam }), true),
+    type_counts: countsByType(questions)
+  };
+  return { ...bankData, metadata, questions };
+}
+
+$('bank-file').addEventListener('change', async event => {
+  const file = event.target.files[0];
+  if (!file) return;
+  const epoch = ++fileEpoch;
+  $('clear-bank').disabled = false;
+  $('file-status').textContent = 'Reading local bank…';
+  event.target.value = '';
+  try {
+    if (file.size > 25 * 1024 * 1024) throw new Error('Choose a JSON file smaller than 25 MB.');
+    const raw = await file.text().catch(() => { throw new Error('The selected file could not be read.'); });
+    if (epoch !== fileEpoch) return;
+    const parsed = parseBank(raw);
+    installBank(parsed);
+    $('file-status').textContent = rows.length + ' questions loaded from ' + file.name + '.';
+  } catch (error) {
+    if (epoch === fileEpoch) {
+      $('file-status').textContent = error.message + (bank ? ' Your previous bank is still open.' : '');
+      $('clear-bank').disabled = !bank;
+    }
+  }
+});
+
+$('asset-files').addEventListener('change', event => {
+  figures = selectedFigureFiles(event.target.files);
+  const count = [...figures.values()].filter(Boolean).length;
+  $('file-status').textContent = count
+    ? count + ' local JPEG source pages available.'
+    : 'No matching local JPEGs found. Choose the extracted assets folder.';
+  renderQuestion();
+});
+
+$('clear-bank').addEventListener('click', () => {
+  fileEpoch++;
+  bank = null;
+  rows = [];
+  units.clear();
+  skills.clear();
+  selected.clear();
+  figures.clear();
+  active = null;
+  $('bank-file').value = '';
+  $('asset-files').value = '';
+  $('asset-files').disabled = true;
+  $('filters').hidden = true;
+  $('workspace').hidden = true;
+  for (const id of filterIds) options(id, []);
+  resetFilters();
+  renderResults();
+  renderQuestion();
+  $('file-status').textContent = 'Local files cleared.';
+  $('clear-bank').disabled = true;
+  $('bank-file').focus();
+});
+
+$('search').addEventListener('input', refilter);
+for (const id of [...filterIds, 'only-selected']) $(id).addEventListener('change', refilter);
+$('reset-filters').addEventListener('click', () => {
+  resetFilters();
+  refilter();
+  $('search').focus();
+});
+$('previous').addEventListener('click', () => { page--; renderResults(true); });
+$('next').addEventListener('click', () => { page++; renderResults(true); });
+$('download').addEventListener('click', () => {
+  if (!selected.size) return;
+  const data = JSON.stringify(exportSelection(bank, selected), null, 2);
+  const url = URL.createObjectURL(new Blob([data], { type: 'application/json' }));
+  const link = el('a');
+  link.href = url;
+  link.download = 'ap_statistics_selected_questions.json';
+  document.body.append(link);
+  link.click();
+  link.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+});
+</script>
+</body>
+</html>

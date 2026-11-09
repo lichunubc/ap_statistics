@@ -1,5 +1,6 @@
 """Validate the public catalogue and build metadata-only browser assets."""
 from pathlib import Path
+from fnmatch import fnmatch
 import json
 import subprocess
 
@@ -19,10 +20,39 @@ for item in catalog['items']:
     assert item['topic'] in catalog['topics'] and item['delivery'] == 'local-class-file'
     assert item['source_pages'] and all(1 <= p <= source_pages[item['source_week']] for p in item['source_pages'])
     assert all(t in catalog['topics'] for t in item['secondary_topics'])
+PRIVATE_NAMES = (
+    '*.practice.json',
+    'MHS_AP_Statistics_Week_*',
+    'ap_statistics_question_bank.json',
+    'ap_statistics_browser.html',
+    'ap_statistics_question_bank.html',
+    'ap_statistics_question_browser.html',
+    'ap_statistics_question_bank*.zip',
+    'ap_statistics_complete_dependency_map.html',
+    'apstats_dependency_expansion_*',
+    'apstats_improvement_*',
+)
+
+
+def private_path(path):
+    return 'local-content' in path.parts or any(
+        fnmatch(path.name.lower(), pattern.lower()) for pattern in PRIVATE_NAMES
+    )
+
+
+def check_private_paths(paths, description):
+    forbidden = sorted(str(path) for path in paths if private_path(path))
+    if forbidden:
+        raise ValueError(f'Private classroom content in {description}: {forbidden}')
+
+
 if (REPO / '.git').exists():
     tracked = subprocess.check_output(['git', 'ls-files', '-z'], cwd=REPO).decode().split('\0')
-    forbidden = [p for p in tracked if '/local-content/' in '/' + p or p.endswith('.practice.json') or 'MHS_AP_Statistics_Week_' in p]
-    assert not forbidden, f'Private classroom content must not be tracked: {forbidden}'
+    check_private_paths((Path(path) for path in tracked if path), 'Git index')
+
+# Quarto copies resource directories even when a file is ignored by Git.
+for public_dir in (ROOT / 'assets', ROOT / 'original', REPO / 'docs'):
+    check_private_paths(public_dir.rglob('*'), public_dir.relative_to(REPO))
 output = ROOT / 'assets' / 'catalog.js'
 output.parent.mkdir(parents=True, exist_ok=True)
 output.write_text('/* Generated public metadata only; no source question content. */\nwindow.MHSProblemCatalog = ' + json.dumps(catalog, ensure_ascii=False, separators=(',', ':')) + ';\n', encoding='utf-8')

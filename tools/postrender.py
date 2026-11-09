@@ -23,7 +23,14 @@ def rebase_html(text,source_dir,dest_dir):
         return key+'='+mark+result+mark
     return attr.sub(replace,text)
 # Normalize project-root resources and relative URLs before copying any aliases.
+standalone_bank_pages = {
+    OUT / 'Problem Bank/assets/expanded-bank.html',
+    OUT / 'Problem Bank/assets/dependency-map.html',
+}
 for p in OUT.rglob('*.html'):
+    if p in standalone_bank_pages:
+        # These resources already use relative URLs and contain integrity-checked inline scripts.
+        continue
     text=p.read_text(encoding='utf-8')
     text=re.sub(r'<link\b[^>]*href=["\'][^"\']*bootstrap-icons[^"\']*["\'][^>]*>','',text)
     parent=p.parent.relative_to(OUT).as_posix()
