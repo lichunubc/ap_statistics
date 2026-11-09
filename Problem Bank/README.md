@@ -4,9 +4,15 @@ A reusable bank for the Maple Hill School course. The first selection contains *
 
 ## Student route
 
-Open **Problem Bank: Selected Homework** in the course sidebar, or **Selected homework practice** near the end of Topics 1.2–1.6. Open the instructor-provided `mhs-week-2-3.practice.json` with the file picker. It is parsed locally; it is never sent to the website. Native radio choices, explicit checking, reset, expandable explanations, figure enlargement, and metadata search work after loading.
+Open **Problem Bank** and scroll to **Selected homework** in the course sidebar, or **Selected homework practice** near the end of Topics 1.2–1.6. Open the instructor-provided `mhs-week-2-3.practice.json` with the file picker. It is parsed locally; it is never sent to the website. Native radio choices, explicit checking, reset, expandable explanations, figure enlargement, and metadata search work after loading.
 
 The file is retained in this tab's `sessionStorage` to support navigation between lessons. It is not placed in persistent `localStorage` or IndexedDB. Browser session restoration can preserve tab storage: use **Forget class file** to explicitly clear it, especially on shared computers. Learner answers exist only in page memory and are not submitted, graded remotely, or carried to another page.
+
+## Expanded bank and skill map
+
+- **Expanded bank reader.** Open the link on the Problem Bank page, then choose the authorized `ap_statistics_question_bank.json`. If the package has figures, extract it and choose its `assets` folder. The browser reads the files on the device. The expanded reader keeps the loaded bank and review activity in page memory. Download the reader HTML to use it offline.
+- **Skill dependency map.** Search by skill name or alias, choose a node, and trace earlier skills or later uses. **Find practice for this skill** carries a stable skill ID to the reader, which uses it as a filter when the imported bank contains the ID. The public atlas contains 272 nodes, including 208 AP concepts and 28 external foundations, with 482 prerequisite links. Supporting, corequisite, and taxonomy links have separate meanings. The map includes current, legacy, and extension skills with evidence notes. It is a teaching map with scoped links and review qualifications.
+- **Maintenance.** Keep the private bank and its asset directory outside this repository. Run `python "Problem Bank/tools/export_dependency_map.py" /path/to/audited-atlas.html` to regenerate the public map from a reviewed atlas. Review the generated file for private content before committing it. The existing classroom reader and local class-file format continue to serve the selected homework.
 
 ## Layout and source of truth
 

@@ -16,7 +16,7 @@ The [College Board AP Statistics course framework](https://apcentral.collegeboar
 
 ## Practice
 
-Use the **Practice** section in each lesson to check your understanding. Try a question before opening its solution, then compare both the result and reasoning. The **Selected Homework** bank uses the class file supplied by your teacher.
+Use the **Practice** section in each lesson to check your understanding. Try a question before opening its solution, then compare both the result and reasoning. The [Problem Bank](<Problem Bank/practice.qmd>) links to selected homework, the expanded question bank reader, and a map of the skills you can review before starting a topic.
 
 ## Printing
 

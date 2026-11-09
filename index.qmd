@@ -62,4 +62,6 @@ A place for future lessons. No topics have been published yet.
 
 Read an explanation, predict what will happen, and then use the activity. For construction questions, draw on paper before opening **Show solution**. A correct answer includes appropriate labels, a sensible scale, and reasoning in context—not only arithmetic.
 
+[Open the Problem Bank](<Problem Bank/practice.qmd>) for selected homework, the expanded question bank reader, and the skill dependency map.
+
 [Sources and study resources](resources.qmd)

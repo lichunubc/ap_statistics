@@ -11,3 +11,12 @@ node_modules/
 *.practice.json
 MHS_AP_Statistics_Week_*.pdf
 /Problem Bank/assets/catalog.js
+
+# The expanded question bank and private checkpoints stay outside the site.
+ap_statistics_question_bank.json
+AP_Statistics_Question_Bank*.zip
+AP_Statistics_Question_Bank*.html
+AP_Statistics_Question_Browser.html
+AP_Statistics_Complete_Dependency_Map.html
+APStats_Dependency_Expansion_*
+APStats_Improvement_*
