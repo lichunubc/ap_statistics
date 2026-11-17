@@ -1,6 +1,6 @@
 # Unit 1: Exploring One-Variable Data and Collecting Data
 
-Each topic is an independent chapter and a separate editorial folder. Use the exact official topic name, not a combined range such as “1.1–1.4”. The current book includes Topics **1.1–1.11**; Topics 1.12–1.13 remain under development.
+Each topic is an independent chapter and a separate editorial folder. Use the exact official topic name, not a combined range such as “1.1–1.4”. The current book includes Topics **1.1–1.12** published; Topic 1.13 is a preview candidate under validation.
 
 The student-facing unit entrance is **[unit-1.qmd](unit-1.qmd)**. Edit this file to maintain the currently published topic cards and the unit's dataset introduction. The root `index.qmd` contains only the five-unit overview, not this topic list. The unit title in the sidebar opens this entrance; its separate arrow shows/hides the topics.
 
@@ -15,6 +15,8 @@ The student-facing unit entrance is **[unit-1.qmd](unit-1.qmd)**. Edit this file
 - [Topic 1.9 Comparisons of the Distributions for One Quantitative Variable](<Topic 1.9/README.md>)
 - [Topic 1.10 The Investigative Question Revisited and Data Collection](<Topic 1.10/README.md>)
 - [Topic 1.11 Random Sampling](<Topic 1.11/README.md>)
+- [Topic 1.12 Potential Problems with Sampling](<Topic 1.12/README.md>)
+- [Topic 1.13 Experimental Design](<Topic 1.13/README.md>)
 
 ## Finding files for manual editing
 
