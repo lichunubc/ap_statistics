@@ -1,0 +1,322 @@
+{
+  "schema_version": 1,
+  "bank_id": "mhs-ap-statistics-original",
+  "topic": "2.7",
+  "title": "Independent Events and Unions of Events",
+  "rights": "Original teacher-authored public-safe practice; no secure homework.",
+  "revision": 1,
+  "items": [
+    {
+      "id": "MHS-U2-T27-001",
+      "type": "mc",
+      "difficulty": "Foundation",
+      "primary_topic": "2.7",
+      "tags": [
+        "independent events",
+        "union probability",
+        "joint probability",
+        "mutually exclusive"
+      ],
+      "objectives": [
+        "2.7.A"
+      ],
+      "prompt": "For one fair die, E is even and M is a multiple of 3. What is P(E and M)?",
+      "hint": "Count numbers both even and multiples of 3.",
+      "solution": "The intersection E∩M is {6}, so its probability is 1/6.",
+      "rights": "original",
+      "provenance": "Maple Hill School original public-safe teaching practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "1/6"
+        },
+        {
+          "label": "B",
+          "text": "2/6"
+        },
+        {
+          "label": "C",
+          "text": "3/6"
+        },
+        {
+          "label": "D",
+          "text": "5/6"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "MHS-U2-T27-002",
+      "type": "mc",
+      "difficulty": "Foundation",
+      "primary_topic": "2.7",
+      "tags": [
+        "independent events",
+        "union probability",
+        "joint probability",
+        "mutually exclusive"
+      ],
+      "objectives": [
+        "2.7.A"
+      ],
+      "prompt": "With E and M from the previous question, what is P(E or M)?",
+      "hint": "Use the union rule and subtract the overlap.",
+      "solution": "P(E∪M)=(3+2−1)/6=4/6=2/3.",
+      "rights": "original",
+      "provenance": "Maple Hill School original public-safe teaching practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "1/6"
+        },
+        {
+          "label": "B",
+          "text": "2/3"
+        },
+        {
+          "label": "C",
+          "text": "5/6"
+        },
+        {
+          "label": "D",
+          "text": "1/2"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "MHS-U2-T27-003",
+      "type": "mc",
+      "difficulty": "Developing",
+      "primary_topic": "2.7",
+      "tags": [
+        "independent events",
+        "union probability",
+        "joint probability",
+        "mutually exclusive"
+      ],
+      "objectives": [
+        "2.7.A"
+      ],
+      "prompt": "Are E={2,4,6} and M={3,6} independent on a fair die?",
+      "hint": "Compare the joint probability with the product of marginals.",
+      "solution": "P(E∩M)=1/6=(3/6)(2/6), so E and M are independent, even though they overlap.",
+      "rights": "original",
+      "provenance": "Maple Hill School original public-safe teaching practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "No, because they overlap."
+        },
+        {
+          "label": "B",
+          "text": "No, because their union is 2/3."
+        },
+        {
+          "label": "C",
+          "text": "Yes, because P(E∩M)=P(E)P(M)."
+        },
+        {
+          "label": "D",
+          "text": "Yes, because all pairs of events from one die are independent."
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "MHS-U2-T27-004",
+      "type": "mc",
+      "difficulty": "Developing",
+      "primary_topic": "2.7",
+      "tags": [
+        "independent events",
+        "union probability",
+        "joint probability",
+        "mutually exclusive"
+      ],
+      "objectives": [
+        "2.7.A"
+      ],
+      "prompt": "Even and odd on a single fair-die roll are best described as which?",
+      "hint": "Check whether they overlap and whether the independence product is zero.",
+      "solution": "Even and odd are mutually exclusive since the intersection is zero, but are not independent since (3/6)(3/6)=1/4 is not zero.",
+      "rights": "original",
+      "provenance": "Maple Hill School original public-safe teaching practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "Independent and mutually exclusive"
+        },
+        {
+          "label": "B",
+          "text": "Independent but not mutually exclusive"
+        },
+        {
+          "label": "C",
+          "text": "Neither independent nor mutually exclusive"
+        },
+        {
+          "label": "D",
+          "text": "Mutually exclusive but dependent"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "MHS-U2-T27-005",
+      "type": "mc",
+      "difficulty": "Developing",
+      "primary_topic": "2.7",
+      "tags": [
+        "independent events",
+        "union probability",
+        "joint probability",
+        "mutually exclusive"
+      ],
+      "objectives": [
+        "2.7.A"
+      ],
+      "prompt": "One card is selected from a standard deck. What is the probability it is a heart or a king?",
+      "hint": "There is one king of hearts counted twice if you simply add.",
+      "solution": "(13+4−1)/52=16/52=4/13.",
+      "rights": "original",
+      "provenance": "Maple Hill School original public-safe teaching practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "4/13"
+        },
+        {
+          "label": "B",
+          "text": "17/52"
+        },
+        {
+          "label": "C",
+          "text": "1/52"
+        },
+        {
+          "label": "D",
+          "text": "13/52"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "MHS-U2-T27-006",
+      "type": "mc",
+      "difficulty": "Developing",
+      "primary_topic": "2.7",
+      "tags": [
+        "independent events",
+        "union probability",
+        "joint probability",
+        "mutually exclusive"
+      ],
+      "objectives": [
+        "2.7.A"
+      ],
+      "prompt": "Suppose P(A)=0.45, P(B)=0.40, and P(A and B)=0.18. What is P(A or B)?",
+      "hint": "Subtract the intersection once.",
+      "solution": "P(A∪B)=0.45+0.40−0.18=0.67. These events are also independent because 0.45×0.40=0.18.",
+      "rights": "original",
+      "provenance": "Maple Hill School original public-safe teaching practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.85"
+        },
+        {
+          "label": "B",
+          "text": "0.67"
+        },
+        {
+          "label": "C",
+          "text": "0.18"
+        },
+        {
+          "label": "D",
+          "text": "0.22"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "MHS-U2-T27-007",
+      "type": "mc",
+      "difficulty": "Application",
+      "primary_topic": "2.7",
+      "tags": [
+        "independent events",
+        "union probability",
+        "joint probability",
+        "mutually exclusive"
+      ],
+      "objectives": [
+        "2.7.A"
+      ],
+      "prompt": "Suppose P(A)=0.60, P(B)=0.50, and P(A and B)=0.20. Which statement is correct?",
+      "hint": "Compare 0.20 with 0.60×0.50 and compute the union.",
+      "solution": "P(A∪B)=0.60+0.50−0.20=0.90; P(A)P(B)=0.30, so the events are not independent.",
+      "rights": "original",
+      "provenance": "Maple Hill School original public-safe teaching practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "The events are mutually exclusive."
+        },
+        {
+          "label": "B",
+          "text": "The events are independent and P(A or B)=0.80."
+        },
+        {
+          "label": "C",
+          "text": "The events are dependent and P(A or B)=0.90."
+        },
+        {
+          "label": "D",
+          "text": "P(A or B)=1.10."
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "MHS-U2-T27-008",
+      "type": "mc",
+      "difficulty": "Application",
+      "primary_topic": "2.7",
+      "tags": [
+        "independent events",
+        "union probability",
+        "joint probability",
+        "mutually exclusive"
+      ],
+      "objectives": [
+        "2.7.A"
+      ],
+      "prompt": "A fair die is rolled three times independently. What is the probability of at least one six?",
+      "hint": "Subtract P(no six on any of the three rolls) from 1.",
+      "solution": "P(at least one six)=1−(5/6)^3=91/216≈0.4213.",
+      "rights": "original",
+      "provenance": "Maple Hill School original public-safe teaching practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "(1/6)^3"
+        },
+        {
+          "label": "B",
+          "text": "3/6"
+        },
+        {
+          "label": "C",
+          "text": "(5/6)^3"
+        },
+        {
+          "label": "D",
+          "text": "91/216"
+        }
+      ],
+      "answer": "D"
+    }
+  ]
+}
