@@ -32,5 +32,15 @@
     "integrate 2.3–2.7 and latest slides",
     "final live and privacy audit"
   ],
-  "published_in_this_session": []
+  "published_in_this_session": [],
+  "preview_ci_passed": "44052764554; 21/21",
+  "pending": "22/22 latest preview native browser test, then main deploy",
+  "public_safe_derivative": {
+    "pdf": "AP_Statistics_2_3_to_2_7_Public_Safe_Study_Guide.pdf",
+    "pdf_sha256": "84c4e8c6b5dd745f1055eddc7872eb3bbe16fc705404fdd6123625a738a5170d",
+    "source_zip": "AP_Statistics_2_3_to_2_7_Public_Safe_Study_Guide_Source.zip",
+    "zip_sha256": "f8d7171b81623307c00b9600cdfdca1583b9d7ac789b1bc0574f39c034489e54",
+    "repository_published": false,
+    "library_upload": "AccessDeny"
+  }
 }

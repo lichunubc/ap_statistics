@@ -17,3 +17,8 @@ Only Topics 1.1–1.13 and 2.1–2.7 are in scope. Do not extend into 2.8–2.12
 
 ## Remaining work
 Complete preview CI; fix any genuine issues; recover 1.13 approved sources and instructor-specific corrections; recover 2.1–2.2 café resources; build independent 2.3–2.7 topic pages and integrate the 42-slide deck and clean public-safe study guide; finish integration privacy and live checks. Reserve final run for independently verified coverage and exact blockers. Do not create more automation sessions.
+
+## First-session validation update
+- [Preview GitHub Actions run 44052764554](https://github.com/lichunubc/ap_statistics/actions/runs/44052764554) passed true Quarto render and **21/21** checks. Its predecessor failed only because `ubuntu-latest` had moved to Ubuntu 26.04 unsupported by Playwright 1.57; both jobs now explicitly use supported `ubuntu-24.04`.
+- A new dedicated Topic 1.12 HTTP/Playwright test (desktop/tablet/390px phone, keyboard, sample reset, original practice, print, no-JS) is now part of the preview and live verification gates. Its newest run has not yet been checked.
+- A clean 28-page **public-safe** probability guide was compiled and visually checked, without the two secure homework-derived sections. PDF `AP_Statistics_2_3_to_2_7_Public_Safe_Study_Guide.pdf`, SHA-256 `84c4e8c6b5dd745f1055eddc7872eb3bbe16fc705404fdd6123625a738a5170d`; source ZIP `AP_Statistics_2_3_to_2_7_Public_Safe_Study_Guide_Source.zip`, SHA-256 `f8d7171b81623307c00b9600cdfdca1583b9d7ac789b1bc0574f39c034489e54`. The Venn circle labels now do not overlap. These are generated conversation files, **not GitHub-public yet**. Attempted Library persistence failed with AccessDeny. Recover by exact conversation file names on the next session.
