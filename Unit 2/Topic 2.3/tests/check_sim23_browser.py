@@ -37,7 +37,7 @@ try:
    panel.locator('[data-sim23-n="10"]').focus();page.keyboard.press('Enter')
    assert panel.locator('[data-sim23-total]').inner_text()=='10'
    assert panel.locator('[data-sim23-plot] svg').count()==1
-   assert '10 completed' in panel.get_attribute('aria-label') if panel.get_attribute('aria-label') else True
+   assert 'After 10 completed' in panel.locator('[data-sim23-plot]').get_attribute('aria-label')
    panel.locator('[data-sim23-n="100"]').click()
    assert panel.locator('[data-sim23-total]').inner_text()=='110'
    panel.locator('[data-sim23-reset]').click()
