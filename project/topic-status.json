@@ -354,7 +354,7 @@
     {
       "id": "1.12",
       "title": "Potential Problems with Sampling",
-      "status": "implemented_preview_candidate",
+      "status": "implemented",
       "directory": "Unit 1/Topic 1.12",
       "chapter": "Unit 1/Topic 1.12/topic-1-12.qmd",
       "ced_printed_pages": "50",
@@ -376,7 +376,8 @@
       "interactions": [
         "SRS/convenience sampling lab"
       ],
-      "publication_note": "Preview candidate; full CI and live checks required."
+      "publication_note": "Live and verified 2026-11-17: preview 44055585734, production 44056459782; full 22-suite CI, Pages and dedicated live Topic 1.12 browser checks passed.",
+      "implemented_on": "2026-11-17"
     }
   ]
 }

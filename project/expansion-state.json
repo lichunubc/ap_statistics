@@ -159,17 +159,27 @@
       "ced_printed_pages": [
         50
       ],
-      "status": "preview_candidate",
+      "status": "published_verified",
       "attempts": 1,
       "preview_branch": "preview/overnight-materials-20261117",
-      "source_commit": "5da0d3b59501bdcac72b886c28f464952a842f1c",
-      "preview_actions_url": "https://github.com/lichunubc/ap_statistics/actions/runs/44052764554",
+      "source_commit": "25062896317c7a15aa36718da65c34b3b92f4338",
+      "preview_actions_url": "https://github.com/lichunubc/ap_statistics/actions/runs/44055585734",
       "validation": {
-        "quarto_render": "passed preview",
-        "initial_regressions": "21/21 passed",
-        "dedicated_browser": "added; needs latest CI",
-        "publication": "not live"
-      }
+        "quarto_render": "passed preview and production with Quarto 1.9.38",
+        "registered_suites": 22,
+        "regressions": "all 22 source, mathematical, browser, presentation, navigation and private-bank boundary suites passed",
+        "desktop_tablet_phone": [
+          1440,
+          768,
+          390
+        ],
+        "publication": "GitHub Pages deployment succeeded in production run 44056459782",
+        "live_verification": "revision-matched chapter, navigation, original public practice, problem bank, presentation, and dedicated Topic 1.12 browser, keyboard, print and no-JS gates passed",
+        "release_marker": "docs/release.json lists Unit 1 Topics 1.1–1.12 and source commit 25062896317c7a15aa36718da65c34b3b92f4338"
+      },
+      "actions_url": "https://github.com/lichunubc/ap_statistics/actions/runs/44056459782",
+      "live_url": "https://lichunubc.github.io/ap_statistics/Unit%201/Topic%201.12/topic-1-12.html",
+      "verified_on": "2026-11-17"
     },
     {
       "order": 7,
@@ -344,6 +354,16 @@
       "preview_actions_url": "https://github.com/lichunubc/ap_statistics/actions/runs/44052764554",
       "verified_on": "2026-11-17",
       "note": "Public-safe original lesson and practice. Quarto and 21 regression checks passed on preview; additional native browser check added. Production not yet released."
+    },
+    {
+      "topic": "1.12",
+      "status": "published_verified",
+      "source_commit": "25062896317c7a15aa36718da65c34b3b92f4338",
+      "preview_actions_url": "https://github.com/lichunubc/ap_statistics/actions/runs/44055585734",
+      "actions_url": "https://github.com/lichunubc/ap_statistics/actions/runs/44056459782",
+      "live_url": "https://lichunubc.github.io/ap_statistics/Unit%201/Topic%201.12/topic-1-12.html",
+      "verified_on": "2026-11-17",
+      "note": "Corrected deterministic-reset browser test after failed first preview; 22/22 full preview regression passed, non-force main fast-forward, native production render and full 22-suite gate passed, Pages deployment plus exact live revision, navigation, bank, presentation and Topic 1.12 browser checks all passed. Privacy boundary preserved."
     }
   ],
   "last_build_repair": {
