@@ -1,0 +1,227 @@
+{
+  "schema_version": 1,
+  "bank_id": "mhs-ap-statistics-original",
+  "topic": "1.12",
+  "title": "Potential Problems with Sampling",
+  "rights": "Original public teacher-authored practice; no secure homework or copied assessment questions.",
+  "revision": 1,
+  "items": [
+    {
+      "id": "MHS-U1-T112-001",
+      "type": "mc",
+      "difficulty": "Foundation",
+      "primary_topic": "1.12",
+      "tags": [
+        "sampling variability"
+      ],
+      "objectives": [
+        "1.12.A"
+      ],
+      "prompt": "A properly selected random sample has a sample mean below the population mean. What is the best conclusion?",
+      "hint": "Think about what one sample can establish.",
+      "solution": "A single randomly chosen sample can deviate by chance; this fact alone does not demonstrate systematic bias.",
+      "rights": "original",
+      "provenance": "Maple Hill School original practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "This alone proves selection bias."
+        },
+        {
+          "label": "B",
+          "text": "Sampling variability can produce a difference without bias."
+        },
+        {
+          "label": "C",
+          "text": "The responses must be inaccurate."
+        },
+        {
+          "label": "D",
+          "text": "The sample must be voluntary."
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "MHS-U1-T112-002",
+      "type": "mc",
+      "difficulty": "Foundation",
+      "primary_topic": "1.12",
+      "tags": [
+        "undercoverage"
+      ],
+      "objectives": [
+        "1.12.A"
+      ],
+      "prompt": "A city samples uniformly from a landline-only phone directory. What is a likely threat?",
+      "hint": "Some eligible residents have no chance to be sampled.",
+      "solution": "People without landlines are not in the sampling frame, so they cannot be selected.",
+      "rights": "original",
+      "provenance": "Maple Hill School original practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "Leading-question response bias."
+        },
+        {
+          "label": "B",
+          "text": "Random assignment."
+        },
+        {
+          "label": "C",
+          "text": "Undercoverage of mobile-only residents."
+        },
+        {
+          "label": "D",
+          "text": "Nonresponse among all citizens."
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "MHS-U1-T112-003",
+      "type": "mc",
+      "difficulty": "Foundation",
+      "primary_topic": "1.12",
+      "tags": [
+        "nonresponse"
+      ],
+      "objectives": [
+        "1.12.A"
+      ],
+      "prompt": "A researcher randomly selects 100 students. Twenty selected students never answer. What issue needs attention?",
+      "hint": "They were selected first, then failed to answer.",
+      "solution": "The 20 nonrespondents were chosen but yielded no observations. If they differ from respondents, estimates may be biased.",
+      "rights": "original",
+      "provenance": "Maple Hill School original practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "Nonresponse."
+        },
+        {
+          "label": "B",
+          "text": "Voluntary response."
+        },
+        {
+          "label": "C",
+          "text": "Randomized treatment allocation."
+        },
+        {
+          "label": "D",
+          "text": "Mistaken sample-space labels."
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "MHS-U1-T112-004",
+      "type": "mc",
+      "difficulty": "Foundation",
+      "primary_topic": "1.12",
+      "tags": [
+        "voluntary response"
+      ],
+      "objectives": [
+        "1.12.A"
+      ],
+      "prompt": "An open online poll receives 10,000 responses. Which statement is most defensible?",
+      "hint": "Who decided which people would be included?",
+      "solution": "Volunteers choose whether to join, and respondents may differ from the whole population. Direction cannot be concluded just from sample size.",
+      "rights": "original",
+      "provenance": "Maple Hill School original practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "It is necessarily unbiased because n is large."
+        },
+        {
+          "label": "B",
+          "text": "It is an SRS because anyone may join."
+        },
+        {
+          "label": "C",
+          "text": "A large number alone does not repair volunteer self-selection."
+        },
+        {
+          "label": "D",
+          "text": "The estimate must be too high."
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "MHS-U1-T112-005",
+      "type": "number",
+      "difficulty": "Developing",
+      "primary_topic": "1.12",
+      "tags": [
+        "weighted mean"
+      ],
+      "objectives": [
+        "1.12.A"
+      ],
+      "prompt": "There are 40 ten-minute walkers and 60 thirty-minute bus riders. Find the population mean commute time in minutes.",
+      "hint": "Compute a weighted mean of all 100 people.",
+      "solution": "$\\mu=[40(10)+60(30)]/100=\\boxed{22}$ minutes.",
+      "rights": "original",
+      "provenance": "Maple Hill School original practice, November 2026",
+      "answer": 22,
+      "tolerance": 0
+    },
+    {
+      "id": "MHS-U1-T112-006",
+      "type": "written",
+      "difficulty": "Developing",
+      "primary_topic": "1.12",
+      "tags": [
+        "response bias"
+      ],
+      "objectives": [
+        "1.12.A"
+      ],
+      "prompt": "A school obtains a complete roster and selects students at random, but asks: 'You agree our brilliant new schedule helps, right?' Identify a possible bias and a correction.",
+      "hint": "Random selection does not guarantee neutral measurements.",
+      "solution": "The leading wording creates potential **response bias**, even with a complete random frame. Use a neutral, balanced question such as 'Which schedule do you prefer: the new schedule, the previous schedule, or neither?'",
+      "rights": "original",
+      "provenance": "Maple Hill School original practice, November 2026",
+      "rubric": "Identify the mechanism and justify in context, then give an appropriate correction when requested."
+    },
+    {
+      "id": "MHS-U1-T112-007",
+      "type": "written",
+      "difficulty": "Developing",
+      "primary_topic": "1.12",
+      "tags": [
+        "undercoverage"
+      ],
+      "objectives": [
+        "1.12.A"
+      ],
+      "prompt": "A roster excludes online students. Later, 12 selected students do not answer the survey. Identify two different problems and when they occur.",
+      "hint": "Separate the sampling frame from the response stage.",
+      "solution": "**Undercoverage** happens before selection because online students cannot enter the sample. **Nonresponse** happens after selection because 12 selected students are not observed. Both can affect a study.",
+      "rights": "original",
+      "provenance": "Maple Hill School original practice, November 2026",
+      "rubric": "Identify the mechanism and justify in context, then give an appropriate correction when requested."
+    },
+    {
+      "id": "MHS-U1-T112-008",
+      "type": "written",
+      "difficulty": "Challenge",
+      "primary_topic": "1.12",
+      "tags": [
+        "bias"
+      ],
+      "objectives": [
+        "1.12.A"
+      ],
+      "prompt": "In a population of 40 ten-minute walkers and 60 thirty-minute bus riders, a gate survey measures all 40 walkers and gets 10 minutes. Explain why increasing the walker sample from 10 to 40 does not solve the problem.",
+      "hint": "More data from the wrong group cannot represent people excluded by design.",
+      "solution": "The frame excludes all 60 bus riders. Every sampled walker has a 10-minute commute, while the population mean is 22. The downward gap of 12 minutes remains because the systematic exclusion is not repaired. Draw a probability sample from the **complete** roster instead, with neutral measurement and nonresponse follow-up.",
+      "rights": "original",
+      "provenance": "Maple Hill School original practice, November 2026",
+      "rubric": "Identify the mechanism and justify in context, then give an appropriate correction when requested."
+    }
+  ]
+}

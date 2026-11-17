@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "authorized": "2026-11-17",
+  "expected_invocations": 6,
+  "invocations_recorded": 1,
+  "completed_phases": [
+    "main_and_source_inventory",
+    "topic_1_12_preview_candidate"
+  ],
+  "preview_branch": "preview/overnight-materials-20261117",
+  "baseline_main": "afd3ebec03b5c6eed70da3dfacc2ec545751ef3c",
+  "working_source_status": "preview_candidate_not_live",
+  "topic_1_12": {
+    "ced_page": 50,
+    "original_practice_questions": 8,
+    "needs_quarto_ci": true,
+    "needs_live_verification": true
+  },
+  "inventory_sha256": {
+    "probability_deck": "95f9c61c4c735e479b6f73b19481f8a714750cb5e4520361ebd074ee2a5ffd19",
+    "mixed_private_guide": "f3e9fa86eb814c55541487a2dca1fab380cbae45becc2435be8b7744d2fb4f30"
+  },
+  "excluded_private": [
+    "secure Week 9 homework",
+    "mixed probability study guide original",
+    "teacher assessments and marking guides"
+  ],
+  "next": [
+    "check preview CI for 1.12",
+    "reconcile Topic 1.13 source",
+    "integrate topics 2.1–2.2",
+    "integrate 2.3–2.7 and latest slides",
+    "final live and privacy audit"
+  ],
+  "published_in_this_session": []
+}

@@ -28,6 +28,7 @@ CHECKS = [
     'Unit 1/Topic 1.10/tests/check_study110_browser.py',
     'Unit 1/Topic 1.11/tests/check_sampling111.py',
     'Unit 1/Topic 1.11/tests/check_sampling111_browser.py',
+    'Unit 1/Topic 1.12/tests/check_bias112.py',
 ]
 
 
