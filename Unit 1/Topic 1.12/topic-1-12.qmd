@@ -1,0 +1,97 @@
+# Topic 1.12 Potential Problems with Sampling
+
+A school wants to estimate the mean one-way travel time for **all** its students. Interviewing a large number of convenient volunteers can still give a misleading answer. Before interpreting a sample statistic, ask three questions: **Who had a chance to be selected? Who answered? Was the answer measured accurately?**
+
+## Sampling variability and bias {#principles-112}
+
+**Sampling variability** means that a statistic changes from one random sample to another. Even a properly selected simple random sample (SRS) can have a sample mean above or below the population mean. A single unusual result does not prove that the method is biased.
+
+**Bias** means a systematic tendency of a selection or measurement process to produce values consistently too large or consistently too small relative to the parameter being estimated. A biased method can remain biased even after many observations.
+
+| Situation | Main issue |
+|:--|:--|
+| A randomly selected sample has an unusually large mean. | Sampling variability may explain the individual result. |
+| An eligibility list omits students learning remotely. | Undercoverage. |
+| A public website lets anyone click to vote. | Voluntary response. |
+| A researcher surveys only the first people entering a shop. | Convenience sampling. |
+| Some selected people never return the survey. | Nonresponse. |
+| A question suggests that one answer is socially desirable. | Response bias. |
+
+## Five sources of bias {#sources-112}
+
+**Voluntary response bias.** Respondents choose themselves into a sample, often because they have strong opinions. An open online poll is not an SRS of the general population merely because it receives thousands of responses.
+
+**Undercoverage bias.** Some population members are omitted or less likely to be selected because of the sampling frame or procedure. A random selection from a landline directory cannot include people who have no landline.
+
+**Nonresponse bias.** People who **were selected** fail to provide answers. If responders and nonresponders differ in a relevant way, estimates may be biased. The rate of nonresponse is a useful diagnostic, not proof of the direction of bias.
+
+**Response bias.** Answers or recorded measurements tend to differ from the true value. Leading wording, interviewer influence, reluctance to report sensitive facts, and an incorrectly calibrated device can all produce response bias. A complete response rate does not prevent it.
+
+**Convenience-sample bias.** Sampling those easiest to access can favor certain groups, such as early arrivals or customers near one entrance. Randomness must enter the **selection mechanism**; choosing a large number of readily available people does not make the sample random.
+
+::: {.callout-tip}
+## Quick diagnosis
+A person **not on the frame** suggests undercoverage; **on the selected list but absent from the data** suggests nonresponse. **Opting into an open survey** suggests voluntary response. **Present but answering inaccurately** suggests response bias. More than one problem may occur in the same investigation.
+:::
+
+## A numerical example: more observations do not fix exclusion {#example-112}
+
+Consider a model school with 100 students: 40 walkers whose commutes are 10 minutes and 60 bus riders whose commutes are 30 minutes. Its population mean commute time is
+
+$$
+\mu=\frac{40(10)+60(30)}{100}=\boxed{22\text{ minutes}}.
+$$
+
+A researcher interviews only the walkers near a particular gate. Whether the researcher interviews 10, 20, 30, or all 40 walkers, their sample mean is **10 minutes**, which is 12 minutes lower than the population mean. That method excludes every bus rider. More interviews from the same gate do not correct the **undercoverage**.
+
+An SRS drawn from the complete 100-student roster, without replacement, has **sampling variability** instead. The mean of such sample means across repeated draws is 22 minutes, although a particular sample may be higher or lower. Increasing sample size does not guarantee that the next individual estimate moves closer to 22.
+
+## Interactive experiment: compare the procedures {#lab-112}
+
+The same model population is used for both procedures. Choose a sample size and method, then draw. A valid SRS takes a uniformly random subset from all 100 students. The convenience procedure takes only walkers. The bar chart shows the two possible kinds of estimate relative to the true mean.
+
+~~~{=html}
+<div class="bias112" data-bias112>
+ <div class="bias112-controls">
+  <label>Sample size <select data-b112-n><option value="10">10 students</option><option value="20" selected>20 students</option><option value="30">30 students</option><option value="40">40 students</option></select></label>
+  <label>Selection procedure <select data-b112-method><option value="srs">SRS of the complete roster</option><option value="gate">Convenience: walkers only</option></select></label>
+ </div>
+ <div class="bias112-actions">
+  <button type="button" data-b112-draw>Draw a sample</button>
+  <button type="button" data-b112-reset>Reset</button>
+ </div>
+ <p data-b112-status role="status" aria-live="polite">No sample drawn. Predict whether each method can include a bus rider.</p>
+ <div class="bias112-graph">
+  <p>True population mean: 22 minutes</p><div class="bias112-track"><span class="bias112-true" style="width:55%"></span></div>
+  <p data-b112-label>Sample mean: not drawn</p><div class="bias112-track"><span data-b112-bar style="width:0%"></span></div>
+ </div>
+ <p data-b112-detail>Population consists of 40 walkers at 10 minutes and 60 bus riders at 30 minutes.</p>
+</div>
+~~~
+
+Without JavaScript, compare an all-walker sample mean of 10 to a complete-roster sample containing 8 walkers and 12 bus riders: its mean is $[8(10)+12(30)]/20=22$ minutes. Another SRS may have a different mix.
+
+## Diagnose the study, then propose a repair {#solutions-112}
+
+**Example 1.** An accurate random-number generator selects from a school roster that excludes online students. The random procedure can still suffer from **undercoverage**. Rebuild a complete eligible roster before selecting.
+
+**Example 2.** A random sample of 120 students is selected, but 35 selected students cannot be reached. This is **nonresponse**, not undercoverage of the sampling frame. Follow up using multiple appropriate contact methods and describe the missing responses.
+
+**Example 3.** Everyone answers, but the interviewer asks, “Surely you support our excellent new plan?” The question may create **response bias**. Replace it with a neutral question that presents answer choices without favorable adjectives.
+
+**Example 4.** A voluntary poll receives 20,000 votes. High participation does not turn self-selected responses into a random sample; the result need not represent all eligible people. The direction of bias cannot be determined from the poll size alone.
+
+## Check your reasoning {#errors-112}
+
+- A larger sample can reduce random sampling variability without repairing biased selection.
+- A randomly selected sample does not have to match population proportions exactly.
+- A nonrespondent was **selected but not measured**; an uncovered person could not enter the frame.
+- Response bias concerns the **answers obtained**, not simply the number of missing answers.
+- Different problems can coexist, and the direction of their effect often requires further information.
+
+## Practice {#practice-112}
+
+::: {.original-practice-host data-original-practice="1.12"}
+:::
+
+<details class="lesson-sources"><summary>Sources</summary><p>College Board, <a href="https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description-effective-fall-2026.pdf">AP Statistics Course and Exam Description, effective Fall 2026</a>, Topic 1.12, p. 50. Models and practice are classroom-created examples.</p></details>
