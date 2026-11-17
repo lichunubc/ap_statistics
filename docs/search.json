@@ -24,7 +24,7 @@
     "href": "index.html#choose-a-unit",
     "title": "AP Statistics: Learning from Data",
     "section": "Choose a unit",
-    "text": "Choose a unit\nOpen a unit to see its topics. In the sidebar, use the arrow beside a unit to show or hide its topics. Topics stay collapsed until you open them.\n\n\nUnit 1: Exploring One-Variable Data and Collecting Data\nExplore available topics\nBrowse the available lessons, interactive activities, and worked practice.\n\n\nUnit 2: Probability, Random Variables, and Probability Distributions\nTopic 2.1 available\nStart with two-way tables, comparative charts, and original practice.\n\n\nUnit 3: Inference for Categorical Data: Proportions\nUnder construction\nA place for future lessons. No topics have been published yet.\n\n\nUnit 4: Inference for Quantitative Data: Means\nUnder construction\nA place for future lessons. No topics have been published yet.\n\n\nUnit 5: Regression Analysis\nUnder construction\nA place for future lessons. No topics have been published yet.",
+    "text": "Choose a unit\nOpen a unit to see its topics. In the sidebar, use the arrow beside a unit to show or hide its topics. Topics stay collapsed until you open them.\n\n\nUnit 1: Exploring One-Variable Data and Collecting Data\nExplore available topics\nBrowse the available lessons, interactive activities, and worked practice.\n\n\nUnit 2: Probability, Random Variables, and Probability Distributions\nTopics 2.1–2.2 available\nStudy two-way tables, comparisons, relative frequencies and original practice.\n\n\nUnit 3: Inference for Categorical Data: Proportions\nUnder construction\nA place for future lessons. No topics have been published yet.\n\n\nUnit 4: Inference for Quantitative Data: Means\nUnder construction\nA place for future lessons. No topics have been published yet.\n\n\nUnit 5: Regression Analysis\nUnder construction\nA place for future lessons. No topics have been published yet.",
     "crumbs": [
       "Welcome"
     ]
@@ -1393,7 +1393,7 @@
     "href": "Unit 2/unit-2.html#choose-a-topic",
     "title": "Unit 2: Probability, Random Variables, and Probability Distributions",
     "section": "",
-    "text": "Topic 2.1 Tabular and Graphical Representations for the Distributions of Two Categorical Variables\nConstruct a two-way table from café orders, compare count and percentage bars, read 100% segmented bars and mosaic plots, and justify an association claim.\nOpen Topic 2.1 →",
+    "text": "Topic 2.1 Tabular and Graphical Representations for the Distributions of Two Categorical Variables\nConstruct a two-way table from café orders, compare count and percentage bars, read 100% segmented bars and mosaic plots, and justify an association claim.\nOpen Topic 2.1 →\n\n\nTopic 2.2 Summary Statistics for Two Categorical Variables\nLearn joint, marginal, and conditional relative frequencies, choose the correct denominator, and interpret associations.\nOpen Topic 2.2 →",
     "crumbs": [
       "Unit 2: Probability, Random Variables, and Probability Distributions"
     ]
@@ -1487,6 +1487,94 @@
     ]
   },
   {
+    "objectID": "Unit 2/Topic 2.2/topic-2-2.html",
+    "href": "Unit 2/Topic 2.2/topic-2-2.html",
+    "title": "Topic 2.2 Summary Statistics for Two Categorical Variables",
+    "section": "",
+    "text": "Count observations in both categories\nA two-way table can answer different questions depending on which observations form the reference group. Before calculating any proportion, decide which observations belong in the denominator.\nConsider 24 café orders classified by the ordering channel and drink type. The observational unit is one order.\nAn interior cell represents observations in two categories at once. App–Tea is 2. The margins are the row or column totals. Every observation contributes to exactly one interior cell, so both sets of margins total 24.",
+    "crumbs": [
+      "Unit 2: Probability, Random Variables, and Probability Distributions",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Topic 2.2 Summary Statistics for Two Categorical Variables</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 2/Topic 2.2/topic-2-2.html#table22",
+    "href": "Unit 2/Topic 2.2/topic-2-2.html#table22",
+    "title": "Topic 2.2 Summary Statistics for Two Categorical Variables",
+    "section": "",
+    "text": "Channel\nCoffee\nTea\nSmoothie\nTotal\n\n\n\n\nApp\n4\n2\n2\n8\n\n\nCounter\n4\n8\n4\n16\n\n\nTotal\n8\n10\n6\n24",
+    "crumbs": [
+      "Unit 2: Probability, Random Variables, and Probability Distributions",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Topic 2.2 Summary Statistics for Two Categorical Variables</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 2/Topic 2.2/topic-2-2.html#rules22",
+    "href": "Unit 2/Topic 2.2/topic-2-2.html#rules22",
+    "title": "Topic 2.2 Summary Statistics for Two Categorical Variables",
+    "section": "Joint, marginal, and conditional relative frequencies",
+    "text": "Joint, marginal, and conditional relative frequencies\nJoint relative frequency is the proportion of all observations belonging to two categories simultaneously. For App and Tea, divide the interior cell by the grand total:\nApp and Tea among all orders=224=112≈8.3%.\n\\text{App and Tea among all orders}=\\frac{2}{24}=\\frac1{12}\\approx8.3\\%.\n\nMarginal relative frequency describes one category across the entire table. For Tea, divide its column total by the grand total:\nTea among all orders=1024=512≈41.7%.\n\\text{Tea among all orders}=\\frac{10}{24}=\\frac5{12}\\approx41.7\\%.\n\nConditional relative frequency restricts attention to the group named after given or among. First choose that reference group, then divide by its total.\nTea among App orders=28=25%,App among Tea orders=210=20%.\n\\begin{aligned}\n\\text{Tea among App orders}&=\\frac{2}{8}=25\\%,\\\\\n\\text{App among Tea orders}&=\\frac{2}{10}=20\\%.\n\\end{aligned}\n\nThe two conditional questions have the same numerator but different denominators. Reversing the condition can change the answer.\n\n\nWhy do the conditional denominators differ?\n\nFor Tea among App, only eight App orders are eligible; two are Tea, so the answer is 2/82/8. For App among Tea, there are ten eligible Tea orders; two came through App, so the answer is 2/102/10. The condition determines the reference group.",
+    "crumbs": [
+      "Unit 2: Probability, Random Variables, and Probability Distributions",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Topic 2.2 Summary Statistics for Two Categorical Variables</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 2/Topic 2.2/topic-2-2.html#explorer22",
+    "href": "Unit 2/Topic 2.2/topic-2-2.html#explorer22",
+    "title": "Topic 2.2 Summary Statistics for Two Categorical Variables",
+    "section": "Reference-group explorer",
+    "text": "Reference-group explorer\nChoose a question. The interactive table highlights its numerator and the reference-group margin; the explanation shows the correct division. The table and values remain readable without JavaScript.\n\n  Select a relative-frequency question\n  \n    Joint: App AND Tea out of all orders\n    Conditional: Tea among App orders\n    Conditional: App among Tea orders\n    Marginal: Tea out of all orders\n    Conditional: Tea among Counter orders\n    Conditional: Counter among Coffee orders\n  \n  Reset\n  \n\nNumber of café orders\n\n\nChannel\nCoffee\nTea\nSmoothie\nTotal\n\n\n\n\nApp\n4\n2\n2\n8\n\n\nCounter\n4\n8\n4\n16\n\n\nTotal\n8\n10\n6\n24\n\n\n\n\n  Joint App and Tea: 2 / 24 = 8.3%.\n  Reference values: App–Tea joint 2/24; Tea within App 2/8; App within Tea 2/10; Tea marginal 10/24; Tea within Counter 8/16; Counter within Coffee 4/8.\n\nThe notation P(Tea∣App)P(\\text{Tea}\\mid\\text{App}) reads “probability of Tea given App.” The conditional probability rules are developed in Topic 2.6. For now, we are calculating relative frequencies directly from the table.",
+    "crumbs": [
+      "Unit 2: Probability, Random Variables, and Probability Distributions",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Topic 2.2 Summary Statistics for Two Categorical Variables</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 2/Topic 2.2/topic-2-2.html#compare22",
+    "href": "Unit 2/Topic 2.2/topic-2-2.html#compare22",
+    "title": "Topic 2.2 Summary Statistics for Two Categorical Variables",
+    "section": "Compare conditional distributions",
+    "text": "Compare conditional distributions\nTo compare drink mix by channel, use the total number in each channel as denominator:\n\n\n\nDrink\nApp (8 orders)\nCounter (16 orders)\n\n\n\n\nCoffee\n4/8=50%4/8=50\\%\n4/16=25%4/16=25\\%\n\n\nTea\n2/8=25%2/8=25\\%\n8/16=50%8/16=50\\%\n\n\nSmoothie\n2/8=25%2/8=25\\%\n4/16=25%4/16=25\\%\n\n\nTotal\n100%\n100%\n\n\n\nAlthough both groups contain four Coffee orders, Coffee makes up 50% of App orders and 25% of Counter orders. A raw-count comparison would miss the unequal group sizes.\nOne can instead compare channel within a drink type by using column denominators. For example, the App share of Coffee orders is 4/8=50%4/8=50\\%, while its share of Tea orders is 2/10=20%2/10=20\\%. Those are legitimate answers, but to a different question.",
+    "crumbs": [
+      "Unit 2: Probability, Random Variables, and Probability Distributions",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Topic 2.2 Summary Statistics for Two Categorical Variables</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 2/Topic 2.2/topic-2-2.html#claim22",
+    "href": "Unit 2/Topic 2.2/topic-2-2.html#claim22",
+    "title": "Topic 2.2 Summary Statistics for Two Categorical Variables",
+    "section": "Justify claims without asserting causality",
+    "text": "Justify claims without asserting causality\nIf the conditional distributions differ, the variables show an association in the observed table. A defensible conclusion names both variables and gives comparable percentages:\n\nIn these 24 orders, Tea accounted for 50% of Counter orders but only 25% of App orders. Drink choices therefore differed by ordering channel in these records.\n\nThese descriptive data alone do not establish that using the App causes a Tea preference. They are not data from a randomized experiment. Also avoid generalizing the displayed proportions to all cafés without an appropriate sampling design.\nA useful check: if each channel had the same within-channel percentages for each drink, there would be no association evident in this displayed table, even if the groups had different raw totals.",
+    "crumbs": [
+      "Unit 2: Probability, Random Variables, and Probability Distributions",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Topic 2.2 Summary Statistics for Two Categorical Variables</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 2/Topic 2.2/topic-2-2.html#check-your-reasoning",
+    "href": "Unit 2/Topic 2.2/topic-2-2.html#check-your-reasoning",
+    "title": "Topic 2.2 Summary Statistics for Two Categorical Variables",
+    "section": "Check your reasoning",
+    "text": "Check your reasoning\nA classmate claims “Tea among App orders is 2/242/24.” Explain what 2/242/24 actually represents and correct the answer.\nCheck: 2/242/24 represents both App and Tea among all orders, a joint relative frequency. Tea among App orders uses the eight App orders as the reference group, so the correct conditional relative frequency is 2/8=25%2/8=25\\%.",
+    "crumbs": [
+      "Unit 2: Probability, Random Variables, and Probability Distributions",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Topic 2.2 Summary Statistics for Two Categorical Variables</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 2/Topic 2.2/topic-2-2.html#practice22",
+    "href": "Unit 2/Topic 2.2/topic-2-2.html#practice22",
+    "title": "Topic 2.2 Summary Statistics for Two Categorical Variables",
+    "section": "Practice",
+    "text": "Practice\n\nLoading practice…\n\nQuestion 1What is the joint relative frequency of App and Tea?\nA. 2/8\nB. 2/24\nC. 2/10\nD. 8/24\nShow solutionThe intersection count is 2 and the grand total is 24: 2/24.\n\nQuestion 2What is the marginal relative frequency of Tea?\nA. 10/24\nB. 2/8\nC. 8/16\nD. 2/24\nShow solutionThe Tea column margin is 10 out of the grand total 24.\n\nQuestion 3What fraction of App orders were Tea?\nA. 2/10\nB. 2/24\nC. 2/8\nD. 8/24\nShow solutionThe App row total is 8, and two of these orders were Tea: 2/8.\n\nQuestion 4What percentage of Tea orders came through App?\nA. 2/24\nB. 2/8\nC. 8/10\nD. 2/10\nShow solutionThe Tea column total is 10, with 2 App entries: 2/10=20%.\n\nQuestion 5Which Tea percentages should be compared by channel?\nA. App 50%, Counter 25%\nB. App 25%, Counter 50%\nC. App 20%, Counter 80%\nD. App 8.3%, Counter 33.3%\nShow solutionWithin each channel Tea shares are 2/8=25% and 8/16=50%.\n\nQuestion 6What statement is supported by these observations?\nA. Drink type and ordering channel are associated in this table, without\nproven causation.\nB. Using App causes customers to buy Coffee.\nC. No association exists because Coffee counts are equal.\nD. All cafés have the same drink mix.\nShow solutionConditional drink proportions differ by channel, an association\nwithin these 24 records; causation and population generalization are not\njustified.\n\nQuestion 7Four Coffee orders came through each channel. What is the valid\nwithin-channel comparison?\nA. Both channels have 50% Coffee\nB. Both channels have 25% Coffee\nC. App 50% Coffee; Counter 25% Coffee\nD. App 25% Coffee; Counter 50% Coffee\nShow solutionFor App the denominator is 8 and for Counter 16, so 4/8=50% versus\n4/16=25%.\n\nQuestion 8Among Coffee orders, what fraction came through Counter?\nA. 4/24\nB. 4/16\nC. 8/24\nD. 4/8\nShow solutionThe reference group contains 8 Coffee orders; 4 are Counter, giving\n4/8.\n\n\n\n\nSources\n\n\nCollege Board, AP Statistics Course and Exam Description (effective Fall 2026), Topic 2.2, printed p. 63. Café counts are from the Maple Hill School teaching dataset.",
+    "crumbs": [
+      "Unit 2: Probability, Random Variables, and Probability Distributions",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Topic 2.2 Summary Statistics for Two Categorical Variables</span>"
+    ]
+  },
+  {
     "objectID": "Unit 3/unit-3.html",
     "href": "Unit 3/unit-3.html",
     "title": "Unit 3: Inference for Categorical Data: Proportions",
@@ -1523,7 +1611,7 @@
     "section": "",
     "text": "Expanded question bank\nOpen the expanded bank reader and choose your authorized ap_statistics_question_bank.json file. Filter by topic, source, or question type, then try a question before revealing its answer. The reader opens the file on your device. If your package includes figures, extract it first and select the extracted assets folder in the reader.",
     "crumbs": [
-      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Problem Bank</span>"
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Problem Bank</span>"
     ]
   },
   {
@@ -1533,7 +1621,7 @@
     "section": "Skill dependency map",
     "text": "Skill dependency map\nExplore the skill dependency map to see what to review before tackling a topic. Try searching for joint probability, then trace its prerequisites back to reading a two-way table and finding a part-to-whole fraction. The map opens directly and includes explanations and source references for the learning links. Choose Find practice for this skill on a linked skill to open the reader with that skill selected when you load your bank.",
     "crumbs": [
-      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Problem Bank</span>"
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Problem Bank</span>"
     ]
   },
   {
@@ -1543,7 +1631,7 @@
     "section": "Selected homework",
     "text": "Selected homework\nPractise 20 questions from the Week 2 and Week 3 homework, organized by topic.\n\nOpen your class question file\nOpen mhs-week-2-3.practice.json, provided by your teacher, using the control below. The questions and diagrams will appear here and in the Selected homework practice section of the relevant lessons. Choose an answer, check your reasoning, and open the solution when ready.\n\nOpen your class question file to practise the selected homework questions below.\nWeek 2.0, Question 1.0 — Topic 1.2: Continuous measurements versus counts (homework pages 1.0).\nWeek 2.0, Question 3.0 — Topic 1.2: A quantitative variable among categorical choices (homework pages 1.0).\nWeek 2.0, Question 4.0 — Topic 1.2: How the recording rule changes the variable type (homework pages 2.0).\nWeek 2.0, Question 6.0 — Topic 1.2: Category observations are not category counts (homework pages 3.0).\nWeek 2.0, Question 15.0 — Topic 1.3: Validate a relative-frequency table (homework pages 8.0, 9.0, 10.0).\nWeek 2.0, Question 17.0 — Topic 1.3: A percentage does not determine an absolute count (homework pages 12.0).\nWeek 2.0, Question 18.0 — Topic 1.3: Check a claim against a frequency table (homework pages 13.0).\nWeek 2.0, Question 20.0 — Topic 1.3: Combine categories using the correct denominator (homework pages 14.0).\nWeek 2.0, Question 16.0 — Topic 1.4: Compare rates without confusing them with counts (homework pages 11.0).\nWeek 2.0, Question 22.0 — Topic 1.4: Read a pie chart as parts of one whole (homework pages 15.0).\nWeek 2.0, Question 24.0 — Topic 1.4: Convert chart proportions to counts when n is known (homework pages 16.0).\nWeek 2.0, Question 25.0 — Topic 1.4: Use the number of games as the percentage denominator (homework pages 17.0).\nWeek 3.0, Question 10.0 — Topic 1.5: What changing histogram bin width preserves (homework pages 5.0).\nWeek 3.0, Question 16.0 — Topic 1.5: Read a split stem-and-leaf display (homework pages 8.0).\nWeek 3.0, Question 17.0 — Topic 1.5: Construct a stemplot without losing repeats (homework pages 9.0, 10.0).\nWeek 3.0, Question 1.0 — Topic 1.6: Compare tails in a back-to-back stemplot (homework pages 1.0).\nWeek 3.0, Question 3.0 — Topic 1.6: Describe shape and features in a dotplot (homework pages 2.0).\nWeek 3.0, Question 8.0 — Topic 1.6: Identify skewness from a histogram tail (homework pages 4.0).\nWeek 3.0, Question 12.0 — Topic 1.6: Distinguish a visual potential outlier from a formal test (homework pages 7.0).\nWeek 3.0, Question 19.0 — Topic 1.6: Recognize approximate uniformity (homework pages 11.0).\n\n\n\nQuestions by topic\n\n\n\nTopic\nSelected homework questions\n\n\n\n\n1.1\nSee the Practice section in the lesson.\n\n\n1.2\nWeek 2: 1, 3, 4, 6\n\n\n1.3\nWeek 2: 15, 17, 18, 20\n\n\n1.4\nWeek 2: 16, 22, 24, 25\n\n\n1.5\nWeek 3: 10, 16, 17\n\n\n1.6\nWeek 3: 1, 3, 8, 12, 19\n\n\n\n\n\n\nSources\n\nWeek 2 and Week 3 homework supplied by the instructor. Original question numbers and page references are retained.",
     "crumbs": [
-      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Problem Bank</span>"
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Problem Bank</span>"
     ]
   },
   {
@@ -1553,7 +1641,7 @@
     "section": "",
     "text": "Course framework\nThe College Board AP Statistics course framework lists the course topics. The released exam archive provides additional questions and scoring guidelines.",
     "crumbs": [
-      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Sources and study resources</span>"
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Sources and study resources</span>"
     ]
   },
   {
@@ -1563,7 +1651,7 @@
     "section": "Datasets",
     "text": "Datasets\n\n\n\nDataset\nMeasurement\nSource\n\n\n\n\nRivers\nMajor North American river lengths, in miles\nR datasets: rivers\n\n\nOld Faithful\nEruption duration, in minutes\nR datasets: faithful\n\n\nIris flowers\nSepal length, in centimetres\nR datasets: iris\n\n\n\nDownload the commute-time data to build a dotplot, stemplot, or histogram.",
     "crumbs": [
-      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Sources and study resources</span>"
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Sources and study resources</span>"
     ]
   },
   {
@@ -1573,7 +1661,7 @@
     "section": "Practice",
     "text": "Practice\nUse the Practice section in each lesson to check your understanding. Try a question before opening its solution, then compare both the result and reasoning. The Problem Bank links to selected homework, the expanded question bank reader, and a map of the skills you can review before starting a topic.",
     "crumbs": [
-      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Sources and study resources</span>"
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Sources and study resources</span>"
     ]
   },
   {
@@ -1583,7 +1671,7 @@
     "section": "Printing",
     "text": "Printing\nUse your browser’s Print command for a paper copy of a lesson. Open the explanations you wish to include before printing.",
     "crumbs": [
-      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Sources and study resources</span>"
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Sources and study resources</span>"
     ]
   }
 ]
