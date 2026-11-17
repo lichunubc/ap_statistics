@@ -454,6 +454,38 @@
       ],
       "data_source": "24 constructed café orders (8 App,16 Counter)",
       "implemented_on": "2026-11-17"
+    },
+    {
+      "id": "2.2",
+      "title": "Summary Statistics for Two Categorical Variables",
+      "status": "implemented_preview",
+      "directory": "Unit 2/Topic 2.2",
+      "chapter": "Unit 2/Topic 2.2/topic-2-2.qmd",
+      "ced_printed_pages": "63",
+      "learning_objectives": [
+        "2.2.A",
+        "2.2.B",
+        "2.2.C"
+      ],
+      "essential_knowledge": [
+        "2.2.A.1",
+        "2.2.A.2",
+        "2.2.A.3",
+        "2.2.B.1",
+        "2.2.C.1"
+      ],
+      "skills": [
+        "3.B",
+        "4.A",
+        "4.B"
+      ],
+      "practice_count": 8,
+      "interactions": [
+        "interactive joint, marginal and conditional reference-group explorer",
+        "original one-at-a-time practice"
+      ],
+      "data_source": "Topic 2.1 constructed 24 café orders",
+      "implemented_on": "2026-11-17"
     }
   ]
 }

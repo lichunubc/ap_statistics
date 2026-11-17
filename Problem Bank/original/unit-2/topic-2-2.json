@@ -1,0 +1,306 @@
+{
+  "schema_version": 1,
+  "bank_id": "mhs-ap-statistics-original",
+  "topic": "2.2",
+  "title": "Summary Statistics for Two Categorical Variables",
+  "rights": "Original teacher-authored public-safe practice; no secure assessments.",
+  "revision": 1,
+  "items": [
+    {
+      "id": "MHS-U2-T22-001",
+      "type": "mc",
+      "difficulty": "Foundation",
+      "primary_topic": "2.2",
+      "tags": [
+        "two-way tables",
+        "relative frequencies"
+      ],
+      "objectives": [
+        "2.2.A"
+      ],
+      "prompt": "What is the joint relative frequency of App and Tea?",
+      "hint": "Identify the correct group first; then determine the numerator and denominator.",
+      "solution": "The intersection count is 2 and the grand total is 24: 2/24.",
+      "rights": "original",
+      "provenance": "Maple Hill School original practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "2/8"
+        },
+        {
+          "label": "B",
+          "text": "2/24"
+        },
+        {
+          "label": "C",
+          "text": "2/10"
+        },
+        {
+          "label": "D",
+          "text": "8/24"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "MHS-U2-T22-002",
+      "type": "mc",
+      "difficulty": "Foundation",
+      "primary_topic": "2.2",
+      "tags": [
+        "two-way tables",
+        "relative frequencies"
+      ],
+      "objectives": [
+        "2.2.A"
+      ],
+      "prompt": "What is the marginal relative frequency of Tea?",
+      "hint": "Identify the correct group first; then determine the numerator and denominator.",
+      "solution": "The Tea column margin is 10 out of the grand total 24.",
+      "rights": "original",
+      "provenance": "Maple Hill School original practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "10/24"
+        },
+        {
+          "label": "B",
+          "text": "2/8"
+        },
+        {
+          "label": "C",
+          "text": "8/16"
+        },
+        {
+          "label": "D",
+          "text": "2/24"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "MHS-U2-T22-003",
+      "type": "mc",
+      "difficulty": "Foundation",
+      "primary_topic": "2.2",
+      "tags": [
+        "two-way tables",
+        "relative frequencies"
+      ],
+      "objectives": [
+        "2.2.A"
+      ],
+      "prompt": "What fraction of App orders were Tea?",
+      "hint": "Identify the correct group first; then determine the numerator and denominator.",
+      "solution": "The App row total is 8, and two of these orders were Tea: 2/8.",
+      "rights": "original",
+      "provenance": "Maple Hill School original practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "2/10"
+        },
+        {
+          "label": "B",
+          "text": "2/24"
+        },
+        {
+          "label": "C",
+          "text": "2/8"
+        },
+        {
+          "label": "D",
+          "text": "8/24"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "MHS-U2-T22-004",
+      "type": "mc",
+      "difficulty": "Developing",
+      "primary_topic": "2.2",
+      "tags": [
+        "two-way tables",
+        "relative frequencies"
+      ],
+      "objectives": [
+        "2.2.A"
+      ],
+      "prompt": "What percentage of Tea orders came through App?",
+      "hint": "Identify the correct group first; then determine the numerator and denominator.",
+      "solution": "The Tea column total is 10, with 2 App entries: 2/10=20%.",
+      "rights": "original",
+      "provenance": "Maple Hill School original practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "2/24"
+        },
+        {
+          "label": "B",
+          "text": "2/8"
+        },
+        {
+          "label": "C",
+          "text": "8/10"
+        },
+        {
+          "label": "D",
+          "text": "2/10"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "MHS-U2-T22-005",
+      "type": "mc",
+      "difficulty": "Developing",
+      "primary_topic": "2.2",
+      "tags": [
+        "two-way tables",
+        "relative frequencies"
+      ],
+      "objectives": [
+        "2.2.A"
+      ],
+      "prompt": "Which Tea percentages should be compared by channel?",
+      "hint": "Identify the correct group first; then determine the numerator and denominator.",
+      "solution": "Within each channel Tea shares are 2/8=25% and 8/16=50%.",
+      "rights": "original",
+      "provenance": "Maple Hill School original practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "App 50%, Counter 25%"
+        },
+        {
+          "label": "B",
+          "text": "App 25%, Counter 50%"
+        },
+        {
+          "label": "C",
+          "text": "App 20%, Counter 80%"
+        },
+        {
+          "label": "D",
+          "text": "App 8.3%, Counter 33.3%"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "MHS-U2-T22-006",
+      "type": "mc",
+      "difficulty": "Developing",
+      "primary_topic": "2.2",
+      "tags": [
+        "two-way tables",
+        "relative frequencies"
+      ],
+      "objectives": [
+        "2.2.C"
+      ],
+      "prompt": "What statement is supported by these observations?",
+      "hint": "Identify the correct group first; then determine the numerator and denominator.",
+      "solution": "Conditional drink proportions differ by channel, an association within these 24 records; causation and population generalization are not justified.",
+      "rights": "original",
+      "provenance": "Maple Hill School original practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "Drink type and ordering channel are associated in this table, without proven causation."
+        },
+        {
+          "label": "B",
+          "text": "Using App causes customers to buy Coffee."
+        },
+        {
+          "label": "C",
+          "text": "No association exists because Coffee counts are equal."
+        },
+        {
+          "label": "D",
+          "text": "All cafés have the same drink mix."
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "MHS-U2-T22-007",
+      "type": "mc",
+      "difficulty": "Challenge",
+      "primary_topic": "2.2",
+      "tags": [
+        "two-way tables",
+        "relative frequencies"
+      ],
+      "objectives": [
+        "2.2.B"
+      ],
+      "prompt": "Four Coffee orders came through each channel. What is the valid within-channel comparison?",
+      "hint": "Identify the correct group first; then determine the numerator and denominator.",
+      "solution": "For App the denominator is 8 and for Counter 16, so 4/8=50% versus 4/16=25%.",
+      "rights": "original",
+      "provenance": "Maple Hill School original practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "Both channels have 50% Coffee"
+        },
+        {
+          "label": "B",
+          "text": "Both channels have 25% Coffee"
+        },
+        {
+          "label": "C",
+          "text": "App 50% Coffee; Counter 25% Coffee"
+        },
+        {
+          "label": "D",
+          "text": "App 25% Coffee; Counter 50% Coffee"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "MHS-U2-T22-008",
+      "type": "mc",
+      "difficulty": "Challenge",
+      "primary_topic": "2.2",
+      "tags": [
+        "two-way tables",
+        "relative frequencies"
+      ],
+      "objectives": [
+        "2.2.B"
+      ],
+      "prompt": "Among Coffee orders, what fraction came through Counter?",
+      "hint": "Identify the correct group first; then determine the numerator and denominator.",
+      "solution": "The reference group contains 8 Coffee orders; 4 are Counter, giving 4/8.",
+      "rights": "original",
+      "provenance": "Maple Hill School original practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "4/24"
+        },
+        {
+          "label": "B",
+          "text": "4/16"
+        },
+        {
+          "label": "C",
+          "text": "8/24"
+        },
+        {
+          "label": "D",
+          "text": "4/8"
+        }
+      ],
+      "answer": "D"
+    }
+  ]
+}

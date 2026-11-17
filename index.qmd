@@ -31,9 +31,9 @@ Browse the available lessons, interactive activities, and worked practice.
 ::: {.route-card .unit-card data-unit="2"}
 ### [Unit 2: Probability, Random Variables, and Probability Distributions](<Unit 2/unit-2.qmd>)
 
-<span class="unit-state" data-unit-status="partial">Topic 2.1 available</span>
+<span class="unit-state" data-unit-status="partial">Topics 2.1–2.2 available</span>
 
-Start with two-way tables, comparative charts, and original practice.
+Study two-way tables, comparisons, relative frequencies and original practice.
 :::
 ::: {.route-card .unit-card data-unit="3"}
 ### [Unit 3: Inference for Categorical Data: Proportions](<Unit 3/unit-3.qmd>)

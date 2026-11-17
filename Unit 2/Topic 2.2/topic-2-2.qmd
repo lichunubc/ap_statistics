@@ -1,0 +1,116 @@
+# Topic 2.2 Summary Statistics for Two Categorical Variables
+
+A two-way table can answer different questions depending on which observations form the reference group. Before calculating any proportion, decide **which observations belong in the denominator**.
+
+## Count observations in both categories {#table22}
+
+Consider 24 café orders classified by the ordering channel and drink type. The observational unit is one order.
+
+| Channel | Coffee | Tea | Smoothie | Total |
+|:--|--:|--:|--:|--:|
+| App | 4 | 2 | 2 | 8 |
+| Counter | 4 | 8 | 4 | 16 |
+| **Total** | **8** | **10** | **6** | **24** |
+
+An **interior cell** represents observations in two categories at once. App–Tea is 2. The **margins** are the row or column totals. Every observation contributes to exactly one interior cell, so both sets of margins total 24.
+
+## Joint, marginal, and conditional relative frequencies {#rules22}
+
+**Joint relative frequency** is the proportion of *all* observations belonging to two categories simultaneously. For App and Tea, divide the interior cell by the grand total:
+
+$$
+\text{App and Tea among all orders}=\frac{2}{24}=\frac1{12}\approx8.3\%.
+$$
+
+**Marginal relative frequency** describes one category across the entire table. For Tea, divide its column total by the grand total:
+
+$$
+\text{Tea among all orders}=\frac{10}{24}=\frac5{12}\approx41.7\%.
+$$
+
+**Conditional relative frequency** restricts attention to the group named after **given** or **among**. First choose that reference group, then divide by its total.
+
+$$
+\begin{aligned}
+\text{Tea among App orders}&=\frac{2}{8}=25\%,\\
+\text{App among Tea orders}&=\frac{2}{10}=20\%.
+\end{aligned}
+$$
+
+The two conditional questions have the same numerator but different denominators. Reversing the condition can change the answer.
+
+<details><summary>Why do the conditional denominators differ?</summary>
+
+For Tea **among App**, only eight App orders are eligible; two are Tea, so the answer is $2/8$. For App **among Tea**, there are ten eligible Tea orders; two came through App, so the answer is $2/10$. The condition determines the reference group.
+
+</details>
+
+## Reference-group explorer {#explorer22}
+
+Choose a question. The interactive table highlights its numerator and the reference-group margin; the explanation shows the correct division. The table and values remain readable without JavaScript.
+
+~~~{=html}
+<div class="rel22" data-rel22>
+  <label for="rel22-choice"><strong>Select a relative-frequency question</strong></label>
+  <select id="rel22-choice" data-rel22-choice>
+    <option value="joint">Joint: App AND Tea out of all orders</option>
+    <option value="tea-app">Conditional: Tea among App orders</option>
+    <option value="app-tea">Conditional: App among Tea orders</option>
+    <option value="marginal">Marginal: Tea out of all orders</option>
+    <option value="tea-counter">Conditional: Tea among Counter orders</option>
+    <option value="counter-coffee">Conditional: Counter among Coffee orders</option>
+  </select>
+  <button type="button" data-rel22-reset>Reset</button>
+  <table class="rel22-table">
+    <caption>Number of café orders</caption>
+    <thead><tr><th scope="col">Channel</th><th scope="col">Coffee</th><th scope="col">Tea</th><th scope="col">Smoothie</th><th scope="col">Total</th></tr></thead>
+    <tbody>
+     <tr><th scope="row">App</th><td>4</td><td data-rel22-cell="app-tea">2</td><td>2</td><td data-rel22-cell="app">8</td></tr>
+     <tr><th scope="row">Counter</th><td data-rel22-cell="counter-coffee">4</td><td data-rel22-cell="counter-tea">8</td><td>4</td><td data-rel22-cell="counter">16</td></tr>
+     <tr><th scope="row">Total</th><td data-rel22-cell="coffee">8</td><td data-rel22-cell="tea">10</td><td>6</td><td data-rel22-cell="all">24</td></tr>
+    </tbody>
+  </table>
+  <p role="status" aria-live="polite" data-rel22-result>Joint App and Tea: 2 / 24 = 8.3%.</p>
+  <p class="rel22-static">Reference values: App–Tea joint 2/24; Tea within App 2/8; App within Tea 2/10; Tea marginal 10/24; Tea within Counter 8/16; Counter within Coffee 4/8.</p>
+</div>
+~~~
+
+The notation $P(\text{Tea}\mid\text{App})$ reads “probability of Tea **given** App.” The conditional probability rules are developed in Topic 2.6. For now, we are calculating relative frequencies directly from the table.
+
+## Compare conditional distributions {#compare22}
+
+To compare **drink mix by channel**, use the total number in *each channel* as denominator:
+
+| Drink | App (8 orders) | Counter (16 orders) |
+|:--|--:|--:|
+| Coffee | $4/8=50\%$ | $4/16=25\%$ |
+| Tea | $2/8=25\%$ | $8/16=50\%$ |
+| Smoothie | $2/8=25\%$ | $4/16=25\%$ |
+| **Total** | **100%** | **100%** |
+
+Although both groups contain four Coffee orders, Coffee makes up **50%** of App orders and **25%** of Counter orders. A raw-count comparison would miss the unequal group sizes.
+
+One can instead compare **channel within a drink type** by using column denominators. For example, the App share of Coffee orders is $4/8=50\%$, while its share of Tea orders is $2/10=20\%$. Those are legitimate answers, but to a *different* question.
+
+## Justify claims without asserting causality {#claim22}
+
+If the conditional distributions differ, the variables show an **association in the observed table**. A defensible conclusion names both variables and gives comparable percentages:
+
+> In these 24 orders, Tea accounted for 50% of Counter orders but only 25% of App orders. Drink choices therefore differed by ordering channel in these records.
+
+These descriptive data alone do **not** establish that using the App *causes* a Tea preference. They are not data from a randomized experiment. Also avoid generalizing the displayed proportions to all cafés without an appropriate sampling design.
+
+A useful check: if each channel had the same *within-channel* percentages for each drink, there would be no association evident in this displayed table, even if the groups had different raw totals.
+
+## Check your reasoning
+
+A classmate claims “Tea among App orders is $2/24$.” Explain what $2/24$ actually represents and correct the answer.
+
+**Check:** $2/24$ represents *both App and Tea among all orders*, a joint relative frequency. Tea **among App orders** uses the eight App orders as the reference group, so the correct conditional relative frequency is $2/8=25\%$.
+
+## Practice {#practice22}
+
+::: {.original-practice-host data-original-practice="2.2"}
+:::
+
+<details class="lesson-sources"><summary>Sources</summary><p>College Board, <a href="https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description-effective-fall-2026.pdf">AP Statistics Course and Exam Description</a> (effective Fall 2026), Topic 2.2, printed p. 63. Café counts are from the Maple Hill School teaching dataset.</p></details>
