@@ -1,0 +1,88 @@
+# Topic 2.1 Tabular and Graphical Representations for the Distributions of Two Categorical Variables
+
+A café records the **ordering channel** (App or Counter) and **drink type** (Coffee, Tea, or Smoothie) for 24 orders. Both are **categorical variables**, and the observational unit is one order. Our question is: *Does the mix of drinks differ between App and Counter orders?*
+
+## Construct a two-way table {#table21}
+
+A **two-way table**, or contingency table, summarizes counts for two categorical variables. Each interior cell counts observations in **both** its row and column category. Row totals and column totals are called **margins**.
+
+| Ordering channel | Coffee | Tea | Smoothie | Total |
+|:--|--:|--:|--:|--:|
+| App | 4 | 2 | 2 | 8 |
+| Counter | 4 | 8 | 4 | 16 |
+| **Total** | **8** | **10** | **6** | **24** |
+
+To construct this table, draw the categories, start each interior cell at zero, tally every raw order exactly once, then compute margins. Both sets of margins must add to 24. The cell App–Tea means two orders were **both** from the App and Tea categories, not that the entire café received two tea orders.
+
+## Select the right reference group {#denominators21}
+
+The same two App–Tea orders can answer different questions:
+
+$$
+\begin{aligned}
+\text{App and Tea (all orders)}&=\frac{2}{24}\approx8.3\%,\\
+\text{Tea among App orders}&=\frac{2}{8}=25\%,\\
+\text{App among Tea orders}&=\frac{2}{10}=20\%.
+\end{aligned}
+$$
+
+The first is a **joint relative frequency**; it divides an interior cell by the grand total. A **marginal relative frequency** divides a row or column total by the grand total (e.g., App is $8/24$). A **conditional relative frequency** restricts the denominator to one particular group. To compare *drink mix by channel*, compare percentages within each channel: App is (50%,25%,25%); Counter is (25%,50%,25%).
+
+## Side-by-side bars: counts or percentages? {#bars21}
+
+A side-by-side bar chart is useful for comparing the same categories in different groups. A shared zero baseline and clearly named units are essential. Because the groups have different sizes—8 App and 16 Counter orders—compare **within-channel percentages**, not merely raw counts, when describing their drink mixes.
+
+~~~{=html}
+<div class="cafe21" data-cafe21>
+  <div class="cafe21-controls" role="group" aria-label="Bar-chart scale">
+    <button type="button" data-view="counts" aria-pressed="true">Counts</button>
+    <button type="button" data-view="percent" aria-pressed="false">Percent within channel</button>
+  </div>
+  <p role="status" aria-live="polite" data-cafe21-status>Counts: App 8 orders; Counter 16 orders.</p>
+  <div data-cafe21-bars class="cafe21-bars"></div>
+  <p class="cafe21-fallback">Without JavaScript, the counts are App (Coffee 4, Tea 2, Smoothie 2) and Counter (Coffee 4, Tea 8, Smoothie 4). Divide by row totals to obtain 50%,25%,25% and 25%,50%,25%.</p>
+</div>
+~~~
+
+For example, both channels have **four Coffee orders**. But Coffee accounts for $4/8=50\%$ of App orders and $4/16=25\%$ of Counter orders. Equal counts need not imply equal proportions.
+
+## Segmented bars: each group totals 100% {#segments21}
+
+A 100% segmented bar chart shows each group's *conditional* category proportions. Both complete bars are the same length, even though they represent different numbers of orders.
+
+~~~{=html}
+<div class="cafe21-stacks" role="img" aria-label="App: 50 percent Coffee, 25 percent Tea, 25 percent Smoothie. Counter: 25 percent Coffee, 50 percent Tea, 25 percent Smoothie.">
+  <strong>App (8)</strong><div class="cafe21-stack"><span class="coffee" style="width:50%">Coffee 50%</span><span class="tea" style="width:25%">Tea 25%</span><span class="smoothie" style="width:25%">Smoothie 25%</span></div>
+  <strong>Counter (16)</strong><div class="cafe21-stack"><span class="coffee" style="width:25%">Coffee 25%</span><span class="tea" style="width:50%">Tea 50%</span><span class="smoothie" style="width:25%">Smoothie 25%</span></div>
+</div>
+~~~
+
+Read each segment's **length**, not the height of its top boundary. The Counter Tea segment is twice as long as its Coffee segment, because $8/16=50\%$ and $4/16=25\%$.
+
+## Mosaic plot: widths, heights, and areas {#mosaic21}
+
+A mosaic plot has **different group widths** when group sizes differ. App takes $8/24=1/3$ of the width; Counter takes $16/24=2/3$. Within each group, segment height represents the conditional drink proportion. A cell's **area** is its joint relative frequency.
+
+~~~{=html}
+<div class="cafe21-mosaic" role="img" aria-label="Mosaic: App occupies one third of the width with Coffee half, Tea quarter, Smoothie quarter; Counter occupies two thirds with Coffee quarter, Tea half, Smoothie quarter.">
+ <div class="cafe21-column" style="flex:1"><div class="coffee" style="height:50%">Coffee 4</div><div class="tea" style="height:25%">Tea 2</div><div class="smoothie" style="height:25%">Smoothie 2</div><strong>App (8)</strong></div>
+ <div class="cafe21-column" style="flex:2"><div class="coffee" style="height:25%">Coffee 4</div><div class="tea" style="height:50%">Tea 8</div><div class="smoothie" style="height:25%">Smoothie 4</div><strong>Counter (16)</strong></div>
+</div>
+~~~
+
+For the App–Tea cell, $(8/24)(2/8)=2/24$. Its mosaic area correctly represents two of the 24 orders.
+
+## Explain the association and its limits {#claim21}
+
+Tea is **25%** of App orders but **50%** of Counter orders; Coffee is **50%** of App orders but **25%** of Counter orders. The conditional drink distributions **differ between channels in these 24 records**: there is an *association* between the categorical variables in this dataset.
+
+The data do **not** establish that placing an order via an app *causes* a coffee preference. There is no random assignment of ordering channels. These constructed records illustrate the method; they are not a random sample of actual café transactions.
+
+If two groups had the same category percentages, they would show no association in that displayed dataset—even if their raw counts or group totals differed. Always choose a graph and denominator that answer the stated question, then justify the comparison in context.
+
+## Practice {#practice21}
+
+::: {.original-practice-host data-original-practice="2.1"}
+:::
+
+<details class="lesson-sources"><summary>Sources</summary><p>College Board, <a href="https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description-effective-fall-2026.pdf">AP Statistics Course and Exam Description</a>, effective Fall 2026, Topic 2.1 (printed p. 62). Café teaching scenario and counts: Maple Hill School.</p></details>

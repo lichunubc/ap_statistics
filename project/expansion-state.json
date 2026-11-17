@@ -190,10 +190,14 @@
         53,
         54
       ],
-      "status": "preview_candidate",
+      "status": "published_verified",
       "attempts": 1,
       "preview_branch": "preview/overnight-20261117-topic-1-13",
-      "source_candidate": "Original public-safe chapter, deterministic experiment lab and 8 original questions; not yet published or live"
+      "source_candidate": "Original public-safe chapter, deterministic experiment lab and 8 original questions; not yet published or live",
+      "source_commit": "1f1dc72ef9731d8935baf405eacd057003fddd63",
+      "actions_url": "https://github.com/lichunubc/ap_statistics/actions/runs/44063146873",
+      "live_url": "https://lichunubc.github.io/ap_statistics/Unit%201/Topic%201.13/topic-1-13.html",
+      "verified_on": "2026-11-17"
     },
     {
       "order": 8,
@@ -201,8 +205,9 @@
       "ced_printed_pages": [
         62
       ],
-      "status": "queued",
-      "attempts": 0
+      "status": "preview_candidate",
+      "attempts": 0,
+      "preview_branch": "preview/overnight-20261117-topic-2-1"
     },
     {
       "order": 9,

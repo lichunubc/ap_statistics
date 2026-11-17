@@ -6,12 +6,20 @@ toc: false
 
 [← All units](../index.qmd)
 
-::: {.callout-note .construction-note data-unit="2"}
-## Under construction
-
-This unit is being prepared. No lessons, activities, or practice sets have been published for Unit 2 yet.
-
-Topics will appear here as they are added. For now, you can study the available topics in Unit 1.
+::: {.chapter-lead}
+**Available now: Topic 2.1.** Begin with two-way tables and comparative graphical displays; additional Unit 2 topics will appear after verification.
 :::
 
-[Explore Unit 1](<../Unit 1/unit-1.qmd>) · [Return to all five units](../index.qmd)
+## Choose a topic
+
+::: {.route-grid .topic-grid}
+::: {.route-card}
+**Topic 2.1 Tabular and Graphical Representations for the Distributions of Two Categorical Variables**
+
+Construct a two-way table from café orders, compare count and percentage bars, read 100% segmented bars and mosaic plots, and justify an association claim.
+
+[Open Topic 2.1 →](<Topic 2.1/topic-2-1.qmd>)
+:::
+:::
+
+[Return to Unit 1](<../Unit 1/unit-1.qmd>) · [Explore all five units](../index.qmd)

@@ -1,0 +1,61 @@
+{
+  "topic": "2.1",
+  "title": "Tabular and Graphical Representations for the Distributions of Two Categorical Variables",
+  "official_title": "Tabular and Graphical Representations for the Distributions of Two Categorical Variables",
+  "curriculum": "College Board AP Statistics CED effective Fall 2026",
+  "source": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description-effective-fall-2026.pdf",
+  "ced_printed_pages": [
+    62
+  ],
+  "pdf_zero_index_pages": [
+    66
+  ],
+  "learning_objectives": [
+    "2.1.A",
+    "2.1.B"
+  ],
+  "essential_knowledge": [
+    "2.1.A.1",
+    "2.1.A.2",
+    "2.1.A.3",
+    "2.1.B.1"
+  ],
+  "skills": [
+    "4.A",
+    "4.B"
+  ],
+  "coverage": [
+    {
+      "section": "#table21",
+      "ids": [
+        "2.1.A.1"
+      ]
+    },
+    {
+      "section": "#bars21",
+      "ids": [
+        "2.1.A.2"
+      ]
+    },
+    {
+      "section": "#segments21",
+      "ids": [
+        "2.1.A.2"
+      ]
+    },
+    {
+      "section": "#mosaic21",
+      "ids": [
+        "2.1.A.2"
+      ]
+    },
+    {
+      "section": "#claim21",
+      "ids": [
+        "2.1.A.3",
+        "2.1.B.1"
+      ]
+    }
+  ],
+  "rights": "Original prose, code and constructed café records. Private College Board practice excluded."
+}

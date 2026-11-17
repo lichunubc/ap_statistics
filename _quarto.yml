@@ -10,6 +10,8 @@ project:
   resources:
     - "Unit 1/**/assets/**"
     - "Unit 1/**/data/**"
+    - "Unit 2/**/assets/**"
+    - "Unit 2/**/data/**"
     - site/assets/
     - "Problem Bank/assets/"
     - "Problem Bank/catalog.json"
@@ -43,7 +45,9 @@ book:
         - "Unit 1/Topic 1.12/topic-1-12.qmd"
         - "Unit 1/Topic 1.13/topic-1-13.qmd"
         - "Unit 1/Shared/practice.qmd"
-    - "Unit 2/unit-2.qmd"
+    - part: "Unit 2/unit-2.qmd"
+      chapters:
+        - "Unit 2/Topic 2.1/topic-2-1.qmd"
     - "Unit 3/unit-3.qmd"
     - "Unit 4/unit-4.qmd"
     - "Unit 5/unit-5.qmd"
@@ -77,6 +81,7 @@ format:
       - "Unit 1/Topic 1.11/assets/sampling111.css"
       - "Unit 1/Topic 1.12/assets/bias112.css"
       - "Unit 1/Topic 1.13/assets/experiment113.css"
+      - "Unit 2/Topic 2.1/assets/cafe21.css"
     toc: true
     toc-depth: 2
     number-sections: false
@@ -95,4 +100,5 @@ format:
       - "Unit 1/Topic 1.11/assets/sampling111-footer.html"
       - "Unit 1/Topic 1.12/assets/bias112-footer.html"
       - "Unit 1/Topic 1.13/assets/experiment113-footer.html"
+      - "Unit 2/Topic 2.1/assets/cafe21-footer.html"
 lang: en

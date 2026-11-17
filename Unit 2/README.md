@@ -1,7 +1,3 @@
-# Unit 2: Probability, Random Variables, and Probability Distributions
+# Unit 2 — Probability, Random Variables, and Probability Distributions
 
-Status: **under construction**. The only student-facing source is `unit-2.qmd`, the unit landing page. No topic chapters or datasets are implied by this placeholder.
-
-When a topic is authorized, create its own `Topic 2.x/` folder here with its QMD, objective mapping, assets, data/provenance and tests. Change this unit's existing entry in `_quarto.yml` into a `part` pointing to `Unit 2/unit-2.qmd`, with the independent topic chapters beneath it. Do not create a duplicate unit entry. Add the topic's card to the landing page and update `project/unit-status.json` and `project/topic-status.json`.
-
-Use exact official titles. Keep all teaching files for this unit here; whole-book navigation code and tests are in `site/`. Run the complete release gate before publication. Never publish private student records, secure assessments, credentials or font files.
+Topic 2.1 is implemented on the preview branch as an independent lesson at `Topic 2.1/topic-2-1.qmd`. All student content, objective mapping, code, café data and tests are editable. It is not live until preview and production CI plus actual live checks pass. The 24 café orders are the same constructed classroom scenario used across the approved Topics 2.1–2.2 package. Add subsequent topics under their own folders and preserve the five-unit book navigation.

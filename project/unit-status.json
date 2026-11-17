@@ -29,8 +29,10 @@
       "id": 2,
       "title": "Probability, Random Variables, and Probability Distributions",
       "landing": "Unit 2/unit-2.qmd",
-      "status": "under_construction",
-      "available_topics": []
+      "status": "preview_candidate",
+      "available_topics": [
+        "2.1"
+      ]
     },
     {
       "id": 3,

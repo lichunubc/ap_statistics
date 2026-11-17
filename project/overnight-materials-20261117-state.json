@@ -2,14 +2,16 @@
   "schema_version": 1,
   "authorized": "2026-11-17",
   "expected_invocations": 6,
-  "invocations_recorded": 1,
+  "invocations_recorded": 2,
   "completed_phases": [
     "main_and_source_inventory",
-    "topic_1_12_preview_candidate"
+    "topic_1_12_preview_candidate",
+    "topic_1_13_published_verified",
+    "topic_2_1_source_candidate"
   ],
-  "preview_branch": "preview/overnight-20261117-topic-1-13",
+  "preview_branch": "preview/overnight-20261117-topic-2-1",
   "baseline_main": "afd3ebec03b5c6eed70da3dfacc2ec545751ef3c",
-  "working_source_status": "Topic 1.12 published; Topic 1.13 preview source integrated and awaiting QA",
+  "working_source_status": "Topic 1.13 release verified; Topic 2.1 source candidate committed to preview; not yet live",
   "topic_1_12": {
     "ced_page": 50,
     "original_practice_questions": 8,
@@ -26,15 +28,20 @@
     "teacher assessments and marking guides"
   ],
   "next": [
-    "Check complete native Quarto preview CI for Topic 1.13 and repair as needed",
-    "Publish Topic 1.13 only after full preview verification and then confirm live Pages, browser, privacy and release SHA",
-    "Integrate Topics 2.1–2.2 café lessons from exact verified package",
-    "Integrate 2.3–2.7 independent lessons, 42-slide deck, and clean public-safe study guide",
-    "Final integrated regression and release audit"
+    "Validate full preview native Quarto and 2.1 source/interactions; fix real failures without relaxing old tests",
+    "After full preview CI, integrate by safe non-force verified main update, verify production and live revision",
+    "Integrate Topic 2.2 then Topics 2.3–2.7 and public-safe resources",
+    "Final complete coverage and privacy audit"
   ],
-  "published_in_this_session": [],
-  "preview_ci_passed": "44052764554; 21/21",
-  "pending": "1.13 public-safe source and test integration committed on preview branch only; live verification NOT YET COMPLETED. Previous 1.12 published remains unchanged.",
+  "published_in_this_session": [
+    {
+      "topic": "1.13",
+      "observed_workflow": "44063146873",
+      "note": "Latest release already verified by GitHub Actions; not reauthored in this session"
+    }
+  ],
+  "preview_ci_passed": null,
+  "pending": "2.1 preview built; tests not yet evaluated",
   "public_safe_derivative": {
     "pdf": "AP_Statistics_2_3_to_2_7_Public_Safe_Study_Guide.pdf",
     "pdf_sha256": "84c4e8c6b5dd745f1055eddc7872eb3bbe16fc705404fdd6123625a738a5170d",
@@ -44,12 +51,17 @@
     "library_upload": "AccessDeny"
   },
   "topic_1_13": {
+    "status": "published_verified",
+    "source_commit": "1f1dc72ef9731d8935baf405eacd057003fddd63",
+    "actions_url": "https://github.com/lichunubc/ap_statistics/actions/runs/44063146873",
+    "live_url": "https://lichunubc.github.io/ap_statistics/Unit%201/Topic%201.13/topic-1-13.html"
+  },
+  "topic_2_1": {
     "status": "preview_candidate",
-    "branch": "preview/overnight-20261117-topic-1-13",
-    "original_practice_questions": 8,
-    "source": "Unit 1/Topic 1.13/topic-1-13.qmd",
-    "rights": "Original text, simulations and practice; excludes secure Week9 homework and credited Scribbr figure",
-    "needs_preview_ci": true,
+    "source": "Unit 2/Topic 2.1/topic-2-1.qmd",
+    "original_questions": 8,
+    "source_package_sha256": "1cdb72104524b3ae63c10565e412b97173168f0dc4108dba44e7711084d690b5",
+    "needs_native_quarto_ci": true,
     "needs_live_verification": true
   }
 }
