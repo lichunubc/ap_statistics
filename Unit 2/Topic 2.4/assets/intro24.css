@@ -1,0 +1,11 @@
+.intro24{border:1px solid #bed9db;background:#f3f9f8;border-radius:10px;padding:1rem;max-width:100%;box-sizing:border-box}
+.intro24-controls{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:.8rem}
+.intro24 button{border:1px solid #087e83;background:white;border-radius:7px;color:#065d62;padding:.48rem .72rem;cursor:pointer;font:inherit}
+.intro24 button[aria-pressed="true"]{background:#087e83;color:#fff}
+.intro24 button:focus-visible{outline:3px solid #e4b469;outline-offset:2px}
+.intro24-faces{list-style:none;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));padding:0;margin:.65rem 0;gap:.3rem}
+.intro24-faces li{font-weight:bold;text-align:center;padding:.55rem .1rem;border:1px solid #b7ccd1;border-radius:7px;background:#fff}
+.intro24-faces li.favorable{background:#bde9e4;border:2px solid #087e83}
+.intro24-results{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.5rem}
+.intro24-results p{margin:.2rem 0}.intro24-static{font-size:.93em;color:#435f6c}
+@media(max-width:540px){.intro24{padding:.7rem}.intro24-results{grid-template-columns:1fr}.intro24-controls button{flex:1 0 42%;font-size:.94em}.intro24-faces{gap:.15rem}}

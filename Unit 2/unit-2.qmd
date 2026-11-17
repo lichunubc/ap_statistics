@@ -7,7 +7,7 @@ toc: false
 [← All units](../index.qmd)
 
 ::: {.chapter-lead}
-**Topics 2.1–2.3.** Begin with two-way tables, relative frequencies, and probability simulations; more Unit 2 topics follow after validation.
+**Topics 2.1–2.4.** Begin with two-way tables, relative frequencies, simulations, and exact probability models; more Unit 2 topics follow after validation.
 :::
 
 ## Choose a topic
@@ -33,6 +33,13 @@ Learn joint, marginal, and conditional relative frequencies, choose the correct 
 Model fair random events, define a complete trial, run an interactive three-toss simulation, and interpret long-run relative frequency.
 
 [Open Topic 2.3 →](<Topic 2.3/topic-2-3.qmd>)
+:::
+::: {.route-card}
+**Topic 2.4 Introduction to Probability**
+
+Calculate sample-space probabilities and complements, and explore favorable die outcomes.
+
+[Open Topic 2.4 →](<Topic 2.4/topic-2-4.qmd>)
 :::
 :::
 

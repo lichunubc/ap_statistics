@@ -1,0 +1,62 @@
+{
+  "topic": "2.4",
+  "title": "Introduction to Probability",
+  "official_title": "Introduction to Probability",
+  "curriculum": "College Board AP Statistics CED effective Fall 2026",
+  "source": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description-effective-fall-2026.pdf",
+  "ced_printed_pages": [
+    65
+  ],
+  "pdf_zero_index_pages": [
+    69
+  ],
+  "learning_objectives": [
+    "2.4.A"
+  ],
+  "essential_knowledge": [
+    "2.4.A.1",
+    "2.4.A.2",
+    "2.4.A.3",
+    "2.4.A.4"
+  ],
+  "skills": [
+    "3.C"
+  ],
+  "coverage": [
+    {
+      "section": "#space24",
+      "ids": [
+        "2.4.A.1",
+        "2.4.A.3"
+      ]
+    },
+    {
+      "section": "#equiprobable24",
+      "ids": [
+        "2.4.A.2"
+      ]
+    },
+    {
+      "section": "#complement24",
+      "ids": [
+        "2.4.A.4"
+      ]
+    },
+    {
+      "section": "#explorer24",
+      "ids": [
+        "2.4.A.1",
+        "2.4.A.2",
+        "2.4.A.4"
+      ]
+    },
+    {
+      "section": "#unequal24",
+      "ids": [
+        "2.4.A.2",
+        "2.4.A.3"
+      ]
+    }
+  ],
+  "rights": "Original public-safe teaching content; restricted AP Classroom material excluded."
+}

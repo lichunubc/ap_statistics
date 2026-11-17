@@ -1,0 +1,2 @@
+# Topic 2.4: Introduction to Probability
+Official Fall 2026 CED p. 65, LO 2.4.A, EK 2.4.A.1–4. The Quarto lesson includes an offline accessible fair-die event/complement explorer. Original practice is stored once in Problem Bank/original/unit-2/topic-2-4.json. Only teacher-authored public-safe content is included; no secure assessments. Tests cover arithmetic, browser viewports, keyboard, print and no-JS.
