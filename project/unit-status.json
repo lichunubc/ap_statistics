@@ -32,7 +32,8 @@
       "status": "preview_candidate",
       "available_topics": [
         "2.1",
-        "2.2"
+        "2.2",
+        "2.3"
       ]
     },
     {
