@@ -1,0 +1,314 @@
+{
+  "schema_version": 1,
+  "bank_id": "mhs-ap-statistics-original",
+  "topic": "2.6",
+  "title": "Conditional Probability",
+  "rights": "Original teacher-authored public-safe practice; no secure homework.",
+  "revision": 1,
+  "items": [
+    {
+      "id": "MHS-U2-T26-001",
+      "type": "mc",
+      "difficulty": "Foundation",
+      "primary_topic": "2.6",
+      "tags": [
+        "conditional probability",
+        "general multiplication rule",
+        "reference group"
+      ],
+      "objectives": [
+        "2.6.A"
+      ],
+      "prompt": "A café records 8 app orders, of which 2 are tea. What is P(tea | app)?",
+      "hint": "Given app means the denominator is the eight app orders.",
+      "solution": "Two of the eight app orders are tea, so P(tea|app)=2/8=1/4.",
+      "rights": "original",
+      "provenance": "Maple Hill School original public-safe teaching practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "2/8"
+        },
+        {
+          "label": "B",
+          "text": "2/24"
+        },
+        {
+          "label": "C",
+          "text": "8/24"
+        },
+        {
+          "label": "D",
+          "text": "2/10"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "MHS-U2-T26-002",
+      "type": "mc",
+      "difficulty": "Foundation",
+      "primary_topic": "2.6",
+      "tags": [
+        "conditional probability",
+        "general multiplication rule",
+        "reference group"
+      ],
+      "objectives": [
+        "2.6.A"
+      ],
+      "prompt": "The same café has 10 tea orders, 2 of which came through the app. What is P(app | tea)?",
+      "hint": "Given tea restricts the sample space to the 10 tea orders.",
+      "solution": "Two of ten tea orders used the app, giving 2/10=1/5.",
+      "rights": "original",
+      "provenance": "Maple Hill School original public-safe teaching practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "2/8"
+        },
+        {
+          "label": "B",
+          "text": "2/10"
+        },
+        {
+          "label": "C",
+          "text": "10/24"
+        },
+        {
+          "label": "D",
+          "text": "2/24"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "MHS-U2-T26-003",
+      "type": "mc",
+      "difficulty": "Developing",
+      "primary_topic": "2.6",
+      "tags": [
+        "conditional probability",
+        "general multiplication rule",
+        "reference group"
+      ],
+      "objectives": [
+        "2.6.A"
+      ],
+      "prompt": "Two of 24 café orders were both app and tea. What is P(app and tea) for one uniformly selected order?",
+      "hint": "This is a joint, not conditional, probability.",
+      "solution": "P(app∩tea)=2/24=1/12 because the reference group is all 24 orders.",
+      "rights": "original",
+      "provenance": "Maple Hill School original public-safe teaching practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "2/8"
+        },
+        {
+          "label": "B",
+          "text": "2/10"
+        },
+        {
+          "label": "C",
+          "text": "2/24"
+        },
+        {
+          "label": "D",
+          "text": "10/24"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "MHS-U2-T26-004",
+      "type": "mc",
+      "difficulty": "Developing",
+      "primary_topic": "2.6",
+      "tags": [
+        "conditional probability",
+        "general multiplication rule",
+        "reference group"
+      ],
+      "objectives": [
+        "2.6.A"
+      ],
+      "prompt": "A bag has 3 red and 2 blue marbles. Two are drawn without replacement. What is P(red then red)?",
+      "hint": "After drawing red, only 2 of the 4 remaining marbles are red.",
+      "solution": "P(R1∩R2)=P(R1)P(R2|R1)=(3/5)(2/4)=3/10.",
+      "rights": "original",
+      "provenance": "Maple Hill School original public-safe teaching practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "9/25"
+        },
+        {
+          "label": "B",
+          "text": "3/5"
+        },
+        {
+          "label": "C",
+          "text": "6/25"
+        },
+        {
+          "label": "D",
+          "text": "3/10"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "MHS-U2-T26-005",
+      "type": "mc",
+      "difficulty": "Developing",
+      "primary_topic": "2.6",
+      "tags": [
+        "conditional probability",
+        "general multiplication rule",
+        "reference group"
+      ],
+      "objectives": [
+        "2.6.A"
+      ],
+      "prompt": "The same bag has 3 red and 2 blue marbles. What is P(blue then red) without replacement?",
+      "hint": "After blue is removed, 3 of the remaining 4 marbles are red.",
+      "solution": "P(B1∩R2)=(2/5)(3/4)=6/20=3/10.",
+      "rights": "original",
+      "provenance": "Maple Hill School original public-safe teaching practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "2/5"
+        },
+        {
+          "label": "B",
+          "text": "3/5"
+        },
+        {
+          "label": "C",
+          "text": "3/10"
+        },
+        {
+          "label": "D",
+          "text": "1/2"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "MHS-U2-T26-006",
+      "type": "mc",
+      "difficulty": "Developing",
+      "primary_topic": "2.6",
+      "tags": [
+        "conditional probability",
+        "general multiplication rule",
+        "reference group"
+      ],
+      "objectives": [
+        "2.6.A"
+      ],
+      "prompt": "Suppose P(A)=0.30 and P(B | A)=0.40. What is P(A and B)?",
+      "hint": "Multiply the marginal chance of A by the conditional chance of B after A.",
+      "solution": "P(A∩B)=0.30×0.40=0.12.",
+      "rights": "original",
+      "provenance": "Maple Hill School original public-safe teaching practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.70"
+        },
+        {
+          "label": "B",
+          "text": "0.12"
+        },
+        {
+          "label": "C",
+          "text": "0.40"
+        },
+        {
+          "label": "D",
+          "text": "0.10"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "MHS-U2-T26-007",
+      "type": "mc",
+      "difficulty": "Developing",
+      "primary_topic": "2.6",
+      "tags": [
+        "conditional probability",
+        "general multiplication rule",
+        "reference group"
+      ],
+      "objectives": [
+        "2.6.A"
+      ],
+      "prompt": "Why might P(A | B) and P(B | A) differ even though both use the same intersection?",
+      "hint": "The two formulas share P(A∩B) but have different denominators.",
+      "solution": "P(A|B)=P(A∩B)/P(B) and P(B|A)=P(A∩B)/P(A). Different conditioning-group sizes can produce different values.",
+      "rights": "original",
+      "provenance": "Maple Hill School original public-safe teaching practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "They always have different numerators."
+        },
+        {
+          "label": "B",
+          "text": "The events must be mutually exclusive."
+        },
+        {
+          "label": "C",
+          "text": "One of the probabilities has to be greater than 1."
+        },
+        {
+          "label": "D",
+          "text": "The conditioning groups B and A have different probabilities."
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "MHS-U2-T26-008",
+      "type": "mc",
+      "difficulty": "Developing",
+      "primary_topic": "2.6",
+      "tags": [
+        "conditional probability",
+        "general multiplication rule",
+        "reference group"
+      ],
+      "objectives": [
+        "2.6.A"
+      ],
+      "prompt": "When P(B)=0, which statement about P(A | B) is correct?",
+      "hint": "The conditional rule divides by P(B).",
+      "solution": "P(A|B)=P(A∩B)/P(B) requires P(B)>0; dividing by zero is undefined.",
+      "rights": "original",
+      "provenance": "Maple Hill School original public-safe teaching practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "It is undefined by the conditional probability formula."
+        },
+        {
+          "label": "B",
+          "text": "It always equals P(A)."
+        },
+        {
+          "label": "C",
+          "text": "It must equal zero."
+        },
+        {
+          "label": "D",
+          "text": "It must equal one."
+        }
+      ],
+      "answer": "A"
+    }
+  ]
+}

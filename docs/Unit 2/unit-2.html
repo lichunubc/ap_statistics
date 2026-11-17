@@ -95,6 +95,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="Topic%202.3/assets/sim23.css">
 <link rel="stylesheet" href="Topic%202.4/assets/intro24.css">
 <link rel="stylesheet" href="Topic%202.5/assets/disjoint25.css">
+<link rel="stylesheet" href="Topic%202.6/assets/condition26.css">
 </head>
 
 <body class="nav-sidebar docked fullcontent quarto-light">
@@ -252,6 +253,11 @@ ul.task-list li input[type="checkbox"] {
   <a href="Topic%202.5/topic-2-5.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Topic 2.5 Mutually Exclusive Events</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="Topic%202.6/topic-2-6.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Topic 2.6 Conditional Probability</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item">
@@ -312,7 +318,7 @@ ul.task-list li input[type="checkbox"] {
 
 <p><a href="../index.html">← All units</a></p>
 <div class="chapter-lead">
-<p><strong>Topics 2.1–2.5.</strong> Begin with two-way tables, relative frequencies, simulations, and exact probability models; more Unit 2 topics follow after validation.</p>
+<p><strong>Topics 2.1–2.6.</strong> Begin with two-way tables, relative frequencies, simulations, and exact probability models; more Unit 2 topics follow after validation.</p>
 </div>
 <section id="choose-a-topic" class="level2">
 <h2 class="anchored" data-anchor-id="choose-a-topic">Choose a topic</h2>
@@ -341,6 +347,11 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>Topic 2.5 Mutually Exclusive Events</strong></p>
 <p>Identify outcomes in intersections, find joint probabilities, and justify whether events can occur together.</p>
 <p><a href="Topic%202.5/topic-2-5.html">Open Topic 2.5 →</a></p>
+</div>
+<div class="route-card">
+<p><strong>Topic 2.6 Conditional Probability</strong></p>
+<p>Understand how given conditions change denominators and calculate probabilities with the general multiplication rule.</p>
+<p><a href="Topic%202.6/topic-2-6.html">Open Topic 2.6 →</a></p>
 </div>
 </div>
 <p><a href="../Unit%201/unit-1.html">Return to Unit 1</a> · <a href="../index.html">Explore all five units</a></p>
@@ -439,6 +450,15 @@ ul.task-list li input[type="checkbox"] {
  if(!css)return;
  const script=document.createElement('script');
  script.src=css.href.replace(/disjoint25\.css(?:\?.*)?$/,'disjoint25.js');
+ script.defer=true;document.body.appendChild(script);
+})();
+</script>
+<script>
+(function(){
+ const css=Array.from(document.querySelectorAll('link[rel="stylesheet"]')).find(e=>e.href.includes('/condition26.css'));
+ if(!css)return;
+ const script=document.createElement('script');
+ script.src=css.href.replace(/condition26\.css(?:\?.*)?$/,'condition26.js');
  script.defer=true;document.body.appendChild(script);
 })();
 </script>

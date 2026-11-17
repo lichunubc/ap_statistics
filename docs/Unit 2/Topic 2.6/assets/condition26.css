@@ -1,0 +1,18 @@
+.condition26{border:1px solid #bfd8dd;background:#f3f9f8;border-radius:10px;padding:1rem;max-width:100%;box-sizing:border-box}
+.condition26-buttons{display:flex;flex-wrap:wrap;gap:.48rem;margin-bottom:.8rem}
+.condition26 button{font:inherit;border:1px solid #087e83;background:white;color:#065d62;padding:.48rem .65rem;border-radius:7px;cursor:pointer}
+.condition26 button[aria-pressed="true"]{background:#087e83;color:white}
+.condition26 button:focus-visible{outline:3px solid #e4b469;outline-offset:2px}
+.condition26-tablewrap{max-width:100%;overflow-x:auto}
+.condition26-table{border-collapse:collapse;width:100%;min-width:350px;font-size:.96rem}
+.condition26-table caption{text-align:left;font-size:.9rem;color:#36525e;margin:.25rem 0}
+.condition26-table td,.condition26-table th{border:1px solid #b7c9cf;text-align:center;padding:.42rem .25rem}
+.condition26-table th{background:#edf2f4}
+.condition26-table td{background:white}
+.condition26-table .condition26-selected{background:#c6e9e5}
+.condition26-table .condition26-intersection{background:#f6d8a0;border:2px solid #90591c;font-weight:bold}
+.condition26-table .condition26-denominator{background:#b8deda;border:2px solid #087e83}
+.condition26-output{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.55rem}
+.condition26-output p{margin:.2rem 0}
+.condition26-static{font-size:.91em;color:#435a66}
+@media(max-width:540px){.condition26{padding:.7rem}.condition26-output{grid-template-columns:1fr}.condition26-buttons button{flex:1 0 42%;font-size:.93em}}
