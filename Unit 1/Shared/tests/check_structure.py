@@ -8,7 +8,7 @@ source=path.read_text()
 changes=[
  ("page.locator('#quarto-sidebar .course-unit-toggle').click()", "page.locator('#quarto-sidebar .course-unit-toggle').first.click()"),
 
- ("assert len(parts)==1 and parts[0]['part']=='Unit 1/unit-1.qmd'", "assert len(parts)==2 and parts[0]['part']=='Unit 1/unit-1.qmd' and parts[1]['part']=='Unit 2/unit-2.qmd' and parts[1]['chapters']==['Unit 2/Topic 2.1/topic-2-1.qmd','Unit 2/Topic 2.2/topic-2-2.qmd']"),
+ ("assert len(parts)==1 and parts[0]['part']=='Unit 1/unit-1.qmd'", '''assert len(parts)==2 and parts[0]['part']=='Unit 1/unit-1.qmd' and parts[1]['part']=='Unit 2/unit-2.qmd' and parts[1]['chapters']==[f"Unit 2/Topic {t['id']}/topic-{t['id'].replace('.','-')}.qmd" for t in manifest['topics'] if t['id'].startswith('2.') and t['status'].startswith('implemented')]'''),
  ("range(2,6)","range(3,6)"),
  ("if n.get_text().startswith('Topic ')", "if n.get_text().startswith('Topic 1.')"),
 

@@ -488,6 +488,36 @@
       ],
       "data_source": "Topic 2.1 constructed 24 café orders",
       "implemented_on": "2026-11-17"
+    },
+    {
+      "id": "2.3",
+      "title": "Estimating Probabilities Using Simulation",
+      "status": "implemented_preview",
+      "directory": "Unit 2/Topic 2.3",
+      "chapter": "Unit 2/Topic 2.3/topic-2-3.qmd",
+      "ced_printed_pages": "64",
+      "learning_objectives": [
+        "2.3.A"
+      ],
+      "essential_knowledge": [
+        "2.3.A.1",
+        "2.3.A.2",
+        "2.3.A.3",
+        "2.3.A.4",
+        "2.3.A.5",
+        "2.3.A.6",
+        "2.3.A.7"
+      ],
+      "skills": [
+        "3.C"
+      ],
+      "practice_count": 8,
+      "interactions": [
+        "offline accessible three-fair-toss simulator with neutral initial state and running frequency",
+        "one-at-a-time original public-safe practice"
+      ],
+      "implemented_on": "2026-11-17",
+      "publication_note": "Preview candidate. Publication requires complete native Quarto CI and live verification."
     }
   ]
 }

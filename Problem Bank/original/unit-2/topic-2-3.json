@@ -1,0 +1,306 @@
+{
+  "schema_version": 1,
+  "bank_id": "mhs-ap-statistics-original",
+  "topic": "2.3",
+  "title": "Estimating Probabilities Using Simulation",
+  "rights": "Original teacher-authored public-safe practice; no secure assessments.",
+  "revision": 1,
+  "items": [
+    {
+      "id": "MHS-U2-T23-001",
+      "type": "mc",
+      "difficulty": "Foundation",
+      "primary_topic": "2.3",
+      "tags": [
+        "simulation",
+        "relative frequency"
+      ],
+      "objectives": [
+        "2.3.A"
+      ],
+      "prompt": "When one complete trial is three independent fair coin tosses, which is one possible outcome of that trial?",
+      "hint": "Distinguish a complete trial from one toss within it.",
+      "solution": "An outcome records the result of one complete three-toss trial. The sequence HTH is one of eight ordered outcomes.",
+      "rights": "original",
+      "provenance": "Maple Hill School original public-safe practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "A three-letter ordered sequence, such as HTH"
+        },
+        {
+          "label": "B",
+          "text": "An individual result H only"
+        },
+        {
+          "label": "C",
+          "text": "The proportion of heads among 100 tosses"
+        },
+        {
+          "label": "D",
+          "text": "Exactly one head, with no order recorded"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "MHS-U2-T23-002",
+      "type": "mc",
+      "difficulty": "Foundation",
+      "primary_topic": "2.3",
+      "tags": [
+        "simulation",
+        "relative frequency"
+      ],
+      "objectives": [
+        "2.3.A"
+      ],
+      "prompt": "A simulation of 600 complete four-spin trials recorded at least one prize in 417 groups. What is the estimated probability of that event?",
+      "hint": "Match the denominator to the unit counted in the numerator.",
+      "solution": "The event is success of the entire four-spin group. The estimate is 417/600=0.695, not 417/2400.",
+      "rights": "original",
+      "provenance": "Maple Hill School original public-safe practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "417/2400"
+        },
+        {
+          "label": "B",
+          "text": "417/600"
+        },
+        {
+          "label": "C",
+          "text": "600/417"
+        },
+        {
+          "label": "D",
+          "text": "417/4"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "MHS-U2-T23-003",
+      "type": "mc",
+      "difficulty": "Foundation",
+      "primary_topic": "2.3",
+      "tags": [
+        "simulation",
+        "relative frequency"
+      ],
+      "objectives": [
+        "2.3.A"
+      ],
+      "prompt": "An independent fair coin has landed heads seven times in succession. What is the probability that the next toss is tails?",
+      "hint": "Does the coin remember prior results?",
+      "solution": "Independence means the next toss is unaffected by the previous seven. P(Tails)=1/2. The law of large numbers does not force compensation.",
+      "rights": "original",
+      "provenance": "Maple Hill School original public-safe practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "1/8"
+        },
+        {
+          "label": "B",
+          "text": "7/8"
+        },
+        {
+          "label": "C",
+          "text": "1/2"
+        },
+        {
+          "label": "D",
+          "text": "Greater than 1/2"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "MHS-U2-T23-004",
+      "type": "mc",
+      "difficulty": "Developing",
+      "primary_topic": "2.3",
+      "tags": [
+        "simulation",
+        "relative frequency"
+      ],
+      "objectives": [
+        "2.3.A"
+      ],
+      "prompt": "A population process has a 30% success probability. Which mapping of ten equally likely digits is valid?",
+      "hint": "How many of ten digits equal 30%?",
+      "solution": "Exactly three of the ten equally likely digits must signal success, so digits 0, 1 and 2 yield 3/10=0.30.",
+      "rights": "original",
+      "provenance": "Maple Hill School original public-safe practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "Use digits 0–2 for success and 3–9 for failure"
+        },
+        {
+          "label": "B",
+          "text": "Use digits 0–3 for success and 4–9 for failure"
+        },
+        {
+          "label": "C",
+          "text": "Use even digits for success and odd digits for failure"
+        },
+        {
+          "label": "D",
+          "text": "Use digit 0 for success and all other digits for failure"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "MHS-U2-T23-005",
+      "type": "mc",
+      "difficulty": "Developing",
+      "primary_topic": "2.3",
+      "tags": [
+        "simulation",
+        "relative frequency"
+      ],
+      "objectives": [
+        "2.3.A"
+      ],
+      "prompt": "A student simulates 250 trials of two fair dice and counts 37 pairs with sum at least 10. Which calculation estimates the probability of that event?",
+      "hint": "A pair of rolls constitutes one trial.",
+      "solution": "Each trial consists of a pair of rolls. The 37 successful pairs out of 250 complete pairs give 37/250=0.148.",
+      "rights": "original",
+      "provenance": "Maple Hill School original public-safe practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "37/500"
+        },
+        {
+          "label": "B",
+          "text": "37/12"
+        },
+        {
+          "label": "C",
+          "text": "37/250"
+        },
+        {
+          "label": "D",
+          "text": "250/37"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "MHS-U2-T23-006",
+      "type": "mc",
+      "difficulty": "Developing",
+      "primary_topic": "2.3",
+      "tags": [
+        "simulation",
+        "relative frequency"
+      ],
+      "objectives": [
+        "2.3.A"
+      ],
+      "prompt": "Which statement about a larger correctly designed simulation is most accurate?",
+      "hint": "Consider whether the law is monotonic.",
+      "solution": "The law of large numbers is a long-run tendency, not a step-by-step guarantee. More repetitions reduce random variation but cannot correct a wrong model.",
+      "rights": "original",
+      "provenance": "Maple Hill School original public-safe practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "Its estimated probability must become closer to the true value after every new trial"
+        },
+        {
+          "label": "B",
+          "text": "After 1,000 trials, its estimate must equal the model probability exactly"
+        },
+        {
+          "label": "C",
+          "text": "A larger number of trials can repair a simulator that uses the wrong success probability"
+        },
+        {
+          "label": "D",
+          "text": "Its relative frequency generally stabilizes toward the model probability, but can temporarily move away"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "MHS-U2-T23-007",
+      "type": "mc",
+      "difficulty": "Challenge",
+      "primary_topic": "2.3",
+      "tags": [
+        "simulation",
+        "relative frequency"
+      ],
+      "objectives": [
+        "2.3.A"
+      ],
+      "prompt": "A student makes codes 00 through 20 inclusive represent a 20% chance using uniform two-digit numbers 00–99. What is wrong?",
+      "hint": "Count both endpoints, including 00.",
+      "solution": "Count the codes inclusively: 00, 01, ..., 20 are 21 of the 100 possible codes, giving 0.21. To model 20%, use 00–19.",
+      "rights": "original",
+      "provenance": "Maple Hill School original public-safe practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "It represents 19%, because 00 is not a number"
+        },
+        {
+          "label": "B",
+          "text": "It represents 21%, because 00 through 20 contains 21 equally likely codes"
+        },
+        {
+          "label": "C",
+          "text": "It represents exactly 20%"
+        },
+        {
+          "label": "D",
+          "text": "It represents 2%, because only 00 and 20 count"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "MHS-U2-T23-008",
+      "type": "mc",
+      "difficulty": "Challenge",
+      "primary_topic": "2.3",
+      "tags": [
+        "simulation",
+        "relative frequency"
+      ],
+      "objectives": [
+        "2.3.A"
+      ],
+      "prompt": "Which interpretation properly separates simulation from theoretical probability?",
+      "hint": "A model probability and an estimate answer related but distinct questions.",
+      "solution": "The estimate 505/1000=0.505 varies randomly around the theoretical P=0.5; no finite run is guaranteed to match exactly.",
+      "rights": "original",
+      "provenance": "Maple Hill School original public-safe practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "A recorded estimate 0.505 proves the true chance is 0.505"
+        },
+        {
+          "label": "B",
+          "text": "A simulated 505 successes out of 1,000 trials can estimate a theoretical chance of 0.5 without contradicting it"
+        },
+        {
+          "label": "C",
+          "text": "A probability of 0.5 guarantees exactly 500 successes in the next 1,000 trials"
+        },
+        {
+          "label": "D",
+          "text": "Simulation results can be treated as unbiased even when the random device has the wrong probabilities"
+        }
+      ],
+      "answer": "B"
+    }
+  ]
+}

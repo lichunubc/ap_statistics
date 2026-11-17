@@ -1,0 +1,74 @@
+{
+  "topic": "2.3",
+  "title": "Estimating Probabilities Using Simulation",
+  "official_title": "Estimating Probabilities Using Simulation",
+  "curriculum": "College Board AP Statistics CED effective Fall 2026",
+  "source": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description-effective-fall-2026.pdf",
+  "ced_printed_pages": [
+    64
+  ],
+  "pdf_zero_index_pages": [
+    68
+  ],
+  "learning_objectives": [
+    "2.3.A"
+  ],
+  "essential_knowledge": [
+    "2.3.A.1",
+    "2.3.A.2",
+    "2.3.A.3",
+    "2.3.A.4",
+    "2.3.A.5",
+    "2.3.A.6",
+    "2.3.A.7"
+  ],
+  "skills": [
+    "3.C"
+  ],
+  "coverage": [
+    {
+      "section": "#model23",
+      "ids": [
+        "2.3.A.1",
+        "2.3.A.2",
+        "2.3.A.3"
+      ]
+    },
+    {
+      "section": "#design23",
+      "ids": [
+        "2.3.A.4",
+        "2.3.A.6"
+      ]
+    },
+    {
+      "section": "#explorer23",
+      "ids": [
+        "2.3.A.4",
+        "2.3.A.5",
+        "2.3.A.6"
+      ]
+    },
+    {
+      "section": "#longrun23",
+      "ids": [
+        "2.3.A.5",
+        "2.3.A.7"
+      ]
+    },
+    {
+      "section": "#device23",
+      "ids": [
+        "2.3.A.4"
+      ]
+    },
+    {
+      "section": "#interpret23",
+      "ids": [
+        "2.3.A.6",
+        "2.3.A.7"
+      ]
+    }
+  ],
+  "rights": "Original teacher-authored public-safe lesson; no secure assessment content. Simulation examples correspond to the approved classroom model."
+}

@@ -49,6 +49,7 @@ book:
       chapters:
         - "Unit 2/Topic 2.1/topic-2-1.qmd"
         - "Unit 2/Topic 2.2/topic-2-2.qmd"
+        - "Unit 2/Topic 2.3/topic-2-3.qmd"
     - "Unit 3/unit-3.qmd"
     - "Unit 4/unit-4.qmd"
     - "Unit 5/unit-5.qmd"
@@ -84,6 +85,7 @@ format:
       - "Unit 1/Topic 1.13/assets/experiment113.css"
       - "Unit 2/Topic 2.1/assets/cafe21.css"
       - "Unit 2/Topic 2.2/assets/relative22.css"
+      - "Unit 2/Topic 2.3/assets/sim23.css"
     toc: true
     toc-depth: 2
     number-sections: false
@@ -104,4 +106,5 @@ format:
       - "Unit 1/Topic 1.13/assets/experiment113-footer.html"
       - "Unit 2/Topic 2.1/assets/cafe21-footer.html"
       - "Unit 2/Topic 2.2/assets/relative22-footer.html"
+      - "Unit 2/Topic 2.3/assets/sim23-footer.html"
 lang: en
