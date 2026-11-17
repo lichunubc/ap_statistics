@@ -2,7 +2,7 @@
   "schema_version": 1,
   "authorized": "2026-11-17",
   "expected_invocations": 6,
-  "invocations_recorded": 4,
+  "invocations_recorded": 5,
   "completed_phases": [
     "main_and_source_inventory",
     "topic_1_12_preview_candidate",
@@ -22,7 +22,12 @@
     "topic_2_5_source_candidate",
     "topic_2_5_preview_ci_passed",
     "topic_2_5_merged",
-    "topic_2_6_source_candidate"
+    "topic_2_6_source_candidate",
+    "topic_2_5_published_after_full_native_and_live_ci",
+    "topic_2_6_preview_ci_passed",
+    "topic_2_6_pr9_merged_source",
+    "topic_2_7_source_candidate",
+    "approved_42_slide_standalone_resource_staged"
   ],
   "preview_branch": "preview/overnight-20261117-topic-2-1",
   "baseline_main": "afd3ebec03b5c6eed70da3dfacc2ec545751ef3c",
@@ -43,10 +48,11 @@
     "teacher assessments and marking guides"
   ],
   "next": [
-    "Check native Topic 2.5 production run and exact live browser validation",
-    "Validate Topic 2.6 preview before any merge; correct genuine failures",
-    "Implement and publish Topic 2.7 Independent Events and Unions of Events",
-    "Audit privacy and integrate public-safe teaching slide/guide assets where possible"
+    "Inspect native CI for integrated 2.7 plus 42-slide resource; repair genuine failures, never weaken checks",
+    "Investigate Topic 2.6 live navigation Quarto page errors after two failed live runs; 2.6 is source merged and Pages deployed but not published_verified",
+    "On full 2.7 preview success, recheck main and non-force merge with expected SHA; verify production Pages, revision-matched release, Topic 2.7 dedicated browser, 42 slides and all earlier topic regressions",
+    "Publish safe standalone probability study guide and editable sources if possible; never upload original mixed secure Week9 archive",
+    "Final audit: Unit1 1.1–1.13, Unit2 2.1–2.7, privileges/rights, source counts, site navigation, responsive, private question-bank separation, and exact pending items"
   ],
   "published_in_this_session": [
     {
@@ -56,7 +62,7 @@
     }
   ],
   "preview_ci_passed": null,
-  "pending": "Topic 2.3 staged on new preview; full native Quarto/browser CI must pass before a non-force merge or production/live claim. Probability guide clean derivative generated but not published to GitHub.",
+  "pending": "2.6 production Pages deployed but live nav browser failures block full verification. 2.7 and approved slides staged on preview, not merged or live. Public-safe guide remains a local reviewed artifact.",
   "public_safe_derivative": {
     "pdf": "AP_Statistics_2_3_to_2_7_Public_Safe_Study_Guide.pdf",
     "pdf_sha256": "02d85a58b21182b226c1dc19a80f74ee500570edd368d8a11912ab503f173dc0",
@@ -139,7 +145,7 @@
     "live_url": "https://lichunubc.github.io/ap_statistics/Unit%202/Topic%202.4/topic-2-4.html"
   },
   "topic_2_5": {
-    "status": "merged_production_in_progress",
+    "status": "published_verified",
     "branch": "preview/overnight-20261117-topic-2-5",
     "practice_count": 8,
     "scope": "Official Fall 2026 CED printed page 66; objective 2.5.A, EK 2.5.A.1–2",
@@ -154,18 +160,52 @@
     "preview_result": "success: native Quarto, all configured regressions and Topic2.5 source/browser",
     "merge_commit": "4d8b621d8f3b38ff69a966f1b391e8a066a86ae2",
     "pull_request": "https://github.com/lichunubc/ap_statistics/pull/8",
-    "production_run": 44096757688
+    "production_run": 44096757688,
+    "source_commit": "4d8b621d8f3b38ff69a966f1b391e8a066a86ae2",
+    "live_url": "https://lichunubc.github.io/ap_statistics/Unit%202/Topic%202.5/topic-2-5.html"
   },
   "topic_2_6": {
-    "status": "preview_candidate_pending_native_ci",
-    "branch": "preview/overnight-20261117-topic-2-6",
-    "practice_count": 8,
-    "scope": "CED printed p67: 2.6.A, EK 2.6.A.1–2",
+    "status": "source_merged_pages_deployed_live_regression_failed",
+    "preview_run": 44097593578,
+    "preview_result": "passed native Quarto, all configured source/browser checks",
+    "pull_request": "https://github.com/lichunubc/ap_statistics/pull/9",
+    "merge_commit": "3af25870eb29d1c24763b27ae018e9db59652b99",
+    "production_run": 44099076024,
+    "attempts": 2,
+    "production_result": "native Quarto and full regression passed; Pages deployment and revision-matched HTTP check passed, but both LIVE navigation browser attempts failed due to distinct Quarto pageerrors (`applyStyles` undefined then `AnchorJS` not constructor) before dedicated browser checks; NOT yet published_verified.",
+    "next": "Diagnose/resolve real live navigation error; rerun strict gates; no weakened tests."
+  },
+  "topic_2_7": {
+    "status": "preview_candidate_not_live",
+    "branch": "preview/overnight-20261117-topic-2-7",
+    "original_practice_count": 8,
+    "learning_objectives": [
+      "2.7.A"
+    ],
+    "essential_knowledge": [
+      "2.7.A.1",
+      "2.7.A.2",
+      "2.7.A.3"
+    ],
+    "preview_base": "3af25870eb29d1c24763b27ae018e9db59652b99",
+    "native_original_source_preview_run": 44100118532,
+    "preview_result": "First native Quarto/complete source/browser preview passed before addition of approved slides; latest integrated slide+Topic2.7 preview awaiting checks.",
     "features": [
-      "original standalone QMD",
-      "offline four-case conditional-denominator explorer",
-      "8 original detailed-solution practice items",
-      "source/browser/live CI gate"
+      "self-contained independence/disjointness and union lesson",
+      "keyboard/mobile die-event explorer with static no-JS",
+      "eight original centrally stored practice questions and answers",
+      "official CED objective map",
+      "native desktop/tablet/phone, print and no-JS tests"
     ]
+  },
+  "approved_presentation": {
+    "status": "preview_staged_not_live",
+    "file": "Unit 2/resources/probability-simulation-slides.html",
+    "approved_html_sha256": "88b6f29181315f014b3a91737783cf404fdb36bd2ff138f4e7b238bf149c5a8a",
+    "slides": 42,
+    "validation": "exact instructor file copied via full-file text preservation; static/privacy and native browser checks registered; native Quarto render and actual resource checks pending",
+    "type": "standalone Pandoc/local classroom player, not native Quarto RevealJS rendered output",
+    "source_bundle_sha256": "95f9c61c4c735e479b6f73b19481f8a714750cb5e4520361ebd074ee2a5ffd19",
+    "excluded": "full mixed private Week9 guide and secure AP Classroom materials"
   }
 }
