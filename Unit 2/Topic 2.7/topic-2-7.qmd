@@ -1,0 +1,137 @@
+# Topic 2.7 Independent Events and Unions of Events
+
+Two questions are easy to confuse: **Can the events happen together?** and **Does one event change the probability of the other?** The first asks whether events are mutually exclusive; the second asks whether they are independent. This lesson also shows how to calculate the probability that **at least one** of two events occurs.
+
+## Independence: knowing one event does not change the other {#independence27}
+
+Let $A$ and $B$ be events with positive probabilities. They are **independent** when learning that one occurred does not change the probability of the other. Equivalent tests are
+
+$$
+\boxed{P(A\mid B)=P(A),\qquad
+P(B\mid A)=P(B),\qquad
+P(A\cap B)=P(A)P(B).}
+$$
+
+If a conditional denominator is zero, use the intersection-product criterion; the expression with that zero denominator is not defined. For independent events, multiplying their individual probabilities gives their **joint probability**. If events are not independent, use the general multiplication rule from Topic 2.6, $P(A\cap B)=P(A)P(B\mid A)$.
+
+**Example: two independent coin tosses.** Let $A$ be heads on the first toss and $B$ be heads on the second. With $S=\{HH,HT,TH,TT\}$,
+
+$$
+P(A\cap B)=\frac14=\frac12\cdot\frac12=P(A)P(B).
+$$
+
+The events are independent, although they *can* happen together: outcome $HH$ is in both.
+
+## Independence is different from disjointness {#contrast27}
+
+Two events are **mutually exclusive (disjoint)** when they cannot occur together, so $P(A\cap B)=0$. Independent events instead satisfy $P(A\cap B)=P(A)P(B)$. If both events have positive probability, they **cannot be both disjoint and independent**: the product of their probabilities is positive, but disjointness would make their intersection zero.
+
+On one fair die, let $E=\{2,4,6\}$ mean even and $O=\{1,3,5\}$ mean odd. They are disjoint, but knowing $E$ happened makes $P(O\mid E)=0$ rather than $P(O)=1/2$. Thus they are dependent.
+
+Conversely, let $M=\{3,6\}$ mean a multiple of three. Even and multiple-of-three overlap at outcome 6, but
+
+$$
+P(E\cap M)=\frac16=\frac36\cdot\frac26,
+$$
+
+so these events from the **same roll** are independent. Independence is a numerical property, not a requirement for two different physical devices.
+
+## Unions: "or" includes both {#union27}
+
+The union $A\cup B$ contains all outcomes in $A$, in $B$, **or in both**. Simply adding $P(A)$ and $P(B)$ counts the intersection twice. Subtract it once:
+
+$$
+\boxed{P(A\cup B)=P(A)+P(B)-P(A\cap B).}
+$$
+
+The addition rule works whether the events are independent, dependent, or disjoint. If the events are disjoint, the intersection is zero and the rule simplifies to $P(A\cup B)=P(A)+P(B)$. **Do not** assume the intersection is zero merely because the events are independent.
+
+For the fair-die events $E=\{2,4,6\}$ and $M=\{3,6\}$,
+
+$$
+P(E\cup M)=\frac36+\frac26-\frac16=\frac46=\frac23.
+$$
+
+The outcomes in the union are $\{2,3,4,6\}$. Counting them directly confirms the result.
+
+## Explore events on one die {#explorer27}
+
+Select an event pair. The six numbered cells represent the equally likely outcomes of one fair die roll. Each cell is marked **A only**, **B only**, **both**, or **neither**. Compare the actual intersection to the product $P(A)P(B)$, then find the union.
+
+~~~{=html}
+<div class="event27" data-event27>
+  <div class="event27-actions" role="group" aria-label="Select two events">
+    <button type="button" data-event27-choice="evenmultiple" aria-pressed="false">Even and multiple of 3</button>
+    <button type="button" data-event27-choice="evenodd" aria-pressed="false">Even and odd</button>
+    <button type="button" data-event27-choice="evengreater" aria-pressed="false">Even and at least 4</button>
+    <button type="button" data-event27-choice="lowhigh" aria-pressed="false">1–2 and 5–6</button>
+    <button type="button" data-event27-reset>Reset</button>
+  </div>
+  <ol class="event27-die" aria-label="Outcomes of one fair six-sided die">
+    <li data-event27-face="1"><strong>1</strong><small>Choose events</small></li>
+    <li data-event27-face="2"><strong>2</strong><small>Choose events</small></li>
+    <li data-event27-face="3"><strong>3</strong><small>Choose events</small></li>
+    <li data-event27-face="4"><strong>4</strong><small>Choose events</small></li>
+    <li data-event27-face="5"><strong>5</strong><small>Choose events</small></li>
+    <li data-event27-face="6"><strong>6</strong><small>Choose events</small></li>
+  </ol>
+  <p class="event27-status" data-event27-status role="status" aria-live="polite">No pair selected. Choose a pair to compare independence and overlap.</p>
+  <div class="event27-results">
+    <p>Intersection: <strong data-event27-intersection>—</strong></p>
+    <p>Actual $P(A\cap B)$: <strong data-event27-joint>—</strong></p>
+    <p>Independent-product $P(A)P(B)$: <strong data-event27-product>—</strong></p>
+    <p>Independent? <strong data-event27-independent>—</strong></p>
+    <p>Union $P(A\cup B)$: <strong data-event27-union>—</strong></p>
+  </div>
+  <p class="event27-static">Without JavaScript: even and multiple of 3 intersect at {6}, giving joint probability 1/6, which equals (3/6)(2/6); their union is {2,3,4,6}, probability 4/6. Even and odd are disjoint but dependent.</p>
+</div>
+~~~
+
+Every pair can also be checked without the activity: list the outcomes in each event, find the overlap, and apply the independence test and union rule.
+
+## A Venn diagram in an ordinary deck {#cards27}
+
+In a standard 52-card deck, let $H$ mean hearts and $K$ mean kings. There are 13 hearts, 4 kings, and exactly one king of hearts. The **nonoverlapping** regions contain 12 heart-only cards, 1 card in both events, 3 king-only cards, and 36 cards in neither.
+
+$$
+\begin{aligned}
+P(H\cup K)&=\frac{13}{52}+\frac4{52}-\frac1{52}
+=\frac{16}{52}=\frac4{13},\\
+P(H\cap K)&=\frac1{52}
+=\frac{13}{52}\cdot\frac4{52}.
+\end{aligned}
+$$
+
+Thus hearts and kings are **independent but not mutually exclusive**. Their intersection is not zero. Other useful events are "neither": $36/52$, and "exactly one of the two": $(12+3)/52=15/52$.
+
+## At least one success: a complement shortcut {#complement27}
+
+Sometimes it is simpler to find the probability that **nothing succeeds** and subtract from one. For three *independent* rolls of a fair die, the event "at least one six" has complement "no six in all three rolls":
+
+$$
+P(\text{at least one six})=1-\left(\frac56\right)^3
+=\frac{91}{216}\approx0.4213.
+$$
+
+For four independent prize spins with $P(\text{prize})=0.30$ on each spin, the chance of **at least one prize in the entire group** is
+
+$$
+1-P(\text{no prizes in four})=1-(0.70)^4=0.7599.
+$$
+
+The one-spin prize probability remains 0.30. The $0.7599$ describes a different event involving **four** spins. Independence is needed to multiply four miss probabilities.
+
+## Choose the appropriate rule {#routine27}
+
+1. Define the sample space and the events carefully; note whether **or** includes both.
+2. For a joint event, use the general multiplication rule, or multiply marginal probabilities **only when independence is established**.
+3. For an **or** event, add the two event probabilities and subtract the overlap once.
+4. To test independence, compare $P(A\cap B)$ with $P(A)P(B)$; to test disjointness, check whether the intersection is zero.
+5. For **at least one** in repeated independent trials, consider the complement. Report and interpret the probability in context.
+
+## Practice {#practice27}
+
+::: {.original-practice-host data-original-practice="2.7"}
+:::
+
+<details class="lesson-sources"><summary>Sources</summary><p>College Board, <a href="https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description-effective-fall-2026.pdf">AP Statistics Course and Exam Description</a>, effective Fall 2026, Topic 2.7, printed page 68. All examples, die activities, and practice are original classroom teaching material.</p></details>
