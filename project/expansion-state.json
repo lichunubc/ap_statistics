@@ -236,8 +236,9 @@
       "ced_printed_pages": [
         64
       ],
-      "status": "queued",
-      "attempts": 0
+      "status": "preview_candidate",
+      "attempts": 1,
+      "preview_branch": "preview/overnight-20261117-topic-2-3"
     },
     {
       "order": 11,
