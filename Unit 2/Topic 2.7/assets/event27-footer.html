@@ -1,0 +1,9 @@
+<script>
+(function(){
+ const css=Array.from(document.querySelectorAll('link[rel="stylesheet"]')).find(e=>e.href.includes('/event27.css'));
+ if(!css)return;
+ const s=document.createElement('script');
+ s.src=css.href.replace(/event27\.css(?:\?.*)?$/,'event27.js');
+ s.defer=true;document.body.appendChild(s);
+})();
+</script>
