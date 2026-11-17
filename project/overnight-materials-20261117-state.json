@@ -2,7 +2,7 @@
   "schema_version": 1,
   "authorized": "2026-11-17",
   "expected_invocations": 6,
-  "invocations_recorded": 3,
+  "invocations_recorded": 4,
   "completed_phases": [
     "main_and_source_inventory",
     "topic_1_12_preview_candidate",
@@ -37,10 +37,10 @@
     "teacher assessments and marking guides"
   ],
   "next": [
-    "Confirm production 44089161201 and live revision for Topic 2.3",
-    "Check full native preview CI for new Topic 2.4 and address observed failures before non-force integration",
-    "Integrate approved 42-slide deck and public-safe guide without secure Week9 sections",
-    "Finish independent Topics 2.5–2.7 and final privacy/coverage audit"
+    "Inspect fresh 2.4 production success and revision-matched live verification",
+    "Validate Topic 2.5 preview Quarto render and 34-course-test suite; fix observed defects, then non-force merge and deploy",
+    "Integrate sanitized 42-slide sources and clean public-safe guide",
+    "Complete Topics 2.6–2.7 and final privacy and coverage review"
   ],
   "published_in_this_session": [
     {
@@ -123,6 +123,18 @@
       "accessible fair-die complement explorer",
       "eight original questions with worked solutions",
       "native browser and source tests"
+    ]
+  },
+  "topic_2_5": {
+    "status": "preview_candidate_pending_native_CI",
+    "branch": "preview/overnight-20261117-topic-2-5",
+    "practice_count": 8,
+    "scope": "Official Fall 2026 CED printed page 66; objective 2.5.A, EK 2.5.A.1–2",
+    "features": [
+      "original Quarto lesson",
+      "interactive offline event-pair membership and joint probability explorer",
+      "8 original centrally stored questions",
+      "source and native browser accessibility tests"
     ]
   }
 }

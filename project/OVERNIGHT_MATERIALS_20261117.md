@@ -50,3 +50,10 @@ Complete preview CI; fix any genuine issues; recover 1.13 approved sources and i
 ## Topic 2.3 and 2.4 continuation
 - Topic 2.3 preview [44080708190](https://github.com/lichunubc/ap_statistics/actions/runs/44080708190) passed native Quarto and all 30 checks. Merged through non-force [PR #6](https://github.com/lichunubc/ap_statistics/pull/6) preserving the generated docs commit, main merge 57654d9a176bb57855eb3f8817d7cd270c89e09c. Production [44089161201](https://github.com/lichunubc/ap_statistics/actions/runs/44089161201) remains the gate for live claims.
 - Began separate original public-safe Topic 2.4, official CED printed p.65, LO2.4.A and EK 2.4.A.1–4. QMD includes the sample space, equiprobable counting, bounds and complement, an offline fair-die explorer, eight original centrally stored questions, and desktop/mobile/keyboard/print/noJS tests. No secure homework, teacher exams, student data or third-party assets are included. This remains a preview candidate pending complete native validation.
+
+
+## Topic 2.5 — original lesson candidate (November 17)
+- Refreshed main at 941b68a5fa8a826a9b0eae64cac1dd36014fead5; latest main includes the Topic 2.4 PR #7 merge, with its production deployment initially still in progress. Work isolated to preview/overnight-20261117-topic-2-5 and no main write attempted.
+- Independently checked Fall 2026 CED printed p. 66 (LO 2.5.A and EK 2.5.A.1–2) and wrote an original, self-contained student chapter teaching joint probability and disjointness with four fair-die event-pair examples and a keyboard-accessible, static-no-JS-compatible explorer.
+- Added eight original detailed-solution multiple-choice practices centrally, objective/rights metadata, CSS/JS/footer, source and native browser tests, independent topic navigation and test registration. Old lessons and private question-bank data were not changed. No copyrighted homework material included.
+- Publication state: **preview candidate, not yet native-Quarto tested or live**. Next inspect preview run; repair genuine CI failures before non-force integration and live verification. Do not claim 2.5 published until production and live checks pass.
