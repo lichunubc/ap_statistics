@@ -56,7 +56,7 @@ For one fair die, select two event descriptions. The six boxes represent equally
     <p>Joint probability: <strong data-disjoint25-p>—</strong></p>
     <p>Mutually exclusive? <strong data-disjoint25-answer>—</strong></p>
   </div>
-  <p class="disjoint25-static">Without JavaScript: even $\{2,4,6\}$ and odd $\{1,3,5\}$ do not overlap; even and at least 4 share $\{4,6\}$, with joint probability $2/6$.</p>
+  <p class="disjoint25-static">Without JavaScript: even {2,4,6} and odd {1,3,5} do not overlap; even and at least 4 share {4,6}, with joint probability 2/6.</p>
 </div>
 ~~~
 
