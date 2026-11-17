@@ -161,6 +161,11 @@ jobs:
         env:
           EVENT27_BASE_URL: ${{ steps.deployment.outputs.page_url }}
         run: python "Unit 2/Topic 2.7/tests/check_event27_browser.py"
+      - name: Verify live approved probability slides
+        if: steps.deployment.outcome == 'success'
+        env:
+          SLIDES27_BASE_URL: ${{ steps.deployment.outputs.page_url }}
+        run: python site/tests/check_probability_slides_browser.py
       - uses: actions/upload-artifact@v4
         if: always()
         with:
