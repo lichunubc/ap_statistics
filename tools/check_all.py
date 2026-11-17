@@ -36,6 +36,8 @@ CHECKS = [
     'Unit 2/Topic 2.1/tests/check_cafe21_browser.py',
     'Unit 2/Topic 2.2/tests/check_relative22.py',
     'Unit 2/Topic 2.2/tests/check_relative22_browser.py',
+    'Unit 2/Topic 2.3/tests/check_sim23.py',
+    'Unit 2/Topic 2.3/tests/check_sim23_browser.py',
 ]
 
 
