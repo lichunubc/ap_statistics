@@ -121,6 +121,11 @@ jobs:
         env:
           BIAS112_BASE_URL: ${{ steps.deployment.outputs.page_url }}
         run: python "Unit 1/Topic 1.12/tests/check_bias112_browser.py"
+      - name: Verify live Topic 1.13 browser
+        if: steps.deployment.outcome == 'success'
+        env:
+          EXPERIMENT113_BASE_URL: ${{ steps.deployment.outputs.page_url }}
+        run: python "Unit 1/Topic 1.13/tests/check_experiment113_browser.py"
       - uses: actions/upload-artifact@v4
         if: always()
         with:
