@@ -12,6 +12,7 @@ project:
     - "Unit 1/**/data/**"
     - "Unit 2/**/assets/**"
     - "Unit 2/**/data/**"
+    - "Unit 2/resources/**"
     - site/assets/
     - "Problem Bank/assets/"
     - "Problem Bank/catalog.json"
