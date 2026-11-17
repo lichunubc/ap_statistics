@@ -1,0 +1,314 @@
+{
+  "schema_version": 1,
+  "bank_id": "mhs-ap-statistics-original",
+  "topic": "2.4",
+  "title": "Introduction to Probability",
+  "rights": "Original teacher-authored public-safe practice, no secure assessments.",
+  "revision": 1,
+  "items": [
+    {
+      "id": "MHS-U2-T24-001",
+      "type": "mc",
+      "difficulty": "Foundation",
+      "primary_topic": "2.4",
+      "tags": [
+        "sample space",
+        "theoretical probability",
+        "complement"
+      ],
+      "objectives": [
+        "2.4.A"
+      ],
+      "prompt": "A fair six-sided die is rolled once. What is P(roll greater than 4)?",
+      "hint": "Count the equally likely faces satisfying the event.",
+      "solution": "The favorable faces are 5 and 6, so P(E)=2/6=1/3.",
+      "rights": "original",
+      "provenance": "Maple Hill School original public-safe teaching practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "1/3"
+        },
+        {
+          "label": "B",
+          "text": "1/2"
+        },
+        {
+          "label": "C",
+          "text": "2/3"
+        },
+        {
+          "label": "D",
+          "text": "1/6"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "MHS-U2-T24-002",
+      "type": "mc",
+      "difficulty": "Foundation",
+      "primary_topic": "2.4",
+      "tags": [
+        "sample space",
+        "theoretical probability",
+        "complement"
+      ],
+      "objectives": [
+        "2.4.A"
+      ],
+      "prompt": "A fair coin is tossed twice and order is recorded. Which is its sample space?",
+      "hint": "Record both results in their order.",
+      "solution": "A complete trial consists of both tosses, so HH, HT, TH and TT are the possible ordered outcomes.",
+      "rights": "original",
+      "provenance": "Maple Hill School original public-safe teaching practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "{H,T}"
+        },
+        {
+          "label": "B",
+          "text": "{0,1,2}"
+        },
+        {
+          "label": "C",
+          "text": "{HH,TT}"
+        },
+        {
+          "label": "D",
+          "text": "{HH,HT,TH,TT}"
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "MHS-U2-T24-003",
+      "type": "mc",
+      "difficulty": "Foundation",
+      "primary_topic": "2.4",
+      "tags": [
+        "sample space",
+        "theoretical probability",
+        "complement"
+      ],
+      "objectives": [
+        "2.4.A"
+      ],
+      "prompt": "A bus is late on 18% of days. What is P(bus not late)?",
+      "hint": "Use the complement.",
+      "solution": "The complement rule gives P(not late)=1-0.18=0.82.",
+      "rights": "original",
+      "provenance": "Maple Hill School original public-safe teaching practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.18"
+        },
+        {
+          "label": "B",
+          "text": "0.82"
+        },
+        {
+          "label": "C",
+          "text": "0.92"
+        },
+        {
+          "label": "D",
+          "text": "1.18"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "MHS-U2-T24-004",
+      "type": "mc",
+      "difficulty": "Developing",
+      "primary_topic": "2.4",
+      "tags": [
+        "sample space",
+        "theoretical probability",
+        "complement"
+      ],
+      "objectives": [
+        "2.4.A"
+      ],
+      "prompt": "One fair die is rolled. What is P(odd)?",
+      "hint": "List the odd faces.",
+      "solution": "Faces 1, 3, and 5 are favorable: 3/6=1/2.",
+      "rights": "original",
+      "provenance": "Maple Hill School original public-safe teaching practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "1/3"
+        },
+        {
+          "label": "B",
+          "text": "1/6"
+        },
+        {
+          "label": "C",
+          "text": "1/2"
+        },
+        {
+          "label": "D",
+          "text": "2/3"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "MHS-U2-T24-005",
+      "type": "mc",
+      "difficulty": "Developing",
+      "primary_topic": "2.4",
+      "tags": [
+        "sample space",
+        "theoretical probability",
+        "complement"
+      ],
+      "objectives": [
+        "2.4.A"
+      ],
+      "prompt": "Which number cannot be the probability of an event?",
+      "hint": "A probability lies between zero and one.",
+      "solution": "The probability -0.10 is negative, and so is impossible.",
+      "rights": "original",
+      "provenance": "Maple Hill School original public-safe teaching practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "-0.10"
+        },
+        {
+          "label": "B",
+          "text": "0"
+        },
+        {
+          "label": "C",
+          "text": "0.60"
+        },
+        {
+          "label": "D",
+          "text": "1"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "MHS-U2-T24-006",
+      "type": "mc",
+      "difficulty": "Developing",
+      "primary_topic": "2.4",
+      "tags": [
+        "sample space",
+        "theoretical probability",
+        "complement"
+      ],
+      "objectives": [
+        "2.4.A"
+      ],
+      "prompt": "Two independent fair dice are rolled. What is P(sum = 7)?",
+      "hint": "Count ordered pairs, not the possible sum labels.",
+      "solution": "There are six ordered pairs with sum 7 out of 36 equally likely pairs, giving 6/36=1/6.",
+      "rights": "original",
+      "provenance": "Maple Hill School original public-safe teaching practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "1/12"
+        },
+        {
+          "label": "B",
+          "text": "1/6"
+        },
+        {
+          "label": "C",
+          "text": "7/36"
+        },
+        {
+          "label": "D",
+          "text": "1/4"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "MHS-U2-T24-007",
+      "type": "mc",
+      "difficulty": "Transfer",
+      "primary_topic": "2.4",
+      "tags": [
+        "sample space",
+        "theoretical probability",
+        "complement"
+      ],
+      "objectives": [
+        "2.4.A"
+      ],
+      "prompt": "A spinner has three differently sized sectors. Which is correct?",
+      "hint": "Having three labels does not prove the three probabilities equal.",
+      "solution": "Three disjoint exhaustive sectors have total probability 1, but unequal sectors need not have equal probability.",
+      "rights": "original",
+      "provenance": "Maple Hill School original public-safe teaching practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "Each sector has chance 1/3."
+        },
+        {
+          "label": "B",
+          "text": "The sector probabilities may total more than 1."
+        },
+        {
+          "label": "C",
+          "text": "Sector probabilities total 1 but need not equal 1/3."
+        },
+        {
+          "label": "D",
+          "text": "The smallest sector has probability 0."
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "MHS-U2-T24-008",
+      "type": "mc",
+      "difficulty": "Transfer",
+      "primary_topic": "2.4",
+      "tags": [
+        "sample space",
+        "theoretical probability",
+        "complement"
+      ],
+      "objectives": [
+        "2.4.A"
+      ],
+      "prompt": "A fair die is rolled and E={2,4,6}. What is P(E complement)?",
+      "hint": "The complement consists of the remaining faces.",
+      "solution": "E complement is {1,3,5}, three of six equally likely faces, probability 1/2.",
+      "rights": "original",
+      "provenance": "Maple Hill School original public-safe teaching practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "1/4"
+        },
+        {
+          "label": "B",
+          "text": "1/3"
+        },
+        {
+          "label": "C",
+          "text": "2/3"
+        },
+        {
+          "label": "D",
+          "text": "1/2"
+        }
+      ],
+      "answer": "D"
+    }
+  ]
+}

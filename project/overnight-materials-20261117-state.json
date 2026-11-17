@@ -2,7 +2,7 @@
   "schema_version": 1,
   "authorized": "2026-11-17",
   "expected_invocations": 6,
-  "invocations_recorded": 2,
+  "invocations_recorded": 3,
   "completed_phases": [
     "main_and_source_inventory",
     "topic_1_12_preview_candidate",
@@ -13,7 +13,10 @@
     "topic_2_2_preview_ci_passed",
     "topic_2_2_merged_production_ci_passed",
     "topic_2_3_source_candidate",
-    "public_safe_probability_guide_rebuilt_locally"
+    "public_safe_probability_guide_rebuilt_locally",
+    "topic_2_3_preview_ci_passed",
+    "topic_2_3_pr6_merged",
+    "topic_2_4_source_candidate"
   ],
   "preview_branch": "preview/overnight-20261117-topic-2-1",
   "baseline_main": "afd3ebec03b5c6eed70da3dfacc2ec545751ef3c",
@@ -34,10 +37,10 @@
     "teacher assessments and marking guides"
   ],
   "next": [
-    "Inspect newest Topic 2.3 full native preview CI, repair only actual failing checks",
-    "Only after passing preview, integrate non-force against fresh main and verify full production/Pages and dedicated live Topic 2.3 browser",
-    "Publish clean public-safe probability guide and approved slide sources where possible without any secure homework payload",
-    "Complete independent Topics 2.4–2.7 in order and final coverage/privacy report"
+    "Confirm production 44089161201 and live revision for Topic 2.3",
+    "Check full native preview CI for new Topic 2.4 and address observed failures before non-force integration",
+    "Integrate approved 42-slide deck and public-safe guide without secure Week9 sections",
+    "Finish independent Topics 2.5–2.7 and final privacy/coverage audit"
   ],
   "published_in_this_session": [
     {
@@ -90,7 +93,7 @@
     "live_url": "https://lichunubc.github.io/ap_statistics/Unit%202/Topic%202.2/topic-2-2.html"
   },
   "topic_2_3": {
-    "status": "preview_candidate_not_live",
+    "status": "merged_production_in_progress",
     "branch": "preview/overnight-20261117-topic-2-3",
     "practice_count": 8,
     "official_scope": "Fall 2026 CED p64, LO2.3.A and EK2.3.A.1–2.3.A.7",
@@ -102,6 +105,24 @@
       "source and native browser regression tests"
     ],
     "head_sha_before_progress_update": "463b4e74f526dce53c76fbf87e00fdf13f4898e8",
-    "validation": "pending latest full native GitHub Actions preview CI; not merged nor live"
+    "validation": "pending latest full native GitHub Actions preview CI; not merged nor live",
+    "preview_run": 44080708190,
+    "preview_result": "success 30/30 native checks",
+    "merge_commit": "57654d9a176bb57855eb3f8817d7cd270c89e09c",
+    "pull_request": "https://github.com/lichunubc/ap_statistics/pull/6",
+    "production_run": 44089161201
+  },
+  "topic_2_4": {
+    "status": "preview_candidate_not_live",
+    "branch": "preview/overnight-20261117-topic-2-4",
+    "official_scope": "Fall 2026 CED p65, LO2.4.A and EK2.4.A.1–4",
+    "practice_count": 8,
+    "validation": "pending native Quarto/Playwright preview",
+    "features": [
+      "self-contained lesson",
+      "accessible fair-die complement explorer",
+      "eight original questions with worked solutions",
+      "native browser and source tests"
+    ]
   }
 }

@@ -518,6 +518,25 @@
       ],
       "implemented_on": "2026-11-17",
       "publication_note": "Preview candidate. Publication requires complete native Quarto CI and live verification."
+    },
+    {
+      "id": "2.4",
+      "title": "Introduction to Probability",
+      "status": "preview_candidate",
+      "chapter": "Unit 2/Topic 2.4/topic-2-4.qmd",
+      "directory": "Unit 2/Topic 2.4",
+      "learning_objectives": [
+        "2.4.A"
+      ],
+      "essential_knowledge": [
+        "2.4.A.1",
+        "2.4.A.2",
+        "2.4.A.3",
+        "2.4.A.4"
+      ],
+      "ced_printed_pages": "65",
+      "practice_count": 8,
+      "source": "original public-safe November 2026 preview"
     }
   ]
 }

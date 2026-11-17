@@ -1,0 +1,101 @@
+# Topic 2.4 Introduction to Probability
+
+Probability describes how likely an event is to occur on one trial, from **0 (impossible)** to **1 (certain)**. We calculate theoretical probabilities from a model and check that its assumptions match the process.
+
+## The sample space and events {#space24}
+
+The **sample space**, denoted $S$, is the set of all possible **nonoverlapping outcomes** of a complete random trial. Exactly one outcome occurs on each trial. An **event** $E$ is a subset of these outcomes. It can contain one or several different outcomes.
+
+A single fair-coin toss has $S=\{H,T\}$. A fair six-sided die has $S=\{1,2,3,4,5,6\}$. For two fair coin tosses, recording their order, $S=\{HH,HT,TH,TT\}$. The outcome $HT$ is not the same as $TH$.
+
+For one die roll, the event *even* is $E=\{2,4,6\}$. The entire sample space is certain, so $P(S)=1$. A probability cannot be negative or greater than 1:
+
+$$
+0\le P(E)\le1.
+$$
+
+## When outcomes are equally likely {#equiprobable24}
+
+If **each elementary outcome** in the sample space is equally likely, count the outcomes in the event and divide by the number in the sample space:
+
+$$
+P(E)=\frac{\text{number of outcomes satisfying }E}{\text{number of outcomes in }S}.
+$$
+
+For one fair die, there are six equally likely faces. The event *roll at least 5* consists of $\{5,6\}$, so
+
+$$
+P(\text{at least }5)=\frac{2}{6}=\frac13.
+$$
+
+For **two independent fair dice**, there are 36 equally likely ordered pairs. The sum is 7 for $(1,6),(2,5),(3,4),(4,3),(5,2),(6,1)$, so $P(\text{sum}=7)=6/36=1/6$.
+
+<details><summary>Why we cannot simply count the possible sums</summary>
+
+Although sums 2 through 12 give eleven possible **labels**, the labels are not equally likely. The sum 2 appears in just one ordered pair, while sum 7 appears in six. The count-over-total rule applies only after identifying an equally likely sample space.
+
+</details>
+
+## The complement rule {#complement24}
+
+The **complement** $E^c$ (also $E'$ or $\overline E$) means **not $E$**. The event and its complement cannot occur together and together cover every possible outcome.
+
+$$
+\boxed{P(E^c)=1-P(E)}
+$$
+
+If $E$ is rolling a six, $P(E)=1/6$ and $P(E^c)=5/6$. The probability of **not** rolling a sum of 7 with two fair dice is $1-6/36=30/36=5/6$.
+
+In a different situation, if a bus is late with probability $0.18$, then $P(\text{not late})=1-0.18=0.82$, provided late and not late describe every possibility.
+
+## Explore a fair die's events and complements {#explorer24}
+
+Predict a probability, then choose an event. The **highlighted** faces satisfy the event; the remaining faces satisfy the complement. No event is selected initially.
+
+~~~{=html}
+<div class="intro24" data-prob24>
+ <div class="intro24-controls" role="group" aria-label="Choose an event for a fair die">
+  <button type="button" data-prob24-choice="even" aria-pressed="false">Even</button>
+  <button type="button" data-prob24-choice="high" aria-pressed="false">Greater than 4</button>
+  <button type="button" data-prob24-choice="prime" aria-pressed="false">Prime</button>
+  <button type="button" data-prob24-choice="notone" aria-pressed="false">Not 1</button>
+  <button type="button" data-prob24-reset>Reset</button>
+ </div>
+ <ol class="intro24-faces" aria-label="Six possible die faces">
+  <li data-prob24-face="1">1</li><li data-prob24-face="2">2</li><li data-prob24-face="3">3</li>
+  <li data-prob24-face="4">4</li><li data-prob24-face="5">5</li><li data-prob24-face="6">6</li>
+ </ol>
+ <p data-prob24-status role="status" aria-live="polite">No event selected. Predict the probability, then choose an event.</p>
+ <div class="intro24-results" aria-label="Event probability and complement probability">
+  <p>Favorable outcomes: <strong data-prob24-count>—</strong></p>
+  <p>Event probability: <strong data-prob24-p>—</strong></p>
+  <p>Complement probability: <strong data-prob24-pc>—</strong></p>
+ </div>
+ <p class="intro24-static">Without JavaScript: for a fair die, the even outcomes {2,4,6} have probability 3/6; the complement {1,3,5} also has probability 3/6. The event greater than 4 has probability 2/6 and its complement has probability 4/6.</p>
+</div>
+~~~
+
+The two probabilities must add to $1$ because every face belongs to either the event or its complement.
+
+## Possible labels need not be equally likely {#unequal24}
+
+Suppose a spinner has three differently sized sectors with $P(\text{red})=0.60$, $P(\text{blue})=0.30$, and $P(\text{green})=0.10$. Three possible labels do **not** imply that each has probability $1/3$. The probabilities sum to 1, but the equally likely condition is not met. We still know $P(\text{not red})=1-0.60=0.40$.
+
+A probability is a model of long-run chance rather than a fixed quota. A fair die does not have to show exactly one six in the next six rolls. This distinction connects the exact model to simulation estimates in Topic 2.3.
+
+## Common errors and strategy {#errors24}
+
+- Listing outcomes that overlap or failing to include a possible outcome in the sample space
+- Treating the number of *labels* as the denominator when the underlying outcomes are not equally likely
+- Confusing a complete two-dice trial with one die roll
+- Calculating the event probability when the question asks for the complement
+- Treating a chance like $1/4$ as a guaranteed success exactly once in the next four trials
+
+For each question, first define one trial and the complete sample space, identify $E$, check equal likelihood before counting, and use $P(E^c)=1-P(E)$ when a complement is easier.
+
+## Practice {#practice24}
+
+::: {.original-practice-host data-original-practice="2.4"}
+:::
+
+<details class="lesson-sources"><summary>Sources</summary><p>College Board, <a href="https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description-effective-fall-2026.pdf">AP Statistics Course and Exam Description</a>, effective Fall 2026, Topic 2.4, printed page 65. Worked examples and exercises are original classroom content.</p></details>
