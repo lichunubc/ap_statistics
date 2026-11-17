@@ -24,7 +24,7 @@
     "href": "index.html#choose-a-unit",
     "title": "AP Statistics: Learning from Data",
     "section": "Choose a unit",
-    "text": "Choose a unit\nOpen a unit to see its topics. In the sidebar, use the arrow beside a unit to show or hide its topics. Topics stay collapsed until you open them.\n\n\nUnit 1: Exploring One-Variable Data and Collecting Data\nExplore available topics\nBrowse the available lessons, interactive activities, and worked practice.\n\n\nUnit 2: Probability, Random Variables, and Probability Distributions\nTopics 2.1–2.3 available\nStudy two-way tables, relative frequencies, probability simulations and original practice.\n\n\nUnit 3: Inference for Categorical Data: Proportions\nUnder construction\nA place for future lessons. No topics have been published yet.\n\n\nUnit 4: Inference for Quantitative Data: Means\nUnder construction\nA place for future lessons. No topics have been published yet.\n\n\nUnit 5: Regression Analysis\nUnder construction\nA place for future lessons. No topics have been published yet.",
+    "text": "Choose a unit\nOpen a unit to see its topics. In the sidebar, use the arrow beside a unit to show or hide its topics. Topics stay collapsed until you open them.\n\n\nUnit 1: Exploring One-Variable Data and Collecting Data\nExplore available topics\nBrowse the available lessons, interactive activities, and worked practice.\n\n\nUnit 2: Probability, Random Variables, and Probability Distributions\nTopics 2.1–2.4 available\nStudy two-way tables, relative frequencies, probability simulations, complements, and original practice.\n\n\nUnit 3: Inference for Categorical Data: Proportions\nUnder construction\nA place for future lessons. No topics have been published yet.\n\n\nUnit 4: Inference for Quantitative Data: Means\nUnder construction\nA place for future lessons. No topics have been published yet.\n\n\nUnit 5: Regression Analysis\nUnder construction\nA place for future lessons. No topics have been published yet.",
     "crumbs": [
       "Welcome"
     ]
@@ -1393,7 +1393,7 @@
     "href": "Unit 2/unit-2.html#choose-a-topic",
     "title": "Unit 2: Probability, Random Variables, and Probability Distributions",
     "section": "",
-    "text": "Topic 2.1 Tabular and Graphical Representations for the Distributions of Two Categorical Variables\nConstruct a two-way table from café orders, compare count and percentage bars, read 100% segmented bars and mosaic plots, and justify an association claim.\nOpen Topic 2.1 →\n\n\nTopic 2.2 Summary Statistics for Two Categorical Variables\nLearn joint, marginal, and conditional relative frequencies, choose the correct denominator, and interpret associations.\nOpen Topic 2.2 →\n\n\nTopic 2.3 Estimating Probabilities Using Simulation\nModel fair random events, define a complete trial, run an interactive three-toss simulation, and interpret long-run relative frequency.\nOpen Topic 2.3 →",
+    "text": "Topic 2.1 Tabular and Graphical Representations for the Distributions of Two Categorical Variables\nConstruct a two-way table from café orders, compare count and percentage bars, read 100% segmented bars and mosaic plots, and justify an association claim.\nOpen Topic 2.1 →\n\n\nTopic 2.2 Summary Statistics for Two Categorical Variables\nLearn joint, marginal, and conditional relative frequencies, choose the correct denominator, and interpret associations.\nOpen Topic 2.2 →\n\n\nTopic 2.3 Estimating Probabilities Using Simulation\nModel fair random events, define a complete trial, run an interactive three-toss simulation, and interpret long-run relative frequency.\nOpen Topic 2.3 →\n\n\nTopic 2.4 Introduction to Probability\nCalculate sample-space probabilities and complements, and explore favorable die outcomes.\nOpen Topic 2.4 →",
     "crumbs": [
       "Unit 2: Probability, Random Variables, and Probability Distributions"
     ]
@@ -1652,6 +1652,83 @@
     ]
   },
   {
+    "objectID": "Unit 2/Topic 2.4/topic-2-4.html",
+    "href": "Unit 2/Topic 2.4/topic-2-4.html",
+    "title": "Topic 2.4 Introduction to Probability",
+    "section": "",
+    "text": "The sample space and events\nProbability describes how likely an event is to occur on one trial, from 0 (impossible) to 1 (certain). We calculate theoretical probabilities from a model and check that its assumptions match the process.\nThe sample space, denoted SS, is the set of all possible nonoverlapping outcomes of a complete random trial. Exactly one outcome occurs on each trial. An event EE is a subset of these outcomes. It can contain one or several different outcomes.\nA single fair-coin toss has S={H,T}S=\\{H,T\\}. A fair six-sided die has S={1,2,3,4,5,6}S=\\{1,2,3,4,5,6\\}. For two fair coin tosses, recording their order, S={HH,HT,TH,TT}S=\\{HH,HT,TH,TT\\}. The outcome HTHT is not the same as THTH.\nFor one die roll, the event even is E={2,4,6}E=\\{2,4,6\\}. The entire sample space is certain, so P(S)=1P(S)=1. A probability cannot be negative or greater than 1:\n0≤P(E)≤1.\n0\\le P(E)\\le1.",
+    "crumbs": [
+      "Unit 2: Probability, Random Variables, and Probability Distributions",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Topic 2.4 Introduction to Probability</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 2/Topic 2.4/topic-2-4.html#equiprobable24",
+    "href": "Unit 2/Topic 2.4/topic-2-4.html#equiprobable24",
+    "title": "Topic 2.4 Introduction to Probability",
+    "section": "When outcomes are equally likely",
+    "text": "When outcomes are equally likely\nIf each elementary outcome in the sample space is equally likely, count the outcomes in the event and divide by the number in the sample space:\nP(E)=number of outcomes satisfying Enumber of outcomes in S.\nP(E)=\\frac{\\text{number of outcomes satisfying }E}{\\text{number of outcomes in }S}.\n\nFor one fair die, there are six equally likely faces. The event roll at least 5 consists of {5,6}\\{5,6\\}, so\nP(at least 5)=26=13.\nP(\\text{at least }5)=\\frac{2}{6}=\\frac13.\n\nFor two independent fair dice, there are 36 equally likely ordered pairs. The sum is 7 for (1,6),(2,5),(3,4),(4,3),(5,2),(6,1)(1,6),(2,5),(3,4),(4,3),(5,2),(6,1), so P(sum=7)=6/36=1/6P(\\text{sum}=7)=6/36=1/6.\n\n\nWhy we cannot simply count the possible sums\n\nAlthough sums 2 through 12 give eleven possible labels, the labels are not equally likely. The sum 2 appears in just one ordered pair, while sum 7 appears in six. The count-over-total rule applies only after identifying an equally likely sample space.",
+    "crumbs": [
+      "Unit 2: Probability, Random Variables, and Probability Distributions",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Topic 2.4 Introduction to Probability</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 2/Topic 2.4/topic-2-4.html#complement24",
+    "href": "Unit 2/Topic 2.4/topic-2-4.html#complement24",
+    "title": "Topic 2.4 Introduction to Probability",
+    "section": "The complement rule",
+    "text": "The complement rule\nThe complement EcE^c (also E′E' or E¯\\overline E) means not EE. The event and its complement cannot occur together and together cover every possible outcome.\nP(Ec)=1−P(E)\n\\boxed{P(E^c)=1-P(E)}\n\nIf EE is rolling a six, P(E)=1/6P(E)=1/6 and P(Ec)=5/6P(E^c)=5/6. The probability of not rolling a sum of 7 with two fair dice is 1−6/36=30/36=5/61-6/36=30/36=5/6.\nIn a different situation, if a bus is late with probability 0.180.18, then P(not late)=1−0.18=0.82P(\\text{not late})=1-0.18=0.82, provided late and not late describe every possibility.",
+    "crumbs": [
+      "Unit 2: Probability, Random Variables, and Probability Distributions",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Topic 2.4 Introduction to Probability</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 2/Topic 2.4/topic-2-4.html#explorer24",
+    "href": "Unit 2/Topic 2.4/topic-2-4.html#explorer24",
+    "title": "Topic 2.4 Introduction to Probability",
+    "section": "Explore a fair die’s events and complements",
+    "text": "Explore a fair die’s events and complements\nPredict a probability, then choose an event. The highlighted faces satisfy the event; the remaining faces satisfy the complement. No event is selected initially.\n\n \n  Even\n  Greater than 4\n  Prime\n  Not 1\n  Reset\n \n \n  123\n  456\n \n No event selected. Predict the probability, then choose an event.\n \n  Favorable outcomes: —\n  Event probability: —\n  Complement probability: —\n \n Without JavaScript: for a fair die, the even outcomes {2,4,6} have probability 3/6; the complement {1,3,5} also has probability 3/6. The event greater than 4 has probability 2/6 and its complement has probability 4/6.\n\nThe two probabilities must add to 11 because every face belongs to either the event or its complement.",
+    "crumbs": [
+      "Unit 2: Probability, Random Variables, and Probability Distributions",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Topic 2.4 Introduction to Probability</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 2/Topic 2.4/topic-2-4.html#unequal24",
+    "href": "Unit 2/Topic 2.4/topic-2-4.html#unequal24",
+    "title": "Topic 2.4 Introduction to Probability",
+    "section": "Possible labels need not be equally likely",
+    "text": "Possible labels need not be equally likely\nSuppose a spinner has three differently sized sectors with P(red)=0.60P(\\text{red})=0.60, P(blue)=0.30P(\\text{blue})=0.30, and P(green)=0.10P(\\text{green})=0.10. Three possible labels do not imply that each has probability 1/31/3. The probabilities sum to 1, but the equally likely condition is not met. We still know P(not red)=1−0.60=0.40P(\\text{not red})=1-0.60=0.40.\nA probability is a model of long-run chance rather than a fixed quota. A fair die does not have to show exactly one six in the next six rolls. This distinction connects the exact model to simulation estimates in Topic 2.3.",
+    "crumbs": [
+      "Unit 2: Probability, Random Variables, and Probability Distributions",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Topic 2.4 Introduction to Probability</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 2/Topic 2.4/topic-2-4.html#errors24",
+    "href": "Unit 2/Topic 2.4/topic-2-4.html#errors24",
+    "title": "Topic 2.4 Introduction to Probability",
+    "section": "Common errors and strategy",
+    "text": "Common errors and strategy\n\nListing outcomes that overlap or failing to include a possible outcome in the sample space\nTreating the number of labels as the denominator when the underlying outcomes are not equally likely\nConfusing a complete two-dice trial with one die roll\nCalculating the event probability when the question asks for the complement\nTreating a chance like 1/41/4 as a guaranteed success exactly once in the next four trials\n\nFor each question, first define one trial and the complete sample space, identify EE, check equal likelihood before counting, and use P(Ec)=1−P(E)P(E^c)=1-P(E) when a complement is easier.",
+    "crumbs": [
+      "Unit 2: Probability, Random Variables, and Probability Distributions",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Topic 2.4 Introduction to Probability</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 2/Topic 2.4/topic-2-4.html#practice24",
+    "href": "Unit 2/Topic 2.4/topic-2-4.html#practice24",
+    "title": "Topic 2.4 Introduction to Probability",
+    "section": "Practice",
+    "text": "Practice\n\nLoading practice…\n\nQuestion 1A fair six-sided die is rolled once. What is P(roll greater than\n4)?\nA. 1/3\nB. 1/2\nC. 2/3\nD. 1/6\nShow solutionThe favorable faces are 5 and 6, so P(E)=2/6=1/3.\n\nQuestion 2A fair coin is tossed twice and order is recorded. Which is its\nsample space?\nA. {H,T}\nB. {0,1,2}\nC. {HH,TT}\nD. {HH,HT,TH,TT}\nShow solutionA complete trial consists of both tosses, so HH, HT, TH and TT are\nthe possible ordered outcomes.\n\nQuestion 3A bus is late on 18% of days. What is P(bus not late)?\nA. 0.18\nB. 0.82\nC. 0.92\nD. 1.18\nShow solutionThe complement rule gives P(not late)=1-0.18=0.82.\n\nQuestion 4One fair die is rolled. What is P(odd)?\nA. 1/3\nB. 1/6\nC. 1/2\nD. 2/3\nShow solutionFaces 1, 3, and 5 are favorable: 3/6=1/2.\n\nQuestion 5Which number cannot be the probability of an event?\nA. -0.10\nB. 0\nC. 0.60\nD. 1\nShow solutionThe probability -0.10 is negative, and so is impossible.\n\nQuestion 6Two independent fair dice are rolled. What is P(sum = 7)?\nA. 1/12\nB. 1/6\nC. 7/36\nD. 1/4\nShow solutionThere are six ordered pairs with sum 7 out of 36 equally likely\npairs, giving 6/36=1/6.\n\nQuestion 7A spinner has three differently sized sectors. Which is correct?\nA. Each sector has chance 1/3.\nB. The sector probabilities may total more than 1.\nC. Sector probabilities total 1 but need not equal 1/3.\nD. The smallest sector has probability 0.\nShow solutionThree disjoint exhaustive sectors have total probability 1, but\nunequal sectors need not have equal probability.\n\nQuestion 8A fair die is rolled and E={2,4,6}. What is P(E complement)?\nA. 1/4\nB. 1/3\nC. 2/3\nD. 1/2\nShow solutionE complement is {1,3,5}, three of six equally likely faces,\nprobability 1/2.\n\n\n\n\nSources\n\n\nCollege Board, AP Statistics Course and Exam Description, effective Fall 2026, Topic 2.4, printed page 65. Worked examples and exercises are original classroom content.",
+    "crumbs": [
+      "Unit 2: Probability, Random Variables, and Probability Distributions",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Topic 2.4 Introduction to Probability</span>"
+    ]
+  },
+  {
     "objectID": "Unit 3/unit-3.html",
     "href": "Unit 3/unit-3.html",
     "title": "Unit 3: Inference for Categorical Data: Proportions",
@@ -1688,7 +1765,7 @@
     "section": "",
     "text": "Expanded question bank\nOpen the expanded bank reader and choose your authorized ap_statistics_question_bank.json file. Filter by topic, source, or question type, then try a question before revealing its answer. The reader opens the file on your device. If your package includes figures, extract it first and select the extracted assets folder in the reader.",
     "crumbs": [
-      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Problem Bank</span>"
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Problem Bank</span>"
     ]
   },
   {
@@ -1698,7 +1775,7 @@
     "section": "Skill dependency map",
     "text": "Skill dependency map\nExplore the skill dependency map to see what to review before tackling a topic. Try searching for joint probability, then trace its prerequisites back to reading a two-way table and finding a part-to-whole fraction. The map opens directly and includes explanations and source references for the learning links. Choose Find practice for this skill on a linked skill to open the reader with that skill selected when you load your bank.",
     "crumbs": [
-      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Problem Bank</span>"
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Problem Bank</span>"
     ]
   },
   {
@@ -1708,7 +1785,7 @@
     "section": "Selected homework",
     "text": "Selected homework\nPractise 20 questions from the Week 2 and Week 3 homework, organized by topic.\n\nOpen your class question file\nOpen mhs-week-2-3.practice.json, provided by your teacher, using the control below. The questions and diagrams will appear here and in the Selected homework practice section of the relevant lessons. Choose an answer, check your reasoning, and open the solution when ready.\n\nOpen your class question file to practise the selected homework questions below.\nWeek 2.0, Question 1.0 — Topic 1.2: Continuous measurements versus counts (homework pages 1.0).\nWeek 2.0, Question 3.0 — Topic 1.2: A quantitative variable among categorical choices (homework pages 1.0).\nWeek 2.0, Question 4.0 — Topic 1.2: How the recording rule changes the variable type (homework pages 2.0).\nWeek 2.0, Question 6.0 — Topic 1.2: Category observations are not category counts (homework pages 3.0).\nWeek 2.0, Question 15.0 — Topic 1.3: Validate a relative-frequency table (homework pages 8.0, 9.0, 10.0).\nWeek 2.0, Question 17.0 — Topic 1.3: A percentage does not determine an absolute count (homework pages 12.0).\nWeek 2.0, Question 18.0 — Topic 1.3: Check a claim against a frequency table (homework pages 13.0).\nWeek 2.0, Question 20.0 — Topic 1.3: Combine categories using the correct denominator (homework pages 14.0).\nWeek 2.0, Question 16.0 — Topic 1.4: Compare rates without confusing them with counts (homework pages 11.0).\nWeek 2.0, Question 22.0 — Topic 1.4: Read a pie chart as parts of one whole (homework pages 15.0).\nWeek 2.0, Question 24.0 — Topic 1.4: Convert chart proportions to counts when n is known (homework pages 16.0).\nWeek 2.0, Question 25.0 — Topic 1.4: Use the number of games as the percentage denominator (homework pages 17.0).\nWeek 3.0, Question 10.0 — Topic 1.5: What changing histogram bin width preserves (homework pages 5.0).\nWeek 3.0, Question 16.0 — Topic 1.5: Read a split stem-and-leaf display (homework pages 8.0).\nWeek 3.0, Question 17.0 — Topic 1.5: Construct a stemplot without losing repeats (homework pages 9.0, 10.0).\nWeek 3.0, Question 1.0 — Topic 1.6: Compare tails in a back-to-back stemplot (homework pages 1.0).\nWeek 3.0, Question 3.0 — Topic 1.6: Describe shape and features in a dotplot (homework pages 2.0).\nWeek 3.0, Question 8.0 — Topic 1.6: Identify skewness from a histogram tail (homework pages 4.0).\nWeek 3.0, Question 12.0 — Topic 1.6: Distinguish a visual potential outlier from a formal test (homework pages 7.0).\nWeek 3.0, Question 19.0 — Topic 1.6: Recognize approximate uniformity (homework pages 11.0).\n\n\n\nQuestions by topic\n\n\n\nTopic\nSelected homework questions\n\n\n\n\n1.1\nSee the Practice section in the lesson.\n\n\n1.2\nWeek 2: 1, 3, 4, 6\n\n\n1.3\nWeek 2: 15, 17, 18, 20\n\n\n1.4\nWeek 2: 16, 22, 24, 25\n\n\n1.5\nWeek 3: 10, 16, 17\n\n\n1.6\nWeek 3: 1, 3, 8, 12, 19\n\n\n\n\n\n\nSources\n\nWeek 2 and Week 3 homework supplied by the instructor. Original question numbers and page references are retained.",
     "crumbs": [
-      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Problem Bank</span>"
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Problem Bank</span>"
     ]
   },
   {
@@ -1718,7 +1795,7 @@
     "section": "",
     "text": "Course framework\nThe College Board AP Statistics course framework lists the course topics. The released exam archive provides additional questions and scoring guidelines.",
     "crumbs": [
-      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Sources and study resources</span>"
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Sources and study resources</span>"
     ]
   },
   {
@@ -1728,7 +1805,7 @@
     "section": "Datasets",
     "text": "Datasets\n\n\n\nDataset\nMeasurement\nSource\n\n\n\n\nRivers\nMajor North American river lengths, in miles\nR datasets: rivers\n\n\nOld Faithful\nEruption duration, in minutes\nR datasets: faithful\n\n\nIris flowers\nSepal length, in centimetres\nR datasets: iris\n\n\n\nDownload the commute-time data to build a dotplot, stemplot, or histogram.",
     "crumbs": [
-      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Sources and study resources</span>"
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Sources and study resources</span>"
     ]
   },
   {
@@ -1738,7 +1815,7 @@
     "section": "Practice",
     "text": "Practice\nUse the Practice section in each lesson to check your understanding. Try a question before opening its solution, then compare both the result and reasoning. The Problem Bank links to selected homework, the expanded question bank reader, and a map of the skills you can review before starting a topic.",
     "crumbs": [
-      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Sources and study resources</span>"
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Sources and study resources</span>"
     ]
   },
   {
@@ -1748,7 +1825,7 @@
     "section": "Printing",
     "text": "Printing\nUse your browser’s Print command for a paper copy of a lesson. Open the explanations you wish to include before printing.",
     "crumbs": [
-      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Sources and study resources</span>"
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Sources and study resources</span>"
     ]
   }
 ]
