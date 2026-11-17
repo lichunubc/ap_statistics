@@ -1,0 +1,67 @@
+{
+  "topic": "2.7",
+  "title": "Independent Events and Unions of Events",
+  "official_title": "Independent Events and Unions of Events",
+  "curriculum": "College Board AP Statistics CED effective Fall 2026",
+  "source": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description-effective-fall-2026.pdf",
+  "ced_printed_pages": [
+    68
+  ],
+  "pdf_zero_index_pages": [
+    72
+  ],
+  "learning_objectives": [
+    "2.7.A"
+  ],
+  "essential_knowledge": [
+    "2.7.A.1",
+    "2.7.A.2",
+    "2.7.A.3"
+  ],
+  "skills": [
+    "3.C"
+  ],
+  "coverage": [
+    {
+      "section": "#independence27",
+      "ids": [
+        "2.7.A.1"
+      ]
+    },
+    {
+      "section": "#contrast27",
+      "ids": [
+        "2.7.A.1"
+      ]
+    },
+    {
+      "section": "#union27",
+      "ids": [
+        "2.7.A.2",
+        "2.7.A.3"
+      ]
+    },
+    {
+      "section": "#explorer27",
+      "ids": [
+        "2.7.A.1",
+        "2.7.A.2",
+        "2.7.A.3"
+      ]
+    },
+    {
+      "section": "#cards27",
+      "ids": [
+        "2.7.A.1",
+        "2.7.A.3"
+      ]
+    },
+    {
+      "section": "#complement27",
+      "ids": [
+        "2.7.A.1"
+      ]
+    }
+  ],
+  "rights": "Original public-safe lesson and simulations; no AP Classroom homework or teacher-only assessments."
+}
