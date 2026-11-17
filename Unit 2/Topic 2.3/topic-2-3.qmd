@@ -1,0 +1,109 @@
+# Topic 2.3 Estimating Probabilities Using Simulation
+
+When a random process is repeated, the result of any one trial is uncertain, but the **fraction of trials producing a particular event** can reveal a stable long-run pattern. Simulation lets us imitate a random process many times and estimate the probability of an event.
+
+## From a fair coin to a probability model {#model23}
+
+For one fair coin toss, the possible outcomes are $H$ (heads) and $T$ (tails), and each has probability $1/2$. For a fair six-sided die, the possibilities are $1,2,3,4,5,6$ and each has probability $1/6$. **Fairness is an assumption about the device**; not every random process has equally likely outcomes.
+
+The **sample space** $S$ is the set of all possible outcomes of a *complete trial*. For one coin toss, $S=\{H,T\}$. For one die roll, $S=\{1,2,3,4,5,6\}$. If we toss a coin twice and preserve order, $S=\{HH,HT,TH,TT\}$.
+
+An **event** is a collection of outcomes from the sample space. For three independent coin tosses, consider the event “at least two heads”:
+
+$$
+\begin{aligned}
+S&=\{HHH,HHT,HTH,HTT,THH,THT,TTH,TTT\},\\
+E&=\{HHH,HHT,HTH,THH\}.
+\end{aligned}
+$$
+
+For this *fair, independent* model all eight three-toss sequences are equally likely. Thus, as a check on our simulation, $P(E)=4/8=0.5$. This exact answer is not needed to **perform** the simulation.
+
+## Design a reproducible simulation {#design23}
+
+The first task is to decide what **one complete trial** represents. Here, one trial means **three tosses**, not one. Repeating the trial does not mean repeating individual heads within a successful group.
+
+| Step | Three-toss simulation design |
+|:--|:--|
+| State the model | Generate three independent fair $H/T$ outcomes. |
+| Identify the event | Success means the three tosses contain at least two heads. |
+| Complete one trial | Toss three times, in order, and record the sequence and success/failure. |
+| Repeat | Begin a new independent three-toss group for each new trial. |
+| Estimate | Divide successful *complete groups* by all completed groups. |
+
+If $R$ complete trials are simulated and $r$ satisfy the event, the estimated probability is
+
+$$
+\widehat{P(E)}=\frac{r}{R}.
+$$
+
+Here, $\widehat{P(E)}$ is an **estimate**, not a guarantee or an exact proof about the random process.
+
+<details><summary>Why is the estimator a fraction of complete trials?</summary>
+
+The proportion of observed successes is the empirical relative frequency of the event. Every complete trial has one indicator—$1$ if the event happens and $0$ if it does not. Summing these indicators counts $r$ successful trials, and dividing by the number of completed trials $R$ gives $r/R$. Dividing by the number of *individual tosses* would change the unit of observation and answer a different question.
+
+</details>
+
+## Simulate the three-toss experiment {#explorer23}
+
+Predict what will happen after 10 complete trials. Then try 10, 100, and 1,000, and compare the running proportion with the model's $0.5$. **Reset** begins a fresh run; the simulation does not begin until you choose to run it.
+
+~~~{=html}
+<div class="sim23" data-sim23>
+  <div class="sim23-controls" role="group" aria-label="Three-toss probability simulation">
+    <button type="button" data-sim23-n="1">Run 1 trial</button>
+    <button type="button" data-sim23-n="10">Run 10</button>
+    <button type="button" data-sim23-n="100">Run 100</button>
+    <button type="button" data-sim23-n="1000">Run 1,000</button>
+    <button type="button" data-sim23-reset>Reset</button>
+  </div>
+  <p data-sim23-status role="status" aria-live="polite">No trials yet. Press a Run button to start.</p>
+  <div class="sim23-metrics" aria-label="Simulation counts">
+    <p>Complete trials: <strong data-sim23-total>0</strong></p>
+    <p>Successes: <strong data-sim23-hits>0</strong></p>
+    <p>Estimated probability: <strong data-sim23-share>—</strong></p>
+    <p>Model probability: <strong>0.500</strong></p>
+  </div>
+  <div data-sim23-plot class="sim23-plot" role="img" aria-label="No simulated trials yet. The graph will display running success frequency after starting.">
+    <p>Run the simulation to display the relative-frequency graph.</p>
+  </div>
+  <p data-sim23-last>Last complete trial: none yet.</p>
+  <p class="sim23-static">Without JavaScript, the exact eight-sequence model above gives four successful sequences, or 0.5. A separate fixed 1,000-trial example recorded 505 successes, giving a simulated estimate of 505/1,000 = 0.505.</p>
+</div>
+~~~
+
+Different runs will produce different estimates. A finite estimate such as $505/1000=0.505$ does not contradict the exact model value $0.500$.
+
+## The law of large numbers {#longrun23}
+
+For independent repetitions with an unchanging event probability, the **law of large numbers** says that as the number of trials grows, the long-run relative frequency approaches the event's probability. The law does *not* require the estimate to improve after every new trial.
+
+For example, a recorded 1,000-toss simulation of one fair coin gave 245 heads after 500 tosses ($0.490$) and 482 heads after 1,000 tosses ($0.482$). The estimate at 1,000 tosses happened to be a little **farther** from $0.5$ than the estimate at 500 tosses. That is possible.
+
+Avoid the **gambler's fallacy**: if a fair coin has landed heads six times, the next toss is still heads with probability $1/2$, provided tosses are independent. Chance has no “debt” to pay back.
+
+<details><summary>Optional enrichment — what does convergence mean?</summary>
+
+For independent identically distributed success indicators with probability $p$, the mean of the indicators is the success proportion. Its expected value is $p$, while its variance is $p(1-p)/R$. As $R$ increases, this variance shrinks. This mathematical explanation is beyond the required probability-estimation procedure; it does not say every new observation moves the running mean closer to $p$.
+
+</details>
+
+## Match a simulation device to the process {#device23}
+
+A simulator is only useful when the **chance of success on one simulated trial matches the model**. If an event occurs on 30% of independent spins, a uniform random digit from 0 to 9 can represent a prize with digits **0, 1, or 2** (three of ten) and no prize with digits 3–9. Drawing a single digit models **one spin**. To model *at least one prize in four spins*, generate four independent digits for each complete trial and record a single success/failure for that four-digit group.
+
+The simulation procedure must match the setting. Sampling *without replacement* usually changes probabilities after the first draw; do not automatically use the same factors as sampling *with replacement*. If the original events are independent, allow independently generated repetitions—even repeated digits.
+
+## Interpret and audit a simulation {#interpret23}
+
+Always report what the estimate describes **in context**, including the number of completed trials and the event being estimated. A model estimate is not a promise of an exact count in the next small group. More trials typically stabilize random variation, but **cannot correct a mis-specified random device** or sampling bias.
+
+A final checklist: Did you define the complete trial? Does the device give the intended probabilities? Did you count every successful trial once? Is the denominator the number of complete trials? Does the conclusion address the named event?
+
+## Practice {#practice23}
+
+::: {.original-practice-host data-original-practice="2.3"}
+:::
+
+<details class="lesson-sources"><summary>Sources</summary><p>College Board, <a href="https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description-effective-fall-2026.pdf">AP Statistics Course and Exam Description</a> (effective Fall 2026), Topic 2.3, printed p. 64. The simulation model and illustrative recorded counts come from the Maple Hill School probability teaching materials.</p></details>
