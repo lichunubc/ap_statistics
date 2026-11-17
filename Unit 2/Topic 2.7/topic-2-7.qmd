@@ -78,10 +78,10 @@ Select an event pair. The six numbered cells represent the equally likely outcom
   <p class="event27-status" data-event27-status role="status" aria-live="polite">No pair selected. Choose a pair to compare independence and overlap.</p>
   <div class="event27-results">
     <p>Intersection: <strong data-event27-intersection>—</strong></p>
-    <p>Actual $P(A\cap B)$: <strong data-event27-joint>—</strong></p>
-    <p>Independent-product $P(A)P(B)$: <strong data-event27-product>—</strong></p>
+    <p>Actual P(A ∩ B): <strong data-event27-joint>—</strong></p>
+    <p>Independent-product P(A)P(B): <strong data-event27-product>—</strong></p>
     <p>Independent? <strong data-event27-independent>—</strong></p>
-    <p>Union $P(A\cup B)$: <strong data-event27-union>—</strong></p>
+    <p>Union P(A ∪ B): <strong data-event27-union>—</strong></p>
   </div>
   <p class="event27-static">Without JavaScript: even and multiple of 3 intersect at {6}, giving joint probability 1/6, which equals (3/6)(2/6); their union is {2,3,4,6}, probability 4/6. Even and odd are disjoint but dependent.</p>
 </div>
