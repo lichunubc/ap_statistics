@@ -1,0 +1,250 @@
+{
+  "schema_version": 1,
+  "bank_id": "mhs-ap-statistics-original",
+  "topic": "1.13",
+  "title": "Experimental Design",
+  "rights": "Original public teacher-authored practice; no secure homework, copied assessment questions, or third-party images.",
+  "revision": 1,
+  "items": [
+    {
+      "id": "MHS-U1-T113-001",
+      "type": "mc",
+      "difficulty": "Foundation",
+      "primary_topic": "1.13",
+      "tags": [
+        "comparison",
+        "control"
+      ],
+      "objectives": [
+        "1.13.A"
+      ],
+      "prompt": "An engineer compares a new coating with the current standard coating, assigning 20 panels to each. Which statement best describes the standard-coating group?",
+      "hint": "A control group need not receive no treatment.",
+      "solution": "It is a comparison (control) group, even though it receives an active coating.",
+      "rights": "original",
+      "provenance": "Maple Hill School original practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "A control group cannot receive an active treatment."
+        },
+        {
+          "label": "B",
+          "text": "It is the control group because it supplies a reference for comparison."
+        },
+        {
+          "label": "C",
+          "text": "It is not an experimental group because the coating already exists."
+        },
+        {
+          "label": "D",
+          "text": "There is no explanatory variable."
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "MHS-U1-T113-002",
+      "type": "mc",
+      "difficulty": "Developing",
+      "primary_topic": "1.13",
+      "tags": [
+        "confounding"
+      ],
+      "objectives": [
+        "1.13.A"
+      ],
+      "prompt": "All panels produced in Batch 1 receive A and all panels in Batch 2 receive B. Why is a causal coating comparison difficult?",
+      "hint": "Two things change together.",
+      "solution": "Manufacturing batch is associated with treatment and could also affect wear, so batch and treatment are confounded.",
+      "rights": "original",
+      "provenance": "Maple Hill School original practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "The panel is the wrong experimental unit."
+        },
+        {
+          "label": "B",
+          "text": "A large sample removes confounding automatically."
+        },
+        {
+          "label": "C",
+          "text": "Batch is confounded with coating assignment."
+        },
+        {
+          "label": "D",
+          "text": "The responses must all be identical."
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "MHS-U1-T113-003",
+      "type": "mc",
+      "difficulty": "Foundation",
+      "primary_topic": "1.13",
+      "tags": [
+        "replication"
+      ],
+      "objectives": [
+        "1.13.A"
+      ],
+      "prompt": "One metal panel receives Coating A and is weighed five times after the same wear test. Has the investigator replicated A on five experimental units?",
+      "hint": "Distinguish repeat measurements from separate treated units.",
+      "solution": "No. Repeatedly measuring the same panel gives repeated measurements of one experimental unit, not five independent treatment replications.",
+      "rights": "original",
+      "provenance": "Maple Hill School original practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes, five measurements always mean five experimental units."
+        },
+        {
+          "label": "B",
+          "text": "No; there is just one independently treated panel."
+        },
+        {
+          "label": "C",
+          "text": "Yes, because measurement error is replication."
+        },
+        {
+          "label": "D",
+          "text": "No, because replication is never useful in an experiment."
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "MHS-U1-T113-004",
+      "type": "mc",
+      "difficulty": "Developing",
+      "primary_topic": "1.13",
+      "tags": [
+        "randomized block design"
+      ],
+      "objectives": [
+        "1.13.B"
+      ],
+      "prompt": "There are 10 panels from each of two factories. Which procedure creates a valid randomized block design for comparing A and B?",
+      "hint": "Treatments must be randomly assigned within both factory groups.",
+      "solution": "Separate panels by factory; randomly assign 5 panels in each factory to A and the remaining 5 in each factory to B.",
+      "rights": "original",
+      "provenance": "Maple Hill School original practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "Assign Factory 1 all A and Factory 2 all B."
+        },
+        {
+          "label": "B",
+          "text": "Group by factory and give everyone within a factory the same coating."
+        },
+        {
+          "label": "C",
+          "text": "Group by factory, then randomly assign five A and five B in each factory."
+        },
+        {
+          "label": "D",
+          "text": "Choose only panels from the factory with less variation."
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "MHS-U1-T113-005",
+      "type": "mc",
+      "difficulty": "Developing",
+      "primary_topic": "1.13",
+      "tags": [
+        "blinding",
+        "placebo"
+      ],
+      "objectives": [
+        "1.13.A"
+      ],
+      "prompt": "In a trial comparing standard care plus an active capsule with standard care plus a matching inactive capsule, both participants and staff who assess outcomes are unaware of assignments. What is this called?",
+      "hint": "Identify both groups who do not know.",
+      "solution": "Double-blind: the participants and interacting/assessing research staff are masked. Both arms retain standard care.",
+      "rights": "original",
+      "provenance": "Maple Hill School original practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "A double-blind design."
+        },
+        {
+          "label": "B",
+          "text": "A simple random sample."
+        },
+        {
+          "label": "C",
+          "text": "A nonrandomized matched-pairs design."
+        },
+        {
+          "label": "D",
+          "text": "Proof of a placebo effect."
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "MHS-U1-T113-006",
+      "type": "number",
+      "difficulty": "Developing",
+      "primary_topic": "1.13",
+      "tags": [
+        "matched pairs",
+        "paired difference"
+      ],
+      "objectives": [
+        "1.13.B"
+      ],
+      "prompt": "Four typists have paired times (seconds) under Layout A and B: (50,47), (43,40), (48,44), and (52,51). Find the mean difference B minus A in seconds.",
+      "hint": "Subtract within each person before averaging.",
+      "solution": "Differences B-A are -3, -3, -4, -1 seconds, so their mean is $(-3-3-4-1)/4=\\boxed{-2.75}$ seconds.",
+      "rights": "original",
+      "provenance": "Maple Hill School original practice, November 2026",
+      "answer": -2.75,
+      "tolerance": 0.001
+    },
+    {
+      "id": "MHS-U1-T113-007",
+      "type": "written",
+      "difficulty": "Developing",
+      "primary_topic": "1.13",
+      "tags": [
+        "blocking",
+        "matched pairs"
+      ],
+      "objectives": [
+        "1.13.C"
+      ],
+      "prompt": "A study compares two typing layouts. Explain why a matched-pairs design may be more useful than assigning all typists to just one layout, and state what must be randomized.",
+      "hint": "Think about typists' different baseline typing speeds and order.",
+      "solution": "Each typist serves as their own matched comparison, removing much variation due to baseline typing speed. Randomize the order A-then-B versus B-then-A, and consider practice/fatigue and carryover; random order does not automatically eliminate carryover.",
+      "rights": "original",
+      "provenance": "Maple Hill School original practice, November 2026",
+      "rubric": "Describe pairing, a concrete randomization step and at least one qualified advantage or limitation."
+    },
+    {
+      "id": "MHS-U1-T113-008",
+      "type": "written",
+      "difficulty": "Challenge",
+      "primary_topic": "1.13",
+      "tags": [
+        "cause and effect",
+        "generalization"
+      ],
+      "objectives": [
+        "1.13.D"
+      ],
+      "prompt": "Forty volunteer cyclists are randomly assigned to one of two bicycle helmets. The test shows lower impact scores under one model. What can the investigator conclude about causation and about all cyclists?",
+      "hint": "Distinguish treatment assignment from recruitment.",
+      "solution": "If the experiment was well conducted, random assignment supports a causal comparison under the tested conditions for the volunteers. Because volunteers were not randomly sampled from all cyclists, generalization to every cyclist, fit or impact condition is not guaranteed.",
+      "rights": "original",
+      "provenance": "Maple Hill School original practice, November 2026",
+      "rubric": "Credit an appropriate causal claim from randomized assignment and an explicit limitation on population generalization."
+    }
+  ]
+}
