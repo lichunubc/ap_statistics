@@ -15,6 +15,15 @@ A well-designed experiment uses **comparison**, **random assignment**, **replica
 
 The **experimental units** are the individual panels that receive treatments. The treatments are the two coating protocols. Applying a coating repeatedly to the *same* panel without independently assigned experimental units is not replication of experimental units.
 
+**Replication is not measurement repetition.** Testing several independently assigned panels replicates the treatment on experimental units. Taking several readings from one panel may improve measurement precision or reveal instrument error, but it does not create new experimental units.
+
+<details><summary>Optional enrichment: SD versus SE</summary>
+
+The **standard deviation (SD)** of observations describes variation among the measured responses. The **standard error (SE)** of a statistic describes how that statistic would vary across repeated random samples or treatment allocations. For $n$ independent, comparable observations, the estimated standard error of the mean is often $s/\sqrt{n}$; repeated instrument readings from the same panel should not be counted as independent panels in this formula. This is a conceptual preview, not a required significance-test calculation.
+
+</details>
+
+
 A **control group** is a comparison group, not necessarily a group receiving nothing. For a trial comparing a new coating with an established standard, the standard coating can be the control. Multiple active-treatment groups may also be compared.
 
 ## Extraneous variables and confounding {#extraneous-113}
@@ -30,13 +39,13 @@ Not every extraneous variable is automatically a confounder. Random assignment r
 **Random selection** chooses units from a population and helps with generalization when the sampling design supports it. **Random assignment** allocates treatments among participating units and supports a causal comparison. These are different randomization steps.
 :::
 
-## Placebos, blinding, and the placebo effect {#masking-113}
-
-A **placebo** is an inactive treatment designed to resemble the treatment of interest. The **placebo effect** is the difference between the average response to a placebo and the average response to no treatment, under comparable conditions.
+## Blinding, placebos, and the placebo effect {#masking-113}
 
 **Blinding**, or masking, concerns who knows the treatment allocation. In a **single-blind** experiment, either participants or the research team members who interact with them are unaware of assignments. In a **double-blind** experiment, both groups are unaware. Say explicitly *which* people are blinded; the words alone can be ambiguous outside a defined study.
 
-Blinding can reduce expectation-driven behavior and assessment bias. **A placebo is not the same thing as blinding**: placebos can make blinding practical, but an experiment can include a placebo without successfully masking assignments.
+Blinding can reduce expectation-driven behavior and assessment bias. A **placebo** is an inactive treatment designed to resemble the treatment of interest. The **placebo effect** is the difference between the average response to a placebo and the average response to no treatment, under comparable conditions.
+
+**A placebo is not the same thing as blinding**: placebos can make blinding practical, but an experiment can include a placebo without successfully masking assignments.
 
 Consider a *hypothetical add-on* cancer-treatment trial. Every consenting patient continues to receive established standard care. A random allocation compares **standard care plus Drug X** with **standard care plus a matching placebo**. Nothing in this example replaces effective care with an inactive pill. The outcome might be change in a measured tumor response after 12 weeks. Any real trial also requires appropriate consent, oversight, and safety review.
 
