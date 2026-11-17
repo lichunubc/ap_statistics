@@ -146,6 +146,11 @@ jobs:
         env:
           INTRO24_BASE_URL: ${{ steps.deployment.outputs.page_url }}
         run: python "Unit 2/Topic 2.4/tests/check_intro24_browser.py"
+      - name: Verify live Topic 2.5 browser
+        if: steps.deployment.outcome == 'success'
+        env:
+          DISJOINT25_BASE_URL: ${{ steps.deployment.outputs.page_url }}
+        run: python "Unit 2/Topic 2.5/tests/check_disjoint25_browser.py"
       - uses: actions/upload-artifact@v4
         if: always()
         with:
