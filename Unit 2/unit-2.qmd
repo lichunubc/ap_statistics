@@ -64,4 +64,8 @@ Compare independence with mutual exclusivity, calculate unions and complements, 
 :::
 :::
 
+## Presentation for Topics 2.3–2.7
+
+[Open the 42-slide Probability and Simulation presentation](<resources/probability-simulation-slides.html>). This standalone presentation includes an early review of familiar coin and dice probabilities, sample-space examples, simulation records, the conditional-probability and event rules, and original practice. It opens as a self-contained HTML resource.
+
 [Return to Unit 1](<../Unit 1/unit-1.qmd>) · [Explore all five units](../index.qmd)
