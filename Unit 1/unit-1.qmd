@@ -7,7 +7,7 @@ toc: false
 [← All units](../index.qmd)
 
 ::: {.chapter-lead}
-**Available now: Topics 1.1–1.12.** Each topic has its own chapter and official College Board title. Choose a topic below to read the lesson and explore its activities. Further Unit 1 topics are still being developed.
+**Available now: Topics 1.1–1.13.** Each topic has its own chapter and official College Board title. Choose a topic below to read the lesson and explore its activities. Further Unit 1 topics are still being developed.
 :::
 
 ## Choose a topic
@@ -96,6 +96,13 @@ Compare simple random, stratified, cluster, systematic and with-replacement samp
 Compare biased and random sampling through a numerical lab; review nonresponse, undercoverage, voluntary response, and response bias.
 
 [Open Topic 1.12 →](<Topic 1.12/topic-1-12.qmd>)
+:::
+::: {.route-card}
+**Topic 1.13 Experimental Design**
+
+Design randomized comparisons with replication, direct control, blocks and matched pairs; investigate causation versus generalization.
+
+[Open Topic 1.13 →](<Topic 1.13/topic-1-13.qmd>)
 :::
 :::
 
