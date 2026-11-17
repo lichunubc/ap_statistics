@@ -1,0 +1,306 @@
+{
+  "schema_version": 1,
+  "bank_id": "mhs-ap-statistics-original",
+  "topic": "2.1",
+  "title": "Tabular and Graphical Representations for the Distributions of Two Categorical Variables",
+  "rights": "Original teacher-authored public-safe practice; no private/secure assessments.",
+  "revision": 1,
+  "items": [
+    {
+      "id": "MHS-U2-T21-001",
+      "type": "mc",
+      "difficulty": "Foundation",
+      "primary_topic": "2.1",
+      "tags": [
+        "two-way tables",
+        "conditional percentages"
+      ],
+      "objectives": [
+        "2.1.A"
+      ],
+      "prompt": "What does the App–Tea cell count of 2 represent?",
+      "hint": "Read the row and column together.",
+      "solution": "Two orders were placed using App and were Tea.",
+      "rights": "original",
+      "provenance": "Maple Hill School original practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "There were two App customers in total."
+        },
+        {
+          "label": "B",
+          "text": "There were two drinks of any type."
+        },
+        {
+          "label": "C",
+          "text": "Two App orders were for tea."
+        },
+        {
+          "label": "D",
+          "text": "Two types of drinks were available."
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "MHS-U2-T21-002",
+      "type": "mc",
+      "difficulty": "Foundation",
+      "primary_topic": "2.1",
+      "tags": [
+        "two-way tables",
+        "conditional percentages"
+      ],
+      "objectives": [
+        "2.1.A"
+      ],
+      "prompt": "Which is the correct App row margin?",
+      "hint": "Add all drinks within App.",
+      "solution": "The App row contains 4 Coffee, 2 Tea, and 2 Smoothie orders; total 8.",
+      "rights": "original",
+      "provenance": "Maple Hill School original practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "4"
+        },
+        {
+          "label": "B",
+          "text": "8"
+        },
+        {
+          "label": "C",
+          "text": "10"
+        },
+        {
+          "label": "D",
+          "text": "24"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "MHS-U2-T21-003",
+      "type": "mc",
+      "difficulty": "Developing",
+      "primary_topic": "2.1",
+      "tags": [
+        "two-way tables",
+        "conditional percentages"
+      ],
+      "objectives": [
+        "2.1.A"
+      ],
+      "prompt": "Which comparison correctly describes Tea percentages by channel?",
+      "hint": "Use each group's row total as denominator.",
+      "solution": "Tea is 2/8=25% among App orders and 8/16=50% among Counter orders.",
+      "rights": "original",
+      "provenance": "Maple Hill School original practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "App 25%; Counter 50%."
+        },
+        {
+          "label": "B",
+          "text": "App 2/24; Counter 8/24."
+        },
+        {
+          "label": "C",
+          "text": "App 2/10; Counter 8/10."
+        },
+        {
+          "label": "D",
+          "text": "App 50%; Counter 25%."
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "MHS-U2-T21-004",
+      "type": "mc",
+      "difficulty": "Developing",
+      "primary_topic": "2.1",
+      "tags": [
+        "two-way tables",
+        "conditional percentages"
+      ],
+      "objectives": [
+        "2.1.A"
+      ],
+      "prompt": "Both channels had 4 Coffee orders. What are their within-channel Coffee percentages?",
+      "hint": "The group sizes are 8 and 16.",
+      "solution": "App Coffee=4/8=50%; Counter Coffee=4/16=25%. Equal counts need not yield equal percentages.",
+      "rights": "original",
+      "provenance": "Maple Hill School original practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "Both 50%."
+        },
+        {
+          "label": "B",
+          "text": "Both 25%."
+        },
+        {
+          "label": "C",
+          "text": "App 25%, Counter 50%."
+        },
+        {
+          "label": "D",
+          "text": "App 50%, Counter 25%."
+        }
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "MHS-U2-T21-005",
+      "type": "mc",
+      "difficulty": "Developing",
+      "primary_topic": "2.1",
+      "tags": [
+        "two-way tables",
+        "conditional percentages"
+      ],
+      "objectives": [
+        "2.1.A"
+      ],
+      "prompt": "In a 100% segmented bar graph, why are App and Counter bars equally long?",
+      "hint": "A complete bar represents a group.",
+      "solution": "Each complete bar represents 100% of that group's observations, regardless of how many observations the group contains.",
+      "rights": "original",
+      "provenance": "Maple Hill School original practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "The raw counts are equal."
+        },
+        {
+          "label": "B",
+          "text": "There must be no association."
+        },
+        {
+          "label": "C",
+          "text": "Each bar represents the complete group, normalized to 100%."
+        },
+        {
+          "label": "D",
+          "text": "The chart uses the grand total for every segment."
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "MHS-U2-T21-006",
+      "type": "mc",
+      "difficulty": "Challenge",
+      "primary_topic": "2.1",
+      "tags": [
+        "two-way tables",
+        "mosaic"
+      ],
+      "objectives": [
+        "2.1.A"
+      ],
+      "prompt": "In a mosaic plot, what fraction of total area is the App–Tea cell?",
+      "hint": "Multiply App group width by Tea height inside App.",
+      "solution": "Area=(8/24)(2/8)=2/24=1/12; mosaic area represents joint relative frequency.",
+      "rights": "original",
+      "provenance": "Maple Hill School original practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "2/8"
+        },
+        {
+          "label": "B",
+          "text": "2/24"
+        },
+        {
+          "label": "C",
+          "text": "8/24"
+        },
+        {
+          "label": "D",
+          "text": "2/10"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "MHS-U2-T21-007",
+      "type": "mc",
+      "difficulty": "Challenge",
+      "primary_topic": "2.1",
+      "tags": [
+        "two-way tables",
+        "association"
+      ],
+      "objectives": [
+        "2.1.B"
+      ],
+      "prompt": "Which conclusion is supported by the observed café table?",
+      "hint": "Association does not imply causation.",
+      "solution": "Tea is 25% of App orders and 50% of Counter orders, showing an association in these observations, not a causal effect.",
+      "rights": "original",
+      "provenance": "Maple Hill School original practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "The observed drink mixes differ by channel."
+        },
+        {
+          "label": "B",
+          "text": "Choosing App causes preference for Coffee."
+        },
+        {
+          "label": "C",
+          "text": "The drink mixes must be identical in all cafés."
+        },
+        {
+          "label": "D",
+          "text": "Ordering channels were randomly assigned."
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "MHS-U2-T21-008",
+      "type": "mc",
+      "difficulty": "Challenge",
+      "primary_topic": "2.1",
+      "tags": [
+        "two-way tables",
+        "conditional percentages"
+      ],
+      "objectives": [
+        "2.1.B"
+      ],
+      "prompt": "A different table has App 2,4,2 out of 8 and Counter 4,8,4 out of 16 for Coffee,Tea,Smoothie. What does that show?",
+      "hint": "Compare each category divided by its own row total.",
+      "solution": "Both channels have 25% Coffee, 50% Tea, 25% Smoothie, so there is no association in that constructed table.",
+      "rights": "original",
+      "provenance": "Maple Hill School original practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "Association because Counter counts are larger."
+        },
+        {
+          "label": "B",
+          "text": "All drinks are equally likely."
+        },
+        {
+          "label": "C",
+          "text": "No association because conditional proportions match."
+        },
+        {
+          "label": "D",
+          "text": "The table must be an experiment."
+        }
+      ],
+      "answer": "C"
+    }
+  ]
+}

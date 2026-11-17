@@ -1,0 +1,15 @@
+.cafe21{padding:1rem;margin:1rem 0;border:1px solid #a9cec8;border-radius:.5rem;background:#f0f7f6;max-width:100%;box-sizing:border-box}
+.cafe21-controls{display:flex;gap:.5rem;flex-wrap:wrap}.cafe21 button{font:inherit;padding:.4rem .7rem;cursor:pointer;border:1px solid #087e83;border-radius:.3rem;color:#164951;background:#fff}
+.cafe21 button[aria-pressed=true]{color:white;background:#087e83}.cafe21 button:focus-visible{outline:3px solid #bc8733;outline-offset:2px}
+.cafe21-bars{display:grid;gap:.4rem}.cafe21-row{display:grid;grid-template-columns:minmax(5.8rem,9rem) minmax(0,1fr) 3.5rem;align-items:center;gap:.5rem;min-width:0}
+.cafe21-track{background:#d8e6e6;border-left:2px solid #17414b;height:1.25rem;min-width:0}.cafe21-fill{height:100%;display:block;background:#087e83;min-width:1px}.cafe21-row[data-channel="Counter"] .cafe21-fill{background:#a87030}
+.cafe21[data-enhanced=true] .cafe21-fallback{display:none}.cafe21-stacks{display:grid;gap:.4rem;margin:1rem 0}.cafe21-stack{display:flex;width:100%;min-height:2.5rem;border:1px solid #41616d;overflow:hidden}
+.cafe21-stack span{display:flex;align-items:center;justify-content:center;white-space:nowrap;overflow:hidden;font-size:.8em}
+.cafe21 .coffee,.cafe21-stacks .coffee,.cafe21-mosaic .coffee{background:#aad2cd;color:#153944}
+.cafe21 .tea,.cafe21-stacks .tea,.cafe21-mosaic .tea{background:#efd198;color:#463519}
+.cafe21 .smoothie,.cafe21-stacks .smoothie,.cafe21-mosaic .smoothie{background:#ccdce4;color:#273b4b}
+.cafe21-mosaic{display:flex;height:15rem;border:1px solid #41616d;margin:.8rem 0 2.7rem;max-width:100%}
+.cafe21-column{display:flex;flex-direction:column;min-width:0;position:relative;border-right:1px solid #56717b;text-align:center}.cafe21-column>div{display:flex;align-items:center;justify-content:center;font-size:.9em}
+.cafe21-column>strong{position:absolute;top:100%;left:0;right:0;padding-top:.3rem}
+@media(max-width:520px){.cafe21-row{font-size:.82rem;grid-template-columns:5.8rem minmax(0,1fr) 3.3rem}.cafe21-stack span{font-size:.65em}.cafe21-column>div{font-size:.75em}}
+@media print{.cafe21-controls{display:none}.cafe21-fallback{display:block!important}.cafe21-mosaic{break-inside:avoid}}
