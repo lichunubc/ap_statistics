@@ -54,7 +54,7 @@
     "href": "Unit 1/unit-1.html#choose-a-topic",
     "title": "Unit 1: Exploring One-Variable Data and Collecting Data",
     "section": "",
-    "text": "Topic 1.1 Introducing Statistics: What Can We Learn from Data?\nQuestions, observational units, populations, samples, and evidence in context.\nOpen Topic 1.1 →\n\n\nTopic 1.2 Variables\nIdentify variables and summaries; classify categorical, discrete, and continuous values; investigate numerical category codes.\nOpen Topic 1.2 →\n\n\nTopic 1.3 Tabular Representation and Summary Statistics for One Categorical Variable\nBuild frequency and relative-frequency tables, use correct denominators, and justify contextual claims.\nOpen Topic 1.3 →\n\n\nTopic 1.4 Graphical Representations for One Categorical Variable\nBuild bar and pie charts, compare samples, and audit graphical claims.\nOpen Topic 1.4 →\n\n\nTopic 1.5 Graphical Representations for One Quantitative Variable\nBuild dotplots, stem-and-leaf plots and histograms; explore how bin widths change a display.\nOpen Topic 1.5 →\n\n\nTopic 1.6 Descriptions for One Quantitative Variable Distributions\nDescribe shape, center, spread and unusual features using graphical evidence.\nOpen Topic 1.6 →\n\n\nTopic 1.7 Summary Statistics for One Quantitative Variable\nLearn mean, quartiles, variation, two outlier screens, and unit conversion through a linked dotplot and practice.\nOpen Topic 1.7 →\n\n\nTopic 1.8 Graphical Representations of Summary Statistics for One Quantitative Variable\nConstruct five-number summaries and modified boxplots with a step-by-step linked graph; learn what a boxplot conceals and how mean and median relate to skewness.\nOpen Topic 1.8 →\n\n\nTopic 1.9 Comparisons of the Distributions for One Quantitative Variable\nCompare distribution shapes and summaries on common scales, and calculate standardized relative positions with z-scores.\nOpen Topic 1.9 →\n\n\nTopic 1.10 The Investigative Question Revisited and Data Collection\nBuild a precise statistical question, distinguish observational studies and experiments, and explore selection, treatment assignment, confounding and the limits of conclusions.\nOpen Topic 1.10 →\n\n\nTopic 1.11 Random Sampling\nCompare simple random, stratified, cluster, systematic and with-replacement sampling using a stepwise population explorer and original practice.\nOpen Topic 1.11 →",
+    "text": "Topic 1.1 Introducing Statistics: What Can We Learn from Data?\nQuestions, observational units, populations, samples, and evidence in context.\nOpen Topic 1.1 →\n\n\nTopic 1.2 Variables\nIdentify variables and summaries; classify categorical, discrete, and continuous values; investigate numerical category codes.\nOpen Topic 1.2 →\n\n\nTopic 1.3 Tabular Representation and Summary Statistics for One Categorical Variable\nBuild frequency and relative-frequency tables, use correct denominators, and justify contextual claims.\nOpen Topic 1.3 →\n\n\nTopic 1.4 Graphical Representations for One Categorical Variable\nBuild bar and pie charts, compare samples, and audit graphical claims.\nOpen Topic 1.4 →\n\n\nTopic 1.5 Graphical Representations for One Quantitative Variable\nBuild dotplots, stem-and-leaf plots and histograms; explore how bin widths change a display.\nOpen Topic 1.5 →\n\n\nTopic 1.6 Descriptions for One Quantitative Variable Distributions\nDescribe shape, center, spread and unusual features using graphical evidence.\nOpen Topic 1.6 →\n\n\nTopic 1.7 Summary Statistics for One Quantitative Variable\nLearn mean, quartiles, variation, two outlier screens, and unit conversion through a linked dotplot and practice.\nOpen Topic 1.7 →\n\n\nTopic 1.8 Graphical Representations of Summary Statistics for One Quantitative Variable\nConstruct five-number summaries and modified boxplots with a step-by-step linked graph; learn what a boxplot conceals and how mean and median relate to skewness.\nOpen Topic 1.8 →\n\n\nTopic 1.9 Comparisons of the Distributions for One Quantitative Variable\nCompare distribution shapes and summaries on common scales, and calculate standardized relative positions with z-scores.\nOpen Topic 1.9 →\n\n\nTopic 1.10 The Investigative Question Revisited and Data Collection\nBuild a precise statistical question, distinguish observational studies and experiments, and explore selection, treatment assignment, confounding and the limits of conclusions.\nOpen Topic 1.10 →\n\n\nTopic 1.11 Random Sampling\nCompare simple random, stratified, cluster, systematic and with-replacement sampling using a stepwise population explorer and original practice.\nOpen Topic 1.11 →\n\n\nTopic 1.12 Potential Problems with Sampling\nCompare biased and random sampling through a numerical lab; review nonresponse, undercoverage, voluntary response, and response bias.\nOpen Topic 1.12 →",
     "crumbs": [
       "Unit 1: Exploring One-Variable Data and Collecting Data"
     ]
@@ -1082,6 +1082,94 @@
     ]
   },
   {
+    "objectID": "Unit 1/Topic 1.12/topic-1-12.html",
+    "href": "Unit 1/Topic 1.12/topic-1-12.html",
+    "title": "Topic 1.12 Potential Problems with Sampling",
+    "section": "",
+    "text": "Sampling variability and bias\nA school wants to estimate the mean one-way travel time for all its students. Interviewing a large number of convenient volunteers can still give a misleading answer. Before interpreting a sample statistic, ask three questions: Who had a chance to be selected? Who answered? Was the answer measured accurately?\nSampling variability means that a statistic changes from one random sample to another. Even a properly selected simple random sample (SRS) can have a sample mean above or below the population mean. A single unusual result does not prove that the method is biased.\nBias means a systematic tendency of a selection or measurement process to produce values consistently too large or consistently too small relative to the parameter being estimated. A biased method can remain biased even after many observations.",
+    "crumbs": [
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Topic 1.12 Potential Problems with Sampling</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 1/Topic 1.12/topic-1-12.html#principles-112",
+    "href": "Unit 1/Topic 1.12/topic-1-12.html#principles-112",
+    "title": "Topic 1.12 Potential Problems with Sampling",
+    "section": "",
+    "text": "Situation\nMain issue\n\n\n\n\nA randomly selected sample has an unusually large mean.\nSampling variability may explain the individual result.\n\n\nAn eligibility list omits students learning remotely.\nUndercoverage.\n\n\nA public website lets anyone click to vote.\nVoluntary response.\n\n\nA researcher surveys only the first people entering a shop.\nConvenience sampling.\n\n\nSome selected people never return the survey.\nNonresponse.\n\n\nA question suggests that one answer is socially desirable.\nResponse bias.",
+    "crumbs": [
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Topic 1.12 Potential Problems with Sampling</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 1/Topic 1.12/topic-1-12.html#sources-112",
+    "href": "Unit 1/Topic 1.12/topic-1-12.html#sources-112",
+    "title": "Topic 1.12 Potential Problems with Sampling",
+    "section": "Five sources of bias",
+    "text": "Five sources of bias\nVoluntary response bias. Respondents choose themselves into a sample, often because they have strong opinions. An open online poll is not an SRS of the general population merely because it receives thousands of responses.\nUndercoverage bias. Some population members are omitted or less likely to be selected because of the sampling frame or procedure. A random selection from a landline directory cannot include people who have no landline.\nNonresponse bias. People who were selected fail to provide answers. If responders and nonresponders differ in a relevant way, estimates may be biased. The rate of nonresponse is a useful diagnostic, not proof of the direction of bias.\nResponse bias. Answers or recorded measurements tend to differ from the true value. Leading wording, interviewer influence, reluctance to report sensitive facts, and an incorrectly calibrated device can all produce response bias. A complete response rate does not prevent it.\nConvenience-sample bias. Sampling those easiest to access can favor certain groups, such as early arrivals or customers near one entrance. Randomness must enter the selection mechanism; choosing a large number of readily available people does not make the sample random.\n\n\n\n\n\n\nTipQuick diagnosis\n\n\n\nA person not on the frame suggests undercoverage; on the selected list but absent from the data suggests nonresponse. Opting into an open survey suggests voluntary response. Present but answering inaccurately suggests response bias. More than one problem may occur in the same investigation.",
+    "crumbs": [
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Topic 1.12 Potential Problems with Sampling</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 1/Topic 1.12/topic-1-12.html#example-112",
+    "href": "Unit 1/Topic 1.12/topic-1-12.html#example-112",
+    "title": "Topic 1.12 Potential Problems with Sampling",
+    "section": "A numerical example: more observations do not fix exclusion",
+    "text": "A numerical example: more observations do not fix exclusion\nConsider a model school with 100 students: 40 walkers whose commutes are 10 minutes and 60 bus riders whose commutes are 30 minutes. Its population mean commute time is\nμ=40(10)+60(30)100=22 minutes.\n\\mu=\\frac{40(10)+60(30)}{100}=\\boxed{22\\text{ minutes}}.\n\nA researcher interviews only the walkers near a particular gate. Whether the researcher interviews 10, 20, 30, or all 40 walkers, their sample mean is 10 minutes, which is 12 minutes lower than the population mean. That method excludes every bus rider. More interviews from the same gate do not correct the undercoverage.\nAn SRS drawn from the complete 100-student roster, without replacement, has sampling variability instead. The mean of such sample means across repeated draws is 22 minutes, although a particular sample may be higher or lower. Increasing sample size does not guarantee that the next individual estimate moves closer to 22.",
+    "crumbs": [
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Topic 1.12 Potential Problems with Sampling</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 1/Topic 1.12/topic-1-12.html#lab-112",
+    "href": "Unit 1/Topic 1.12/topic-1-12.html#lab-112",
+    "title": "Topic 1.12 Potential Problems with Sampling",
+    "section": "Interactive experiment: compare the procedures",
+    "text": "Interactive experiment: compare the procedures\nThe same model population is used for both procedures. Choose a sample size and method, then draw. A valid SRS takes a uniformly random subset from all 100 students. The convenience procedure takes only walkers. The bar chart shows the two possible kinds of estimate relative to the true mean.\n\n \n  Sample size 10 students20 students30 students40 students\n  Selection procedure SRS of the complete rosterConvenience: walkers only\n \n \n  Draw a sample\n  Reset\n \n No sample drawn. Predict whether each method can include a bus rider.\n \n  True population mean: 22 minutes\n  Sample mean: not drawn\n \n Population consists of 40 walkers at 10 minutes and 60 bus riders at 30 minutes.\n\nWithout JavaScript, compare an all-walker sample mean of 10 to a complete-roster sample containing 8 walkers and 12 bus riders: its mean is [8(10)+12(30)]/20=22[8(10)+12(30)]/20=22 minutes. Another SRS may have a different mix.",
+    "crumbs": [
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Topic 1.12 Potential Problems with Sampling</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 1/Topic 1.12/topic-1-12.html#solutions-112",
+    "href": "Unit 1/Topic 1.12/topic-1-12.html#solutions-112",
+    "title": "Topic 1.12 Potential Problems with Sampling",
+    "section": "Diagnose the study, then propose a repair",
+    "text": "Diagnose the study, then propose a repair\nExample 1. An accurate random-number generator selects from a school roster that excludes online students. The random procedure can still suffer from undercoverage. Rebuild a complete eligible roster before selecting.\nExample 2. A random sample of 120 students is selected, but 35 selected students cannot be reached. This is nonresponse, not undercoverage of the sampling frame. Follow up using multiple appropriate contact methods and describe the missing responses.\nExample 3. Everyone answers, but the interviewer asks, “Surely you support our excellent new plan?” The question may create response bias. Replace it with a neutral question that presents answer choices without favorable adjectives.\nExample 4. A voluntary poll receives 20,000 votes. High participation does not turn self-selected responses into a random sample; the result need not represent all eligible people. The direction of bias cannot be determined from the poll size alone.",
+    "crumbs": [
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Topic 1.12 Potential Problems with Sampling</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 1/Topic 1.12/topic-1-12.html#errors-112",
+    "href": "Unit 1/Topic 1.12/topic-1-12.html#errors-112",
+    "title": "Topic 1.12 Potential Problems with Sampling",
+    "section": "Check your reasoning",
+    "text": "Check your reasoning\n\nA larger sample can reduce random sampling variability without repairing biased selection.\nA randomly selected sample does not have to match population proportions exactly.\nA nonrespondent was selected but not measured; an uncovered person could not enter the frame.\nResponse bias concerns the answers obtained, not simply the number of missing answers.\nDifferent problems can coexist, and the direction of their effect often requires further information.",
+    "crumbs": [
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Topic 1.12 Potential Problems with Sampling</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 1/Topic 1.12/topic-1-12.html#practice-112",
+    "href": "Unit 1/Topic 1.12/topic-1-12.html#practice-112",
+    "title": "Topic 1.12 Potential Problems with Sampling",
+    "section": "Practice",
+    "text": "Practice\n\nLoading practice…\n\nQuestion 1A properly selected random sample has a sample mean below the\npopulation mean. What is the best conclusion?\nA. This alone proves selection bias.\nB. Sampling variability can produce a difference without bias.\nC. The responses must be inaccurate.\nD. The sample must be voluntary.\nShow solutionA single randomly chosen sample can deviate by chance; this fact\nalone does not demonstrate systematic bias.\n\nQuestion 2A city samples uniformly from a landline-only phone directory. What\nis a likely threat?\nA. Leading-question response bias.\nB. Random assignment.\nC. Undercoverage of mobile-only residents.\nD. Nonresponse among all citizens.\nShow solutionPeople without landlines are not in the sampling frame, so they\ncannot be selected.\n\nQuestion 3A researcher randomly selects 100 students. Twenty selected students\nnever answer. What issue needs attention?\nA. Nonresponse.\nB. Voluntary response.\nC. Randomized treatment allocation.\nD. Mistaken sample-space labels.\nShow solutionThe 20 nonrespondents were chosen but yielded no observations. If\nthey differ from respondents, estimates may be biased.\n\nQuestion 4An open online poll receives 10,000 responses. Which statement is\nmost defensible?\nA. It is necessarily unbiased because n is large.\nB. It is an SRS because anyone may join.\nC. A large number alone does not repair volunteer self-selection.\nD. The estimate must be too high.\nShow solutionVolunteers choose whether to join, and respondents may differ from\nthe whole population. Direction cannot be concluded just from sample\nsize.\n\nQuestion 5There are 40 ten-minute walkers and 60 thirty-minute bus riders. Find\nthe population mean commute time in minutes.\nShow solutionμ=[40(10)+60(30)]/100=22\\mu=[40(10)+60(30)]/100=\\boxed{22}\nminutes.\n\nQuestion 6A school obtains a complete roster and selects students at random,\nbut asks: ‘You agree our brilliant new schedule helps, right?’ Identify\na possible bias and a correction.\nShow solutionThe leading wording creates potential response bias,\neven with a complete random frame. Use a neutral, balanced question such\nas ‘Which schedule do you prefer: the new schedule, the previous\nschedule, or neither?’\nIdentify the mechanism and justify in context, then give an\nappropriate correction when requested.\n\nQuestion 7A roster excludes online students. Later, 12 selected students do not\nanswer the survey. Identify two different problems and when they\noccur.\nShow solutionUndercoverage happens before selection because\nonline students cannot enter the sample. Nonresponse\nhappens after selection because 12 selected students are not observed.\nBoth can affect a study.\nIdentify the mechanism and justify in context, then give an\nappropriate correction when requested.\n\nQuestion 8In a population of 40 ten-minute walkers and 60 thirty-minute bus\nriders, a gate survey measures all 40 walkers and gets 10 minutes.\nExplain why increasing the walker sample from 10 to 40 does not solve\nthe problem.\nShow solutionThe frame excludes all 60 bus riders. Every sampled walker has a\n10-minute commute, while the population mean is 22. The downward gap of\n12 minutes remains because the systematic exclusion is not repaired.\nDraw a probability sample from the complete roster\ninstead, with neutral measurement and nonresponse follow-up.\nIdentify the mechanism and justify in context, then give an\nappropriate correction when requested.\n\n\n\n\nSources\n\n\nCollege Board, AP Statistics Course and Exam Description, effective Fall 2026, Topic 1.12, p. 50. Models and practice are classroom-created examples.",
+    "crumbs": [
+      "Unit 1: Exploring One-Variable Data and Collecting Data",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Topic 1.12 Potential Problems with Sampling</span>"
+    ]
+  },
+  {
     "objectID": "Unit 1/Shared/practice.html",
     "href": "Unit 1/Shared/practice.html",
     "title": "Practice and solutions",
@@ -1089,7 +1177,7 @@
     "text": "1 · Draw from a frequency table\nThirty students recorded school-shuttle waiting times. Use 5-minute bins from 0 to 30 and the left-inclusive, right-exclusive rule. Draw a histogram on paper with labelled axes, equal-width touching bars, and a zero baseline.\nAfter drawing, use the digital check to reconstruct your heights. It checks heights only, not the labels on your paper.",
     "crumbs": [
       "Unit 1: Exploring One-Variable Data and Collecting Data",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Practice and solutions</span>"
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Practice and solutions</span>"
     ]
   },
   {
@@ -1100,7 +1188,7 @@
     "text": "Waiting time (minutes)\nFrequency\n\n\n\n\n0≤x&lt;50\\leq x&lt;5\n3\n\n\n5≤x&lt;105\\leq x&lt;10\n7\n\n\n10≤x&lt;1510\\leq x&lt;15\n10\n\n\n15≤x&lt;2015\\leq x&lt;20\n6\n\n\n20≤x&lt;2520\\leq x&lt;25\n3\n\n\n25≤x&lt;3025\\leq x&lt;30\n1\n\n\n\n\n\n\nEnter six bar heights, check them against the table, and view your attempt.\n\n\n\n\nShow the completed histogram\n\n\n\n\nHeights are 3, 7, 10, 6, 3, 1, totaling 30. Every bar is 5 minutes wide. The tallest bar means ten waits from 10 to under 15 minutes—not ten waits exactly equal to 10.",
     "crumbs": [
       "Unit 1: Exploring One-Variable Data and Collecting Data",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Practice and solutions</span>"
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Practice and solutions</span>"
     ]
   },
   {
@@ -1111,7 +1199,7 @@
     "text": "2 · Stem, leaf, and key\nConstruct a stem-and-leaf plot for 1.2, 1.5, 1.5, 2.0, 2.3 seconds. Explain the repeated leaf.\n\n\nShow solution\n\n1 | 2 5 5\n2 | 0 3\nKey: 1 | 2 = 1.2 seconds\nFive leaves represent five observations. The repeated 1.5 needs two leaves of 5. A zero leaf preserves the 2.0-second observation.",
     "crumbs": [
       "Unit 1: Exploring One-Variable Data and Collecting Data",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Practice and solutions</span>"
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Practice and solutions</span>"
     ]
   },
   {
@@ -1122,7 +1210,7 @@
     "text": "3 · Bin boundaries\nWhich 10-minute commute bin contains 20? Does the first occupied bin prove the recorded minimum is 0?\n\n\nShow solution\n\n20 enters 20≤x&lt;3020\\leq x&lt;30, not the preceding bin. The first occupied bin establishes a value in 0≤x&lt;100\\leq x&lt;10, not necessarily 0. The original list—not the histogram—identifies the minimum as 5.",
     "crumbs": [
       "Unit 1: Exploring One-Variable Data and Collecting Data",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Practice and solutions</span>"
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Practice and solutions</span>"
     ]
   },
   {
@@ -1133,7 +1221,7 @@
     "text": "4 · Repair turnaround times\nDescribe the histogram of 40 bicycle repairs. Find the percentage taking at least 4 hours. Can you recover the most common exact time?\n\n\nOne-hour bins from 0 to 8: frequencies 12, 10, 7, 5, 3, 2, 1, 0.\n\n\n\n\nShow solution\n\nRepair times are unimodal and right-skewed, centered around 1–3 hours. Values occupy bins from 0 to under 7 hours. No displayed internal bin is empty. The one observation in 6–7 hours is not automatically an outlier; an empty final 7–8 bin is not an internal gap.\nAt least 4 hours: (3+2+1)/40=15%(3+2+1)/40=15\\%. The most frequent interval is 0–1 hour. The most common exact value is not recoverable.",
     "crumbs": [
       "Unit 1: Exploring One-Variable Data and Collecting Data",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Practice and solutions</span>"
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Practice and solutions</span>"
     ]
   },
   {
@@ -1144,7 +1232,7 @@
     "text": "5 · Two concentrations\nDescribe shape, center, spread, and the empty internal interval for these 40 library study sessions. What percentage lasted from 30 to under 90 minutes?\n\n\nFifteen-minute bins from 0 to 120: frequencies 2, 10, 8, 0, 0, 8, 10, 2.\n\n\n\n\nShow solution\n\nThe displayed distribution is approximately symmetric and bimodal, with main concentrations in 15–45 and 75–105 minutes. The visual center near 60 minutes lies in a gap, not at a typical observed session. Occupied bins span roughly 0–120 minutes. There are no observations from 45 to under 75 minutes.\nThe count from 30 to under 90 is 8+0+0+8=168+0+0+8=16, giving 16/40=40%16/40=40\\%. A single center would hide the two concentrations. The exact median is not available from the histogram.",
     "crumbs": [
       "Unit 1: Exploring One-Variable Data and Collecting Data",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Practice and solutions</span>"
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Practice and solutions</span>"
     ]
   },
   {
@@ -1155,7 +1243,7 @@
     "text": "6 · What could be inside a bin?\nTwo commute times lie in 40–50 and one in 50–60 minutes. How many are at least 40? How many could be at least 45?\n\n\nShow solution\n\nExactly 3 are at least 40. Between 1 and 3 could be at least 45: the last-bin observation definitely qualifies; either, neither, or both observations in the preceding bin might qualify. Do not add a uniformity assumption.",
     "crumbs": [
       "Unit 1: Exploring One-Variable Data and Collecting Data",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Practice and solutions</span>"
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Practice and solutions</span>"
     ]
   },
   {
@@ -1166,7 +1254,7 @@
     "text": "7 · Oxygen: count and context\nReturn to the oxygen histogram. How many sampled cold streams recorded below 6 mg/L? What percentage is this? What does the empty 3–4 bin establish?\n\n\nShow solution\n\nThe first four counts total 1+0+1+1=31+0+1+1=3. The percentage is 3/429×100%≈0.7%3/429\\times100\\%\\approx0.7\\%. Under our convention, no observed concentration lies in 3≤x&lt;43\\leq x&lt;4 mg/L. This does not show that such concentrations are impossible in all streams.",
     "crumbs": [
       "Unit 1: Exploring One-Variable Data and Collecting Data",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Practice and solutions</span>"
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Practice and solutions</span>"
     ]
   },
   {
@@ -1177,7 +1265,7 @@
     "text": "8 · Repair a weak description\nA student writes, “The graph is high in the middle and goes up and down.” Replace this with all four parts of a contextual description.\n\n\nTwenty review-session lengths span 4–30 minutes, with approximate symmetry and a broad central concentration.\n\n\n\n\nShow a model response\n\nAmong these 20 students, review-session lengths are approximately symmetric with one broad central concentration, centered around 16–18 minutes. Recorded values extend from 4 to 30 minutes, with no clearly isolated observation or large internal gap.\nThe dotplot preserves individual values, so the observed endpoints are available. Wide histogram bins would warrant less exact wording.",
     "crumbs": [
       "Unit 1: Exploring One-Variable Data and Collecting Data",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Practice and solutions</span>"
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Practice and solutions</span>"
     ]
   },
   {
@@ -1188,7 +1276,7 @@
     "text": "Before the next class\nExplain one dot versus one bin, construct a histogram from a table, name skew from the tail, and support a claim with calculation + context. Return to the relevant chapter when an answer depends on a guess rather than evidence.",
     "crumbs": [
       "Unit 1: Exploring One-Variable Data and Collecting Data",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Practice and solutions</span>"
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Practice and solutions</span>"
     ]
   },
   {
@@ -1238,7 +1326,7 @@
     "section": "",
     "text": "Expanded question bank\nOpen the expanded bank reader and choose your authorized ap_statistics_question_bank.json file. Filter by topic, source, or question type, then try a question before revealing its answer. The reader opens the file on your device. If your package includes figures, extract it first and select the extracted assets folder in the reader.",
     "crumbs": [
-      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Problem Bank</span>"
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Problem Bank</span>"
     ]
   },
   {
@@ -1248,7 +1336,7 @@
     "section": "Skill dependency map",
     "text": "Skill dependency map\nExplore the skill dependency map to see what to review before tackling a topic. Try searching for joint probability, then trace its prerequisites back to reading a two-way table and finding a part-to-whole fraction. The map opens directly and includes explanations and source references for the learning links. Choose Find practice for this skill on a linked skill to open the reader with that skill selected when you load your bank.",
     "crumbs": [
-      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Problem Bank</span>"
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Problem Bank</span>"
     ]
   },
   {
@@ -1258,7 +1346,7 @@
     "section": "Selected homework",
     "text": "Selected homework\nPractise 20 questions from the Week 2 and Week 3 homework, organized by topic.\n\nOpen your class question file\nOpen mhs-week-2-3.practice.json, provided by your teacher, using the control below. The questions and diagrams will appear here and in the Selected homework practice section of the relevant lessons. Choose an answer, check your reasoning, and open the solution when ready.\n\nOpen your class question file to practise the selected homework questions below.\nWeek 2.0, Question 1.0 — Topic 1.2: Continuous measurements versus counts (homework pages 1.0).\nWeek 2.0, Question 3.0 — Topic 1.2: A quantitative variable among categorical choices (homework pages 1.0).\nWeek 2.0, Question 4.0 — Topic 1.2: How the recording rule changes the variable type (homework pages 2.0).\nWeek 2.0, Question 6.0 — Topic 1.2: Category observations are not category counts (homework pages 3.0).\nWeek 2.0, Question 15.0 — Topic 1.3: Validate a relative-frequency table (homework pages 8.0, 9.0, 10.0).\nWeek 2.0, Question 17.0 — Topic 1.3: A percentage does not determine an absolute count (homework pages 12.0).\nWeek 2.0, Question 18.0 — Topic 1.3: Check a claim against a frequency table (homework pages 13.0).\nWeek 2.0, Question 20.0 — Topic 1.3: Combine categories using the correct denominator (homework pages 14.0).\nWeek 2.0, Question 16.0 — Topic 1.4: Compare rates without confusing them with counts (homework pages 11.0).\nWeek 2.0, Question 22.0 — Topic 1.4: Read a pie chart as parts of one whole (homework pages 15.0).\nWeek 2.0, Question 24.0 — Topic 1.4: Convert chart proportions to counts when n is known (homework pages 16.0).\nWeek 2.0, Question 25.0 — Topic 1.4: Use the number of games as the percentage denominator (homework pages 17.0).\nWeek 3.0, Question 10.0 — Topic 1.5: What changing histogram bin width preserves (homework pages 5.0).\nWeek 3.0, Question 16.0 — Topic 1.5: Read a split stem-and-leaf display (homework pages 8.0).\nWeek 3.0, Question 17.0 — Topic 1.5: Construct a stemplot without losing repeats (homework pages 9.0, 10.0).\nWeek 3.0, Question 1.0 — Topic 1.6: Compare tails in a back-to-back stemplot (homework pages 1.0).\nWeek 3.0, Question 3.0 — Topic 1.6: Describe shape and features in a dotplot (homework pages 2.0).\nWeek 3.0, Question 8.0 — Topic 1.6: Identify skewness from a histogram tail (homework pages 4.0).\nWeek 3.0, Question 12.0 — Topic 1.6: Distinguish a visual potential outlier from a formal test (homework pages 7.0).\nWeek 3.0, Question 19.0 — Topic 1.6: Recognize approximate uniformity (homework pages 11.0).\n\n\n\nQuestions by topic\n\n\n\nTopic\nSelected homework questions\n\n\n\n\n1.1\nSee the Practice section in the lesson.\n\n\n1.2\nWeek 2: 1, 3, 4, 6\n\n\n1.3\nWeek 2: 15, 17, 18, 20\n\n\n1.4\nWeek 2: 16, 22, 24, 25\n\n\n1.5\nWeek 3: 10, 16, 17\n\n\n1.6\nWeek 3: 1, 3, 8, 12, 19\n\n\n\n\n\n\nSources\n\nWeek 2 and Week 3 homework supplied by the instructor. Original question numbers and page references are retained.",
     "crumbs": [
-      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Problem Bank</span>"
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Problem Bank</span>"
     ]
   },
   {
@@ -1268,7 +1356,7 @@
     "section": "",
     "text": "Course framework\nThe College Board AP Statistics course framework lists the course topics. The released exam archive provides additional questions and scoring guidelines.",
     "crumbs": [
-      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Sources and study resources</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Sources and study resources</span>"
     ]
   },
   {
@@ -1278,7 +1366,7 @@
     "section": "Datasets",
     "text": "Datasets\n\n\n\nDataset\nMeasurement\nSource\n\n\n\n\nRivers\nMajor North American river lengths, in miles\nR datasets: rivers\n\n\nOld Faithful\nEruption duration, in minutes\nR datasets: faithful\n\n\nIris flowers\nSepal length, in centimetres\nR datasets: iris\n\n\n\nDownload the commute-time data to build a dotplot, stemplot, or histogram.",
     "crumbs": [
-      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Sources and study resources</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Sources and study resources</span>"
     ]
   },
   {
@@ -1288,7 +1376,7 @@
     "section": "Practice",
     "text": "Practice\nUse the Practice section in each lesson to check your understanding. Try a question before opening its solution, then compare both the result and reasoning. The Problem Bank links to selected homework, the expanded question bank reader, and a map of the skills you can review before starting a topic.",
     "crumbs": [
-      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Sources and study resources</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Sources and study resources</span>"
     ]
   },
   {
@@ -1298,7 +1386,7 @@
     "section": "Printing",
     "text": "Printing\nUse your browser’s Print command for a paper copy of a lesson. Open the explanations you wish to include before printing.",
     "crumbs": [
-      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Sources and study resources</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Sources and study resources</span>"
     ]
   }
 ]

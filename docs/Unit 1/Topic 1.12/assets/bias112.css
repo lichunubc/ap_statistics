@@ -1,0 +1,13 @@
+.bias112{max-width:100%;padding:1rem;border:1px solid #a7c9c8;border-radius:.5rem;background:#f2f9f8}
+.bias112-controls{display:flex;flex-wrap:wrap;gap:.75rem;margin-bottom:.7rem}
+.bias112-controls label{display:flex;flex:1 1 14rem;flex-direction:column;gap:.3rem;font-weight:600;min-width:0}
+.bias112 select{max-width:100%;min-width:0;border:1px solid #718b8e;border-radius:.25rem;background:white;padding:.45rem}
+.bias112-actions{display:flex;flex-wrap:wrap;gap:.6rem}
+.bias112-actions button{border:0;border-radius:.3rem;background:#087e83;color:white;cursor:pointer;padding:.5rem .8rem}
+.bias112-actions button:focus-visible,.bias112 select:focus-visible{outline:3px solid #c28c30;outline-offset:2px}
+.bias112-track{height:1.5rem;max-width:100%;background:white;border:1px solid #8ba2a5;border-radius:.2rem;overflow:hidden}
+.bias112-track span{display:block;height:100%}
+.bias112-true{background:#a87627}
+.bias112 [data-b112-bar]{background:#087e83}
+.bias112-graph{margin:.75rem 0}
+@media print{.bias112-actions{display:none}}
