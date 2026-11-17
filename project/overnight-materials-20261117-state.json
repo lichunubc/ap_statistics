@@ -41,7 +41,7 @@
     }
   ],
   "preview_ci_passed": null,
-  "pending": "2.1 preview built; tests not yet evaluated",
+  "pending": "Topic 2.1 and navigation repairs committed on preview; awaiting native CI and live publication verification.",
   "public_safe_derivative": {
     "pdf": "AP_Statistics_2_3_to_2_7_Public_Safe_Study_Guide.pdf",
     "pdf_sha256": "84c4e8c6b5dd745f1055eddc7872eb3bbe16fc705404fdd6123625a738a5170d",
@@ -63,5 +63,12 @@
     "source_package_sha256": "1cdb72104524b3ae63c10565e412b97173168f0dc4108dba44e7711084d690b5",
     "needs_native_quarto_ci": true,
     "needs_live_verification": true
+  },
+  "validation_results": {
+    "first_preview_run": "44070658749",
+    "quarto_render": "passed",
+    "topic_2_1_arithmetic": "passed",
+    "full_regression": "failed (three legacy assumptions of a single published unit)",
+    "repair": "Expanded historical checks to validate Unit 1 and Unit 2, preserving earlier assertions"
   }
 }

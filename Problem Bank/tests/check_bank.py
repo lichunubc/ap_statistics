@@ -97,7 +97,7 @@ try:
                 assert page.locator('#homework-practice').count() == 1
                 assert page.locator('.bank-question[data-loaded=true]').count() == count
                 assert page.locator('.bank-question input:checked').count() == 0
-                assert page.locator('#quarto-sidebar .course-unit-toggle').get_attribute('aria-expanded') == 'false'
+                assert all(page.locator('#quarto-sidebar .course-unit-toggle').nth(i).get_attribute('aria-expanded') == 'false' for i in range(page.locator('#quarto-sidebar .course-unit-toggle').count()))
                 no_overflow(page)
             page.locator('.bank-loader').scroll_into_view_if_needed()
             page.screenshot(path=str(QA / f'bank-synthetic-{width}.png'))
