@@ -156,6 +156,11 @@ jobs:
         env:
           CONDITION26_BASE_URL: ${{ steps.deployment.outputs.page_url }}
         run: python "Unit 2/Topic 2.6/tests/check_condition26_browser.py"
+      - name: Verify live Topic 2.7 browser
+        if: steps.deployment.outcome == 'success'
+        env:
+          EVENT27_BASE_URL: ${{ steps.deployment.outputs.page_url }}
+        run: python "Unit 2/Topic 2.7/tests/check_event27_browser.py"
       - uses: actions/upload-artifact@v4
         if: always()
         with:
