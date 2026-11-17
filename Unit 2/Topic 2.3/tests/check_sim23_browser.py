@@ -62,7 +62,8 @@ try:
   page=context.new_page();page.goto(url,wait_until='domcontentloaded')
   assert page.locator('.original-nojs li').count()==8
   assert 'No trials yet' in page.locator('[data-sim23-status]').inner_text()
-  assert '505/1000' in page.locator('.sim23-static').inner_text()
+  fallback=page.locator('.sim23-static').inner_text().replace(',','')
+  assert '505' in fallback and '1000' in fallback and '0.505' in fallback
   assert not page.evaluate('document.documentElement.scrollWidth > innerWidth+2')
   context.close();br.close()
 finally:
