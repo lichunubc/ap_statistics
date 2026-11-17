@@ -5,7 +5,10 @@
   "invocations_recorded": 1,
   "completed_phases": [
     "main_and_source_inventory",
-    "topic_1_12_preview_candidate"
+    "topic_1_12_preview_candidate",
+    "topic_1_12_published_verified",
+    "source_rights_inventory",
+    "public_safe_guide_compiled"
   ],
   "preview_branch": "preview/overnight-materials-20261117",
   "baseline_main": "afd3ebec03b5c6eed70da3dfacc2ec545751ef3c",
@@ -13,8 +16,13 @@
   "topic_1_12": {
     "ced_page": 50,
     "original_practice_questions": 8,
-    "needs_quarto_ci": true,
-    "needs_live_verification": true
+    "needs_quarto_ci": false,
+    "needs_live_verification": false,
+    "status": "published_verified",
+    "source_commit": "25062896317c7a15aa36718da65c34b3b92f4338",
+    "preview_url": "https://github.com/lichunubc/ap_statistics/actions/runs/44055585734",
+    "production_url": "https://github.com/lichunubc/ap_statistics/actions/runs/44056459782",
+    "live_url": "https://lichunubc.github.io/ap_statistics/Unit%201/Topic%201.12/topic-1-12.html"
   },
   "inventory_sha256": {
     "probability_deck": "95f9c61c4c735e479b6f73b19481f8a714750cb5e4520361ebd074ee2a5ffd19",
@@ -26,15 +34,22 @@
     "teacher assessments and marking guides"
   ],
   "next": [
-    "check preview CI for 1.12",
-    "reconcile Topic 1.13 source",
-    "integrate topics 2.1–2.2",
-    "integrate 2.3–2.7 and latest slides",
+    "reopen latest main and validate Topic 1.12 metadata workflow 44057915060",
+    "complete/reconcile Topic 1.13 using v3 source, excluding Scribbr-credited figure",
+    "integrate approved Topics 2.1–2.2",
+    "integrate 2.3–2.7 and latest 42 slides plus clean guide",
     "final live and privacy audit"
   ],
-  "published_in_this_session": [],
-  "preview_ci_passed": "44055585734; native Quarto and 22/22 check suites",
-  "pending": "production workflow 44056459782 in progress; verify live before marking published",
+  "published_in_this_session": [
+    {
+      "topic": "1.12",
+      "source_commit": "25062896317c7a15aa36718da65c34b3b92f4338",
+      "actions_url": "https://github.com/lichunubc/ap_statistics/actions/runs/44056459782",
+      "live_url": "https://lichunubc.github.io/ap_statistics/Unit%201/Topic%201.12/topic-1-12.html"
+    }
+  ],
+  "preview_ci_passed": "44055585734; native Quarto and 22/22 tests",
+  "pending": "Earliest unfinished topic is 1.13. Fresh main was advanced beyond preview branch by verified source release and metadata. Start next preview branch FROM FRESH MAIN; copy only useful source inventory/clean derivative from this preview, do not replay 1.12 or blindly merge stale generated docs.",
   "public_safe_derivative": {
     "pdf": "AP_Statistics_2_3_to_2_7_Public_Safe_Study_Guide.pdf",
     "pdf_sha256": "015f7fba619f31a361e3469f9d37d993af5236d8e668a8c54abdac0bf9eca719",
@@ -44,5 +59,8 @@
     "figure": "Venn 52 cards moved to nonoverlapping upper-right"
   },
   "source_inventory_file": "project/overnight-materials-20261117-sources.json",
-  "last_fix": "Topic 1.12 browser test replayed same gate->SRS draw sequence after reset rather than comparing different random seeds"
+  "last_fix": "Topic 1.12 browser test replayed same gate->SRS draw sequence after reset rather than comparing different random seeds",
+  "production_verified": "44056459782; both build and deploy including native live Topic 1.12 browser gates succeeded",
+  "metadata_commit": "44955f5f82049307639ace39faac3cd7ec39f93e",
+  "metadata_workflow": "44057915060 (status pending final post-render validation at checkpoint)"
 }
