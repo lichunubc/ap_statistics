@@ -205,9 +205,20 @@
       "ced_printed_pages": [
         62
       ],
-      "status": "preview_candidate",
-      "attempts": 0,
-      "preview_branch": "preview/overnight-20261117-topic-2-1"
+      "status": "published_verified",
+      "attempts": 1,
+      "preview_branch": "preview/overnight-20261117-topic-2-1",
+      "source_commit": "a3526c587f595f03fa877cc27789e284c502142a",
+      "preview_actions_url": "https://github.com/lichunubc/ap_statistics/actions/runs/44073014739",
+      "actions_url": "https://github.com/lichunubc/ap_statistics/actions/runs/44075616080",
+      "live_url": "https://lichunubc.github.io/ap_statistics/Unit%202/Topic%202.1/topic-2-1.html",
+      "verified_on": "2026-11-17",
+      "validation": {
+        "quarto": "preview and production passed",
+        "suite": "26/26 preview checks; 26/26 production checks",
+        "deployment": "Pages and revision-matched live browser gates passed after dynamic Unit 2 live-check repair",
+        "production_sha": "2f4b2061d111be231605c764300c4e1103470a6e"
+      }
     },
     {
       "order": 9,
@@ -215,8 +226,9 @@
       "ced_printed_pages": [
         63
       ],
-      "status": "queued",
-      "attempts": 0
+      "status": "preview_candidate",
+      "attempts": 1,
+      "preview_branch": "preview/overnight-20261117-topic-2-2"
     },
     {
       "order": 10,

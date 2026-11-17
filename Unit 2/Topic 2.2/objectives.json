@@ -1,0 +1,67 @@
+{
+  "topic": "2.2",
+  "title": "Summary Statistics for Two Categorical Variables",
+  "official_title": "Summary Statistics for Two Categorical Variables",
+  "curriculum": "College Board AP Statistics CED effective Fall 2026",
+  "source": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description-effective-fall-2026.pdf",
+  "ced_printed_pages": [
+    63
+  ],
+  "pdf_zero_index_pages": [
+    67
+  ],
+  "learning_objectives": [
+    "2.2.A",
+    "2.2.B",
+    "2.2.C"
+  ],
+  "essential_knowledge": [
+    "2.2.A.1",
+    "2.2.A.2",
+    "2.2.A.3",
+    "2.2.B.1",
+    "2.2.C.1"
+  ],
+  "skills": [
+    "3.B",
+    "4.A",
+    "4.B"
+  ],
+  "coverage": [
+    {
+      "section": "#table22",
+      "ids": [
+        "2.2.A.1"
+      ]
+    },
+    {
+      "section": "#rules22",
+      "ids": [
+        "2.2.A.1",
+        "2.2.A.2",
+        "2.2.A.3"
+      ]
+    },
+    {
+      "section": "#explorer22",
+      "ids": [
+        "2.2.A.1",
+        "2.2.A.2",
+        "2.2.A.3"
+      ]
+    },
+    {
+      "section": "#compare22",
+      "ids": [
+        "2.2.B.1"
+      ]
+    },
+    {
+      "section": "#claim22",
+      "ids": [
+        "2.2.C.1"
+      ]
+    }
+  ],
+  "rights": "Original teacher-authored public-safe content; constructed café data. Private homework excluded."
+}

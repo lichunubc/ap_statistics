@@ -7,7 +7,7 @@ toc: false
 [← All units](../index.qmd)
 
 ::: {.chapter-lead}
-**Available now: Topic 2.1.** Begin with two-way tables and comparative graphical displays; additional Unit 2 topics will appear after verification.
+**Topics 2.1–2.2.** Begin with two-way tables, comparative charts, and relative frequencies; more Unit 2 topics follow after validation.
 :::
 
 ## Choose a topic
@@ -19,6 +19,13 @@ toc: false
 Construct a two-way table from café orders, compare count and percentage bars, read 100% segmented bars and mosaic plots, and justify an association claim.
 
 [Open Topic 2.1 →](<Topic 2.1/topic-2-1.qmd>)
+:::
+::: {.route-card}
+**Topic 2.2 Summary Statistics for Two Categorical Variables**
+
+Learn joint, marginal, and conditional relative frequencies, choose the correct denominator, and interpret associations.
+
+[Open Topic 2.2 →](<Topic 2.2/topic-2-2.qmd>)
 :::
 :::
 

@@ -7,7 +7,9 @@
     "main_and_source_inventory",
     "topic_1_12_preview_candidate",
     "topic_1_13_published_verified",
-    "topic_2_1_source_candidate"
+    "topic_2_1_source_candidate",
+    "topic_2_2_source_candidate",
+    "topic_2_1_published_verified"
   ],
   "preview_branch": "preview/overnight-20261117-topic-2-1",
   "baseline_main": "afd3ebec03b5c6eed70da3dfacc2ec545751ef3c",
@@ -28,10 +30,10 @@
     "teacher assessments and marking guides"
   ],
   "next": [
-    "Validate full preview native Quarto and 2.1 source/interactions; fix real failures without relaxing old tests",
-    "After full preview CI, integrate by safe non-force verified main update, verify production and live revision",
-    "Integrate Topic 2.2 then Topics 2.3–2.7 and public-safe resources",
-    "Final complete coverage and privacy audit"
+    "Run complete preview CI for Topic 2.2, including previous 26 tests and the two new 2.2 checks",
+    "Reconcile generated Docs commit on main without force or overwritten user changes before publication",
+    "Integrate original public-safe lessons 2.3–2.7 and latest 42-slide deck and clean guide",
+    "Final coverage and privacy audit"
   ],
   "published_in_this_session": [
     {
@@ -41,7 +43,7 @@
     }
   ],
   "preview_ci_passed": null,
-  "pending": "Topic 2.1 and navigation repairs committed on preview; awaiting native CI and live publication verification.",
+  "pending": "Topic 2.1 live and verified. Topic 2.2 preview retesting after footer script-path correction.",
   "public_safe_derivative": {
     "pdf": "AP_Statistics_2_3_to_2_7_Public_Safe_Study_Guide.pdf",
     "pdf_sha256": "84c4e8c6b5dd745f1055eddc7872eb3bbe16fc705404fdd6123625a738a5170d",
@@ -57,12 +59,13 @@
     "live_url": "https://lichunubc.github.io/ap_statistics/Unit%201/Topic%201.13/topic-1-13.html"
   },
   "topic_2_1": {
-    "status": "preview_candidate",
-    "source": "Unit 2/Topic 2.1/topic-2-1.qmd",
-    "original_questions": 8,
-    "source_package_sha256": "1cdb72104524b3ae63c10565e412b97173168f0dc4108dba44e7711084d690b5",
-    "needs_native_quarto_ci": true,
-    "needs_live_verification": true
+    "status": "published_verified",
+    "source_commit": "a3526c587f595f03fa877cc27789e284c502142a",
+    "release_sha": "2f4b2061d111be231605c764300c4e1103470a6e",
+    "preview_run": 44073014739,
+    "production_run": 44075616080,
+    "live_url": "https://lichunubc.github.io/ap_statistics/Unit%202/Topic%202.1/topic-2-1.html",
+    "test_count": 26
   },
   "validation_results": {
     "first_preview_run": "44070658749",
@@ -70,5 +73,12 @@
     "topic_2_1_arithmetic": "passed",
     "full_regression": "failed (three legacy assumptions of a single published unit)",
     "repair": "Expanded historical checks to validate Unit 1 and Unit 2, preserving earlier assertions"
+  },
+  "topic_2_2": {
+    "status": "preview_candidate_not_live",
+    "branch": "preview/overnight-20261117-topic-2-2",
+    "source_commit": "3e05005cee0f8fac38443161d424cba6c07ada36",
+    "practice_count": 8,
+    "validation": "First native preview run44076002288 failed global relative22.js path; source/math/practice and dedicated browser checks passed. Fixed footer to resolve script URL from its CSS path; retest pending."
   }
 }
