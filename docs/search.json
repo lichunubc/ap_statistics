@@ -1393,7 +1393,7 @@
     "href": "Unit 2/unit-2.html#choose-a-topic",
     "title": "Unit 2: Probability, Random Variables, and Probability Distributions",
     "section": "",
-    "text": "Topic 2.1 Tabular and Graphical Representations for the Distributions of Two Categorical Variables\nConstruct a two-way table from café orders, compare count and percentage bars, read 100% segmented bars and mosaic plots, and justify an association claim.\nOpen Topic 2.1 →\n\n\nTopic 2.2 Summary Statistics for Two Categorical Variables\nLearn joint, marginal, and conditional relative frequencies, choose the correct denominator, and interpret associations.\nOpen Topic 2.2 →\n\n\nTopic 2.3 Estimating Probabilities Using Simulation\nModel fair random events, define a complete trial, run an interactive three-toss simulation, and interpret long-run relative frequency.\nOpen Topic 2.3 →\n\n\nTopic 2.4 Introduction to Probability\nCalculate sample-space probabilities and complements, and explore favorable die outcomes.\nOpen Topic 2.4 →",
+    "text": "Topic 2.1 Tabular and Graphical Representations for the Distributions of Two Categorical Variables\nConstruct a two-way table from café orders, compare count and percentage bars, read 100% segmented bars and mosaic plots, and justify an association claim.\nOpen Topic 2.1 →\n\n\nTopic 2.2 Summary Statistics for Two Categorical Variables\nLearn joint, marginal, and conditional relative frequencies, choose the correct denominator, and interpret associations.\nOpen Topic 2.2 →\n\n\nTopic 2.3 Estimating Probabilities Using Simulation\nModel fair random events, define a complete trial, run an interactive three-toss simulation, and interpret long-run relative frequency.\nOpen Topic 2.3 →\n\n\nTopic 2.4 Introduction to Probability\nCalculate sample-space probabilities and complements, and explore favorable die outcomes.\nOpen Topic 2.4 →\n\n\nTopic 2.5 Mutually Exclusive Events\nIdentify outcomes in intersections, find joint probabilities, and justify whether events can occur together.\nOpen Topic 2.5 →",
     "crumbs": [
       "Unit 2: Probability, Random Variables, and Probability Distributions"
     ]
@@ -1729,6 +1729,83 @@
     ]
   },
   {
+    "objectID": "Unit 2/Topic 2.5/topic-2-5.html",
+    "href": "Unit 2/Topic 2.5/topic-2-5.html",
+    "title": "Topic 2.5 Mutually Exclusive Events",
+    "section": "",
+    "text": "The intersection: “A and B”\nTwo events are mutually exclusive (also called disjoint) when they cannot happen together in one complete trial. To decide this, look for outcomes that belong to both events.\nSuppose one fair six-sided die is rolled. Define\nA={2,4,6}(even),B={4,5,6}(at least 4).\nA=\\{2,4,6\\}\\quad\\text{(even)},\\qquad\nB=\\{4,5,6\\}\\quad\\text{(at least 4)}.\nThe intersection A∩BA\\cap B contains the outcomes satisfying both conditions. Here A∩B={4,6}A\\cap B=\\{4,6\\}, so the joint probability is\nP(A∩B)=26=13.\nP(A\\cap B)=\\frac{2}{6}=\\frac13.\nThe numerator counts the outcomes in both sets; the denominator counts all six equally likely die faces. Joint probability is not the conditional probability P(A∣B)P(A\\mid B): a conditional probability uses the restricted group after the vertical bar.\nIn a two-way frequency table, the intersection is the count in the cell where the events meet, divided by the entire table total when one observation is selected uniformly. For example, among 80 completed orders, suppose 12 are both mobile orders and hot drinks. The joint probability is 12/80=0.1512/80=0.15, not 12/(all mobile orders)12/(\\text{all mobile orders}).",
+    "crumbs": [
+      "Unit 2: Probability, Random Variables, and Probability Distributions",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Topic 2.5 Mutually Exclusive Events</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 2/Topic 2.5/topic-2-5.html#disjoint25",
+    "href": "Unit 2/Topic 2.5/topic-2-5.html#disjoint25",
+    "title": "Topic 2.5 Mutually Exclusive Events",
+    "section": "Prove whether the events are disjoint",
+    "text": "Prove whether the events are disjoint\nEvents AA and BB are mutually exclusive when no outcome can satisfy both. In the discrete probability models used here, this corresponds to\nP(A∩B)=0.\n\\boxed{P(A\\cap B)=0.}\n\nFor one die roll, let C={1,3,5}C=\\{1,3,5\\} (odd). Since an outcome cannot be even and odd at the same time, A∩C=⌀A\\cap C=\\varnothing, so P(A∩C)=0P(A\\cap C)=0. By contrast, even and at least 4 are not disjoint: 44 and 66 satisfy both.\nName the complete trial. On two coin tosses, “first toss is heads” and “second toss is tails” can happen together: HTHT belongs to both. Different event descriptions do not automatically mean no overlap.",
+    "crumbs": [
+      "Unit 2: Probability, Random Variables, and Probability Distributions",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Topic 2.5 Mutually Exclusive Events</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 2/Topic 2.5/topic-2-5.html#explorer25",
+    "href": "Unit 2/Topic 2.5/topic-2-5.html#explorer25",
+    "title": "Topic 2.5 Mutually Exclusive Events",
+    "section": "Explore overlapping and disjoint events",
+    "text": "Explore overlapping and disjoint events\nFor one fair die, select two event descriptions. The six boxes represent equally likely elementary outcomes. A face can belong to AA, BB, both, or neither. Predict the overlap before selecting a pair.\n\n  \n    Even / Odd\n    Even / At least 4\n    At most 2 / At least 5\n    At most 2 / Even\n    Reset\n  \n  A onlyB onlyBoth A and BNeither\n  \n    123456\n  \n  No pair selected. Choose a pair to classify the overlap.\n  \n    Intersection: —\n    Joint probability: —\n    Mutually exclusive? —\n  \n  Without JavaScript: even {2,4,6} and odd {1,3,5} do not overlap; even and at least 4 share {4,6}, with joint probability 2/6.\n\nThe diagram reports membership, not geometric probability area. A pair is disjoint if and only if the joint probability shown is zero for this die model.",
+    "crumbs": [
+      "Unit 2: Probability, Random Variables, and Probability Distributions",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Topic 2.5 Mutually Exclusive Events</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 2/Topic 2.5/topic-2-5.html#examples25",
+    "href": "Unit 2/Topic 2.5/topic-2-5.html#examples25",
+    "title": "Topic 2.5 Mutually Exclusive Events",
+    "section": "Worked examples: justify your conclusion",
+    "text": "Worked examples: justify your conclusion\nExample 1: One card. A standard deck has 52 cards. Let HH mean a heart and KK mean a king. The king of hearts is in both events:\nP(H∩K)=152&gt;0.\nP(H\\cap K)=\\frac{1}{52}&gt;0.\n\nTherefore, HH and KK are not mutually exclusive. A Venn diagram would place the king of hearts in the overlapping region.\nExample 2: One selected school lunch. Suppose students choose exactly one side, fruit or chips. Define FF as fruit chosen and CC as chips chosen. By the stated rule, no student chooses both sides on the same lunch: P(F∩C)=0P(F\\cap C)=0. Thus the events are mutually exclusive. If the cafeteria allowed students to select both, the conclusion could change; check the sampling rule.\nExample 3: Two independent tosses. The sample space is {HH,HT,TH,TT}\\{HH,HT,TH,TT\\}. Let AA be first toss heads, BB be second toss tails. Then A={HH,HT}A=\\{HH,HT\\} and B={HT,TT}B=\\{HT,TT\\}. Their intersection is {HT}\\{HT\\}:\nP(A∩B)=14&gt;0.\nP(A\\cap B)=\\frac14&gt;0.\n\nThey are not mutually exclusive, even though they concern two different tosses.",
+    "crumbs": [
+      "Unit 2: Probability, Random Variables, and Probability Distributions",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Topic 2.5 Mutually Exclusive Events</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 2/Topic 2.5/topic-2-5.html#reason25",
+    "href": "Unit 2/Topic 2.5/topic-2-5.html#reason25",
+    "title": "Topic 2.5 Mutually Exclusive Events",
+    "section": "How to explain a claim",
+    "text": "How to explain a claim\nAn AP-level justification should define the events in context, identify whether a common outcome is possible, and then give the joint probability as evidence. For instance: The two events are not mutually exclusive because a roll of 4 or 6 satisfies both conditions, so P(A∩B)=2/6&gt;0P(A\\cap B)=2/6&gt;0.\nWhen a problem gives a two-way table, first find the both cell; do not confuse it with either row/column total. When a model gives event probabilities directly, an explicitly stated P(A∩B)&gt;0P(A\\cap B)&gt;0 proves the events are not disjoint.\nThe distinction between mutually exclusive and independent events will be developed in Topic 2.7. They answer different questions; do not use “independent” as a synonym for “no overlap.”",
+    "crumbs": [
+      "Unit 2: Probability, Random Variables, and Probability Distributions",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Topic 2.5 Mutually Exclusive Events</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 2/Topic 2.5/topic-2-5.html#errors25",
+    "href": "Unit 2/Topic 2.5/topic-2-5.html#errors25",
+    "title": "Topic 2.5 Mutually Exclusive Events",
+    "section": "Common errors",
+    "text": "Common errors\n\nCalling events disjoint merely because their names differ\nCounting AA and BB separately instead of finding A∩BA\\cap B\nMixing up joint probability and conditional probability\nFailing to specify whether one trial is one roll, a pair of tosses, or one selected individual\nTreating drawn Venn-circle areas as numerical probabilities without supplied counts",
+    "crumbs": [
+      "Unit 2: Probability, Random Variables, and Probability Distributions",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Topic 2.5 Mutually Exclusive Events</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 2/Topic 2.5/topic-2-5.html#practice25",
+    "href": "Unit 2/Topic 2.5/topic-2-5.html#practice25",
+    "title": "Topic 2.5 Mutually Exclusive Events",
+    "section": "Practice",
+    "text": "Practice\n\nLoading practice…\n\nQuestion 1One fair die is rolled. Let A be even and B be odd. Which statement\nis correct?\nA. A and B are disjoint because P(A and B)=0.\nB. A and B overlap on face 2.\nC. P(A and B)=1/2.\nD. A and B are disjoint because their individual probabilities are\nequal.\nShow solutionEven={2,4,6}, odd={1,3,5}; no face belongs to both, so the\nintersection is empty and its probability is 0.\n\nQuestion 2One fair die is rolled. Let A mean even and B mean at least 4. What\nis P(A and B)?\nA. 0\nB. 1/6\nC. 1/3\nD. 1/2\nShow solutionThe shared faces are 4 and 6. Both occur on 2 of 6 equally likely\noutcomes, so P(A and B)=2/6=1/3.\n\nQuestion 3A standard 52-card deck has four kings. Events H=draw a heart and\nK=draw a king. Are H and K disjoint?\nA. Yes, because there are more hearts than kings.\nB. No, because the king of hearts satisfies both.\nC. Yes, because just one card belongs to both.\nD. No, because all four kings are hearts.\nShow solutionThe king of hearts lies in the intersection, giving P(H and\nK)=1/52&gt;0. The events are not disjoint.\n\nQuestion 4An event records one purchased ticket from 120 tickets. 18 tickets\nare both weekday tickets and discounted tickets. What is the joint\nprobability of weekday and discounted?\nA. 18/120\nB. 18/(all weekday tickets)\nC. 18/(all discounted tickets)\nD. 0\nShow solutionP(weekday and discounted)=18/120=0.15. The condition does not\nrestrict the sample space, so the denominator is all tickets.\n\nQuestion 5For a particular lunch, each diner chooses exactly one of two\nincluded sides: fruit or chips. Can ‘fruit selected’ and ‘chips\nselected’ be mutually exclusive?\nA. No, because both sides are served in the cafeteria.\nB. No, because both can be chosen by different diners.\nC. Yes, because each selected diner chooses exactly one side.\nD. Yes, because their probabilities must both be 1/2.\nShow solutionBecause each diner selects exactly one side, one selection cannot\nsatisfy both descriptions. Their intersection is empty and\nP(both)=0.\n\nQuestion 6A fair coin is tossed twice. A=first toss heads and B=second toss\ntails. Which ordered result is in A and B?\nA. HH\nB. HT\nC. TH\nD. TT\nShow solutionHT satisfies both descriptions. Thus P(A and B)=1/4 and these events\nare not disjoint.\n\nQuestion 7Suppose P(A)=0.45, P(B)=0.35, and P(A and B)=0.08. Which conclusion\nis supported?\nA. A and B are disjoint.\nB. A and B must be identical.\nC. A and B are not disjoint.\nD. The probabilities are invalid because their sum is greater than\n1.\nShow solutionSince P(A and B)=0.08&gt;0, the events can occur together and are not\nmutually exclusive.\n\nQuestion 8For one fair die, A={1,2} and B={2,3,4}. What is P(A and B)?\nA. 0\nB. 1/6\nC. 2/6\nD. 3/6\nShow solutionThe only shared face is 2, so P(A and B)=1/6; therefore the events\nare not disjoint.\n\n\n\n\nSources\n\n\nCollege Board, AP Statistics Course and Exam Description, effective Fall 2026, Topic 2.5, printed page 66. Examples and practice are original classroom material.",
+    "crumbs": [
+      "Unit 2: Probability, Random Variables, and Probability Distributions",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Topic 2.5 Mutually Exclusive Events</span>"
+    ]
+  },
+  {
     "objectID": "Unit 3/unit-3.html",
     "href": "Unit 3/unit-3.html",
     "title": "Unit 3: Inference for Categorical Data: Proportions",
@@ -1765,7 +1842,7 @@
     "section": "",
     "text": "Expanded question bank\nOpen the expanded bank reader and choose your authorized ap_statistics_question_bank.json file. Filter by topic, source, or question type, then try a question before revealing its answer. The reader opens the file on your device. If your package includes figures, extract it first and select the extracted assets folder in the reader.",
     "crumbs": [
-      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Problem Bank</span>"
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Problem Bank</span>"
     ]
   },
   {
@@ -1775,7 +1852,7 @@
     "section": "Skill dependency map",
     "text": "Skill dependency map\nExplore the skill dependency map to see what to review before tackling a topic. Try searching for joint probability, then trace its prerequisites back to reading a two-way table and finding a part-to-whole fraction. The map opens directly and includes explanations and source references for the learning links. Choose Find practice for this skill on a linked skill to open the reader with that skill selected when you load your bank.",
     "crumbs": [
-      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Problem Bank</span>"
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Problem Bank</span>"
     ]
   },
   {
@@ -1785,7 +1862,7 @@
     "section": "Selected homework",
     "text": "Selected homework\nPractise 20 questions from the Week 2 and Week 3 homework, organized by topic.\n\nOpen your class question file\nOpen mhs-week-2-3.practice.json, provided by your teacher, using the control below. The questions and diagrams will appear here and in the Selected homework practice section of the relevant lessons. Choose an answer, check your reasoning, and open the solution when ready.\n\nOpen your class question file to practise the selected homework questions below.\nWeek 2.0, Question 1.0 — Topic 1.2: Continuous measurements versus counts (homework pages 1.0).\nWeek 2.0, Question 3.0 — Topic 1.2: A quantitative variable among categorical choices (homework pages 1.0).\nWeek 2.0, Question 4.0 — Topic 1.2: How the recording rule changes the variable type (homework pages 2.0).\nWeek 2.0, Question 6.0 — Topic 1.2: Category observations are not category counts (homework pages 3.0).\nWeek 2.0, Question 15.0 — Topic 1.3: Validate a relative-frequency table (homework pages 8.0, 9.0, 10.0).\nWeek 2.0, Question 17.0 — Topic 1.3: A percentage does not determine an absolute count (homework pages 12.0).\nWeek 2.0, Question 18.0 — Topic 1.3: Check a claim against a frequency table (homework pages 13.0).\nWeek 2.0, Question 20.0 — Topic 1.3: Combine categories using the correct denominator (homework pages 14.0).\nWeek 2.0, Question 16.0 — Topic 1.4: Compare rates without confusing them with counts (homework pages 11.0).\nWeek 2.0, Question 22.0 — Topic 1.4: Read a pie chart as parts of one whole (homework pages 15.0).\nWeek 2.0, Question 24.0 — Topic 1.4: Convert chart proportions to counts when n is known (homework pages 16.0).\nWeek 2.0, Question 25.0 — Topic 1.4: Use the number of games as the percentage denominator (homework pages 17.0).\nWeek 3.0, Question 10.0 — Topic 1.5: What changing histogram bin width preserves (homework pages 5.0).\nWeek 3.0, Question 16.0 — Topic 1.5: Read a split stem-and-leaf display (homework pages 8.0).\nWeek 3.0, Question 17.0 — Topic 1.5: Construct a stemplot without losing repeats (homework pages 9.0, 10.0).\nWeek 3.0, Question 1.0 — Topic 1.6: Compare tails in a back-to-back stemplot (homework pages 1.0).\nWeek 3.0, Question 3.0 — Topic 1.6: Describe shape and features in a dotplot (homework pages 2.0).\nWeek 3.0, Question 8.0 — Topic 1.6: Identify skewness from a histogram tail (homework pages 4.0).\nWeek 3.0, Question 12.0 — Topic 1.6: Distinguish a visual potential outlier from a formal test (homework pages 7.0).\nWeek 3.0, Question 19.0 — Topic 1.6: Recognize approximate uniformity (homework pages 11.0).\n\n\n\nQuestions by topic\n\n\n\nTopic\nSelected homework questions\n\n\n\n\n1.1\nSee the Practice section in the lesson.\n\n\n1.2\nWeek 2: 1, 3, 4, 6\n\n\n1.3\nWeek 2: 15, 17, 18, 20\n\n\n1.4\nWeek 2: 16, 22, 24, 25\n\n\n1.5\nWeek 3: 10, 16, 17\n\n\n1.6\nWeek 3: 1, 3, 8, 12, 19\n\n\n\n\n\n\nSources\n\nWeek 2 and Week 3 homework supplied by the instructor. Original question numbers and page references are retained.",
     "crumbs": [
-      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Problem Bank</span>"
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Problem Bank</span>"
     ]
   },
   {
@@ -1795,7 +1872,7 @@
     "section": "",
     "text": "Course framework\nThe College Board AP Statistics course framework lists the course topics. The released exam archive provides additional questions and scoring guidelines.",
     "crumbs": [
-      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Sources and study resources</span>"
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Sources and study resources</span>"
     ]
   },
   {
@@ -1805,7 +1882,7 @@
     "section": "Datasets",
     "text": "Datasets\n\n\n\nDataset\nMeasurement\nSource\n\n\n\n\nRivers\nMajor North American river lengths, in miles\nR datasets: rivers\n\n\nOld Faithful\nEruption duration, in minutes\nR datasets: faithful\n\n\nIris flowers\nSepal length, in centimetres\nR datasets: iris\n\n\n\nDownload the commute-time data to build a dotplot, stemplot, or histogram.",
     "crumbs": [
-      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Sources and study resources</span>"
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Sources and study resources</span>"
     ]
   },
   {
@@ -1815,7 +1892,7 @@
     "section": "Practice",
     "text": "Practice\nUse the Practice section in each lesson to check your understanding. Try a question before opening its solution, then compare both the result and reasoning. The Problem Bank links to selected homework, the expanded question bank reader, and a map of the skills you can review before starting a topic.",
     "crumbs": [
-      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Sources and study resources</span>"
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Sources and study resources</span>"
     ]
   },
   {
@@ -1825,7 +1902,7 @@
     "section": "Printing",
     "text": "Printing\nUse your browser’s Print command for a paper copy of a lesson. Open the explanations you wish to include before printing.",
     "crumbs": [
-      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Sources and study resources</span>"
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Sources and study resources</span>"
     ]
   }
 ]
