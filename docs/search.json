@@ -24,7 +24,7 @@
     "href": "index.html#choose-a-unit",
     "title": "AP Statistics: Learning from Data",
     "section": "Choose a unit",
-    "text": "Choose a unit\nOpen a unit to see its topics. In the sidebar, use the arrow beside a unit to show or hide its topics. Topics stay collapsed until you open them.\n\n\nUnit 1: Exploring One-Variable Data and Collecting Data\nExplore available topics\nBrowse the available lessons, interactive activities, and worked practice.\n\n\nUnit 2: Probability, Random Variables, and Probability Distributions\nTopics 2.1–2.2 available\nStudy two-way tables, comparisons, relative frequencies and original practice.\n\n\nUnit 3: Inference for Categorical Data: Proportions\nUnder construction\nA place for future lessons. No topics have been published yet.\n\n\nUnit 4: Inference for Quantitative Data: Means\nUnder construction\nA place for future lessons. No topics have been published yet.\n\n\nUnit 5: Regression Analysis\nUnder construction\nA place for future lessons. No topics have been published yet.",
+    "text": "Choose a unit\nOpen a unit to see its topics. In the sidebar, use the arrow beside a unit to show or hide its topics. Topics stay collapsed until you open them.\n\n\nUnit 1: Exploring One-Variable Data and Collecting Data\nExplore available topics\nBrowse the available lessons, interactive activities, and worked practice.\n\n\nUnit 2: Probability, Random Variables, and Probability Distributions\nTopics 2.1–2.3 available\nStudy two-way tables, relative frequencies, probability simulations and original practice.\n\n\nUnit 3: Inference for Categorical Data: Proportions\nUnder construction\nA place for future lessons. No topics have been published yet.\n\n\nUnit 4: Inference for Quantitative Data: Means\nUnder construction\nA place for future lessons. No topics have been published yet.\n\n\nUnit 5: Regression Analysis\nUnder construction\nA place for future lessons. No topics have been published yet.",
     "crumbs": [
       "Welcome"
     ]
@@ -1393,7 +1393,7 @@
     "href": "Unit 2/unit-2.html#choose-a-topic",
     "title": "Unit 2: Probability, Random Variables, and Probability Distributions",
     "section": "",
-    "text": "Topic 2.1 Tabular and Graphical Representations for the Distributions of Two Categorical Variables\nConstruct a two-way table from café orders, compare count and percentage bars, read 100% segmented bars and mosaic plots, and justify an association claim.\nOpen Topic 2.1 →\n\n\nTopic 2.2 Summary Statistics for Two Categorical Variables\nLearn joint, marginal, and conditional relative frequencies, choose the correct denominator, and interpret associations.\nOpen Topic 2.2 →",
+    "text": "Topic 2.1 Tabular and Graphical Representations for the Distributions of Two Categorical Variables\nConstruct a two-way table from café orders, compare count and percentage bars, read 100% segmented bars and mosaic plots, and justify an association claim.\nOpen Topic 2.1 →\n\n\nTopic 2.2 Summary Statistics for Two Categorical Variables\nLearn joint, marginal, and conditional relative frequencies, choose the correct denominator, and interpret associations.\nOpen Topic 2.2 →\n\n\nTopic 2.3 Estimating Probabilities Using Simulation\nModel fair random events, define a complete trial, run an interactive three-toss simulation, and interpret long-run relative frequency.\nOpen Topic 2.3 →",
     "crumbs": [
       "Unit 2: Probability, Random Variables, and Probability Distributions"
     ]
@@ -1575,6 +1575,83 @@
     ]
   },
   {
+    "objectID": "Unit 2/Topic 2.3/topic-2-3.html",
+    "href": "Unit 2/Topic 2.3/topic-2-3.html",
+    "title": "Topic 2.3 Estimating Probabilities Using Simulation",
+    "section": "",
+    "text": "From a fair coin to a probability model\nWhen a random process is repeated, the result of any one trial is uncertain, but the fraction of trials producing a particular event can reveal a stable long-run pattern. Simulation lets us imitate a random process many times and estimate the probability of an event.\nFor one fair coin toss, the possible outcomes are HH (heads) and TT (tails), and each has probability 1/21/2. For a fair six-sided die, the possibilities are 1,2,3,4,5,61,2,3,4,5,6 and each has probability 1/61/6. Fairness is an assumption about the device; not every random process has equally likely outcomes.\nThe sample space SS is the set of all possible outcomes of a complete trial. For one coin toss, S={H,T}S=\\{H,T\\}. For one die roll, S={1,2,3,4,5,6}S=\\{1,2,3,4,5,6\\}. If we toss a coin twice and preserve order, S={HH,HT,TH,TT}S=\\{HH,HT,TH,TT\\}.\nAn event is a collection of outcomes from the sample space. For three independent coin tosses, consider the event “at least two heads”:\nS={HHH,HHT,HTH,HTT,THH,THT,TTH,TTT},E={HHH,HHT,HTH,THH}.\n\\begin{aligned}\nS&=\\{HHH,HHT,HTH,HTT,THH,THT,TTH,TTT\\},\\\\\nE&=\\{HHH,HHT,HTH,THH\\}.\n\\end{aligned}\nFor this fair, independent model all eight three-toss sequences are equally likely. Thus, as a check on our simulation, P(E)=4/8=0.5P(E)=4/8=0.5. This exact answer is not needed to perform the simulation.",
+    "crumbs": [
+      "Unit 2: Probability, Random Variables, and Probability Distributions",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Topic 2.3 Estimating Probabilities Using Simulation</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 2/Topic 2.3/topic-2-3.html#design23",
+    "href": "Unit 2/Topic 2.3/topic-2-3.html#design23",
+    "title": "Topic 2.3 Estimating Probabilities Using Simulation",
+    "section": "Design a reproducible simulation",
+    "text": "Design a reproducible simulation\nThe first task is to decide what one complete trial represents. Here, one trial means three tosses, not one. Repeating the trial does not mean repeating individual heads within a successful group.\n\n\n\n\n\n\n\nStep\nThree-toss simulation design\n\n\n\n\nState the model\nGenerate three independent fair H/TH/T outcomes.\n\n\nIdentify the event\nSuccess means the three tosses contain at least two heads.\n\n\nComplete one trial\nToss three times, in order, and record the sequence and success/failure.\n\n\nRepeat\nBegin a new independent three-toss group for each new trial.\n\n\nEstimate\nDivide successful complete groups by all completed groups.\n\n\n\nIf RR complete trials are simulated and rr satisfy the event, the estimated probability is\nP(E)̂=rR.\n\\widehat{P(E)}=\\frac{r}{R}.\n\nHere, P(E)̂\\widehat{P(E)} is an estimate, not a guarantee or an exact proof about the random process.\n\n\nWhy is the estimator a fraction of complete trials?\n\nThe proportion of observed successes is the empirical relative frequency of the event. Every complete trial has one indicator—11 if the event happens and 00 if it does not. Summing these indicators counts rr successful trials, and dividing by the number of completed trials RR gives r/Rr/R. Dividing by the number of individual tosses would change the unit of observation and answer a different question.",
+    "crumbs": [
+      "Unit 2: Probability, Random Variables, and Probability Distributions",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Topic 2.3 Estimating Probabilities Using Simulation</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 2/Topic 2.3/topic-2-3.html#explorer23",
+    "href": "Unit 2/Topic 2.3/topic-2-3.html#explorer23",
+    "title": "Topic 2.3 Estimating Probabilities Using Simulation",
+    "section": "Simulate the three-toss experiment",
+    "text": "Simulate the three-toss experiment\nPredict what will happen after 10 complete trials. Then try 10, 100, and 1,000, and compare the running proportion with the model’s 0.50.5. Reset begins a fresh run; the simulation does not begin until you choose to run it.\n\n  \n    Run 1 trial\n    Run 10\n    Run 100\n    Run 1,000\n    Reset\n  \n  No trials yet. Press a Run button to start.\n  \n    Complete trials: 0\n    Successes: 0\n    Estimated probability: —\n    Model probability: 0.500\n  \n  \n    Run the simulation to display the relative-frequency graph.\n  \n  Last complete trial: none yet.\n  Without JavaScript, the exact eight-sequence model above gives four successful sequences, or 0.5. A separate fixed 1,000-trial example recorded 505 successes, giving a simulated estimate of 505/1,000 = 0.505.\n\nDifferent runs will produce different estimates. A finite estimate such as 505/1000=0.505505/1000=0.505 does not contradict the exact model value 0.5000.500.",
+    "crumbs": [
+      "Unit 2: Probability, Random Variables, and Probability Distributions",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Topic 2.3 Estimating Probabilities Using Simulation</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 2/Topic 2.3/topic-2-3.html#longrun23",
+    "href": "Unit 2/Topic 2.3/topic-2-3.html#longrun23",
+    "title": "Topic 2.3 Estimating Probabilities Using Simulation",
+    "section": "The law of large numbers",
+    "text": "The law of large numbers\nFor independent repetitions with an unchanging event probability, the law of large numbers says that as the number of trials grows, the long-run relative frequency approaches the event’s probability. The law does not require the estimate to improve after every new trial.\nFor example, a recorded 1,000-toss simulation of one fair coin gave 245 heads after 500 tosses (0.4900.490) and 482 heads after 1,000 tosses (0.4820.482). The estimate at 1,000 tosses happened to be a little farther from 0.50.5 than the estimate at 500 tosses. That is possible.\nAvoid the gambler’s fallacy: if a fair coin has landed heads six times, the next toss is still heads with probability 1/21/2, provided tosses are independent. Chance has no “debt” to pay back.\n\n\nOptional enrichment — what does convergence mean?\n\nFor independent identically distributed success indicators with probability pp, the mean of the indicators is the success proportion. Its expected value is pp, while its variance is p(1−p)/Rp(1-p)/R. As RR increases, this variance shrinks. This mathematical explanation is beyond the required probability-estimation procedure; it does not say every new observation moves the running mean closer to pp.",
+    "crumbs": [
+      "Unit 2: Probability, Random Variables, and Probability Distributions",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Topic 2.3 Estimating Probabilities Using Simulation</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 2/Topic 2.3/topic-2-3.html#device23",
+    "href": "Unit 2/Topic 2.3/topic-2-3.html#device23",
+    "title": "Topic 2.3 Estimating Probabilities Using Simulation",
+    "section": "Match a simulation device to the process",
+    "text": "Match a simulation device to the process\nA simulator is only useful when the chance of success on one simulated trial matches the model. If an event occurs on 30% of independent spins, a uniform random digit from 0 to 9 can represent a prize with digits 0, 1, or 2 (three of ten) and no prize with digits 3–9. Drawing a single digit models one spin. To model at least one prize in four spins, generate four independent digits for each complete trial and record a single success/failure for that four-digit group.\nThe simulation procedure must match the setting. Sampling without replacement usually changes probabilities after the first draw; do not automatically use the same factors as sampling with replacement. If the original events are independent, allow independently generated repetitions—even repeated digits.",
+    "crumbs": [
+      "Unit 2: Probability, Random Variables, and Probability Distributions",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Topic 2.3 Estimating Probabilities Using Simulation</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 2/Topic 2.3/topic-2-3.html#interpret23",
+    "href": "Unit 2/Topic 2.3/topic-2-3.html#interpret23",
+    "title": "Topic 2.3 Estimating Probabilities Using Simulation",
+    "section": "Interpret and audit a simulation",
+    "text": "Interpret and audit a simulation\nAlways report what the estimate describes in context, including the number of completed trials and the event being estimated. A model estimate is not a promise of an exact count in the next small group. More trials typically stabilize random variation, but cannot correct a mis-specified random device or sampling bias.\nA final checklist: Did you define the complete trial? Does the device give the intended probabilities? Did you count every successful trial once? Is the denominator the number of complete trials? Does the conclusion address the named event?",
+    "crumbs": [
+      "Unit 2: Probability, Random Variables, and Probability Distributions",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Topic 2.3 Estimating Probabilities Using Simulation</span>"
+    ]
+  },
+  {
+    "objectID": "Unit 2/Topic 2.3/topic-2-3.html#practice23",
+    "href": "Unit 2/Topic 2.3/topic-2-3.html#practice23",
+    "title": "Topic 2.3 Estimating Probabilities Using Simulation",
+    "section": "Practice",
+    "text": "Practice\n\nLoading practice…\n\nQuestion 1When one complete trial is three independent fair coin tosses, which\nis one possible outcome of that trial?\nA. A three-letter ordered sequence, such as HTH\nB. An individual result H only\nC. The proportion of heads among 100 tosses\nD. Exactly one head, with no order recorded\nShow solutionAn outcome records the result of one complete three-toss trial. The\nsequence HTH is one of eight ordered outcomes.\n\nQuestion 2A simulation of 600 complete four-spin trials recorded at least one\nprize in 417 groups. What is the estimated probability of that\nevent?\nA. 417/2400\nB. 417/600\nC. 600/417\nD. 417/4\nShow solutionThe event is success of the entire four-spin group. The estimate is\n417/600=0.695, not 417/2400.\n\nQuestion 3An independent fair coin has landed heads seven times in succession.\nWhat is the probability that the next toss is tails?\nA. 1/8\nB. 7/8\nC. 1/2\nD. Greater than 1/2\nShow solutionIndependence means the next toss is unaffected by the previous seven.\nP(Tails)=1/2. The law of large numbers does not force compensation.\n\nQuestion 4A population process has a 30% success probability. Which mapping of\nten equally likely digits is valid?\nA. Use digits 0–2 for success and 3–9 for failure\nB. Use digits 0–3 for success and 4–9 for failure\nC. Use even digits for success and odd digits for failure\nD. Use digit 0 for success and all other digits for failure\nShow solutionExactly three of the ten equally likely digits must signal success,\nso digits 0, 1 and 2 yield 3/10=0.30.\n\nQuestion 5A student simulates 250 trials of two fair dice and counts 37 pairs\nwith sum at least 10. Which calculation estimates the probability of\nthat event?\nA. 37/500\nB. 37/12\nC. 37/250\nD. 250/37\nShow solutionEach trial consists of a pair of rolls. The 37 successful pairs out\nof 250 complete pairs give 37/250=0.148.\n\nQuestion 6Which statement about a larger correctly designed simulation is most\naccurate?\nA. Its estimated probability must become closer to the true value after\nevery new trial\nB. After 1,000 trials, its estimate must equal the model probability\nexactly\nC. A larger number of trials can repair a simulator that uses the wrong\nsuccess probability\nD. Its relative frequency generally stabilizes toward the model\nprobability, but can temporarily move away\nShow solutionThe law of large numbers is a long-run tendency, not a step-by-step\nguarantee. More repetitions reduce random variation but cannot correct a\nwrong model.\n\nQuestion 7A student makes codes 00 through 20 inclusive represent a 20% chance\nusing uniform two-digit numbers 00–99. What is wrong?\nA. It represents 19%, because 00 is not a number\nB. It represents 21%, because 00 through 20 contains 21 equally likely\ncodes\nC. It represents exactly 20%\nD. It represents 2%, because only 00 and 20 count\nShow solutionCount the codes inclusively: 00, 01, …, 20 are 21 of the 100 possible\ncodes, giving 0.21. To model 20%, use 00–19.\n\nQuestion 8Which interpretation properly separates simulation from theoretical\nprobability?\nA. A recorded estimate 0.505 proves the true chance is 0.505\nB. A simulated 505 successes out of 1,000 trials can estimate a\ntheoretical chance of 0.5 without contradicting it\nC. A probability of 0.5 guarantees exactly 500 successes in the next\n1,000 trials\nD. Simulation results can be treated as unbiased even when the random\ndevice has the wrong probabilities\nShow solutionThe estimate 505/1000=0.505 varies randomly around the theoretical\nP=0.5; no finite run is guaranteed to match exactly.\n\n\n\n\nSources\n\n\nCollege Board, AP Statistics Course and Exam Description (effective Fall 2026), Topic 2.3, printed p. 64. The simulation model and illustrative recorded counts come from the Maple Hill School probability teaching materials.",
+    "crumbs": [
+      "Unit 2: Probability, Random Variables, and Probability Distributions",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Topic 2.3 Estimating Probabilities Using Simulation</span>"
+    ]
+  },
+  {
     "objectID": "Unit 3/unit-3.html",
     "href": "Unit 3/unit-3.html",
     "title": "Unit 3: Inference for Categorical Data: Proportions",
@@ -1611,7 +1688,7 @@
     "section": "",
     "text": "Expanded question bank\nOpen the expanded bank reader and choose your authorized ap_statistics_question_bank.json file. Filter by topic, source, or question type, then try a question before revealing its answer. The reader opens the file on your device. If your package includes figures, extract it first and select the extracted assets folder in the reader.",
     "crumbs": [
-      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Problem Bank</span>"
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Problem Bank</span>"
     ]
   },
   {
@@ -1621,7 +1698,7 @@
     "section": "Skill dependency map",
     "text": "Skill dependency map\nExplore the skill dependency map to see what to review before tackling a topic. Try searching for joint probability, then trace its prerequisites back to reading a two-way table and finding a part-to-whole fraction. The map opens directly and includes explanations and source references for the learning links. Choose Find practice for this skill on a linked skill to open the reader with that skill selected when you load your bank.",
     "crumbs": [
-      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Problem Bank</span>"
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Problem Bank</span>"
     ]
   },
   {
@@ -1631,7 +1708,7 @@
     "section": "Selected homework",
     "text": "Selected homework\nPractise 20 questions from the Week 2 and Week 3 homework, organized by topic.\n\nOpen your class question file\nOpen mhs-week-2-3.practice.json, provided by your teacher, using the control below. The questions and diagrams will appear here and in the Selected homework practice section of the relevant lessons. Choose an answer, check your reasoning, and open the solution when ready.\n\nOpen your class question file to practise the selected homework questions below.\nWeek 2.0, Question 1.0 — Topic 1.2: Continuous measurements versus counts (homework pages 1.0).\nWeek 2.0, Question 3.0 — Topic 1.2: A quantitative variable among categorical choices (homework pages 1.0).\nWeek 2.0, Question 4.0 — Topic 1.2: How the recording rule changes the variable type (homework pages 2.0).\nWeek 2.0, Question 6.0 — Topic 1.2: Category observations are not category counts (homework pages 3.0).\nWeek 2.0, Question 15.0 — Topic 1.3: Validate a relative-frequency table (homework pages 8.0, 9.0, 10.0).\nWeek 2.0, Question 17.0 — Topic 1.3: A percentage does not determine an absolute count (homework pages 12.0).\nWeek 2.0, Question 18.0 — Topic 1.3: Check a claim against a frequency table (homework pages 13.0).\nWeek 2.0, Question 20.0 — Topic 1.3: Combine categories using the correct denominator (homework pages 14.0).\nWeek 2.0, Question 16.0 — Topic 1.4: Compare rates without confusing them with counts (homework pages 11.0).\nWeek 2.0, Question 22.0 — Topic 1.4: Read a pie chart as parts of one whole (homework pages 15.0).\nWeek 2.0, Question 24.0 — Topic 1.4: Convert chart proportions to counts when n is known (homework pages 16.0).\nWeek 2.0, Question 25.0 — Topic 1.4: Use the number of games as the percentage denominator (homework pages 17.0).\nWeek 3.0, Question 10.0 — Topic 1.5: What changing histogram bin width preserves (homework pages 5.0).\nWeek 3.0, Question 16.0 — Topic 1.5: Read a split stem-and-leaf display (homework pages 8.0).\nWeek 3.0, Question 17.0 — Topic 1.5: Construct a stemplot without losing repeats (homework pages 9.0, 10.0).\nWeek 3.0, Question 1.0 — Topic 1.6: Compare tails in a back-to-back stemplot (homework pages 1.0).\nWeek 3.0, Question 3.0 — Topic 1.6: Describe shape and features in a dotplot (homework pages 2.0).\nWeek 3.0, Question 8.0 — Topic 1.6: Identify skewness from a histogram tail (homework pages 4.0).\nWeek 3.0, Question 12.0 — Topic 1.6: Distinguish a visual potential outlier from a formal test (homework pages 7.0).\nWeek 3.0, Question 19.0 — Topic 1.6: Recognize approximate uniformity (homework pages 11.0).\n\n\n\nQuestions by topic\n\n\n\nTopic\nSelected homework questions\n\n\n\n\n1.1\nSee the Practice section in the lesson.\n\n\n1.2\nWeek 2: 1, 3, 4, 6\n\n\n1.3\nWeek 2: 15, 17, 18, 20\n\n\n1.4\nWeek 2: 16, 22, 24, 25\n\n\n1.5\nWeek 3: 10, 16, 17\n\n\n1.6\nWeek 3: 1, 3, 8, 12, 19\n\n\n\n\n\n\nSources\n\nWeek 2 and Week 3 homework supplied by the instructor. Original question numbers and page references are retained.",
     "crumbs": [
-      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Problem Bank</span>"
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Problem Bank</span>"
     ]
   },
   {
@@ -1641,7 +1718,7 @@
     "section": "",
     "text": "Course framework\nThe College Board AP Statistics course framework lists the course topics. The released exam archive provides additional questions and scoring guidelines.",
     "crumbs": [
-      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Sources and study resources</span>"
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Sources and study resources</span>"
     ]
   },
   {
@@ -1651,7 +1728,7 @@
     "section": "Datasets",
     "text": "Datasets\n\n\n\nDataset\nMeasurement\nSource\n\n\n\n\nRivers\nMajor North American river lengths, in miles\nR datasets: rivers\n\n\nOld Faithful\nEruption duration, in minutes\nR datasets: faithful\n\n\nIris flowers\nSepal length, in centimetres\nR datasets: iris\n\n\n\nDownload the commute-time data to build a dotplot, stemplot, or histogram.",
     "crumbs": [
-      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Sources and study resources</span>"
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Sources and study resources</span>"
     ]
   },
   {
@@ -1661,7 +1738,7 @@
     "section": "Practice",
     "text": "Practice\nUse the Practice section in each lesson to check your understanding. Try a question before opening its solution, then compare both the result and reasoning. The Problem Bank links to selected homework, the expanded question bank reader, and a map of the skills you can review before starting a topic.",
     "crumbs": [
-      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Sources and study resources</span>"
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Sources and study resources</span>"
     ]
   },
   {
@@ -1671,7 +1748,7 @@
     "section": "Printing",
     "text": "Printing\nUse your browser’s Print command for a paper copy of a lesson. Open the explanations you wish to include before printing.",
     "crumbs": [
-      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Sources and study resources</span>"
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Sources and study resources</span>"
     ]
   }
 ]

@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Topic 2.3 Estimating Probabilities Using Simulation – AP Statistics: Learning from Data</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../Unit%203/unit-3.html" rel="next">
+<link href="../Topic%202.2/topic-2-2.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+
+<link href="../../site_libs/bootstrap/bootstrap-ddd6e44d808b6aa1a5facb21b7a07411.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../Unit%201/Shared/assets/site.css">
+<link rel="stylesheet" href="../../Unit%201/Topic%201.1/assets/foundations.css">
+<link rel="stylesheet" href="../../Unit%201/Topic%201.3/assets/categorical-tables.css">
+<link rel="stylesheet" href="../../Unit%201/Topic%201.4/assets/categorical-charts.css">
+<link rel="stylesheet" href="../../Unit%201/Topic%201.2/assets/variables.css">
+<link rel="stylesheet" href="../../site/assets/navigation.css">
+<link rel="stylesheet" href="../../site/assets/student-presentation.css">
+<link rel="stylesheet" href="../../Problem%20Bank/assets/practice.css">
+<link rel="stylesheet" href="../../Problem%20Bank/assets/original-practice.css">
+<link rel="stylesheet" href="../../Unit%201/Topic%201.7/assets/summary17.css">
+<link rel="stylesheet" href="../../Unit%201/Topic%201.8/assets/box18.css">
+<link rel="stylesheet" href="../../Unit%201/Topic%201.9/assets/compare19.css">
+<link rel="stylesheet" href="../../Unit%201/Topic%201.10/assets/study110.css">
+<link rel="stylesheet" href="../../Unit%201/Topic%201.11/assets/sampling111.css">
+<link rel="stylesheet" href="../../Unit%201/Topic%201.12/assets/bias112.css">
+<link rel="stylesheet" href="../../Unit%201/Topic%201.13/assets/experiment113.css">
+<link rel="stylesheet" href="../Topic%202.1/assets/cafe21.css">
+<link rel="stylesheet" href="../Topic%202.2/assets/relative22.css">
+<link rel="stylesheet" href="assets/sim23.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../unit-2.html">Unit 2: Probability, Random Variables, and Probability Distributions</a></li><li class="breadcrumb-item"><a href="topic-2-3.html"><span class="chapter-title">Topic 2.3 Estimating Probabilities Using Simulation</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../..">Maple Hill School</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Welcome</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../Unit%201/unit-1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Unit 1: Exploring One-Variable Data and Collecting Data</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Unit%201/Topic%201.1/topic-1-1.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Topic 1.1 Introducing Statistics: What Can We Learn from Data?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Unit%201/Topic%201.2/topic-1-2.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Topic 1.2 Variables</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Unit%201/Topic%201.3/topic-1-3.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Topic 1.3 Tabular Representation and Summary Statistics for One Categorical Variable</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Unit%201/Topic%201.4/topic-1-4.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Topic 1.4 Graphical Representations for One Categorical Variable</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Unit%201/Topic%201.5/topic-1-5.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Topic 1.5 Graphical Representations for One Quantitative Variable</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Unit%201/Topic%201.6/topic-1-6.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Topic 1.6 Descriptions for One Quantitative Variable Distributions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Unit%201/Topic%201.7/topic-1-7.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Topic 1.7 Summary Statistics for One Quantitative Variable</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Unit%201/Topic%201.8/topic-1-8.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Topic 1.8 Graphical Representations of Summary Statistics for One Quantitative Variable</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Unit%201/Topic%201.9/topic-1-9.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Topic 1.9 Comparisons of the Distributions for One Quantitative Variable</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Unit%201/Topic%201.10/topic-1-10.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Topic 1.10 The Investigative Question Revisited and Data Collection</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Unit%201/Topic%201.11/topic-1-11.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Topic 1.11 Random Sampling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Unit%201/Topic%201.12/topic-1-12.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Topic 1.12 Potential Problems with Sampling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Unit%201/Topic%201.13/topic-1-13.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Topic 1.13 Experimental Design</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Unit%201/Shared/practice.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Practice and solutions</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../unit-2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Unit 2: Probability, Random Variables, and Probability Distributions</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Topic%202.1/topic-2-1.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Topic 2.1 Tabular and Graphical Representations for the Distributions of Two Categorical Variables</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Topic%202.2/topic-2-2.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Topic 2.2 Summary Statistics for Two Categorical Variables</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="topic-2-3.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Topic 2.3 Estimating Probabilities Using Simulation</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Unit%203/unit-3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Unit 3: Inference for Categorical Data: Proportions</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Unit%204/unit-4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Unit 4: Inference for Quantitative Data: Means</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Unit%205/unit-5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Unit 5: Regression Analysis</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Problem%20Bank/practice.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Problem Bank</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../resources.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sources and study resources</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul class="collapse">
+  <li><a href="#model23" id="toc-model23" class="nav-link active" data-scroll-target="#model23">From a fair coin to a probability model</a></li>
+  <li><a href="#design23" id="toc-design23" class="nav-link" data-scroll-target="#design23">Design a reproducible simulation</a></li>
+  <li><a href="#explorer23" id="toc-explorer23" class="nav-link" data-scroll-target="#explorer23">Simulate the three-toss experiment</a></li>
+  <li><a href="#longrun23" id="toc-longrun23" class="nav-link" data-scroll-target="#longrun23">The law of large numbers</a></li>
+  <li><a href="#device23" id="toc-device23" class="nav-link" data-scroll-target="#device23">Match a simulation device to the process</a></li>
+  <li><a href="#interpret23" id="toc-interpret23" class="nav-link" data-scroll-target="#interpret23">Interpret and audit a simulation</a></li>
+  <li><a href="#practice23" id="toc-practice23" class="nav-link" data-scroll-target="#practice23">Practice</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../unit-2.html">Unit 2: Probability, Random Variables, and Probability Distributions</a></li><li class="breadcrumb-item"><a href="topic-2-3.html"><span class="chapter-title">Topic 2.3 Estimating Probabilities Using Simulation</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-title">Topic 2.3 Estimating Probabilities Using Simulation</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>When a random process is repeated, the result of any one trial is uncertain, but the <strong>fraction of trials producing a particular event</strong> can reveal a stable long-run pattern. Simulation lets us imitate a random process many times and estimate the probability of an event.</p>
+<section id="model23" class="level2">
+<h2 class="anchored" data-anchor-id="model23">From a fair coin to a probability model</h2>
+<p>For one fair coin toss, the possible outcomes are <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>H</mi><annotation encoding="application/x-tex">H</annotation></semantics></math> (heads) and <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math> (tails), and each has probability <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">1/2</annotation></semantics></math>. For a fair six-sided die, the possibilities are <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">1,2,3,4,5,6</annotation></semantics></math> and each has probability <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><mn>6</mn></mrow><annotation encoding="application/x-tex">1/6</annotation></semantics></math>. <strong>Fairness is an assumption about the device</strong>; not every random process has equally likely outcomes.</p>
+<p>The <strong>sample space</strong> <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math> is the set of all possible outcomes of a <em>complete trial</em>. For one coin toss, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mi>H</mi><mo>,</mo><mi>T</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">S=\{H,T\}</annotation></semantics></math>. For one die roll, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>6</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">S=\{1,2,3,4,5,6\}</annotation></semantics></math>. If we toss a coin twice and preserve order, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mi>H</mi><mi>H</mi><mo>,</mo><mi>H</mi><mi>T</mi><mo>,</mo><mi>T</mi><mi>H</mi><mo>,</mo><mi>T</mi><mi>T</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">S=\{HH,HT,TH,TT\}</annotation></semantics></math>.</p>
+<p>An <strong>event</strong> is a collection of outcomes from the sample space. For three independent coin tosses, consider the event “at least two heads”:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><mi>S</mi></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mi>H</mi><mi>H</mi><mi>H</mi><mo>,</mo><mi>H</mi><mi>H</mi><mi>T</mi><mo>,</mo><mi>H</mi><mi>T</mi><mi>H</mi><mo>,</mo><mi>H</mi><mi>T</mi><mi>T</mi><mo>,</mo><mi>T</mi><mi>H</mi><mi>H</mi><mo>,</mo><mi>T</mi><mi>H</mi><mi>T</mi><mo>,</mo><mi>T</mi><mi>T</mi><mi>H</mi><mo>,</mo><mi>T</mi><mi>T</mi><mi>T</mi><mo stretchy="false" form="postfix">}</mo><mo>,</mo></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><mi>E</mi></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mi>H</mi><mi>H</mi><mi>H</mi><mo>,</mo><mi>H</mi><mi>H</mi><mi>T</mi><mo>,</mo><mi>H</mi><mi>T</mi><mi>H</mi><mo>,</mo><mi>T</mi><mi>H</mi><mi>H</mi><mo stretchy="false" form="postfix">}</mo><mi>.</mi></mtd></mtr></mtable><annotation encoding="application/x-tex">
+\begin{aligned}
+S&amp;=\{HHH,HHT,HTH,HTT,THH,THT,TTH,TTT\},\\
+E&amp;=\{HHH,HHT,HTH,THH\}.
+\end{aligned}
+</annotation></semantics></math></p>
+<p>For this <em>fair, independent</em> model all eight three-toss sequences are equally likely. Thus, as a check on our simulation, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false" form="prefix">(</mo><mi>E</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>4</mn><mi>/</mi><mn>8</mn><mo>=</mo><mn>0.5</mn></mrow><annotation encoding="application/x-tex">P(E)=4/8=0.5</annotation></semantics></math>. This exact answer is not needed to <strong>perform</strong> the simulation.</p>
+</section>
+<section id="design23" class="level2">
+<h2 class="anchored" data-anchor-id="design23">Design a reproducible simulation</h2>
+<p>The first task is to decide what <strong>one complete trial</strong> represents. Here, one trial means <strong>three tosses</strong>, not one. Repeating the trial does not mean repeating individual heads within a successful group.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Step</th>
+<th style="text-align: left;">Three-toss simulation design</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">State the model</td>
+<td style="text-align: left;">Generate three independent fair <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mi>/</mi><mi>T</mi></mrow><annotation encoding="application/x-tex">H/T</annotation></semantics></math> outcomes.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Identify the event</td>
+<td style="text-align: left;">Success means the three tosses contain at least two heads.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Complete one trial</td>
+<td style="text-align: left;">Toss three times, in order, and record the sequence and success/failure.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Repeat</td>
+<td style="text-align: left;">Begin a new independent three-toss group for each new trial.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Estimate</td>
+<td style="text-align: left;">Divide successful <em>complete groups</em> by all completed groups.</td>
+</tr>
+</tbody>
+</table>
+<p>If <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math> complete trials are simulated and <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math> satisfy the event, the estimated probability is</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mrow><mi>P</mi><mo stretchy="false" form="prefix">(</mo><mi>E</mi><mo stretchy="false" form="postfix">)</mo></mrow><mo accent="true">̂</mo></mover><mo>=</mo><mfrac><mi>r</mi><mi>R</mi></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\widehat{P(E)}=\frac{r}{R}.
+</annotation></semantics></math></p>
+<p>Here, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mrow><mi>P</mi><mo stretchy="false" form="prefix">(</mo><mi>E</mi><mo stretchy="false" form="postfix">)</mo></mrow><mo accent="true">̂</mo></mover><annotation encoding="application/x-tex">\widehat{P(E)}</annotation></semantics></math> is an <strong>estimate</strong>, not a guarantee or an exact proof about the random process.</p>
+<details>
+<summary>
+Why is the estimator a fraction of complete trials?
+</summary>
+<p>The proportion of observed successes is the empirical relative frequency of the event. Every complete trial has one indicator—<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math> if the event happens and <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn><annotation encoding="application/x-tex">0</annotation></semantics></math> if it does not. Summing these indicators counts <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math> successful trials, and dividing by the number of completed trials <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math> gives <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mi>/</mi><mi>R</mi></mrow><annotation encoding="application/x-tex">r/R</annotation></semantics></math>. Dividing by the number of <em>individual tosses</em> would change the unit of observation and answer a different question.</p>
+</details>
+</section>
+<section id="explorer23" class="level2">
+<h2 class="anchored" data-anchor-id="explorer23">Simulate the three-toss experiment</h2>
+<p>Predict what will happen after 10 complete trials. Then try 10, 100, and 1,000, and compare the running proportion with the model’s <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.5</mn><annotation encoding="application/x-tex">0.5</annotation></semantics></math>. <strong>Reset</strong> begins a fresh run; the simulation does not begin until you choose to run it.</p>
+<div class="sim23" data-sim23="">
+  <div class="sim23-controls" role="group" aria-label="Three-toss probability simulation">
+    <button type="button" data-sim23-n="1">Run 1 trial</button>
+    <button type="button" data-sim23-n="10">Run 10</button>
+    <button type="button" data-sim23-n="100">Run 100</button>
+    <button type="button" data-sim23-n="1000">Run 1,000</button>
+    <button type="button" data-sim23-reset="">Reset</button>
+  </div>
+  <p data-sim23-status="" role="status" aria-live="polite">No trials yet. Press a Run button to start.</p>
+  <div class="sim23-metrics" aria-label="Simulation counts">
+    <p>Complete trials: <strong data-sim23-total="">0</strong></p>
+    <p>Successes: <strong data-sim23-hits="">0</strong></p>
+    <p>Estimated probability: <strong data-sim23-share="">—</strong></p>
+    <p>Model probability: <strong>0.500</strong></p>
+  </div>
+  <div data-sim23-plot="" class="sim23-plot" role="img" aria-label="No simulated trials yet. The graph will display running success frequency after starting.">
+    <p>Run the simulation to display the relative-frequency graph.</p>
+  </div>
+  <p data-sim23-last="">Last complete trial: none yet.</p>
+  <p class="sim23-static">Without JavaScript, the exact eight-sequence model above gives four successful sequences, or 0.5. A separate fixed 1,000-trial example recorded 505 successes, giving a simulated estimate of 505/1,000 = 0.505.</p>
+</div>
+<p>Different runs will produce different estimates. A finite estimate such as <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>505</mn><mi>/</mi><mn>1000</mn><mo>=</mo><mn>0.505</mn></mrow><annotation encoding="application/x-tex">505/1000=0.505</annotation></semantics></math> does not contradict the exact model value <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.500</mn><annotation encoding="application/x-tex">0.500</annotation></semantics></math>.</p>
+</section>
+<section id="longrun23" class="level2">
+<h2 class="anchored" data-anchor-id="longrun23">The law of large numbers</h2>
+<p>For independent repetitions with an unchanging event probability, the <strong>law of large numbers</strong> says that as the number of trials grows, the long-run relative frequency approaches the event’s probability. The law does <em>not</em> require the estimate to improve after every new trial.</p>
+<p>For example, a recorded 1,000-toss simulation of one fair coin gave 245 heads after 500 tosses (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.490</mn><annotation encoding="application/x-tex">0.490</annotation></semantics></math>) and 482 heads after 1,000 tosses (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.482</mn><annotation encoding="application/x-tex">0.482</annotation></semantics></math>). The estimate at 1,000 tosses happened to be a little <strong>farther</strong> from <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.5</mn><annotation encoding="application/x-tex">0.5</annotation></semantics></math> than the estimate at 500 tosses. That is possible.</p>
+<p>Avoid the <strong>gambler’s fallacy</strong>: if a fair coin has landed heads six times, the next toss is still heads with probability <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">1/2</annotation></semantics></math>, provided tosses are independent. Chance has no “debt” to pay back.</p>
+<details>
+<summary>
+Optional enrichment — what does convergence mean?
+</summary>
+<p>For independent identically distributed success indicators with probability <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>, the mean of the indicators is the success proportion. Its expected value is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>, while its variance is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>p</mi><mo stretchy="false" form="postfix">)</mo><mi>/</mi><mi>R</mi></mrow><annotation encoding="application/x-tex">p(1-p)/R</annotation></semantics></math>. As <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math> increases, this variance shrinks. This mathematical explanation is beyond the required probability-estimation procedure; it does not say every new observation moves the running mean closer to <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>.</p>
+</details>
+</section>
+<section id="device23" class="level2">
+<h2 class="anchored" data-anchor-id="device23">Match a simulation device to the process</h2>
+<p>A simulator is only useful when the <strong>chance of success on one simulated trial matches the model</strong>. If an event occurs on 30% of independent spins, a uniform random digit from 0 to 9 can represent a prize with digits <strong>0, 1, or 2</strong> (three of ten) and no prize with digits 3–9. Drawing a single digit models <strong>one spin</strong>. To model <em>at least one prize in four spins</em>, generate four independent digits for each complete trial and record a single success/failure for that four-digit group.</p>
+<p>The simulation procedure must match the setting. Sampling <em>without replacement</em> usually changes probabilities after the first draw; do not automatically use the same factors as sampling <em>with replacement</em>. If the original events are independent, allow independently generated repetitions—even repeated digits.</p>
+</section>
+<section id="interpret23" class="level2">
+<h2 class="anchored" data-anchor-id="interpret23">Interpret and audit a simulation</h2>
+<p>Always report what the estimate describes <strong>in context</strong>, including the number of completed trials and the event being estimated. A model estimate is not a promise of an exact count in the next small group. More trials typically stabilize random variation, but <strong>cannot correct a mis-specified random device</strong> or sampling bias.</p>
+<p>A final checklist: Did you define the complete trial? Does the device give the intended probabilities? Did you count every successful trial once? Is the denominator the number of complete trials? Does the conclusion address the named event?</p>
+</section>
+<section id="practice23" class="level2">
+<h2 class="anchored" data-anchor-id="practice23">Practice</h2>
+<section class="original-practice" data-original-practice="2.3" data-bank-url="../../Problem%20Bank/original/unit-2/topic-2-3.json">
+<p class="original-loading">Loading practice…</p>
+<template data-practice-rich="" data-bank-revision="1.0">
+<article data-practice-id="MHS-U2-T23-001">
+<div data-field="prompt"><p>When one complete trial is three independent fair coin tosses, which
+is one possible outcome of that trial?</p></div>
+<div data-field="hint"><p>Distinguish a complete trial from one toss within it.</p></div>
+<div data-field="solution"><p>An outcome records the result of one complete three-toss trial. The
+sequence HTH is one of eight ordered outcomes.</p></div>
+<div data-field="rubric"></div>
+<div data-field="option-A"><p>A three-letter ordered sequence, such as HTH</p></div>
+<div data-field="option-B"><p>An individual result H only</p></div>
+<div data-field="option-C"><p>The proportion of heads among 100 tosses</p></div>
+<div data-field="option-D"><p>Exactly one head, with no order recorded</p></div>
+</article>
+<article data-practice-id="MHS-U2-T23-002">
+<div data-field="prompt"><p>A simulation of 600 complete four-spin trials recorded at least one
+prize in 417 groups. What is the estimated probability of that
+event?</p></div>
+<div data-field="hint"><p>Match the denominator to the unit counted in the numerator.</p></div>
+<div data-field="solution"><p>The event is success of the entire four-spin group. The estimate is
+417/600=0.695, not 417/2400.</p></div>
+<div data-field="rubric"></div>
+<div data-field="option-A"><p>417/2400</p></div>
+<div data-field="option-B"><p>417/600</p></div>
+<div data-field="option-C"><p>600/417</p></div>
+<div data-field="option-D"><p>417/4</p></div>
+</article>
+<article data-practice-id="MHS-U2-T23-003">
+<div data-field="prompt"><p>An independent fair coin has landed heads seven times in succession.
+What is the probability that the next toss is tails?</p></div>
+<div data-field="hint"><p>Does the coin remember prior results?</p></div>
+<div data-field="solution"><p>Independence means the next toss is unaffected by the previous seven.
+P(Tails)=1/2. The law of large numbers does not force compensation.</p></div>
+<div data-field="rubric"></div>
+<div data-field="option-A"><p>1/8</p></div>
+<div data-field="option-B"><p>7/8</p></div>
+<div data-field="option-C"><p>1/2</p></div>
+<div data-field="option-D"><p>Greater than 1/2</p></div>
+</article>
+<article data-practice-id="MHS-U2-T23-004">
+<div data-field="prompt"><p>A population process has a 30% success probability. Which mapping of
+ten equally likely digits is valid?</p></div>
+<div data-field="hint"><p>How many of ten digits equal 30%?</p></div>
+<div data-field="solution"><p>Exactly three of the ten equally likely digits must signal success,
+so digits 0, 1 and 2 yield 3/10=0.30.</p></div>
+<div data-field="rubric"></div>
+<div data-field="option-A"><p>Use digits 0–2 for success and 3–9 for failure</p></div>
+<div data-field="option-B"><p>Use digits 0–3 for success and 4–9 for failure</p></div>
+<div data-field="option-C"><p>Use even digits for success and odd digits for failure</p></div>
+<div data-field="option-D"><p>Use digit 0 for success and all other digits for failure</p></div>
+</article>
+<article data-practice-id="MHS-U2-T23-005">
+<div data-field="prompt"><p>A student simulates 250 trials of two fair dice and counts 37 pairs
+with sum at least 10. Which calculation estimates the probability of
+that event?</p></div>
+<div data-field="hint"><p>A pair of rolls constitutes one trial.</p></div>
+<div data-field="solution"><p>Each trial consists of a pair of rolls. The 37 successful pairs out
+of 250 complete pairs give 37/250=0.148.</p></div>
+<div data-field="rubric"></div>
+<div data-field="option-A"><p>37/500</p></div>
+<div data-field="option-B"><p>37/12</p></div>
+<div data-field="option-C"><p>37/250</p></div>
+<div data-field="option-D"><p>250/37</p></div>
+</article>
+<article data-practice-id="MHS-U2-T23-006">
+<div data-field="prompt"><p>Which statement about a larger correctly designed simulation is most
+accurate?</p></div>
+<div data-field="hint"><p>Consider whether the law is monotonic.</p></div>
+<div data-field="solution"><p>The law of large numbers is a long-run tendency, not a step-by-step
+guarantee. More repetitions reduce random variation but cannot correct a
+wrong model.</p></div>
+<div data-field="rubric"></div>
+<div data-field="option-A"><p>Its estimated probability must become closer to the true value after
+every new trial</p></div>
+<div data-field="option-B"><p>After 1,000 trials, its estimate must equal the model probability
+exactly</p></div>
+<div data-field="option-C"><p>A larger number of trials can repair a simulator that uses the wrong
+success probability</p></div>
+<div data-field="option-D"><p>Its relative frequency generally stabilizes toward the model
+probability, but can temporarily move away</p></div>
+</article>
+<article data-practice-id="MHS-U2-T23-007">
+<div data-field="prompt"><p>A student makes codes 00 through 20 inclusive represent a 20% chance
+using uniform two-digit numbers 00–99. What is wrong?</p></div>
+<div data-field="hint"><p>Count both endpoints, including 00.</p></div>
+<div data-field="solution"><p>Count the codes inclusively: 00, 01, …, 20 are 21 of the 100 possible
+codes, giving 0.21. To model 20%, use 00–19.</p></div>
+<div data-field="rubric"></div>
+<div data-field="option-A"><p>It represents 19%, because 00 is not a number</p></div>
+<div data-field="option-B"><p>It represents 21%, because 00 through 20 contains 21 equally likely
+codes</p></div>
+<div data-field="option-C"><p>It represents exactly 20%</p></div>
+<div data-field="option-D"><p>It represents 2%, because only 00 and 20 count</p></div>
+</article>
+<article data-practice-id="MHS-U2-T23-008">
+<div data-field="prompt"><p>Which interpretation properly separates simulation from theoretical
+probability?</p></div>
+<div data-field="hint"><p>A model probability and an estimate answer related but distinct
+questions.</p></div>
+<div data-field="solution"><p>The estimate 505/1000=0.505 varies randomly around the theoretical
+P=0.5; no finite run is guaranteed to match exactly.</p></div>
+<div data-field="rubric"></div>
+<div data-field="option-A"><p>A recorded estimate 0.505 proves the true chance is 0.505</p></div>
+<div data-field="option-B"><p>A simulated 505 successes out of 1,000 trials can estimate a
+theoretical chance of 0.5 without contradicting it</p></div>
+<div data-field="option-C"><p>A probability of 0.5 guarantees exactly 500 successes in the next
+1,000 trials</p></div>
+<div data-field="option-D"><p>Simulation results can be treated as unbiased even when the random
+device has the wrong probabilities</p></div>
+</article>
+</template><noscript><div class="original-nojs"><ol>
+<li><strong>Question 1</strong><p>When one complete trial is three independent fair coin tosses, which
+is one possible outcome of that trial?</p>
+<div><strong>A.</strong> <p>A three-letter ordered sequence, such as HTH</p></div>
+<div><strong>B.</strong> <p>An individual result H only</p></div>
+<div><strong>C.</strong> <p>The proportion of heads among 100 tosses</p></div>
+<div><strong>D.</strong> <p>Exactly one head, with no order recorded</p></div>
+<details><summary>Show solution</summary><p>An outcome records the result of one complete three-toss trial. The
+sequence HTH is one of eight ordered outcomes.</p>
+</details></li>
+<li><strong>Question 2</strong><p>A simulation of 600 complete four-spin trials recorded at least one
+prize in 417 groups. What is the estimated probability of that
+event?</p>
+<div><strong>A.</strong> <p>417/2400</p></div>
+<div><strong>B.</strong> <p>417/600</p></div>
+<div><strong>C.</strong> <p>600/417</p></div>
+<div><strong>D.</strong> <p>417/4</p></div>
+<details><summary>Show solution</summary><p>The event is success of the entire four-spin group. The estimate is
+417/600=0.695, not 417/2400.</p>
+</details></li>
+<li><strong>Question 3</strong><p>An independent fair coin has landed heads seven times in succession.
+What is the probability that the next toss is tails?</p>
+<div><strong>A.</strong> <p>1/8</p></div>
+<div><strong>B.</strong> <p>7/8</p></div>
+<div><strong>C.</strong> <p>1/2</p></div>
+<div><strong>D.</strong> <p>Greater than 1/2</p></div>
+<details><summary>Show solution</summary><p>Independence means the next toss is unaffected by the previous seven.
+P(Tails)=1/2. The law of large numbers does not force compensation.</p>
+</details></li>
+<li><strong>Question 4</strong><p>A population process has a 30% success probability. Which mapping of
+ten equally likely digits is valid?</p>
+<div><strong>A.</strong> <p>Use digits 0–2 for success and 3–9 for failure</p></div>
+<div><strong>B.</strong> <p>Use digits 0–3 for success and 4–9 for failure</p></div>
+<div><strong>C.</strong> <p>Use even digits for success and odd digits for failure</p></div>
+<div><strong>D.</strong> <p>Use digit 0 for success and all other digits for failure</p></div>
+<details><summary>Show solution</summary><p>Exactly three of the ten equally likely digits must signal success,
+so digits 0, 1 and 2 yield 3/10=0.30.</p>
+</details></li>
+<li><strong>Question 5</strong><p>A student simulates 250 trials of two fair dice and counts 37 pairs
+with sum at least 10. Which calculation estimates the probability of
+that event?</p>
+<div><strong>A.</strong> <p>37/500</p></div>
+<div><strong>B.</strong> <p>37/12</p></div>
+<div><strong>C.</strong> <p>37/250</p></div>
+<div><strong>D.</strong> <p>250/37</p></div>
+<details><summary>Show solution</summary><p>Each trial consists of a pair of rolls. The 37 successful pairs out
+of 250 complete pairs give 37/250=0.148.</p>
+</details></li>
+<li><strong>Question 6</strong><p>Which statement about a larger correctly designed simulation is most
+accurate?</p>
+<div><strong>A.</strong> <p>Its estimated probability must become closer to the true value after
+every new trial</p></div>
+<div><strong>B.</strong> <p>After 1,000 trials, its estimate must equal the model probability
+exactly</p></div>
+<div><strong>C.</strong> <p>A larger number of trials can repair a simulator that uses the wrong
+success probability</p></div>
+<div><strong>D.</strong> <p>Its relative frequency generally stabilizes toward the model
+probability, but can temporarily move away</p></div>
+<details><summary>Show solution</summary><p>The law of large numbers is a long-run tendency, not a step-by-step
+guarantee. More repetitions reduce random variation but cannot correct a
+wrong model.</p>
+</details></li>
+<li><strong>Question 7</strong><p>A student makes codes 00 through 20 inclusive represent a 20% chance
+using uniform two-digit numbers 00–99. What is wrong?</p>
+<div><strong>A.</strong> <p>It represents 19%, because 00 is not a number</p></div>
+<div><strong>B.</strong> <p>It represents 21%, because 00 through 20 contains 21 equally likely
+codes</p></div>
+<div><strong>C.</strong> <p>It represents exactly 20%</p></div>
+<div><strong>D.</strong> <p>It represents 2%, because only 00 and 20 count</p></div>
+<details><summary>Show solution</summary><p>Count the codes inclusively: 00, 01, …, 20 are 21 of the 100 possible
+codes, giving 0.21. To model 20%, use 00–19.</p>
+</details></li>
+<li><strong>Question 8</strong><p>Which interpretation properly separates simulation from theoretical
+probability?</p>
+<div><strong>A.</strong> <p>A recorded estimate 0.505 proves the true chance is 0.505</p></div>
+<div><strong>B.</strong> <p>A simulated 505 successes out of 1,000 trials can estimate a
+theoretical chance of 0.5 without contradicting it</p></div>
+<div><strong>C.</strong> <p>A probability of 0.5 guarantees exactly 500 successes in the next
+1,000 trials</p></div>
+<div><strong>D.</strong> <p>Simulation results can be treated as unbiased even when the random
+device has the wrong probabilities</p></div>
+<details><summary>Show solution</summary><p>The estimate 505/1000=0.505 varies randomly around the theoretical
+P=0.5; no finite run is guaranteed to match exactly.</p>
+</details></li>
+</ol></div></noscript></section>
+<details class="lesson-sources">
+<summary>
+Sources
+</summary>
+<p>
+College Board, <a href="https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description-effective-fall-2026.pdf">AP Statistics Course and Exam Description</a> (effective Fall 2026), Topic 2.3, printed p.&nbsp;64. The simulation model and illustrative recorded counts come from the Maple Hill School probability teaching materials.
+</p>
+</details>
+
+
+</section>
+
+</main> <!-- /main -->
+<script src="../../Unit%201/Shared/assets/data.js"></script>
+<script src="../../Unit%201/Shared/assets/site.js"></script>
+<script src="../../Unit%201/Topic%201.1/assets/foundations.js"></script>
+<script src="../../Unit%201/Topic%201.3/assets/categorical-tables.js"></script>
+<script src="../../Unit%201/Topic%201.4/assets/categorical-charts.js"></script>
+<script src="../../Unit%201/Shared/assets/foundations-data.js"></script>
+<script src="../../Unit%201/Topic%201.2/assets/variables.js"></script>
+<script src="../../site/assets/navigation.js"></script>
+<script src="../../site/assets/student-presentation.js" defer=""></script>
+<script src="../../Problem%20Bank/assets/catalog.js"></script>
+<script src="../../Problem%20Bank/assets/practice.js"></script>
+<script src="../../Problem%20Bank/assets/original-practice.js"></script>
+<script src="../../Unit%201/Topic%201.7/assets/summary17.js"></script>
+<script src="../../Unit%201/Topic%201.8/assets/box18-math.js"></script>
+<script src="../../Unit%201/Topic%201.8/assets/box18.js"></script>
+<script src="../../Unit%201/Topic%201.9/assets/compare19-math.js"></script>
+<script src="../../Unit%201/Topic%201.9/assets/compare19.js"></script>
+<script>
+(function () {
+  const css = Array.from(document.querySelectorAll('link[rel="stylesheet"]'))
+    .find(el => el.href.includes('/study110.css'));
+  if (!css) return;
+  const script = document.createElement('script');
+  script.src = css.href.replace(/study110\.css(?:\?.*)?$/, 'study110.js');
+  document.body.appendChild(script);
+})();
+</script>
+<script>
+(function () {
+  const css = Array.from(document.querySelectorAll('link[rel="stylesheet"]'))
+    .find(el => el.href.includes('/sampling111.css'));
+  if (!css) return;
+  const script = document.createElement('script');
+  script.src = css.href.replace(/sampling111\.css(?:\?.*)?$/, 'sampling111.js');
+  script.defer = true;
+  document.body.appendChild(script);
+})();
+</script>
+<script>
+(function () {
+ const css=Array.from(document.querySelectorAll('link[rel="stylesheet"]')).find(e=>e.href.includes('/bias112.css'));
+ if(!css)return;
+ const script=document.createElement('script');
+ script.src=css.href.replace(/bias112\.css(?:\?.*)?$/,'bias112.js');
+ script.defer=true;document.body.appendChild(script);
+})();
+</script>
+<script>
+(function () {
+ const css=Array.from(document.querySelectorAll('link[rel="stylesheet"]')).find(e=>e.href.includes('/experiment113.css'));
+ if(!css)return;
+ const script=document.createElement('script');
+ script.src=css.href.replace(/experiment113\.css(?:\?.*)?$/,'experiment113.js');
+ script.defer=true;document.body.appendChild(script);
+})();
+</script>
+<script>(function(){const css=Array.from(document.querySelectorAll('link[rel="stylesheet"]')).find(x=>x.href.includes('/cafe21.css'));if(!css)return;const s=document.createElement('script');s.src=css.href.replace(/cafe21\.css(?:\?.*)?$/,'cafe21.js');s.defer=true;document.body.appendChild(s)})();</script>
+<script>
+(function(){
+ const css=Array.from(document.querySelectorAll('link[rel="stylesheet"]')).find(e=>e.href.includes('/relative22.css'));
+ if(!css)return;
+ const script=document.createElement('script');
+ script.src=css.href.replace(/relative22\.css(?:\?.*)?$/,'relative22.js');
+ script.defer=true;document.body.appendChild(script);
+})();
+</script>
+<script>
+(function(){
+ const css=Array.from(document.querySelectorAll('link[rel="stylesheet"]')).find(e=>e.href.includes('/sim23.css'));
+ if(!css)return;
+ const script=document.createElement('script');
+ script.src=css.href.replace(/sim23\.css(?:\?.*)?$/,'sim23.js');
+ script.defer=true;document.body.appendChild(script);
+})();
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/lichunubc\.github\.io\/ap_statistics\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../Topic%202.2/topic-2-2.html" class="pagination-link" aria-label="Topic 2.2 Summary Statistics for Two Categorical Variables">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Topic 2.2 Summary Statistics for Two Categorical Variables</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../Unit%203/unit-3.html" class="pagination-link" aria-label="Unit 3: Inference for Categorical Data: Proportions">
+        <span class="nav-page-text">Unit 3: Inference for Categorical Data: Proportions</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Maple Hill School · Chun Li</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>AP Statistics · Interactive course book</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
