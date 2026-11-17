@@ -46,6 +46,8 @@ CHECKS = [
     'Unit 2/Topic 2.6/tests/check_condition26_browser.py',
     'Unit 2/Topic 2.7/tests/check_event27.py',
     'Unit 2/Topic 2.7/tests/check_event27_browser.py',
+    'site/tests/check_probability_slides.py',
+    'site/tests/check_probability_slides_browser.py',
 ]
 
 
