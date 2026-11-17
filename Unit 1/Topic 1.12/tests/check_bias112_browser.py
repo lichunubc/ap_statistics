@@ -50,6 +50,13 @@ try:
    assert '20 selected' in first
    lab.locator('[data-b112-reset]').click()
    assert 'No sample drawn' in lab.locator('[data-b112-status]').inner_text()
+   # Reset restores the pseudo-random sequence, not the previous draw counter.
+   # Replay BOTH earlier draws (gate then SRS) before comparing the SRS result.
+   lab.locator('[data-b112-method]').select_option('gate')
+   lab.locator('[data-b112-n]').select_option('30')
+   lab.locator('[data-b112-draw]').click()
+   lab.locator('[data-b112-method]').select_option('srs')
+   lab.locator('[data-b112-n]').select_option('20')
    lab.locator('[data-b112-draw]').click()
    assert first==lab.locator('[data-b112-detail]').inner_text()
    q=page.locator('.original-practice')
