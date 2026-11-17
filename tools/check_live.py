@@ -34,13 +34,18 @@ text=fetch('topic-1-2.html','data-variables="classify"')
 assert 'data-variables="summary"' in text and 'data-variables="recode"' in text
 assert text.count('<details>')>=10
 home=fetch('index.html','Choose a unit')
-assert home.count('data-unit-status="under-construction"')==4
+assert home.count('data-unit-status="under-construction"')==sum(not u["available_topics"] for u in units)
 assert 'unit-grid' in home and 'topic-grid' not in home
 for unit in units:
     path=unit['landing'].replace('.qmd','.html')
     text=fetch(path,f"Unit {unit['id']}: {unit['title']}")
     if unit['id']==1:
         assert 'topic-grid' in text and 'data-chart="commute-dot"' in text
+    elif unit["available_topics"]:
+        assert 'topic-grid' in text, f"Missing published topic grid for Unit {unit['id']}"
+        for topic in unit["available_topics"]:
+            slug='topic-'+topic.replace('.','-')+'.html'
+            assert slug in text, f"Missing Unit {unit['id']} topic link: {slug}"
     else:
         assert 'Under construction' in text and 'construction-note' in text
     checked.append(path)
@@ -51,6 +56,6 @@ fetch('Unit 1/Topic 1.2/assets/variables.js','window.VARIABLES_TEST')
 shared=json.loads(fetch('Unit 1/Shared/data/foundations.json'))
 assert shared['school_a']['counts']==[8,6,18,8]
 fetch('Unit 1/Topic 1.2/data/illustrative-records.csv','A,Bus,24.0')
-report={'site':base,'source_commit':expected,'pages_checked':checked,'unit_landing_pages':5,'under_construction_units':[2,3,4,5],'new_activity_markers':3,'dataset_verified':True}
+report={'site':base,'source_commit':expected,'pages_checked':checked,'unit_landing_pages':5,'under_construction_units':[u['id'] for u in units if not u['available_topics']],'new_activity_markers':3,'dataset_verified':True}
 (root/'qa').mkdir(exist_ok=True);(root/'qa/live-validation.json').write_text(json.dumps(report,indent=2)+'\n')
 print(json.dumps(report,indent=2))
