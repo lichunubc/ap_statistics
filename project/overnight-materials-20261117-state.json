@@ -7,9 +7,9 @@
     "main_and_source_inventory",
     "topic_1_12_preview_candidate"
   ],
-  "preview_branch": "preview/overnight-materials-20261117",
+  "preview_branch": "preview/overnight-20261117-topic-1-13",
   "baseline_main": "afd3ebec03b5c6eed70da3dfacc2ec545751ef3c",
-  "working_source_status": "preview_candidate_not_live",
+  "working_source_status": "Topic 1.12 published; Topic 1.13 preview source integrated and awaiting QA",
   "topic_1_12": {
     "ced_page": 50,
     "original_practice_questions": 8,
@@ -26,15 +26,15 @@
     "teacher assessments and marking guides"
   ],
   "next": [
-    "check preview CI for 1.12",
-    "reconcile Topic 1.13 source",
-    "integrate topics 2.1–2.2",
-    "integrate 2.3–2.7 and latest slides",
-    "final live and privacy audit"
+    "Check complete native Quarto preview CI for Topic 1.13 and repair as needed",
+    "Publish Topic 1.13 only after full preview verification and then confirm live Pages, browser, privacy and release SHA",
+    "Integrate Topics 2.1–2.2 café lessons from exact verified package",
+    "Integrate 2.3–2.7 independent lessons, 42-slide deck, and clean public-safe study guide",
+    "Final integrated regression and release audit"
   ],
   "published_in_this_session": [],
   "preview_ci_passed": "44052764554; 21/21",
-  "pending": "22/22 latest preview native browser test, then main deploy",
+  "pending": "1.13 public-safe source and test integration committed on preview branch only; live verification NOT YET COMPLETED. Previous 1.12 published remains unchanged.",
   "public_safe_derivative": {
     "pdf": "AP_Statistics_2_3_to_2_7_Public_Safe_Study_Guide.pdf",
     "pdf_sha256": "84c4e8c6b5dd745f1055eddc7872eb3bbe16fc705404fdd6123625a738a5170d",
@@ -42,5 +42,14 @@
     "zip_sha256": "f8d7171b81623307c00b9600cdfdca1583b9d7ac789b1bc0574f39c034489e54",
     "repository_published": false,
     "library_upload": "AccessDeny"
+  },
+  "topic_1_13": {
+    "status": "preview_candidate",
+    "branch": "preview/overnight-20261117-topic-1-13",
+    "original_practice_questions": 8,
+    "source": "Unit 1/Topic 1.13/topic-1-13.qmd",
+    "rights": "Original text, simulations and practice; excludes secure Week9 homework and credited Scribbr figure",
+    "needs_preview_ci": true,
+    "needs_live_verification": true
   }
 }
