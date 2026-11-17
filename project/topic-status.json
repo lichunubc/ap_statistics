@@ -585,6 +585,25 @@
       ],
       "implemented_on": "2026-11-17",
       "rights": "original public-safe"
+    },
+    {
+      "id": "2.7",
+      "title": "Independent Events and Unions of Events",
+      "status": "preview_candidate",
+      "directory": "Unit 2/Topic 2.7",
+      "chapter": "Unit 2/Topic 2.7/topic-2-7.qmd",
+      "learning_objectives": [
+        "2.7.A"
+      ],
+      "essential_knowledge": [
+        "2.7.A.1",
+        "2.7.A.2",
+        "2.7.A.3"
+      ],
+      "ced_printed_pages": "68",
+      "practice_count": 8,
+      "rights": "Original public-safe lesson and practice; no secure homework.",
+      "published_verified": false
     }
   ]
 }
