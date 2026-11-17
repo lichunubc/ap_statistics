@@ -2,7 +2,7 @@
   "schema_version": 1,
   "authorized": "2026-11-17",
   "expected_invocations": 6,
-  "invocations_recorded": 3,
+  "invocations_recorded": 4,
   "completed_phases": [
     "main_and_source_inventory",
     "topic_1_12_preview_candidate",
@@ -16,7 +16,10 @@
     "public_safe_probability_guide_rebuilt_locally",
     "topic_2_3_preview_ci_passed",
     "topic_2_3_pr6_merged",
-    "topic_2_4_source_candidate"
+    "topic_2_4_source_candidate",
+    "topic_2_3_published_verified",
+    "topic_2_4_published_verified",
+    "topic_2_5_source_candidate"
   ],
   "preview_branch": "preview/overnight-20261117-topic-2-1",
   "baseline_main": "afd3ebec03b5c6eed70da3dfacc2ec545751ef3c",
@@ -37,10 +40,10 @@
     "teacher assessments and marking guides"
   ],
   "next": [
-    "Confirm production 44089161201 and live revision for Topic 2.3",
-    "Check full native preview CI for new Topic 2.4 and address observed failures before non-force integration",
-    "Integrate approved 42-slide deck and public-safe guide without secure Week9 sections",
-    "Finish independent Topics 2.5–2.7 and final privacy/coverage audit"
+    "Inspect Topic 2.5 preview run 44094746823 (native Quarto and expanded checks) and repair observed failures",
+    "After passing preview, integrate with refreshed main by non-force merge and verify production Pages and dedicated live 2.5 browser",
+    "Continue original independent Topic 2.6 conditional probability and Topic 2.7 independent events and unions",
+    "Integrate approved public-safe 42-slide deck and reviewed guide, then final rights/privacy audit"
   ],
   "published_in_this_session": [
     {
@@ -93,7 +96,7 @@
     "live_url": "https://lichunubc.github.io/ap_statistics/Unit%202/Topic%202.2/topic-2-2.html"
   },
   "topic_2_3": {
-    "status": "merged_production_in_progress",
+    "status": "published_verified",
     "branch": "preview/overnight-20261117-topic-2-3",
     "practice_count": 8,
     "official_scope": "Fall 2026 CED p64, LO2.3.A and EK2.3.A.1–2.3.A.7",
@@ -110,10 +113,12 @@
     "preview_result": "success 30/30 native checks",
     "merge_commit": "57654d9a176bb57855eb3f8817d7cd270c89e09c",
     "pull_request": "https://github.com/lichunubc/ap_statistics/pull/6",
-    "production_run": 44089161201
+    "production_run": 44089161201,
+    "production_result": "success: run 44089161201 passed native Quarto, full regression, Pages, revision-matched live site and dedicated live Topic 2.3 browser",
+    "live_url": "https://lichunubc.github.io/ap_statistics/Unit%202/Topic%202.3/topic-2-3.html"
   },
   "topic_2_4": {
-    "status": "preview_candidate_not_live",
+    "status": "published_verified",
     "branch": "preview/overnight-20261117-topic-2-4",
     "official_scope": "Fall 2026 CED p65, LO2.4.A and EK2.4.A.1–4",
     "practice_count": 8,
@@ -123,6 +128,25 @@
       "accessible fair-die complement explorer",
       "eight original questions with worked solutions",
       "native browser and source tests"
-    ]
+    ],
+    "preview_run": 44091618007,
+    "production_run": 44092951631,
+    "merge_commit": "941b68a5fa8a826a9b0eae64cac1dd36014fead5",
+    "production_result": "success: native Quarto, configured checks, Pages, revision-matched verification and dedicated live Topic 2.4 browser",
+    "live_url": "https://lichunubc.github.io/ap_statistics/Unit%202/Topic%202.4/topic-2-4.html"
+  },
+  "topic_2_5": {
+    "status": "preview_candidate_pending_native_CI",
+    "branch": "preview/overnight-20261117-topic-2-5",
+    "practice_count": 8,
+    "scope": "Official Fall 2026 CED printed page 66; objective 2.5.A, EK 2.5.A.1–2",
+    "features": [
+      "original Quarto lesson",
+      "interactive offline event-pair membership and joint probability explorer",
+      "8 original centrally stored questions",
+      "source and native browser accessibility tests"
+    ],
+    "head_commit": "eed2478902f78bebd0b94fedfaf21b86f5ff6616",
+    "preview_run": 44094746823
   }
 }

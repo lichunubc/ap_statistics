@@ -51,6 +51,7 @@ book:
         - "Unit 2/Topic 2.2/topic-2-2.qmd"
         - "Unit 2/Topic 2.3/topic-2-3.qmd"
         - "Unit 2/Topic 2.4/topic-2-4.qmd"
+        - "Unit 2/Topic 2.5/topic-2-5.qmd"
     - "Unit 3/unit-3.qmd"
     - "Unit 4/unit-4.qmd"
     - "Unit 5/unit-5.qmd"
@@ -88,6 +89,7 @@ format:
       - "Unit 2/Topic 2.2/assets/relative22.css"
       - "Unit 2/Topic 2.3/assets/sim23.css"
       - "Unit 2/Topic 2.4/assets/intro24.css"
+      - "Unit 2/Topic 2.5/assets/disjoint25.css"
     toc: true
     toc-depth: 2
     number-sections: false
@@ -110,4 +112,5 @@ format:
       - "Unit 2/Topic 2.2/assets/relative22-footer.html"
       - "Unit 2/Topic 2.3/assets/sim23-footer.html"
       - "Unit 2/Topic 2.4/assets/intro24-footer.html"
+      - "Unit 2/Topic 2.5/assets/disjoint25-footer.html"
 lang: en

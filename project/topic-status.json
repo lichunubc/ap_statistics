@@ -537,6 +537,30 @@
       "ced_printed_pages": "65",
       "practice_count": 8,
       "source": "original public-safe November 2026 preview"
+    },
+    {
+      "id": "2.5",
+      "title": "Mutually Exclusive Events",
+      "status": "preview_candidate",
+      "chapter": "Unit 2/Topic 2.5/topic-2-5.qmd",
+      "directory": "Unit 2/Topic 2.5",
+      "ced_printed_pages": "66",
+      "learning_objectives": [
+        "2.5.A"
+      ],
+      "essential_knowledge": [
+        "2.5.A.1",
+        "2.5.A.2"
+      ],
+      "skills": [
+        "4.B"
+      ],
+      "practice_count": 8,
+      "interactions": [
+        "fair-die event-pair intersection explorer; keyboard and no-JavaScript alternatives"
+      ],
+      "implemented_on": "2026-11-17",
+      "rights": "original public-safe content"
     }
   ]
 }

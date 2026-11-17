@@ -1,0 +1,314 @@
+{
+  "schema_version": 1,
+  "bank_id": "mhs-ap-statistics-original",
+  "topic": "2.5",
+  "title": "Mutually Exclusive Events",
+  "rights": "Original teacher-authored public-safe practice, no secure assessments.",
+  "revision": 1,
+  "items": [
+    {
+      "id": "MHS-U2-T25-001",
+      "type": "mc",
+      "difficulty": "Foundation",
+      "primary_topic": "2.5",
+      "tags": [
+        "joint probability",
+        "mutually exclusive",
+        "intersection"
+      ],
+      "objectives": [
+        "2.5.A"
+      ],
+      "prompt": "One fair die is rolled. Let A be even and B be odd. Which statement is correct?",
+      "hint": "List the numbers belonging to both event sets.",
+      "solution": "Even={2,4,6}, odd={1,3,5}; no face belongs to both, so the intersection is empty and its probability is 0.",
+      "rights": "original",
+      "provenance": "Maple Hill School original public-safe teaching practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "A and B are disjoint because P(A and B)=0."
+        },
+        {
+          "label": "B",
+          "text": "A and B overlap on face 2."
+        },
+        {
+          "label": "C",
+          "text": "P(A and B)=1/2."
+        },
+        {
+          "label": "D",
+          "text": "A and B are disjoint because their individual probabilities are equal."
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "MHS-U2-T25-002",
+      "type": "mc",
+      "difficulty": "Foundation",
+      "primary_topic": "2.5",
+      "tags": [
+        "joint probability",
+        "mutually exclusive",
+        "intersection"
+      ],
+      "objectives": [
+        "2.5.A"
+      ],
+      "prompt": "One fair die is rolled. Let A mean even and B mean at least 4. What is P(A and B)?",
+      "hint": "Find the intersection of {2,4,6} and {4,5,6}.",
+      "solution": "The shared faces are 4 and 6. Both occur on 2 of 6 equally likely outcomes, so P(A and B)=2/6=1/3.",
+      "rights": "original",
+      "provenance": "Maple Hill School original public-safe teaching practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "0"
+        },
+        {
+          "label": "B",
+          "text": "1/6"
+        },
+        {
+          "label": "C",
+          "text": "1/3"
+        },
+        {
+          "label": "D",
+          "text": "1/2"
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "MHS-U2-T25-003",
+      "type": "mc",
+      "difficulty": "Developing",
+      "primary_topic": "2.5",
+      "tags": [
+        "joint probability",
+        "mutually exclusive",
+        "intersection"
+      ],
+      "objectives": [
+        "2.5.A"
+      ],
+      "prompt": "A standard 52-card deck has four kings. Events H=draw a heart and K=draw a king. Are H and K disjoint?",
+      "hint": "Ask whether any king is also a heart.",
+      "solution": "The king of hearts lies in the intersection, giving P(H and K)=1/52>0. The events are not disjoint.",
+      "rights": "original",
+      "provenance": "Maple Hill School original public-safe teaching practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yes, because there are more hearts than kings."
+        },
+        {
+          "label": "B",
+          "text": "No, because the king of hearts satisfies both."
+        },
+        {
+          "label": "C",
+          "text": "Yes, because just one card belongs to both."
+        },
+        {
+          "label": "D",
+          "text": "No, because all four kings are hearts."
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "MHS-U2-T25-004",
+      "type": "mc",
+      "difficulty": "Developing",
+      "primary_topic": "2.5",
+      "tags": [
+        "joint probability",
+        "mutually exclusive",
+        "intersection"
+      ],
+      "objectives": [
+        "2.5.A"
+      ],
+      "prompt": "An event records one purchased ticket from 120 tickets. 18 tickets are both weekday tickets and discounted tickets. What is the joint probability of weekday and discounted?",
+      "hint": "A joint probability uses the full 120-ticket denominator.",
+      "solution": "P(weekday and discounted)=18/120=0.15. The condition does not restrict the sample space, so the denominator is all tickets.",
+      "rights": "original",
+      "provenance": "Maple Hill School original public-safe teaching practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "18/120"
+        },
+        {
+          "label": "B",
+          "text": "18/(all weekday tickets)"
+        },
+        {
+          "label": "C",
+          "text": "18/(all discounted tickets)"
+        },
+        {
+          "label": "D",
+          "text": "0"
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "MHS-U2-T25-005",
+      "type": "mc",
+      "difficulty": "Foundation",
+      "primary_topic": "2.5",
+      "tags": [
+        "joint probability",
+        "mutually exclusive",
+        "intersection"
+      ],
+      "objectives": [
+        "2.5.A"
+      ],
+      "prompt": "For a particular lunch, each diner chooses exactly one of two included sides: fruit or chips. Can 'fruit selected' and 'chips selected' be mutually exclusive?",
+      "hint": "Define one trial as selecting a single diner and their single included side.",
+      "solution": "Because each diner selects exactly one side, one selection cannot satisfy both descriptions. Their intersection is empty and P(both)=0.",
+      "rights": "original",
+      "provenance": "Maple Hill School original public-safe teaching practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "No, because both sides are served in the cafeteria."
+        },
+        {
+          "label": "B",
+          "text": "No, because both can be chosen by different diners."
+        },
+        {
+          "label": "C",
+          "text": "Yes, because each selected diner chooses exactly one side."
+        },
+        {
+          "label": "D",
+          "text": "Yes, because their probabilities must both be 1/2."
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "MHS-U2-T25-006",
+      "type": "mc",
+      "difficulty": "Developing",
+      "primary_topic": "2.5",
+      "tags": [
+        "joint probability",
+        "mutually exclusive",
+        "intersection"
+      ],
+      "objectives": [
+        "2.5.A"
+      ],
+      "prompt": "A fair coin is tossed twice. A=first toss heads and B=second toss tails. Which ordered result is in A and B?",
+      "hint": "Find the two-toss sequence with H first and T second.",
+      "solution": "HT satisfies both descriptions. Thus P(A and B)=1/4 and these events are not disjoint.",
+      "rights": "original",
+      "provenance": "Maple Hill School original public-safe teaching practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "HH"
+        },
+        {
+          "label": "B",
+          "text": "HT"
+        },
+        {
+          "label": "C",
+          "text": "TH"
+        },
+        {
+          "label": "D",
+          "text": "TT"
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "MHS-U2-T25-007",
+      "type": "mc",
+      "difficulty": "Developing",
+      "primary_topic": "2.5",
+      "tags": [
+        "joint probability",
+        "mutually exclusive",
+        "intersection"
+      ],
+      "objectives": [
+        "2.5.A"
+      ],
+      "prompt": "Suppose P(A)=0.45, P(B)=0.35, and P(A and B)=0.08. Which conclusion is supported?",
+      "hint": "The test for disjointness is the probability of the intersection.",
+      "solution": "Since P(A and B)=0.08>0, the events can occur together and are not mutually exclusive.",
+      "rights": "original",
+      "provenance": "Maple Hill School original public-safe teaching practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "A and B are disjoint."
+        },
+        {
+          "label": "B",
+          "text": "A and B must be identical."
+        },
+        {
+          "label": "C",
+          "text": "A and B are not disjoint."
+        },
+        {
+          "label": "D",
+          "text": "The probabilities are invalid because their sum is greater than 1."
+        }
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "MHS-U2-T25-008",
+      "type": "mc",
+      "difficulty": "Developing",
+      "primary_topic": "2.5",
+      "tags": [
+        "joint probability",
+        "mutually exclusive",
+        "intersection"
+      ],
+      "objectives": [
+        "2.5.A"
+      ],
+      "prompt": "For one fair die, A={1,2} and B={2,3,4}. What is P(A and B)?",
+      "hint": "Only outcomes present in both lists belong to the intersection.",
+      "solution": "The only shared face is 2, so P(A and B)=1/6; therefore the events are not disjoint.",
+      "rights": "original",
+      "provenance": "Maple Hill School original public-safe teaching practice, November 2026",
+      "options": [
+        {
+          "label": "A",
+          "text": "0"
+        },
+        {
+          "label": "B",
+          "text": "1/6"
+        },
+        {
+          "label": "C",
+          "text": "2/6"
+        },
+        {
+          "label": "D",
+          "text": "3/6"
+        }
+      ],
+      "answer": "B"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "topic": "2.5",
+  "title": "Mutually Exclusive Events",
+  "official_title": "Mutually Exclusive Events",
+  "curriculum": "College Board AP Statistics CED effective Fall 2026",
+  "source": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description-effective-fall-2026.pdf",
+  "ced_printed_pages": [
+    66
+  ],
+  "pdf_zero_index_pages": [
+    70
+  ],
+  "learning_objectives": [
+    "2.5.A"
+  ],
+  "essential_knowledge": [
+    "2.5.A.1",
+    "2.5.A.2"
+  ],
+  "skills": [
+    "4.B"
+  ],
+  "coverage": [
+    {
+      "section": "#intersection25",
+      "ids": [
+        "2.5.A.1"
+      ]
+    },
+    {
+      "section": "#disjoint25",
+      "ids": [
+        "2.5.A.2"
+      ]
+    },
+    {
+      "section": "#explorer25",
+      "ids": [
+        "2.5.A.1",
+        "2.5.A.2"
+      ]
+    },
+    {
+      "section": "#examples25",
+      "ids": [
+        "2.5.A.1",
+        "2.5.A.2"
+      ]
+    },
+    {
+      "section": "#reason25",
+      "ids": [
+        "2.5.A.2"
+      ]
+    }
+  ],
+  "rights": "Original public-safe student teaching content; secure AP Classroom material excluded."
+}

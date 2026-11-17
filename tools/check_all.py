@@ -40,6 +40,8 @@ CHECKS = [
     'Unit 2/Topic 2.3/tests/check_sim23_browser.py',
     'Unit 2/Topic 2.4/tests/check_intro24.py',
     'Unit 2/Topic 2.4/tests/check_intro24_browser.py',
+    'Unit 2/Topic 2.5/tests/check_disjoint25.py',
+    'Unit 2/Topic 2.5/tests/check_disjoint25_browser.py',
 ]
 
 
