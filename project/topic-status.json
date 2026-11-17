@@ -382,7 +382,7 @@
     {
       "id": "1.13",
       "title": "Experimental Design",
-      "status": "implemented_preview",
+      "status": "implemented",
       "directory": "Unit 1/Topic 1.13",
       "chapter": "Unit 1/Topic 1.13/topic-1-13.qmd",
       "ced_printed_pages": "51–54",
@@ -424,12 +424,13 @@
         "original one-at-a-time practice"
       ],
       "source_selection": "Original teaching content reconciled with approved v3 experimental-design source; third-party Scribbr image excluded",
-      "implemented_on": "2026-11-17"
+      "implemented_on": "2026-11-17",
+      "publication_note": "Verified 2026-11-17: production run44063146873 and live Chapter 1.13 browser gates passed."
     },
     {
       "id": "2.1",
       "title": "Tabular and Graphical Representations for the Distributions of Two Categorical Variables",
-      "status": "implemented_preview",
+      "status": "implemented",
       "directory": "Unit 2/Topic 2.1",
       "chapter": "Unit 2/Topic 2.1/topic-2-1.qmd",
       "ced_printed_pages": "62",
@@ -453,7 +454,8 @@
         "segmented bars and mosaic interpretation"
       ],
       "data_source": "24 constructed café orders (8 App,16 Counter)",
-      "implemented_on": "2026-11-17"
+      "implemented_on": "2026-11-17",
+      "publication_note": "Verified 2026-11-17: preview run44073014739, production run44075616080; 26 checks, Pages and live gates passed."
     },
     {
       "id": "2.2",
