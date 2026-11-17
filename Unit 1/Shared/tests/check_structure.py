@@ -1,4 +1,4 @@
-"""Run ALL historical structure checks with counts derived from the current Unit 1 manifest.
+"""Run ALL historical structure checks with counts derived from current Unit 1 and Unit 2 manifests.
 The original source is preserved byte-for-byte as check_structure_legacy.py.
 Only stale six-topic constants are replaced; all previous assertions execute.
 """
@@ -8,7 +8,7 @@ source=path.read_text()
 changes=[
  ("page.locator('#quarto-sidebar .course-unit-toggle').click()", "page.locator('#quarto-sidebar .course-unit-toggle').first.click()"),
 
- ("assert len(parts)==1 and parts[0]['part']=='Unit 1/unit-1.qmd'", '''assert len(parts)==2 and parts[0]['part']=='Unit 1/unit-1.qmd' and parts[1]['part']=='Unit 2/unit-2.qmd' and parts[1]['chapters']==[f"Unit 2/Topic {t['id']}/topic-{t['id'].replace('.','-')}.qmd" for t in manifest['topics'] if t['id'].startswith('2.') and t['status'].startswith('implemented')]'''),
+ ("assert len(parts)==1 and parts[0]['part']=='Unit 1/unit-1.qmd'", '''assert len(parts)==2 and parts[0]['part']=='Unit 1/unit-1.qmd' and parts[1]['part']=='Unit 2/unit-2.qmd' and parts[1]['chapters']==[f"Unit 2/Topic {t['id']}/topic-{t['id'].replace('.','-')}.qmd" for t in manifest['topics'] if t['id'].startswith('2.') and (t['status'].startswith('implemented') or t['status']=='preview_candidate')]'''),
  ("range(2,6)","range(3,6)"),
  ("if n.get_text().startswith('Topic ')", "if n.get_text().startswith('Topic 1.')"),
 
