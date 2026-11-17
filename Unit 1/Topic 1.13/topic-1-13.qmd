@@ -1,0 +1,120 @@
+# Topic 1.13 Experimental Design
+
+An engineer wants to compare two protective coatings for metal panels. The **explanatory variable** is coating type; the **response variable** is wear after a standardized abrasion test, measured in milligrams of material lost. A convincing experiment must compare treatments while separating the coating's effect from other influences on wear.
+
+## Four ingredients of a well-designed experiment {#four-113}
+
+A well-designed experiment uses **comparison**, **random assignment**, **replication**, and **direct control** of important extraneous sources of variation.
+
+| Ingredient | In the coating experiment | Why it matters |
+|:--|:--|:--|
+| Comparison | Test Coating A and Coating B under the same abrasion protocol. | Provides a reference for judging a treatment difference. |
+| Random assignment | Use chance to determine which panel receives which coating. | Helps balance other influences between treatment groups. |
+| Replication | Apply each coating to several distinct panels. | Reveals panel-to-panel variability and makes comparisons more informative. |
+| Direct control | Use the same equipment, test duration, pressure, and measurement procedure. | Prevents avoidable differences in testing conditions from obscuring the coating comparison. |
+
+The **experimental units** are the individual panels that receive treatments. The treatments are the two coating protocols. Applying a coating repeatedly to the *same* panel without independently assigned experimental units is not replication of experimental units.
+
+A **control group** is a comparison group, not necessarily a group receiving nothing. For a trial comparing a new coating with an established standard, the standard coating can be the control. Multiple active-treatment groups may also be compared.
+
+## Extraneous variables and confounding {#extraneous-113}
+
+An **extraneous variable** is a variable other than the explanatory variable of interest that may affect the response. In the coating study, the production batch and initial surface roughness could influence wear.
+
+A **confounding variable** is related to the explanatory variable in a way that makes it difficult to distinguish the explanatory variable's effect from the confounder's effect. For example, if **all** Batch 1 panels receive A and **all** Batch 2 panels receive B, a measured difference could reflect either coating or batch.
+
+Not every extraneous variable is automatically a confounder. Random assignment reduces systematic connections between treatments and other variables; it does not physically remove all variation or guarantee perfectly equal groups in a single experiment. Direct control keeps feasible non-treatment conditions constant.
+
+::: {.callout-note}
+## A crucial distinction
+**Random selection** chooses units from a population and helps with generalization when the sampling design supports it. **Random assignment** allocates treatments among participating units and supports a causal comparison. These are different randomization steps.
+:::
+
+## Placebos, blinding, and the placebo effect {#masking-113}
+
+A **placebo** is an inactive treatment designed to resemble the treatment of interest. The **placebo effect** is the difference between the average response to a placebo and the average response to no treatment, under comparable conditions.
+
+**Blinding**, or masking, concerns who knows the treatment allocation. In a **single-blind** experiment, either participants or the research team members who interact with them are unaware of assignments. In a **double-blind** experiment, both groups are unaware. Say explicitly *which* people are blinded; the words alone can be ambiguous outside a defined study.
+
+Blinding can reduce expectation-driven behavior and assessment bias. **A placebo is not the same thing as blinding**: placebos can make blinding practical, but an experiment can include a placebo without successfully masking assignments.
+
+Consider a *hypothetical add-on* cancer-treatment trial. Every consenting patient continues to receive established standard care. A random allocation compares **standard care plus Drug X** with **standard care plus a matching placebo**. Nothing in this example replaces effective care with an inactive pill. The outcome might be change in a measured tumor response after 12 weeks. Any real trial also requires appropriate consent, oversight, and safety review.
+
+## Three designs to recognize {#designs-113}
+
+### Completely randomized design
+
+Start with one pool of experimental units. Assign the treatments to units entirely at random. For 24 panels, label the panels 01–24, randomly select 12 distinct labels for A, and assign B to the remaining 12. This is a **completely randomized design (CRD)** with fixed group sizes. No blocks are formed.
+
+### Randomized block design
+
+If manufacturing batch is known to influence wear, first divide the 24 panels into 12 from **Batch 1** and 12 from **Batch 2**. Within **each** batch, randomly select 6 panels for A and assign the remaining 6 to B. Every block contains both treatments.
+
+Blocking deliberately groups units with similar values of a relevant variable. It separates between-block variation from the comparison of treatments *within* blocks. It does not require identical block sizes in general, and it is **not** sufficient merely to create groups: treatments must still be randomly assigned within each block.
+
+::: {.callout-tip}
+## Which design is more precise?
+When batch contributes substantial response variation, comparing treatments within batches often makes the treatment effect easier to detect than pooling all panels. Blocking need not help if the chosen variable is unrelated to the response; a particular randomized experiment can still give an unusual result.
+:::
+
+### Matched pairs design
+
+A **matched pairs design** is a special randomized block design with two treatments. Each block is a pair of similar units, and one member is randomly assigned to each treatment. Alternatively, each unit can receive both treatments, with the order randomized when appropriate.
+
+Suppose 20 typists test Keyboard A and Keyboard B using comparable passages. Randomly assign 10 typists to try A then B and 10 to try B then A. Each typist provides a paired comparison; differences in baseline typing speed are largely controlled by the matching. **Order effects** are a separate concern: practice or fatigue may affect the second trial, and residual carryover cannot always be removed simply by randomizing the order.
+
+For paired numerical responses, calculate one difference per pair. If the question asks about B minus A, consistently define $d_i=B_i-A_i$, then describe the mean $\overline d$. Do not treat the two observations on a person as two independent experimental units.
+
+## Interactive assignment lab {#lab-113}
+
+Explore two legitimate methods of randomly allocating the **same 24 panels**. Twelve panels come from each manufacturing batch. Under the constructed model, Batch 2 tends to have greater wear; Coating B reduces wear by 8 mg on every panel. The simulation reveals what different random allocations can do to an *observed treatment difference*.
+
+~~~{=html}
+<div class="experiment113" data-experiment113>
+  <div class="experiment113-controls">
+    <label for="e113-method">Allocation method
+      <select id="e113-method" data-e113-method><option value="crd">Completely randomized: 12 A and 12 B overall</option><option value="block">Randomized blocks: 6 A and 6 B per batch</option></select>
+    </label>
+    <div class="experiment113-buttons">
+      <button type="button" data-e113-run>Randomly assign</button>
+      <button type="button" data-e113-reset>Reset</button>
+    </div>
+  </div>
+  <p role="status" aria-live="polite" data-e113-status>Before assignment: 12 panels in each batch. Predict how batch imbalance may affect a coating comparison.</p>
+  <div data-e113-table class="experiment113-results" aria-live="off">
+    <p>No assignment yet. Each panel will receive exactly one coating.</p>
+  </div>
+  <p data-e113-interpret>For each random allocation, compute the mean wear in the B group minus the mean wear in the A group. The simulated causal effect is -8 mg, but the observed difference can vary.</p>
+</div>
+~~~
+
+**Without JavaScript:** a valid blocked assignment could give 6 A and 6 B panels in Batch 1 and the same in Batch 2. A completely randomized assignment could by chance put 8 Batch 2 panels in A and only 4 in B, making treatment and batch appear less balanced.
+
+## What conclusions can we make? {#scope-113}
+
+A well-implemented, randomized experiment reduces the potential for confounding and allows a **cause-and-effect conclusion** for the experimental units and the specific treatment conditions studied. Replication, direct control, and appropriate masking improve the quality of the evidence.
+
+**Generalization is a separate question.** If the tested panels came only from one supplier, random assignment does not prove the coating behaves identically on every possible metal or in every environment. Similarly, human clinical trials often enroll consenting volunteers rather than a random sample of all people; results must be applied cautiously beyond participants.
+
+A study can therefore support a treatment effect among its participants without proving a population-wide effect. Conversely, a random survey can describe a population without assigning a treatment or demonstrating causation.
+
+::: {.callout-important}
+## Ethics and interpretation
+Randomly selecting someone for an invitation is not the same as forcing enrollment. For human experiments, participants ordinarily need informed consent and appropriate safeguards. A causal comparison that is unethical or badly measured is not a sound study.
+:::
+
+## Check your design decisions {#checks-113}
+
+- Name the experimental units, treatments, response variable, and comparison group.
+- Say **how** chance is used to assign treatments; "split into two groups" alone does not establish randomization.
+- Explain the blocking variable and how treatments are randomized **within every block**.
+- Explain whether matching uses two people in a pair or two treatments on the same person.
+- Distinguish extraneous variation, confounding, measurement error, and replication.
+- For scope, address both **causation** (random assignment) and **generalization** (selection/eligibility and study conditions).
+
+## Practice {#practice-113}
+
+::: {.original-practice-host data-original-practice="1.13"}
+:::
+
+<details class="lesson-sources"><summary>Sources</summary><p><a href="https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description-effective-fall-2026.pdf">College Board, AP Statistics Course and Exam Description (effective Fall 2026)</a>, Topic 1.13, printed pp. 51–54. Illustrations, simulation model, and practice are original course teaching examples.</p></details>
