@@ -33,6 +33,7 @@ CHECKS = [
     'Unit 1/Topic 1.13/tests/check_experiment113.py',
     'Unit 1/Topic 1.13/tests/check_experiment113_browser.py',
     'Unit 2/Topic 2.1/tests/check_cafe21.py',
+    'Unit 2/Topic 2.1/tests/check_cafe21_browser.py',
 ]
 
 
