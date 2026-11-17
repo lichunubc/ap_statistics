@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "inspection_date": "2026-11-17",
+  "scope": "1.1–1.13 and 2.1–2.7",
+  "branch": "preview/overnight-materials-20261117",
+  "source_files": [
+    {
+      "topic": "1.13 revised v3 slides",
+      "name": "MHS_AP_Statistics_Topic_1_13_Revised_v3_Quarto.zip",
+      "file_id": "file_000000009d4482308eda36401829d221",
+      "size": 736447,
+      "sha256": "9a5be9c47eb224629c9fb7653174ad8fdc1c1633209cf2bee6233333ebcbf47c",
+      "notes": "reviewed locally; source contains externally credited Scribbr illustration: do not redistribute without clearance"
+    },
+    {
+      "topic": "1.13 study guide",
+      "name": "MHS_AP_Statistics_Topic_1_13_Study_Guide_Overleaf.zip",
+      "file_id": "file_000000004c7882309a65bf6058689ab2",
+      "size": 56041,
+      "sha256": "4a1474d3dc08fd93046030085dbd8eee50329648657d51ace66601c9109fa5d0",
+      "notes": "needs latest instructor correction reconciliation"
+    },
+    {
+      "topic": "2.1–2.2 slides",
+      "name": "MHS_AP_Statistics_Topics_2_1_2_2_Quarto_Slides.zip",
+      "file_id": "file_000000005af481fdb10f264874dbe392",
+      "size": 223130,
+      "sha256": "1cdb72104524b3ae63c10565e412b97173168f0dc4108dba44e7711084d690b5",
+      "notes": "editable qmd/js/css and 24-order café data"
+    },
+    {
+      "topic": "2.1–2.2 study guide",
+      "name": "MHS_AP_Statistics_Topics_2_1_and_2_2_Overleaf.zip",
+      "file_id": "file_0000000091f081fdb20ddd3c407ec17c",
+      "size": 42318,
+      "sha256": "62f2ddfe72a9dfb5fa8a7b6a7483a433c2bc869929f7c1c4d670cdfa73bfb874",
+      "notes": "editable TeX; review before public release"
+    },
+    {
+      "topic": "2.1–2.2 café data",
+      "name": "MHS_AP_Statistics_Topics_2_1_and_2_2_Cafe_Orders.csv",
+      "file_id": "file_0000000080d881fdb353933b9828add1",
+      "size": 612,
+      "sha256": "b9992b063e7b566694527128d50cd47321e88e2bb120ddd305a2f63634a2623c",
+      "notes": "24 original orders; 8 app,16 counter"
+    },
+    {
+      "topic": "2.3–2.7 slide deck",
+      "name": "MHS_AP_Statistics_Topics_2_3_to_2_7_Revised_v2_Quarto_Slides.zip",
+      "file_id": "file_00000000d1b081fdbf925773491fc1b7",
+      "size": 637302,
+      "sha256": "95f9c61c4c735e479b6f73b19481f8a714750cb5e4520361ebd074ee2a5ffd19",
+      "notes": "42 slides incl fair-device/sample-space intro; inspect for third-party content"
+    },
+    {
+      "topic": "2.3–2.7 private mixed guide",
+      "name": "MHS_AP_Statistics_Topics_2_3_to_2_7_Study_Guide_Overleaf.zip",
+      "file_id": "file_00000000150481fda2ab5a16fe0966c6",
+      "size": 3290219,
+      "sha256": "f3e9fa86eb814c55541487a2dca1fab380cbae45becc2435be8b7744d2fb4f30",
+      "notes": "NEVER publish: includes restricted Week9 assessment and solutions"
+    }
+  ],
+  "public_safe_derivative": {
+    "pdf": "AP_Statistics_2_3_to_2_7_Public_Safe_Study_Guide.pdf",
+    "pdf_sha256": "015f7fba619f31a361e3469f9d37d993af5236d8e668a8c54abdac0bf9eca719",
+    "pdf_bytes": 405353,
+    "source_zip": "AP_Statistics_2_3_to_2_7_Public_Safe_Study_Guide_Source.zip",
+    "source_sha256": "f98224240d0be46f4c7f6c19fd5b4b752fc9a78396177125d908b485408825db",
+    "source_bytes": 74447,
+    "page_count": 28,
+    "build": "latexmk clean recompile passed",
+    "figure": "52 cards relocated to unused upper-right corner and visually inspected",
+    "private_section_exclusions": [
+      "sections/17b_practice_hw.tex",
+      "sections/21b_solutions_hw.tex"
+    ],
+    "repository_published": false
+  },
+  "privacy_boundary": "Use public-safe derivative only; no AP Classroom Week9 PDFs/questions/keys or private question bank payload in public repo."
+}
