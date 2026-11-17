@@ -1,0 +1,57 @@
+{
+  "topic": "2.6",
+  "title": "Conditional Probability",
+  "official_title": "Conditional Probability",
+  "curriculum": "College Board AP Statistics CED effective Fall 2026",
+  "source": "https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description-effective-fall-2026.pdf",
+  "ced_printed_pages": [
+    67
+  ],
+  "pdf_zero_index_pages": [
+    71
+  ],
+  "learning_objectives": [
+    "2.6.A"
+  ],
+  "essential_knowledge": [
+    "2.6.A.1",
+    "2.6.A.2"
+  ],
+  "skills": [
+    "3.C"
+  ],
+  "coverage": [
+    {
+      "section": "#given26",
+      "ids": [
+        "2.6.A.1"
+      ]
+    },
+    {
+      "section": "#table26",
+      "ids": [
+        "2.6.A.1"
+      ]
+    },
+    {
+      "section": "#explorer26",
+      "ids": [
+        "2.6.A.1"
+      ]
+    },
+    {
+      "section": "#multiply26",
+      "ids": [
+        "2.6.A.2"
+      ]
+    },
+    {
+      "section": "#examples26",
+      "ids": [
+        "2.6.A.1",
+        "2.6.A.2"
+      ]
+    }
+  ],
+  "rights": "Original public-safe content; no secure AP Classroom homework."
+}

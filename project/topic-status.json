@@ -561,6 +561,30 @@
       ],
       "implemented_on": "2026-11-17",
       "rights": "original public-safe content"
+    },
+    {
+      "id": "2.6",
+      "title": "Conditional Probability",
+      "status": "preview_candidate",
+      "chapter": "Unit 2/Topic 2.6/topic-2-6.qmd",
+      "directory": "Unit 2/Topic 2.6",
+      "ced_printed_pages": "67",
+      "learning_objectives": [
+        "2.6.A"
+      ],
+      "essential_knowledge": [
+        "2.6.A.1",
+        "2.6.A.2"
+      ],
+      "skills": [
+        "3.C"
+      ],
+      "practice_count": 8,
+      "interactions": [
+        "café reference-group denominator explorer"
+      ],
+      "implemented_on": "2026-11-17",
+      "rights": "original public-safe"
     }
   ]
 }
