@@ -1,0 +1,136 @@
+# Topic 2.6 Conditional Probability
+
+The word **given** changes the group of outcomes we are considering. A conditional probability measures the chance of an event **among cases already known to satisfy another event**.
+
+## What the vertical bar means {#given26}
+
+Let $A$ and $B$ be events. Read $P(A\mid B)$ as "the probability of $A$, *given* $B$." If $P(B)>0$, the conditional-probability rule is
+
+$$
+\boxed{P(A\mid B)=\frac{P(A\cap B)}{P(B)}.}
+$$
+
+The event after the vertical bar is the condition: restrict to $B$ **before** dividing. The numerator is the overlap $A\cap B$, and the denominator is the entire conditioning group $B$.
+
+For example, suppose a basket contains three red and two blue tokens. If we know that one randomly selected token is red, the chance it is blue is zero. New information changes which outcomes are still possible.
+
+## Conditional probability from a two-way table {#table26}
+
+The following table records 24 café orders. Each order used either the app or the counter and selected one drink. Imagine choosing **one of the 24 orders uniformly at random**.
+
+| Ordering channel | Coffee | Tea | Smoothie | Total |
+|:-----------------|------:|----:|---------:|------:|
+| App | 4 | 2 | 2 | 8 |
+| Counter | 4 | 8 | 4 | 16 |
+| **Total** | **8** | **10** | **6** | **24** |
+
+Let $T$ mean tea and $A$ mean app. The same **two app–tea orders** appear in these three questions, but the reference groups differ:
+
+$$
+\begin{aligned}
+P(T\cap A)&=\frac{2}{24}=\frac1{12} && \text{(all orders)}\\
+P(T\mid A)&=\frac{2}{8}=\frac14 && \text{(among app orders)}\\
+P(A\mid T)&=\frac{2}{10}=\frac15 && \text{(among tea orders)}.
+\end{aligned}
+$$
+
+The joint probability divides by all 24, while the two conditional probabilities use **different denominators**. In general, $P(A\mid B)$ does not equal $P(B\mid A)$.
+
+## Change the reference group {#explorer26}
+
+Use the table below to predict a conditional probability, select a question, and check which group becomes the denominator. Nothing is selected when the activity opens.
+
+~~~{=html}
+<div class="condition26" data-condition26>
+ <div class="condition26-buttons" role="group" aria-label="Choose a conditional probability">
+  <button type="button" data-condition26-choice="teaapp" aria-pressed="false">Tea given App</button>
+  <button type="button" data-condition26-choice="apptea" aria-pressed="false">App given Tea</button>
+  <button type="button" data-condition26-choice="teacounter" aria-pressed="false">Tea given Counter</button>
+  <button type="button" data-condition26-choice="countertea" aria-pressed="false">Counter given Tea</button>
+  <button type="button" data-condition26-reset>Reset</button>
+ </div>
+ <div class="condition26-tablewrap"><table class="condition26-table">
+  <caption>24 orders — highlighted cells form the conditioning group; the dark-outlined cell is the intersection</caption>
+  <thead><tr><th scope="col">Channel</th><th scope="col">Coffee</th><th scope="col">Tea</th><th scope="col">Smoothie</th><th scope="col">Total</th></tr></thead>
+  <tbody>
+   <tr><th scope="row">App</th><td data-condition26-cell="app-coffee">4</td><td data-condition26-cell="app-tea">2</td><td data-condition26-cell="app-smoothie">2</td><td data-condition26-total="app">8</td></tr>
+   <tr><th scope="row">Counter</th><td data-condition26-cell="counter-coffee">4</td><td data-condition26-cell="counter-tea">8</td><td data-condition26-cell="counter-smoothie">4</td><td data-condition26-total="counter">16</td></tr>
+  </tbody>
+  <tfoot><tr><th scope="row">Total</th><td data-condition26-total="coffee">8</td><td data-condition26-total="tea">10</td><td data-condition26-total="smoothie">6</td><td data-condition26-total="all">24</td></tr></tfoot>
+ </table></div>
+ <p data-condition26-status role="status" aria-live="polite">No question selected. Choose a condition to update the denominator.</p>
+ <div class="condition26-output">
+  <p>Conditioning group: <strong data-condition26-group>—</strong></p>
+  <p>Intersection count: <strong data-condition26-count>—</strong></p>
+  <p>Conditional probability: <strong data-condition26-answer>—</strong></p>
+ </div>
+ <p class="condition26-static">Without JavaScript: Tea given App is 2/8; App given Tea is 2/10; Tea given Counter is 8/16; Counter given Tea is 8/10. A conditional probability divides by the condition's group total.</p>
+</div>
+~~~
+
+The color only supports the labels; the status text also describes the condition, numerator, and denominator.
+
+## General multiplication rule {#multiply26}
+
+Rearrange the conditional-probability formula:
+
+$$
+\boxed{P(A\cap B)=P(A)\,P(B\mid A).}
+$$
+
+We **multiply along one complete sequence** of events. This general rule works without assuming independence.
+
+**Worked example: without replacement.** A bag contains 3 red tokens and 2 blue tokens. Draw two tokens **without replacement**. The probability of red on the first draw and red on the second draw is
+
+$$
+P(R_1\cap R_2)=P(R_1)\,P(R_2\mid R_1)
+=\frac35\cdot\frac24=\frac3{10}.
+$$
+
+After a first red draw, only two of the four remaining tokens are red. Using $3/5$ again on the second branch would incorrectly model replacement.
+
+For one red and one blue **in either order**, two mutually exclusive sequences qualify:
+
+$$
+P(RB\text{ or }BR)
+=\frac35\cdot\frac24+\frac25\cdot\frac34
+=\frac3{10}+\frac3{10}=\frac35.
+$$
+
+**Tree-diagram habit:** state each branch as a conditional probability; multiply along a path; add probabilities of disjoint qualifying paths. Keep the order of selections clear.
+
+## More worked examples {#examples26}
+
+**From a numerical model.** Suppose $P(F)=0.40$ and $P(D\mid F)=0.25$, where $F$ means a selected package is fragile and $D$ means damaged. Then
+
+$$
+P(F\cap D)=0.40(0.25)=0.10.
+$$
+
+This is a joint probability: 10% of all packages are both fragile and damaged.
+
+**Reverse conditional probabilities.** If $P(A\cap B)=0.12$, $P(A)=0.30$, and $P(B)=0.60$, then
+
+$$
+P(B\mid A)=\frac{0.12}{0.30}=0.40,\qquad
+P(A\mid B)=\frac{0.12}{0.60}=0.20.
+$$
+
+The event held fixed after the vertical bar controls the denominator. The conditional probability $P(A\mid B)$ is undefined if $P(B)=0$.
+
+## Reasoning routine {#routine26}
+
+1. Name the target event and the event known to have occurred.
+2. Read the vertical bar aloud and identify the restricted reference group.
+3. Find the number or probability of outcomes satisfying both events.
+4. Divide by the condition's total, or multiply along a path to find a joint probability.
+5. Interpret the result with the condition explicitly stated.
+
+Avoid switching the numerator and denominator, using all observations when a condition is given, assuming replacement when the situation says *without replacement*, or treating $P(A\mid B)$ and $P(B\mid A)$ as interchangeable.
+
+## Practice {#practice26}
+
+::: {.original-practice-host data-original-practice="2.6"}
+:::
+
+<details class="lesson-sources"><summary>Sources</summary><p>College Board, <a href="https://apcentral.collegeboard.org/media/pdf/ap-statistics-course-and-exam-description-effective-fall-2026.pdf">AP Statistics Course and Exam Description</a>, effective Fall 2026, Topic 2.6, printed page 67. Café and token scenarios, calculations, and practice are original classroom teaching content.</p></details>

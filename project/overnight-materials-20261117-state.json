@@ -19,7 +19,10 @@
     "topic_2_4_source_candidate",
     "topic_2_3_published_verified",
     "topic_2_4_published_verified",
-    "topic_2_5_source_candidate"
+    "topic_2_5_source_candidate",
+    "topic_2_5_preview_ci_passed",
+    "topic_2_5_merged",
+    "topic_2_6_source_candidate"
   ],
   "preview_branch": "preview/overnight-20261117-topic-2-1",
   "baseline_main": "afd3ebec03b5c6eed70da3dfacc2ec545751ef3c",
@@ -40,10 +43,10 @@
     "teacher assessments and marking guides"
   ],
   "next": [
-    "Inspect Topic 2.5 preview run 44094746823 (native Quarto and expanded checks) and repair observed failures",
-    "After passing preview, integrate with refreshed main by non-force merge and verify production Pages and dedicated live 2.5 browser",
-    "Continue original independent Topic 2.6 conditional probability and Topic 2.7 independent events and unions",
-    "Integrate approved public-safe 42-slide deck and reviewed guide, then final rights/privacy audit"
+    "Check native Topic 2.5 production run and exact live browser validation",
+    "Validate Topic 2.6 preview before any merge; correct genuine failures",
+    "Implement and publish Topic 2.7 Independent Events and Unions of Events",
+    "Audit privacy and integrate public-safe teaching slide/guide assets where possible"
   ],
   "published_in_this_session": [
     {
@@ -136,7 +139,7 @@
     "live_url": "https://lichunubc.github.io/ap_statistics/Unit%202/Topic%202.4/topic-2-4.html"
   },
   "topic_2_5": {
-    "status": "preview_candidate_pending_native_CI",
+    "status": "merged_production_in_progress",
     "branch": "preview/overnight-20261117-topic-2-5",
     "practice_count": 8,
     "scope": "Official Fall 2026 CED printed page 66; objective 2.5.A, EK 2.5.A.1–2",
@@ -147,6 +150,22 @@
       "source and native browser accessibility tests"
     ],
     "head_commit": "eed2478902f78bebd0b94fedfaf21b86f5ff6616",
-    "preview_run": 44094746823
+    "preview_run": 44095283594,
+    "preview_result": "success: native Quarto, all configured regressions and Topic2.5 source/browser",
+    "merge_commit": "4d8b621d8f3b38ff69a966f1b391e8a066a86ae2",
+    "pull_request": "https://github.com/lichunubc/ap_statistics/pull/8",
+    "production_run": 44096757688
+  },
+  "topic_2_6": {
+    "status": "preview_candidate_pending_native_ci",
+    "branch": "preview/overnight-20261117-topic-2-6",
+    "practice_count": 8,
+    "scope": "CED printed p67: 2.6.A, EK 2.6.A.1–2",
+    "features": [
+      "original standalone QMD",
+      "offline four-case conditional-denominator explorer",
+      "8 original detailed-solution practice items",
+      "source/browser/live CI gate"
+    ]
   }
 }
