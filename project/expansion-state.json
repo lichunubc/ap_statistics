@@ -190,8 +190,10 @@
         53,
         54
       ],
-      "status": "queued",
-      "attempts": 0
+      "status": "preview_candidate",
+      "attempts": 1,
+      "preview_branch": "preview/overnight-20261117-topic-1-13",
+      "source_candidate": "Original public-safe chapter, deterministic experiment lab and 8 original questions; not yet published or live"
     },
     {
       "order": 8,
